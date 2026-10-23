@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 192" role="img" aria-labelledby="title">
+  <title id="title">Révisions HEP</title>
+  <rect width="192" height="192" rx="42" fill="#101624"/>
+  <rect x="15" y="15" width="162" height="162" rx="31" fill="#171f2f" stroke="#344259" stroke-width="2"/>
+  <path d="M72 69c0-15 10-25 25-25 16 0 27 10 27 24 0 11-6 17-16 24-10 7-14 11-14 23" fill="none" stroke="#a2b7ff" stroke-width="15" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="94" cy="143" r="8" fill="#a2b7ff"/>
+</svg>

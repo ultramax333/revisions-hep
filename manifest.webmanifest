@@ -1,0 +1,13 @@
+{
+  "id": "./",
+  "name": "Révisions HEP",
+  "short_name": "Révisions HEP",
+  "description": "Réviser les cours et laisser un retour sur chaque question.",
+  "lang": "fr-CH",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#101624",
+  "theme_color": "#101624",
+  "icons": [{"src": "icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable"}]
+}

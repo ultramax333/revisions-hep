@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#101624">
+  <meta name="description" content="Questions-réponses, indices et retours personnels pour les révisions HEP.">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <title>Révisions HEP</title>
+  <link rel="icon" href="icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icon.svg">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main id="app"><div class="empty-state" role="status">Chargement de tes révisions…</div></main>
+  <div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
+  <script src="config.js"></script>
+  <script src="store.js"></script>
+  <script src="drive.js"></script>
+  <script src="app.js"></script>
+  <script src="https://accounts.google.com/gsi/client" async defer></script>
+</body>
+</html>

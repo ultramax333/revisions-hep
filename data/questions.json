@@ -1,0 +1,2842 @@
+{
+  "schemaVersion": 1,
+  "bankRevision": "f770f9c6e0f7",
+  "modules": [
+    {
+      "id": "BP1-18FRA",
+      "title": "Français",
+      "subtitle": "Dire, lire, écrire I",
+      "courses": [
+        {
+          "id": "C01",
+          "title": "Cours 01",
+          "subtitle": "Enseigner et accompagner le langage"
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "BP1-18FRA_S1_C01_DEFINIR_DIDACTIQUE",
+      "noteId": "BP1-18FRA_S1_C01_DEFINIR_DIDACTIQUE",
+      "clozeOrdinal": null,
+      "module": "BP1-18FRA",
+      "course": "C01",
+      "type": "definir",
+      "parties": [
+        "partie::transversal"
+      ],
+      "priorities": [
+        "prio::examen"
+      ],
+      "questionHtml": "<p>Qu’est-ce que la didactique, dans ce cours ?</p>",
+      "answerHtml": "<p>Étudie les savoirs à acquérir et les conditions de leur enseignement et de leur apprentissage.</p>",
+      "hint": "Repars de l’échange du chevreuil et de la question que doit se poser un enseignant.",
+      "source": "SYNTHESE_BP1-18FRA_S1_COURS_01.docx · v08 · partie « 1 Le langage à apprendre est aussi un moyen d’apprendre »\nOriginal : 2026-09-17_BP1-18FRA_Cours_1_support_etudiant.pdf, diapositives 19–20",
+      "contentRevision": "f609aaeae303"
+    },
+    {
+      "id": "BP1-18FRA_S1_C01_DISTINGUER_DIDACTIQUE_PSYCHOLOGIE_LINGUISTIQUE",
+      "noteId": "BP1-18FRA_S1_C01_DISTINGUER_DIDACTIQUE_PSYCHOLOGIE_LINGUISTIQUE",
+      "clozeOrdinal": null,
+      "module": "BP1-18FRA",
+      "course": "C01",
+      "type": "distinguer",
+      "parties": [
+        "partie::transversal"
+      ],
+      "priorities": [
+        "prio::examen"
+      ],
+      "questionHtml": "<p>Qu’est-ce qui distingue le regard didactique des regards psychologique et linguistique sur le langage ?</p>",
+      "answerHtml": "<p>Le point de vue didactique relie les éclairages au contenu précis à faire apprendre. La psychologie aide à comprendre le développement de l’enfant ; la linguistique étudie la langue et son fonctionnement.</p>",
+      "hint": "Pour une même scène de classe, demande-toi ce que chaque regard cherche à comprendre.",
+      "source": "SYNTHESE_BP1-18FRA_S1_COURS_01.docx · v08 · partie « 1 Le langage à apprendre est aussi un moyen d’apprendre »\nOriginal : 2026-09-17_BP1-18FRA_Cours_1_support_etudiant.pdf, diapositives 19–20",
+      "contentRevision": "80b8af25a1f5"
+    },
+    {
+      "id": "BP1-18FRA_S1_C01_DEFINIR_TRIANGLE_DIDACTIQUE",
+      "noteId": "BP1-18FRA_S1_C01_DEFINIR_TRIANGLE_DIDACTIQUE",
+      "clozeOrdinal": null,
+      "module": "BP1-18FRA",
+      "course": "C01",
+      "type": "definir",
+      "parties": [
+        "partie::transversal"
+      ],
+      "priorities": [
+        "prio::examen",
+        "prio::important"
+      ],
+      "questionHtml": "<p>Qu’est-ce que le triangle didactique ?</p>",
+      "answerHtml": "<p>Relie savoirs, élève et enseignant ; chaque côté est une relation : transposer et planifier, construire, interagir et accompagner.</p>",
+      "hint": "Utilise l’échange du chevreuil pour reconstruire la place de chaque composante du schéma.",
+      "source": "SYNTHESE_BP1-18FRA_S1_COURS_01.docx · v08 · partie « 1 Le langage à apprendre est aussi un moyen d’apprendre — Le triangle didactique »\nOriginal : 2026-09-17_BP1-18FRA_Cours_1_support_etudiant.pdf, diapositive 22 ; 2026-09-17_BP1-18FRA_NOTES_COURS_1.docx, p. 3",
+      "contentRevision": "22b460989427"
+    },
+    {
+      "id": "BP1-18FRA_S1_C01_LISTE_POLES_TRIANGLE::c1",
+      "noteId": "BP1-18FRA_S1_C01_LISTE_POLES_TRIANGLE",
+      "clozeOrdinal": 1,
+      "module": "BP1-18FRA",
+      "course": "C01",
+      "type": "liste",
+      "parties": [
+        "partie::transversal"
+      ],
+      "priorities": [
+        "prio::examen",
+        "prio::important"
+      ],
+      "questionHtml": "<p>Les trois pôles du triangle didactique, dans le cours 01 :</p><ol><li><span class=\"blank\">[...]</span></li><li>Élève</li><li>Enseignant</li></ol>",
+      "answerHtml": "<p class=\"cloze-answer\"><strong>Réponse : Savoirs</strong></p><p>Relie savoirs, élève et enseignant ; chaque côté est une relation : transposer et planifier, construire, interagir et accompagner.</p>",
+      "hint": "Reconstitue une situation d’apprentissage en distinguant les places qui la rendent possible.",
+      "source": "SYNTHESE_BP1-18FRA_S1_COURS_01.docx · v08 · partie « 1 Le langage à apprendre est aussi un moyen d’apprendre — Le triangle didactique »\nOriginal : 2026-09-17_BP1-18FRA_Cours_1_support_etudiant.pdf, diapositive 22",
+      "contentRevision": "56bf4b2e2551"
+    },
+    {
+      "id": "BP1-18FRA_S1_C01_LISTE_POLES_TRIANGLE::c2",
+      "noteId": "BP1-18FRA_S1_C01_LISTE_POLES_TRIANGLE",
+      "clozeOrdinal": 2,
+      "module": "BP1-18FRA",
+      "course": "C01",
+      "type": "liste",
+      "parties": [
+        "partie::transversal"
+      ],
+      "priorities": [
+        "prio::examen",
+        "prio::important"
+      ],
+      "questionHtml": "<p>Les trois pôles du triangle didactique, dans le cours 01 :</p><ol><li>Savoirs</li><li><span class=\"blank\">[...]</span></li><li>Enseignant</li></ol>",
+      "answerHtml": "<p class=\"cloze-answer\"><strong>Réponse : Élève</strong></p><p>Relie savoirs, élève et enseignant ; chaque côté est une relation : transposer et planifier, construire, interagir et accompagner.</p>",
+      "hint": "Reconstitue une situation d’apprentissage en distinguant les places qui la rendent possible.",
+      "source": "SYNTHESE_BP1-18FRA_S1_COURS_01.docx · v08 · partie « 1 Le langage à apprendre est aussi un moyen d’apprendre — Le triangle didactique »\nOriginal : 2026-09-17_BP1-18FRA_Cours_1_support_etudiant.pdf, diapositive 22",
+      "contentRevision": "f4627f985211"
+    },
+    {
+      "id": "BP1-18FRA_S1_C01_LISTE_POLES_TRIANGLE::c3",
+      "noteId": "BP1-18FRA_S1_C01_LISTE_POLES_TRIANGLE",
+      "clozeOrdinal": 3,
+      "module": "BP1-18FRA",
+      "course": "C01",
+      "type": "liste",
+      "parties": [
+        "partie::transversal"
+      ],
+      "priorities": [
+        "prio::examen",
+        "prio::important"
+      ],
+      "questionHtml": "<p>Les trois pôles du triangle didactique, dans le cours 01 :</p><ol><li>Savoirs</li><li>Élève</li><li><span class=\"blank\">[...]</span></li></ol>",
+      "answerHtml": "<p class=\"cloze-answer\"><strong>Réponse : Enseignant</strong></p><p>Relie savoirs, élève et enseignant ; chaque côté est une relation : transposer et planifier, construire, interagir et accompagner.</p>",
+      "hint": "Reconstitue une situation d’apprentissage en distinguant les places qui la rendent possible.",
+      "source": "SYNTHESE_BP1-18FRA_S1_COURS_01.docx · v08 · partie « 1 Le langage à apprendre est aussi un moyen d’apprendre — Le triangle didactique »\nOriginal : 2026-09-17_BP1-18FRA_Cours_1_support_etudiant.pdf, diapositive 22",
+      "contentRevision": "c1729208b776"
+    },
+    {
+      "id": "BP1-18FRA_S1_C01_LISTE_RELATIONS_TRIANGLE::c1",
+      "noteId": "BP1-18FRA_S1_C01_LISTE_RELATIONS_TRIANGLE",
+      "clozeOrdinal": 1,
+      "module": "BP1-18FRA",
+      "course": "C01",
+      "type": "liste",
+      "parties": [
+        "partie::transversal"
+      ],
+      "priorities": [
+        "prio::examen",
+        "prio::important"
+      ],
+      "questionHtml": "<p>Les trois relations du triangle didactique, dans le cours 01 :</p><ol><li><span class=\"blank\">[...]</span></li><li>Élève – savoirs</li><li>Enseignant – élève</li></ol>",
+      "answerHtml": "<p class=\"cloze-answer\"><strong>Réponse : Enseignant – savoirs</strong></p><ul><li>Enseignant – savoirs : sélectionner, transposer, planifier et transmettre.</li><li>Élève – savoirs : construire des connaissances et développer des savoir-faire.</li><li>Enseignant – élève : interagir, accompagner, enseigner, observer et évaluer.</li></ul>",
+      "hint": "Parcours chaque côté du schéma et demande-toi quelle activité il permet d’examiner.",
+      "source": "SYNTHESE_BP1-18FRA_S1_COURS_01.docx · v08 · partie « 1 Le langage à apprendre est aussi un moyen d’apprendre — Le triangle didactique »\nOriginal : 2026-09-17_BP1-18FRA_Cours_1_support_etudiant.pdf, diapositive 22",
+      "contentRevision": "d2f22658fff7"
+    },
+    {
+      "id": "BP1-18FRA_S1_C01_LISTE_RELATIONS_TRIANGLE::c2",
+      "noteId": "BP1-18FRA_S1_C01_LISTE_RELATIONS_TRIANGLE",
+      "clozeOrdinal": 2,
+      "module": "BP1-18FRA",
+      "course": "C01",
+      "type": "liste",
+      "parties": [
+        "partie::transversal"
+      ],
+      "priorities": [
+        "prio::examen",
+        "prio::important"
+      ],
+      "questionHtml": "<p>Les trois relations du triangle didactique, dans le cours 01 :</p><ol><li>Enseignant – savoirs</li><li><span class=\"blank\">[...]</span></li><li>Enseignant – élève</li></ol>",
+      "answerHtml": "<p class=\"cloze-answer\"><strong>Réponse : Élève – savoirs</strong></p><ul><li>Enseignant – savoirs : sélectionner, transposer, planifier et transmettre.</li><li>Élève – savoirs : construire des connaissances et développer des savoir-faire.</li><li>Enseignant – élève : interagir, accompagner, enseigner, observer et évaluer.</li></ul>",
+      "hint": "Parcours chaque côté du schéma et demande-toi quelle activité il permet d’examiner.",
+      "source": "SYNTHESE_BP1-18FRA_S1_COURS_01.docx · v08 · partie « 1 Le langage à apprendre est aussi un moyen d’apprendre — Le triangle didactique »\nOriginal : 2026-09-17_BP1-18FRA_Cours_1_support_etudiant.pdf, diapositive 22",
+      "contentRevision": "322dce1957ac"
+    },
+    {
+      "id": "BP1-18FRA_S1_C01_LISTE_RELATIONS_TRIANGLE::c3",
+      "noteId": "BP1-18FRA_S1_C01_LISTE_RELATIONS_TRIANGLE",
+      "clozeOrdinal": 3,
+      "module": "BP1-18FRA",
+      "course": "C01",
+      "type": "liste",
+      "parties": [
+        "partie::transversal"
+      ],
+      "priorities": [
+        "prio::examen",
+        "prio::important"
+      ],
+      "questionHtml": "<p>Les trois relations du triangle didactique, dans le cours 01 :</p><ol><li>Enseignant – savoirs</li><li>Élève – savoirs</li><li><span class=\"blank\">[...]</span></li></ol>",
+      "answerHtml": "<p class=\"cloze-answer\"><strong>Réponse : Enseignant – élève</strong></p><ul><li>Enseignant – savoirs : sélectionner, transposer, planifier et transmettre.</li><li>Élève – savoirs : construire des connaissances et développer des savoir-faire.</li><li>Enseignant – élève : interagir, accompagner, enseigner, observer et évaluer.</li></ul>",
+      "hint": "Parcours chaque côté du schéma et demande-toi quelle activité il permet d’examiner.",
+      "source": "SYNTHESE_BP1-18FRA_S1_COURS_01.docx · v08 · partie « 1 Le langage à apprendre est aussi un moyen d’apprendre — Le triangle didactique »\nOriginal : 2026-09-17_BP1-18FRA_Cours_1_support_etudiant.pdf, diapositive 22",
+      "contentRevision": "f58b2f045500"
+    },
+    {
+      "id": "BP1-18FRA_S1_C01_DISTINGUER_TRIANGLE_RELATION_DUALE",
+      "noteId": "BP1-18FRA_S1_C01_DISTINGUER_TRIANGLE_RELATION_DUALE",
+      "clozeOrdinal": null,
+      "module": "BP1-18FRA",
+      "course": "C01",
+      "type": "distinguer",
+      "parties": [
+        "partie::transversal"
+      ],
+      "priorities": [
+        "prio::examen",
+        "prio::important"
+      ],
+      "questionHtml": "<p>Quel critère distingue une lecture par le triangle didactique d’une lecture limitée à la relation enseignant–élève ?</p>",
+      "answerHtml": "<p>Le triangle relie l’intervention de l’enseignant et l’activité de l’élève au savoir visé. Il ne réduit pas l’enseignement à une simple relation entre deux personnes.</p>",
+      "hint": "Dans le cas du chevreuil, vérifie ce qui permet de juger la pertinence de l’intervention.",
+      "source": "SYNTHESE_BP1-18FRA_S1_COURS_01.docx · v08 · partie « 1 Le langage à apprendre est aussi un moyen d’apprendre — Le triangle didactique »\nOriginal : 2026-09-17_BP1-18FRA_Cours_1_support_etudiant.pdf, diapositive 22",
+      "contentRevision": "4b4c53ade018"
+    },
+    {
+      "id": "BP1-18FRA_S1_C01_APPLIQUER_TRIANGLE_CHEVREUIL",
+      "noteId": "BP1-18FRA_S1_C01_APPLIQUER_TRIANGLE_CHEVREUIL",
+      "clozeOrdinal": null,
+      "module": "BP1-18FRA",
+      "course": "C01",
+      "type": "appliquer",
+      "parties": [
+        "partie::transversal",
+        "partie::oral"
+      ],
+      "priorities": [
+        "prio::examen",
+        "prio::important"
+      ],
+      "questionHtml": "<p>Dans le récit du chevreuil analysé par la synthèse, désigner l’animal est visé, l’enseignante propose un mot et l’élève le reprend. Comment lire cette situation avec le triangle didactique ?</p>",
+      "answerHtml": "<p>Désigner l’animal est le savoir visé ; proposer le mot est l’intervention de l’enseignante ; le reprendre dans la suite du récit est une activité observable de l’élève.</p><p><b>Pour juger ta réponse</b><br>Relier les trois pôles à des éléments précis de l’échange, en gardant le savoir visé dans l’analyse.</p>",
+      "hint": "Répartis les données du cas dans le schéma avant d’examiner leurs liens.",
+      "source": "SYNTHESE_BP1-18FRA_S1_COURS_01.docx · v08 · partie « 1 Le langage à apprendre est aussi un moyen d’apprendre — Le triangle didactique »\nOriginal : 2026-09-17_BP1-18FRA_Cours_1_support_etudiant.pdf, diapositives 22 et 62",
+      "contentRevision": "d2635c37e82c"
+    },
+    {
+      "id": "BP1-18FRA_S1_C01_DEFINIR_TRANSPOSITION_DIDACTIQUE",
+      "noteId": "BP1-18FRA_S1_C01_DEFINIR_TRANSPOSITION_DIDACTIQUE",
+      "clozeOrdinal": null,
+      "module": "BP1-18FRA",
+      "course": "C01",
+      "type": "definir",
+      "parties": [
+        "partie::transversal"
+      ],
+      "priorities": [
+        "prio::examen"
+      ],
+      "questionHtml": "<p>Comment la transposition didactique est-elle présentée à partir du titre de Chevallard dans ce cours ?</p>",
+      "answerHtml": "<p>Passage du savoir savant au savoir enseigné, selon le titre de l’ouvrage de Chevallard : le schéma relie les savoirs au travail de sélection, de transposition et de planification de l’enseignant.</p>",
+      "hint": "Suis le travail nécessaire avant qu’un contenu puisse être proposé dans une classe.",
+      "source": "SYNTHESE_BP1-18FRA_S1_COURS_01.docx · v08 · partie « 1 Le langage à apprendre est aussi un moyen d’apprendre — Le triangle didactique »\nOriginal : 2026-09-17_BP1-18FRA_Cours_1_support_etudiant.pdf, diapositive 22",
+      "contentRevision": "74c45207ec6c"
+    },
+    {
+      "id": "BP1-18FRA_S1_C01_RECONNAITRE_SAVOIR_SAVANT",
+      "noteId": "BP1-18FRA_S1_C01_RECONNAITRE_SAVOIR_SAVANT",
+      "clozeOrdinal": null,
+      "module": "BP1-18FRA",
+      "course": "C01",
+      "type": "reconnaitre",
+      "parties": [
+        "partie::transversal"
+      ],
+      "priorities": [
+        "prio::examen"
+      ],
+      "questionHtml": "<p>Dans le titre de Chevallard cité par le cours, quel savoir est le point de départ du passage vers le savoir enseigné ?</p>",
+      "answerHtml": "<p>Le savoir savant : le titre présente le passage « Du savoir savant au savoir enseigné ».</p>",
+      "hint": "Replace le titre dans la réflexion sur la préparation d’un contenu à enseigner.",
+      "source": "SYNTHESE_BP1-18FRA_S1_COURS_01.docx · v08 · partie « 1 Le langage à apprendre est aussi un moyen d’apprendre — Le triangle didactique »\nOriginal : 2026-09-17_BP1-18FRA_Cours_1_support_etudiant.pdf, diapositive 22",
+      "contentRevision": "1bca75a889ea"
+    },
+    {
+      "id": "BP1-18FRA_S1_C01_DEFINIR_LANGUE_SCOLARISATION",
+      "noteId": "BP1-18FRA_S1_C01_DEFINIR_LANGUE_SCOLARISATION",
+      "clozeOrdinal": null,
+      "module": "BP1-18FRA",
+      "course": "C01",
+      "type": "definir",
+      "parties": [
+        "partie::transversal"
+      ],
+      "priorities": [
+        "prio::examen",
+        "prio::important"
+      ],
+      "questionHtml": "<p>Qu’est-ce que la langue de scolarisation dans ce cours ?</p>",
+      "answerHtml": "<p>Langue utilisée pour enseigner, apprendre et communiquer à l’école. Elle est objet d’apprentissage dans la discipline français et outil d’apprentissage dans toutes les disciplines (français transversal) ; son poids dans l’évaluation conditionne la réussite scolaire et sociale.</p>",
+      "hint": "Pars d’un élève qui comprend une notion mais peine à l’expliquer en classe.",
+      "source": "SYNTHESE_BP1-18FRA_S1_COURS_01.docx · v08 · partie « 1 Le langage à apprendre est aussi un moyen d’apprendre — Les trois rôles de la langue de scolarisation »\nOriginal : 2026-09-17_BP1-18FRA_Cours_1_support_etudiant.pdf, diapositives 30 et 32 ; 2026-09-17_BP1-18FRA_NOTES_COURS_1.docx, p. 3",
+      "contentRevision": "ad4200b19483"
+    },
+    {
+      "id": "BP1-18FRA_S1_C01_LISTE_ROLES_LANGUE_SCOLARISATION::c1",
+      "noteId": "BP1-18FRA_S1_C01_LISTE_ROLES_LANGUE_SCOLARISATION",
+      "clozeOrdinal": 1,
+      "module": "BP1-18FRA",
+      "course": "C01",
+      "type": "liste",
+      "parties": [
+        "partie::transversal"
+      ],
+      "priorities": [
+        "prio::examen",
+        "prio::important"
+      ],
+      "questionHtml": "<p>Les trois rôles de la langue de scolarisation présentés dans le cours 01 :</p><ol><li><span class=\"blank\">[...]</span></li><li>Outil d’apprentissage</li><li>Poids dans l’évaluation</li></ol>",
+      "answerHtml": "<p class=\"cloze-answer\"><strong>Réponse : Objet d’apprentissage</strong></p><p>Langue utilisée pour enseigner, apprendre et communiquer à l’école. Elle est objet d’apprentissage dans la discipline français et outil d’apprentissage dans toutes les disciplines (français transversal) ; son poids dans l’évaluation conditionne la réussite scolaire et sociale.</p>",
+      "hint": "Repense à une journée de classe et aux différents enjeux du français pour la réussite.",
+      "source": "SYNTHESE_BP1-18FRA_S1_COURS_01.docx · v08 · partie « 1 Le langage à apprendre est aussi un moyen d’apprendre — Les trois rôles de la langue de scolarisation »\nOriginal : 2026-09-17_BP1-18FRA_Cours_1_support_etudiant.pdf, diapositive 32",
+      "contentRevision": "c5e4cb09f072"
+    },
+    {
+      "id": "BP1-18FRA_S1_C01_LISTE_ROLES_LANGUE_SCOLARISATION::c2",
+      "noteId": "BP1-18FRA_S1_C01_LISTE_ROLES_LANGUE_SCOLARISATION",
+      "clozeOrdinal": 2,
+      "module": "BP1-18FRA",
+      "course": "C01",
+      "type": "liste",
+      "parties": [
+        "partie::transversal"
+      ],
+      "priorities": [
+        "prio::examen",
+        "prio::important"
+      ],
+      "questionHtml": "<p>Les trois rôles de la langue de scolarisation présentés dans le cours 01 :</p><ol><li>Objet d’apprentissage</li><li><span class=\"blank\">[...]</span></li><li>Poids dans l’évaluation</li></ol>",
+      "answerHtml": "<p class=\"cloze-answer\"><strong>Réponse : Outil d’apprentissage</strong></p><p>Langue utilisée pour enseigner, apprendre et communiquer à l’école. Elle est objet d’apprentissage dans la discipline français et outil d’apprentissage dans toutes les disciplines (français transversal) ; son poids dans l’évaluation conditionne la réussite scolaire et sociale.</p>",
+      "hint": "Repense à une journée de classe et aux différents enjeux du français pour la réussite.",
+      "source": "SYNTHESE_BP1-18FRA_S1_COURS_01.docx · v08 · partie « 1 Le langage à apprendre est aussi un moyen d’apprendre — Les trois rôles de la langue de scolarisation »\nOriginal : 2026-09-17_BP1-18FRA_Cours_1_support_etudiant.pdf, diapositive 32",
+      "contentRevision": "db957443565c"
+    },
+    {
+      "id": "BP1-18FRA_S1_C01_LISTE_ROLES_LANGUE_SCOLARISATION::c3",
+      "noteId": "BP1-18FRA_S1_C01_LISTE_ROLES_LANGUE_SCOLARISATION",
+      "clozeOrdinal": 3,
+      "module": "BP1-18FRA",
+      "course": "C01",
+      "type": "liste",
+      "parties": [
+        "partie::transversal"
+      ],
+      "priorities": [
+        "prio::examen",
+        "prio::important"
+      ],
+      "questionHtml": "<p>Les trois rôles de la langue de scolarisation présentés dans le cours 01 :</p><ol><li>Objet d’apprentissage</li><li>Outil d’apprentissage</li><li><span class=\"blank\">[...]</span></li></ol>",
+      "answerHtml": "<p class=\"cloze-answer\"><strong>Réponse : Poids dans l’évaluation</strong></p><p>Langue utilisée pour enseigner, apprendre et communiquer à l’école. Elle est objet d’apprentissage dans la discipline français et outil d’apprentissage dans toutes les disciplines (français transversal) ; son poids dans l’évaluation conditionne la réussite scolaire et sociale.</p>",
+      "hint": "Repense à une journée de classe et aux différents enjeux du français pour la réussite.",
+      "source": "SYNTHESE_BP1-18FRA_S1_COURS_01.docx · v08 · partie « 1 Le langage à apprendre est aussi un moyen d’apprendre — Les trois rôles de la langue de scolarisation »\nOriginal : 2026-09-17_BP1-18FRA_Cours_1_support_etudiant.pdf, diapositive 32",
+      "contentRevision": "12c6b347fbe2"
+    },
+    {
+      "id": "BP1-18FRA_S1_C01_DISTINGUER_LANGUE_SCOLAIRE_FAMILIALE",
+      "noteId": "BP1-18FRA_S1_C01_DISTINGUER_LANGUE_SCOLAIRE_FAMILIALE",
+      "clozeOrdinal": null,
+      "module": "BP1-18FRA",
+      "course": "C01",
+      "type": "distinguer",
+      "parties": [
+        "partie::transversal"
+      ],
+      "priorities": [
+        "prio::examen",
+        "prio::important"
+      ],
+      "questionHtml": "<p>Qu’est-ce qui distingue langue de scolarisation et langue familiale ?</p>",
+      "answerHtml": "<p>La langue de scolarisation est utilisée pour enseigner, apprendre et communiquer à l’école ; elle peut différer de la langue familiale. L’enseignant ne peut pas supposer que tous les élèves disposent déjà des mêmes moyens dans cette langue.</p>",
+      "hint": "Imagine l’arrivée à l’école d’un enfant qui utilise une autre langue chez lui.",
+      "source": "SYNTHESE_BP1-18FRA_S1_COURS_01.docx · v08 · partie « 1 Le langage à apprendre est aussi un moyen d’apprendre — L’hétérogénéité comme ressource »\nOriginal : 2026-09-17_BP1-18FRA_Cours_1_support_etudiant.pdf, diapositives 30 et 33 ; 2026-09-17_BP1-18FRA_NOTES_COURS_1.docx",
+      "contentRevision": "98e3e12949ed"
+    },
+    {
+      "id": "BP1-18FRA_S1_C01_DISTINGUER_OBJET_OUTIL_FRANCAIS",
+      "noteId": "BP1-18FRA_S1_C01_DISTINGUER_OBJET_OUTIL_FRANCAIS",
+      "clozeOrdinal": null,
+      "module": "BP1-18FRA",
+      "course": "C01",
+      "type": "distinguer",
+      "parties": [
+        "partie::transversal"
+      ],
+      "priorities": [
+        "prio::examen",
+        "prio::important"
+      ],
+      "questionHtml": "<p>Qu’est-ce qui distingue le français objet d’apprentissage du français outil d’apprentissage ?</p>",
+      "answerHtml": "<p>Il est objet d’apprentissage quand ses usages et son fonctionnement sont étudiés dans la discipline français. Il est outil d’apprentissage quand il permet de comprendre et de construire les savoirs de toutes les disciplines : c’est le français transversal.</p>",
+      "hint": "Compare un travail sur une formulation et son emploi pour comprendre une autre discipline.",
+      "source": "SYNTHESE_BP1-18FRA_S1_COURS_01.docx · v08 · partie « 1 Le langage à apprendre est aussi un moyen d’apprendre — Les trois rôles de la langue de scolarisation »\nOriginal : 2026-09-17_BP1-18FRA_Cours_1_support_etudiant.pdf, diapositive 32",
+      "contentRevision": "94c3d44f4088"
+    },
+    {
+      "id": "BP1-18FRA_S1_C01_LISTE_FINALITES_PER_LANGUES::c1",
+      "noteId": "BP1-18FRA_S1_C01_LISTE_FINALITES_PER_LANGUES",
+      "clozeOrdinal": 1,
+      "module": "BP1-18FRA",
+      "course": "C01",
+      "type": "liste",
+      "parties": [
+        "partie::transversal"
+      ],
+      "priorities": [],
+      "questionHtml": "<p>Les quatre finalités du domaine Langues retenues dans la synthèse du cours 01 :</p><ol><li><span class=\"blank\">[...]</span></li><li>Réfléchir au fonctionnement des langues</li><li>Construire des références culturelles</li><li>Développer des attitudes positives envers les langues</li></ol>",
+      "answerHtml": "<p class=\"cloze-answer\"><strong>Réponse : Communiquer</strong></p><p>Elles se relient dans les activités : raconter une histoire sert la communication et mobilise une référence culturelle ; examiner les mots fait réfléchir à la langue ; accueillir un récit dans une autre langue valorise les ressources des élèves.</p>",
+      "hint": "Examine ce qu’un travail sur les langues apporte au-delà d’une règle correctement appliquée.",
+      "source": "SYNTHESE_BP1-18FRA_S1_COURS_01.docx · v08 · partie « 1 Le langage à apprendre est aussi un moyen d’apprendre — Les trois rôles de la langue de scolarisation »\nOriginal : 01. PER_commentaires généraux_CIIP (2024).pdf, p. 6–7",
+      "contentRevision": "1fa8c4b76f8f"
+    },
+    {
+      "id": "BP1-18FRA_S1_C01_LISTE_FINALITES_PER_LANGUES::c2",
+      "noteId": "BP1-18FRA_S1_C01_LISTE_FINALITES_PER_LANGUES",
+      "clozeOrdinal": 2,
+      "module": "BP1-18FRA",
+      "course": "C01",
+      "type": "liste",
+      "parties": [
+        "partie::transversal"
+      ],
+      "priorities": [],
+      "questionHtml": "<p>Les quatre finalités du domaine Langues retenues dans la synthèse du cours 01 :</p><ol><li>Communiquer</li><li><span class=\"blank\">[...]</span></li><li>Construire des références culturelles</li><li>Développer des attitudes positives envers les langues</li></ol>",
+      "answerHtml": "<p class=\"cloze-answer\"><strong>Réponse : Réfléchir au fonctionnement des langues</strong></p><p>Elles se relient dans les activités : raconter une histoire sert la communication et mobilise une référence culturelle ; examiner les mots fait réfléchir à la langue ; accueillir un récit dans une autre langue valorise les ressources des élèves.</p>",
+      "hint": "Examine ce qu’un travail sur les langues apporte au-delà d’une règle correctement appliquée.",
+      "source": "SYNTHESE_BP1-18FRA_S1_COURS_01.docx · v08 · partie « 1 Le langage à apprendre est aussi un moyen d’apprendre — Les trois rôles de la langue de scolarisation »\nOriginal : 01. PER_commentaires généraux_CIIP (2024).pdf, p. 6–7",
+      "contentRevision": "23c5e7433426"
+    },
+    {
+      "id": "BP1-18FRA_S1_C01_LISTE_FINALITES_PER_LANGUES::c3",
+      "noteId": "BP1-18FRA_S1_C01_LISTE_FINALITES_PER_LANGUES",
+      "clozeOrdinal": 3,
+      "module": "BP1-18FRA",
+      "course": "C01",
+      "type": "liste",
+      "parties": [
+        "partie::transversal"
+      ],
+      "priorities": [],
+      "questionHtml": "<p>Les quatre finalités du domaine Langues retenues dans la synthèse du cours 01 :</p><ol><li>Communiquer</li><li>Réfléchir au fonctionnement des langues</li><li><span class=\"blank\">[...]</span></li><li>Développer des attitudes positives envers les langues</li></ol>",
+      "answerHtml": "<p class=\"cloze-answer\"><strong>Réponse : Construire des références culturelles</strong></p><p>Elles se relient dans les activités : raconter une histoire sert la communication et mobilise une référence culturelle ; examiner les mots fait réfléchir à la langue ; accueillir un récit dans une autre langue valorise les ressources des élèves.</p>",
+      "hint": "Examine ce qu’un travail sur les langues apporte au-delà d’une règle correctement appliquée.",
+      "source": "SYNTHESE_BP1-18FRA_S1_COURS_01.docx · v08 · partie « 1 Le langage à apprendre est aussi un moyen d’apprendre — Les trois rôles de la langue de scolarisation »\nOriginal : 01. PER_commentaires généraux_CIIP (2024).pdf, p. 6–7",
+      "contentRevision": "e8f080ed04e3"
+    },
+    {
+      "id": "BP1-18FRA_S1_C01_LISTE_FINALITES_PER_LANGUES::c4",
+      "noteId": "BP1-18FRA_S1_C01_LISTE_FINALITES_PER_LANGUES",
+      "clozeOrdinal": 4,
+      "module": "BP1-18FRA",
+      "course": "C01",
+      "type": "liste",
+      "parties": [
+        "partie::transversal"
+      ],
+      "priorities": [],
+      "questionHtml": "<p>Les quatre finalités du domaine Langues retenues dans la synthèse du cours 01 :</p><ol><li>Communiquer</li><li>Réfléchir au fonctionnement des langues</li><li>Construire des références culturelles</li><li><span class=\"blank\">[...]</span></li></ol>",
+      "answerHtml": "<p class=\"cloze-answer\"><strong>Réponse : Développer des attitudes positives envers les langues</strong></p><p>Elles se relient dans les activités : raconter une histoire sert la communication et mobilise une référence culturelle ; examiner les mots fait réfléchir à la langue ; accueillir un récit dans une autre langue valorise les ressources des élèves.</p>",
+      "hint": "Examine ce qu’un travail sur les langues apporte au-delà d’une règle correctement appliquée.",
+      "source": "SYNTHESE_BP1-18FRA_S1_COURS_01.docx · v08 · partie « 1 Le langage à apprendre est aussi un moyen d’apprendre — Les trois rôles de la langue de scolarisation »\nOriginal : 01. PER_commentaires généraux_CIIP (2024).pdf, p. 6–7",
+      "contentRevision": "239b7f0d8371"
+    },
+    {
+      "id": "BP1-18FRA_S1_C01_DEFINIR_APPROCHE_PLURILINGUE",
+      "noteId": "BP1-18FRA_S1_C01_DEFINIR_APPROCHE_PLURILINGUE",
+      "clozeOrdinal": null,
+      "module": "BP1-18FRA",
+      "course": "C01",
+      "type": "definir",
+      "parties": [
+        "partie::transversal"
+      ],
+      "priorities": [
+        "prio::examen"
+      ],
+      "questionHtml": "<p>Qu’est-ce qu’une approche plurilingue dans cette synthèse ?</p>",
+      "answerHtml": "<p>Prendre en compte plusieurs langues et les ressources qu’elles apportent aux apprentissages.</p>",
+      "hint": "Repense à l’accueil d’un récit dans une autre langue de la classe.",
+      "source": "SYNTHESE_BP1-18FRA_S1_COURS_01.docx · v08 · partie « 1 Le langage à apprendre est aussi un moyen d’apprendre — L’hétérogénéité comme ressource »\nOriginal : 2026-09-17_BP1-18FRA_Cours_1_support_etudiant.pdf, diapositives 33–34 ; 01. PER_commentaires généraux_CIIP (2024).pdf, p. 6 et 8",
+      "contentRevision": "960ce771ae2b"
+    },
+    {
+      "id": "BP1-18FRA_S1_C01_DISTINGUER_PLURILINGUISME_ENSEIGNEMENT_LANGUES",
+      "noteId": "BP1-18FRA_S1_C01_DISTINGUER_PLURILINGUISME_ENSEIGNEMENT_LANGUES",
+      "clozeOrdinal": null,
+      "module": "BP1-18FRA",
+      "course": "C01",
+      "type": "distinguer",
+      "parties": [
+        "partie::transversal"
+      ],
+      "priorities": [
+        "prio::examen"
+      ],
+      "questionHtml": "<p>Qu’est-ce qui distingue prendre en compte les ressources plurilingues et enseigner systématiquement toutes les langues de la classe ?</p>",
+      "answerHtml": "<p>L’approche plurilingue prend en compte les langues et les ressources des élèves, et favorise des attitudes positives à leur égard. Cela ne demande pas que toutes fassent l’objet d’un enseignement systématique.</p>",
+      "hint": "Reviens à l’exemple d’un récit accueilli dans une autre langue et à sa fonction dans l’activité.",
+      "source": "SYNTHESE_BP1-18FRA_S1_COURS_01.docx · v08 · partie « 1 Le langage à apprendre est aussi un moyen d’apprendre — L’hétérogénéité comme ressource »\nOriginal : 01. PER_commentaires généraux_CIIP (2024).pdf, p. 6 et 8",
+      "contentRevision": "4258b6f8648d"
+    },
+    {
+      "id": "BP1-18FRA_S1_C01_DEFINIR_HETEROGENEITE",
+      "noteId": "BP1-18FRA_S1_C01_DEFINIR_HETEROGENEITE",
+      "clozeOrdinal": null,
+      "module": "BP1-18FRA",
+      "course": "C01",
+      "type": "definir",
+      "parties": [
+        "partie::transversal"
+      ],
+      "priorities": [
+        "prio::examen",
+        "prio::important"
+      ],
+      "questionHtml": "<p>Qu’est-ce que l’hétérogénéité dans ce cours ?</p>",
+      "answerHtml": "<p>Diversité des ressources et des niveaux de développement des élèves, à considérer aussi comme une ressource.</p>",
+      "hint": "Imagine deux enfants devant la même consigne : que peut-on supposer de leur point de départ ?",
+      "source": "SYNTHESE_BP1-18FRA_S1_COURS_01.docx · v08 · partie « 1 Le langage à apprendre est aussi un moyen d’apprendre — L’hétérogénéité comme ressource »\nOriginal : 2026-09-17_BP1-18FRA_Cours_1_support_etudiant.pdf, diapositive 33 ; 2026-09-17_BP1-18FRA_NOTES_COURS_1.docx, p. 3",
+      "contentRevision": "aa03e6a713e7"
+    },
+    {
+      "id": "BP1-18FRA_S1_C01_APPLIQUER_HETEROGENEITE_RESSOURCES",
+      "noteId": "BP1-18FRA_S1_C01_APPLIQUER_HETEROGENEITE_RESSOURCES",
+      "clozeOrdinal": null,
+      "module": "BP1-18FRA",
+      "course": "C01",
+      "type": "appliquer",
+      "parties": [
+        "partie::transversal"
+      ],
+      "priorities": [
+        "prio::examen",
+        "prio::important"
+      ],
+      "questionHtml": "<p>Dans une classe, les élèves n’ont pas les mêmes langues familiales ni les mêmes moyens de comprendre et de s’exprimer en français. Quelle orientation didactique le cours donne-t-il pour organiser les situations ?</p>",
+      "answerHtml": "<p>Adapter les situations pour soutenir l’accès aux savoirs, tout en considérant la diversité des langues comme une ressource. On ne suppose pas que tous disposent déjà des mêmes moyens en français.</p><p><b>Pour juger ta réponse</b><br>Faire apparaitre l’ajustement de la situation et la valorisation des ressources ; ne pas traiter la diversité seulement comme un manque.</p>",
+      "hint": "Examine ce qu’il faudrait vérifier avant de proposer exactement la même aide à tous.",
+      "source": "SYNTHESE_BP1-18FRA_S1_COURS_01.docx · v08 · partie « 1 Le langage à apprendre est aussi un moyen d’apprendre — L’hétérogénéité comme ressource »\nOriginal : 2026-09-17_BP1-18FRA_Cours_1_support_etudiant.pdf, diapositives 33–34 ; 2026-09-17_BP1-18FRA_NOTES_COURS_1.docx, p. 3",
+      "contentRevision": "70568635bf8c"
+    },
+    {
+      "id": "BP1-18FRA_S1_C01_DISTINGUER_LANGAGE_FONCTIONNEL_SCOLAIRE",
+      "noteId": "BP1-18FRA_S1_C01_DISTINGUER_LANGAGE_FONCTIONNEL_SCOLAIRE",
+      "clozeOrdinal": null,
+      "module": "BP1-18FRA",
+      "course": "C01",
+      "type": "distinguer",
+      "parties": [
+        "partie::transversal",
+        "partie::oral"
+      ],
+      "priorities": [
+        "prio::examen",
+        "prio::important"
+      ],
+      "questionHtml": "<p>Quel écart le cours vise-t-il entre langage fonctionnel et langage scolaire ?</p>",
+      "answerHtml": "<p>Se faire comprendre au quotidien ne suffit pas toujours pour expliquer une démarche, raconter sans montrer ou comprendre une consigne. L’enjeu scolaire est le passage à ces usages, sans laisser d’élèves à la traine.</p>",
+      "hint": "Compare un échange quotidien avec l’explication d’une démarche à quelqu’un qui ne l’a pas vue.",
+      "source": "SYNTHESE_BP1-18FRA_S1_COURS_01.docx · v08 · partie « 1 Le langage à apprendre est aussi un moyen d’apprendre — L’hétérogénéité comme ressource »\nOriginal : 2026-09-17_BP1-18FRA_Cours_1_support_etudiant.pdf, diapositive 41 ; 2026-09-17_BP1-18FRA_NOTES_COURS_1.docx",
+      "contentRevision": "6fb9e5089edf"
+    },
+    {
+      "id": "BP1-18FRA_S1_C01_RELIER_ESSENTIEL_LANGUE_APPRENDRE",
+      "noteId": "BP1-18FRA_S1_C01_RELIER_ESSENTIEL_LANGUE_APPRENDRE",
+      "clozeOrdinal": null,
+      "module": "BP1-18FRA",
+      "course": "C01",
+      "type": "relier",
+      "parties": [
+        "partie::transversal",
+        "partie::oral"
+      ],
+      "priorities": [
+        "prio::examen",
+        "prio::important"
+      ],
+      "questionHtml": "<p>Pourquoi la langue est-elle à la fois à apprendre et nécessaire pour apprendre ?</p>",
+      "answerHtml": "<p>La langue de scolarisation est à apprendre tout en permettant d’accéder aux autres savoirs ; les ressources diverses des élèves demandent donc des situations adaptées. Le triangle didactique relie le savoir à construire, l’activité de l’élève et l’intervention de l’enseignant. L’oral, la lecture et l’écriture se développent en relation.</p><p><b>Pour juger ta réponse</b><br>Relier objet et outil d’apprentissage, accès aux savoirs et ajustement aux ressources de l’élève ; situer l’aide en fonction du savoir visé.</p>",
+      "hint": "Pars d’une difficulté à expliquer un savoir et relie-la aux choix de l’enseignant.",
+      "source": "SYNTHESE_BP1-18FRA_S1_COURS_01.docx · v08 · partie « L’essentiel à retenir — Pourquoi la langue est-elle à la fois à apprendre et nécessaire pour apprendre ? »\nOriginal : 2026-09-17_BP1-18FRA_Cours_1_support_etudiant.pdf, diapositives 7, 22 et 30–34 ; 2026-09-17_BP1-18FRA_NOTES_COURS_1.docx",
+      "contentRevision": "add8b63e4013"
+    },
+    {
+      "id": "BP1-18FRA_S1_C01_DISTINGUER_MODES_ACTIVITES_COMMUNICATION",
+      "noteId": "BP1-18FRA_S1_C01_DISTINGUER_MODES_ACTIVITES_COMMUNICATION",
+      "clozeOrdinal": null,
+      "module": "BP1-18FRA",
+      "course": "C01",
+      "type": "distinguer",
+      "parties": [
+        "partie::oral"
+      ],
+      "priorities": [
+        "prio::examen"
+      ],
+      "questionHtml": "<p>Dans le schéma du cours, quel critère sépare oral/écrit de réception/production ?</p>",
+      "answerHtml": "<p>Oral et écrit distinguent deux modes de communication. La réception consiste à recevoir un message ; la production, à le formuler.</p>",
+      "hint": "Pose deux questions différentes au même message pour éviter de mélanger les axes du schéma.",
+      "source": "SYNTHESE_BP1-18FRA_S1_COURS_01.docx · v08 · partie « 1 Le langage à apprendre est aussi un moyen d’apprendre »\nOriginal : 2026-09-17_BP1-18FRA_Cours_1_support_etudiant.pdf, diapositive 7",
+      "contentRevision": "4661fbbe33d1"
+    },
+    {
+      "id": "BP1-18FRA_S1_C01_LISTE_QUATRE_ACTIVITES::c1",
+      "noteId": "BP1-18FRA_S1_C01_LISTE_QUATRE_ACTIVITES",
+      "clozeOrdinal": 1,
+      "module": "BP1-18FRA",
+      "course": "C01",
+      "type": "liste",
+      "parties": [
+        "partie::oral"
+      ],
+      "priorities": [
+        "prio::examen"
+      ],
+      "questionHtml": "<p>Les quatre activités du schéma du cours 01, dans l’ordre des cases réception orale, réception écrite, production orale, production écrite :</p><ol><li><span class=\"blank\">[...]</span></li><li>Lire</li><li>Parler</li><li>Écrire</li></ol>",
+      "answerHtml": "<p class=\"cloze-answer\"><strong>Réponse : Écouter</strong></p><p>Écouter et lire relèvent de la réception ; parler et écrire, de la production. Ces activités sont interdépendantes au cycle 1. Lire articule décodage et compréhension ; écrire, encodage et production de textes.</p>",
+      "hint": "Croise le canal du message et la place occupée dans l’échange pour retrouver chaque case.",
+      "source": "SYNTHESE_BP1-18FRA_S1_COURS_01.docx · v08 · partie « 1 Le langage à apprendre est aussi un moyen d’apprendre »\nOriginal : 2026-09-17_BP1-18FRA_Cours_1_support_etudiant.pdf, diapositive 7",
+      "contentRevision": "c863c64d2a9c"
+    },
+    {
+      "id": "BP1-18FRA_S1_C01_LISTE_QUATRE_ACTIVITES::c2",
+      "noteId": "BP1-18FRA_S1_C01_LISTE_QUATRE_ACTIVITES",
+      "clozeOrdinal": 2,
+      "module": "BP1-18FRA",
+      "course": "C01",
+      "type": "liste",
+      "parties": [
+        "partie::oral"
+      ],
+      "priorities": [
+        "prio::examen"
+      ],
+      "questionHtml": "<p>Les quatre activités du schéma du cours 01, dans l’ordre des cases réception orale, réception écrite, production orale, production écrite :</p><ol><li>Écouter</li><li><span class=\"blank\">[...]</span></li><li>Parler</li><li>Écrire</li></ol>",
+      "answerHtml": "<p class=\"cloze-answer\"><strong>Réponse : Lire</strong></p><p>Écouter et lire relèvent de la réception ; parler et écrire, de la production. Ces activités sont interdépendantes au cycle 1. Lire articule décodage et compréhension ; écrire, encodage et production de textes.</p>",
+      "hint": "Croise le canal du message et la place occupée dans l’échange pour retrouver chaque case.",
+      "source": "SYNTHESE_BP1-18FRA_S1_COURS_01.docx · v08 · partie « 1 Le langage à apprendre est aussi un moyen d’apprendre »\nOriginal : 2026-09-17_BP1-18FRA_Cours_1_support_etudiant.pdf, diapositive 7",
+      "contentRevision": "ce1147980c41"
+    },
+    {
+      "id": "BP1-18FRA_S1_C01_LISTE_QUATRE_ACTIVITES::c3",
+      "noteId": "BP1-18FRA_S1_C01_LISTE_QUATRE_ACTIVITES",
+      "clozeOrdinal": 3,
+      "module": "BP1-18FRA",
+      "course": "C01",
+      "type": "liste",
+      "parties": [
+        "partie::oral"
+      ],
+      "priorities": [
+        "prio::examen"
+      ],
+      "questionHtml": "<p>Les quatre activités du schéma du cours 01, dans l’ordre des cases réception orale, réception écrite, production orale, production écrite :</p><ol><li>Écouter</li><li>Lire</li><li><span class=\"blank\">[...]</span></li><li>Écrire</li></ol>",
+      "answerHtml": "<p class=\"cloze-answer\"><strong>Réponse : Parler</strong></p><p>Écouter et lire relèvent de la réception ; parler et écrire, de la production. Ces activités sont interdépendantes au cycle 1. Lire articule décodage et compréhension ; écrire, encodage et production de textes.</p>",
+      "hint": "Croise le canal du message et la place occupée dans l’échange pour retrouver chaque case.",
+      "source": "SYNTHESE_BP1-18FRA_S1_COURS_01.docx · v08 · partie « 1 Le langage à apprendre est aussi un moyen d’apprendre »\nOriginal : 2026-09-17_BP1-18FRA_Cours_1_support_etudiant.pdf, diapositive 7",
+      "contentRevision": "8f3e4561de98"
+    },
+    {
+      "id": "BP1-18FRA_S1_C01_LISTE_QUATRE_ACTIVITES::c4",
+      "noteId": "BP1-18FRA_S1_C01_LISTE_QUATRE_ACTIVITES",
+      "clozeOrdinal": 4,
+      "module": "BP1-18FRA",
+      "course": "C01",
+      "type": "liste",
+      "parties": [
+        "partie::oral"
+      ],
+      "priorities": [
+        "prio::examen"
+      ],
+      "questionHtml": "<p>Les quatre activités du schéma du cours 01, dans l’ordre des cases réception orale, réception écrite, production orale, production écrite :</p><ol><li>Écouter</li><li>Lire</li><li>Parler</li><li><span class=\"blank\">[...]</span></li></ol>",
+      "answerHtml": "<p class=\"cloze-answer\"><strong>Réponse : Écrire</strong></p><p>Écouter et lire relèvent de la réception ; parler et écrire, de la production. Ces activités sont interdépendantes au cycle 1. Lire articule décodage et compréhension ; écrire, encodage et production de textes.</p>",
+      "hint": "Croise le canal du message et la place occupée dans l’échange pour retrouver chaque case.",
+      "source": "SYNTHESE_BP1-18FRA_S1_COURS_01.docx · v08 · partie « 1 Le langage à apprendre est aussi un moyen d’apprendre »\nOriginal : 2026-09-17_BP1-18FRA_Cours_1_support_etudiant.pdf, diapositive 7",
+      "contentRevision": "fd98fa7634e5"
+    },
+    {
+      "id": "BP1-18FRA_S1_C01_APPLIQUER_RECEPTION_PRODUCTION_ALBUM",
+      "noteId": "BP1-18FRA_S1_C01_APPLIQUER_RECEPTION_PRODUCTION_ALBUM",
+      "clozeOrdinal": null,
+      "module": "BP1-18FRA",
+      "course": "C01",
+      "type": "appliquer",
+      "parties": [
+        "partie::oral"
+      ],
+      "priorities": [],
+      "questionHtml": "<p>Un élève écoute l’histoire d’un album, puis la raconte. Comment distinguer ses deux activités du point de vue de la réception et de la production ?</p>",
+      "answerHtml": "<p>Écouter l’histoire relève de la réception d’un message ; la raconter relève de la production d’un message. Réception et production peuvent donc se suivre dans une même situation.</p><p><b>Pour juger ta réponse</b><br>Distinguer recevoir et formuler le message, puis relier les deux activités dans la même situation.</p>",
+      "hint": "Suis le trajet du message entre les participants à chacun des deux moments.",
+      "source": "SYNTHESE_BP1-18FRA_S1_COURS_01.docx · v08 · partie « 1 Le langage à apprendre est aussi un moyen d’apprendre »\nOriginal : 2026-09-17_BP1-18FRA_Cours_1_support_etudiant.pdf, diapositive 7",
+      "contentRevision": "27973fb1ec09"
+    },
+    {
+      "id": "BP1-18FRA_S1_C01_DISTINGUER_ORAL_ECRIT_APPRENTISSAGES",
+      "noteId": "BP1-18FRA_S1_C01_DISTINGUER_ORAL_ECRIT_APPRENTISSAGES",
+      "clozeOrdinal": null,
+      "module": "BP1-18FRA",
+      "course": "C01",
+      "type": "distinguer",
+      "parties": [
+        "partie::oral"
+      ],
+      "priorities": [
+        "prio::examen"
+      ],
+      "questionHtml": "<p>Qu’est-ce qui distingue les modes oral et écrit sans en faire des apprentissages séparés au cycle 1 ?</p>",
+      "answerHtml": "<p>Oral et écrit sont deux modes de communication, mais les apprentissages sont interdépendants. Dans une activité autour d’un album, l’élève peut écouter l’histoire puis la raconter ; l’organisation du cours en blocs n’efface pas ces liens.</p>",
+      "hint": "Prends une activité autour d’un album et suis ce que l’enfant y fait successivement.",
+      "source": "SYNTHESE_BP1-18FRA_S1_COURS_01.docx · v08 · partie « 1 Le langage à apprendre est aussi un moyen d’apprendre »\nOriginal : 2026-09-17_BP1-18FRA_Cours_1_support_etudiant.pdf, diapositive 7",
+      "contentRevision": "01548e726642"
+    },
+    {
+      "id": "BP1-18FRA_S1_C01_DEFINIR_LANGAGE",
+      "noteId": "BP1-18FRA_S1_C01_DEFINIR_LANGAGE",
+      "clozeOrdinal": null,
+      "module": "BP1-18FRA",
+      "course": "C01",
+      "type": "definir",
+      "parties": [
+        "partie::oral"
+      ],
+      "priorities": [
+        "prio::examen",
+        "prio::important"
+      ],
+      "questionHtml": "<p>Qu’est-ce que le langage dans le cours ?</p>",
+      "answerHtml": "<p>Le langage est l’activité par laquelle un sujet signifie au moyen d’une langue.</p>",
+      "hint": "Repars de ce que l’enfant cherche à accomplir lorsqu’il raconte, avant d’examiner ses formulations.",
+      "source": "SYNTHESE_BP1-18FRA_S1_COURS_01.docx · v08 · partie « 2 Préciser ce qui se développe dans la parole de l’enfant »\nOriginal : 2026-09-17_BP1-18FRA_Cours_1_support_etudiant.pdf, diapositive 36",
+      "contentRevision": "de1f1181eb42"
+    },
+    {
+      "id": "BP1-18FRA_S1_C01_DEFINIR_LANGUE",
+      "noteId": "BP1-18FRA_S1_C01_DEFINIR_LANGUE",
+      "clozeOrdinal": null,
+      "module": "BP1-18FRA",
+      "course": "C01",
+      "type": "definir",
+      "parties": [
+        "partie::oral"
+      ],
+      "priorities": [
+        "prio::examen",
+        "prio::important"
+      ],
+      "questionHtml": "<p>Qu’est-ce qu’une langue dans le cours ?</p>",
+      "answerHtml": "<p>La langue est le système de signes partagé par une communauté</p>",
+      "hint": "Demande-toi ce qui permet à deux personnes de comprendre des énoncés qu’elles n’ont jamais entendus.",
+      "source": "SYNTHESE_BP1-18FRA_S1_COURS_01.docx · v08 · partie « 2 Préciser ce qui se développe dans la parole de l’enfant »\nOriginal : 2026-09-17_BP1-18FRA_Cours_1_support_etudiant.pdf, diapositive 36",
+      "contentRevision": "b17c3a3439cc"
+    },
+    {
+      "id": "BP1-18FRA_S1_C01_DEFINIR_PAROLE",
+      "noteId": "BP1-18FRA_S1_C01_DEFINIR_PAROLE",
+      "clozeOrdinal": null,
+      "module": "BP1-18FRA",
+      "course": "C01",
+      "type": "definir",
+      "parties": [
+        "partie::oral"
+      ],
+      "priorities": [
+        "prio::examen",
+        "prio::important"
+      ],
+      "questionHtml": "<p>Par rapport à une langue partagée, qu’est-ce que la parole dans le cours ?</p>",
+      "answerHtml": "<p>la parole en est l’utilisation concrète par un individu dans une situation.</p>",
+      "hint": "Reviens à « à le bambi » et au niveau auquel on observe cet énoncé précis.",
+      "source": "SYNTHESE_BP1-18FRA_S1_COURS_01.docx · v08 · partie « 2 Préciser ce qui se développe dans la parole de l’enfant »\nOriginal : 2026-09-17_BP1-18FRA_Cours_1_support_etudiant.pdf, diapositive 36",
+      "contentRevision": "1fdc4949fbee"
+    },
+    {
+      "id": "BP1-18FRA_S1_C01_DISTINGUER_LANGAGE_LANGUE_PAROLE",
+      "noteId": "BP1-18FRA_S1_C01_DISTINGUER_LANGAGE_LANGUE_PAROLE",
+      "clozeOrdinal": null,
+      "module": "BP1-18FRA",
+      "course": "C01",
+      "type": "distinguer",
+      "parties": [
+        "partie::oral"
+      ],
+      "priorities": [
+        "prio::examen",
+        "prio::important"
+      ],
+      "questionHtml": "<p>Quel critère permet de distinguer langage, langue et parole quand on observe un enfant qui raconte ?</p>",
+      "answerHtml": "<p>Le langage est l’activité de signifier ; la langue est le système de signes partagé ; la parole est sa réalisation concrète et individuelle dans une situation. Dans l’échange du chevreuil, raconter mobilise le langage, le français est la langue utilisée et l’énoncé produit est la parole de l’enfant.</p>",
+      "hint": "Regarde la même scène à plusieurs niveaux, sans changer d’exemple entre les termes.",
+      "source": "SYNTHESE_BP1-18FRA_S1_COURS_01.docx · v08 · partie « 2 Préciser ce qui se développe dans la parole de l’enfant »\nOriginal : 2026-09-17_BP1-18FRA_Cours_1_support_etudiant.pdf, diapositives 36 et 62",
+      "contentRevision": "1d475d9265fd"
+    },
+    {
+      "id": "BP1-18FRA_S1_C01_DEFINIR_SAVOIRS_LANGAGIERS",
+      "noteId": "BP1-18FRA_S1_C01_DEFINIR_SAVOIRS_LANGAGIERS",
+      "clozeOrdinal": null,
+      "module": "BP1-18FRA",
+      "course": "C01",
+      "type": "definir",
+      "parties": [
+        "partie::oral"
+      ],
+      "priorities": [
+        "prio::central"
+      ],
+      "questionHtml": "<p>Que sont les savoirs langagiers dans le cours ?</p>",
+      "answerHtml": "<p>Les savoirs langagiers permettent d’accomplir des actes de communication, comme demander ou raconter.</p>",
+      "hint": "Observe ce que l’enfant cherche à obtenir dans l’échange avant de corriger ses phrases.",
+      "source": "SYNTHESE_BP1-18FRA_S1_COURS_01.docx · v08 · partie « 2 Préciser ce qui se développe dans la parole de l’enfant »\nOriginal : 02_Abdelilah-Bauer_2015_Developpement_langage_pp019-037.pdf, p. 20 ; 2026-09-17_BP1-18FRA_Cours_1_support_etudiant.pdf, diapositive 37",
+      "contentRevision": "d2cd3794a316"
+    },
+    {
+      "id": "BP1-18FRA_S1_C01_DEFINIR_SAVOIRS_LINGUISTIQUES",
+      "noteId": "BP1-18FRA_S1_C01_DEFINIR_SAVOIRS_LINGUISTIQUES",
+      "clozeOrdinal": null,
+      "module": "BP1-18FRA",
+      "course": "C01",
+      "type": "definir",
+      "parties": [
+        "partie::oral"
+      ],
+      "priorities": [
+        "prio::central"
+      ],
+      "questionHtml": "<p>Pour exprimer des actes de communication, que sont les savoirs linguistiques ?</p>",
+      "answerHtml": "<p>Les savoirs linguistiques sont les moyens d’exprimer ces actes dans une langue donnée.</p>",
+      "hint": "Reviens aux difficultés rencontrées pour raconter quand le mot nécessaire n’est pas disponible.",
+      "source": "SYNTHESE_BP1-18FRA_S1_COURS_01.docx · v08 · partie « 2 Préciser ce qui se développe dans la parole de l’enfant »\nOriginal : 02_Abdelilah-Bauer_2015_Developpement_langage_pp019-037.pdf, p. 20 ; 2026-09-17_BP1-18FRA_Cours_1_support_etudiant.pdf, diapositive 37",
+      "contentRevision": "3def8b207401"
+    },
+    {
+      "id": "BP1-18FRA_S1_C01_DISTINGUER_LANGAGIERS_LINGUISTIQUES",
+      "noteId": "BP1-18FRA_S1_C01_DISTINGUER_LANGAGIERS_LINGUISTIQUES",
+      "clozeOrdinal": null,
+      "module": "BP1-18FRA",
+      "course": "C01",
+      "type": "distinguer",
+      "parties": [
+        "partie::oral"
+      ],
+      "priorities": [
+        "prio::central"
+      ],
+      "questionHtml": "<p>Quel critère distingue savoirs langagiers et savoirs linguistiques ?</p>",
+      "answerHtml": "<p>Les savoirs langagiers concernent les actes accomplis en communiquant, comme raconter ou nommer ; les savoirs linguistiques sont les moyens de les exprimer dans une langue donnée. Préciser la formulation sert l’acte : ce ne sont pas deux apprentissages séparés.</p>",
+      "hint": "Pars de l’intention de l’enfant, puis examine ce qui lui manque pour la réaliser.",
+      "source": "SYNTHESE_BP1-18FRA_S1_COURS_01.docx · v08 · partie « 2 Préciser ce qui se développe dans la parole de l’enfant »\nOriginal : 02_Abdelilah-Bauer_2015_Developpement_langage_pp019-037.pdf, p. 20 ; 2026-09-17_BP1-18FRA_Cours_1_support_etudiant.pdf, diapositive 37",
+      "contentRevision": "bbe389838aa5"
+    },
+    {
+      "id": "BP1-18FRA_S1_C01_APPLIQUER_ACTE_MOYENS_CHEVREUIL",
+      "noteId": "BP1-18FRA_S1_C01_APPLIQUER_ACTE_MOYENS_CHEVREUIL",
+      "clozeOrdinal": null,
+      "module": "BP1-18FRA",
+      "course": "C01",
+      "type": "appliquer",
+      "parties": [
+        "partie::oral"
+      ],
+      "priorities": [
+        "prio::central"
+      ],
+      "questionHtml": "<p>Un élève raconte une histoire à partir d’un album. Dans la transcription du cours, il dit « à le bambi » ; l’enseignante répond « au chevreuil ouais ». Il reprend « le chevreuil », puis poursuit : « et alors l'apporte au chevreuil ». Comment distinguer ses actes de communication des moyens linguistiques qui les soutiennent ?</p>",
+      "answerHtml": "<p>L’enfant essaie de raconter et de nommer le personnage : ce sont les actes accomplis par le langage. Choisir « chevreuil » et construire « au chevreuil » concernent les moyens linguistiques de cette activité.</p><p><b>Pour juger ta réponse</b><br>Distinguer ce que l’enfant cherche à faire des mots et constructions utilisés ; montrer que les moyens soutiennent l’acte.</p>",
+      "hint": "Sépare l’intention poursuivie dans l’histoire des changements observés dans les énoncés.",
+      "source": "SYNTHESE_BP1-18FRA_S1_COURS_01.docx · v08 · partie « 2 Préciser ce qui se développe dans la parole de l’enfant »\nOriginal : 2026-09-17_BP1-18FRA_Cours_1_support_etudiant.pdf, diapositives 37 et 62 ; 02_Abdelilah-Bauer_2015_Developpement_langage_pp019-037.pdf, p. 20",
+      "contentRevision": "fb1318321467"
+    },
+    {
+      "id": "BP1-18FRA_S1_C01_LISTE_COMPETENCES_LANGAGE::c1",
+      "noteId": "BP1-18FRA_S1_C01_LISTE_COMPETENCES_LANGAGE",
+      "clozeOrdinal": 1,
+      "module": "BP1-18FRA",
+      "course": "C01",
+      "type": "liste",
+      "parties": [
+        "partie::oral"
+      ],
+      "priorities": [
+        "prio::examen"
+      ],
+      "questionHtml": "<p>Les quatre compétences pour observer l’acquisition du langage, dans l’ordre du cours 01 :</p><ol><li><span class=\"blank\">[...]</span></li><li>Lexico-sémantique</li><li>Pragmatique</li><li>Phonologique</li></ol>",
+      "answerHtml": "<p class=\"cloze-answer\"><strong>Réponse : Syntaxique</strong></p><p>La compétence syntaxique concerne la construction grammaticale des énoncés ; la lexico-sémantique, les mots et le sens ; la pragmatique, leur efficacité dans la situation ; la phonologique, la distinction et la production des phonèmes, unités sonores qui distinguent des mots.</p>",
+      "hint": "Reprends un même énoncé et change l’angle sous lequel tu l’examines.",
+      "source": "SYNTHESE_BP1-18FRA_S1_COURS_01.docx · v08 · partie « 2 Préciser ce qui se développe dans la parole de l’enfant — Quatre niveaux pour observer le langage »\nOriginal : 2026-09-17_BP1-18FRA_Cours_1_support_etudiant.pdf, diapositive 38",
+      "contentRevision": "7118652edf09"
+    },
+    {
+      "id": "BP1-18FRA_S1_C01_LISTE_COMPETENCES_LANGAGE::c2",
+      "noteId": "BP1-18FRA_S1_C01_LISTE_COMPETENCES_LANGAGE",
+      "clozeOrdinal": 2,
+      "module": "BP1-18FRA",
+      "course": "C01",
+      "type": "liste",
+      "parties": [
+        "partie::oral"
+      ],
+      "priorities": [
+        "prio::examen"
+      ],
+      "questionHtml": "<p>Les quatre compétences pour observer l’acquisition du langage, dans l’ordre du cours 01 :</p><ol><li>Syntaxique</li><li><span class=\"blank\">[...]</span></li><li>Pragmatique</li><li>Phonologique</li></ol>",
+      "answerHtml": "<p class=\"cloze-answer\"><strong>Réponse : Lexico-sémantique</strong></p><p>La compétence syntaxique concerne la construction grammaticale des énoncés ; la lexico-sémantique, les mots et le sens ; la pragmatique, leur efficacité dans la situation ; la phonologique, la distinction et la production des phonèmes, unités sonores qui distinguent des mots.</p>",
+      "hint": "Reprends un même énoncé et change l’angle sous lequel tu l’examines.",
+      "source": "SYNTHESE_BP1-18FRA_S1_COURS_01.docx · v08 · partie « 2 Préciser ce qui se développe dans la parole de l’enfant — Quatre niveaux pour observer le langage »\nOriginal : 2026-09-17_BP1-18FRA_Cours_1_support_etudiant.pdf, diapositive 38",
+      "contentRevision": "d6dfdbf7fe1c"
+    },
+    {
+      "id": "BP1-18FRA_S1_C01_LISTE_COMPETENCES_LANGAGE::c3",
+      "noteId": "BP1-18FRA_S1_C01_LISTE_COMPETENCES_LANGAGE",
+      "clozeOrdinal": 3,
+      "module": "BP1-18FRA",
+      "course": "C01",
+      "type": "liste",
+      "parties": [
+        "partie::oral"
+      ],
+      "priorities": [
+        "prio::examen"
+      ],
+      "questionHtml": "<p>Les quatre compétences pour observer l’acquisition du langage, dans l’ordre du cours 01 :</p><ol><li>Syntaxique</li><li>Lexico-sémantique</li><li><span class=\"blank\">[...]</span></li><li>Phonologique</li></ol>",
+      "answerHtml": "<p class=\"cloze-answer\"><strong>Réponse : Pragmatique</strong></p><p>La compétence syntaxique concerne la construction grammaticale des énoncés ; la lexico-sémantique, les mots et le sens ; la pragmatique, leur efficacité dans la situation ; la phonologique, la distinction et la production des phonèmes, unités sonores qui distinguent des mots.</p>",
+      "hint": "Reprends un même énoncé et change l’angle sous lequel tu l’examines.",
+      "source": "SYNTHESE_BP1-18FRA_S1_COURS_01.docx · v08 · partie « 2 Préciser ce qui se développe dans la parole de l’enfant — Quatre niveaux pour observer le langage »\nOriginal : 2026-09-17_BP1-18FRA_Cours_1_support_etudiant.pdf, diapositive 38",
+      "contentRevision": "c686fc27933f"
+    },
+    {
+      "id": "BP1-18FRA_S1_C01_LISTE_COMPETENCES_LANGAGE::c4",
+      "noteId": "BP1-18FRA_S1_C01_LISTE_COMPETENCES_LANGAGE",
+      "clozeOrdinal": 4,
+      "module": "BP1-18FRA",
+      "course": "C01",
+      "type": "liste",
+      "parties": [
+        "partie::oral"
+      ],
+      "priorities": [
+        "prio::examen"
+      ],
+      "questionHtml": "<p>Les quatre compétences pour observer l’acquisition du langage, dans l’ordre du cours 01 :</p><ol><li>Syntaxique</li><li>Lexico-sémantique</li><li>Pragmatique</li><li><span class=\"blank\">[...]</span></li></ol>",
+      "answerHtml": "<p class=\"cloze-answer\"><strong>Réponse : Phonologique</strong></p><p>La compétence syntaxique concerne la construction grammaticale des énoncés ; la lexico-sémantique, les mots et le sens ; la pragmatique, leur efficacité dans la situation ; la phonologique, la distinction et la production des phonèmes, unités sonores qui distinguent des mots.</p>",
+      "hint": "Reprends un même énoncé et change l’angle sous lequel tu l’examines.",
+      "source": "SYNTHESE_BP1-18FRA_S1_COURS_01.docx · v08 · partie « 2 Préciser ce qui se développe dans la parole de l’enfant — Quatre niveaux pour observer le langage »\nOriginal : 2026-09-17_BP1-18FRA_Cours_1_support_etudiant.pdf, diapositive 38",
+      "contentRevision": "d66f6fd9db5d"
+    },
+    {
+      "id": "BP1-18FRA_S1_C01_DEFINIR_COMPETENCE_SYNTAXIQUE",
+      "noteId": "BP1-18FRA_S1_C01_DEFINIR_COMPETENCE_SYNTAXIQUE",
+      "clozeOrdinal": null,
+      "module": "BP1-18FRA",
+      "course": "C01",
+      "type": "definir",
+      "parties": [
+        "partie::oral"
+      ],
+      "priorities": [
+        "prio::examen"
+      ],
+      "questionHtml": "<p>Que concerne la compétence syntaxique, dans le cours ?</p>",
+      "answerHtml": "<p>La compétence syntaxique concerne la construction grammaticale des énoncés</p>",
+      "hint": "Reviens au passage de « à le » à « au » et demande-toi ce qu’il modifie.",
+      "source": "SYNTHESE_BP1-18FRA_S1_COURS_01.docx · v08 · partie « 2 Préciser ce qui se développe dans la parole de l’enfant — Quatre niveaux pour observer le langage »\nOriginal : 2026-09-17_BP1-18FRA_Cours_1_support_etudiant.pdf, diapositive 38",
+      "contentRevision": "c5ee748614a4"
+    },
+    {
+      "id": "BP1-18FRA_S1_C01_RECONNAITRE_COMPETENCE_LEXICO_SEMANTIQUE",
+      "noteId": "BP1-18FRA_S1_C01_RECONNAITRE_COMPETENCE_LEXICO_SEMANTIQUE",
+      "clozeOrdinal": null,
+      "module": "BP1-18FRA",
+      "course": "C01",
+      "type": "reconnaitre",
+      "parties": [
+        "partie::oral"
+      ],
+      "priorities": [
+        "prio::examen"
+      ],
+      "questionHtml": "<p>Quelle compétence du cours porte sur le choix des mots, ce à quoi ils renvoient et le sens exprimé ?</p>",
+      "answerHtml": "<p>La compétence lexico-sémantique : elle concerne les mots et le sens ; proposer « chevreuil » précise la désignation de l’animal.</p>",
+      "hint": "Reviens au remplacement de « bambi » par « chevreuil » dans le récit.",
+      "source": "SYNTHESE_BP1-18FRA_S1_COURS_01.docx · v08 · partie « 2 Préciser ce qui se développe dans la parole de l’enfant — Quatre niveaux pour observer le langage »\nOriginal : 2026-09-17_BP1-18FRA_Cours_1_support_etudiant.pdf, diapositives 38 et 62",
+      "contentRevision": "79cedaa286bd"
+    },
+    {
+      "id": "BP1-18FRA_S1_C01_RECONNAITRE_COMPETENCE_PHONOLOGIQUE",
+      "noteId": "BP1-18FRA_S1_C01_RECONNAITRE_COMPETENCE_PHONOLOGIQUE",
+      "clozeOrdinal": null,
+      "module": "BP1-18FRA",
+      "course": "C01",
+      "type": "reconnaitre",
+      "parties": [
+        "partie::oral"
+      ],
+      "priorities": [
+        "prio::examen"
+      ],
+      "questionHtml": "<p>Quelle compétence du cours permet de distinguer et de produire les unités sonores qui différencient des mots ?</p>",
+      "answerHtml": "<p>La compétence phonologique : elle porte sur la distinction et la production des phonèmes.</p>",
+      "hint": "Fais entendre « poule » puis « boule » sans regarder leur écriture.",
+      "source": "SYNTHESE_BP1-18FRA_S1_COURS_01.docx · v08 · partie « 2 Préciser ce qui se développe dans la parole de l’enfant — Quatre niveaux pour observer le langage »\nOriginal : 2026-09-17_BP1-18FRA_Cours_1_support_etudiant.pdf, diapositive 38 ; 02_Abdelilah-Bauer_2015_Developpement_langage_pp019-037.pdf, p. 21",
+      "contentRevision": "c5de8c9c5db8"
+    },
+    {
+      "id": "BP1-18FRA_S1_C01_APPLIQUER_PHONEME_POULE_BOULE",
+      "noteId": "BP1-18FRA_S1_C01_APPLIQUER_PHONEME_POULE_BOULE",
+      "clozeOrdinal": null,
+      "module": "BP1-18FRA",
+      "course": "C01",
+      "type": "appliquer",
+      "parties": [
+        "partie::oral"
+      ],
+      "priorities": [
+        "prio::examen"
+      ],
+      "questionHtml": "<p>Dans l’exemple de la synthèse, changer le son initial de « poule » en celui de « boule » change le mot. Quelle notion permet de décrire le changement ?</p>",
+      "answerHtml": "<p>Un changement de phonème : ces unités sonores permettent de distinguer des mots.</p><p><b>Pour juger ta réponse</b><br>Relier le changement de son au changement de mot ; ne pas décrire seulement les lettres écrites.</p>",
+      "hint": "Prononce les deux mots et isole précisément le contraste entendu.",
+      "source": "SYNTHESE_BP1-18FRA_S1_COURS_01.docx · v08 · partie « 2 Préciser ce qui se développe dans la parole de l’enfant — Quatre niveaux pour observer le langage »\nOriginal : 02_Abdelilah-Bauer_2015_Developpement_langage_pp019-037.pdf, p. 21 ; 2026-09-17_BP1-18FRA_Cours_1_support_etudiant.pdf, diapositive 38",
+      "contentRevision": "3ddc46d2ff34"
+    },
+    {
+      "id": "BP1-18FRA_S1_C01_RECONNAITRE_COMPETENCE_PRAGMATIQUE",
+      "noteId": "BP1-18FRA_S1_C01_RECONNAITRE_COMPETENCE_PRAGMATIQUE",
+      "clozeOrdinal": null,
+      "module": "BP1-18FRA",
+      "course": "C01",
+      "type": "reconnaitre",
+      "parties": [
+        "partie::oral"
+      ],
+      "priorities": [
+        "prio::examen"
+      ],
+      "questionHtml": "<p>Quelle compétence du cours permet d’examiner si un message est efficace pour un interlocuteur dans une situation donnée ?</p>",
+      "answerHtml": "<p>La compétence pragmatique : elle concerne l’efficacité de la communication dans la situation. Dire de quel animal on parle aide un auditeur qui ne voit pas l’image.</p>",
+      "hint": "Imagine que l’auditeur ne voie pas l’image dont l’enfant parle.",
+      "source": "SYNTHESE_BP1-18FRA_S1_COURS_01.docx · v08 · partie « 2 Préciser ce qui se développe dans la parole de l’enfant — Quatre niveaux pour observer le langage »\nOriginal : 2026-09-17_BP1-18FRA_Cours_1_support_etudiant.pdf, diapositive 38",
+      "contentRevision": "5c606f15c500"
+    },
+    {
+      "id": "BP1-18FRA_S1_C01_DISTINGUER_COMPETENCES_STADES",
+      "noteId": "BP1-18FRA_S1_C01_DISTINGUER_COMPETENCES_STADES",
+      "clozeOrdinal": null,
+      "module": "BP1-18FRA",
+      "course": "C01",
+      "type": "distinguer",
+      "parties": [
+        "partie::oral"
+      ],
+      "priorities": [
+        "prio::examen"
+      ],
+      "questionHtml": "<p>Qu’est-ce qui distingue les quatre compétences d’observation du langage de stades successifs du développement ?</p>",
+      "answerHtml": "<p>Ce sont des dimensions pour préciser une difficulté ou une aide, et non des stades successifs. Plusieurs peuvent intervenir dans un même énoncé : « au chevreuil » change le mot et la construction.</p>",
+      "hint": "Examine ce qu’on peut relever dans un seul énoncé produit à un instant donné.",
+      "source": "SYNTHESE_BP1-18FRA_S1_COURS_01.docx · v08 · partie « 2 Préciser ce qui se développe dans la parole de l’enfant — Quatre niveaux pour observer le langage »\nOriginal : 2026-09-17_BP1-18FRA_Cours_1_support_etudiant.pdf, diapositives 38 et 62",
+      "contentRevision": "5a756b5acbb4"
+    },
+    {
+      "id": "BP1-18FRA_S1_C01_RELIER_ESSENTIEL_OBSERVER_PAROLE",
+      "noteId": "BP1-18FRA_S1_C01_RELIER_ESSENTIEL_OBSERVER_PAROLE",
+      "clozeOrdinal": null,
+      "module": "BP1-18FRA",
+      "course": "C01",
+      "type": "relier",
+      "parties": [
+        "partie::oral"
+      ],
+      "priorities": [
+        "prio::examen",
+        "prio::central",
+        "prio::important"
+      ],
+      "questionHtml": "<p>Que faut-il distinguer lorsqu’on observe la parole d’un enfant ?</p>",
+      "answerHtml": "<p>Langage, langue et parole distinguent l’activité de signifier, le système partagé et l’énoncé individuel. Les savoirs langagiers concernent les actes accomplis ; les savoirs linguistiques en fournissent les moyens. Les quatre compétences permettent ensuite de préciser la difficulté ou l’aide dans l’échange.</p><p><b>Pour juger ta réponse</b><br>Articuler les niveaux d’observation, les actes et leurs moyens, puis la fonction des compétences pour analyser la difficulté ou l’aide.</p>",
+      "hint": "Utilise le chevreuil pour organiser ton observation, de l’activité globale aux difficultés précises.",
+      "source": "SYNTHESE_BP1-18FRA_S1_COURS_01.docx · v08 · partie « L’essentiel à retenir — Que faut-il distinguer lorsqu’on observe la parole d’un enfant ? »\nOriginal : 2026-09-17_BP1-18FRA_Cours_1_support_etudiant.pdf, diapositives 36–38 ; 02_Abdelilah-Bauer_2015_Developpement_langage_pp019-037.pdf, p. 20–21",
+      "contentRevision": "75e86bd3dfd1"
+    },
+    {
+      "id": "BP1-18FRA_S1_C01_LISTE_APPROCHES_DEVELOPPEMENT::c1",
+      "noteId": "BP1-18FRA_S1_C01_LISTE_APPROCHES_DEVELOPPEMENT",
+      "clozeOrdinal": 1,
+      "module": "BP1-18FRA",
+      "course": "C01",
+      "type": "liste",
+      "parties": [
+        "partie::oral"
+      ],
+      "priorities": [
+        "prio::examen",
+        "prio::important"
+      ],
+      "questionHtml": "<p>Les cinq approches du développement du langage, dans l’ordre du plan du cours 01 :</p><ol><li><span class=\"blank\">[...]</span></li><li>innéiste</li><li>constructiviste</li><li>historico-culturelle</li><li>interactionniste</li></ol>",
+      "answerHtml": "<p class=\"cloze-answer\"><strong>Réponse : behavioriste</strong></p><p>Behavioriste : imitation et renforcement par le milieu (conditionnement opérant), cerveau envisagé comme une table rase (tabula rasa).</p><p>Innéiste : dispositions innées, capacités universelles et dispositif d’acquisition du langage (LAD) rendent l’acquisition possible.</p><p>Constructiviste : le développement cognitif en stades détermine le verbal ; abstraction et décentration dépassent le cas concret et le point de vue propre.</p><p>Historico-culturelle : le langage participe à la construction de la pensée dans les relations sociales, par médiation de l’adulte (socioconstructivisme).</p><p>Interactionniste : relation, étayage et formats d’interaction soutiennent des stratégies verbales et non verbales pour communiquer (perspective pragmatique).</p>",
+      "hint": "Recompose les réponses concurrentes à la question : d’où viennent les progrès de l’enfant ?",
+      "source": "SYNTHESE_BP1-18FRA_S1_COURS_01.docx · v08 · partie « 3 Expliquer comment le langage se développe »\nOriginal : 2026-09-17_BP1-18FRA_Cours_1_support_etudiant.pdf, diapositives 16 et 42–53",
+      "contentRevision": "ae9cbe0e6798"
+    },
+    {
+      "id": "BP1-18FRA_S1_C01_LISTE_APPROCHES_DEVELOPPEMENT::c2",
+      "noteId": "BP1-18FRA_S1_C01_LISTE_APPROCHES_DEVELOPPEMENT",
+      "clozeOrdinal": 2,
+      "module": "BP1-18FRA",
+      "course": "C01",
+      "type": "liste",
+      "parties": [
+        "partie::oral"
+      ],
+      "priorities": [
+        "prio::examen",
+        "prio::important"
+      ],
+      "questionHtml": "<p>Les cinq approches du développement du langage, dans l’ordre du plan du cours 01 :</p><ol><li>behavioriste</li><li><span class=\"blank\">[...]</span></li><li>constructiviste</li><li>historico-culturelle</li><li>interactionniste</li></ol>",
+      "answerHtml": "<p class=\"cloze-answer\"><strong>Réponse : innéiste</strong></p><p>Behavioriste : imitation et renforcement par le milieu (conditionnement opérant), cerveau envisagé comme une table rase (tabula rasa).</p><p>Innéiste : dispositions innées, capacités universelles et dispositif d’acquisition du langage (LAD) rendent l’acquisition possible.</p><p>Constructiviste : le développement cognitif en stades détermine le verbal ; abstraction et décentration dépassent le cas concret et le point de vue propre.</p><p>Historico-culturelle : le langage participe à la construction de la pensée dans les relations sociales, par médiation de l’adulte (socioconstructivisme).</p><p>Interactionniste : relation, étayage et formats d’interaction soutiennent des stratégies verbales et non verbales pour communiquer (perspective pragmatique).</p>",
+      "hint": "Recompose les réponses concurrentes à la question : d’où viennent les progrès de l’enfant ?",
+      "source": "SYNTHESE_BP1-18FRA_S1_COURS_01.docx · v08 · partie « 3 Expliquer comment le langage se développe »\nOriginal : 2026-09-17_BP1-18FRA_Cours_1_support_etudiant.pdf, diapositives 16 et 42–53",
+      "contentRevision": "6ac28b7137f7"
+    },
+    {
+      "id": "BP1-18FRA_S1_C01_LISTE_APPROCHES_DEVELOPPEMENT::c3",
+      "noteId": "BP1-18FRA_S1_C01_LISTE_APPROCHES_DEVELOPPEMENT",
+      "clozeOrdinal": 3,
+      "module": "BP1-18FRA",
+      "course": "C01",
+      "type": "liste",
+      "parties": [
+        "partie::oral"
+      ],
+      "priorities": [
+        "prio::examen",
+        "prio::important"
+      ],
+      "questionHtml": "<p>Les cinq approches du développement du langage, dans l’ordre du plan du cours 01 :</p><ol><li>behavioriste</li><li>innéiste</li><li><span class=\"blank\">[...]</span></li><li>historico-culturelle</li><li>interactionniste</li></ol>",
+      "answerHtml": "<p class=\"cloze-answer\"><strong>Réponse : constructiviste</strong></p><p>Behavioriste : imitation et renforcement par le milieu (conditionnement opérant), cerveau envisagé comme une table rase (tabula rasa).</p><p>Innéiste : dispositions innées, capacités universelles et dispositif d’acquisition du langage (LAD) rendent l’acquisition possible.</p><p>Constructiviste : le développement cognitif en stades détermine le verbal ; abstraction et décentration dépassent le cas concret et le point de vue propre.</p><p>Historico-culturelle : le langage participe à la construction de la pensée dans les relations sociales, par médiation de l’adulte (socioconstructivisme).</p><p>Interactionniste : relation, étayage et formats d’interaction soutiennent des stratégies verbales et non verbales pour communiquer (perspective pragmatique).</p>",
+      "hint": "Recompose les réponses concurrentes à la question : d’où viennent les progrès de l’enfant ?",
+      "source": "SYNTHESE_BP1-18FRA_S1_COURS_01.docx · v08 · partie « 3 Expliquer comment le langage se développe »\nOriginal : 2026-09-17_BP1-18FRA_Cours_1_support_etudiant.pdf, diapositives 16 et 42–53",
+      "contentRevision": "83d61167992b"
+    },
+    {
+      "id": "BP1-18FRA_S1_C01_LISTE_APPROCHES_DEVELOPPEMENT::c4",
+      "noteId": "BP1-18FRA_S1_C01_LISTE_APPROCHES_DEVELOPPEMENT",
+      "clozeOrdinal": 4,
+      "module": "BP1-18FRA",
+      "course": "C01",
+      "type": "liste",
+      "parties": [
+        "partie::oral"
+      ],
+      "priorities": [
+        "prio::examen",
+        "prio::important"
+      ],
+      "questionHtml": "<p>Les cinq approches du développement du langage, dans l’ordre du plan du cours 01 :</p><ol><li>behavioriste</li><li>innéiste</li><li>constructiviste</li><li><span class=\"blank\">[...]</span></li><li>interactionniste</li></ol>",
+      "answerHtml": "<p class=\"cloze-answer\"><strong>Réponse : historico-culturelle</strong></p><p>Behavioriste : imitation et renforcement par le milieu (conditionnement opérant), cerveau envisagé comme une table rase (tabula rasa).</p><p>Innéiste : dispositions innées, capacités universelles et dispositif d’acquisition du langage (LAD) rendent l’acquisition possible.</p><p>Constructiviste : le développement cognitif en stades détermine le verbal ; abstraction et décentration dépassent le cas concret et le point de vue propre.</p><p>Historico-culturelle : le langage participe à la construction de la pensée dans les relations sociales, par médiation de l’adulte (socioconstructivisme).</p><p>Interactionniste : relation, étayage et formats d’interaction soutiennent des stratégies verbales et non verbales pour communiquer (perspective pragmatique).</p>",
+      "hint": "Recompose les réponses concurrentes à la question : d’où viennent les progrès de l’enfant ?",
+      "source": "SYNTHESE_BP1-18FRA_S1_COURS_01.docx · v08 · partie « 3 Expliquer comment le langage se développe »\nOriginal : 2026-09-17_BP1-18FRA_Cours_1_support_etudiant.pdf, diapositives 16 et 42–53",
+      "contentRevision": "d87efc263475"
+    },
+    {
+      "id": "BP1-18FRA_S1_C01_LISTE_APPROCHES_DEVELOPPEMENT::c5",
+      "noteId": "BP1-18FRA_S1_C01_LISTE_APPROCHES_DEVELOPPEMENT",
+      "clozeOrdinal": 5,
+      "module": "BP1-18FRA",
+      "course": "C01",
+      "type": "liste",
+      "parties": [
+        "partie::oral"
+      ],
+      "priorities": [
+        "prio::examen",
+        "prio::important"
+      ],
+      "questionHtml": "<p>Les cinq approches du développement du langage, dans l’ordre du plan du cours 01 :</p><ol><li>behavioriste</li><li>innéiste</li><li>constructiviste</li><li>historico-culturelle</li><li><span class=\"blank\">[...]</span></li></ol>",
+      "answerHtml": "<p class=\"cloze-answer\"><strong>Réponse : interactionniste</strong></p><p>Behavioriste : imitation et renforcement par le milieu (conditionnement opérant), cerveau envisagé comme une table rase (tabula rasa).</p><p>Innéiste : dispositions innées, capacités universelles et dispositif d’acquisition du langage (LAD) rendent l’acquisition possible.</p><p>Constructiviste : le développement cognitif en stades détermine le verbal ; abstraction et décentration dépassent le cas concret et le point de vue propre.</p><p>Historico-culturelle : le langage participe à la construction de la pensée dans les relations sociales, par médiation de l’adulte (socioconstructivisme).</p><p>Interactionniste : relation, étayage et formats d’interaction soutiennent des stratégies verbales et non verbales pour communiquer (perspective pragmatique).</p>",
+      "hint": "Recompose les réponses concurrentes à la question : d’où viennent les progrès de l’enfant ?",
+      "source": "SYNTHESE_BP1-18FRA_S1_COURS_01.docx · v08 · partie « 3 Expliquer comment le langage se développe »\nOriginal : 2026-09-17_BP1-18FRA_Cours_1_support_etudiant.pdf, diapositives 16 et 42–53",
+      "contentRevision": "be5e0c3130c0"
+    },
+    {
+      "id": "BP1-18FRA_S1_C01_DEFINIR_APPROCHE_BEHAVIORISTE",
+      "noteId": "BP1-18FRA_S1_C01_DEFINIR_APPROCHE_BEHAVIORISTE",
+      "clozeOrdinal": null,
+      "module": "BP1-18FRA",
+      "course": "C01",
+      "type": "definir",
+      "parties": [
+        "partie::oral"
+      ],
+      "priorities": [
+        "prio::examen",
+        "prio::important"
+      ],
+      "questionHtml": "<p>Que désigne l’approche behavioriste du développement du langage dans ce cours ?</p>",
+      "answerHtml": "<p>Behavioriste : imitation et renforcement par le milieu (conditionnement opérant), cerveau envisagé comme une table rase (tabula rasa).</p>",
+      "hint": "Observe la succession d’une production de l’enfant et de la réaction de son entourage.",
+      "source": "SYNTHESE_BP1-18FRA_S1_COURS_01.docx · v08 · partie « 3 Expliquer comment le langage se développe »\nOriginal : 2026-09-17_BP1-18FRA_Cours_1_support_etudiant.pdf, diapositive 46",
+      "contentRevision": "f8ee823bd165"
+    },
+    {
+      "id": "BP1-18FRA_S1_C01_DEFINIR_APPROCHE_INNEISTE",
+      "noteId": "BP1-18FRA_S1_C01_DEFINIR_APPROCHE_INNEISTE",
+      "clozeOrdinal": null,
+      "module": "BP1-18FRA",
+      "course": "C01",
+      "type": "definir",
+      "parties": [
+        "partie::oral"
+      ],
+      "priorities": [
+        "prio::examen",
+        "prio::important"
+      ],
+      "questionHtml": "<p>Que désigne l’approche innéiste du développement du langage dans ce cours ?</p>",
+      "answerHtml": "<p>Innéiste : dispositions innées, capacités universelles et dispositif d’acquisition du langage (LAD) rendent l’acquisition possible.</p>",
+      "hint": "Interroge ce que le modèle suppose avant même de décrire les échanges du bébé.",
+      "source": "SYNTHESE_BP1-18FRA_S1_COURS_01.docx · v08 · partie « 3 Expliquer comment le langage se développe »\nOriginal : 2026-09-17_BP1-18FRA_Cours_1_support_etudiant.pdf, diapositive 47",
+      "contentRevision": "2e50b5d7da61"
+    },
+    {
+      "id": "BP1-18FRA_S1_C01_DEFINIR_APPROCHE_CONSTRUCTIVISTE",
+      "noteId": "BP1-18FRA_S1_C01_DEFINIR_APPROCHE_CONSTRUCTIVISTE",
+      "clozeOrdinal": null,
+      "module": "BP1-18FRA",
+      "course": "C01",
+      "type": "definir",
+      "parties": [
+        "partie::oral"
+      ],
+      "priorities": [
+        "prio::examen",
+        "prio::important"
+      ],
+      "questionHtml": "<p>Que désigne l’approche constructiviste du développement du langage dans ce cours ?</p>",
+      "answerHtml": "<p>Constructiviste : le développement cognitif en stades détermine le verbal ; abstraction et décentration dépassent le cas concret et le point de vue propre.</p>",
+      "hint": "Reviens au problème de raconter une scène à quelqu’un qui ne voit pas l’image.",
+      "source": "SYNTHESE_BP1-18FRA_S1_COURS_01.docx · v08 · partie « 3 Expliquer comment le langage se développe »\nOriginal : 2026-09-17_BP1-18FRA_Cours_1_support_etudiant.pdf, diapositive 49",
+      "contentRevision": "30001ab62cda"
+    },
+    {
+      "id": "BP1-18FRA_S1_C01_DEFINIR_APPROCHE_HISTORICO_CULTURELLE",
+      "noteId": "BP1-18FRA_S1_C01_DEFINIR_APPROCHE_HISTORICO_CULTURELLE",
+      "clozeOrdinal": null,
+      "module": "BP1-18FRA",
+      "course": "C01",
+      "type": "definir",
+      "parties": [
+        "partie::oral"
+      ],
+      "priorities": [
+        "prio::examen",
+        "prio::important"
+      ],
+      "questionHtml": "<p>Que désigne l’approche historico-culturelle du développement du langage dans ce cours ?</p>",
+      "answerHtml": "<p>Historico-culturelle : le langage participe à la construction de la pensée dans les relations sociales, par médiation de l’adulte (socioconstructivisme).</p>",
+      "hint": "Imagine les questions d’un adulte qui aident l’enfant à organiser les évènements d’un récit.",
+      "source": "SYNTHESE_BP1-18FRA_S1_COURS_01.docx · v08 · partie « 3 Expliquer comment le langage se développe »\nOriginal : 2026-09-17_BP1-18FRA_Cours_1_support_etudiant.pdf, diapositive 51",
+      "contentRevision": "da541ab03bdd"
+    },
+    {
+      "id": "BP1-18FRA_S1_C01_DEFINIR_APPROCHE_INTERACTIONNISTE",
+      "noteId": "BP1-18FRA_S1_C01_DEFINIR_APPROCHE_INTERACTIONNISTE",
+      "clozeOrdinal": null,
+      "module": "BP1-18FRA",
+      "course": "C01",
+      "type": "definir",
+      "parties": [
+        "partie::oral"
+      ],
+      "priorities": [
+        "prio::examen",
+        "prio::important"
+      ],
+      "questionHtml": "<p>Que désigne l’approche interactionniste du développement du langage dans ce cours ?</p>",
+      "answerHtml": "<p>Interactionniste : relation, étayage et formats d’interaction soutiennent des stratégies verbales et non verbales pour communiquer (perspective pragmatique).</p>",
+      "hint": "Repense aux échanges réguliers autour d’un album et à la place prise progressivement par l’enfant.",
+      "source": "SYNTHESE_BP1-18FRA_S1_COURS_01.docx · v08 · partie « 3 Expliquer comment le langage se développe »\nOriginal : 2026-09-17_BP1-18FRA_Cours_1_support_etudiant.pdf, diapositive 53",
+      "contentRevision": "96d48fe14fc6"
+    },
+    {
+      "id": "BP1-18FRA_S1_C01_RECONNAITRE_APPROCHE_BEHAVIORISTE",
+      "noteId": "BP1-18FRA_S1_C01_RECONNAITRE_APPROCHE_BEHAVIORISTE",
+      "clozeOrdinal": null,
+      "module": "BP1-18FRA",
+      "course": "C01",
+      "type": "reconnaitre",
+      "parties": [
+        "partie::oral"
+      ],
+      "priorities": [
+        "prio::examen",
+        "prio::important"
+      ],
+      "questionHtml": "<p>Quelle approche du cours cherche les réponses aux stimulations du milieu, l’imitation et les réactions qui renforcent une réponse ?</p>",
+      "answerHtml": "<p>L’approche behavioriste, associée à Skinner : le milieu, l’imitation et le renforcement orientent l’apprentissage.</p>",
+      "hint": "Situe cette explication dans la comparaison des facteurs retenus pour expliquer les progrès de l’enfant.",
+      "source": "SYNTHESE_BP1-18FRA_S1_COURS_01.docx · v08 · partie « 3 Expliquer comment le langage se développe »\nOriginal : 2026-09-17_BP1-18FRA_Cours_1_support_etudiant.pdf, diapositive 46",
+      "contentRevision": "6fd68f0eb22c"
+    },
+    {
+      "id": "BP1-18FRA_S1_C01_RECONNAITRE_APPROCHE_INNEISTE",
+      "noteId": "BP1-18FRA_S1_C01_RECONNAITRE_APPROCHE_INNEISTE",
+      "clozeOrdinal": null,
+      "module": "BP1-18FRA",
+      "course": "C01",
+      "type": "reconnaitre",
+      "parties": [
+        "partie::oral"
+      ],
+      "priorities": [
+        "prio::examen",
+        "prio::important"
+      ],
+      "questionHtml": "<p>Quelle approche du cours explique les possibilités d’acquisition par des dispositions présentes dès la naissance et un dispositif propre à l’enfant ?</p>",
+      "answerHtml": "<p>L’approche innéiste, associée à Chomsky : dispositions innées, LAD et capacités universelles rendent l’acquisition possible.</p>",
+      "hint": "Compare les explications du développement avant de chercher le nom de celle-ci.",
+      "source": "SYNTHESE_BP1-18FRA_S1_COURS_01.docx · v08 · partie « 3 Expliquer comment le langage se développe »\nOriginal : 2026-09-17_BP1-18FRA_Cours_1_support_etudiant.pdf, diapositive 47",
+      "contentRevision": "63d1fef47a21"
+    },
+    {
+      "id": "BP1-18FRA_S1_C01_RECONNAITRE_APPROCHE_CONSTRUCTIVISTE",
+      "noteId": "BP1-18FRA_S1_C01_RECONNAITRE_APPROCHE_CONSTRUCTIVISTE",
+      "clozeOrdinal": null,
+      "module": "BP1-18FRA",
+      "course": "C01",
+      "type": "reconnaitre",
+      "parties": [
+        "partie::oral"
+      ],
+      "priorities": [
+        "prio::examen",
+        "prio::important"
+      ],
+      "questionHtml": "<p>Quelle approche du cours donne la priorité au développement cognitif pour expliquer le développement verbal ?</p>",
+      "answerHtml": "<p>L’approche constructiviste de Piaget : le développement cognitif détermine le développement verbal.</p>",
+      "hint": "Reprends la comparaison des liens entre pensée et langage, puis situe l’explication proposée.",
+      "source": "SYNTHESE_BP1-18FRA_S1_COURS_01.docx · v08 · partie « 3 Expliquer comment le langage se développe »\nOriginal : 2026-09-17_BP1-18FRA_Cours_1_support_etudiant.pdf, diapositive 49",
+      "contentRevision": "46c28effe1df"
+    },
+    {
+      "id": "BP1-18FRA_S1_C01_RECONNAITRE_APPROCHE_HISTORICO_CULTURELLE",
+      "noteId": "BP1-18FRA_S1_C01_RECONNAITRE_APPROCHE_HISTORICO_CULTURELLE",
+      "clozeOrdinal": null,
+      "module": "BP1-18FRA",
+      "course": "C01",
+      "type": "reconnaitre",
+      "parties": [
+        "partie::oral"
+      ],
+      "priorities": [
+        "prio::examen",
+        "prio::important"
+      ],
+      "questionHtml": "<p>Quelle approche du cours examine le rôle du langage et des relations sociales dans la construction de la pensée ?</p>",
+      "answerHtml": "<p>L’approche historico-culturelle de Vygotski : le langage participe à la construction de la pensée, avec la médiation de l’adulte.</p>",
+      "hint": "Reviens au cas où des questions aident l’enfant à organiser les évènements.",
+      "source": "SYNTHESE_BP1-18FRA_S1_COURS_01.docx · v08 · partie « 3 Expliquer comment le langage se développe »\nOriginal : 2026-09-17_BP1-18FRA_Cours_1_support_etudiant.pdf, diapositive 51",
+      "contentRevision": "b3cf4b2cf8c1"
+    },
+    {
+      "id": "BP1-18FRA_S1_C01_RECONNAITRE_APPROCHE_INTERACTIONNISTE",
+      "noteId": "BP1-18FRA_S1_C01_RECONNAITRE_APPROCHE_INTERACTIONNISTE",
+      "clozeOrdinal": null,
+      "module": "BP1-18FRA",
+      "course": "C01",
+      "type": "reconnaitre",
+      "parties": [
+        "partie::oral"
+      ],
+      "priorities": [
+        "prio::examen",
+        "prio::important"
+      ],
+      "questionHtml": "<p>Quelle approche du cours examine le soutien de la participation de l’enfant dans la relation, notamment par des échanges prévisibles ?</p>",
+      "answerHtml": "<p>L’approche interactionniste de Bruner : l’adulte soutient la participation par l’étayage et les formats d’interaction.</p>",
+      "hint": "Repense à une activité répétée autour d’un album et à son déroulement entre partenaires.",
+      "source": "SYNTHESE_BP1-18FRA_S1_COURS_01.docx · v08 · partie « 3 Expliquer comment le langage se développe »\nOriginal : 2026-09-17_BP1-18FRA_Cours_1_support_etudiant.pdf, diapositive 53",
+      "contentRevision": "e11d6ced3e87"
+    },
+    {
+      "id": "BP1-18FRA_S1_C01_RECONNAITRE_TABULA_RASA",
+      "noteId": "BP1-18FRA_S1_C01_RECONNAITRE_TABULA_RASA",
+      "clozeOrdinal": null,
+      "module": "BP1-18FRA",
+      "course": "C01",
+      "type": "reconnaitre",
+      "parties": [
+        "partie::oral"
+      ],
+      "priorities": [
+        "prio::examen",
+        "prio::important"
+      ],
+      "questionHtml": "<p>Quel terme de l’approche behavioriste du cours désigne une « table rase » ?</p>",
+      "answerHtml": "<p>Tabula rasa : cette expression souligne le poids accordé à l’environnement dans cette approche.</p>",
+      "hint": "Replace cette hypothèse dans la comparaison des explications du développement.",
+      "source": "SYNTHESE_BP1-18FRA_S1_COURS_01.docx · v08 · partie « 3 Expliquer comment le langage se développe »\nOriginal : 2026-09-17_BP1-18FRA_Cours_1_support_etudiant.pdf, diapositive 46",
+      "contentRevision": "502a86770f15"
+    },
+    {
+      "id": "BP1-18FRA_S1_C01_RECONNAITRE_IMITATION",
+      "noteId": "BP1-18FRA_S1_C01_RECONNAITRE_IMITATION",
+      "clozeOrdinal": null,
+      "module": "BP1-18FRA",
+      "course": "C01",
+      "type": "reconnaitre",
+      "parties": [
+        "partie::oral"
+      ],
+      "priorities": [
+        "prio::examen",
+        "prio::important"
+      ],
+      "questionHtml": "<p>Dans l’approche behavioriste du cours, quel mécanisme consiste à apprendre en reproduisant un modèle ?</p>",
+      "answerHtml": "<p>L’imitation, un des mécanismes par lesquels le milieu oriente l’apprentissage dans cette approche.</p>",
+      "hint": "Repense aux mécanismes attribués au milieu dans la comparaison des approches.",
+      "source": "SYNTHESE_BP1-18FRA_S1_COURS_01.docx · v08 · partie « 3 Expliquer comment le langage se développe »\nOriginal : 2026-09-17_BP1-18FRA_Cours_1_support_etudiant.pdf, diapositive 46",
+      "contentRevision": "2131ce974137"
+    },
+    {
+      "id": "BP1-18FRA_S1_C01_RECONNAITRE_RENFORCEMENT",
+      "noteId": "BP1-18FRA_S1_C01_RECONNAITRE_RENFORCEMENT",
+      "clozeOrdinal": null,
+      "module": "BP1-18FRA",
+      "course": "C01",
+      "type": "reconnaitre",
+      "parties": [
+        "partie::oral"
+      ],
+      "priorities": [
+        "prio::examen",
+        "prio::important"
+      ],
+      "questionHtml": "<p>Dans l’approche behavioriste du cours, comment nomme-t-on ce qui rend une réponse plus susceptible d’être reproduite après une réaction de l’entourage ?</p>",
+      "answerHtml": "<p>Le renforcement : une réponse renforcée a davantage de chances d’être reproduite.</p>",
+      "hint": "Examine la succession des évènements autour d’une production de l’enfant.",
+      "source": "SYNTHESE_BP1-18FRA_S1_COURS_01.docx · v08 · partie « 3 Expliquer comment le langage se développe »\nOriginal : 2026-09-17_BP1-18FRA_Cours_1_support_etudiant.pdf, diapositive 46",
+      "contentRevision": "93f90da4bdde"
+    },
+    {
+      "id": "BP1-18FRA_S1_C01_EXPLIQUER_CONDITIONNEMENT_OPERANT",
+      "noteId": "BP1-18FRA_S1_C01_EXPLIQUER_CONDITIONNEMENT_OPERANT",
+      "clozeOrdinal": null,
+      "module": "BP1-18FRA",
+      "course": "C01",
+      "type": "expliquer",
+      "parties": [
+        "partie::oral"
+      ],
+      "priorities": [
+        "prio::examen",
+        "prio::important"
+      ],
+      "questionHtml": "<p>Comment le conditionnement opérant explique-t-il l’effet des réactions de l’entourage sur l’apprentissage du langage, dans le cours ?</p>",
+      "answerHtml": "<p>Une réponse renforcée a davantage de chances d’être reproduite : les réactions de l’entourage orientent ainsi l’apprentissage.</p><p><b>Pour juger ta réponse</b><br>Relier la réponse, son renforcement et sa probabilité de reproduction ; ne pas s’arrêter à la simple présence du milieu.</p>",
+      "hint": "Suis une production, la réaction qui vient ensuite, puis les occasions où elle réapparait.",
+      "source": "SYNTHESE_BP1-18FRA_S1_COURS_01.docx · v08 · partie « 3 Expliquer comment le langage se développe »\nOriginal : 2026-09-17_BP1-18FRA_Cours_1_support_etudiant.pdf, diapositive 46",
+      "contentRevision": "00be700679b0"
+    },
+    {
+      "id": "BP1-18FRA_S1_C01_RECONNAITRE_DISPOSITION_INNEE",
+      "noteId": "BP1-18FRA_S1_C01_RECONNAITRE_DISPOSITION_INNEE",
+      "clozeOrdinal": null,
+      "module": "BP1-18FRA",
+      "course": "C01",
+      "type": "reconnaitre",
+      "parties": [
+        "partie::oral"
+      ],
+      "priorities": [
+        "prio::examen",
+        "prio::important"
+      ],
+      "questionHtml": "<p>Dans l’approche innéiste du cours, comment appelle-t-on une possibilité d’acquisition présente dès la naissance ?</p>",
+      "answerHtml": "<p>Une disposition innée : elle fait partie des possibilités propres à l’enfant qui rendent l’acquisition du langage possible.</p>",
+      "hint": "Replace la notion dans les hypothèses qui cherchent à expliquer l’entrée dans le langage.",
+      "source": "SYNTHESE_BP1-18FRA_S1_COURS_01.docx · v08 · partie « 3 Expliquer comment le langage se développe »\nOriginal : 2026-09-17_BP1-18FRA_Cours_1_support_etudiant.pdf, diapositive 47",
+      "contentRevision": "8c1310022bc0"
+    },
+    {
+      "id": "BP1-18FRA_S1_C01_FAIT_SIGNIFICATION_LAD",
+      "noteId": "BP1-18FRA_S1_C01_FAIT_SIGNIFICATION_LAD",
+      "clozeOrdinal": null,
+      "module": "BP1-18FRA",
+      "course": "C01",
+      "type": "fait",
+      "parties": [
+        "partie::oral"
+      ],
+      "priorities": [
+        "prio::examen",
+        "prio::important"
+      ],
+      "questionHtml": "<p>Dans le modèle innéiste du cours, que désigne le sigle LAD ?</p>",
+      "answerHtml": "<p>Le dispositif d’acquisition du langage (Language Acquisition Device).</p>",
+      "hint": "Rappelle-toi ce que le modèle cherche à rendre possible chez l’enfant.",
+      "source": "SYNTHESE_BP1-18FRA_S1_COURS_01.docx · v08 · partie « 3 Expliquer comment le langage se développe »\nOriginal : 2026-09-17_BP1-18FRA_Cours_1_support_etudiant.pdf, diapositive 47",
+      "contentRevision": "fa464c631ca3"
+    },
+    {
+      "id": "BP1-18FRA_S1_C01_RECONNAITRE_ABSTRACTION",
+      "noteId": "BP1-18FRA_S1_C01_RECONNAITRE_ABSTRACTION",
+      "clozeOrdinal": null,
+      "module": "BP1-18FRA",
+      "course": "C01",
+      "type": "reconnaitre",
+      "parties": [
+        "partie::oral"
+      ],
+      "priorities": [
+        "prio::examen",
+        "prio::important"
+      ],
+      "questionHtml": "<p>Dans la présentation de Piaget, quelle capacité permet de se détacher d’un cas concret ?</p>",
+      "answerHtml": "<p>L’abstraction : elle permet de se détacher d’un cas concret.</p>",
+      "hint": "Reviens au lien que Piaget établit entre ce que l’enfant peut se représenter et ce qu’il peut dire.",
+      "source": "SYNTHESE_BP1-18FRA_S1_COURS_01.docx · v08 · partie « 3 Expliquer comment le langage se développe »\nOriginal : 2026-09-17_BP1-18FRA_Cours_1_support_etudiant.pdf, diapositive 49",
+      "contentRevision": "929cfc7dcd04"
+    },
+    {
+      "id": "BP1-18FRA_S1_C01_RECONNAITRE_DECENTRATION",
+      "noteId": "BP1-18FRA_S1_C01_RECONNAITRE_DECENTRATION",
+      "clozeOrdinal": null,
+      "module": "BP1-18FRA",
+      "course": "C01",
+      "type": "reconnaitre",
+      "parties": [
+        "partie::oral"
+      ],
+      "priorities": [
+        "prio::examen",
+        "prio::important"
+      ],
+      "questionHtml": "<p>Dans la présentation de Piaget, quelle capacité permet de dépasser son seul point de vue pour tenir compte de ce que l’autre ignore ?</p>",
+      "answerHtml": "<p>La décentration : elle permet de dépasser son seul point de vue.</p>",
+      "hint": "Imagine un enfant qui doit raconter à un auditeur absent lors des évènements.",
+      "source": "SYNTHESE_BP1-18FRA_S1_COURS_01.docx · v08 · partie « 3 Expliquer comment le langage se développe »\nOriginal : 2026-09-17_BP1-18FRA_Cours_1_support_etudiant.pdf, diapositive 49",
+      "contentRevision": "f6c68d62fb7f"
+    },
+    {
+      "id": "BP1-18FRA_S1_C01_DISTINGUER_ABSTRACTION_DECENTRATION",
+      "noteId": "BP1-18FRA_S1_C01_DISTINGUER_ABSTRACTION_DECENTRATION",
+      "clozeOrdinal": null,
+      "module": "BP1-18FRA",
+      "course": "C01",
+      "type": "distinguer",
+      "parties": [
+        "partie::oral"
+      ],
+      "priorities": [
+        "prio::examen",
+        "prio::important"
+      ],
+      "questionHtml": "<p>Quel critère distingue abstraction et décentration dans la présentation de Piaget par la synthèse ?</p>",
+      "answerHtml": "<p>L’abstraction permet de se détacher d’un cas concret ; la décentration permet de dépasser son seul point de vue.</p>",
+      "hint": "Utilise la scène à expliquer à un auditeur absent pour examiner deux exigences différentes.",
+      "source": "SYNTHESE_BP1-18FRA_S1_COURS_01.docx · v08 · partie « 3 Expliquer comment le langage se développe »\nOriginal : 2026-09-17_BP1-18FRA_Cours_1_support_etudiant.pdf, diapositive 49",
+      "contentRevision": "2ecd3b25e3e9"
+    },
+    {
+      "id": "BP1-18FRA_S1_C01_RECONNAITRE_SOCIOCONSTRUCTIVISME",
+      "noteId": "BP1-18FRA_S1_C01_RECONNAITRE_SOCIOCONSTRUCTIVISME",
+      "clozeOrdinal": null,
+      "module": "BP1-18FRA",
+      "course": "C01",
+      "type": "reconnaitre",
+      "parties": [
+        "partie::oral"
+      ],
+      "priorities": [
+        "prio::examen",
+        "prio::important"
+      ],
+      "questionHtml": "<p>Quel terme associé à l’approche historico-culturelle met l’accent sur la construction des capacités par les interactions et la médiation ?</p>",
+      "answerHtml": "<p>Le socioconstructivisme : les interactions et la médiation participent à la construction des capacités.</p>",
+      "hint": "Replace le terme dans la comparaison entre les explications de Piaget et de Vygotski.",
+      "source": "SYNTHESE_BP1-18FRA_S1_COURS_01.docx · v08 · partie « 3 Expliquer comment le langage se développe »\nOriginal : 2026-09-17_BP1-18FRA_Cours_1_support_etudiant.pdf, diapositive 51 ; 2026-09-17_BP1-18FRA_NOTES_COURS_1.docx",
+      "contentRevision": "55417b3d8b8c"
+    },
+    {
+      "id": "BP1-18FRA_S1_C01_DISTINGUER_PIAGET_VYGOTSKI",
+      "noteId": "BP1-18FRA_S1_C01_DISTINGUER_PIAGET_VYGOTSKI",
+      "clozeOrdinal": null,
+      "module": "BP1-18FRA",
+      "course": "C01",
+      "type": "distinguer",
+      "parties": [
+        "partie::oral"
+      ],
+      "priorities": [
+        "prio::examen",
+        "prio::important"
+      ],
+      "questionHtml": "<p>Quelle différence décisive le cours établit-il entre Piaget et Vygotski sur les liens entre pensée et langage ?</p>",
+      "answerHtml": "<p>Pour Piaget, le développement cognitif détermine le développement verbal. Pour Vygotski, le langage participe à la construction de la pensée, notamment dans la résolution de problèmes avec autrui.</p>",
+      "hint": "Dessine une flèche entre pensée et langage pour chaque auteur, puis justifie son sens.",
+      "source": "SYNTHESE_BP1-18FRA_S1_COURS_01.docx · v08 · partie « 3 Expliquer comment le langage se développe — Comprendre les liens entre pensée et langage »\nOriginal : 2026-09-17_BP1-18FRA_Cours_1_support_etudiant.pdf, diapositives 49 et 51",
+      "contentRevision": "e767efb71f97"
+    },
+    {
+      "id": "BP1-18FRA_S1_C01_DISTINGUER_APPROCHES_STADES",
+      "noteId": "BP1-18FRA_S1_C01_DISTINGUER_APPROCHES_STADES",
+      "clozeOrdinal": null,
+      "module": "BP1-18FRA",
+      "course": "C01",
+      "type": "distinguer",
+      "parties": [
+        "partie::oral"
+      ],
+      "priorities": [
+        "prio::examen",
+        "prio::important"
+      ],
+      "questionHtml": "<p>Qu’est-ce qui distingue les cinq approches du langage d’étapes successives qui se remplaceraient ?</p>",
+      "answerHtml": "<p>Les approches donnent des explications différentes du développement ; elles ne sont pas des étapes successives. Leurs notions peuvent éclairer une même situation sans répondre à la même question.</p>",
+      "hint": "Demande-toi si les explications peuvent éclairer la même scène au même moment.",
+      "source": "SYNTHESE_BP1-18FRA_S1_COURS_01.docx · v08 · partie « 3 Expliquer comment le langage se développe — Comprendre les liens entre pensée et langage »\nOriginal : 2026-09-17_BP1-18FRA_Cours_1_support_etudiant.pdf, diapositives 42–53 ; 2026-09-17_BP1-18FRA_NOTES_COURS_1.docx",
+      "contentRevision": "c2508b31e257"
+    },
+    {
+      "id": "BP1-18FRA_S1_C01_APPLIQUER_PREMIERS_ECHANGES",
+      "noteId": "BP1-18FRA_S1_C01_APPLIQUER_PREMIERS_ECHANGES",
+      "clozeOrdinal": null,
+      "module": "BP1-18FRA",
+      "course": "C01",
+      "type": "appliquer",
+      "parties": [
+        "partie::oral"
+      ],
+      "priorities": [
+        "prio::examen",
+        "prio::important"
+      ],
+      "questionHtml": "<p>Un bébé vocalise ; l’adulte lui répond puis lui laisse une place pour répondre à nouveau. Avec les repères de Bruner donnés dans la synthèse, quels indices permettent d’examiner le soutien de sa participation ?</p>",
+      "answerHtml": "<p>Relever l’enchainement des manifestations des deux partenaires : l’adulte reprend une manifestation de l’enfant et lui laisse une place pour répondre. Ce soutien de la participation s’interprète avec Bruner.</p><p><b>Pour juger ta réponse</b><br>Appuyer l’interprétation sur l’alternance des manifestations et sur la place laissée à l’enfant pour répondre.</p>",
+      "hint": "Suis chaque manifestation et ce qui vient juste après, sans sauter directement à l’interprétation.",
+      "source": "SYNTHESE_BP1-18FRA_S1_COURS_01.docx · v08 · partie « 3 Expliquer comment le langage se développe — Observer les premiers échanges »\nOriginal : 2026-09-17_BP1-18FRA_Cours_1_support_etudiant.pdf, diapositives 44, 53 et 56",
+      "contentRevision": "53ed543dda49"
+    },
+    {
+      "id": "BP1-18FRA_S1_C01_RELIER_ESSENTIEL_APPROCHES",
+      "noteId": "BP1-18FRA_S1_C01_RELIER_ESSENTIEL_APPROCHES",
+      "clozeOrdinal": null,
+      "module": "BP1-18FRA",
+      "course": "C01",
+      "type": "relier",
+      "parties": [
+        "partie::oral"
+      ],
+      "priorities": [
+        "prio::examen",
+        "prio::important"
+      ],
+      "questionHtml": "<p>Comment les approches expliquent-elles le développement du langage ?</p>",
+      "answerHtml": "<p>Le behaviorisme privilégie le milieu, l’imitation et le renforcement ; l’innéisme, les dispositions de l’enfant ; le constructivisme, le développement cognitif. Vygotski examine le rôle du langage et des relations sociales dans la construction de la pensée ; Bruner, le soutien de l’adulte dans l’interaction. Aucune approche ne suffit à tout expliquer ; les notes privilégient pour enseigner les perspectives socioconstructiviste et interactionniste.</p><p><b>Pour juger ta réponse</b><br>Comparer ce que chaque approche considère comme déterminant, puis relier les perspectives retenues pour enseigner aux relations et aux aides possibles.</p>",
+      "hint": "Compare ce que chaque explication examinerait dans une même scène, puis ses conséquences pour enseigner.",
+      "source": "SYNTHESE_BP1-18FRA_S1_COURS_01.docx · v08 · partie « L’essentiel à retenir — Comment les approches expliquent-elles le développement du langage ? »\nOriginal : 2026-09-17_BP1-18FRA_Cours_1_support_etudiant.pdf, diapositives 42–53 ; 2026-09-17_BP1-18FRA_NOTES_COURS_1.docx, p. 3",
+      "contentRevision": "6c100985f135"
+    },
+    {
+      "id": "BP1-18FRA_S1_C01_DEFINIR_ZPD",
+      "noteId": "BP1-18FRA_S1_C01_DEFINIR_ZPD",
+      "clozeOrdinal": null,
+      "module": "BP1-18FRA",
+      "course": "C01",
+      "type": "definir",
+      "parties": [
+        "partie::oral"
+      ],
+      "priorities": [
+        "prio::examen"
+      ],
+      "questionHtml": "<p>Qu’est-ce que la zone proximale de développement (ZPD) ?</p>",
+      "answerHtml": "<p>Écart entre ce que l’enfant résout seul (niveau actuel) et avec de l’aide (niveau potentiel).</p>",
+      "hint": "Reprends le récit d’album raconté dans des conditions différentes et garde la tâche identique.",
+      "source": "SYNTHESE_BP1-18FRA_S1_COURS_01.docx · v08 · partie « 4 Soutenir l’activité puis en transférer la responsabilité — La zone proximale de développement »\nOriginal : 2026-09-17_BP1-18FRA_Cours_1_support_etudiant.pdf, diapositives 51–52",
+      "contentRevision": "d950ee3a4415"
+    },
+    {
+      "id": "BP1-18FRA_S1_C01_LISTE_NIVEAUX_ZPD::c1",
+      "noteId": "BP1-18FRA_S1_C01_LISTE_NIVEAUX_ZPD",
+      "clozeOrdinal": 1,
+      "module": "BP1-18FRA",
+      "course": "C01",
+      "type": "liste",
+      "parties": [
+        "partie::oral"
+      ],
+      "priorities": [
+        "prio::examen"
+      ],
+      "questionHtml": "<p>Les deux niveaux mis en relation par la ZPD, dans l’ordre du cours :</p><ol><li><span class=\"blank\">[...]</span></li><li>Niveau potentiel</li></ol>",
+      "answerHtml": "<p class=\"cloze-answer\"><strong>Réponse : Niveau actuel</strong></p><p>Écart entre ce que l’enfant résout seul (niveau actuel) et avec de l’aide (niveau potentiel).</p>",
+      "hint": "Garde la tâche identique et fais varier les conditions de sa réalisation.",
+      "source": "SYNTHESE_BP1-18FRA_S1_COURS_01.docx · v08 · partie « 4 Soutenir l’activité puis en transférer la responsabilité — La zone proximale de développement »\nOriginal : 2026-09-17_BP1-18FRA_Cours_1_support_etudiant.pdf, diapositive 52",
+      "contentRevision": "bc0d591f1e29"
+    },
+    {
+      "id": "BP1-18FRA_S1_C01_LISTE_NIVEAUX_ZPD::c2",
+      "noteId": "BP1-18FRA_S1_C01_LISTE_NIVEAUX_ZPD",
+      "clozeOrdinal": 2,
+      "module": "BP1-18FRA",
+      "course": "C01",
+      "type": "liste",
+      "parties": [
+        "partie::oral"
+      ],
+      "priorities": [
+        "prio::examen"
+      ],
+      "questionHtml": "<p>Les deux niveaux mis en relation par la ZPD, dans l’ordre du cours :</p><ol><li>Niveau actuel</li><li><span class=\"blank\">[...]</span></li></ol>",
+      "answerHtml": "<p class=\"cloze-answer\"><strong>Réponse : Niveau potentiel</strong></p><p>Écart entre ce que l’enfant résout seul (niveau actuel) et avec de l’aide (niveau potentiel).</p>",
+      "hint": "Garde la tâche identique et fais varier les conditions de sa réalisation.",
+      "source": "SYNTHESE_BP1-18FRA_S1_COURS_01.docx · v08 · partie « 4 Soutenir l’activité puis en transférer la responsabilité — La zone proximale de développement »\nOriginal : 2026-09-17_BP1-18FRA_Cours_1_support_etudiant.pdf, diapositive 52",
+      "contentRevision": "70f6791bd0fa"
+    },
+    {
+      "id": "BP1-18FRA_S1_C01_DISTINGUER_ZPD_ETAYAGE",
+      "noteId": "BP1-18FRA_S1_C01_DISTINGUER_ZPD_ETAYAGE",
+      "clozeOrdinal": null,
+      "module": "BP1-18FRA",
+      "course": "C01",
+      "type": "distinguer",
+      "parties": [
+        "partie::oral"
+      ],
+      "priorities": [
+        "prio::examen"
+      ],
+      "questionHtml": "<p>Quel critère distingue ZPD et étayage ?</p>",
+      "answerHtml": "<p>La ZPD situe l’écart entre ce que l’enfant réussit seul et avec de l’aide ; l’étayage désigne les interventions qui soutiennent son activité. Les possibilités ouvertes par l’aide et l’aide elle-même se relient sans être synonymes.</p>",
+      "hint": "Demande-toi ce que chaque notion permet de décrire dans le récit d’album.",
+      "source": "SYNTHESE_BP1-18FRA_S1_COURS_01.docx · v08 · partie « 4 Soutenir l’activité puis en transférer la responsabilité »\nOriginal : 2026-09-17_BP1-18FRA_Cours_1_support_etudiant.pdf, diapositives 52–54",
+      "contentRevision": "2df7511c8713"
+    },
+    {
+      "id": "BP1-18FRA_S1_C01_DISTINGUER_REUSSITE_ACCOMPAGNEE_AUTONOME",
+      "noteId": "BP1-18FRA_S1_C01_DISTINGUER_REUSSITE_ACCOMPAGNEE_AUTONOME",
+      "clozeOrdinal": null,
+      "module": "BP1-18FRA",
+      "course": "C01",
+      "type": "distinguer",
+      "parties": [
+        "partie::oral"
+      ],
+      "priorities": [
+        "prio::examen"
+      ],
+      "questionHtml": "<p>Qu’est-ce qui distingue une réussite accompagnée d’une acquisition autonome ?</p>",
+      "answerHtml": "<p>La réussite accompagnée se réalise avec l’aide d’autrui ; l’acquisition autonome suppose que l’enfant puisse prendre l’activité en charge lui-même. Une réussite accompagnée n’est pas encore un acquis autonome.</p>",
+      "hint": "Vérifie dans quelles conditions la même activité peut être reproduite une autre fois.",
+      "source": "SYNTHESE_BP1-18FRA_S1_COURS_01.docx · v08 · partie « 4 Soutenir l’activité puis en transférer la responsabilité »\nOriginal : 2026-09-17_BP1-18FRA_Cours_1_support_etudiant.pdf, diapositives 52 et 58 ; 2026-09-17_BP1-18FRA_NOTES_COURS_1.docx",
+      "contentRevision": "317c2d721939"
+    },
+    {
+      "id": "BP1-18FRA_S1_C01_APPLIQUER_ZPD_RECIT_ALBUM",
+      "noteId": "BP1-18FRA_S1_C01_APPLIQUER_ZPD_RECIT_ALBUM",
+      "clozeOrdinal": null,
+      "module": "BP1-18FRA",
+      "course": "C01",
+      "type": "appliquer",
+      "parties": [
+        "partie::oral"
+      ],
+      "priorities": [
+        "prio::examen"
+      ],
+      "questionHtml": "<p>Seul, un enfant nomme les personnages d’un album sans relier leurs actions. Avec les questions « Que se passe-t-il d’abord ? » et « Pourquoi part-il ? », il raconte leur enchainement. Que permet de situer cette comparaison ?</p>",
+      "answerHtml": "<p>Elle situe sa ZPD pour cette tâche : l’écart entre ce qu’il réussit seul et ce qu’il réussit avec une aide.</p><p><b>Pour juger ta réponse</b><br>Comparer les deux réussites pour la même tâche ; ne pas confondre la réussite obtenue avec les questions et une acquisition autonome.</p>",
+      "hint": "Garde le récit comme référence commune et examine ce qui varie entre les deux essais.",
+      "source": "SYNTHESE_BP1-18FRA_S1_COURS_01.docx · v08 · partie « 4 Soutenir l’activité puis en transférer la responsabilité — La zone proximale de développement »\nOriginal : 2026-09-17_BP1-18FRA_Cours_1_support_etudiant.pdf, diapositive 52",
+      "contentRevision": "5806cb99e7b1"
+    },
+    {
+      "id": "BP1-18FRA_S1_C01_DEFINIR_ETAYAGE",
+      "noteId": "BP1-18FRA_S1_C01_DEFINIR_ETAYAGE",
+      "clozeOrdinal": null,
+      "module": "BP1-18FRA",
+      "course": "C01",
+      "type": "definir",
+      "parties": [
+        "partie::oral"
+      ],
+      "priorities": [
+        "prio::examen"
+      ],
+      "questionHtml": "<p>Qu’est-ce que l’étayage, ou interaction de tutelle, dans le cours ?</p>",
+      "answerHtml": "<p>L’adulte assume la part encore difficile de la tâche, puis transfère progressivement la responsabilité à l’enfant.</p>",
+      "hint": "Suis la répartition du travail au fil de plusieurs échanges autour d’un album.",
+      "source": "SYNTHESE_BP1-18FRA_S1_COURS_01.docx · v08 · partie « 4 Soutenir l’activité puis en transférer la responsabilité — Ce que fait l’adulte dans l’étayage »\nOriginal : 2026-09-17_BP1-18FRA_Cours_1_support_etudiant.pdf, diapositives 54 et 58 ; 2026-09-17_BP1-18FRA_NOTES_COURS_1.docx",
+      "contentRevision": "e2b5246ef727"
+    },
+    {
+      "id": "BP1-18FRA_S1_C01_DISTINGUER_ETAYAGE_EXTREMES",
+      "noteId": "BP1-18FRA_S1_C01_DISTINGUER_ETAYAGE_EXTREMES",
+      "clozeOrdinal": null,
+      "module": "BP1-18FRA",
+      "course": "C01",
+      "type": "distinguer",
+      "parties": [
+        "partie::oral"
+      ],
+      "priorities": [
+        "prio::examen"
+      ],
+      "questionHtml": "<p>Quel critère distingue l’étayage du fait de faire toute la tâche à la place de l’enfant ou de le laisser seul face à la difficulté ?</p>",
+      "answerHtml": "<p>L’adulte assume la part encore difficile pour que l’enfant participe, puis transfère progressivement la responsabilité. L’aide vise une prise en charge croissante de l’activité par l’enfant.</p>",
+      "hint": "Observe ce que l’enfant peut effectivement faire pendant l’échange et comment cela évolue.",
+      "source": "SYNTHESE_BP1-18FRA_S1_COURS_01.docx · v08 · partie « 4 Soutenir l’activité puis en transférer la responsabilité — Ce que fait l’adulte dans l’étayage »\nOriginal : 2026-09-17_BP1-18FRA_Cours_1_support_etudiant.pdf, diapositives 54 et 58 ; 2026-09-17_BP1-18FRA_NOTES_COURS_1.docx",
+      "contentRevision": "bbd7e141c33a"
+    },
+    {
+      "id": "BP1-18FRA_S1_C01_DEFINIR_MEDIATION_ADULTE",
+      "noteId": "BP1-18FRA_S1_C01_DEFINIR_MEDIATION_ADULTE",
+      "clozeOrdinal": null,
+      "module": "BP1-18FRA",
+      "course": "C01",
+      "type": "definir",
+      "parties": [
+        "partie::oral"
+      ],
+      "priorities": [
+        "prio::examen"
+      ],
+      "questionHtml": "<p>Qu’est-ce que la médiation de l’adulte dans ce cours ?</p>",
+      "answerHtml": "<p>Intervention de l’adulte pour soutenir l’activité de l’enfant et son accès au savoir.</p>",
+      "hint": "Repars des questions posées pendant un récit et de leur intérêt pour l’activité en cours.",
+      "source": "SYNTHESE_BP1-18FRA_S1_COURS_01.docx · v08 · partie « 3 Expliquer comment le langage se développe — Comprendre les liens entre pensée et langage »\nOriginal : 2026-09-17_BP1-18FRA_Cours_1_support_etudiant.pdf, diapositive 51",
+      "contentRevision": "deae20a97667"
+    },
+    {
+      "id": "BP1-18FRA_S1_C01_DISTINGUER_MEDIATION_ADULTE_DIDACTIQUE",
+      "noteId": "BP1-18FRA_S1_C01_DISTINGUER_MEDIATION_ADULTE_DIDACTIQUE",
+      "clozeOrdinal": null,
+      "module": "BP1-18FRA",
+      "course": "C01",
+      "type": "distinguer",
+      "parties": [
+        "partie::transversal",
+        "partie::oral"
+      ],
+      "priorities": [
+        "prio::examen"
+      ],
+      "questionHtml": "<p>Comment distinguer la médiation de l’adulte traitée ici de la médiation didactique nommée dans le cadre du module ?</p>",
+      "answerHtml": "<p>Ici, la médiation de l’adulte est son intervention pour soutenir l’activité et l’accès au savoir. Le cadre nomme la médiation didactique par le corps, la voix et les objets associés au discours, traitée dans d’autres cours.</p>",
+      "hint": "Vérifie le niveau de description choisi avant de rapprocher les deux emplois du terme.",
+      "source": "SYNTHESE_BP1-18FRA_S1_COURS_01.docx · v08 · partie « 3 Expliquer comment le langage se développe ; Notions à savoir — Médiation de l’adulte »\nOriginal : 2026-09-17_BP1-18FRA_Cours_1_support_etudiant.pdf, diapositive 51 ; 2026-10-01_BP1-18FRA_document-cadre_version_recuperee.pdf, p. 12–13",
+      "contentRevision": "0c7273f26618"
+    },
+    {
+      "id": "BP1-18FRA_S1_C01_DEFINIR_INTERINDIVIDUEL",
+      "noteId": "BP1-18FRA_S1_C01_DEFINIR_INTERINDIVIDUEL",
+      "clozeOrdinal": null,
+      "module": "BP1-18FRA",
+      "course": "C01",
+      "type": "definir",
+      "parties": [
+        "partie::oral"
+      ],
+      "priorities": [
+        "prio::examen"
+      ],
+      "questionHtml": "<p>Que désigne l’interindividuel dans le cours ?</p>",
+      "answerHtml": "<p>Ce qui se réalise d’abord dans la relation entre les personnes</p>",
+      "hint": "Reviens au début de l’activité autour d’un album et à la répartition du travail.",
+      "source": "SYNTHESE_BP1-18FRA_S1_COURS_01.docx · v08 · partie « 4 Soutenir l’activité puis en transférer la responsabilité — Ce que fait l’adulte dans l’étayage »\nOriginal : 2026-09-17_BP1-18FRA_Cours_1_support_etudiant.pdf, diapositive 58",
+      "contentRevision": "c81308a5911b"
+    },
+    {
+      "id": "BP1-18FRA_S1_C01_DEFINIR_INTRAINDIVIDUEL",
+      "noteId": "BP1-18FRA_S1_C01_DEFINIR_INTRAINDIVIDUEL",
+      "clozeOrdinal": null,
+      "module": "BP1-18FRA",
+      "course": "C01",
+      "type": "definir",
+      "parties": [
+        "partie::oral"
+      ],
+      "priorities": [
+        "prio::examen"
+      ],
+      "questionHtml": "<p>Que désigne l’intraindividuel dans le cours ?</p>",
+      "answerHtml": "<p>ce que l’enfant peut ensuite prendre en charge lui-même.</p>",
+      "hint": "Reprends l’activité autour d’un album à un moment où les relances ont diminué.",
+      "source": "SYNTHESE_BP1-18FRA_S1_COURS_01.docx · v08 · partie « 4 Soutenir l’activité puis en transférer la responsabilité — Ce que fait l’adulte dans l’étayage »\nOriginal : 2026-09-17_BP1-18FRA_Cours_1_support_etudiant.pdf, diapositive 58",
+      "contentRevision": "3298c1caa9fa"
+    },
+    {
+      "id": "BP1-18FRA_S1_C01_DISTINGUER_INTER_INTRAINDIVIDUEL",
+      "noteId": "BP1-18FRA_S1_C01_DISTINGUER_INTER_INTRAINDIVIDUEL",
+      "clozeOrdinal": null,
+      "module": "BP1-18FRA",
+      "course": "C01",
+      "type": "distinguer",
+      "parties": [
+        "partie::oral"
+      ],
+      "priorities": [
+        "prio::examen"
+      ],
+      "questionHtml": "<p>Quel critère distingue interindividuel et intraindividuel dans le transfert de responsabilité ?</p>",
+      "answerHtml": "<p>L’interindividuel est ce qui se réalise d’abord dans la relation entre les personnes ; l’intraindividuel, ce que l’enfant peut ensuite prendre en charge lui-même.</p>",
+      "hint": "Suis le même récit à plusieurs moments et examine qui en assure l’organisation.",
+      "source": "SYNTHESE_BP1-18FRA_S1_COURS_01.docx · v08 · partie « 4 Soutenir l’activité puis en transférer la responsabilité — Ce que fait l’adulte dans l’étayage »\nOriginal : 2026-09-17_BP1-18FRA_Cours_1_support_etudiant.pdf, diapositive 58",
+      "contentRevision": "fa0f421c6add"
+    },
+    {
+      "id": "BP1-18FRA_S1_C01_DEFINIR_FORMAT_INTERACTION",
+      "noteId": "BP1-18FRA_S1_C01_DEFINIR_FORMAT_INTERACTION",
+      "clozeOrdinal": null,
+      "module": "BP1-18FRA",
+      "course": "C01",
+      "type": "definir",
+      "parties": [
+        "partie::oral"
+      ],
+      "priorities": [
+        "prio::examen"
+      ],
+      "questionHtml": "<p>Qu’est-ce qu’un format d’interaction chez Bruner, dans le cours ?</p>",
+      "answerHtml": "<p>Scénarios prévisibles qui organisent les échanges : leur répétition permet à l’enfant d’anticiper sa place, puis de participer davantage avec l’adulte.</p>",
+      "hint": "Pars de plusieurs lectures d’album et examine ce qui revient dans leur déroulement.",
+      "source": "SYNTHESE_BP1-18FRA_S1_COURS_01.docx · v08 · partie « 4 Soutenir l’activité puis en transférer la responsabilité — Ce que fait l’adulte dans l’étayage »\nOriginal : 2026-09-17_BP1-18FRA_Cours_1_support_etudiant.pdf, diapositive 53",
+      "contentRevision": "2d3428d505df"
+    },
+    {
+      "id": "BP1-18FRA_S1_C01_APPLIQUER_FORMAT_ALBUM",
+      "noteId": "BP1-18FRA_S1_C01_APPLIQUER_FORMAT_ALBUM",
+      "clozeOrdinal": null,
+      "module": "BP1-18FRA",
+      "course": "C01",
+      "type": "appliquer",
+      "parties": [
+        "partie::oral"
+      ],
+      "priorities": [
+        "prio::examen"
+      ],
+      "questionHtml": "<p>L’adulte et l’enfant regardent régulièrement un album ensemble : invitation à regarder, dénomination, reprise puis relance. Que permet la stabilité de ce scénario, selon la synthèse ?</p>",
+      "answerHtml": "<p>Elle permet à l’enfant d’anticiper sa place dans l’échange et de participer davantage avec l’adulte : c’est un format d’interaction prévisible.</p><p><b>Pour juger ta réponse</b><br>Relier la répétition du cadre à l’anticipation de la place et à la participation de l’enfant.</p>",
+      "hint": "Place-toi au début d’un nouvel échange et remémore-toi les expériences précédentes de l’enfant.",
+      "source": "SYNTHESE_BP1-18FRA_S1_COURS_01.docx · v08 · partie « 4 Soutenir l’activité puis en transférer la responsabilité — Ce que fait l’adulte dans l’étayage »\nOriginal : 2026-09-17_BP1-18FRA_Cours_1_support_etudiant.pdf, diapositive 53",
+      "contentRevision": "1064b808cc81"
+    },
+    {
+      "id": "BP1-18FRA_S1_C01_DEFINIR_REPRISE",
+      "noteId": "BP1-18FRA_S1_C01_DEFINIR_REPRISE",
+      "clozeOrdinal": null,
+      "module": "BP1-18FRA",
+      "course": "C01",
+      "type": "definir",
+      "parties": [
+        "partie::oral"
+      ],
+      "priorities": [
+        "prio::examen"
+      ],
+      "questionHtml": "<p>Qu’est-ce qu’une reprise dans le cours ?</p>",
+      "answerHtml": "<p>Une reprise reprend l’énoncé de l’enfant.</p>",
+      "hint": "Reviens aux échanges du chevreuil et de la théière avant de chercher une catégorie précise.",
+      "source": "SYNTHESE_BP1-18FRA_S1_COURS_01.docx · v08 · partie « 4 Soutenir l’activité puis en transférer la responsabilité — Répéter et reformuler »\nOriginal : 2026-09-17_BP1-18FRA_Cours_1_support_etudiant.pdf, diapositive 59",
+      "contentRevision": "4b0734d246f1"
+    },
+    {
+      "id": "BP1-18FRA_S1_C01_DEFINIR_REPETITION",
+      "noteId": "BP1-18FRA_S1_C01_DEFINIR_REPETITION",
+      "clozeOrdinal": null,
+      "module": "BP1-18FRA",
+      "course": "C01",
+      "type": "definir",
+      "parties": [
+        "partie::oral"
+      ],
+      "priorities": [
+        "prio::examen"
+      ],
+      "questionHtml": "<p>Dans une reprise de l’énoncé de l’enfant, que fait la répétition ?</p>",
+      "answerHtml": "<p>La répétition le conserve, totalement ou partiellement, pour l’attester.</p>",
+      "hint": "Mets les deux énoncés côte à côte et examine la fonction de la réponse de l’adulte.",
+      "source": "SYNTHESE_BP1-18FRA_S1_COURS_01.docx · v08 · partie « 4 Soutenir l’activité puis en transférer la responsabilité — Répéter et reformuler »\nOriginal : 2026-09-17_BP1-18FRA_Cours_1_support_etudiant.pdf, diapositive 59",
+      "contentRevision": "69888eb191e5"
+    },
+    {
+      "id": "BP1-18FRA_S1_C01_DEFINIR_REFORMULATION",
+      "noteId": "BP1-18FRA_S1_C01_DEFINIR_REFORMULATION",
+      "clozeOrdinal": null,
+      "module": "BP1-18FRA",
+      "course": "C01",
+      "type": "definir",
+      "parties": [
+        "partie::oral"
+      ],
+      "priorities": [
+        "prio::examen"
+      ],
+      "questionHtml": "<p>Qu’est-ce qu’une reformulation dans le cours ?</p>",
+      "answerHtml": "<p>La reformulation modifie l’expression pour l’enrichir : elle constitue une correction implicite, avec extension si elle ajoute une information, sans extension si elle n’en ajoute pas.</p>",
+      "hint": "Reviens au chevreuil et examine ce que la réponse de l’adulte apporte à l’échange.",
+      "source": "SYNTHESE_BP1-18FRA_S1_COURS_01.docx · v08 · partie « 4 Soutenir l’activité puis en transférer la responsabilité — Répéter et reformuler »\nOriginal : 2026-09-17_BP1-18FRA_Cours_1_support_etudiant.pdf, diapositives 59–60",
+      "contentRevision": "cd22deae0a8e"
+    },
+    {
+      "id": "BP1-18FRA_S1_C01_LISTE_TYPES_REPRISES::c1",
+      "noteId": "BP1-18FRA_S1_C01_LISTE_TYPES_REPRISES",
+      "clozeOrdinal": 1,
+      "module": "BP1-18FRA",
+      "course": "C01",
+      "type": "liste",
+      "parties": [
+        "partie::oral"
+      ],
+      "priorities": [
+        "prio::examen"
+      ],
+      "questionHtml": "<p>Les deux types de reprises de l’énoncé de l’enfant, selon de Weck dans le cours :</p><ol><li><span class=\"blank\">[...]</span></li><li>Reformulation</li></ol>",
+      "answerHtml": "<p class=\"cloze-answer\"><strong>Réponse : Répétition</strong></p><p>Une reprise reprend l’énoncé de l’enfant. La répétition le conserve, totalement ou partiellement, pour l’attester. La reformulation modifie l’expression pour l’enrichir : elle constitue une correction implicite, avec extension si elle ajoute une information, sans extension si elle n’en ajoute pas.</p>",
+      "hint": "Mets les deux énoncés côte à côte avant de donner une catégorie.",
+      "source": "SYNTHESE_BP1-18FRA_S1_COURS_01.docx · v08 · partie « 4 Soutenir l’activité puis en transférer la responsabilité — Répéter et reformuler »\nOriginal : 2026-09-17_BP1-18FRA_Cours_1_support_etudiant.pdf, diapositive 59",
+      "contentRevision": "d602f84c864f"
+    },
+    {
+      "id": "BP1-18FRA_S1_C01_LISTE_TYPES_REPRISES::c2",
+      "noteId": "BP1-18FRA_S1_C01_LISTE_TYPES_REPRISES",
+      "clozeOrdinal": 2,
+      "module": "BP1-18FRA",
+      "course": "C01",
+      "type": "liste",
+      "parties": [
+        "partie::oral"
+      ],
+      "priorities": [
+        "prio::examen"
+      ],
+      "questionHtml": "<p>Les deux types de reprises de l’énoncé de l’enfant, selon de Weck dans le cours :</p><ol><li>Répétition</li><li><span class=\"blank\">[...]</span></li></ol>",
+      "answerHtml": "<p class=\"cloze-answer\"><strong>Réponse : Reformulation</strong></p><p>Une reprise reprend l’énoncé de l’enfant. La répétition le conserve, totalement ou partiellement, pour l’attester. La reformulation modifie l’expression pour l’enrichir : elle constitue une correction implicite, avec extension si elle ajoute une information, sans extension si elle n’en ajoute pas.</p>",
+      "hint": "Mets les deux énoncés côte à côte avant de donner une catégorie.",
+      "source": "SYNTHESE_BP1-18FRA_S1_COURS_01.docx · v08 · partie « 4 Soutenir l’activité puis en transférer la responsabilité — Répéter et reformuler »\nOriginal : 2026-09-17_BP1-18FRA_Cours_1_support_etudiant.pdf, diapositive 59",
+      "contentRevision": "f33e99c21779"
+    },
+    {
+      "id": "BP1-18FRA_S1_C01_LISTE_TYPES_REPETITIONS::c1",
+      "noteId": "BP1-18FRA_S1_C01_LISTE_TYPES_REPETITIONS",
+      "clozeOrdinal": 1,
+      "module": "BP1-18FRA",
+      "course": "C01",
+      "type": "liste",
+      "parties": [
+        "partie::oral"
+      ],
+      "priorities": [
+        "prio::examen"
+      ],
+      "questionHtml": "<p>Les deux sous-types de répétition, selon de Weck dans le cours :</p><ol><li><span class=\"blank\">[...]</span></li><li>Partielle</li></ol>",
+      "answerHtml": "<p class=\"cloze-answer\"><strong>Réponse : Totale</strong></p><p>La répétition reprend tout ou partie de l’énoncé pour l’attester, c’est-à-dire marquer qu’on l’a reçu.</p>",
+      "hint": "Délimite précisément les passages communs entre les deux énoncés.",
+      "source": "SYNTHESE_BP1-18FRA_S1_COURS_01.docx · v08 · partie « 4 Soutenir l’activité puis en transférer la responsabilité — Répéter et reformuler »\nOriginal : 2026-09-17_BP1-18FRA_Cours_1_support_etudiant.pdf, diapositive 59",
+      "contentRevision": "b2624facf1ed"
+    },
+    {
+      "id": "BP1-18FRA_S1_C01_LISTE_TYPES_REPETITIONS::c2",
+      "noteId": "BP1-18FRA_S1_C01_LISTE_TYPES_REPETITIONS",
+      "clozeOrdinal": 2,
+      "module": "BP1-18FRA",
+      "course": "C01",
+      "type": "liste",
+      "parties": [
+        "partie::oral"
+      ],
+      "priorities": [
+        "prio::examen"
+      ],
+      "questionHtml": "<p>Les deux sous-types de répétition, selon de Weck dans le cours :</p><ol><li>Totale</li><li><span class=\"blank\">[...]</span></li></ol>",
+      "answerHtml": "<p class=\"cloze-answer\"><strong>Réponse : Partielle</strong></p><p>La répétition reprend tout ou partie de l’énoncé pour l’attester, c’est-à-dire marquer qu’on l’a reçu.</p>",
+      "hint": "Délimite précisément les passages communs entre les deux énoncés.",
+      "source": "SYNTHESE_BP1-18FRA_S1_COURS_01.docx · v08 · partie « 4 Soutenir l’activité puis en transférer la responsabilité — Répéter et reformuler »\nOriginal : 2026-09-17_BP1-18FRA_Cours_1_support_etudiant.pdf, diapositive 59",
+      "contentRevision": "a75ebc519bbf"
+    },
+    {
+      "id": "BP1-18FRA_S1_C01_LISTE_TYPES_REFORMULATIONS::c1",
+      "noteId": "BP1-18FRA_S1_C01_LISTE_TYPES_REFORMULATIONS",
+      "clozeOrdinal": 1,
+      "module": "BP1-18FRA",
+      "course": "C01",
+      "type": "liste",
+      "parties": [
+        "partie::oral"
+      ],
+      "priorities": [
+        "prio::examen"
+      ],
+      "questionHtml": "<p>Les deux sous-types de reformulation, selon de Weck dans le cours :</p><ol><li><span class=\"blank\">[...]</span></li><li>Sans extension</li></ol>",
+      "answerHtml": "<p class=\"cloze-answer\"><strong>Réponse : Avec extension</strong></p><p>Une reprise reprend l’énoncé de l’enfant. La répétition le conserve, totalement ou partiellement, pour l’attester. La reformulation modifie l’expression pour l’enrichir : elle constitue une correction implicite, avec extension si elle ajoute une information, sans extension si elle n’en ajoute pas.</p>",
+      "hint": "Examine séparément la formulation et ce que l’interlocuteur apprend.",
+      "source": "SYNTHESE_BP1-18FRA_S1_COURS_01.docx · v08 · partie « 4 Soutenir l’activité puis en transférer la responsabilité — Répéter et reformuler »\nOriginal : 2026-09-17_BP1-18FRA_Cours_1_support_etudiant.pdf, diapositives 59–60",
+      "contentRevision": "fe298f365ec3"
+    },
+    {
+      "id": "BP1-18FRA_S1_C01_LISTE_TYPES_REFORMULATIONS::c2",
+      "noteId": "BP1-18FRA_S1_C01_LISTE_TYPES_REFORMULATIONS",
+      "clozeOrdinal": 2,
+      "module": "BP1-18FRA",
+      "course": "C01",
+      "type": "liste",
+      "parties": [
+        "partie::oral"
+      ],
+      "priorities": [
+        "prio::examen"
+      ],
+      "questionHtml": "<p>Les deux sous-types de reformulation, selon de Weck dans le cours :</p><ol><li>Avec extension</li><li><span class=\"blank\">[...]</span></li></ol>",
+      "answerHtml": "<p class=\"cloze-answer\"><strong>Réponse : Sans extension</strong></p><p>Une reprise reprend l’énoncé de l’enfant. La répétition le conserve, totalement ou partiellement, pour l’attester. La reformulation modifie l’expression pour l’enrichir : elle constitue une correction implicite, avec extension si elle ajoute une information, sans extension si elle n’en ajoute pas.</p>",
+      "hint": "Examine séparément la formulation et ce que l’interlocuteur apprend.",
+      "source": "SYNTHESE_BP1-18FRA_S1_COURS_01.docx · v08 · partie « 4 Soutenir l’activité puis en transférer la responsabilité — Répéter et reformuler »\nOriginal : 2026-09-17_BP1-18FRA_Cours_1_support_etudiant.pdf, diapositives 59–60",
+      "contentRevision": "1d5a033398fc"
+    },
+    {
+      "id": "BP1-18FRA_S1_C01_DISTINGUER_REPETITION_REFORMULATION",
+      "noteId": "BP1-18FRA_S1_C01_DISTINGUER_REPETITION_REFORMULATION",
+      "clozeOrdinal": null,
+      "module": "BP1-18FRA",
+      "course": "C01",
+      "type": "distinguer",
+      "parties": [
+        "partie::oral"
+      ],
+      "priorities": [
+        "prio::examen"
+      ],
+      "questionHtml": "<p>Quel critère sépare une répétition d’une reformulation de l’énoncé de l’enfant ?</p>",
+      "answerHtml": "<p>La répétition conserve tout ou partie de l’énoncé pour l’attester ; la reformulation en modifie l’expression pour l’enrichir. On examine ce que l’adulte conserve, modifie ou ajoute.</p>",
+      "hint": "Compare « Le lapin dort » repris par l’adulte et la réponse au chevreuil.",
+      "source": "SYNTHESE_BP1-18FRA_S1_COURS_01.docx · v08 · partie « 4 Soutenir l’activité puis en transférer la responsabilité — Répéter et reformuler »\nOriginal : 2026-09-17_BP1-18FRA_Cours_1_support_etudiant.pdf, diapositives 59–60",
+      "contentRevision": "f685d6c09551"
+    },
+    {
+      "id": "BP1-18FRA_S1_C01_DISTINGUER_REPETITION_TOTALE_PARTIELLE",
+      "noteId": "BP1-18FRA_S1_C01_DISTINGUER_REPETITION_TOTALE_PARTIELLE",
+      "clozeOrdinal": null,
+      "module": "BP1-18FRA",
+      "course": "C01",
+      "type": "distinguer",
+      "parties": [
+        "partie::oral"
+      ],
+      "priorities": [
+        "prio::examen"
+      ],
+      "questionHtml": "<p>Quel critère distingue répétition totale et répétition partielle ?</p>",
+      "answerHtml": "<p>La répétition totale reprend tout l’énoncé ; la répétition partielle n’en reprend qu’une partie. Toutes deux l’attestent.</p>",
+      "hint": "Aligne les deux énoncés et délimite ce qui passe de l’un à l’autre.",
+      "source": "SYNTHESE_BP1-18FRA_S1_COURS_01.docx · v08 · partie « 4 Soutenir l’activité puis en transférer la responsabilité — Répéter et reformuler »\nOriginal : 2026-09-17_BP1-18FRA_Cours_1_support_etudiant.pdf, diapositive 59",
+      "contentRevision": "e7e13cdba264"
+    },
+    {
+      "id": "BP1-18FRA_S1_C01_DISTINGUER_REFORMULATION_EXTENSION",
+      "noteId": "BP1-18FRA_S1_C01_DISTINGUER_REFORMULATION_EXTENSION",
+      "clozeOrdinal": null,
+      "module": "BP1-18FRA",
+      "course": "C01",
+      "type": "distinguer",
+      "parties": [
+        "partie::oral"
+      ],
+      "priorities": [
+        "prio::examen"
+      ],
+      "questionHtml": "<p>Quel critère distingue une reformulation avec extension d’une reformulation sans extension ?</p>",
+      "answerHtml": "<p>Une reformulation avec extension ajoute une information ; une reformulation sans extension modifie l’expression sans ajouter d’information.</p>",
+      "hint": "Sépare le travail sur l’expression de ce que le message permet désormais de savoir.",
+      "source": "SYNTHESE_BP1-18FRA_S1_COURS_01.docx · v08 · partie « 4 Soutenir l’activité puis en transférer la responsabilité — Répéter et reformuler »\nOriginal : 2026-09-17_BP1-18FRA_Cours_1_support_etudiant.pdf, diapositives 59–60",
+      "contentRevision": "d9bc785f0f00"
+    },
+    {
+      "id": "BP1-18FRA_S1_C01_APPLIQUER_REPETITION_TOTALE",
+      "noteId": "BP1-18FRA_S1_C01_APPLIQUER_REPETITION_TOTALE",
+      "clozeOrdinal": null,
+      "module": "BP1-18FRA",
+      "course": "C01",
+      "type": "appliquer",
+      "parties": [
+        "partie::oral"
+      ],
+      "priorities": [
+        "prio::examen"
+      ],
+      "questionHtml": "<p>Un enfant dit « Le lapin dort » et l’adulte répond « Le lapin dort ». Quelle reprise reconnaitre et sur quel critère ?</p>",
+      "answerHtml": "<p>Une répétition totale : l’adulte reprend tout l’énoncé pour l’attester.</p><p><b>Pour juger ta réponse</b><br>Constater la conservation de tout l’énoncé, sans modification de l’expression.</p>",
+      "hint": "Fais une comparaison mot à mot avant de nommer l’intervention.",
+      "source": "SYNTHESE_BP1-18FRA_S1_COURS_01.docx · v08 · partie « 4 Soutenir l’activité puis en transférer la responsabilité — Répéter et reformuler »\nOriginal : 2026-09-17_BP1-18FRA_Cours_1_support_etudiant.pdf, diapositive 59",
+      "contentRevision": "3653febbfa80"
+    },
+    {
+      "id": "BP1-18FRA_S1_C01_APPLIQUER_REPETITION_PARTIELLE",
+      "noteId": "BP1-18FRA_S1_C01_APPLIQUER_REPETITION_PARTIELLE",
+      "clozeOrdinal": null,
+      "module": "BP1-18FRA",
+      "course": "C01",
+      "type": "appliquer",
+      "parties": [
+        "partie::oral"
+      ],
+      "priorities": [
+        "prio::examen"
+      ],
+      "questionHtml": "<p>Un enfant dit « Le lapin dort » et l’adulte répond « Le lapin ». Quelle reprise reconnaitre et sur quel critère ?</p>",
+      "answerHtml": "<p>Une répétition partielle : l’adulte reprend une partie de l’énoncé pour l’attester.</p><p><b>Pour juger ta réponse</b><br>Constater la conservation d’une partie de l’énoncé ; ne pas appeler toute reprise une reformulation.</p>",
+      "hint": "Repère les limites du passage commun aux deux énoncés.",
+      "source": "SYNTHESE_BP1-18FRA_S1_COURS_01.docx · v08 · partie « 4 Soutenir l’activité puis en transférer la responsabilité — Répéter et reformuler »\nOriginal : 2026-09-17_BP1-18FRA_Cours_1_support_etudiant.pdf, diapositive 59",
+      "contentRevision": "cf96f81fc3c5"
+    },
+    {
+      "id": "BP1-18FRA_S1_C01_APPLIQUER_REFORMULATION_AVEC_EXTENSION",
+      "noteId": "BP1-18FRA_S1_C01_APPLIQUER_REFORMULATION_AVEC_EXTENSION",
+      "clozeOrdinal": null,
+      "module": "BP1-18FRA",
+      "course": "C01",
+      "type": "appliquer",
+      "parties": [
+        "partie::oral"
+      ],
+      "priorities": [
+        "prio::examen"
+      ],
+      "questionHtml": "<p>Un enfant dit « Il a tombé » et l’adulte répond « Il est tombé dans le trou ». Comment classer cette reprise ?</p>",
+      "answerHtml": "<p>Une reformulation avec extension : l’expression est modifiée et une information est ajoutée, « dans le trou ».</p><p><b>Pour juger ta réponse</b><br>Identifier à la fois la modification de l’expression et l’information ajoutée.</p>",
+      "hint": "Examine d’abord la construction, puis ce qu’un auditeur apprend sur l’évènement.",
+      "source": "SYNTHESE_BP1-18FRA_S1_COURS_01.docx · v08 · partie « 4 Soutenir l’activité puis en transférer la responsabilité — Répéter et reformuler »\nOriginal : 2026-09-17_BP1-18FRA_Cours_1_support_etudiant.pdf, diapositives 59–60",
+      "contentRevision": "d603fa8d74fc"
+    },
+    {
+      "id": "BP1-18FRA_S1_C01_APPLIQUER_REFORMULATION_SANS_EXTENSION",
+      "noteId": "BP1-18FRA_S1_C01_APPLIQUER_REFORMULATION_SANS_EXTENSION",
+      "clozeOrdinal": null,
+      "module": "BP1-18FRA",
+      "course": "C01",
+      "type": "appliquer",
+      "parties": [
+        "partie::oral"
+      ],
+      "priorities": [
+        "prio::examen"
+      ],
+      "questionHtml": "<p>Un enfant dit « Il a tombé » et l’adulte répond « Il est tombé ». Comment classer cette reprise ?</p>",
+      "answerHtml": "<p>Une reformulation sans extension : l’expression est modifiée sans information ajoutée.</p><p><b>Pour juger ta réponse</b><br>Distinguer modification de la formulation et ajout d’information.</p>",
+      "hint": "Compare ce qui est raconté avant et après l’intervention, en séparant le sens et la formulation.",
+      "source": "SYNTHESE_BP1-18FRA_S1_COURS_01.docx · v08 · partie « 4 Soutenir l’activité puis en transférer la responsabilité — Répéter et reformuler »\nOriginal : 2026-09-17_BP1-18FRA_Cours_1_support_etudiant.pdf, diapositives 59–60",
+      "contentRevision": "b33c477576b1"
+    },
+    {
+      "id": "BP1-18FRA_S1_C01_DISTINGUER_CORRECTION_IMPLICITE_EXPLICITE",
+      "noteId": "BP1-18FRA_S1_C01_DISTINGUER_CORRECTION_IMPLICITE_EXPLICITE",
+      "clozeOrdinal": null,
+      "module": "BP1-18FRA",
+      "course": "C01",
+      "type": "distinguer",
+      "parties": [
+        "partie::oral"
+      ],
+      "priorities": [
+        "prio::examen"
+      ],
+      "questionHtml": "<p>Quel critère distingue la correction implicite d’une reformulation de la correction explicite ?</p>",
+      "answerHtml": "<p>La reformulation propose une autre formulation sans annoncer une erreur, pour se mettre d’accord sur l’intelligibilité du message. Une correction explicite annonce l’erreur.</p>",
+      "hint": "Regarde comment l’adulte s’adresse à l’enfant lorsqu’il propose sa réponse.",
+      "source": "SYNTHESE_BP1-18FRA_S1_COURS_01.docx · v08 · partie « 4 Soutenir l’activité puis en transférer la responsabilité — Répéter et reformuler »\nOriginal : 2026-09-17_BP1-18FRA_Cours_1_support_etudiant.pdf, diapositive 60",
+      "contentRevision": "036c06d6886e"
+    },
+    {
+      "id": "BP1-18FRA_S1_C01_DISTINGUER_RAPPEL_RECIT_REPETITION",
+      "noteId": "BP1-18FRA_S1_C01_DISTINGUER_RAPPEL_RECIT_REPETITION",
+      "clozeOrdinal": null,
+      "module": "BP1-18FRA",
+      "course": "C01",
+      "type": "distinguer",
+      "parties": [
+        "partie::oral"
+      ],
+      "priorities": [
+        "prio::examen"
+      ],
+      "questionHtml": "<p>Quel objet repris distingue un rappel de récit des répétitions classées par de Weck dans ce cours ?</p>",
+      "answerHtml": "<p>Le rappel de récit reprend une histoire ; les répétitions classées ici reprennent l’énoncé de l’enfant.</p>",
+      "hint": "Délimite ce qui sert de référence à l’intervention avant d’en examiner les mots.",
+      "source": "SYNTHESE_BP1-18FRA_S1_COURS_01.docx · v08 · partie « 4 Soutenir l’activité puis en transférer la responsabilité — Répéter et reformuler »\nOriginal : 2026-09-17_BP1-18FRA_Cours_1_support_etudiant.pdf, diapositive 59 ; 2026-09-17_BP1-18FRA_NOTES_COURS_1.docx",
+      "contentRevision": "eab1af6f366a"
+    },
+    {
+      "id": "BP1-18FRA_S1_C01_APPLIQUER_BATEAU_BARQUE",
+      "noteId": "BP1-18FRA_S1_C01_APPLIQUER_BATEAU_BARQUE",
+      "clozeOrdinal": null,
+      "module": "BP1-18FRA",
+      "course": "C01",
+      "type": "appliquer",
+      "parties": [
+        "partie::oral"
+      ],
+      "priorities": [
+        "prio::examen"
+      ],
+      "questionHtml": "<p>Dans l’exemple des notes, un enfant dit « bateau » pour une barque et l’adulte propose « barque ». Quel travail langagier est fait ?</p>",
+      "answerHtml": "<p>La proposition affine le lexique et précise la désignation, sans que « bateau » soit faux.</p><p><b>Pour juger ta réponse</b><br>Identifier la précision lexicale ; ne pas transformer toute reformulation en annonce d’une erreur.</p>",
+      "hint": "Examine ce que chacun des deux mots permet de désigner dans cette scène.",
+      "source": "SYNTHESE_BP1-18FRA_S1_COURS_01.docx · v08 · partie « 4 Soutenir l’activité puis en transférer la responsabilité — Répéter et reformuler »\nOriginal : 2026-09-17_BP1-18FRA_NOTES_COURS_1.docx, passage relatif à la diapositive 60",
+      "contentRevision": "5d46e7ddcfd6"
+    },
+    {
+      "id": "BP1-18FRA_S1_C01_DEFINIR_PRAGMATIQUE",
+      "noteId": "BP1-18FRA_S1_C01_DEFINIR_PRAGMATIQUE",
+      "clozeOrdinal": null,
+      "module": "BP1-18FRA",
+      "course": "C01",
+      "type": "definir",
+      "parties": [
+        "partie::oral"
+      ],
+      "priorities": [
+        "prio::examen"
+      ],
+      "questionHtml": "<p>Qu’est-ce que la pragmatique dans le cours ?</p>",
+      "answerHtml": "<p>Usage de la langue en fonction de la situation de communication. Il engage le non-verbal (regard, gestes), les supports matériels, les partenaires et le but, l’organisation du discours, son contenu et les émotions.</p>",
+      "hint": "Imagine un message correct mais difficile à comprendre pour quelqu’un qui ne voit pas l’image.",
+      "source": "SYNTHESE_BP1-18FRA_S1_COURS_01.docx · v08 · partie « 5 Analyser l’aide dans une situation de communication »\nOriginal : 2026-09-17_BP1-18FRA_Cours_1_support_etudiant.pdf, diapositive 61",
+      "contentRevision": "70f354dd3b7e"
+    },
+    {
+      "id": "BP1-18FRA_S1_C01_DISTINGUER_PRAGMATIQUE_GRAMMAIRE",
+      "noteId": "BP1-18FRA_S1_C01_DISTINGUER_PRAGMATIQUE_GRAMMAIRE",
+      "clozeOrdinal": null,
+      "module": "BP1-18FRA",
+      "course": "C01",
+      "type": "distinguer",
+      "parties": [
+        "partie::oral"
+      ],
+      "priorities": [
+        "prio::examen"
+      ],
+      "questionHtml": "<p>Quel critère distingue la pragmatique de la seule correction grammaticale ?</p>",
+      "answerHtml": "<p>La pragmatique relie l’usage de la langue à la situation de communication : ce que l’autre sait, ce qu’il entend et ce que l’on veut lui communiquer. Un message n’est pas efficace par sa seule correction grammaticale.</p>",
+      "hint": "Compare le même message adressé à deux auditeurs qui ne disposent pas des mêmes informations.",
+      "source": "SYNTHESE_BP1-18FRA_S1_COURS_01.docx · v08 · partie « 5 Analyser l’aide dans une situation de communication »\nOriginal : 2026-09-17_BP1-18FRA_Cours_1_support_etudiant.pdf, diapositive 61",
+      "contentRevision": "22c2d5bc3746"
+    },
+    {
+      "id": "BP1-18FRA_S1_C01_LISTE_ASPECTS_PRAGMATIQUES::c1",
+      "noteId": "BP1-18FRA_S1_C01_LISTE_ASPECTS_PRAGMATIQUES",
+      "clozeOrdinal": 1,
+      "module": "BP1-18FRA",
+      "course": "C01",
+      "type": "liste",
+      "parties": [
+        "partie::oral"
+      ],
+      "priorities": [
+        "prio::examen"
+      ],
+      "questionHtml": "<p>Les six aspects pragmatiques présentés par Dumais dans le cours 01, dans leur ordre :</p><ol><li><span class=\"blank\">[...]</span></li><li>Matériel</li><li>Communicationnel</li><li>Discursif</li><li>Contenu</li><li>Émotionnel</li></ol>",
+      "answerHtml": "<p class=\"cloze-answer\"><strong>Réponse : Non verbal</strong></p><p>Usage de la langue en fonction de la situation de communication. Il engage le non-verbal (regard, gestes), les supports matériels, les partenaires et le but, l’organisation du discours, son contenu et les émotions.</p>",
+      "hint": "Reprends une prise de parole en classe et balaie ce qui peut en faciliter ou gêner la réussite.",
+      "source": "SYNTHESE_BP1-18FRA_S1_COURS_01.docx · v08 · partie « 5 Analyser l’aide dans une situation de communication »\nOriginal : 2026-09-17_BP1-18FRA_Cours_1_support_etudiant.pdf, diapositive 61",
+      "contentRevision": "f837def6cc70"
+    },
+    {
+      "id": "BP1-18FRA_S1_C01_LISTE_ASPECTS_PRAGMATIQUES::c2",
+      "noteId": "BP1-18FRA_S1_C01_LISTE_ASPECTS_PRAGMATIQUES",
+      "clozeOrdinal": 2,
+      "module": "BP1-18FRA",
+      "course": "C01",
+      "type": "liste",
+      "parties": [
+        "partie::oral"
+      ],
+      "priorities": [
+        "prio::examen"
+      ],
+      "questionHtml": "<p>Les six aspects pragmatiques présentés par Dumais dans le cours 01, dans leur ordre :</p><ol><li>Non verbal</li><li><span class=\"blank\">[...]</span></li><li>Communicationnel</li><li>Discursif</li><li>Contenu</li><li>Émotionnel</li></ol>",
+      "answerHtml": "<p class=\"cloze-answer\"><strong>Réponse : Matériel</strong></p><p>Usage de la langue en fonction de la situation de communication. Il engage le non-verbal (regard, gestes), les supports matériels, les partenaires et le but, l’organisation du discours, son contenu et les émotions.</p>",
+      "hint": "Reprends une prise de parole en classe et balaie ce qui peut en faciliter ou gêner la réussite.",
+      "source": "SYNTHESE_BP1-18FRA_S1_COURS_01.docx · v08 · partie « 5 Analyser l’aide dans une situation de communication »\nOriginal : 2026-09-17_BP1-18FRA_Cours_1_support_etudiant.pdf, diapositive 61",
+      "contentRevision": "ee365587fbe2"
+    },
+    {
+      "id": "BP1-18FRA_S1_C01_LISTE_ASPECTS_PRAGMATIQUES::c3",
+      "noteId": "BP1-18FRA_S1_C01_LISTE_ASPECTS_PRAGMATIQUES",
+      "clozeOrdinal": 3,
+      "module": "BP1-18FRA",
+      "course": "C01",
+      "type": "liste",
+      "parties": [
+        "partie::oral"
+      ],
+      "priorities": [
+        "prio::examen"
+      ],
+      "questionHtml": "<p>Les six aspects pragmatiques présentés par Dumais dans le cours 01, dans leur ordre :</p><ol><li>Non verbal</li><li>Matériel</li><li><span class=\"blank\">[...]</span></li><li>Discursif</li><li>Contenu</li><li>Émotionnel</li></ol>",
+      "answerHtml": "<p class=\"cloze-answer\"><strong>Réponse : Communicationnel</strong></p><p>Usage de la langue en fonction de la situation de communication. Il engage le non-verbal (regard, gestes), les supports matériels, les partenaires et le but, l’organisation du discours, son contenu et les émotions.</p>",
+      "hint": "Reprends une prise de parole en classe et balaie ce qui peut en faciliter ou gêner la réussite.",
+      "source": "SYNTHESE_BP1-18FRA_S1_COURS_01.docx · v08 · partie « 5 Analyser l’aide dans une situation de communication »\nOriginal : 2026-09-17_BP1-18FRA_Cours_1_support_etudiant.pdf, diapositive 61",
+      "contentRevision": "b732d52202b9"
+    },
+    {
+      "id": "BP1-18FRA_S1_C01_LISTE_ASPECTS_PRAGMATIQUES::c4",
+      "noteId": "BP1-18FRA_S1_C01_LISTE_ASPECTS_PRAGMATIQUES",
+      "clozeOrdinal": 4,
+      "module": "BP1-18FRA",
+      "course": "C01",
+      "type": "liste",
+      "parties": [
+        "partie::oral"
+      ],
+      "priorities": [
+        "prio::examen"
+      ],
+      "questionHtml": "<p>Les six aspects pragmatiques présentés par Dumais dans le cours 01, dans leur ordre :</p><ol><li>Non verbal</li><li>Matériel</li><li>Communicationnel</li><li><span class=\"blank\">[...]</span></li><li>Contenu</li><li>Émotionnel</li></ol>",
+      "answerHtml": "<p class=\"cloze-answer\"><strong>Réponse : Discursif</strong></p><p>Usage de la langue en fonction de la situation de communication. Il engage le non-verbal (regard, gestes), les supports matériels, les partenaires et le but, l’organisation du discours, son contenu et les émotions.</p>",
+      "hint": "Reprends une prise de parole en classe et balaie ce qui peut en faciliter ou gêner la réussite.",
+      "source": "SYNTHESE_BP1-18FRA_S1_COURS_01.docx · v08 · partie « 5 Analyser l’aide dans une situation de communication »\nOriginal : 2026-09-17_BP1-18FRA_Cours_1_support_etudiant.pdf, diapositive 61",
+      "contentRevision": "b3049c1f1a53"
+    },
+    {
+      "id": "BP1-18FRA_S1_C01_LISTE_ASPECTS_PRAGMATIQUES::c5",
+      "noteId": "BP1-18FRA_S1_C01_LISTE_ASPECTS_PRAGMATIQUES",
+      "clozeOrdinal": 5,
+      "module": "BP1-18FRA",
+      "course": "C01",
+      "type": "liste",
+      "parties": [
+        "partie::oral"
+      ],
+      "priorities": [
+        "prio::examen"
+      ],
+      "questionHtml": "<p>Les six aspects pragmatiques présentés par Dumais dans le cours 01, dans leur ordre :</p><ol><li>Non verbal</li><li>Matériel</li><li>Communicationnel</li><li>Discursif</li><li><span class=\"blank\">[...]</span></li><li>Émotionnel</li></ol>",
+      "answerHtml": "<p class=\"cloze-answer\"><strong>Réponse : Contenu</strong></p><p>Usage de la langue en fonction de la situation de communication. Il engage le non-verbal (regard, gestes), les supports matériels, les partenaires et le but, l’organisation du discours, son contenu et les émotions.</p>",
+      "hint": "Reprends une prise de parole en classe et balaie ce qui peut en faciliter ou gêner la réussite.",
+      "source": "SYNTHESE_BP1-18FRA_S1_COURS_01.docx · v08 · partie « 5 Analyser l’aide dans une situation de communication »\nOriginal : 2026-09-17_BP1-18FRA_Cours_1_support_etudiant.pdf, diapositive 61",
+      "contentRevision": "30781b6a90cb"
+    },
+    {
+      "id": "BP1-18FRA_S1_C01_LISTE_ASPECTS_PRAGMATIQUES::c6",
+      "noteId": "BP1-18FRA_S1_C01_LISTE_ASPECTS_PRAGMATIQUES",
+      "clozeOrdinal": 6,
+      "module": "BP1-18FRA",
+      "course": "C01",
+      "type": "liste",
+      "parties": [
+        "partie::oral"
+      ],
+      "priorities": [
+        "prio::examen"
+      ],
+      "questionHtml": "<p>Les six aspects pragmatiques présentés par Dumais dans le cours 01, dans leur ordre :</p><ol><li>Non verbal</li><li>Matériel</li><li>Communicationnel</li><li>Discursif</li><li>Contenu</li><li><span class=\"blank\">[...]</span></li></ol>",
+      "answerHtml": "<p class=\"cloze-answer\"><strong>Réponse : Émotionnel</strong></p><p>Usage de la langue en fonction de la situation de communication. Il engage le non-verbal (regard, gestes), les supports matériels, les partenaires et le but, l’organisation du discours, son contenu et les émotions.</p>",
+      "hint": "Reprends une prise de parole en classe et balaie ce qui peut en faciliter ou gêner la réussite.",
+      "source": "SYNTHESE_BP1-18FRA_S1_COURS_01.docx · v08 · partie « 5 Analyser l’aide dans une situation de communication »\nOriginal : 2026-09-17_BP1-18FRA_Cours_1_support_etudiant.pdf, diapositive 61",
+      "contentRevision": "7b07b810e19a"
+    },
+    {
+      "id": "BP1-18FRA_S1_C01_RECONNAITRE_ASPECT_NON_VERBAL",
+      "noteId": "BP1-18FRA_S1_C01_RECONNAITRE_ASPECT_NON_VERBAL",
+      "clozeOrdinal": null,
+      "module": "BP1-18FRA",
+      "course": "C01",
+      "type": "reconnaitre",
+      "parties": [
+        "partie::oral"
+      ],
+      "priorities": [
+        "prio::examen"
+      ],
+      "questionHtml": "<p>Dans les aspects de Dumais, quel aspect examiner à partir du regard, de la posture et des gestes ?</p>",
+      "answerHtml": "<p>L’aspect non verbal : il porte sur le regard, la posture, les gestes et la proxémie.</p>",
+      "hint": "Repars de l’enfant face à son auditeur dans l’exemple de l’album.",
+      "source": "SYNTHESE_BP1-18FRA_S1_COURS_01.docx · v08 · partie « 5 Analyser l’aide dans une situation de communication »\nOriginal : 2026-09-17_BP1-18FRA_Cours_1_support_etudiant.pdf, diapositive 61",
+      "contentRevision": "d7382a21f69a"
+    },
+    {
+      "id": "BP1-18FRA_S1_C01_RECONNAITRE_ASPECT_MATERIEL",
+      "noteId": "BP1-18FRA_S1_C01_RECONNAITRE_ASPECT_MATERIEL",
+      "clozeOrdinal": null,
+      "module": "BP1-18FRA",
+      "course": "C01",
+      "type": "reconnaitre",
+      "parties": [
+        "partie::oral"
+      ],
+      "priorities": [
+        "prio::examen"
+      ],
+      "questionHtml": "<p>Dans le récit d’un enfant à partir d’un album, de quel aspect pragmatique l’image est-elle un appui ?</p>",
+      "answerHtml": "<p>L’aspect matériel : il concerne l’appui sur des supports textuels ou visuels.</p>",
+      "hint": "Examine la place de l’album dans le déroulement de l’échange avant de nommer l’aspect.",
+      "source": "SYNTHESE_BP1-18FRA_S1_COURS_01.docx · v08 · partie « 5 Analyser l’aide dans une situation de communication »\nOriginal : 2026-09-17_BP1-18FRA_Cours_1_support_etudiant.pdf, diapositive 61",
+      "contentRevision": "5c9b3701a1cc"
+    },
+    {
+      "id": "BP1-18FRA_S1_C01_RECONNAITRE_ASPECT_COMMUNICATIONNEL",
+      "noteId": "BP1-18FRA_S1_C01_RECONNAITRE_ASPECT_COMMUNICATIONNEL",
+      "clozeOrdinal": null,
+      "module": "BP1-18FRA",
+      "course": "C01",
+      "type": "reconnaitre",
+      "parties": [
+        "partie::oral"
+      ],
+      "priorities": [
+        "prio::examen"
+      ],
+      "questionHtml": "<p>Dans les aspects de Dumais, où situer les partenaires, le registre de langue, le but de la prise de parole et les circonstances de l’échange ?</p>",
+      "answerHtml": "<p>L’aspect communicationnel : il concerne à qui l’on parle, dans quel but et dans quelles circonstances, ainsi que l’écoute, l’ouverture et la clôture de la conversation.</p>",
+      "hint": "Replace les données dans une scène complète avant de choisir leur rubrique dans la grille.",
+      "source": "SYNTHESE_BP1-18FRA_S1_COURS_01.docx · v08 · partie « 5 Analyser l’aide dans une situation de communication »\nOriginal : 2026-09-17_BP1-18FRA_Cours_1_support_etudiant.pdf, diapositive 61",
+      "contentRevision": "f5807c7fb197"
+    },
+    {
+      "id": "BP1-18FRA_S1_C01_RECONNAITRE_ASPECT_DISCURSIF",
+      "noteId": "BP1-18FRA_S1_C01_RECONNAITRE_ASPECT_DISCURSIF",
+      "clozeOrdinal": null,
+      "module": "BP1-18FRA",
+      "course": "C01",
+      "type": "reconnaitre",
+      "parties": [
+        "partie::oral"
+      ],
+      "priorities": [
+        "prio::examen"
+      ],
+      "questionHtml": "<p>Dans les aspects de Dumais, où situer la manière de raconter, d’expliquer ou d’argumenter et l’organisation des énoncés ?</p>",
+      "answerHtml": "<p>L’aspect discursif : il concerne les conduites discursives, la cohérence et la cohésion du discours.</p>",
+      "hint": "Suis plusieurs énoncés successifs plutôt que d’en examiner un seul isolément.",
+      "source": "SYNTHESE_BP1-18FRA_S1_COURS_01.docx · v08 · partie « 5 Analyser l’aide dans une situation de communication »\nOriginal : 2026-09-17_BP1-18FRA_Cours_1_support_etudiant.pdf, diapositive 61",
+      "contentRevision": "c6e134fd8bc7"
+    },
+    {
+      "id": "BP1-18FRA_S1_C01_RECONNAITRE_ASPECT_CONTENU",
+      "noteId": "BP1-18FRA_S1_C01_RECONNAITRE_ASPECT_CONTENU",
+      "clozeOrdinal": null,
+      "module": "BP1-18FRA",
+      "course": "C01",
+      "type": "reconnaitre",
+      "parties": [
+        "partie::oral"
+      ],
+      "priorities": [
+        "prio::examen"
+      ],
+      "questionHtml": "<p>Dans les aspects de Dumais, où situer les informations du message et les connaissances nécessaires pour le comprendre ?</p>",
+      "answerHtml": "<p>L’aspect du contenu : il porte sur les informations du discours, le message véhiculé et les connaissances nécessaires.</p>",
+      "hint": "Place-toi du côté d’un auditeur et de ce dont il dispose pour comprendre le message.",
+      "source": "SYNTHESE_BP1-18FRA_S1_COURS_01.docx · v08 · partie « 5 Analyser l’aide dans une situation de communication »\nOriginal : 2026-09-17_BP1-18FRA_Cours_1_support_etudiant.pdf, diapositive 61",
+      "contentRevision": "2ca37bc16eec"
+    },
+    {
+      "id": "BP1-18FRA_S1_C01_RECONNAITRE_ASPECT_EMOTIONNEL",
+      "noteId": "BP1-18FRA_S1_C01_RECONNAITRE_ASPECT_EMOTIONNEL",
+      "clozeOrdinal": null,
+      "module": "BP1-18FRA",
+      "course": "C01",
+      "type": "reconnaitre",
+      "parties": [
+        "partie::oral"
+      ],
+      "priorities": [
+        "prio::examen"
+      ],
+      "questionHtml": "<p>Dans les aspects de Dumais, où situer l’aisance, le trac, les soupirs ou les rires pendant la prise de parole ?</p>",
+      "answerHtml": "<p>L’aspect émotionnel : il porte sur l’attitude et les manifestations des émotions pendant la prise de parole.</p>",
+      "hint": "Repense à un enfant qui prend la parole devant un groupe et situe les manifestations observées.",
+      "source": "SYNTHESE_BP1-18FRA_S1_COURS_01.docx · v08 · partie « 5 Analyser l’aide dans une situation de communication »\nOriginal : 2026-09-17_BP1-18FRA_Cours_1_support_etudiant.pdf, diapositive 61",
+      "contentRevision": "e35c870cbc89"
+    },
+    {
+      "id": "BP1-18FRA_S1_C01_RECONNAITRE_PROXEMIE",
+      "noteId": "BP1-18FRA_S1_C01_RECONNAITRE_PROXEMIE",
+      "clozeOrdinal": null,
+      "module": "BP1-18FRA",
+      "course": "C01",
+      "type": "reconnaitre",
+      "parties": [
+        "partie::oral"
+      ],
+      "priorities": [
+        "prio::examen"
+      ],
+      "questionHtml": "<p>Quel terme du cours désigne ici la dimension spatiale de l’interaction ?</p>",
+      "answerHtml": "<p>La proxémie, placée dans l’aspect non verbal.</p>",
+      "hint": "Reviens à la grille de Dumais et cherche dans quel ensemble ranger cette observation.",
+      "source": "SYNTHESE_BP1-18FRA_S1_COURS_01.docx · v08 · partie « 5 Analyser l’aide dans une situation de communication »\nOriginal : 2026-09-17_BP1-18FRA_Cours_1_support_etudiant.pdf, diapositive 61",
+      "contentRevision": "509aedba7e7d"
+    },
+    {
+      "id": "BP1-18FRA_S1_C01_DISTINGUER_COHERENCE_COHESION",
+      "noteId": "BP1-18FRA_S1_C01_DISTINGUER_COHERENCE_COHESION",
+      "clozeOrdinal": null,
+      "module": "BP1-18FRA",
+      "course": "C01",
+      "type": "distinguer",
+      "parties": [
+        "partie::oral"
+      ],
+      "priorities": [
+        "prio::examen"
+      ],
+      "questionHtml": "<p>Quel critère distingue cohérence et cohésion du discours dans la synthèse ?</p>",
+      "answerHtml": "<p>La cohérence concerne le sens d’ensemble du discours ; la cohésion, les liens entre les énoncés.</p>",
+      "hint": "Lis un court récit une première fois dans son ensemble, puis examine les passages entre ses énoncés.",
+      "source": "SYNTHESE_BP1-18FRA_S1_COURS_01.docx · v08 · partie « 5 Analyser l’aide dans une situation de communication »\nOriginal : 2026-09-17_BP1-18FRA_Cours_1_support_etudiant.pdf, diapositive 61",
+      "contentRevision": "0e584b92a9ba"
+    },
+    {
+      "id": "BP1-18FRA_S1_C01_APPLIQUER_TRANSCRIPTION_CHEVREUIL",
+      "noteId": "BP1-18FRA_S1_C01_APPLIQUER_TRANSCRIPTION_CHEVREUIL",
+      "clozeOrdinal": null,
+      "module": "BP1-18FRA",
+      "course": "C01",
+      "type": "appliquer",
+      "parties": [
+        "partie::oral"
+      ],
+      "priorities": [
+        "prio::examen"
+      ],
+      "questionHtml": "<p>Dans la transcription du cours : élève, « à le bambi » ; enseignante, « au chevreuil ouais ». Comment analyser le type de reprise et les plans touchés ?</p>",
+      "answerHtml": "<p>Une reformulation sans extension : « chevreuil » remplace « bambi » sur le plan lexical et « au » remplace « à le » sur le plan syntaxique, sans information ajoutée.</p><p><b>Pour juger ta réponse</b><br>Justifier le type par la modification sans ajout d’information ; repérer séparément le changement de mot et celui de construction.</p>",
+      "hint": "Compare les mots, leur agencement et ce que l’auditeur apprend après l’intervention.",
+      "source": "SYNTHESE_BP1-18FRA_S1_COURS_01.docx · v08 · partie « 5 Analyser l’aide dans une situation de communication — Deux transcriptions du cours — « À le bambi » → « au chevreuil ouais » »\nOriginal : 2026-09-17_BP1-18FRA_Cours_1_support_etudiant.pdf, diapositive 62",
+      "contentRevision": "4d13d6c52bf7"
+    },
+    {
+      "id": "BP1-18FRA_S1_C01_APPLIQUER_PARTICIPATION_CHEVREUIL",
+      "noteId": "BP1-18FRA_S1_C01_APPLIQUER_PARTICIPATION_CHEVREUIL",
+      "clozeOrdinal": null,
+      "module": "BP1-18FRA",
+      "course": "C01",
+      "type": "appliquer",
+      "parties": [
+        "partie::oral"
+      ],
+      "priorities": [
+        "prio::examen"
+      ],
+      "questionHtml": "<p>Dans la transcription du cours, après « au chevreuil ouais » de l’enseignante, l’élève dit « le chevreuil », puis « et alors l’apporte au chevreuil ». Quels indices permettent de décrire la suite de sa participation ?</p>",
+      "answerHtml": "<p>L’élève reprend le mot proposé, puis poursuit son énoncé avec « au chevreuil ». L’analyse relève cette reprise et la poursuite du récit ; elle distingue la réalisation dans l’échange d’une acquisition autonome.</p><p><b>Pour juger ta réponse</b><br>Citer les deux traces de participation et ne pas confondre une réussite accompagnée avec l’autonomie.</p>",
+      "hint": "Suis les deux prises de parole de l’enfant après l’aide avant de conclure sur ses acquis.",
+      "source": "SYNTHESE_BP1-18FRA_S1_COURS_01.docx · v08 · partie « 5 Analyser l’aide dans une situation de communication — Deux transcriptions du cours »\nOriginal : 2026-09-17_BP1-18FRA_Cours_1_support_etudiant.pdf, diapositive 62 ; diapositives 52 et 58",
+      "contentRevision": "51adcbf0de92"
+    },
+    {
+      "id": "BP1-18FRA_S1_C01_APPLIQUER_TRANSCRIPTION_THEIERE",
+      "noteId": "BP1-18FRA_S1_C01_APPLIQUER_TRANSCRIPTION_THEIERE",
+      "clozeOrdinal": null,
+      "module": "BP1-18FRA",
+      "course": "C01",
+      "type": "appliquer",
+      "parties": [
+        "partie::oral"
+      ],
+      "priorities": [
+        "prio::examen"
+      ],
+      "questionHtml": "<p>Dans la transcription du cours, l’élève cherche le nom d’un objet : « komo sap_n ça ne se pa ». L’enseignante donne « théière » ; après une tentative de reprise, elle redonne « théière », puis l’élève dit « théière » et « la théière ». Quelle aide est observable ?</p>",
+      "answerHtml": "<p>L’enseignante fournit le mot à rendre disponible dans l’échange, puis le répète ; l’élève le reprend. Il faut examiner ce qui est fourni ou repris pour décrire l’intervention.</p><p><b>Pour juger ta réponse</b><br>Identifier l’aide lexicale et suivre les reprises de l’élève ; ne pas appeler toute intervention une reformulation sans examiner ce qui change.</p>",
+      "hint": "Distingue ce que l’élève demandait de ce qu’il produit après chaque réponse de l’adulte.",
+      "source": "SYNTHESE_BP1-18FRA_S1_COURS_01.docx · v08 · partie « 5 Analyser l’aide dans une situation de communication — Deux transcriptions du cours — Chercher le nom de la théière »\nOriginal : 2026-09-17_BP1-18FRA_Cours_1_support_etudiant.pdf, diapositive 64",
+      "contentRevision": "9e5c8f417327"
+    },
+    {
+      "id": "BP1-18FRA_S1_C01_METHODE_ANALYSE_ETAYAGE_COMPARER",
+      "noteId": "BP1-18FRA_S1_C01_METHODE_ANALYSE_ETAYAGE_COMPARER",
+      "clozeOrdinal": null,
+      "module": "BP1-18FRA",
+      "course": "C01",
+      "type": "methode",
+      "parties": [
+        "partie::oral"
+      ],
+      "priorities": [
+        "prio::examen"
+      ],
+      "questionHtml": "<p>Dans la méthode d’analyse de l’étayage donnée par la synthèse, que compare-t-on d’abord ?</p>",
+      "answerHtml": "<p>Comparer l’énoncé de l’élève et la reprise de l’adulte. Relever les formulations avant d’interpréter l’intervention.</p>",
+      "hint": "Choisis le relevé qui permettra ensuite de justifier une catégorie.",
+      "source": "SYNTHESE_BP1-18FRA_S1_COURS_01.docx · v08 · partie « 5 Analyser l’aide dans une situation de communication — Méthode : analyser l’étayage d’un enseignant »\nOriginal : 2026-09-17_BP1-18FRA_Cours_1_support_etudiant.pdf, diapositives 59–64 ; 2026-10-01_BP1-18FRA_document-cadre_version_recuperee.pdf, p. 10",
+      "contentRevision": "cefd29599023"
+    },
+    {
+      "id": "BP1-18FRA_S1_C01_METHODE_ANALYSE_ETAYAGE_IDENTIFIER",
+      "noteId": "BP1-18FRA_S1_C01_METHODE_ANALYSE_ETAYAGE_IDENTIFIER",
+      "clozeOrdinal": null,
+      "module": "BP1-18FRA",
+      "course": "C01",
+      "type": "methode",
+      "parties": [
+        "partie::oral"
+      ],
+      "priorities": [
+        "prio::examen"
+      ],
+      "questionHtml": "<p>Dans la méthode d’analyse de l’étayage donnée par la synthèse, que faut-il qualifier après la comparaison des énoncés ?</p>",
+      "answerHtml": "<p>Identifier le type de reprise et le plan qu’elle touche : phonologie, lexique, syntaxe, pragmatique ou construction du récit. Examiner ce que l’adulte conserve, modifie ou ajoute.</p>",
+      "hint": "Sépare le classement de l’intervention de l’effet observé dans la suite de l’échange.",
+      "source": "SYNTHESE_BP1-18FRA_S1_COURS_01.docx · v08 · partie « 5 Analyser l’aide dans une situation de communication — Méthode : analyser l’étayage d’un enseignant »\nOriginal : 2026-09-17_BP1-18FRA_Cours_1_support_etudiant.pdf, diapositives 59–64 ; 2026-10-01_BP1-18FRA_document-cadre_version_recuperee.pdf, p. 10",
+      "contentRevision": "c081aad7a27d"
+    },
+    {
+      "id": "BP1-18FRA_S1_C01_METHODE_ANALYSE_ETAYAGE_OBSERVER",
+      "noteId": "BP1-18FRA_S1_C01_METHODE_ANALYSE_ETAYAGE_OBSERVER",
+      "clozeOrdinal": null,
+      "module": "BP1-18FRA",
+      "course": "C01",
+      "type": "methode",
+      "parties": [
+        "partie::oral"
+      ],
+      "priorities": [
+        "prio::examen"
+      ],
+      "questionHtml": "<p>Dans la méthode d’analyse de l’étayage donnée par la synthèse, que faut-il observer après avoir qualifié la reprise ?</p>",
+      "answerHtml": "<p>Observer la suite de l’échange : l’élève reprend-il la proposition, poursuit-il son propos ? Appuyer l’analyse sur les manifestations de participation de l’élève.</p>",
+      "hint": "Reprends le cas du chevreuil et demande-toi ce qu’il faut vérifier pour apprécier la portée de l’intervention.",
+      "source": "SYNTHESE_BP1-18FRA_S1_COURS_01.docx · v08 · partie « 5 Analyser l’aide dans une situation de communication — Méthode : analyser l’étayage d’un enseignant »\nOriginal : 2026-09-17_BP1-18FRA_Cours_1_support_etudiant.pdf, diapositives 59–64 ; 2026-10-01_BP1-18FRA_document-cadre_version_recuperee.pdf, p. 10",
+      "contentRevision": "cce31cdf1d7a"
+    },
+    {
+      "id": "BP1-18FRA_S1_C01_METHODE_ANALYSE_ETAYAGE_RELIER",
+      "noteId": "BP1-18FRA_S1_C01_METHODE_ANALYSE_ETAYAGE_RELIER",
+      "clozeOrdinal": null,
+      "module": "BP1-18FRA",
+      "course": "C01",
+      "type": "methode",
+      "parties": [
+        "partie::oral"
+      ],
+      "priorities": [
+        "prio::examen"
+      ],
+      "questionHtml": "<p>Dans la méthode d’analyse de l’étayage donnée par la synthèse, à quoi relie-t-on enfin l’intervention ?</p>",
+      "answerHtml": "<p>Relier l’intervention au savoir visé et à la situation de communication. Garder le savoir, les ressources de l’enfant et la situation dans l’interprétation de l’aide.</p>",
+      "hint": "Reviens à la question : à quoi cette activité doit-elle servir pour apprendre ?",
+      "source": "SYNTHESE_BP1-18FRA_S1_COURS_01.docx · v08 · partie « 5 Analyser l’aide dans une situation de communication — Méthode : analyser l’étayage d’un enseignant »\nOriginal : 2026-09-17_BP1-18FRA_Cours_1_support_etudiant.pdf, diapositives 59–64 ; 2026-10-01_BP1-18FRA_document-cadre_version_recuperee.pdf, p. 10",
+      "contentRevision": "3586bfc5ec1d"
+    },
+    {
+      "id": "BP1-18FRA_S1_C01_LISTE_ETAPES_ANALYSE_ETAYAGE::c1",
+      "noteId": "BP1-18FRA_S1_C01_LISTE_ETAPES_ANALYSE_ETAYAGE",
+      "clozeOrdinal": 1,
+      "module": "BP1-18FRA",
+      "course": "C01",
+      "type": "liste",
+      "parties": [
+        "partie::oral"
+      ],
+      "priorities": [
+        "prio::examen"
+      ],
+      "questionHtml": "<p>Les quatre étapes de la méthode d’analyse de l’étayage donnée par la synthèse, dans leur ordre :</p><ol><li><span class=\"blank\">[...]</span></li><li>Identification du type et du plan</li><li>Observation de la suite de l’échange</li><li>Lien avec le savoir et la situation</li></ol>",
+      "answerHtml": "<p class=\"cloze-answer\"><strong>Réponse : Comparaison des énoncés</strong></p><p>Comparer l’énoncé de l’élève et la reprise de l’adulte. Relever les formulations avant d’interpréter l’intervention.</p><p>Identifier le type de reprise et le plan qu’elle touche : phonologie, lexique, syntaxe, pragmatique ou construction du récit. Examiner ce que l’adulte conserve, modifie ou ajoute.</p><p>Observer la suite de l’échange : l’élève reprend-il la proposition, poursuit-il son propos ? Appuyer l’analyse sur les manifestations de participation de l’élève.</p><p>Relier l’intervention au savoir visé et à la situation de communication. Garder le savoir, les ressources de l’enfant et la situation dans l’interprétation de l’aide.</p>",
+      "hint": "Prends le cas du chevreuil comme point d’appui pour reconstruire la démarche.",
+      "source": "SYNTHESE_BP1-18FRA_S1_COURS_01.docx · v08 · partie « 5 Analyser l’aide dans une situation de communication — Méthode : analyser l’étayage d’un enseignant »\nOriginal : 2026-09-17_BP1-18FRA_Cours_1_support_etudiant.pdf, diapositives 59–64 ; 2026-10-01_BP1-18FRA_document-cadre_version_recuperee.pdf, p. 10",
+      "contentRevision": "3936b09cc7f1"
+    },
+    {
+      "id": "BP1-18FRA_S1_C01_LISTE_ETAPES_ANALYSE_ETAYAGE::c2",
+      "noteId": "BP1-18FRA_S1_C01_LISTE_ETAPES_ANALYSE_ETAYAGE",
+      "clozeOrdinal": 2,
+      "module": "BP1-18FRA",
+      "course": "C01",
+      "type": "liste",
+      "parties": [
+        "partie::oral"
+      ],
+      "priorities": [
+        "prio::examen"
+      ],
+      "questionHtml": "<p>Les quatre étapes de la méthode d’analyse de l’étayage donnée par la synthèse, dans leur ordre :</p><ol><li>Comparaison des énoncés</li><li><span class=\"blank\">[...]</span></li><li>Observation de la suite de l’échange</li><li>Lien avec le savoir et la situation</li></ol>",
+      "answerHtml": "<p class=\"cloze-answer\"><strong>Réponse : Identification du type et du plan</strong></p><p>Comparer l’énoncé de l’élève et la reprise de l’adulte. Relever les formulations avant d’interpréter l’intervention.</p><p>Identifier le type de reprise et le plan qu’elle touche : phonologie, lexique, syntaxe, pragmatique ou construction du récit. Examiner ce que l’adulte conserve, modifie ou ajoute.</p><p>Observer la suite de l’échange : l’élève reprend-il la proposition, poursuit-il son propos ? Appuyer l’analyse sur les manifestations de participation de l’élève.</p><p>Relier l’intervention au savoir visé et à la situation de communication. Garder le savoir, les ressources de l’enfant et la situation dans l’interprétation de l’aide.</p>",
+      "hint": "Prends le cas du chevreuil comme point d’appui pour reconstruire la démarche.",
+      "source": "SYNTHESE_BP1-18FRA_S1_COURS_01.docx · v08 · partie « 5 Analyser l’aide dans une situation de communication — Méthode : analyser l’étayage d’un enseignant »\nOriginal : 2026-09-17_BP1-18FRA_Cours_1_support_etudiant.pdf, diapositives 59–64 ; 2026-10-01_BP1-18FRA_document-cadre_version_recuperee.pdf, p. 10",
+      "contentRevision": "b6c9bf180434"
+    },
+    {
+      "id": "BP1-18FRA_S1_C01_LISTE_ETAPES_ANALYSE_ETAYAGE::c3",
+      "noteId": "BP1-18FRA_S1_C01_LISTE_ETAPES_ANALYSE_ETAYAGE",
+      "clozeOrdinal": 3,
+      "module": "BP1-18FRA",
+      "course": "C01",
+      "type": "liste",
+      "parties": [
+        "partie::oral"
+      ],
+      "priorities": [
+        "prio::examen"
+      ],
+      "questionHtml": "<p>Les quatre étapes de la méthode d’analyse de l’étayage donnée par la synthèse, dans leur ordre :</p><ol><li>Comparaison des énoncés</li><li>Identification du type et du plan</li><li><span class=\"blank\">[...]</span></li><li>Lien avec le savoir et la situation</li></ol>",
+      "answerHtml": "<p class=\"cloze-answer\"><strong>Réponse : Observation de la suite de l’échange</strong></p><p>Comparer l’énoncé de l’élève et la reprise de l’adulte. Relever les formulations avant d’interpréter l’intervention.</p><p>Identifier le type de reprise et le plan qu’elle touche : phonologie, lexique, syntaxe, pragmatique ou construction du récit. Examiner ce que l’adulte conserve, modifie ou ajoute.</p><p>Observer la suite de l’échange : l’élève reprend-il la proposition, poursuit-il son propos ? Appuyer l’analyse sur les manifestations de participation de l’élève.</p><p>Relier l’intervention au savoir visé et à la situation de communication. Garder le savoir, les ressources de l’enfant et la situation dans l’interprétation de l’aide.</p>",
+      "hint": "Prends le cas du chevreuil comme point d’appui pour reconstruire la démarche.",
+      "source": "SYNTHESE_BP1-18FRA_S1_COURS_01.docx · v08 · partie « 5 Analyser l’aide dans une situation de communication — Méthode : analyser l’étayage d’un enseignant »\nOriginal : 2026-09-17_BP1-18FRA_Cours_1_support_etudiant.pdf, diapositives 59–64 ; 2026-10-01_BP1-18FRA_document-cadre_version_recuperee.pdf, p. 10",
+      "contentRevision": "0176539cf63e"
+    },
+    {
+      "id": "BP1-18FRA_S1_C01_LISTE_ETAPES_ANALYSE_ETAYAGE::c4",
+      "noteId": "BP1-18FRA_S1_C01_LISTE_ETAPES_ANALYSE_ETAYAGE",
+      "clozeOrdinal": 4,
+      "module": "BP1-18FRA",
+      "course": "C01",
+      "type": "liste",
+      "parties": [
+        "partie::oral"
+      ],
+      "priorities": [
+        "prio::examen"
+      ],
+      "questionHtml": "<p>Les quatre étapes de la méthode d’analyse de l’étayage donnée par la synthèse, dans leur ordre :</p><ol><li>Comparaison des énoncés</li><li>Identification du type et du plan</li><li>Observation de la suite de l’échange</li><li><span class=\"blank\">[...]</span></li></ol>",
+      "answerHtml": "<p class=\"cloze-answer\"><strong>Réponse : Lien avec le savoir et la situation</strong></p><p>Comparer l’énoncé de l’élève et la reprise de l’adulte. Relever les formulations avant d’interpréter l’intervention.</p><p>Identifier le type de reprise et le plan qu’elle touche : phonologie, lexique, syntaxe, pragmatique ou construction du récit. Examiner ce que l’adulte conserve, modifie ou ajoute.</p><p>Observer la suite de l’échange : l’élève reprend-il la proposition, poursuit-il son propos ? Appuyer l’analyse sur les manifestations de participation de l’élève.</p><p>Relier l’intervention au savoir visé et à la situation de communication. Garder le savoir, les ressources de l’enfant et la situation dans l’interprétation de l’aide.</p>",
+      "hint": "Prends le cas du chevreuil comme point d’appui pour reconstruire la démarche.",
+      "source": "SYNTHESE_BP1-18FRA_S1_COURS_01.docx · v08 · partie « 5 Analyser l’aide dans une situation de communication — Méthode : analyser l’étayage d’un enseignant »\nOriginal : 2026-09-17_BP1-18FRA_Cours_1_support_etudiant.pdf, diapositives 59–64 ; 2026-10-01_BP1-18FRA_document-cadre_version_recuperee.pdf, p. 10",
+      "contentRevision": "24fd3903ad32"
+    },
+    {
+      "id": "BP1-18FRA_S1_C01_RELIER_ESSENTIEL_SOUTENIR_ANALYSER",
+      "noteId": "BP1-18FRA_S1_C01_RELIER_ESSENTIEL_SOUTENIR_ANALYSER",
+      "clozeOrdinal": null,
+      "module": "BP1-18FRA",
+      "course": "C01",
+      "type": "relier",
+      "parties": [
+        "partie::oral"
+      ],
+      "priorities": [
+        "prio::examen"
+      ],
+      "questionHtml": "<p>Comment l’enseignant peut-il soutenir la parole et analyser son aide ?</p>",
+      "answerHtml": "<p>La ZPD met en relation ce que l’enfant réussit seul et avec une aide ; l’étayage soutient sa participation en visant une autonomie croissante. Les reprises attestent ou modifient l’énoncé. Pour analyser leur portée, on compare les énoncés, suit la participation de l’élève et considère les dimensions pragmatiques de la situation ; on relie ainsi le savoir visé, les ressources de l’enfant et l’aide de l’enseignant.</p><p><b>Pour juger ta réponse</b><br>Articuler possibilités de l’enfant, interventions de soutien et autonomie ; relier les indices observés au savoir et à la situation, sans confondre la reprise d’une formulation avec un acquis autonome.</p>",
+      "hint": "Pars d’un échange précis, puis relie l’intervention à ce qu’on cherche à faire progresser.",
+      "source": "SYNTHESE_BP1-18FRA_S1_COURS_01.docx · v08 · partie « L’essentiel à retenir — Comment l’enseignant peut-il soutenir la parole et analyser son aide ? »\nOriginal : 2026-09-17_BP1-18FRA_Cours_1_support_etudiant.pdf, diapositives 52–64 ; 2026-09-17_BP1-18FRA_NOTES_COURS_1.docx",
+      "contentRevision": "76c3f407090c"
+    }
+  ]
+}
