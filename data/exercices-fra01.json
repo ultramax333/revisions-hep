@@ -78,8 +78,8 @@
       "context": "Chaque réponse ci-dessous suit immédiatement l’énoncé de l’enfant.\nA. Enfant : « Le lapin dort ». Adulte : « Le lapin dort ».\nB. Enfant : « Le lapin dort ». Adulte : « Le lapin ».\nC. Enfant : « Il a tombé ». Adulte : « Il est tombé ».\nD. Enfant : « Il a tombé ». Adulte : « Il est tombé dans le trou ».",
       "prompt": "Classe les quatre reprises à l’aide de la distinction de de Weck entre répétition et reformulation, en précisant leur sous-type. Justifie chaque classement par un indice dans les énoncés. Explique ensuite le critère décisif qui sépare C et D.",
       "hints": [
-        "Compare d’abord chaque paire mot à mot, sans chercher tout de suite une étiquette.",
-        "Distingue trois opérations possibles : conserver l’énoncé, modifier sa formulation et ajouter une information sur la scène."
+        "Dans la distinction de de Weck, une reprise est une réaction de l’adulte à l’énoncé de l’enfant. Deux familles sont distinguées :\n• La répétition reprend les mêmes mots, en totalité ou en partie, pour attester l’énoncé de l’enfant : l’adulte montre qu’il le prend en compte.\n• La reformulation propose une autre façon d’exprimer le message. Elle peut corriger implicitement la forme du langage, sans dire à l’enfant qu’il a fait une erreur.",
+        "Les sous-types se déterminent ainsi :\n• Répétition totale : tout l’énoncé est repris à l’identique.\n• Répétition partielle : seule une partie est reprise à l’identique.\n• Reformulation sans extension : la formulation change, mais aucune information nouvelle n’est ajoutée au message.\n• Reformulation avec extension : la formulation change et une information nouvelle est ajoutée.\nPour classer les exemples, compare donc les mots employés, puis les informations exprimées. Une phrase plus longue ne suffit pas à prouver une extension."
       ],
       "criteria": [
         {
@@ -396,5 +396,5 @@
       "contentRevision": "e9a2c6808c45"
     }
   ],
-  "bankRevision": "734629bd670d"
+  "bankRevision": "333bbc1ba8ba"
 }

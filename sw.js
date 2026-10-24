@@ -1,5 +1,5 @@
 'use strict';
-const CACHE = 'hep-revisions-v1.1.1';
+const CACHE = 'hep-revisions-v1.1.2';
 const ROOT = new URL('./', self.location.href);
 const CORE = ['./', 'index.html', 'style.css', 'icon.svg', 'manifest.webmanifest', 'config.js', 'store.js', 'drive.js', 'app.js', 'data/questions.json', 'exercices.html', 'exercices-config.js', 'exercices.js', 'data/exercices-fra01.json'];
 self.addEventListener('install', event => { event.waitUntil(caches.open(CACHE).then(cache => cache.addAll(CORE.map(path => new URL(path, ROOT).href))).then(() => self.skipWaiting())); });
