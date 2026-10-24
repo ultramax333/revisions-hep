@@ -1,1 +1,1 @@
-window.CONFIG = {"GOOGLE_CLIENT_ID": "200483680701-h963rk5t3l7v5j64ojgg2k410av8l9ft.apps.googleusercontent.com", "DRIVE_APP": "hep-revisions-v1", "APP_VERSION": "1.1.3", "DRIVE_FOLDER": "Révisions HEP"};
+window.CONFIG = {"GOOGLE_CLIENT_ID": "200483680701-h963rk5t3l7v5j64ojgg2k410av8l9ft.apps.googleusercontent.com", "DRIVE_APP": "hep-revisions-v1", "APP_VERSION": "1.1.4", "DRIVE_FOLDER": "Révisions HEP"};

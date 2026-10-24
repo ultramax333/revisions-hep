@@ -2,6 +2,10 @@
   "schemaVersion": 1,
   "id": "fra01-pilote",
   "title": "Exercices pilotes — FRA 01",
+  "courseReference": {
+    "label": "Français · Bloc oral · Cours 01",
+    "date": "17.09.2026"
+  },
   "exercises": [
     {
       "id": "FRA01-EX01",
@@ -59,7 +63,7 @@
         },
         {
           "file": "SYNTHESE_BP1-18FRA_S1_COURS_01.docx",
-          "location": "Parties 2 et 5 : actes/moyens linguistiques, quatre compétences et analyse du chevreuil."
+          "location": "Parties 2 et 5 : actes/moyens linguistiques, quatre compétences et analyse du chevreuil ; partie 4 : autonomie et transfert de responsabilité."
         },
         {
           "file": "02_Abdelilah-Bauer_2015_Developpement_langage_pp019-037.pdf",
@@ -255,7 +259,7 @@
         },
         {
           "file": "SYNTHESE_BP1-18FRA_S1_COURS_01.docx",
-          "location": "Partie 3 : liens entre pensée et langage, comparaison Piaget–Vygotski et exemple de récit ; annexe, limite des scènes isolées."
+          "location": "Partie 3 : liens entre pensée et langage, comparaison Piaget–Vygotski et exemple de récit."
         }
       ],
       "module": "BP1-18FRA",
@@ -396,5 +400,5 @@
       "contentRevision": "e9a2c6808c45"
     }
   ],
-  "bankRevision": "6a1dafbfa51a"
+  "bankRevision": "cf9c3759679e"
 }

@@ -273,3 +273,7 @@ summary::marker { color: var(--accent); }
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation: none !important; transition: none !important; scroll-behavior: auto !important; }
 }
+
+.exercise-origin { margin: 8px 0 20px; color: var(--text-dim); font-size: .8rem; line-height: 1.55; overflow-wrap: anywhere; }
+.exercise-origin > span { display: block; }
+.exercise-origin > span + span { margin-top: 4px; }
