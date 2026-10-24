@@ -10,8 +10,8 @@
       "context": "En classe de langue seconde (L2), un élève raconte un passage d’un album à son enseignante. Un personnage apporte quelque chose à un animal ; l’extrait ne précise pas qui apporte quoi.\n\nVoici l’échange rendu lisible à l’écrit : les tours 1 et 7 sont paraphrasés, les fragments entre guillemets sont ceux de la transcription.\n1. L’élève commence à parler de ce qui est apporté « au le mouton », puis dit « non non ».\n2. L’enseignante répond : « non ».\n3. L’élève dit : « à le bambi ».\n4. L’enseignante répond : « au chevreuil ouais ».\n5. L’élève dit : « le chevreuil ».\n6. L’enseignante réagit : « mhm ».\n7. L’élève reparle du personnage qui apporte quelque chose, cette fois « au chevreuil ».\n\nRepères de lecture : « ouais » est une forme familière de « oui » ; « mhm » note une brève réaction vocale.",
       "prompt": "Analyse cet échange en distinguant les actes de communication de l’enfant et les moyens linguistiques qu’il utilise. Entre les tours 3 et 4, repère deux modifications et nomme, pour chacune, la compétence concernée. Explique ensuite ce que les tours 5 et 7 permettent d’observer sur la participation de l’élève, puis ce que cette seule observation ne permet pas encore de conclure sur son autonomie.",
       "hints": [
-        "Distingue ce que l’enfant fait avec la parole et les mots ou constructions dont il se sert.",
-        "Compare les fragments des tours 3 et 4, puis regarde quelles formes réapparaissent aux tours 5 et 7."
+        "• Un acte de communication est ce que l’on accomplit avec la parole : demander une information ou convaincre, par exemple. Ces actes relèvent des savoirs langagiers.\n• Les savoirs linguistiques sont les moyens d’exprimer ces actes dans une langue : mots, sons et constructions.\nPour lire l’échange, distingue donc ce que l’enfant fait avec la parole et les formes qu’il emploie.",
+        "Quatre compétences permettent de préciser les moyens mobilisés :\n• Syntaxique : organiser les mots conformément aux règles de grammaire.\n• Lexico-sémantique : choisir des mots et exprimer un sens en désignant ce dont on parle.\n• Pragmatique : communiquer efficacement en tenant compte de la situation et de l’interlocuteur.\n• Phonologique : distinguer et produire les sons de la langue.\nCompare les formes des tours 3 et 4, sans choisir une compétence avant d’avoir repéré ce qui change.\nL’autonomie consiste à prendre en charge l’activité sans la même aide : distingue l’emploi immédiat après une proposition de l’adulte et un emploi à une autre occasion sans cette proposition."
       ],
       "criteria": [
         {
@@ -142,8 +142,8 @@
       "context": "Devant trois images d’une histoire, un enfant nomme seul les personnages mais n’enchaîne pas leurs actions. L’adulte lui demande ce qui se passe d’abord, puis pourquoi un personnage s’en va. L’enfant relie alors deux événements et produit un récit plus organisé. On ne dispose encore que de cette observation.",
       "prompt": "Explique ce que la zone proximale de développement et l’étayage permettent respectivement d’analyser dans ce cas. Relie les deux notions sans les confondre. Propose ensuite une suite à l’activité pour vérifier si l’enfant prend davantage en charge le récit.",
       "hints": [
-        "Mets en regard ce qui est réussi dans chacune des deux conditions de l’activité.",
-        "Distingue ce que la comparaison révèle sur les possibilités de l’enfant et ce que l’adulte fait concrètement ; cherche ensuite une observation qui ne dépende plus de la même aide."
+        "• La zone proximale de développement (ZPD) est l’écart entre ce que l’enfant réussit seul, son niveau actuel, et ce qu’il réussit avec l’aide d’un adulte ou d’un enfant plus avancé, son niveau potentiel.\n• L’étayage est le soutien verbal ou non verbal par lequel l’adulte prend en charge une part de la tâche encore difficile pour l’enfant afin qu’il puisse y participer.",
+        "• La ZPD compare deux niveaux de réussite ; l’étayage désigne les interventions qui soutiennent l’activité. Repère séparément les réussites observées et les aides apportées.\n• Le transfert de responsabilité est le passage progressif d’une activité soutenue par autrui à une activité davantage prise en charge par l’enfant. Le retrait de l’aide se fait progressivement, en fonction de ce qu’il parvient à réaliser.\nPour examiner l’autonomie, cherche ce que l’on pourrait observer lorsque la même aide n’est plus fournie : une réussite accompagnée ne suffit pas à établir une réussite autonome."
       ],
       "criteria": [
         {
@@ -206,8 +206,8 @@
       "context": "Un enfant prépare un récit à partir d’images. Une première fois, il énumère les éléments visibles. Pendant un échange avec un adulte, il cherche des mots pour expliquer les relations entre les événements et réorganise son récit.",
       "prompt": "Propose deux lectures de cette situation, l’une à partir de Piaget et l’autre à partir de Vygotski, en précisant pour chacune le lien entre pensée et langage. Explique ce que chaque lecture conduit à examiner. Termine en distinguant une interprétation théorique de la preuve qu’une théorie est la bonne.",
       "hints": [
-        "Repère ce que chaque approche considère comme déterminant dans les rapports entre développement cognitif et développement verbal.",
-        "Applique ensuite chaque lecture au même passage : préparer ce qu’on peut raconter, puis chercher une formulation avec autrui. Ne change pas de situation entre les deux approches."
+        "• Le langage est l’activité par laquelle une personne produit et comprend du sens au moyen d’une langue. Le développement verbal concerne l’évolution de ces capacités.\n• Piaget : dans la présentation du cours, le développement cognitif, c’est-à-dire les capacités de penser et de comprendre, détermine le développement verbal. On examine les capacités dont dépend ce que l’enfant peut exprimer.\n• Vygotski : le langage contribue à construire la pensée, notamment dans les relations sociales et la résolution de problèmes. Chercher à formuler avec autrui peut participer à l’élaboration de ce que l’on pense.",
+        "• Une interprétation théorique utilise un cadre pour proposer une explication de ce que l’on observe. Applique chaque cadre au même cas et appuie ta lecture sur un fait précis.\n• Une preuve suppose des éléments permettant de mettre à l’épreuve une explication, plutôt que de seulement montrer qu’une scène peut se lire à travers elle. Une interprétation possible d’un cas ne suffit donc pas, seule, à départager des théories générales du développement.\nCompare ce que chaque lecture conduit à examiner ; ne te limite pas à citer les deux auteurs."
       ],
       "criteria": [
         {
@@ -270,8 +270,8 @@
       "context": "Pendant une activité de sciences, un élève montre sur son dessin plusieurs changements observés au fil des jours. Lorsqu’il présente son dessin, il utilise surtout « ça » et « là » et n’arrive pas à formuler clairement ses observations pour ses camarades. Il utilise une autre langue en famille. L’enseignante veut qu’il puisse faire comprendre ce qu’il a observé.",
       "prompt": "Construis une réponse articulée montrant comment la langue de scolarisation est ici à la fois un outil et un objet d’apprentissage. Propose deux interventions complémentaires et justifie-les : l’une pour soutenir l’explication des observations, l’autre pour travailler un moyen de langue précis. Indique aussi comment tenir compte des ressources de l’élève.",
       "hints": [
-        "Distingue le savoir que l’élève cherche à communiquer et les moyens dont il dispose pour le faire comprendre.",
-        "Associe chaque intervention à un obstacle observable : les camarades doivent identifier les éléments du dessin et comprendre les changements. Pense également à ce que l’élève sait déjà faire ou peut montrer autrement."
+        "• La langue de scolarisation est la langue utilisée à l’école pour enseigner, apprendre et communiquer ; ici, le français.\n• Elle est outil d’apprentissage lorsqu’elle permet de comprendre, construire et communiquer des savoirs dans les disciplines.\n• Elle est objet d’apprentissage lorsque ses usages et son fonctionnement sont eux-mêmes travaillés : vocabulaire, formulations ou règles, par exemple.",
+        "• Les ressources sont les connaissances, expériences, langues connues et moyens d’expression dont l’élève dispose déjà. L’hétérogénéité désigne la diversité de ces ressources et des niveaux de développement ; elle appelle des situations adaptées, sans traiter toute différence comme un manque.\nPour appliquer la distinction outil/objet, repère d’abord le savoir que l’élève veut communiquer, puis un moyen de langue nécessaire pour le faire comprendre. Relie chaque aide proposée à l’un de ces besoins et à une ressource disponible. Une difficulté à formuler ne permet pas, à elle seule, de juger les connaissances disciplinaires."
       ],
       "criteria": [
         {
@@ -338,8 +338,8 @@
       "context": "Un enfant raconte une scène d’album à deux camarades assis en face de lui. Il garde l’album tourné vers lui, montre une image du doigt et dit : « Il met ça là ». Un camarade demande de qui il parle. L’enfant dit alors : « J’ai peur de me tromper », puis s’arrête. L’adulte souhaite l’aider à reprendre son récit.",
       "prompt": "Choisis deux aspects pragmatiques de Dumais pertinents pour analyser cette situation. Pour chacun, cite un indice observable et propose une intervention précise de l’adulte, en expliquant l’effet recherché. Termine par une observation qui permettrait de juger si le récit devient plus accessible aux auditeurs.",
       "hints": [
-        "Regarde les conditions de l’échange et les réactions des partenaires, en plus des mots prononcés.",
-        "Pour chaque élément retenu, fais le lien entre un fait du cas, ce que cela change pour l’échange et un ajustement concret. Plusieurs choix sont recevables s’ils sont justifiés."
+        "La pragmatique étudie le lien entre la parole et la situation de communication. Dumais distingue six aspects :\n• Non verbal : regard, posture, gestes et disposition des personnes dans l’espace.\n• Matériel : supports textuels ou visuels utilisés dans l’échange.\n• Communicationnel : partenaires, façon de s’adresser à eux, but, circonstances, écoute et ouverture ou clôture de l’échange.\n• Discursif : manière de raconter, expliquer ou dialoguer, et organisation du propos.\n• Contenu : informations transmises et connaissances nécessaires pour comprendre le message.\n• Émotionnel : aisance, peur de parler et manifestations des émotions, par les mots, rires ou soupirs notamment.",
+        "Pour retenir deux aspects, pars des faits observables et non des étiquettes :\n• Quel élément de la situation relève de chaque aspect envisagé ?\n• Quel obstacle à l’échange cet élément peut-il créer ?\n• Quelle intervention pourrait agir sur cet obstacle, et dans quel but ?\nDistingue enfin participation et compréhension : reprendre la parole montre que l’enfant participe ; pour juger l’accessibilité du récit, il faut aussi un signe que les auditeurs peuvent comprendre ou suivre ce qui est raconté. Aucun des six aspects ne doit être choisi sans appui dans le cas."
       ],
       "criteria": [
         {
@@ -396,5 +396,5 @@
       "contentRevision": "e9a2c6808c45"
     }
   ],
-  "bankRevision": "333bbc1ba8ba"
+  "bankRevision": "6a1dafbfa51a"
 }
