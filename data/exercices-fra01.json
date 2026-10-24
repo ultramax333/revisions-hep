@@ -7,11 +7,11 @@
       "id": "FRA01-EX01",
       "title": "Le récit du chevreuil",
       "kind": "Analyser une situation",
-      "context": "En classe de langue seconde, un élève raconte à partir d’un album. Dans l’extrait de la transcription :\nÉlève : « à le bambi »\nEnseignante : « au chevreuil ouais »\nÉlève : « le chevreuil »\nEnseignante : « mhm »\nÉlève : « et alors l'apporte au chevreuil ».",
-      "prompt": "Analyse cet échange en reliant les actes de communication de l’enfant aux moyens linguistiques qu’il utilise. Repère deux modifications apportées par l’enseignante et nomme, pour chacune, la compétence concernée. Termine par ce que la suite de l’échange permet d’observer sur la participation de l’élève et par ce que cette seule observation ne permet pas encore de conclure sur son autonomie.",
+      "context": "En classe de langue seconde (L2), un élève raconte un passage d’un album à son enseignante. Un personnage apporte quelque chose à un animal ; l’extrait ne précise pas qui apporte quoi.\n\nVoici l’échange rendu lisible à l’écrit : les tours 1 et 7 sont paraphrasés, les fragments entre guillemets sont ceux de la transcription.\n1. L’élève commence à parler de ce qui est apporté « au le mouton », puis dit « non non ».\n2. L’enseignante répond : « non ».\n3. L’élève dit : « à le bambi ».\n4. L’enseignante répond : « au chevreuil ouais ».\n5. L’élève dit : « le chevreuil ».\n6. L’enseignante réagit : « mhm ».\n7. L’élève reparle du personnage qui apporte quelque chose, cette fois « au chevreuil ».\n\nRepères de lecture : « ouais » est une forme familière de « oui » ; « mhm » note une brève réaction vocale.",
+      "prompt": "Analyse cet échange en distinguant les actes de communication de l’enfant et les moyens linguistiques qu’il utilise. Entre les tours 3 et 4, repère deux modifications et nomme, pour chacune, la compétence concernée. Explique ensuite ce que les tours 5 et 7 permettent d’observer sur la participation de l’élève, puis ce que cette seule observation ne permet pas encore de conclure sur son autonomie.",
       "hints": [
-        "Commence par distinguer le but de la prise de parole et les formes employées pour l’atteindre.",
-        "Compare les formulations de l’enfant et de l’enseignante à deux endroits précis, puis regarde ce que l’enfant fait après cette intervention."
+        "Distingue ce que l’enfant fait avec la parole et les mots ou constructions dont il se sert.",
+        "Compare les fragments des tours 3 et 4, puis regarde quelles formes réapparaissent aux tours 5 et 7."
       ],
       "criteria": [
         {
@@ -24,7 +24,7 @@
         },
         {
           "id": "c3",
-          "text": "J’appuie mon interprétation de la participation sur la reprise puis la poursuite du récit."
+          "text": "J’appuie mon interprétation de la participation sur « le chevreuil » au tour 5, puis sur l’emploi de « au chevreuil » au tour 7 pour raconter l’événement."
         },
         {
           "id": "c4",
@@ -44,7 +44,7 @@
           },
           {
             "title": "Examiner la suite",
-            "text": "L’élève reprend « le chevreuil », puis poursuit avec « et alors l’apporte au chevreuil ». Il utilise donc la formulation dans la poursuite immédiate du récit. Pour examiner une prise en charge autonome, il faudrait encore observer son emploi dans une autre occasion sans cette aide."
+            "text": "L’élève reprend d’abord « le chevreuil », puis utilise « au chevreuil » en reparlant de ce qui est apporté. La formulation proposée sert donc la poursuite immédiate du récit. Pour examiner une prise en charge autonome, il faudrait encore observer son emploi dans une autre occasion sans cette aide."
           }
         ],
         "pitfalls": [
@@ -55,7 +55,7 @@
       "sources": [
         {
           "file": "2026-09-17_BP1-18FRA_Cours_1_support_etudiant.pdf",
-          "location": "Diapositives 37–38, PDF p. 11 ; diapositive 62, PDF p. 22, extrait des tours 3 à 7."
+          "location": "Diapositives 37–38, PDF p. 11 ; diapositive 62, PDF p. 22, tours 1 à 7, vérifiés visuellement."
         },
         {
           "file": "SYNTHESE_BP1-18FRA_S1_COURS_01.docx",
@@ -69,7 +69,7 @@
       "module": "BP1-18FRA",
       "course": "C01",
       "collection": "fra01-pilote",
-      "contentRevision": "b3cb19cd0f00"
+      "contentRevision": "060442309c34"
     },
     {
       "id": "FRA01-EX02",
@@ -396,5 +396,5 @@
       "contentRevision": "e9a2c6808c45"
     }
   ],
-  "bankRevision": "2d8b74fef7dd"
+  "bankRevision": "734629bd670d"
 }
