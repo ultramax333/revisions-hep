@@ -10,6 +10,17 @@
   let bank, exercises, byId, view = 'overview', activeId = '', revealed = false;
   let selectedTheme = '', search = '', seriesCount = 4;
   const collectionName = IS_ORAL ? 'bloc oral' : 'pilote';
+  // Navigation groups only: the pedagogical families and their identifiers stay intact.
+  const ORAL_THEME_GROUPS = [
+    { label: 'Repères et enseignement', themes: ['Fondements', 'Curriculum', 'Genres', 'Oral et écrit'] },
+    { label: 'Acquisition et diversité', themes: ['Acquisition', 'Hétérogénéité'] },
+    { label: 'Développement et langue', themes: ['Développement', 'Syntaxe'] },
+    { label: 'Interactions et étayage', themes: ['Étayer', 'Interaction', 'Oralité'] },
+    { label: 'Récits et compréhension', themes: ['Récit', 'Compréhension'] },
+    { label: 'Dispositifs et régulation', themes: ['Argumentation', 'Dispositifs', 'Évaluer et réguler'] }
+  ];
+  const themeFor = family => ORAL_THEME_GROUPS.find(group => group.themes.includes(family.theme))?.label || family.theme;
+
   const categories = ['Consigne', 'Indice', 'Correction', 'Critères de réussite', 'Difficulté', 'Autre'];
   const esc = value => String(value ?? '').replace(/[&<>"']/g, char => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[char]));
   const text = value => `<span class="exercise-text">${esc(value)}</span>`;
@@ -54,14 +65,25 @@
   function filteredFamilies() {
     const query = search.toLocaleLowerCase('fr').normalize('NFD').replace(/[\u0300-\u036f]/g, '');
     return bank.families.filter(family => {
-      const haystack = [family.title, family.theme, ...exercises.filter(q => q.familyId === family.id).map(q => [q.title, q.prompt, ...q.hints].join(' '))].join(' ').toLocaleLowerCase('fr').normalize('NFD').replace(/[\u0300-\u036f]/g, '');
-      return (!selectedTheme || family.theme === selectedTheme) && (!query || haystack.includes(query));
+      const haystack = [family.title, family.theme, themeFor(family), ...exercises.filter(q => q.familyId === family.id).map(q => [q.title, q.prompt, ...q.hints].join(' '))].join(' ').toLocaleLowerCase('fr').normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+      return (!selectedTheme || themeFor(family) === selectedTheme) && (!query || haystack.includes(query));
     });
+  }
+  function oralFamily(family, progress) {
+    return `<article class="oral-family"><h2>${esc(family.title)}</h2><div class="oral-variants">${exercises.filter(q => q.familyId === family.id).map(q => {
+      const grade = progress[q.id] ? ['À retravailler', 'À consolider', 'Critères remplis'][progress[q.id].grade] : 'À essayer';
+      return `<button class="btn secondary" data-exercise="${esc(q.id)}" title="${esc(q.title)}" aria-label="Situation ${q.variant} : ${esc(q.title)} · ${esc(grade)}"><span>Situation ${q.variant}</span><span class="small">${esc(grade)}</span></button>`;
+    }).join('')}</div></article>`;
   }
   function oralOverview() {
     const families = filteredFamilies(), progress = S.mastery(repo.state, exercises);
-    const themes = [...new Set(bank.families.map(f => f.theme))];
-    return `<section class="home-hero"><p class="eyebrow">Français · Didactique de l’oral</p><h1 class="hero-title">Comprendre.<br>Analyser. S’entraîner.</h1><p class="hero-description">${bank.families.length} notions et capacités, ${exercises.length} situations. Choisis ce que tu veux travailler, ou lance une courte série avec des énoncés variés. Les aides expliquent les concepts ; le corrigé t’aide à comparer ton raisonnement.</p>${repo.state.session ? `<button class="btn primary" data-action="begin">${repo.state.session.mode === 'oral-serie' ? 'Reprendre ma série' : 'Reprendre l’exercice en cours'}</button>` : ''}</section><form class="oral-filters settings-card" id="oral-filters"><label class="field-label" for="oral-theme">Un thème</label><select class="select-input" id="oral-theme"><option value="">Tout le bloc oral</option>${themes.map(theme => `<option ${selectedTheme === theme ? 'selected' : ''}>${esc(theme)}</option>`).join('')}</select><label class="field-label" for="oral-search">Une notion à retrouver</label><input class="text-input" id="oral-search" type="search" value="${esc(search)}" placeholder="Ex. : lexique, récit, bilinguisme…"><button class="btn secondary" type="submit">Afficher les notions</button></form><section class="oral-series settings-card"><label class="field-label" for="series-count">Ma série d’entraînement</label><select class="select-input" id="series-count">${[[4,'4 exercices'],[8,'8 exercices'],[12,'12 exercices'],[0,'Toutes les notions affichées']].map(([n,label]) => `<option value="${n}" ${seriesCount === n ? 'selected' : ''}>${label}</option>`).join('')}</select><button class="btn primary" data-action="start-series" ${families.length ? '' : 'disabled'}>Lancer une série</button><p class="help-text">Une situation par notion, parmi celles affichées. Les variantes les moins travaillées sont proposées en priorité. Tu peux interrompre et reprendre librement.</p></section><p class="help-text">${families.length} notion${families.length > 1 ? 's' : ''} affichée${families.length > 1 ? 's' : ''}. Tu peux aussi ouvrir directement une situation ci-dessous.</p><section class="exercise-grid" aria-label="Notions et variantes">${families.map(family => `<article class="course-card exercise-tile oral-family"><p class="eyebrow">${esc(family.theme)}</p><h2>${esc(family.title)}</h2><div class="oral-variants">${exercises.filter(q => q.familyId === family.id).map(q => `<button class="btn secondary" data-exercise="${esc(q.id)}"><span>Situation ${q.variant} · ${esc(q.title)}</span><span class="small">${progress[q.id] ? ['À retravailler','À consolider','Critères remplis'][progress[q.id].grade] : 'À essayer'}</span></button>`).join('')}</div></article>`).join('') || '<p class="empty-state">Aucune notion ne correspond à cette recherche.</p>'}</section>${bank.limitations?.length ? `<details class="hint-panel"><summary>Ce que cet entraînement permet de travailler</summary><ul>${bank.limitations.map(value => `<li>${esc(value)}</li>`).join('')}</ul></details>` : ''}<p class="help-text"><a href="exercices.html">Retrouver les six exercices pilotes</a> · <a href="./">Accueil Révisions HEP</a></p>`;
+    const themes = [...ORAL_THEME_GROUPS.map(group => group.label), ...bank.families.map(themeFor)].filter((theme, index, values) => values.indexOf(theme) === index && bank.families.some(f => themeFor(f) === theme));
+    const groups = themes.map(theme => ({ theme, families: families.filter(f => themeFor(f) === theme) })).filter(group => group.families.length);
+    return `<section class="home-hero oral-home-hero"><h1 class="hero-title">Réviser le bloc oral</h1><p class="hero-description">${exercises.length} situations · ${bank.families.length} capacités. Ouvre un thème ou lance une courte série.</p>${repo.state.session ? `<button class="btn primary" data-action="begin">${repo.state.session.mode === 'oral-serie' ? 'Reprendre ma série' : 'Reprendre l’exercice en cours'}</button>` : ''}</section>
+      <div class="oral-tools"><form class="oral-filters" id="oral-filters"><label class="oral-field" for="oral-theme">Thème<select class="select-input" id="oral-theme"><option value="">Tout le bloc oral</option>${themes.map(theme => `<option ${selectedTheme === theme ? 'selected' : ''}>${esc(theme)}</option>`).join('')}</select></label><label class="oral-field" for="oral-search">Rechercher<input class="text-input" id="oral-search" type="search" value="${esc(search)}" placeholder="Ex. : lexique, récit, bilinguisme…"></label><button class="btn secondary" type="submit">Afficher les notions</button></form>
+      <section class="oral-series"><label class="oral-field" for="series-count">Ma série d’entraînement<select class="select-input" id="series-count">${[[4,'4 exercices'],[8,'8 exercices'],[12,'12 exercices'],[0,'Toutes les notions affichées']].map(([n,label]) => `<option value="${n}" ${seriesCount === n ? 'selected' : ''}>${label}</option>`).join('')}</select></label><button class="btn primary" data-action="start-series" ${families.length ? '' : 'disabled'}>Lancer une série</button><p class="help-text">Une situation par capacité ; les variantes les moins travaillées passent en premier.</p></section></div>
+      <p class="help-text oral-result-count">${families.length} capacité${families.length > 1 ? 's' : ''} · ${groups.length} thème${groups.length > 1 ? 's' : ''}</p><section class="oral-groups" aria-label="Thèmes et situations">${groups.map(group => `<details class="oral-group" ${selectedTheme || search ? 'open' : ''}><summary><span>${esc(group.theme)}</span><span class="oral-group-count">${group.families.length} capacités</span></summary><div class="oral-group-content">${group.families.map(family => oralFamily(family, progress)).join('')}</div></details>`).join('') || '<p class="empty-state">Aucune notion ne correspond à cette recherche.</p>'}</section>
+      ${bank.limitations?.length ? `<details class="hint-panel"><summary>Ce que cet entraînement permet de travailler</summary><ul>${bank.limitations.map(value => `<li>${esc(value)}</li>`).join('')}</ul></details>` : ''}<p class="help-text"><a href="exercices.html">Retrouver les six exercices pilotes</a> · <a href="./">Accueil Révisions HEP</a></p>`;
   }
   function shuffle(items) {
     const values = [...items];
