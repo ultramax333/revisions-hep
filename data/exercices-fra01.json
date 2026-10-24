@@ -1,0 +1,400 @@
+{
+  "schemaVersion": 1,
+  "id": "fra01-pilote",
+  "title": "Exercices pilotes — FRA 01",
+  "exercises": [
+    {
+      "id": "FRA01-EX01",
+      "title": "Le récit du chevreuil",
+      "kind": "Analyser une situation",
+      "context": "En classe de langue seconde, un élève raconte à partir d’un album. Dans l’extrait de la transcription :\nÉlève : « à le bambi »\nEnseignante : « au chevreuil ouais »\nÉlève : « le chevreuil »\nEnseignante : « mhm »\nÉlève : « et alors l'apporte au chevreuil ».",
+      "prompt": "Analyse cet échange en reliant les actes de communication de l’enfant aux moyens linguistiques qu’il utilise. Repère deux modifications apportées par l’enseignante et nomme, pour chacune, la compétence concernée. Termine par ce que la suite de l’échange permet d’observer sur la participation de l’élève et par ce que cette seule observation ne permet pas encore de conclure sur son autonomie.",
+      "hints": [
+        "Commence par distinguer le but de la prise de parole et les formes employées pour l’atteindre.",
+        "Compare les formulations de l’enfant et de l’enseignante à deux endroits précis, puis regarde ce que l’enfant fait après cette intervention."
+      ],
+      "criteria": [
+        {
+          "id": "c1",
+          "text": "Je distingue raconter/nommer, actes de communication, des mots et constructions employés."
+        },
+        {
+          "id": "c2",
+          "text": "J’associe « bambi » → « chevreuil » à la compétence lexico-sémantique et « à le » → « au » à la compétence syntaxique."
+        },
+        {
+          "id": "c3",
+          "text": "J’appuie mon interprétation de la participation sur la reprise puis la poursuite du récit."
+        },
+        {
+          "id": "c4",
+          "text": "Je distingue la réussite immédiate avec aide d’une utilisation autonome à vérifier."
+        }
+      ],
+      "answer": {
+        "summary": "L’enfant raconte et désigne un personnage. L’enseignante soutient cette activité en précisant le mot et la construction ; l’élève reprend sa proposition puis continue.",
+        "steps": [
+          {
+            "title": "Relier l’acte et ses moyens",
+            "text": "Raconter l’histoire et nommer le personnage sont des actes de communication : ils relèvent des savoirs langagiers. Les mots et les constructions qui permettent de les accomplir sont des moyens linguistiques. Il ne s’agit pas de deux activités indépendantes : préciser la formulation sert le récit."
+          },
+          {
+            "title": "Identifier les deux modifications",
+            "text": "« Chevreuil » remplace « bambi » : le choix du mot et de son référent touche la compétence lexico-sémantique. « Au » remplace « à le » : la construction grammaticale touche la compétence syntaxique. Ces deux modifications sont repérables dans les énoncés, sans inventer d’observation de la prononciation."
+          },
+          {
+            "title": "Examiner la suite",
+            "text": "L’élève reprend « le chevreuil », puis poursuit avec « et alors l’apporte au chevreuil ». Il utilise donc la formulation dans la poursuite immédiate du récit. Pour examiner une prise en charge autonome, il faudrait encore observer son emploi dans une autre occasion sans cette aide."
+          }
+        ],
+        "pitfalls": [
+          "Confondre l’acte de raconter avec les formes grammaticales qui permettent de le réaliser.",
+          "Déduire une acquisition durable de la seule reprise immédiate."
+        ]
+      },
+      "sources": [
+        {
+          "file": "2026-09-17_BP1-18FRA_Cours_1_support_etudiant.pdf",
+          "location": "Diapositives 37–38, PDF p. 11 ; diapositive 62, PDF p. 22, extrait des tours 3 à 7."
+        },
+        {
+          "file": "SYNTHESE_BP1-18FRA_S1_COURS_01.docx",
+          "location": "Parties 2 et 5 : actes/moyens linguistiques, quatre compétences et analyse du chevreuil."
+        },
+        {
+          "file": "02_Abdelilah-Bauer_2015_Developpement_langage_pp019-037.pdf",
+          "location": "Abdelilah-Bauer (2015), Le défi des enfants bilingues, p. 20 imprimée : actes fondamentaux de communication, savoir langagier et savoirs linguistiques ; page vérifiée visuellement dans le scan."
+        }
+      ],
+      "module": "BP1-18FRA",
+      "course": "C01",
+      "collection": "fra01-pilote",
+      "contentRevision": "b3cb19cd0f00"
+    },
+    {
+      "id": "FRA01-EX02",
+      "title": "Quatre réponses d’un adulte",
+      "kind": "Comparer et justifier",
+      "context": "Chaque réponse ci-dessous suit immédiatement l’énoncé de l’enfant.\nA. Enfant : « Le lapin dort ». Adulte : « Le lapin dort ».\nB. Enfant : « Le lapin dort ». Adulte : « Le lapin ».\nC. Enfant : « Il a tombé ». Adulte : « Il est tombé ».\nD. Enfant : « Il a tombé ». Adulte : « Il est tombé dans le trou ».",
+      "prompt": "Classe les quatre reprises à l’aide de la distinction de de Weck entre répétition et reformulation, en précisant leur sous-type. Justifie chaque classement par un indice dans les énoncés. Explique ensuite le critère décisif qui sépare C et D.",
+      "hints": [
+        "Compare d’abord chaque paire mot à mot, sans chercher tout de suite une étiquette.",
+        "Distingue trois opérations possibles : conserver l’énoncé, modifier sa formulation et ajouter une information sur la scène."
+      ],
+      "criteria": [
+        {
+          "id": "c1",
+          "text": "Je classe A comme répétition totale et B comme répétition partielle, en citant ce qui est repris."
+        },
+        {
+          "id": "c2",
+          "text": "Je classe C sans extension et D avec extension."
+        },
+        {
+          "id": "c3",
+          "text": "Je justifie la différence C/D par l’ajout du lieu dans D, et pas seulement par la longueur des énoncés."
+        },
+        {
+          "id": "c4",
+          "text": "Je repère le passage de « a tombé » à « est tombé » et je m’appuie sur cette modification de l’expression pour justifier le classement comme reformulation."
+        }
+      ],
+      "answer": {
+        "summary": "A est une répétition totale, B une répétition partielle, C une reformulation sans extension et D une reformulation avec extension.",
+        "steps": [
+          {
+            "title": "A et B : ce qui est conservé",
+            "text": "Dans A, l’adulte reprend tout l’énoncé « Le lapin dort » : la répétition est totale. Dans B, il ne reprend que « Le lapin » : elle est partielle. La répétition atteste l’énoncé de l’enfant ; elle ne le transforme pas en une autre formulation."
+          },
+          {
+            "title": "C et D : forme et information",
+            "text": "Dans C, « a tombé » devient « est tombé ». L’adulte modifie l’expression, mais conserve l’information de la chute : c’est une reformulation sans extension. Dans D, il modifie également l’expression et ajoute le lieu, « dans le trou » : c’est une reformulation avec extension."
+          },
+          {
+            "title": "Formuler le critère de comparaison",
+            "text": "L’extension se reconnaît à l’information ajoutée, pas simplement au nombre de mots. Dans les deux reformulations, l’adulte propose une autre formulation sans annoncer explicitement une erreur : la correction est implicite."
+          }
+        ],
+        "pitfalls": [
+          "Appeler reformulation toute réponse d’un adulte.",
+          "Confondre modification grammaticale et ajout d’information."
+        ]
+      },
+      "sources": [
+        {
+          "file": "2026-09-17_BP1-18FRA_Cours_1_support_etudiant.pdf",
+          "location": "Diapositives 59–60, PDF p. 20–21 : types de reprises et reformulations."
+        },
+        {
+          "file": "SYNTHESE_BP1-18FRA_S1_COURS_01.docx",
+          "location": "Partie 4, tableau « Reprise | Fonction et variation » : exemples du lapin et de la chute."
+        }
+      ],
+      "module": "BP1-18FRA",
+      "course": "C01",
+      "collection": "fra01-pilote",
+      "contentRevision": "8201466185b4"
+    },
+    {
+      "id": "FRA01-EX03",
+      "title": "Raconter avec puis sans aide",
+      "kind": "Analyser une situation",
+      "context": "Devant trois images d’une histoire, un enfant nomme seul les personnages mais n’enchaîne pas leurs actions. L’adulte lui demande ce qui se passe d’abord, puis pourquoi un personnage s’en va. L’enfant relie alors deux événements et produit un récit plus organisé. On ne dispose encore que de cette observation.",
+      "prompt": "Explique ce que la zone proximale de développement et l’étayage permettent respectivement d’analyser dans ce cas. Relie les deux notions sans les confondre. Propose ensuite une suite à l’activité pour vérifier si l’enfant prend davantage en charge le récit.",
+      "hints": [
+        "Mets en regard ce qui est réussi dans chacune des deux conditions de l’activité.",
+        "Distingue ce que la comparaison révèle sur les possibilités de l’enfant et ce que l’adulte fait concrètement ; cherche ensuite une observation qui ne dépende plus de la même aide."
+      ],
+      "criteria": [
+        {
+          "id": "c1",
+          "text": "Je précise les réussites distinctes : nommer seul, puis enchaîner des événements avec aide."
+        },
+        {
+          "id": "c2",
+          "text": "Je définis la ZPD par cet écart et l’étayage par les interventions qui soutiennent l’activité."
+        },
+        {
+          "id": "c3",
+          "text": "Je relie l’aide à la part difficile de la tâche, l’organisation du récit."
+        },
+        {
+          "id": "c4",
+          "text": "Je propose une diminution des relances et une observation de l’enchaînement autonome, sans déclarer l’acquisition déjà établie."
+        }
+      ],
+      "answer": {
+        "summary": "La ZPD situe l’écart entre les réussites seul et avec aide ; l’étayage décrit le soutien fourni. La suite doit examiner une autonomie croissante.",
+        "steps": [
+          {
+            "title": "Situer les possibilités de l’enfant",
+            "text": "Seul, l’enfant nomme les personnages ; avec les questions, il enchaîne deux événements. Cet écart situe sa zone proximale de développement pour cette tâche : le niveau actuel est ce qu’il réalise seul, le niveau potentiel ce qu’il atteint avec cette aide."
+          },
+          {
+            "title": "Décrire l’intervention",
+            "text": "Les questions de l’adulte prennent en charge une part encore difficile de l’organisation du récit et permettent à l’enfant de participer. Elles constituent un étayage. La ZPD ne désigne donc pas les questions elles-mêmes ; elle met en relation les deux niveaux de réussite."
+          },
+          {
+            "title": "Organiser le suivi",
+            "text": "L’adulte peut proposer de reprendre le récit en espaçant les relances, puis observer une tentative sans ces questions. Il examine si l’enfant relie les événements de lui-même. Le progrès attendu est un transfert de responsabilité ; la réussite accompagnée ne suffit pas à conclure à une capacité déjà autonome."
+          }
+        ],
+        "pitfalls": [
+          "Réduire la ZPD à toute intervention de l’adulte.",
+          "Retirer l’aide d’un coup et considérer l’échec qui suit comme un verdict définitif."
+        ]
+      },
+      "sources": [
+        {
+          "file": "2026-09-17_BP1-18FRA_Cours_1_support_etudiant.pdf",
+          "location": "Diapositives 51–54, PDF p. 17–18 ; diapositive 58, PDF p. 20."
+        },
+        {
+          "file": "SYNTHESE_BP1-18FRA_S1_COURS_01.docx",
+          "location": "Partie 4 : ZPD, exemple de l’album, étayage et transfert progressif de responsabilité."
+        }
+      ],
+      "module": "BP1-18FRA",
+      "course": "C01",
+      "collection": "fra01-pilote",
+      "contentRevision": "cfb49b8a833c"
+    },
+    {
+      "id": "FRA01-EX04",
+      "title": "Pensée et langage : deux lectures",
+      "kind": "Comparer et justifier",
+      "context": "Un enfant prépare un récit à partir d’images. Une première fois, il énumère les éléments visibles. Pendant un échange avec un adulte, il cherche des mots pour expliquer les relations entre les événements et réorganise son récit.",
+      "prompt": "Propose deux lectures de cette situation, l’une à partir de Piaget et l’autre à partir de Vygotski, en précisant pour chacune le lien entre pensée et langage. Explique ce que chaque lecture conduit à examiner. Termine en distinguant une interprétation théorique de la preuve qu’une théorie est la bonne.",
+      "hints": [
+        "Repère ce que chaque approche considère comme déterminant dans les rapports entre développement cognitif et développement verbal.",
+        "Applique ensuite chaque lecture au même passage : préparer ce qu’on peut raconter, puis chercher une formulation avec autrui. Ne change pas de situation entre les deux approches."
+      ],
+      "criteria": [
+        {
+          "id": "c1",
+          "text": "J’explicite chez Piaget la priorité donnée au développement cognitif pour expliquer le développement verbal."
+        },
+        {
+          "id": "c2",
+          "text": "J’explicite chez Vygotski le rôle du langage et des relations sociales dans la construction de la pensée."
+        },
+        {
+          "id": "c3",
+          "text": "J’applique chaque lecture aux données de la même situation, au lieu de seulement réciter deux noms."
+        },
+        {
+          "id": "c4",
+          "text": "Je distingue une interprétation du cas d’une preuve générale départageant les théories."
+        }
+      ],
+      "answer": {
+        "summary": "Piaget conduit à examiner les capacités cognitives dont dépend le langage ; Vygotski, la contribution du langage et de la relation sociale à la pensée.",
+        "steps": [
+          {
+            "title": "Lire la situation avec Piaget",
+            "text": "Dans la présentation constructiviste du cours, le développement cognitif détermine le développement verbal. On examine ce que l’enfant peut se représenter et les relations qu’il comprend pour pouvoir les exprimer. L’abstraction et la décentration aident notamment à dépasser le seul élément visible ou son propre point de vue."
+          },
+          {
+            "title": "Lire la situation avec Vygotski",
+            "text": "Dans l’approche historico-culturelle, le langage participe à la construction de la pensée dans les relations sociales. On examine ici comment chercher des formulations dans l’échange avec l’adulte aide l’enfant à organiser les relations entre les événements. Le langage intervient dans l’élaboration de la pensée, et pas seulement dans son expression."
+          },
+          {
+            "title": "Garder le statut de ces lectures",
+            "text": "Les deux lectures orientent des questions différentes sur le même cas. Le progrès observé pendant l’échange n’établit pas, à lui seul, qu’une théorie explique tout le développement du langage. Il faut distinguer l’utilisation d’un cadre pour interpréter une scène et la mise à l’épreuve d’une explication générale."
+          }
+        ],
+        "pitfalls": [
+          "Attribuer à Piaget et Vygotski exactement le même sens de relation entre pensée et langage.",
+          "Présenter une scène isolée comme la démonstration d’une théorie."
+        ]
+      },
+      "sources": [
+        {
+          "file": "2026-09-17_BP1-18FRA_Cours_1_support_etudiant.pdf",
+          "location": "Diapositive 49, PDF p. 16 ; diapositive 51, PDF p. 17."
+        },
+        {
+          "file": "SYNTHESE_BP1-18FRA_S1_COURS_01.docx",
+          "location": "Partie 3 : liens entre pensée et langage, comparaison Piaget–Vygotski et exemple de récit ; annexe, limite des scènes isolées."
+        }
+      ],
+      "module": "BP1-18FRA",
+      "course": "C01",
+      "collection": "fra01-pilote",
+      "contentRevision": "30ba8d726377"
+    },
+    {
+      "id": "FRA01-EX05",
+      "title": "Expliquer une observation en classe",
+      "kind": "Construire une réponse",
+      "context": "Pendant une activité de sciences, un élève montre sur son dessin plusieurs changements observés au fil des jours. Lorsqu’il présente son dessin, il utilise surtout « ça » et « là » et n’arrive pas à formuler clairement ses observations pour ses camarades. Il utilise une autre langue en famille. L’enseignante veut qu’il puisse faire comprendre ce qu’il a observé.",
+      "prompt": "Construis une réponse articulée montrant comment la langue de scolarisation est ici à la fois un outil et un objet d’apprentissage. Propose deux interventions complémentaires et justifie-les : l’une pour soutenir l’explication des observations, l’autre pour travailler un moyen de langue précis. Indique aussi comment tenir compte des ressources de l’élève.",
+      "hints": [
+        "Distingue le savoir que l’élève cherche à communiquer et les moyens dont il dispose pour le faire comprendre.",
+        "Associe chaque intervention à un obstacle observable : les camarades doivent identifier les éléments du dessin et comprendre les changements. Pense également à ce que l’élève sait déjà faire ou peut montrer autrement."
+      ],
+      "criteria": [
+        {
+          "id": "c1",
+          "text": "Je distingue le français outil pour expliquer les observations et objet quand ses mots ou formulations sont travaillés."
+        },
+        {
+          "id": "c2",
+          "text": "Je propose une intervention qui aide l’élève à organiser et communiquer ce qu’il a observé."
+        },
+        {
+          "id": "c3",
+          "text": "Je cible un moyen linguistique précis, par exemple les noms qui remplacent « ça », et j’explique son utilité pour les auditeurs."
+        },
+        {
+          "id": "c4",
+          "text": "Je prends en compte une ressource effectivement présente et la diversité linguistique sans déduire un déficit de connaissances."
+        }
+      ],
+      "answer": {
+        "summary": "Le français permet de partager un savoir de sciences et devient lui-même un objet de travail lorsque l’on précise les mots et formulations nécessaires.",
+        "steps": [
+          {
+            "title": "Articuler outil et objet",
+            "text": "Comme outil d’apprentissage, le français sert à construire et communiquer les observations en sciences : c’est sa fonction transversale. Comme objet d’apprentissage, on peut travailler explicitement la désignation des éléments et les formulations permettant d’expliquer les changements. Ces fonctions se soutiennent dans la même activité."
+          },
+          {
+            "title": "Proposer deux interventions liées",
+            "text": "Pour soutenir l’explication, l’enseignante peut faire reprendre le dessin en demandant à l’élève de montrer successivement ce qui a changé. Pour travailler la langue, elle peut choisir avec lui les noms correspondant aux éléments montrés, puis l’aider à remplacer une formulation imprécise par une désignation compréhensible pour les camarades. L’objectif est que l’élève formule son observation, pas que l’adulte parle entièrement à sa place."
+          },
+          {
+            "title": "Partir des ressources",
+            "text": "Le dessin et les observations constituent déjà des ressources. Les langues connues peuvent aussi être mobilisées, par exemple si l’élève propose un mot qu’il utilise en famille avant de chercher son correspondant en français. Une difficulté de formulation ne permet pas de conclure qu’il n’a rien compris au phénomène."
+          }
+        ],
+        "pitfalls": [
+          "Assimiler automatiquement une formulation peu précise à une absence de connaissances en sciences.",
+          "Donner deux aides sans expliquer leur lien avec la tâche et les moyens de langue visés."
+        ]
+      },
+      "sources": [
+        {
+          "file": "2026-09-17_BP1-18FRA_Cours_1_support_etudiant.pdf",
+          "location": "Diapositives 30 et 32, PDF p. 8 ; diapositives 33–34, PDF p. 9."
+        },
+        {
+          "file": "2026-09-17_BP1-18FRA_NOTES_COURS_1.docx",
+          "location": "Rubriques « pp.30 » à « pp.33 » : langue de scolarisation, objet/outil et diversité des langues."
+        },
+        {
+          "file": "SYNTHESE_BP1-18FRA_S1_COURS_01.docx",
+          "location": "Partie 1 : trois rôles de la langue de scolarisation et hétérogénéité comme ressource."
+        }
+      ],
+      "module": "BP1-18FRA",
+      "course": "C01",
+      "collection": "fra01-pilote",
+      "contentRevision": "f350aeffb5fe"
+    },
+    {
+      "id": "FRA01-EX06",
+      "title": "Rendre le récit accessible aux auditeurs",
+      "kind": "Analyser une situation",
+      "context": "Un enfant raconte une scène d’album à deux camarades assis en face de lui. Il garde l’album tourné vers lui, montre une image du doigt et dit : « Il met ça là ». Un camarade demande de qui il parle. L’enfant dit alors : « J’ai peur de me tromper », puis s’arrête. L’adulte souhaite l’aider à reprendre son récit.",
+      "prompt": "Choisis deux aspects pragmatiques de Dumais pertinents pour analyser cette situation. Pour chacun, cite un indice observable et propose une intervention précise de l’adulte, en expliquant l’effet recherché. Termine par une observation qui permettrait de juger si le récit devient plus accessible aux auditeurs.",
+      "hints": [
+        "Regarde les conditions de l’échange et les réactions des partenaires, en plus des mots prononcés.",
+        "Pour chaque élément retenu, fais le lien entre un fait du cas, ce que cela change pour l’échange et un ajustement concret. Plusieurs choix sont recevables s’ils sont justifiés."
+      ],
+      "criteria": [
+        {
+          "id": "c1",
+          "text": "Je nomme deux aspects distincts de Dumais et je les rattache chacun à un fait précis du cas."
+        },
+        {
+          "id": "c2",
+          "text": "Je propose pour chaque aspect une intervention concrète et j’explique l’obstacle qu’elle aide à traiter."
+        },
+        {
+          "id": "c3",
+          "text": "Je relie les aides au but de rendre le récit compréhensible et de maintenir la participation de l’enfant."
+        },
+        {
+          "id": "c4",
+          "text": "Je précise un signe observable de compréhension ou de suivi du récit par les camarades, par exemple leur capacité à identifier le personnage ou l’action. La seule reprise du récit par l’enfant montre sa participation, pas encore cette compréhension."
+        }
+      ],
+      "answer": {
+        "summary": "Les aspects matériel, communicationnel et émotionnel offrent ici des appuis. Deux analyses justifiées suffisent, chacune reliée à une intervention et à son effet.",
+        "steps": [
+          {
+            "title": "Examiner le support et les partenaires",
+            "text": "L’aspect matériel concerne les supports : l’album tourné vers l’enfant ne donne pas aux auditeurs le même accès à l’image. L’adulte peut organiser un appui visuel partagé. L’aspect communicationnel concerne notamment les partenaires et le but de la parole : la question du camarade montre que le personnage n’est pas identifié. L’adulte peut inviter l’enfant à préciser de qui il parle pour cet auditeur."
+          },
+          {
+            "title": "Prendre en compte l’émotion exprimée",
+            "text": "L’aspect émotionnel est également justifié par « J’ai peur de me tromper » et l’arrêt du récit. L’adulte peut accueillir cette difficulté, laisser un temps de reprise et soutenir une nouvelle tentative. L’effet recherché est le maintien de la participation, pas seulement la correction d’une phrase."
+          },
+          {
+            "title": "Vérifier l’effet",
+            "text": "Pour juger l’accessibilité du récit, on observe si les camarades peuvent identifier le personnage ou suivre l’action grâce aux informations données. La reprise du récit par l’enfant indique sa participation ; elle ne suffit pas, seule, à établir la compréhension des auditeurs. Une autre analyse, par exemple le contenu ou le non-verbal, est recevable si son indice et l’intervention correspondante sont explicités."
+          }
+        ],
+        "pitfalls": [
+          "Nommer deux aspects sans les rattacher aux faits de la situation.",
+          "Attribuer une émotion non observée alors que le cas fournit déjà une parole explicite sur la peur."
+        ]
+      },
+      "sources": [
+        {
+          "file": "2026-09-17_BP1-18FRA_Cours_1_support_etudiant.pdf",
+          "location": "Diapositive 61, PDF p. 21 : six aspects pragmatiques de Dumais."
+        },
+        {
+          "file": "SYNTHESE_BP1-18FRA_S1_COURS_01.docx",
+          "location": "Partie 5 : aspects pragmatiques, exemple de l’album et prise en compte de la situation de communication."
+        }
+      ],
+      "module": "BP1-18FRA",
+      "course": "C01",
+      "collection": "fra01-pilote",
+      "contentRevision": "e9a2c6808c45"
+    }
+  ],
+  "bankRevision": "2d8b74fef7dd"
+}
