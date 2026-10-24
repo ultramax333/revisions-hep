@@ -277,3 +277,11 @@ summary::marker { color: var(--accent); }
 .exercise-origin { margin: 8px 0 20px; color: var(--text-dim); font-size: .8rem; line-height: 1.55; overflow-wrap: anywhere; }
 .exercise-origin > span { display: block; }
 .exercise-origin > span + span { margin-top: 4px; }
+
+.oral-filters, .oral-series { display: grid; gap: 12px; }
+.oral-filters .field-label, .oral-series .field-label { margin: 0; }
+.oral-variants { display: grid; gap: 10px; width: 100%; }
+.oral-variants .btn { display: grid; gap: 6px; text-align: left; white-space: normal; overflow-wrap: anywhere; }
+.oral-variants .small { font-weight: 400; color: var(--text-dim); }
+.oral-family h2 { margin-bottom: 18px; }
+@media (min-width: 760px) { .oral-filters { grid-template-columns: 1fr 2fr; } .oral-filters > button { grid-column: 1 / -1; } .oral-series { grid-template-columns: 1fr 1fr; align-items: center; } .oral-series > .help-text { grid-column: 1 / -1; } }
