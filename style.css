@@ -317,6 +317,31 @@ summary::marker { color: var(--accent); }
 .qcm-step:focus, .qcm-verdict:focus { outline: none; }
 .qcm-summary { margin-top: 22px; padding: 16px; border: 1px solid var(--border); border-radius: 12px; }
 .qcm-summary h2 { font-size: 1.1rem; margin-bottom: 8px; }
+.qcm-focus-header { display: flex; align-items: center; gap: 6px; max-width: 800px; margin: 0 auto 10px; padding-bottom: 8px; border-bottom: 1px solid var(--border); }
+.qcm-focus-header .question-counter { margin-right: auto; font-size: .8125rem; white-space: nowrap; }
+.qcm-focus-header .btn { padding: 8px 10px; min-height: 44px; font-size: .875rem; }
+.qcm-focus .question-shell { padding-top: 0; }
+.qcm-focus .question-card { padding: 0; margin-top: 0; border: 0; border-radius: 0; background: transparent; box-shadow: none; }
+.qcm-focus .exercise-title { margin: 0; font-size: 1rem; line-height: 1.3; }
+.qcm-focus .exercise-origin { margin: 4px 0 12px; font-size: .75rem; line-height: 1.3; }
+.qcm-focus .qcm-step { margin: 0; padding: 0; border: 0; }
+.qcm-focus .qcm-step legend { padding: 0; margin-bottom: 12px; font-size: 1.125rem; line-height: 1.35; }
+.qcm-focus .qcm-choices { gap: 8px; }
+.qcm-focus .qcm-choice { padding: 10px 12px; }
+.qcm-dialog { width: min(720px, calc(100% - 24px)); max-height: calc(100dvh - 24px); padding: 0 18px 20px; border: 1px solid var(--border); border-radius: 14px; background: var(--bg-card); color: var(--text); overflow-y: auto; }
+.qcm-dialog::backdrop { background: rgb(0 0 0 / 65%); }
+.qcm-dialog-head { position: sticky; top: 0; display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 12px 0; background: var(--bg-card); }
+.qcm-dialog-head h2 { font-size: 1.15rem; }
+.qcm-dialog .exercise-context { margin-bottom: 18px; }
+.qcm-dialog h3 { margin-bottom: 12px; font-size: 1rem; }
+.qcm-dialog p + p { margin-top: 14px; }
+@media (max-width: 600px) {
+  .qcm-focus .exercise-title { font-size: .875rem; }
+  .qcm-focus .exercise-origin { font-size: .6875rem; margin-bottom: 10px; }
+  .qcm-focus .qcm-step legend { font-size: .9375rem; margin-bottom: 10px; }
+  .qcm-focus .qcm-choices { gap: 6px; }
+  .qcm-focus .qcm-choice { padding: 8px 10px; font-size: .875rem; line-height: 1.35; }
+}
 .qcm-choice:focus-within { outline: 2px solid var(--accent); outline-offset: 2px; }
 .qcm-verdict { margin-top: 16px; }
 .qcm-verdict p { margin-top: 10px; }
