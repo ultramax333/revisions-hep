@@ -312,8 +312,8 @@ summary::marker { color: var(--accent); }
 .qcm-choice input { margin: 5px 0 0; width: 18px; height: 18px; flex: 0 0 18px; accent-color: var(--accent); }
 .qcm-choice span { min-width: 0; overflow-wrap: anywhere; }
 .qcm-choice:has(input:checked) { background: var(--bg-info); border-color: var(--accent); }
-.qcm-choice.qcm-correct { background: var(--bg-good); border-color: var(--good); }
-.qcm-choice.qcm-incorrect { background: var(--bg-bad); border-color: var(--bad); }
+.qcm-choice.qcm-correct, .qcm-choice.qcm-correct:has(input:checked) { background: var(--bg-good); border-color: var(--good); }
+.qcm-choice.qcm-incorrect, .qcm-choice.qcm-incorrect:has(input:checked) { background: var(--bg-bad); border-color: var(--bad); }
 .qcm-choice:focus-within { outline: 2px solid var(--accent); outline-offset: 2px; }
 .qcm-verdict { margin-top: 16px; }
 .qcm-verdict p { margin-top: 10px; }
