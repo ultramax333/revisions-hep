@@ -7,7 +7,8 @@
   const esc = value => String(value ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
   const text = value => `<span class="exercise-text">${esc(value)}</span>`;
   const comments = () => S.feedbackThreads(repo.state).filter(item => !item.deleted && item.comment.trim());
-  const runKey = q => 'qcm::' + q.id + '::' + q.qcmRevision;
+  const runKey = q => 'qcm2::' + q.id + '::' + q.qcmRevision;
+  const legacyRunKey = q => 'qcm::' + q.id + '::' + q.qcmRevision;
   const feedbackQuestion = q => ({ id: q.id + '::qcm', contentRevision: q.qcmRevision });
   function status() {
     document.querySelectorAll('[data-save-status]').forEach(node => { node.textContent = repo.warning || HEPDrive.status(); });
@@ -25,18 +26,23 @@
     return result;
   }
   function readRun(q) {
-    let raw; try { raw = JSON.parse(repo.state.drafts[runKey(q)]?.text || 'null'); } catch (_) { raw = null; }
-    const run = { id: typeof raw?.id === 'string' && /^[A-Za-z0-9-]{1,100}$/.test(raw.id) ? raw.id : S.uuid(), answers: {}, order: {}, checked: false, hintUsed: !!raw?.hintUsed };
+    let raw; try { raw = JSON.parse(repo.state.drafts[runKey(q)]?.text || repo.state.drafts[legacyRunKey(q)]?.text || 'null'); } catch (_) { raw = null; }
+    const run = { id: typeof raw?.id === 'string' && /^[A-Za-z0-9-]{1,100}$/.test(raw.id) ? raw.id : S.uuid(), answers: {}, order: {}, revealed: {}, index: 0, checked: false, hintUsed: !!raw?.hintUsed };
     for (const step of q.steps) {
       const ids = step.choices.map(c => c.id), order = raw?.order?.[step.id];
       run.order[step.id] = Array.isArray(order) && order.length === 4 && new Set(order).size === 4 && order.every(id => ids.includes(id)) ? order : shuffled(ids);
-      if (ids.includes(raw?.answers?.[step.id])) run.answers[step.id] = raw.answers[step.id];
+      if (ids.includes(raw?.answers?.[step.id])) {
+        run.answers[step.id] = raw.answers[step.id];
+        if (raw?.revealed?.[step.id] === true || (!raw?.revealed && raw?.checked === true)) run.revealed[step.id] = true;
+      }
     }
-    run.checked = !!raw?.checked && q.steps.every(step => run.answers[step.id]);
-    if (JSON.stringify(raw) !== JSON.stringify(run)) writeRun(q, run);
+    run.checked = q.steps.every(step => run.revealed[step.id]);
+    const firstPending = q.steps.findIndex(step => !run.revealed[step.id]);
+    run.index = Number.isInteger(raw?.index) ? Math.min(Math.max(0, raw.index), q.steps.length - 1) : firstPending < 0 ? q.steps.length - 1 : firstPending;
+    if (!repo.state.drafts[runKey(q)] || JSON.stringify(raw) !== JSON.stringify(run)) writeRun(q, run);
     return run;
   }
-  const sameRun = (left, right) => left && right && left.id === right.id && left.checked === right.checked && S.stable(left.order) === S.stable(right.order);
+  const sameRun = (left, right) => left && right && left.id === right.id && left.index === right.index && S.stable(left.revealed) === S.stable(right.revealed) && S.stable(left.order) === S.stable(right.order);
   function ingestLocal() {
     try { const saved = localStorage.getItem(KEY); if (saved) repo.ingest(JSON.parse(saved)); } catch (_) { /* Repository.save reports unavailable storage. */ }
   }
@@ -44,7 +50,7 @@
     if (view !== 'exercise' || !active || !displayedRun) return;
     const current = readRun(active);
     if (!sameRun(current, displayedRun)) { toast('Cet essai a changé ailleurs. Une nouvelle action l’actualisera ; tes retours précédents restent conservés.'); return; }
-    document.querySelectorAll('.qcm-choice input').forEach(input => { input.checked = current.answers[input.name] === input.value; });
+    document.querySelectorAll('[data-choice]').forEach(button => { button.setAttribute('aria-pressed', String(current.answers[button.dataset.step] === button.dataset.choice)); });
   }
   async function mutateRun(q, expected, change, after) {
     const perform = () => {
@@ -75,20 +81,21 @@
     return `<header class="site-header"><button class="brand" data-action="home"><img class="brand-mark" src="icon.svg" alt=""><span><span class="brand-title">Essai · QCM guidés</span><span class="brand-subtitle">Français · Bloc oral</span></span></button><nav class="header-actions" aria-label="Navigation des QCM"><button class="btn ghost" data-action="home">Exercices</button><button class="btn ghost" data-action="feedback">Mes retours <span class="badge" data-feedback-count>${comments().length}</span></button><button class="icon-button" data-action="settings" aria-label="Sauvegardes des QCM">↗</button></nav></header>`;
   }
   function home() {
-    return `<section class="home-hero oral-home-hero"><h1 class="hero-title">Comprendre, puis rédiger</h1><p class="hero-description">Trois exercices à essayer. Pour chacun, plusieurs QCM préparent le raisonnement de la question complète. Quatre propositions, une seule réponse correcte.</p><p class="help-text">Les corrections expliquent les différences entre les propositions. Ensuite, passe à la rédaction sans choix de réponses.</p></section><section class="exercise-grid">${bank.exercises.map(q => {
+    return `<section class="home-hero oral-home-hero"><h1 class="hero-title">Comprendre, puis rédiger</h1><p class="hero-description">Trois exercices à essayer. Pour chacun, plusieurs QCM préparent le raisonnement de la question complète. Quatre propositions, une seule réponse correcte.</p><p class="help-text">Un QCM à la fois : choisis une proposition, lis le résultat et son explication, puis passe à la suite du même exercice. Ensuite, tu peux rédiger sans choix de réponses.</p></section><section class="exercise-grid">${bank.exercises.map(q => {
       const run = readRun(q), score = q.steps.filter(s => run.answers[s.id] === s.correctId).length;
-      return `<article class="course-card exercise-tile"><h2>${esc(q.title)}</h2><p class="help-text">${q.steps.length} QCM${run.checked ? ` · ${score} / ${q.steps.length} lors du dernier essai` : ''}</p><div class="actions"><button class="btn primary" data-exercise="${q.id}">${Object.keys(run.answers).length ? 'Reprendre les QCM' : 'Essayer les QCM'}</button><a class="btn secondary" href="oral.html#${q.id}">Rédiger sans QCM</a></div></article>`;
+      return `<article class="course-card exercise-tile"><h2>${esc(q.title)}</h2><p class="help-text">${q.steps.length} QCM${run.checked ? ` · ${score} / ${q.steps.length} lors du dernier essai` : Object.keys(run.revealed).length ? ` · ${Object.keys(run.revealed).length} / ${q.steps.length} réponses` : ''}</p><div class="actions"><button class="btn primary" data-exercise="${q.id}">${Object.keys(run.answers).length ? 'Reprendre les QCM' : 'Essayer les QCM'}</button><a class="btn secondary" href="oral.html#${q.id}">Rédiger sans QCM</a></div></article>`;
     }).join('')}</section><p class="notice">Le résultat des QCM mesure la reconnaissance d’une réponse. La rédaction et sa justification restent à travailler séparément.</p><p class="help-text"><a href="oral.html">Retour au bloc oral</a></p>`;
   }
   function stepView(q, step, index, run) {
-    const selected = step.choices.find(c => c.id === run.answers[step.id]), correct = step.choices.find(c => c.id === step.correctId);
-    return `<fieldset class="qcm-step" data-step="${step.id}"><legend>${index + 1}. ${esc(step.prompt)}</legend><div class="qcm-choices">${run.order[step.id].map((id, i) => { const c = step.choices.find(c => c.id === id); return `<label class="qcm-choice ${run.checked && id === step.correctId ? 'qcm-correct' : run.checked && id === selected?.id ? 'qcm-incorrect' : ''}"><input type="radio" name="${step.id}" value="${id}" ${selected?.id === id ? 'checked' : ''} ${run.checked ? 'disabled' : ''}><span><strong>${String.fromCharCode(65 + i)}.</strong> ${esc(c.text)}</span></label>`; }).join('')}</div>${run.checked ? `<div class="qcm-verdict" role="status"><strong>${selected.id === step.correctId ? 'Réponse correcte.' : 'À reprendre.'}</strong><p>${text(selected.explanation)}</p>${selected.id !== step.correctId ? `<p><strong>Réponse attendue :</strong> ${text(correct.text)} ${text(correct.explanation)}</p>` : ''}<details><summary>Comprendre les quatre propositions</summary>${run.order[step.id].map((id, i) => { const c = step.choices.find(c => c.id === id); return `<p><strong>${String.fromCharCode(65 + i)}${id === step.correctId ? ' · correcte' : ''}.</strong> ${text(c.explanation)}</p>`; }).join('')}</details></div>` : ''}</fieldset>`;
+    const selected = step.choices.find(c => c.id === run.answers[step.id]), correct = step.choices.find(c => c.id === step.correctId), revealed = !!run.revealed[step.id];
+    return `<fieldset class="qcm-step" data-step="${step.id}"><legend>${esc(step.prompt)}</legend><div class="qcm-choices">${run.order[step.id].map((id, i) => { const c = step.choices.find(c => c.id === id); return `<button class="qcm-choice ${selected?.id === id ? 'qcm-selected' : ''} ${revealed && id === step.correctId ? 'qcm-correct' : revealed && id === selected?.id ? 'qcm-incorrect' : ''}" data-choice="${id}" data-step="${step.id}" aria-pressed="${selected?.id === id}" ${revealed ? 'disabled' : ''}><span><strong>${String.fromCharCode(65 + i)}.</strong> ${esc(c.text)}</span></button>`; }).join('')}</div>${revealed ? `<div class="qcm-verdict" role="status" tabindex="-1"><strong>${selected.id === step.correctId ? 'Bonne réponse.' : 'À reprendre.'}</strong><p><strong>Réponse attendue :</strong> ${text(correct.text)}</p><p>${text(correct.explanation)}</p>${selected.id !== step.correctId ? `<p><strong>Ton choix :</strong> ${text(selected.explanation)}</p>` : ''}<details><summary>Comprendre les autres propositions</summary>${run.order[step.id].filter(id => id !== step.correctId && id !== selected.id).map(id => { const c = step.choices.find(c => c.id === id), letter = String.fromCharCode(65 + run.order[step.id].indexOf(id)); return `<p><strong>${letter}.</strong> ${text(c.explanation)}</p>`; }).join('')}</details></div>` : ''}</fieldset>`;
   }
   function exercise() {
     const q = active, run = readRun(q), snap = snapshot(q, run), saved = S.currentFeedback(repo.state, feedbackQuestion(q), snap);
     const categories = ['Consigne', ...q.steps.map((s, i) => 'QCM ' + (i + 1)), 'Aides', 'Passage à la rédaction', 'Autre'];
-    const ref = bank.courseReference, source = q.sources.find(s => s.file.includes('SYNTHESE')) || q.sources[0];
-    return `<section class="question-shell"><button class="btn ghost" data-action="home">← Les 3 exercices</button><article class="question-card"><p class="eyebrow">Entraînement guidé · ${q.steps.length} QCM</p><h1 class="exercise-title">${esc(q.title)}</h1><p class="exercise-origin"><span>${esc(ref.label)} · ${esc(ref.date)}</span><span>Passage à relire : ${esc(source.location)}</span></p><div class="exercise-context">${text(q.context)}</div><details class="hint-panel"><summary>La question complète à préparer</summary><p>${text(q.prompt)}</p></details><details class="hint-panel" id="qcm-hint"><summary>Un rappel des concepts</summary>${q.hints.map(h => `<p>${text(h)}</p>`).join('')}</details><p class="help-text">Choisis une réponse par question, puis vérifie l’ensemble. Les propositions changent de place à chaque nouvel essai.</p>${q.steps.map((s, i) => stepView(q, s, i, run)).join('')}<div class="actions">${run.checked ? '<button class="btn secondary" data-action="restart">Recommencer les QCM</button>' : '<button class="btn primary" data-action="check">Vérifier mes réponses</button>'}<a class="btn ${run.checked ? 'primary' : 'secondary'}" href="oral.html#${q.id}">Rédiger cet exercice sans QCM →</a></div><p class="help-text">La rédaction s’ouvre dans le bloc oral, avec sa propre réponse et son autoévaluation. Les choix du QCM ne s’y affichent pas.</p></article><details class="feedback-panel" ${saved?.comment ? 'open' : ''}><summary>Mon retour sur cet essai</summary><label class="field-label" for="feedback-category">Cela concerne…</label><select class="select-input" id="feedback-category">${categories.map(c => `<option ${saved?.category === c ? 'selected' : ''}>${esc(c)}</option>`).join('')}</select><label class="field-label" for="feedback-comment">Mon commentaire</label><textarea class="feedback-textarea" id="feedback-comment" rows="4" maxlength="8000" placeholder="Ex. : deux propositions me semblent justes ; la correction n’explique pas leur différence…">${esc(saved?.comment || '')}</textarea><p class="help-text">Ton retour conserve les propositions dans l’ordre affiché et leurs explications.</p><p class="save-status" data-save-status></p></details></section>`;
+    const ref = bank.courseReference, source = q.sources.find(s => s.file.includes('SYNTHESE')) || q.sources[0], step = q.steps[run.index];
+    const score = q.steps.filter(s => run.answers[s.id] === s.correctId && run.revealed[s.id]).length;
+    return `<section class="question-shell"><button class="btn ghost" data-action="home">← Les 3 exercices</button><article class="question-card"><p class="eyebrow">Entraînement guidé</p><h1 class="exercise-title">${esc(q.title)}</h1><p class="exercise-origin"><span>${esc(ref.label)} · ${esc(ref.date)}</span><span>Passage à relire : ${esc(source.location)}</span></p><div class="exercise-context">${text(q.context)}</div><details class="hint-panel"><summary>La question complète à préparer</summary><p>${text(q.prompt)}</p></details><details class="hint-panel" id="qcm-hint"><summary>Un rappel des concepts</summary>${q.hints.map(h => `<p>${text(h)}</p>`).join('')}</details><div class="question-topline"><span class="question-counter">QCM ${run.index + 1} / ${q.steps.length}</span></div><p class="help-text">Choisis une proposition pour voir le résultat et l’explication.</p>${stepView(q, step, run.index, run)}<div class="question-navigation">${run.index > 0 ? '<button class="btn secondary" data-action="previous">← QCM précédent</button>' : ''}${run.index + 1 < q.steps.length ? `<button class="btn primary" data-action="next" ${run.revealed[step.id] ? '' : 'disabled'}>QCM suivant →</button>` : ''}</div>${run.index === q.steps.length - 1 && run.checked ? `<section class="qcm-summary"><h2>Les QCM de cet exercice sont terminés</h2><p>${score} réponse${score > 1 ? 's' : ''} correcte${score > 1 ? 's' : ''} sur ${q.steps.length}. Tu peux maintenant construire ta propre réponse à la question complète.</p></section>` : ''}<div class="actions">${run.checked ? '<button class="btn secondary" data-action="restart">Recommencer les QCM</button>' : ''}<a class="btn ${run.checked ? 'primary' : 'secondary'}" href="oral.html#${q.id}">Rédiger cet exercice sans QCM →</a></div></article><details class="feedback-panel" ${saved?.comment ? 'open' : ''}><summary>Mon retour sur cet essai</summary><label class="field-label" for="feedback-category">Cela concerne…</label><select class="select-input" id="feedback-category">${categories.map(c => `<option ${(saved?.category || 'QCM ' + (run.index + 1)) === c ? 'selected' : ''}>${esc(c)}</option>`).join('')}</select><label class="field-label" for="feedback-comment">Mon commentaire</label><textarea class="feedback-textarea" id="feedback-comment" rows="4" maxlength="8000" placeholder="Ex. : deux propositions me semblent justes ; la correction n’explique pas leur différence…">${esc(saved?.comment || '')}</textarea><p class="help-text">Ton retour conserve les propositions dans l’ordre affiché et leurs explications.</p><p class="save-status" data-save-status></p></details></section>`;
   }
   function feedback() {
     return `<h1>Mes retours sur les QCM</h1><div class="actions"><button class="btn primary" data-action="copy" ${comments().length ? '' : 'disabled'}>Copier les retours</button><button class="btn secondary" data-action="export" ${comments().length ? '' : 'disabled'}>Télécharger les retours</button></div><div class="feedback-list">${comments().sort((a,b) => b.updatedAt.localeCompare(a.updatedAt)).map(item => `<article class="feedback-item"><span class="pill">${esc(item.category)}</span><h2>${esc(item.snapshot.question.split('\n')[0])}</h2><p class="exercise-text">${esc(item.comment)}</p><button class="btn ghost" data-exercise="${esc(item.questionId.split('::')[0])}">Revoir les QCM →</button></article>`).join('') || '<p class="empty-state">Tu peux laisser un retour dans chaque exercice.</p>'}</div><p class="help-text">Les retours restent privés. Copie-les dans notre discussion pour nous les transmettre.</p>`;
@@ -102,7 +109,6 @@
     if (view === 'exercise') {
       const q = active, run = readRun(q), snap = snapshot(q, run);
       displayedRun = run;
-      document.querySelectorAll('.qcm-choice input').forEach(input => input.addEventListener('change', () => { mutateRun(q, run, current => { current.answers[input.name] = input.value; return current; }); }));
       document.getElementById('qcm-hint').addEventListener('toggle', event => { if (event.target.open) mutateRun(q, run, current => { current.hintUsed = true; return current; }); });
       const saveComment = () => { repo.comment(feedbackQuestion(q), document.getElementById('feedback-category').value, document.getElementById('feedback-comment').value, snap); changed(); };
       document.getElementById('feedback-comment').addEventListener('input', saveComment);
@@ -133,20 +139,29 @@
     if (button.dataset.exercise) return navigate(button.dataset.exercise);
     const action = button.dataset.action;
     if (['home', 'feedback', 'settings'].includes(action)) return navigate(action === 'home' ? '' : action);
-    if (action === 'check' && active) {
-      const q = active, expected = displayedRun;
-      return mutateRun(q, expected, run => run, run => {
-        const missing = q.steps.find(s => !run.answers[s.id]);
-        if (missing) { toast('Choisis une proposition pour chaque QCM avant de vérifier.'); document.querySelector(`[data-step="${missing.id}"] input`)?.focus(); return; }
-        run.checked = true; writeRun(q, run);
-        q.steps.forEach(s => repo.grade({ id: q.id + '::' + s.id, contentRevision: q.qcmRevision }, run.answers[s.id] === s.correctId ? 2 : 0, run.id, run.hintUsed));
+    if (button.dataset.choice && active) {
+      const q = active, expected = displayedRun, step = q.steps[expected.index], choice = button.dataset.choice;
+      if (button.dataset.step !== step.id || !step.choices.some(c => c.id === choice)) return;
+      return mutateRun(q, expected, run => {
+        run.answers[step.id] = choice; run.revealed[step.id] = true;
+        run.checked = q.steps.every(s => run.revealed[s.id]); return run;
+      }, run => {
+        repo.grade({ id: q.id + '::' + step.id, contentRevision: q.qcmRevision }, choice === step.correctId ? 2 : 0, run.id, run.hintUsed);
         changed();
-        if (view === 'exercise' && active?.id === q.id) { render(); document.querySelector('.qcm-verdict').scrollIntoView({ block: 'center' }); }
+        if (view === 'exercise' && active?.id === q.id) { render(); const verdict = document.querySelector('.qcm-verdict'); verdict.focus({ preventScroll: true }); verdict.scrollIntoView({ block: 'nearest' }); }
       });
+    }
+    if (['next', 'previous'].includes(action) && active) {
+      const q = active;
+      return mutateRun(q, displayedRun, run => {
+        if (action === 'next' && run.revealed[q.steps[run.index].id]) run.index = Math.min(q.steps.length - 1, run.index + 1);
+        if (action === 'previous') run.index = Math.max(0, run.index - 1);
+        return run;
+      }, () => { if (view === 'exercise' && active?.id === q.id) { render(); const field = document.querySelector('.qcm-step'); field.setAttribute('tabindex', '-1'); field.focus({ preventScroll: true }); field.scrollIntoView({ block: 'start' }); } });
     }
     if (action === 'restart' && active) {
       const q = active;
-      return mutateRun(q, displayedRun, () => ({ id: S.uuid(), answers: {}, order: Object.fromEntries(q.steps.map(s => [s.id, shuffled(s.choices.map(c => c.id))])), checked: false, hintUsed: false }), () => { if (view === 'exercise' && active?.id === q.id) { render(); document.querySelector('.qcm-step').scrollIntoView(); } });
+      return mutateRun(q, displayedRun, () => ({ id: S.uuid(), answers: {}, order: Object.fromEntries(q.steps.map(s => [s.id, shuffled(s.choices.map(c => c.id))])), revealed: {}, index: 0, checked: false, hintUsed: false }), () => { if (view === 'exercise' && active?.id === q.id) { render(); document.querySelector('.qcm-step').scrollIntoView(); } });
     }
     if (action === 'backup') return download('FRA-QCM-sauvegarde.json', { ...repo.state, scope: SCOPE });
     if (action === 'import') return document.getElementById('backup-file').click();

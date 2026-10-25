@@ -78,22 +78,22 @@
           "choices": [
             {
               "id": "a",
-              "text": "A : répétition totale ; B : reformulation sans extension, car la phrase est raccourcie.",
+              "text": "A : répétition totale ; B : reformulation sans extension.",
               "explanation": "Le classement de A convient, mais B conserve une partie des mêmes mots : c’est une répétition partielle. Une suppression ne constitue pas à elle seule une autre formulation."
             },
             {
               "id": "b",
-              "text": "A : répétition totale ; B : répétition partielle, car seule une partie est reprise.",
+              "text": "A : répétition totale ; B : répétition partielle.",
               "explanation": "A conserve tout « Le lapin dort » ; B reprend seulement « Le lapin ». Le critère est la portion de l’énoncé reprise à l’identique : tout ou partie."
             },
             {
               "id": "c",
-              "text": "A : répétition partielle ; B : répétition totale, car tous les mots de B viennent de l’enfant.",
+              "text": "A : répétition partielle ; B : répétition totale.",
               "explanation": "Il faut comparer la réponse à l’énoncé initial complet. A le reprend entièrement ; B en laisse une partie. Le fait que tous les mots de B viennent de l’enfant ne rend pas la reprise totale."
             },
             {
               "id": "d",
-              "text": "A et B : répétitions totales, car chaque mot prononcé par l’adulte était déjà présent.",
+              "text": "A et B : répétitions totales.",
               "explanation": "La présence de mots déjà employés justifie ici la famille répétition. Pour le sous-type, il faut encore vérifier si tout l’énoncé de l’enfant est repris : ce n’est pas le cas de B."
             }
           ]
@@ -127,33 +127,33 @@
         },
         {
           "id": "Q3",
-          "prompt": "Quelle justification distingue précisément les sous-types de reformulation de C et D ?",
+          "prompt": "Quels sont les sous-types de reformulation de C et D ?",
           "correctId": "a",
           "choices": [
             {
               "id": "a",
-              "text": "C est sans extension ; D est avec extension, car D ajoute le lieu de la chute.",
+              "text": "C : sans extension ; D : avec extension.",
               "explanation": "Dans C, la construction change sans information nouvelle. D ajoute « dans le trou », qui précise le lieu. Le critère d’extension porte sur le message enrichi."
             },
             {
               "id": "b",
-              "text": "C et D sont sans extension, car les deux réponses conservent l’événement de la chute.",
+              "text": "C : sans extension ; D : sans extension.",
               "explanation": "Une extension peut conserver l’événement initial tout en le précisant. D ajoute son lieu : garder le même événement n’exclut donc pas une information nouvelle."
             },
             {
               "id": "c",
-              "text": "C est sans extension ; D est avec extension, car D contient davantage de mots.",
-              "explanation": "Les étiquettes conviennent, mais leur justification ne suffit pas. Une phrase plus longue peut exprimer la même information ; ici, il faut identifier le lieu ajouté pour démontrer l’extension."
+              "text": "C : avec extension ; D : sans extension.",
+              "explanation": "Ce classement inverse les sous-types. C change la construction grammaticale sans ajouter d’information sur la chute. D ajoute « dans le trou », qui précise le lieu : il enrichit le message. Le critère porte sur l’information ajoutée, pas seulement sur le nombre de mots."
             },
             {
               "id": "d",
-              "text": "C et D sont avec extension, car les deux réponses améliorent la construction de l’enfant.",
+              "text": "C : avec extension ; D : avec extension.",
               "explanation": "L’amélioration grammaticale permet de reconnaître une reformulation. Elle ne décide pas de l’extension, qui exige une information ajoutée : le lieu dans D, absent de C."
             }
           ]
         }
       ],
-      "qcmRevision": "de1b5672540a"
+      "qcmRevision": "5e1518485303"
     },
     {
       "id": "FRA01-EX03",
@@ -433,12 +433,12 @@
             },
             {
               "id": "b",
-              "text": "Elle confirme Vygotski plutôt que Piaget, puisque la réorganisation apparaît pendant l’échange social.",
+              "text": "Elle confirme Vygotski plutôt que Piaget.",
               "explanation": "Le moment du progrès rend la lecture de Vygotski pertinente, mais ne suffit pas à exclure l’examen des capacités cognitives. Une compatibilité avec un cadre ne constitue pas une preuve qui départage les théories."
             },
             {
               "id": "c",
-              "text": "Elle montre que les deux théories donnent la même explication, puisqu’elles portent sur le même progrès.",
+              "text": "Elle montre que les deux théories donnent la même explication.",
               "explanation": "Un même fait peut recevoir deux lectures différentes. Les cadres se distinguent ici par le lien qu’ils examinent entre pensée et langage ; partager une scène d’application n’efface pas cette différence."
             },
             {
@@ -449,8 +449,8 @@
           ]
         }
       ],
-      "qcmRevision": "6a784c6531a7"
+      "qcmRevision": "17b7b98e5eae"
     }
   ],
-  "bankRevision": "f378413df8bb"
+  "bankRevision": "85aec5107c14"
 }
