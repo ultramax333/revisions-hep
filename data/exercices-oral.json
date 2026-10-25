@@ -272,6 +272,20 @@
     "Le module MER précis consacré à la syntaxe n’est pas disponible dans les sources utilisées. Les exercices analysent les dispositifs et parcours présentés au cours, sans reconstituer ce module.",
     "Les notions de pratique sociale de référence et de savoirs savants ne sont pas développées dans les passages utilisés. Leur définition reste à compléter ; les exercices travaillent la didactisation, le triangle et la médiation attestés dans le cours."
   ],
+  "assessmentConditions": {
+    "allowedDocuments": [
+      "Une feuille A4 recto verso de notes manuscrites personnelles",
+      "Un dictionnaire"
+    ],
+    "providedDocumentsStatus": "Les documents ou listes fournis pendant l’épreuve ne sont pas précisés dans la certification consultée. La situation à analyser est fournie avec chaque exercice d’entraînement.",
+    "writingInstruction": "Pour te rapprocher des conditions de l’examen, rédige avec ta feuille A4 recto verso de notes manuscrites personnelles et ton dictionnaire, sans supports de cours ni ouvrages. Compare ensuite ton raisonnement au corrigé.",
+    "learningInstruction": "Les aides et les références restent disponibles pour apprendre. Pour essayer sans aide, laisse les indices et le corrigé fermés pendant ta rédaction.",
+    "comparisonInstruction": "Le bilan de cet exercice porte sur les savoirs et le raisonnement ; il n’évalue pas l’orthographe.",
+    "source": {
+      "file": "2026-10-01_BP1-18FRA_document-cadre_version_recuperee.pdf",
+      "location": "P. 14, section 9 : certification."
+    }
+  },
   "exercises": [
     {
       "id": "FRA01-EX01",
@@ -820,8 +834,8 @@
       "context": "Un enfant prépare un récit à partir d’images. Une première fois, il énumère les éléments visibles. Pendant un échange avec un adulte, il cherche des mots pour expliquer les relations entre les événements et réorganise son récit.",
       "prompt": "Propose deux lectures de cette situation, l’une à partir de Piaget et l’autre à partir de Vygotski, en précisant pour chacune le lien entre pensée et langage. Explique ce que chaque lecture conduit à examiner. Termine en distinguant une interprétation théorique de la preuve qu’une théorie est la bonne.",
       "hints": [
-        "• Le langage est l’activité par laquelle une personne produit et comprend du sens au moyen d’une langue. Le développement verbal concerne l’évolution de ces capacités.\n• Piaget : dans la présentation du cours, le développement cognitif, c’est-à-dire les capacités de penser et de comprendre, détermine le développement verbal. On examine les capacités dont dépend ce que l’enfant peut exprimer.\n• Vygotski : le langage contribue à construire la pensée, notamment dans les relations sociales et la résolution de problèmes. Chercher à formuler avec autrui peut participer à l’élaboration de ce que l’on pense.",
-        "• Une interprétation théorique utilise un cadre pour proposer une explication de ce que l’on observe. Applique chaque cadre au même cas et appuie ta lecture sur un fait précis.\n• Une preuve suppose des éléments permettant de mettre à l’épreuve une explication, plutôt que de seulement montrer qu’une scène peut se lire à travers elle. Une interprétation possible d’un cas ne suffit donc pas, seule, à départager des théories générales du développement.\nCompare ce que chaque lecture conduit à examiner ; ne te limite pas à citer les deux auteurs."
+        "• Langage : Activité psychologique par laquelle un sujet signifie au moyen d’une langue.\nSignifier signifie ici produire ou comprendre du sens. Le développement verbal concerne l’évolution de ces capacités. Les capacités cognitives désignent les possibilités de penser, de comprendre et de se représenter les choses.\n• Approche constructiviste de Piaget : Explication qui relie le développement verbal à la construction des capacités cognitives en stades. Le développement cognitif détermine le développement verbal dans cette approche.\n• Stade : Étape de construction des capacités cognitives dans l’approche constructiviste de Piaget ; les possibilités verbales sont reliées à ces capacités en développement.",
+        "• Approche historico-culturelle de Vygotski : Explication dans laquelle le langage participe à la construction de la pensée dans les relations sociales. Les échanges et l’aide de l’adulte permettent à l’enfant d’accomplir des tâches qu’il ne réussit pas encore seul, dans sa zone proximale de développement (ZPD).\n• ZPD : Écart entre ce que l’enfant résout seul, son niveau actuel, et ce qu’il peut résoudre avec l’aide d’un adulte ou d’un partenaire plus avancé, son niveau potentiel.\n• Abstraction : Capacité à se détacher d’un cas concret pour penser au-delà de cette situation particulière.\n• Décentration : Capacité à dépasser son seul point de vue pour envisager une autre manière de comprendre une situation.\nUne interprétation théorique utilise un cadre pour proposer une explication de faits observés. Une preuve demande de mettre à l’épreuve une explication : une lecture possible d’une scène ne départage pas, à elle seule, des théories générales. Compare ce que chaque cadre conduit à examiner, en le reliant aux faits."
       ],
       "criteria": [
         {
@@ -842,15 +856,15 @@
         }
       ],
       "answer": {
-        "summary": "Piaget conduit à examiner les capacités cognitives dont dépend le langage ; Vygotski, la contribution du langage et de la relation sociale à la pensée.",
+        "summary": "Deux lectures du même récit : les relations que l’enfant peut se représenter, puis la contribution de la recherche de formulations dans l’échange à leur organisation. La scène ne départage pas à elle seule les théories.",
         "steps": [
           {
             "title": "Lire la situation avec Piaget",
-            "text": "Dans la présentation constructiviste du cours, le développement cognitif détermine le développement verbal. On examine ce que l’enfant peut se représenter et les relations qu’il comprend pour pouvoir les exprimer. L’abstraction et la décentration aident notamment à dépasser le seul élément visible ou son propre point de vue."
+            "text": "Approche constructiviste : Explication qui relie le développement verbal à la construction des capacités cognitives en stades. Le développement cognitif détermine le développement verbal dans cette approche. On examine ici les relations que l’enfant peut se représenter et comprendre pour pouvoir les exprimer dans son récit.\nAbstraction : Capacité à se détacher d’un cas concret pour penser au-delà de cette situation particulière.\nDécentration : Capacité à dépasser son seul point de vue pour envisager une autre manière de comprendre une situation. Ces deux repères orientent l’examen des possibilités de l’enfant, sans que la scène suffise à mesurer chacune de ces capacités."
           },
           {
             "title": "Lire la situation avec Vygotski",
-            "text": "Dans l’approche historico-culturelle, le langage participe à la construction de la pensée dans les relations sociales. On examine ici comment chercher des formulations dans l’échange avec l’adulte aide l’enfant à organiser les relations entre les événements. Le langage intervient dans l’élaboration de la pensée, et pas seulement dans son expression."
+            "text": "Approche historico-culturelle : Explication dans laquelle le langage participe à la construction de la pensée dans les relations sociales. Les échanges et l’aide de l’adulte permettent à l’enfant d’accomplir des tâches qu’il ne réussit pas encore seul, dans sa zone proximale de développement (ZPD). On examine ici comment chercher des formulations avec l’adulte aide l’enfant à organiser les relations entre les événements. La lecture s’intéresse à l’élaboration de la pensée au cours de l’échange, sans supposer cette organisation déjà acquise."
           },
           {
             "title": "Garder le statut de ces lectures",
@@ -869,7 +883,7 @@
         },
         {
           "file": "SYNTHESE_BP1-18FRA_S1_COURS_01.docx",
-          "location": "Partie 3 : liens entre pensée et langage, comparaison Piaget–Vygotski et exemple de récit."
+          "location": "tableau « Notions à savoir », colonne « Ce que c’est » ; parties 3–4 pour les cadres et les reprises."
         }
       ],
       "module": "BP1-18FRA",
@@ -878,7 +892,7 @@
       "familyId": "ORAL-F05",
       "referenceId": "C01",
       "variant": 1,
-      "contentRevision": "30ba8d726377"
+      "contentRevision": "c6c20c57f69d"
     },
     {
       "id": "FRA-ORAL-F05-V2",
@@ -1082,10 +1096,10 @@
       "title": "Raconter avec puis sans aide",
       "kind": "Analyser une situation",
       "context": "Devant trois images d’une histoire, un enfant nomme seul les personnages mais n’enchaîne pas leurs actions. L’adulte lui demande ce qui se passe d’abord, puis pourquoi un personnage s’en va. L’enfant relie alors deux événements et produit un récit plus organisé. On ne dispose encore que de cette observation.",
-      "prompt": "Explique ce que la zone proximale de développement et l’étayage permettent respectivement d’analyser dans ce cas. Relie les deux notions sans les confondre. Propose ensuite une suite à l’activité pour vérifier si l’enfant prend davantage en charge le récit.",
+      "prompt": "Définis brièvement la zone proximale de développement et l’étayage, puis explique ce que ces deux notions permettent respectivement d’analyser dans ce cas. Relie-les sans les confondre. Propose ensuite une suite à l’activité pour vérifier si l’enfant prend davantage en charge le récit.",
       "hints": [
-        "• La zone proximale de développement (ZPD) est l’écart entre ce que l’enfant réussit seul, son niveau actuel, et ce qu’il réussit avec l’aide d’un adulte ou d’un enfant plus avancé, son niveau potentiel.\n• L’étayage est le soutien verbal ou non verbal par lequel l’adulte prend en charge une part de la tâche encore difficile pour l’enfant afin qu’il puisse y participer.",
-        "• La ZPD compare deux niveaux de réussite ; l’étayage désigne les interventions qui soutiennent l’activité. Repère séparément les réussites observées et les aides apportées.\n• Le transfert de responsabilité est le passage progressif d’une activité soutenue par autrui à une activité davantage prise en charge par l’enfant. Le retrait de l’aide se fait progressivement, en fonction de ce qu’il parvient à réaliser.\nPour examiner l’autonomie, cherche ce que l’on pourrait observer lorsque la même aide n’est plus fournie : une réussite accompagnée ne suffit pas à établir une réussite autonome."
+        "• Zone proximale de développement ; ZPD : Écart entre ce que l’enfant résout seul, son niveau actuel, et ce qu’il peut résoudre avec l’aide d’un adulte ou d’un partenaire plus avancé, son niveau potentiel.\n• Niveau de développement actuel : Niveau des capacités que l’enfant peut mobiliser pour résoudre un problème seul, sans aide.\n• Niveau de développement potentiel : Niveau des capacités que l’enfant peut mobiliser lorsqu’un adulte l’aide ou qu’il collabore avec un enfant plus avancé.\n• Étayage ; interaction de tutelle : Aide par laquelle l’adulte assume la part de la tâche encore difficile pour l’enfant, puis lui transfère progressivement les capacités et les responsabilités nécessaires pour agir.",
+        "Dans ton analyse, relève séparément les réussites et leurs conditions, puis les interventions de l’adulte.\nLe transfert de responsabilité correspond à une prise en charge progressive de l’activité par l’enfant. Pour le suivre, observe ce qui devient possible lorsque l’aide diminue, en fonction des réussites. Une réussite accompagnée ne suffit pas à établir l’autonomie ; un essai isolé sans aide ne donne pas non plus un verdict définitif."
       ],
       "criteria": [
         {
@@ -1106,15 +1120,15 @@
         }
       ],
       "answer": {
-        "summary": "La ZPD situe l’écart entre les réussites seul et avec aide ; l’étayage décrit le soutien fourni. La suite doit examiner une autonomie croissante.",
+        "summary": "L’enfant nomme seul les personnages puis relie deux événements avec les questions de l’adulte. L’analyse distingue ces réussites du soutien apporté et prépare un suivi avec moins de relances.",
         "steps": [
           {
             "title": "Situer les possibilités de l’enfant",
-            "text": "Seul, l’enfant nomme les personnages ; avec les questions, il enchaîne deux événements. Cet écart situe sa zone proximale de développement pour cette tâche : le niveau actuel est ce qu’il réalise seul, le niveau potentiel ce qu’il atteint avec cette aide."
+            "text": "Zone proximale de développement : Écart entre ce que l’enfant résout seul, son niveau actuel, et ce qu’il peut résoudre avec l’aide d’un adulte ou d’un partenaire plus avancé, son niveau potentiel. Ici, l’enfant nomme seul les personnages ; avec les questions, il enchaîne deux événements. Les deux conditions de réussite situent les possibilités observées pour cette tâche, sans établir déjà un récit autonome."
           },
           {
             "title": "Décrire l’intervention",
-            "text": "Les questions de l’adulte prennent en charge une part encore difficile de l’organisation du récit et permettent à l’enfant de participer. Elles constituent un étayage. La ZPD ne désigne donc pas les questions elles-mêmes ; elle met en relation les deux niveaux de réussite."
+            "text": "Étayage ; interaction de tutelle : Aide par laquelle l’adulte assume la part de la tâche encore difficile pour l’enfant, puis lui transfère progressivement les capacités et les responsabilités nécessaires pour agir. Ici, les questions soutiennent l’organisation du récit et la mise en relation des événements. Elles laissent l’enfant produire ses réponses. Elles constituent le soutien, tandis que la ZPD met en relation les possibilités observées seul et avec aide."
           },
           {
             "title": "Organiser le suivi",
@@ -1133,7 +1147,7 @@
         },
         {
           "file": "SYNTHESE_BP1-18FRA_S1_COURS_01.docx",
-          "location": "Partie 4 : ZPD, exemple de l’album, étayage et transfert progressif de responsabilité."
+          "location": "tableau « Notions à savoir », colonne « Ce que c’est » ; parties 3–4 pour les cadres et les reprises."
         }
       ],
       "module": "BP1-18FRA",
@@ -1142,7 +1156,7 @@
       "familyId": "ORAL-F07",
       "referenceId": "C01",
       "variant": 1,
-      "contentRevision": "cfb49b8a833c"
+      "contentRevision": "5a0bfce38dc7"
     },
     {
       "id": "FRA-ORAL-F07-V2",
@@ -1214,8 +1228,8 @@
       "context": "Chaque réponse ci-dessous suit immédiatement l’énoncé de l’enfant.\nA. Enfant : « Le lapin dort ». Adulte : « Le lapin dort ».\nB. Enfant : « Le lapin dort ». Adulte : « Le lapin ».\nC. Enfant : « Il a tombé ». Adulte : « Il est tombé ».\nD. Enfant : « Il a tombé ». Adulte : « Il est tombé dans le trou ».",
       "prompt": "Classe les quatre reprises à l’aide de la distinction de de Weck entre répétition et reformulation, en précisant leur sous-type. Justifie chaque classement par un indice dans les énoncés. Explique ensuite le critère décisif qui sépare C et D.",
       "hints": [
-        "Dans la distinction de de Weck, une reprise est une réaction de l’adulte à l’énoncé de l’enfant. Deux familles sont distinguées :\n• La répétition reprend les mêmes mots, en totalité ou en partie, pour attester l’énoncé de l’enfant : l’adulte montre qu’il le prend en compte.\n• La reformulation propose une autre façon d’exprimer le message. Elle peut corriger implicitement la forme du langage, sans dire à l’enfant qu’il a fait une erreur.",
-        "Les sous-types se déterminent ainsi :\n• Répétition totale : tout l’énoncé est repris à l’identique.\n• Répétition partielle : seule une partie est reprise à l’identique.\n• Reformulation sans extension : la formulation change, mais aucune information nouvelle n’est ajoutée au message.\n• Reformulation avec extension : la formulation change et une information nouvelle est ajoutée.\nPour classer les exemples, compare donc les mots employés, puis les informations exprimées. Une phrase plus longue ne suffit pas à prouver une extension."
+        "Dans le cadre de de Weck :\n• Reprise : Réaction de l’adulte qui reprend l’énoncé de l’enfant, soit en le répétant, soit en le reformulant.\n• Répétition : Reprise qui conserve tout ou partie de l’énoncé de l’enfant pour l’attester, c’est-à-dire marquer qu’il a été reçu.\n• Reformulation ; correction implicite : Reprise qui modifie l’expression de l’enfant pour enrichir son langage et rendre son message intelligible, sans annoncer explicitement l’erreur.",
+        "Les sous-types :\n• Répétition totale : Reprise qui conserve l’énoncé entier de l’enfant sans en modifier les mots.\n• Répétition partielle : Reprise qui conserve seulement une partie de l’énoncé de l’enfant, sans modifier les mots retenus.\n• Reformulation sans extension : Reformulation qui modifie l’expression sans ajouter d’information au message.\n• Reformulation avec extension : Reformulation qui modifie l’énoncé en y ajoutant une information.\nPour classer, compare les mots conservés ou modifiés, puis les informations. Une phrase plus longue ne suffit pas à prouver une information ajoutée."
       ],
       "criteria": [
         {
@@ -1240,11 +1254,11 @@
         "steps": [
           {
             "title": "A et B : ce qui est conservé",
-            "text": "Dans A, l’adulte reprend tout l’énoncé « Le lapin dort » : la répétition est totale. Dans B, il ne reprend que « Le lapin » : elle est partielle. La répétition atteste l’énoncé de l’enfant ; elle ne le transforme pas en une autre formulation."
+            "text": "Dans A, l’adulte reprend tout l’énoncé « Le lapin dort » : la répétition est totale. Dans B, il ne reprend que « Le lapin » : elle est partielle. Le classement s’appuie sur les mots conservés dans chaque réponse."
           },
           {
             "title": "C et D : forme et information",
-            "text": "Dans C, « a tombé » devient « est tombé ». L’adulte modifie l’expression, mais conserve l’information de la chute : c’est une reformulation sans extension. Dans D, il modifie également l’expression et ajoute le lieu, « dans le trou » : c’est une reformulation avec extension."
+            "text": "Reformulation sans extension : Reformulation qui modifie l’expression sans ajouter d’information au message. Dans C, « a tombé » devient « est tombé » : la construction change, mais l’information reste celle de la chute.\nReformulation avec extension : Reformulation qui modifie l’énoncé en y ajoutant une information. Dans D, l’adulte modifie également la construction et ajoute le lieu, « dans le trou »."
           },
           {
             "title": "Formuler le critère de comparaison",
@@ -1263,7 +1277,7 @@
         },
         {
           "file": "SYNTHESE_BP1-18FRA_S1_COURS_01.docx",
-          "location": "Partie 4, tableau « Reprise | Fonction et variation » : exemples du lapin et de la chute."
+          "location": "tableau « Notions à savoir », colonne « Ce que c’est » ; parties 3–4 pour les cadres et les reprises."
         }
       ],
       "module": "BP1-18FRA",
@@ -1272,7 +1286,7 @@
       "familyId": "ORAL-F08",
       "referenceId": "C01",
       "variant": 1,
-      "contentRevision": "8201466185b4"
+      "contentRevision": "5489ec78e1df"
     },
     {
       "id": "FRA-ORAL-F08-V2",
@@ -5342,5 +5356,5 @@
       "contentRevision": "d9951ac14d58"
     }
   ],
-  "bankRevision": "4bd3449d18a7"
+  "bankRevision": "77c1e1a08d0f"
 }

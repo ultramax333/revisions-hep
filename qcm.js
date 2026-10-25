@@ -71,7 +71,7 @@
     return { module: q.module, course: q.course,
       question: q.title + '\n\n' + q.context + '\n\n' + q.prompt + '\n\n' + q.steps.map((s, i) => `${i + 1}. ${s.prompt}\n` + run.order[s.id].map((id, j) => `${String.fromCharCode(65 + j)}. ${s.choices.find(c => c.id === id).text}`).join('\n')).join('\n\n'),
       answer: q.steps.map((s, i) => `${i + 1}. ${s.prompt}\n` + run.order[s.id].map((id, j) => { const c = s.choices.find(c => c.id === id); return `${String.fromCharCode(65 + j)}. ${c.text}\n${id === s.correctId ? 'Réponse correcte. ' : ''}${c.explanation}`; }).join('\n')).join('\n\n'),
-      hint: q.hints.join('\n\n') };
+      hint: q.hints.join('\n\n') + '\n\nAvant la rédaction :\n' + bank.assessmentConditions.writingInstruction + '\n' + bank.assessmentConditions.learningInstruction };
   }
   function toast(message) {
     const node = document.getElementById('toast'); node.textContent = message; node.hidden = false;
@@ -96,7 +96,7 @@
   }
   function supportDialogs(q, ref, source) {
     const head = title => `<div class="qcm-dialog-head"><h2>${title}</h2><button class="icon-button" data-action="close-dialog" aria-label="Fermer">×</button></div>`;
-    return `<dialog id="qcm-context-dialog" class="qcm-dialog" aria-labelledby="qcm-context-title">${head('<span id="qcm-context-title">La situation</span>')}<p class="exercise-origin">${esc(ref.label)} · ${esc(ref.date)}<br>Passage à relire : ${esc(source.location)}</p><div class="exercise-context">${text(q.context)}</div><h3>La question complète à préparer</h3><p>${text(q.prompt)}</p></dialog><dialog id="qcm-hint-dialog" class="qcm-dialog" aria-labelledby="qcm-hint-title">${head('<span id="qcm-hint-title">Un rappel des concepts</span>')}${q.hints.map(h => `<p>${text(h)}</p>`).join('')}</dialog>`;
+    return `<dialog id="qcm-context-dialog" class="qcm-dialog" aria-labelledby="qcm-context-title">${head('<span id="qcm-context-title">La situation</span>')}<p class="exercise-origin">${esc(ref.label)} · ${esc(ref.date)}<br>Passage à relire : ${esc(source.location)}</p><div class="exercise-context">${text(q.context)}</div><h3>La question complète à préparer</h3><p>${text(q.prompt)}</p><h3>Avant de rédiger</h3><p class="help-text">${text(bank.assessmentConditions.writingInstruction)}</p><p class="help-text">${text(bank.assessmentConditions.learningInstruction)}</p></dialog><dialog id="qcm-hint-dialog" class="qcm-dialog" aria-labelledby="qcm-hint-title">${head('<span id="qcm-hint-title">Un rappel des concepts</span>')}${q.hints.map(h => `<p>${text(h)}</p>`).join('')}</dialog>`;
   }
   function exercise() {
     const q = active, run = readRun(q), snap = snapshot(q, run), saved = S.currentFeedback(repo.state, feedbackQuestion(q), snap);
