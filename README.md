@@ -1,6 +1,6 @@
 # Révisions HEP
 
-Questions, réponses, indices et retours personnels pour les révisions HEP.
+QCM guidés puis réponse rédigée, avec aides et retours personnels pour les révisions HEP.
 
 Application statique sans compilation. Les commentaires et la progression restent privés dans le navigateur ; sauvegarde Google Drive facultative.
 
