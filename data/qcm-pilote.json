@@ -1,0 +1,456 @@
+{
+  "schemaVersion": 1,
+  "id": "fra-qcm-pilote",
+  "title": "Français — construire une réponse avec des QCM",
+  "courseReference": {
+    "label": "Français · Bloc oral · Cours 01",
+    "date": "17.09.2026"
+  },
+  "exercises": [
+    {
+      "id": "FRA01-EX02",
+      "title": "Quatre réponses d’un adulte",
+      "kind": "Comparer et justifier",
+      "context": "Chaque réponse ci-dessous suit immédiatement l’énoncé de l’enfant.\nA. Enfant : « Le lapin dort ». Adulte : « Le lapin dort ».\nB. Enfant : « Le lapin dort ». Adulte : « Le lapin ».\nC. Enfant : « Il a tombé ». Adulte : « Il est tombé ».\nD. Enfant : « Il a tombé ». Adulte : « Il est tombé dans le trou ».",
+      "prompt": "Classe les quatre reprises à l’aide de la distinction de de Weck entre répétition et reformulation, en précisant leur sous-type. Justifie chaque classement par un indice dans les énoncés. Explique ensuite le critère décisif qui sépare C et D.",
+      "hints": [
+        "Dans la distinction de de Weck, une reprise est une réaction de l’adulte à l’énoncé de l’enfant. Deux familles sont distinguées :\n• La répétition reprend les mêmes mots, en totalité ou en partie, pour attester l’énoncé de l’enfant : l’adulte montre qu’il le prend en compte.\n• La reformulation propose une autre façon d’exprimer le message. Elle peut corriger implicitement la forme du langage, sans dire à l’enfant qu’il a fait une erreur.",
+        "Les sous-types se déterminent ainsi :\n• Répétition totale : tout l’énoncé est repris à l’identique.\n• Répétition partielle : seule une partie est reprise à l’identique.\n• Reformulation sans extension : la formulation change, mais aucune information nouvelle n’est ajoutée au message.\n• Reformulation avec extension : la formulation change et une information nouvelle est ajoutée.\nPour classer les exemples, compare donc les mots employés, puis les informations exprimées. Une phrase plus longue ne suffit pas à prouver une extension."
+      ],
+      "criteria": [
+        {
+          "id": "c1",
+          "text": "Je classe A comme répétition totale et B comme répétition partielle, en citant ce qui est repris."
+        },
+        {
+          "id": "c2",
+          "text": "Je classe C sans extension et D avec extension."
+        },
+        {
+          "id": "c3",
+          "text": "Je justifie la différence C/D par l’ajout du lieu dans D, et pas seulement par la longueur des énoncés."
+        },
+        {
+          "id": "c4",
+          "text": "Je repère le passage de « a tombé » à « est tombé » et je m’appuie sur cette modification de l’expression pour justifier le classement comme reformulation."
+        }
+      ],
+      "answer": {
+        "summary": "A est une répétition totale, B une répétition partielle, C une reformulation sans extension et D une reformulation avec extension.",
+        "steps": [
+          {
+            "title": "A et B : ce qui est conservé",
+            "text": "Dans A, l’adulte reprend tout l’énoncé « Le lapin dort » : la répétition est totale. Dans B, il ne reprend que « Le lapin » : elle est partielle. La répétition atteste l’énoncé de l’enfant ; elle ne le transforme pas en une autre formulation."
+          },
+          {
+            "title": "C et D : forme et information",
+            "text": "Dans C, « a tombé » devient « est tombé ». L’adulte modifie l’expression, mais conserve l’information de la chute : c’est une reformulation sans extension. Dans D, il modifie également l’expression et ajoute le lieu, « dans le trou » : c’est une reformulation avec extension."
+          },
+          {
+            "title": "Formuler le critère de comparaison",
+            "text": "L’extension se reconnaît à l’information ajoutée, pas simplement au nombre de mots. Dans les deux reformulations, l’adulte propose une autre formulation sans annoncer explicitement une erreur : la correction est implicite."
+          }
+        ],
+        "pitfalls": [
+          "Appeler reformulation toute réponse d’un adulte.",
+          "Confondre modification grammaticale et ajout d’information."
+        ]
+      },
+      "sources": [
+        {
+          "file": "2026-09-17_BP1-18FRA_Cours_1_support_etudiant.pdf",
+          "location": "Diapositives 59–60, PDF p. 20–21 : types de reprises et reformulations."
+        },
+        {
+          "file": "SYNTHESE_BP1-18FRA_S1_COURS_01.docx",
+          "location": "Partie 4, tableau « Reprise | Fonction et variation » : exemples du lapin et de la chute."
+        }
+      ],
+      "module": "BP1-18FRA",
+      "course": "C01",
+      "collection": "fra-qcm-pilote",
+      "contentRevision": "8201466185b4",
+      "steps": [
+        {
+          "id": "Q1",
+          "prompt": "Dans les échanges A et B, quel classement s’appuie sur ce que l’adulte reprend effectivement ?",
+          "correctId": "b",
+          "choices": [
+            {
+              "id": "a",
+              "text": "A : répétition totale ; B : reformulation sans extension, car la phrase est raccourcie.",
+              "explanation": "Le classement de A convient, mais B conserve une partie des mêmes mots : c’est une répétition partielle. Une suppression ne constitue pas à elle seule une autre formulation."
+            },
+            {
+              "id": "b",
+              "text": "A : répétition totale ; B : répétition partielle, car seule une partie est reprise.",
+              "explanation": "A conserve tout « Le lapin dort » ; B reprend seulement « Le lapin ». Le critère est la portion de l’énoncé reprise à l’identique : tout ou partie."
+            },
+            {
+              "id": "c",
+              "text": "A : répétition partielle ; B : répétition totale, car tous les mots de B viennent de l’enfant.",
+              "explanation": "Il faut comparer la réponse à l’énoncé initial complet. A le reprend entièrement ; B en laisse une partie. Le fait que tous les mots de B viennent de l’enfant ne rend pas la reprise totale."
+            },
+            {
+              "id": "d",
+              "text": "A et B : répétitions totales, car chaque mot prononcé par l’adulte était déjà présent.",
+              "explanation": "La présence de mots déjà employés justifie ici la famille répétition. Pour le sous-type, il faut encore vérifier si tout l’énoncé de l’enfant est repris : ce n’est pas le cas de B."
+            }
+          ]
+        },
+        {
+          "id": "Q2",
+          "prompt": "Dans C, quel changement observable permet de justifier une reformulation ?",
+          "correctId": "d",
+          "choices": [
+            {
+              "id": "a",
+              "text": "L’adulte explique la règle grammaticale que l’enfant devra appliquer à sa phrase.",
+              "explanation": "L’adulte donne une autre forme sans expliquer de règle. Une correction est implicite quand le modèle proposé permet d’entendre la modification sans annoncer l’erreur."
+            },
+            {
+              "id": "b",
+              "text": "L’adulte remplace « a » par « est » et indique ainsi un autre événement de l’histoire.",
+              "explanation": "Le remplacement est bien observable, mais le message concerne toujours la même chute. Une modification grammaticale ne constitue pas, à elle seule, une nouvelle information sur l’histoire."
+            },
+            {
+              "id": "c",
+              "text": "L’adulte reprend les mots de l’enfant pour confirmer la forme grammaticale employée.",
+              "explanation": "La réponse conserve une partie des mots, mais modifie l’auxiliaire. Il faut comparer l’énoncé entier : une forme transformée ne s’analyse pas ici comme une simple répétition."
+            },
+            {
+              "id": "d",
+              "text": "L’adulte remplace « a » par « est » et propose une autre construction pour la même chute.",
+              "explanation": "« Il a tombé » devient « Il est tombé ». Le message de chute est conservé et sa formulation grammaticale change : c’est le critère qui justifie la reformulation."
+            }
+          ]
+        },
+        {
+          "id": "Q3",
+          "prompt": "Quelle justification distingue précisément les sous-types de reformulation de C et D ?",
+          "correctId": "a",
+          "choices": [
+            {
+              "id": "a",
+              "text": "C est sans extension ; D est avec extension, car D ajoute le lieu de la chute.",
+              "explanation": "Dans C, la construction change sans information nouvelle. D ajoute « dans le trou », qui précise le lieu. Le critère d’extension porte sur le message enrichi."
+            },
+            {
+              "id": "b",
+              "text": "C et D sont sans extension, car les deux réponses conservent l’événement de la chute.",
+              "explanation": "Une extension peut conserver l’événement initial tout en le précisant. D ajoute son lieu : garder le même événement n’exclut donc pas une information nouvelle."
+            },
+            {
+              "id": "c",
+              "text": "C est sans extension ; D est avec extension, car D contient davantage de mots.",
+              "explanation": "Les étiquettes conviennent, mais leur justification ne suffit pas. Une phrase plus longue peut exprimer la même information ; ici, il faut identifier le lieu ajouté pour démontrer l’extension."
+            },
+            {
+              "id": "d",
+              "text": "C et D sont avec extension, car les deux réponses améliorent la construction de l’enfant.",
+              "explanation": "L’amélioration grammaticale permet de reconnaître une reformulation. Elle ne décide pas de l’extension, qui exige une information ajoutée : le lieu dans D, absent de C."
+            }
+          ]
+        }
+      ],
+      "qcmRevision": "de1b5672540a"
+    },
+    {
+      "id": "FRA01-EX03",
+      "title": "Raconter avec puis sans aide",
+      "kind": "Analyser une situation",
+      "context": "Devant trois images d’une histoire, un enfant nomme seul les personnages mais n’enchaîne pas leurs actions. L’adulte lui demande ce qui se passe d’abord, puis pourquoi un personnage s’en va. L’enfant relie alors deux événements et produit un récit plus organisé. On ne dispose encore que de cette observation.",
+      "prompt": "Explique ce que la zone proximale de développement et l’étayage permettent respectivement d’analyser dans ce cas. Relie les deux notions sans les confondre. Propose ensuite une suite à l’activité pour vérifier si l’enfant prend davantage en charge le récit.",
+      "hints": [
+        "• La zone proximale de développement (ZPD) est l’écart entre ce que l’enfant réussit seul, son niveau actuel, et ce qu’il réussit avec l’aide d’un adulte ou d’un enfant plus avancé, son niveau potentiel.\n• L’étayage est le soutien verbal ou non verbal par lequel l’adulte prend en charge une part de la tâche encore difficile pour l’enfant afin qu’il puisse y participer.",
+        "• La ZPD compare deux niveaux de réussite ; l’étayage désigne les interventions qui soutiennent l’activité. Repère séparément les réussites observées et les aides apportées.\n• Le transfert de responsabilité est le passage progressif d’une activité soutenue par autrui à une activité davantage prise en charge par l’enfant. Le retrait de l’aide se fait progressivement, en fonction de ce qu’il parvient à réaliser.\nPour examiner l’autonomie, cherche ce que l’on pourrait observer lorsque la même aide n’est plus fournie : une réussite accompagnée ne suffit pas à établir une réussite autonome."
+      ],
+      "criteria": [
+        {
+          "id": "c1",
+          "text": "Je précise les réussites distinctes : nommer seul, puis enchaîner des événements avec aide."
+        },
+        {
+          "id": "c2",
+          "text": "Je définis la ZPD par cet écart et l’étayage par les interventions qui soutiennent l’activité."
+        },
+        {
+          "id": "c3",
+          "text": "Je relie l’aide à la part difficile de la tâche, l’organisation du récit."
+        },
+        {
+          "id": "c4",
+          "text": "Je propose une diminution des relances et une observation de l’enchaînement autonome, sans déclarer l’acquisition déjà établie."
+        }
+      ],
+      "answer": {
+        "summary": "La ZPD situe l’écart entre les réussites seul et avec aide ; l’étayage décrit le soutien fourni. La suite doit examiner une autonomie croissante.",
+        "steps": [
+          {
+            "title": "Situer les possibilités de l’enfant",
+            "text": "Seul, l’enfant nomme les personnages ; avec les questions, il enchaîne deux événements. Cet écart situe sa zone proximale de développement pour cette tâche : le niveau actuel est ce qu’il réalise seul, le niveau potentiel ce qu’il atteint avec cette aide."
+          },
+          {
+            "title": "Décrire l’intervention",
+            "text": "Les questions de l’adulte prennent en charge une part encore difficile de l’organisation du récit et permettent à l’enfant de participer. Elles constituent un étayage. La ZPD ne désigne donc pas les questions elles-mêmes ; elle met en relation les deux niveaux de réussite."
+          },
+          {
+            "title": "Organiser le suivi",
+            "text": "L’adulte peut proposer de reprendre le récit en espaçant les relances, puis observer une tentative sans ces questions. Il examine si l’enfant relie les événements de lui-même. Le progrès attendu est un transfert de responsabilité ; la réussite accompagnée ne suffit pas à conclure à une capacité déjà autonome."
+          }
+        ],
+        "pitfalls": [
+          "Réduire la ZPD à toute intervention de l’adulte.",
+          "Retirer l’aide d’un coup et considérer l’échec qui suit comme un verdict définitif."
+        ]
+      },
+      "sources": [
+        {
+          "file": "2026-09-17_BP1-18FRA_Cours_1_support_etudiant.pdf",
+          "location": "Diapositives 51–54, PDF p. 17–18 ; diapositive 58, PDF p. 20."
+        },
+        {
+          "file": "SYNTHESE_BP1-18FRA_S1_COURS_01.docx",
+          "location": "Partie 4 : ZPD, exemple de l’album, étayage et transfert progressif de responsabilité."
+        }
+      ],
+      "module": "BP1-18FRA",
+      "course": "C01",
+      "collection": "fra-qcm-pilote",
+      "contentRevision": "cfb49b8a833c",
+      "steps": [
+        {
+          "id": "Q1",
+          "prompt": "Pour cette tâche, quelles réussites faut-il comparer afin de situer la ZPD ?",
+          "correctId": "c",
+          "choices": [
+            {
+              "id": "a",
+              "text": "Nommer les personnages au début, puis relier seul deux événements après l’échange.",
+              "explanation": "Le premier fait est attesté, mais la liaison des événements est observée avec les questions de l’adulte. Il faut conserver les conditions d’aide pour distinguer niveau actuel et niveau potentiel."
+            },
+            {
+              "id": "b",
+              "text": "Ne pas encore produire un récit complet, puis atteindre le récit attendu pour son âge.",
+              "explanation": "Le cas ne donne ni norme d’âge ni récit complet attendu. La ZPD se situe ici entre deux réussites observées dans des conditions différentes, pas entre l’enfant et une norme supposée."
+            },
+            {
+              "id": "c",
+              "text": "Nommer seul les personnages, puis relier deux événements avec les questions de l’adulte.",
+              "explanation": "Le premier résultat renseigne le niveau actuel, le second le niveau potentiel atteint avec aide. La ZPD met en relation ces possibilités, pour la tâche étudiée."
+            },
+            {
+              "id": "d",
+              "text": "Nommer les personnages avec aide, puis relier deux événements grâce à cette même aide.",
+              "explanation": "L’enfant nomme déjà seul les personnages. Cette proposition retire le point de comparaison autonome ; or la ZPD exige de distinguer ce qui est réussi seul de ce qui l’est avec aide."
+            }
+          ]
+        },
+        {
+          "id": "Q2",
+          "prompt": "Quelle analyse relie la ZPD et l’étayage sans leur donner le même sens ?",
+          "correctId": "a",
+          "choices": [
+            {
+              "id": "a",
+              "text": "La ZPD situe l’écart de réussite ; les questions étayent la mise en ordre et les liens du récit.",
+              "explanation": "La ZPD compare les réussites seul et avec aide. L’étayage désigne ici les questions qui soutiennent la part difficile : organiser les événements et expliciter leurs relations."
+            },
+            {
+              "id": "b",
+              "text": "La ZPD désigne les questions de l’adulte ; l’étayage désigne le récit obtenu grâce à ces questions.",
+              "explanation": "Cette lecture reconnaît l’aide et son effet, mais attribue les notions aux mauvais objets. La ZPD est un écart entre niveaux ; l’étayage est l’intervention de soutien, pas le résultat obtenu."
+            },
+            {
+              "id": "c",
+              "text": "La ZPD situe la difficulté initiale ; l’étayage consiste à corriger les noms des personnages.",
+              "explanation": "La ZPD ne se réduit pas à la difficulté initiale : la réussite aidée compte aussi. De plus, l’aide observée porte sur l’organisation du récit, alors que les personnages sont déjà nommés seul."
+            },
+            {
+              "id": "d",
+              "text": "La ZPD situe l’écart de réussite ; l’étayage consiste à fournir un récit que l’enfant peut répéter.",
+              "explanation": "La première partie convient, mais l’adulte ne fournit pas le récit dans ce cas. Il pose des questions auxquelles l’enfant répond : il faut décrire l’aide effectivement observée, sans la remplacer par une autre."
+            }
+          ]
+        },
+        {
+          "id": "Q3",
+          "prompt": "Quelle suite permettrait le mieux d’examiner un transfert progressif de responsabilité dans ce récit ?",
+          "correctId": "d",
+          "choices": [
+            {
+              "id": "a",
+              "text": "Garder les mêmes questions et vérifier si l’enfant formule des réponses de plus en plus rapides.",
+              "explanation": "La rapidité peut évoluer avec un soutien constant. Elle ne montre pas que l’enfant prend lui-même en charge l’enchaînement ; il faut observer ce qu’il organise quand les relances diminuent."
+            },
+            {
+              "id": "b",
+              "text": "Comparer le premier récit à un essai sans questions, en relevant surtout l’augmentation du nombre de mots.",
+              "explanation": "Comparer des essais avec et sans aide est utile. Mais le nombre de mots ne montre pas si l’enfant prend en charge les liens entre événements : une parole plus longue peut rester une énumération. Le suivi doit porter sur la part de la tâche auparavant soutenue."
+            },
+            {
+              "id": "c",
+              "text": "Faire reprendre le récit après un modèle adulte, en relevant si l’ordre des événements est conservé.",
+              "explanation": "Conserver l’ordre d’un modèle peut montrer une reprise réussie. Cela ne permet pas encore de distinguer mémorisation et organisation du récit par l’enfant. Pour examiner le transfert de responsabilité, il faut observer les liens produits lorsque l’adulte fournit moins cette organisation."
+            },
+            {
+              "id": "d",
+              "text": "Espacer les questions selon les réussites, puis observer si l’enfant relie les événements sans ces relances.",
+              "explanation": "Le soutien diminue progressivement et l’observation porte sur la part jusque-là aidée : relier les événements. La réussite accompagnée initiale indique une possibilité avec aide, sans établir déjà l’autonomie."
+            }
+          ]
+        }
+      ],
+      "qcmRevision": "553ea974548a"
+    },
+    {
+      "id": "FRA01-EX04",
+      "title": "Pensée et langage : deux lectures",
+      "kind": "Comparer et justifier",
+      "context": "Un enfant prépare un récit à partir d’images. Une première fois, il énumère les éléments visibles. Pendant un échange avec un adulte, il cherche des mots pour expliquer les relations entre les événements et réorganise son récit.",
+      "prompt": "Propose deux lectures de cette situation, l’une à partir de Piaget et l’autre à partir de Vygotski, en précisant pour chacune le lien entre pensée et langage. Explique ce que chaque lecture conduit à examiner. Termine en distinguant une interprétation théorique de la preuve qu’une théorie est la bonne.",
+      "hints": [
+        "• Le langage est l’activité par laquelle une personne produit et comprend du sens au moyen d’une langue. Le développement verbal concerne l’évolution de ces capacités.\n• Piaget : dans la présentation du cours, le développement cognitif, c’est-à-dire les capacités de penser et de comprendre, détermine le développement verbal. On examine les capacités dont dépend ce que l’enfant peut exprimer.\n• Vygotski : le langage contribue à construire la pensée, notamment dans les relations sociales et la résolution de problèmes. Chercher à formuler avec autrui peut participer à l’élaboration de ce que l’on pense.",
+        "• Une interprétation théorique utilise un cadre pour proposer une explication de ce que l’on observe. Applique chaque cadre au même cas et appuie ta lecture sur un fait précis.\n• Une preuve suppose des éléments permettant de mettre à l’épreuve une explication, plutôt que de seulement montrer qu’une scène peut se lire à travers elle. Une interprétation possible d’un cas ne suffit donc pas, seule, à départager des théories générales du développement.\nCompare ce que chaque lecture conduit à examiner ; ne te limite pas à citer les deux auteurs."
+      ],
+      "criteria": [
+        {
+          "id": "c1",
+          "text": "J’explicite chez Piaget la priorité donnée au développement cognitif pour expliquer le développement verbal."
+        },
+        {
+          "id": "c2",
+          "text": "J’explicite chez Vygotski le rôle du langage et des relations sociales dans la construction de la pensée."
+        },
+        {
+          "id": "c3",
+          "text": "J’applique chaque lecture aux données de la même situation, au lieu de seulement réciter deux noms."
+        },
+        {
+          "id": "c4",
+          "text": "Je distingue une interprétation du cas d’une preuve générale départageant les théories."
+        }
+      ],
+      "answer": {
+        "summary": "Piaget conduit à examiner les capacités cognitives dont dépend le langage ; Vygotski, la contribution du langage et de la relation sociale à la pensée.",
+        "steps": [
+          {
+            "title": "Lire la situation avec Piaget",
+            "text": "Dans la présentation constructiviste du cours, le développement cognitif détermine le développement verbal. On examine ce que l’enfant peut se représenter et les relations qu’il comprend pour pouvoir les exprimer. L’abstraction et la décentration aident notamment à dépasser le seul élément visible ou son propre point de vue."
+          },
+          {
+            "title": "Lire la situation avec Vygotski",
+            "text": "Dans l’approche historico-culturelle, le langage participe à la construction de la pensée dans les relations sociales. On examine ici comment chercher des formulations dans l’échange avec l’adulte aide l’enfant à organiser les relations entre les événements. Le langage intervient dans l’élaboration de la pensée, et pas seulement dans son expression."
+          },
+          {
+            "title": "Garder le statut de ces lectures",
+            "text": "Les deux lectures orientent des questions différentes sur le même cas. Le progrès observé pendant l’échange n’établit pas, à lui seul, qu’une théorie explique tout le développement du langage. Il faut distinguer l’utilisation d’un cadre pour interpréter une scène et la mise à l’épreuve d’une explication générale."
+          }
+        ],
+        "pitfalls": [
+          "Attribuer à Piaget et Vygotski exactement le même sens de relation entre pensée et langage.",
+          "Présenter une scène isolée comme la démonstration d’une théorie."
+        ]
+      },
+      "sources": [
+        {
+          "file": "2026-09-17_BP1-18FRA_Cours_1_support_etudiant.pdf",
+          "location": "Diapositive 49, PDF p. 16 ; diapositive 51, PDF p. 17."
+        },
+        {
+          "file": "SYNTHESE_BP1-18FRA_S1_COURS_01.docx",
+          "location": "Partie 3 : liens entre pensée et langage, comparaison Piaget–Vygotski et exemple de récit."
+        }
+      ],
+      "module": "BP1-18FRA",
+      "course": "C01",
+      "collection": "fra-qcm-pilote",
+      "contentRevision": "30ba8d726377",
+      "steps": [
+        {
+          "id": "Q1",
+          "prompt": "Selon la présentation de Piaget dans le cours, quelle question examine le développement cognitif sur lequel peut s’appuyer ce récit ?",
+          "correctId": "b",
+          "choices": [
+            {
+              "id": "a",
+              "text": "Comment la recherche de formulations avec l’adulte construit-elle les relations pensées par l’enfant ?",
+              "explanation": "Cette question rejoint la contribution du langage et de la relation sociale à la pensée chez Vygotski. Pour Piaget, le cours conduit à examiner les capacités cognitives dont dépend l’expression verbale."
+            },
+            {
+              "id": "b",
+              "text": "Quelles relations entre les événements l’enfant peut-il se représenter pour pouvoir les exprimer ?",
+              "explanation": "Cette question relie le récit aux capacités de penser et de comprendre qui le rendent possible. Elle suit la priorité donnée au développement cognitif dans la présentation de Piaget par le cours."
+            },
+            {
+              "id": "c",
+              "text": "Quelles phrases de l’adulte l’enfant reproduit-il pour organiser correctement sa propre narration ?",
+              "explanation": "Le cas ne dit pas que l’enfant reproduit les phrases de l’adulte. Surtout, la lecture piagétienne présentée cherche les capacités cognitives qui soutiennent le langage, plutôt qu’une reproduction de formulations."
+            },
+            {
+              "id": "d",
+              "text": "Quels mots l’échange apporte-t-il pour exprimer les relations que l’enfant comprend déjà ?",
+              "explanation": "Cette piste examine les moyens d’expression en supposant les relations déjà comprises. Elle peut être utile, mais elle ne cible pas la question cognitive posée ici : quelles relations l’enfant peut-il se représenter pour pouvoir les exprimer ? Le cours donne cette priorité au développement cognitif dans sa présentation de Piaget."
+            }
+          ]
+        },
+        {
+          "id": "Q2",
+          "prompt": "Quelle piste examine la contribution du langage à l’élaboration des relations entre les événements, selon Vygotski tel que le présente le cours ?",
+          "correctId": "c",
+          "choices": [
+            {
+              "id": "a",
+              "text": "Examiner quelles formulations de l’adulte l’enfant reproduit lorsqu’il reprend son récit.",
+              "explanation": "Cette piste porte sur la reproduction de formulations ; le cas ne l’atteste pas. Elle ne permet pas, à elle seule, d’examiner comment la recherche de mots et de relations contribue à élaborer la pensée dans l’échange."
+            },
+            {
+              "id": "b",
+              "text": "Examiner combien de mots nouveaux l’enfant mémorise pendant la préparation du récit.",
+              "explanation": "Ce relevé pourrait renseigner un apprentissage lexical. Le nombre de mots mémorisés n’indique toutefois pas comment leur mise en relation aide l’enfant à organiser les événements : c’est cette contribution à l’élaboration de la pensée qui est demandée."
+            },
+            {
+              "id": "c",
+              "text": "Examiner comment chercher des formulations avec l’adulte aide l’enfant à relier les événements.",
+              "explanation": "La piste relie une activité du cas, chercher des formulations dans l’échange, à l’organisation des relations. Elle examine ainsi le langage comme participant à l’élaboration de la pensée, conformément à la diapositive 51. Cette interprétation ne constitue pas encore une preuve générale de la théorie."
+            },
+            {
+              "id": "d",
+              "text": "Examiner comment l’enfant met en mots des relations qu’il s’était représentées avant l’échange.",
+              "explanation": "Exprimer des relations déjà construites n’est pas incompatible avec le cadre de Vygotski. Mais cette piste ne cible pas la contribution du langage à leur élaboration, objet précis de la question. Elle suppose aussi une organisation préalable que la scène ne permet pas d’établir."
+            }
+          ]
+        },
+        {
+          "id": "Q3",
+          "prompt": "Que permet de conclure cette seule scène après avoir proposé les deux lectures ?",
+          "correctId": "a",
+          "choices": [
+            {
+              "id": "a",
+              "text": "Elle permet deux analyses guidées par des cadres distincts, sans départager leurs explications générales.",
+              "explanation": "Chaque cadre oriente l’examen de faits du cas. La possibilité de relire une scène avec une théorie ne met pas, à elle seule, son explication générale à l’épreuve face à l’autre."
+            },
+            {
+              "id": "b",
+              "text": "Elle confirme Vygotski plutôt que Piaget, puisque la réorganisation apparaît pendant l’échange social.",
+              "explanation": "Le moment du progrès rend la lecture de Vygotski pertinente, mais ne suffit pas à exclure l’examen des capacités cognitives. Une compatibilité avec un cadre ne constitue pas une preuve qui départage les théories."
+            },
+            {
+              "id": "c",
+              "text": "Elle montre que les deux théories donnent la même explication, puisqu’elles portent sur le même progrès.",
+              "explanation": "Un même fait peut recevoir deux lectures différentes. Les cadres se distinguent ici par le lien qu’ils examinent entre pensée et langage ; partager une scène d’application n’efface pas cette différence."
+            },
+            {
+              "id": "d",
+              "text": "Elle demande d’observer d’autres scènes avant de pouvoir proposer une interprétation théorique de ce cas.",
+              "explanation": "D’autres observations sont nécessaires pour étayer et comparer des explications générales. Elles ne sont pas un préalable à toute interprétation raisonnée d’une scène. On peut mobiliser les cadres dès ce cas, en limitant la portée de la conclusion."
+            }
+          ]
+        }
+      ],
+      "qcmRevision": "6a784c6531a7"
+    }
+  ],
+  "bankRevision": "f378413df8bb"
+}

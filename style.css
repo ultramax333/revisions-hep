@@ -304,6 +304,21 @@ summary::marker { color: var(--accent); }
 .oral-variants { display: flex; flex-wrap: wrap; gap: 8px; }
 .oral-variants .btn { display: flex; flex-direction: column; gap: 2px; padding: 7px 12px; font-size: .875rem; }
 .oral-variants .small { font-size: .75rem; font-weight: 400; color: var(--text-dim); }
+.qcm-step { min-width: 0; margin: 22px 0; padding: 16px; border: 1px solid var(--border); border-radius: 12px; }
+#qcm-main:focus { outline: none; }
+.qcm-step legend { max-width: 100%; padding: 0 6px; font-weight: 650; line-height: 1.5; }
+.qcm-choices { display: grid; gap: 10px; }
+.qcm-choice { display: flex; align-items: flex-start; gap: 10px; min-width: 0; min-height: 44px; padding: 12px; border: 1px solid var(--control-border); border-radius: 10px; cursor: pointer; line-height: 1.5; }
+.qcm-choice input { margin: 5px 0 0; width: 18px; height: 18px; flex: 0 0 18px; accent-color: var(--accent); }
+.qcm-choice span { min-width: 0; overflow-wrap: anywhere; }
+.qcm-choice:has(input:checked) { background: var(--bg-info); border-color: var(--accent); }
+.qcm-choice.qcm-correct { background: var(--bg-good); border-color: var(--good); }
+.qcm-choice.qcm-incorrect { background: var(--bg-bad); border-color: var(--bad); }
+.qcm-choice:focus-within { outline: 2px solid var(--accent); outline-offset: 2px; }
+.qcm-verdict { margin-top: 16px; }
+.qcm-verdict p { margin-top: 10px; }
+.qcm-verdict details { margin-top: 14px; padding-top: 12px; border-top: 1px solid var(--border); }
+@media (max-width: 450px) { .qcm-step { padding: 10px; } .qcm-choice { padding: 10px; gap: 8px; } }
 @media (min-width: 760px) {
   .oral-filters { grid-template-columns: minmax(0, 1fr) minmax(0, 1.3fr) auto; }
   .oral-filters > button { grid-column: auto; }
