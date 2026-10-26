@@ -1,5 +1,5 @@
 'use strict';
-const CACHE = 'hep-revisions-v1.7.0';
+const CACHE = 'hep-revisions-v1.7.1';
 const ROOT = new URL('./', self.location.href);
 const CORE = ['./', 'index.html', 'style.css', 'icon.svg', 'manifest.webmanifest', 'config.js', 'store.js', 'drive.js', 'exercices.html', 'exercices-config.js', 'exercices.js', 'data/exercices-fra01.json', 'oral.html', 'oral-config.js', 'data/exercices-oral.json', 'qcm.html', 'qcm-config.js', 'qcm.js', 'data/qcm-pilote.json'];
 self.addEventListener('install', event => { event.waitUntil(caches.open(CACHE).then(cache => cache.addAll(CORE.map(path => new URL(path, ROOT).href))).then(() => self.skipWaiting())); });
