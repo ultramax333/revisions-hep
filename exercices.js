@@ -10,16 +10,8 @@
   let bank, exercises, byId, view = 'overview', activeId = '', revealed = false;
   let selectedTheme = '', search = '', seriesCount = 4;
   const collectionName = IS_ORAL ? 'bloc oral' : 'pilote';
-  // Navigation groups only: the pedagogical families and their identifiers stay intact.
-  const ORAL_THEME_GROUPS = [
-    { label: 'Repères et enseignement', themes: ['Fondements', 'Curriculum', 'Genres', 'Oral et écrit'] },
-    { label: 'Acquisition et diversité', themes: ['Acquisition', 'Hétérogénéité'] },
-    { label: 'Développement et langue', themes: ['Développement', 'Syntaxe'] },
-    { label: 'Interactions et étayage', themes: ['Étayer', 'Interaction', 'Oralité'] },
-    { label: 'Récits et compréhension', themes: ['Récit', 'Compréhension'] },
-    { label: 'Dispositifs et régulation', themes: ['Argumentation', 'Dispositifs', 'Évaluer et réguler'] }
-  ];
-  const themeFor = family => ORAL_THEME_GROUPS.find(group => group.themes.includes(family.theme))?.label || family.theme;
+  const oralNavigation = window.HEPOralNavigation;
+  const themeFor = family => oralNavigation.themeFor(family);
 
   const categories = ['Consigne', 'Indice', 'Correction', 'Critères de réussite', 'Difficulté', 'Autre'];
   const esc = value => String(value ?? '').replace(/[&<>"']/g, char => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[char]));
@@ -63,9 +55,9 @@
     return `<section class="home-hero"><p class="eyebrow">Séance test · FRA 01</p><h1 class="hero-title">Analyser.<br>Expliquer. Essayer.</h1><p class="hero-description">Six exercices pour utiliser les notions du cours. Prends le temps de répondre, demande une aide si nécessaire, puis compare ton raisonnement au corrigé proposé.</p><div class="actions"><button class="btn primary" data-action="begin">${resume ? 'Reprendre le pilote' : 'Commencer par le premier exercice'}</button></div><p class="help-text">Choisis librement un exercice ci-dessous. Tu peux en faire un seul puis revenir plus tard : tes réponses sont conservées. Cette page contient uniquement le pilote.</p></section><section class="exercise-grid" aria-label="Les six exercices">${exercises.map((q, i) => `<article class="course-card exercise-tile"><span class="eyebrow">${String(i + 1).padStart(2, '0')} · ${esc(q.kind)}</span><h2>${esc(q.title)}</h2><span class="pill">${progress[q.id] ? ['À retravailler', 'À consolider', 'Critères remplis'][progress[q.id].grade] : 'À essayer'}</span><button class="btn secondary" data-exercise="${esc(q.id)}">Ouvrir l’exercice ${i + 1} →</button></article>`).join('')}</section><p class="notice">Le corrigé est une proposition de révision. Ton bilan repose sur ta propre comparaison, sans correction automatique de ton texte. Un passage te gêne ? Laisse un retour dans l’exercice.</p><p class="help-text"><a href="./">Retour à l’accueil général de Révisions HEP</a></p>`;
   }
   function filteredFamilies() {
-    const query = search.toLocaleLowerCase('fr').normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+    const query = oralNavigation.normalize(search);
     return bank.families.filter(family => {
-      const haystack = [family.title, family.theme, themeFor(family), ...exercises.filter(q => q.familyId === family.id).map(q => [q.title, q.prompt, ...q.hints].join(' '))].join(' ').toLocaleLowerCase('fr').normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+      const haystack = oralNavigation.normalize([family.title, family.theme, themeFor(family), ...exercises.filter(q => q.familyId === family.id).map(q => [q.title, q.prompt, ...q.hints].join(' '))].join(' '));
       return (!selectedTheme || themeFor(family) === selectedTheme) && (!query || haystack.includes(query));
     });
   }
@@ -77,10 +69,10 @@
   }
   function oralOverview() {
     const families = filteredFamilies(), progress = S.mastery(repo.state, exercises);
-    const themes = [...ORAL_THEME_GROUPS.map(group => group.label), ...bank.families.map(themeFor)].filter((theme, index, values) => values.indexOf(theme) === index && bank.families.some(f => themeFor(f) === theme));
+    const themes = oralNavigation.themesFor(bank.families);
     const groups = themes.map(theme => ({ theme, families: families.filter(f => themeFor(f) === theme) })).filter(group => group.families.length);
     return `<section class="home-hero oral-home-hero"><h1 class="hero-title">Réviser le bloc oral</h1><p class="hero-description">${exercises.length} situations · ${bank.families.length} capacités. Ouvre un thème ou lance une courte série.</p>${repo.state.session ? `<button class="btn primary" data-action="begin">${repo.state.session.mode === 'oral-serie' ? 'Reprendre ma série' : 'Reprendre l’exercice en cours'}</button>` : ''}</section>
-      <p class="help-text"><a href="qcm.html">Essayer les QCM guidés · 3 exercices →</a></p>
+      <p class="help-text"><a href="qcm-oral.html">S’entraîner avec les QCM du bloc oral →</a></p>
       <div class="oral-tools"><form class="oral-filters" id="oral-filters"><label class="oral-field" for="oral-theme">Thème<select class="select-input" id="oral-theme"><option value="">Tout le bloc oral</option>${themes.map(theme => `<option ${selectedTheme === theme ? 'selected' : ''}>${esc(theme)}</option>`).join('')}</select></label><label class="oral-field" for="oral-search">Rechercher<input class="text-input" id="oral-search" type="search" value="${esc(search)}" placeholder="Ex. : lexique, récit, bilinguisme…"></label><button class="btn secondary" type="submit">Afficher les notions</button></form>
       <section class="oral-series"><label class="oral-field" for="series-count">Ma série d’entraînement<select class="select-input" id="series-count">${[[4,'4 exercices'],[8,'8 exercices'],[12,'12 exercices'],[0,'Toutes les notions affichées']].map(([n,label]) => `<option value="${n}" ${seriesCount === n ? 'selected' : ''}>${label}</option>`).join('')}</select></label><button class="btn primary" data-action="start-series" ${families.length ? '' : 'disabled'}>Lancer une série</button><p class="help-text">Une situation par capacité ; les variantes les moins travaillées passent en premier.</p></section></div>
       <p class="help-text oral-result-count">${families.length} capacité${families.length > 1 ? 's' : ''} · ${groups.length} thème${groups.length > 1 ? 's' : ''}</p><section class="oral-groups" aria-label="Thèmes et situations">${groups.map(group => `<details class="oral-group" ${selectedTheme || search ? 'open' : ''}><summary><span>${esc(group.theme)}</span><span class="oral-group-count">${group.families.length} capacités</span></summary><div class="oral-group-content">${group.families.map(family => oralFamily(family, progress)).join('')}</div></details>`).join('') || '<p class="empty-state">Aucune notion ne correspond à cette recherche.</p>'}</section>
@@ -125,10 +117,10 @@
   }
   function feedbackView() {
     const items = comments().sort((a, b) => b.updatedAt.localeCompare(a.updatedAt));
-    return `<div class="section-heading"><h1>Mes retours sur le ${collectionName}</h1></div><p class="muted">Chaque commentaire conserve l’énoncé, les indices, le corrigé et les critères de cet exercice. Copie-les ici pour nous les transmettre dans la discussion HEP.</p><div class="actions"><button class="btn primary" data-action="copy" ${items.length ? '' : 'disabled'}>Copier les retours du ${collectionName}</button><button class="btn secondary" data-action="export" ${items.length ? '' : 'disabled'}>Télécharger les retours</button></div><div class="feedback-list">${items.map(item => `<article class="feedback-item"><div class="feedback-item-header"><span class="pill">${esc(item.category)}</span><span class="small muted">${esc(new Date(item.updatedAt).toLocaleDateString('fr-CH'))}</span></div><h2>${esc(item.snapshot.question.split('\n')[0])}</h2><p class="exercise-text">${esc(item.comment)}</p>${byId.has(item.questionId) ? `<button class="btn ghost" data-exercise="${esc(item.questionId)}">Revoir l’exercice actuel →</button>` : '<p class="help-text">Le retour de cette ancienne version est conservé.</p>'}</article>`).join('') || '<p class="empty-state">Tes retours apparaîtront ici. Tu peux en laisser un avant ou après avoir ouvert le corrigé.</p>'}</div>`;
+    return `<div class="section-heading"><h1>Mes retours sur le ${collectionName}</h1></div>${HEPFeedback.fields()}${HEPFeedback.archiveLink}<p class="muted">Chaque commentaire conserve l’énoncé, les indices, le corrigé et les critères de cet exercice. Copie tes retours, puis envoie-les à Maxim par message. Aucun envoi automatique.</p><div class="actions"><button class="btn primary" data-action="copy" ${items.length ? '' : 'disabled'}>Copier les retours du ${collectionName}</button><button class="btn secondary" data-action="export" ${items.length ? '' : 'disabled'}>Télécharger les retours</button></div><div class="feedback-list">${items.map(item => `<article class="feedback-item"><div class="feedback-item-header"><span class="pill">${esc(item.category)}</span><span class="small muted">${esc(new Date(item.updatedAt).toLocaleDateString('fr-CH'))}</span></div><h2>${esc(item.snapshot.question.split('\n')[0])}</h2><p class="exercise-text">${esc(item.comment)}</p>${byId.has(item.questionId) ? `<button class="btn ghost" data-exercise="${esc(item.questionId)}">Revoir l’exercice actuel →</button>` : '<p class="help-text">Le retour de cette ancienne version est conservé.</p>'}</article>`).join('') || '<p class="empty-state">Tes retours apparaîtront ici. Tu peux en laisser un avant ou après avoir ouvert le corrigé.</p>'}</div>`;
   }
   function settings() {
-    return `<h1>Sauvegardes du ${collectionName}</h1><section class="settings-card"><h2>Sur cet appareil</h2><p>Tes réponses, tes bilans par critère et tes retours s’enregistrent dans ce navigateur. Les données de cet entraînement sont séparées de celles des anciennes questions.</p><div class="actions"><button class="btn primary" data-action="backup">Télécharger une sauvegarde</button><button class="btn secondary" data-action="import">Importer une sauvegarde du ${collectionName}</button><input id="backup-file" type="file" accept=".json,application/json" hidden></div><p class="help-text">L’import réunit tes données. L’effacement des données du navigateur supprime la copie locale.</p></section><section class="settings-card"><h2>Google Drive, facultatif</h2><p>Connecte le même compte sur tes appareils pour réunir tes retours. Les sauvegardes de ces exercices utilisent leur propre dossier « ${IS_ORAL ? 'Révisions HEP — Bloc oral' : 'Révisions HEP — Exercices'} ».</p><div class="actions">${HEPDrive.connected() ? '<button class="btn primary" data-action="sync">Synchroniser maintenant</button><button class="btn ghost" data-action="disconnect">Déconnecter</button>' : '<button class="btn primary" data-action="connect">Connecter Google Drive</button>'}</div><p class="save-status" data-save-status>${esc(HEPDrive.status())}</p><p class="help-text">Les commentaires ne sont pas transmis automatiquement aux agents. La connexion Google est à renouveler après fermeture.</p></section>`;
+    return `<h1>Sauvegardes du ${collectionName}</h1>${HEPFeedback.archiveLink}<section class="settings-card"><h2>Sur cet appareil</h2><p>Tes réponses, tes bilans par critère et tes retours s’enregistrent dans ce navigateur. Les données de cet entraînement sont séparées de celles des anciennes questions.</p><div class="actions"><button class="btn primary" data-action="backup">Télécharger une sauvegarde</button><button class="btn secondary" data-action="import">Importer une sauvegarde du ${collectionName}</button><input id="backup-file" type="file" accept=".json,application/json" hidden></div><p class="help-text">L’import réunit tes données. L’effacement des données du navigateur supprime la copie locale.</p></section><section class="settings-card"><h2>Google Drive, facultatif</h2><p>Connecte le même compte sur tes appareils pour réunir tes retours. Les sauvegardes de ces exercices utilisent leur propre dossier « ${IS_ORAL ? 'Révisions HEP — Bloc oral' : 'Révisions HEP — Exercices'} ».</p><div class="actions">${HEPDrive.connected() ? '<button class="btn primary" data-action="sync">Synchroniser maintenant</button><button class="btn ghost" data-action="disconnect">Déconnecter</button>' : '<button class="btn primary" data-action="connect">Connecter Google Drive</button>'}</div><p class="save-status" data-save-status>${esc(HEPDrive.status())}</p><p class="help-text">Les commentaires ne sont pas transmis automatiquement aux agents. La connexion Google est à renouveler après fermeture.</p></section>`;
   }
   function summary() {
     const progress = Object.values(S.mastery(repo.state, exercises));
@@ -164,9 +156,10 @@
   }
   function bundle() { return { ...S.feedbackBundle(repo.state, bank), scope: SCOPE }; }
   function report() {
-    return (IS_ORAL ? '# Retours sur le bloc oral FRA\n\n' : '# Retours sur les exercices pilotes FRA 01\n\n') + bundle().feedback.map((item, i) => `## ${i + 1}. ${item.category}\n\n${item.snapshot.question}\n\nIndices :\n${item.snapshot.hint}\n\nCorrigé et critères :\n${item.snapshot.answer}\n\nMON RETOUR : ${item.comment}\n\nRéférence : ${item.questionId} · ${item.contentRevision}\n`).join('\n');
+    return HEPFeedback.report(IS_ORAL ? 'Retours sur le bloc oral FRA' : 'Retours sur les exercices pilotes FRA 01', bundle().feedback);
   }
   function bind() {
+    HEPFeedback.bind();
     document.getElementById('oral-filters')?.addEventListener('submit', event => {
       event.preventDefault(); selectedTheme = document.getElementById('oral-theme').value;
       search = document.getElementById('oral-search').value.trim(); render();
@@ -232,6 +225,7 @@
   });
   async function init() {
     try {
+      if (IS_ORAL && !oralNavigation) throw new Error('Les thèmes du bloc oral sont indisponibles. Recharge la page en ligne.');
       const response = await fetch(OPTIONS.bankUrl || 'data/exercices-fra01.json', { cache: 'no-cache' });
       if (!response.ok) throw new Error('Les exercices n’ont pas pu être chargés.');
       bank = await response.json();

@@ -354,3 +354,31 @@ summary::marker { color: var(--accent); }
   .oral-series > .help-text { grid-column: auto; align-self: center; }
   .oral-family { grid-template-columns: minmax(0, 1fr) auto; }
 }
+
+/* Compact notion picker, scoped to the QCM oral home. */
+.qcm-notions-hero { padding: 16px 0; }
+.qcm-home-filters { display: flex; flex-wrap: wrap; align-items: end; gap: 10px; padding: 12px; }
+.qcm-home-filters .oral-field { flex: 1 1 240px; }
+.qcm-home-filters .btn { margin: 0; }
+.qcm-notions .qcm-family { display: block; padding: 12px 0; }
+.qcm-family-case { margin-top: 4px; }
+.qcm-family-case + .qcm-family-case { margin-top: 12px; }
+.qcm-family-case .help-text { margin: 0; }
+.qcm-family-case .qcm-case-title { font-size: .8125rem; }
+.qcm-family-case .actions { margin-top: 8px; gap: 8px; }
+.qcm-family-case .btn { padding: 8px 12px; font-size: .875rem; }
+@media (min-width: 760px) {
+  .qcm-family-case { display: grid; grid-template-columns: minmax(0, 1fr) auto; column-gap: 20px; }
+  .qcm-family-case .actions { grid-column: 2; grid-row: 1 / 3; align-self: center; margin: 0; }
+}
+@media (max-width: 450px) {
+  .qcm-notions .oral-group > summary { padding: 12px; gap: 8px; }
+  .qcm-notions .oral-group-content { padding: 0 12px 4px; }
+}
+
+.qcm-report-button { margin-top: .7rem; white-space: normal; }
+pre.exercise-text { white-space: pre-wrap; overflow-wrap: anywhere; font: inherit; }
+
+/* Keep the situation entry visible beside the question, before its choices. */
+.qcm-context-cue { display: block; max-width: 100%; min-height: 44px; margin: 0 0 .5rem; padding: .3rem 0; border: 0; background: transparent; color: #ffaaa4; font: inherit; font-size: .9rem; line-height: 1.4; text-align: left; text-decoration: underline; text-underline-offset: .16em; overflow-wrap: anywhere; cursor: pointer; }
+.qcm-context-cue:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 3px; }
