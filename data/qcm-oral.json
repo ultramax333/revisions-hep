@@ -335,7 +335,7 @@
         },
         {
           "id": "Q6",
-          "prompt": "Un groupe apprend à relier les événements d’une histoire. Après avoir rassuré un élève hésitant, l’enseignante lui demande : « Qu’est-ce qui a poussé le personnage à partir ? » Elle se demande ensuite si cette question aide à dépasser une suite d’actions simplement énumérées. Avec la distinction de Simard, quelle analyse de cette réflexion convient ?",
+          "prompt": "Dans la situation, l’enseignante se demande ensuite si sa question « Qu’est-ce qui a poussé le personnage à partir ? » aide à dépasser une suite d’actions simplement énumérées. Avec la distinction de Simard, quelle analyse de cette réflexion convient ?",
           "correctId": "c",
           "choices": [
             {
@@ -362,7 +362,7 @@
         },
         {
           "id": "Q7",
-          "prompt": "Pendant un travail sur le récit, un élève dit : « Je vais me tromper. » L’enseignante répond : « Tu peux prendre ton temps, chacun a le droit d’essayer. » En préparant la leçon suivante, elle examine comment conserver cette possibilité d’essayer quand elle s’adresse à lui. Avec la distinction de Simard, quelle analyse de cette réflexion convient ?",
+          "prompt": "Dans la situation, en préparant la leçon suivante, l’enseignante examine comment conserver la possibilité d’essayer qu’elle a laissée à l’élève quand elle s’adresse à lui. Avec la distinction de Simard, quelle analyse de cette réflexion convient ?",
           "correctId": "b",
           "choices": [
             {
@@ -388,7 +388,7 @@
           ]
         }
       ],
-      "qcmRevision": "85c198011a68"
+      "qcmRevision": "cf86cce71780"
     },
     {
       "id": "FRA-ORAL-F16-V1",
@@ -467,7 +467,7 @@
       "steps": [
         {
           "id": "Q4",
-          "prompt": "Après une visite au jardin, un enfant montre à son enseignante des photos de la sortie et dit « Là je fais ça et après là », en pointant le bac puis une photo de graines. Son récit est destiné à une autre classe qui n’a pas participé à la visite. Quelle analyse fonde le type de langage utilisé dans cet échange avec l’enseignante ?",
+          "prompt": "Dans la situation, l’enfant raconte la sortie à son enseignante devant les photographies. Quelle analyse fonde le type de langage utilisé dans cet échange avec l’enseignante ?",
           "correctId": "c",
           "choices": [
             {
@@ -494,7 +494,7 @@
         },
         {
           "id": "Q2",
-          "prompt": "Après une visite au jardin, un enfant dit « Là je fais ça et après là » en pointant le bac d’une photo où il porte un arrosoir, puis une photo de graines. Il prépare un album écho pour raconter la sortie à des élèves qui n’y ont pas participé et ne verront pas ses gestes. Quel objectif langagier prioritaire retenir pour ses prochains essais ?",
+          "prompt": "Dans la situation, l’enfant prépare un album écho pour raconter la sortie à l’autre classe, qui ne verra pas ses gestes. Quel objectif langagier prioritaire retenir pour ses prochains essais ?",
           "correctId": "b",
           "choices": [
             {
@@ -520,7 +520,7 @@
           ]
         }
       ],
-      "qcmRevision": "c6257c3fbb54"
+      "qcmRevision": "ae464de27ecd"
     },
     {
       "id": "FRA-ORAL-F21-V1",
@@ -684,7 +684,7 @@
       "steps": [
         {
           "id": "Q5",
-          "prompt": "Dans un jeu, un enfant change une règle pour aider un débutant. Un camarade dit « Une règle, ça ne se change jamais » ; un autre répond « Si on est tous d’accord, on peut ». L’enseignant veut examiner ce qui rend une règle juste. Quelle question choisir pour ouvrir une discussion à visée philosophique ?",
+          "prompt": "Dans la situation, l’enseignant veut examiner ce qui rend une règle juste. Quelle question choisir pour ouvrir une discussion à visée philosophique ?",
           "correctId": "c",
           "choices": [
             {
@@ -764,7 +764,7 @@
           ]
         }
       ],
-      "qcmRevision": "2cab38551f64"
+      "qcmRevision": "8473e9f127cc"
     },
     {
       "id": "FRA-ORAL-F34-V2",
@@ -1114,7 +1114,7 @@
         },
         {
           "id": "Q3",
-          "prompt": "Au goûter, l’adulte propose et l’enfant demande. Après avoir entendu « Je veux une pomme », l’enfant reprend cette phrase et reçoit le fruit. Un autre jour, dans le même rituel, il dit « Je veux une poire », sans modèle identique ce jour-là. On veut analyser le passage de la phrase reprise à cette nouvelle combinaison. Quelle piste d’analyse cible ce passage ?",
+          "prompt": "Dans la situation, on veut analyser le passage de la phrase reprise « Je veux une pomme » à la nouvelle combinaison « Je veux une poire ». Quelle piste d’analyse cible ce passage ?",
           "correctId": "a",
           "choices": [
             {
@@ -1140,7 +1140,7 @@
           ]
         }
       ],
-      "qcmRevision": "7cd466c692a9"
+      "qcmRevision": "0e12e5441432"
     },
     {
       "id": "FRA-ORAL-F07-V2",
@@ -1239,7 +1239,7 @@
       "id": "FRA-ORAL-F08-V2",
       "title": "Ce qui est repris et ce qui est ajouté",
       "kind": "Comparer et justifier",
-      "context": "Voici quatre échanges indépendants, où l’adulte répond immédiatement.\nA. Enfant : « La porte ferme pas ». Adulte : « La porte ne ferme pas parce que le tapis la bloque ».\nB. Enfant : « La voiture sont en panne ». Adulte : « La voiture est en panne ».\nC. Enfant : « Le camion roule ». Adulte : « Le camion roule ».\nD. Enfant : « Le camion roule ». Adulte : « Le camion ».",
+      "context": "Voici quatre échanges indépendants, où l’adulte répond immédiatement.\nA. Enfant : « La porte ferme pas ». Adulte : « La porte ne ferme pas parce que le tapis la bloque ».\nB. Enfant : « La voiture sont en panne ». Adulte : « La voiture est en panne ».\nC. Enfant : « Le camion roule ». Adulte : « Le camion roule ».\nD. Enfant : « J’ai vu un chat sur le toit ! ». Adulte : « Sur le toit ! ».",
       "prompt": "Classe les quatre reprises selon de Weck en précisant leur sous-type. Justifie chaque choix avec les mots ou informations de l’échange. Explique ce qui distingue les transformations de A et B, au-delà de leur longueur, puis précise sur quel plan linguistique la reprise B intervient.",
       "hints": [
         "• Reprise : Réaction de l’adulte qui reprend tout ou partie d’un énoncé de l’enfant, par répétition ou reformulation.\n• Répétition : Reprise totale ou partielle de l’énoncé de l’enfant, pour attester cet énoncé, c’est-à-dire le confirmer.\n• Reformulation : Reprise qui vise à enrichir le langage de l’enfant : correction implicite, avec ou sans extension (ajout d’informations), pour se mettre d’accord sur l’intelligibilité du message.",
@@ -1272,7 +1272,7 @@
         "steps": [
           {
             "title": "Identifier les répétitions",
-            "text": "C reprend exactement « Le camion roule » : répétition totale. D reprend seulement « Le camion » : répétition partielle. Dans les deux cas, les mots conservés ne sont pas transformés."
+            "text": "C reprend exactement « Le camion roule » : répétition totale. D reprend seulement « sur le toit », l’élément surprenant de l’énoncé, pour le confirmer : répétition partielle. Dans les deux cas, les mots conservés ne sont pas transformés et l’adulte n’ajoute aucune information."
           },
           {
             "title": "Examiner les reformulations",
@@ -1316,11 +1316,11 @@
       "familyId": "ORAL-F08",
       "referenceId": "C01",
       "variant": 2,
-      "contentRevision": "0854a970c4e8",
+      "contentRevision": "db55001e436b",
       "steps": [
         {
           "id": "Q1",
-          "prompt": "Deux réponses d’un adulte sont comparées. A : « La porte ferme pas » devient « La porte ne ferme pas parce que le tapis la bloque ». B : « La voiture sont en panne » devient « La voiture est en panne ». Un étudiant classe A avec extension et B sans extension. Quel critère justifie ce classement selon de Weck ?",
+          "prompt": "Dans la situation, A est une reformulation avec extension et B une reformulation sans extension. Quel critère justifie ce classement selon de Weck ?",
           "correctId": "d",
           "choices": [
             {
@@ -1373,7 +1373,7 @@
           ]
         }
       ],
-      "qcmRevision": "ab3131253cea"
+      "qcmRevision": "28bedb9ea8dd"
     },
     {
       "id": "FRA-ORAL-F09-V2",
@@ -2189,7 +2189,7 @@
       "steps": [
         {
           "id": "Q1",
-          "prompt": "Un enfant invente : « Le garçon a perdu son bateau. Il a regardé près du pont, mais il n’était pas là. Il a suivi la rivière et l’a vu dans les branches. Alors il a demandé une perche pour le récupérer. » Quel critère fonde le rapprochement avec le récit d’imagination décrit par Terwagne et Vanesse au cours ?",
+          "prompt": "Dans la situation, on examine le récit de B, le garçon qui a perdu son bateau. Quel critère fonde le rapprochement avec le récit d’imagination décrit par Terwagne et Vanesse au cours ?",
           "correctId": "d",
           "choices": [
             {
@@ -2215,7 +2215,7 @@
           ]
         }
       ],
-      "qcmRevision": "31d5070733e5"
+      "qcmRevision": "9752ae5fe920"
     },
     {
       "id": "FRA-ORAL-F17-V2",
@@ -2737,7 +2737,7 @@
       "id": "FRA-ORAL-F38-V1",
       "title": "Parler, lire et écrire en classe",
       "kind": "Comparer et justifier",
-      "context": "Moment A : après la lecture d’un album, les élèves discutent pour comprendre pourquoi le personnage refuse de partir ; l’enseignante leur fait relier des indices du texte. Moment B : les élèves préparent puis racontent l’histoire à un groupe qui n’a pas entendu cet album ; ils travaillent explicitement les reprises de personnages et l’ordre des événements, puis recueillent ce que les auditeurs ont compris. Moment C : des élèves proposent les phrases d’une invitation que l’adulte écrit ; l’objectif est un message écrit pour une autre classe. Moment D : un atelier fait segmenter oralement des mots en syllabes pour préparer l’apprentissage de l’écrit.",
+      "context": "Moment A : après la lecture d’un album, les élèves discutent pour comprendre pourquoi le personnage refuse de partir ; l’enseignante leur fait relier des indices du texte.\nMoment B : les élèves préparent puis racontent l’histoire à un groupe qui n’a pas entendu cet album ; ils travaillent explicitement les reprises de personnages et l’ordre des événements, puis recueillent ce que les auditeurs ont compris.\nMoment C : des élèves proposent les phrases d’une invitation que l’adulte écrit ; l’objectif est un message écrit pour une autre classe.\nMoment D : un atelier fait segmenter oralement des mots en syllabes pour préparer l’apprentissage de l’écrit.",
       "prompt": "Pour les moments A et B, compare les rôles de l’oral et les liens avec la lecture. Formule un objectif dominant et une trace pour A, puis pour B. Explique pourquoi la participation au moment A ne suffit pas à attester les capacités visées au moment B. Caractérise séparément le rôle de la parole dans C et D selon l’objectif annoncé.",
       "hints": [
         "• Oral comme outil pour apprendre : Usage de la parole et de l’écoute pour apprendre : reformuler, verbaliser, échanger pour coopérer.\n• Oral comme objet d’enseignement : Enseignement de la parole (langue parlée), qui développe les capacités à comprendre et à produire de l’oral.\nLe rôle s’analyse depuis ce qui est visé et observé, pas depuis la seule présence de parole. C03d34 montre que discuter d’un album, dicter à l’adulte ou manipuler des syllabes peuvent servir des objectifs de lecture-écriture ; des objectifs oraux pourraient s’y ajouter s’ils sont explicitement enseignés.",
@@ -2802,11 +2802,11 @@
       "familyId": "ORAL-F38",
       "referenceId": "C03",
       "variant": 1,
-      "contentRevision": "66eab699733f",
+      "contentRevision": "f5a39fba9431",
       "steps": [
         {
           "id": "Q1",
-          "prompt": "Quatre activités sont envisagées ci-dessous. Dans laquelle l’oral est-il principalement traité comme objet d’enseignement ? Les objectifs annoncés sont ceux décrits dans les choix.",
+          "prompt": "Voici quatre activités, chacune décrite avec son objectif. Dans laquelle l’oral est-il principalement traité comme objet d’enseignement ?",
           "correctId": "d",
           "choices": [
             {
@@ -2832,7 +2832,7 @@
           ]
         }
       ],
-      "qcmRevision": "a11380849e8d"
+      "qcmRevision": "bfa206d4a5ed"
     },
     {
       "id": "FRA-ORAL-F26-V1",
@@ -3008,7 +3008,7 @@
       "steps": [
         {
           "id": "Q1",
-          "prompt": "Pour deux camarades, un enfant invente à partir de cartes (fille, loup, porte, clé) : « La fille trouve une clé. Il veut entrer. Après le loup. Et après elle ouvre. » Les auditeurs demandent qui veut entrer et quel était le problème. Dans l’analyse des dimensions du récit, quel constat porte sur la textualisation ?",
+          "prompt": "Dans la situation, les auditeurs demandent qui veut entrer et quel était le problème. Dans l’analyse des dimensions du récit, quel constat porte sur la textualisation ?",
           "correctId": "a",
           "choices": [
             {
@@ -3034,7 +3034,7 @@
           ]
         }
       ],
-      "qcmRevision": "0b3ab220fcb7"
+      "qcmRevision": "50ff8dfc22e5"
     },
     {
       "id": "FRA-ORAL-F30-V1",
@@ -3245,7 +3245,7 @@
       "steps": [
         {
           "id": "Q1",
-          "prompt": "Dans un jeu, un élève-médecin dit à une marionnette-patient : « Je vais regarder ta gorge parce que tu dis que tu as mal. Ouvre la bouche, s’il te plaît. » Hors du jeu, il dit à son camarade : « Attends, passe ça. Là. » Quel indice permet d’analyser le jeu comme une parodie au sens du cours de langue ?",
+          "prompt": "Dans la situation, quel indice permet d’analyser le jeu de l’élève-médecin comme une parodie au sens du cours de langue ?",
           "correctId": "a",
           "choices": [
             {
@@ -3271,7 +3271,7 @@
           ]
         }
       ],
-      "qcmRevision": "cbd997607a16"
+      "qcmRevision": "e96f975f07c4"
     },
     {
       "id": "FRA-ORAL-F37-V1",
@@ -3338,7 +3338,7 @@
       "steps": [
         {
           "id": "Q3",
-          "prompt": "Deux enfants francophones jouent. A dit « Mets-le là ». B demande « Quel objet et où ? ». A désigne le cube rouge et le plateau ; B y pose le cube. Tous deux connaissent les mots. Une observatrice examine le cheminement de B, de la demande de précision à l’action qui convient. Quel niveau vise-t-elle principalement, et avec quel appui ?",
+          "prompt": "Dans la situation, une observatrice examine le cheminement de B, de la demande de précision à l’action qui convient. Quel niveau vise-t-elle principalement, et avec quel appui ?",
           "correctId": "a",
           "choices": [
             {
@@ -3365,7 +3365,7 @@
         },
         {
           "id": "Q4",
-          "prompt": "Dans un jeu entre deux enfants francophones, A dit « Mets-le là » et B répond « Quel objet et où ? ». A désigne le cube rouge et le plateau, puis B y pose le cube. Une observatrice conserve les formulations exactes, l’identité de chaque locuteur et le moment de chaque intervention. Quel niveau organise ce relevé ?",
+          "prompt": "Dans la situation, une observatrice conserve les formulations exactes, l’identité de chaque locuteur et le moment de chaque intervention. Quel niveau organise ce relevé ?",
           "correctId": "d",
           "choices": [
             {
@@ -3392,7 +3392,7 @@
         },
         {
           "id": "Q5",
-          "prompt": "Deux enfants connaissent le français. Pendant un jeu, A dit « Mets-le là » ; B lui demande de préciser l’objet et le lieu. Pour décrire les ressources dont ils disposent avant cet échange, une observatrice s’intéresse aux mots français que chacun peut utiliser et comprendre, au-delà de ce qu’il dit pendant le jeu. Quel niveau vise cette description ?",
+          "prompt": "Dans la situation, pour décrire les ressources dont les deux enfants disposent avant l’échange, une observatrice s’intéresse aux mots français que chacun peut utiliser et comprendre, au-delà de ce qu’il dit pendant le jeu. Quel niveau vise cette description ?",
           "correctId": "b",
           "choices": [
             {
@@ -3418,7 +3418,7 @@
           ]
         }
       ],
-      "qcmRevision": "34bc9dfd6135"
+      "qcmRevision": "3ff6f4c14075"
     },
     {
       "id": "FRA-ORAL-F04-V2",
@@ -4108,5 +4108,5 @@
       "qcmRevision": "6feb29b29c63"
     }
   ],
-  "bankRevision": "2552c01e33b6"
+  "bankRevision": "3ec040c3a633"
 }

@@ -1296,7 +1296,7 @@
       "id": "FRA-ORAL-F08-V2",
       "title": "Ce qui est repris et ce qui est ajouté",
       "kind": "Comparer et justifier",
-      "context": "Voici quatre échanges indépendants, où l’adulte répond immédiatement.\nA. Enfant : « La porte ferme pas ». Adulte : « La porte ne ferme pas parce que le tapis la bloque ».\nB. Enfant : « La voiture sont en panne ». Adulte : « La voiture est en panne ».\nC. Enfant : « Le camion roule ». Adulte : « Le camion roule ».\nD. Enfant : « Le camion roule ». Adulte : « Le camion ».",
+      "context": "Voici quatre échanges indépendants, où l’adulte répond immédiatement.\nA. Enfant : « La porte ferme pas ». Adulte : « La porte ne ferme pas parce que le tapis la bloque ».\nB. Enfant : « La voiture sont en panne ». Adulte : « La voiture est en panne ».\nC. Enfant : « Le camion roule ». Adulte : « Le camion roule ».\nD. Enfant : « J’ai vu un chat sur le toit ! ». Adulte : « Sur le toit ! ».",
       "prompt": "Classe les quatre reprises selon de Weck en précisant leur sous-type. Justifie chaque choix avec les mots ou informations de l’échange. Explique ce qui distingue les transformations de A et B, au-delà de leur longueur, puis précise sur quel plan linguistique la reprise B intervient.",
       "hints": [
         "• Reprise : Réaction de l’adulte qui reprend tout ou partie d’un énoncé de l’enfant, par répétition ou reformulation.\n• Répétition : Reprise totale ou partielle de l’énoncé de l’enfant, pour attester cet énoncé, c’est-à-dire le confirmer.\n• Reformulation : Reprise qui vise à enrichir le langage de l’enfant : correction implicite, avec ou sans extension (ajout d’informations), pour se mettre d’accord sur l’intelligibilité du message.",
@@ -1329,7 +1329,7 @@
         "steps": [
           {
             "title": "Identifier les répétitions",
-            "text": "C reprend exactement « Le camion roule » : répétition totale. D reprend seulement « Le camion » : répétition partielle. Dans les deux cas, les mots conservés ne sont pas transformés."
+            "text": "C reprend exactement « Le camion roule » : répétition totale. D reprend seulement « sur le toit », l’élément surprenant de l’énoncé, pour le confirmer : répétition partielle. Dans les deux cas, les mots conservés ne sont pas transformés et l’adulte n’ajoute aucune information."
           },
           {
             "title": "Examiner les reformulations",
@@ -1373,7 +1373,7 @@
       "familyId": "ORAL-F08",
       "referenceId": "C01",
       "variant": 2,
-      "contentRevision": "0854a970c4e8"
+      "contentRevision": "db55001e436b"
     },
     {
       "id": "FRA-ORAL-F09-V1",
@@ -5113,7 +5113,7 @@
       "id": "FRA-ORAL-F35-V1",
       "title": "Ce que chacun construit dans deux dispositifs",
       "kind": "Comparer et justifier",
-      "context": "Dispositif A : une enseignante écoute un enfant raconter un album connu, lui demande de préciser un personnage et reprend une phrase ; l’enfant poursuit. Dispositif B : un groupe raconte le même album ; deux élèves proposent la plupart des événements et les autres les répètent. L’objectif est que chacun puisse ensuite raconter l’essentiel à un auditeur.",
+      "context": "Objectif : que chaque enfant puisse ensuite raconter l’essentiel de l’album à un auditeur.\nDispositif A : une enseignante écoute un enfant raconter un album connu, lui demande de préciser un personnage et reprend une phrase ; l’enfant poursuit.\nDispositif B : un groupe raconte le même album ; deux élèves proposent la plupart des événements et les autres les répètent.",
       "prompt": "Compare les appuis et les limites des deux dispositifs pour cet objectif. Propose un ajustement de chacun, puis une vérification individuelle qui permette de distinguer ce que l’élève construit de ce que fournit le groupe ou l’adulte.",
       "hints": [
         "• Étayage : Aide de l’adulte qui, par ses interventions verbales et non verbales, assume dans l’interaction la part encore difficile pour l’enfant et met en évidence les caractéristiques cognitives, langagières et interactionnelles de la tâche, avant de lui en laisser progressivement la responsabilité.\n• Reformulation : Reprise qui vise à enrichir le langage de l’enfant : correction implicite, avec ou sans extension (ajout d’informations), pour se mettre d’accord sur l’intelligibilité du message.\n• Langage d’évocation : Parler de situations que l’on n’est pas en train de vivre : l’enfant devient capable d’évoquer des évènements passés, imaginaires ou à venir, en leur absence.",
@@ -5178,7 +5178,7 @@
       "familyId": "ORAL-F35",
       "referenceId": "S02",
       "variant": 1,
-      "contentRevision": "78d14e0c9b40"
+      "contentRevision": "65bfed04d0b5"
     },
     {
       "id": "FRA-ORAL-F35-V2",
@@ -5519,7 +5519,7 @@
       "id": "FRA-ORAL-F38-V1",
       "title": "Parler, lire et écrire en classe",
       "kind": "Comparer et justifier",
-      "context": "Moment A : après la lecture d’un album, les élèves discutent pour comprendre pourquoi le personnage refuse de partir ; l’enseignante leur fait relier des indices du texte. Moment B : les élèves préparent puis racontent l’histoire à un groupe qui n’a pas entendu cet album ; ils travaillent explicitement les reprises de personnages et l’ordre des événements, puis recueillent ce que les auditeurs ont compris. Moment C : des élèves proposent les phrases d’une invitation que l’adulte écrit ; l’objectif est un message écrit pour une autre classe. Moment D : un atelier fait segmenter oralement des mots en syllabes pour préparer l’apprentissage de l’écrit.",
+      "context": "Moment A : après la lecture d’un album, les élèves discutent pour comprendre pourquoi le personnage refuse de partir ; l’enseignante leur fait relier des indices du texte.\nMoment B : les élèves préparent puis racontent l’histoire à un groupe qui n’a pas entendu cet album ; ils travaillent explicitement les reprises de personnages et l’ordre des événements, puis recueillent ce que les auditeurs ont compris.\nMoment C : des élèves proposent les phrases d’une invitation que l’adulte écrit ; l’objectif est un message écrit pour une autre classe.\nMoment D : un atelier fait segmenter oralement des mots en syllabes pour préparer l’apprentissage de l’écrit.",
       "prompt": "Pour les moments A et B, compare les rôles de l’oral et les liens avec la lecture. Formule un objectif dominant et une trace pour A, puis pour B. Explique pourquoi la participation au moment A ne suffit pas à attester les capacités visées au moment B. Caractérise séparément le rôle de la parole dans C et D selon l’objectif annoncé.",
       "hints": [
         "• Oral comme outil pour apprendre : Usage de la parole et de l’écoute pour apprendre : reformuler, verbaliser, échanger pour coopérer.\n• Oral comme objet d’enseignement : Enseignement de la parole (langue parlée), qui développe les capacités à comprendre et à produire de l’oral.\nLe rôle s’analyse depuis ce qui est visé et observé, pas depuis la seule présence de parole. C03d34 montre que discuter d’un album, dicter à l’adulte ou manipuler des syllabes peuvent servir des objectifs de lecture-écriture ; des objectifs oraux pourraient s’y ajouter s’ils sont explicitement enseignés.",
@@ -5584,7 +5584,7 @@
       "familyId": "ORAL-F38",
       "referenceId": "C03",
       "variant": 1,
-      "contentRevision": "66eab699733f"
+      "contentRevision": "f5a39fba9431"
     },
     {
       "id": "FRA-ORAL-F38-V2",
@@ -5654,5 +5654,5 @@
       "contentRevision": "d9951ac14d58"
     }
   ],
-  "bankRevision": "faa6c0ea2d3f"
+  "bankRevision": "8e41a22133bd"
 }
