@@ -7,7 +7,8 @@
   const S = HEPStore, KEY = collection.storageKey || 'hep-revisions-qcm-state-v1', SCOPE = collection.id || 'fra-qcm-pilote';
   const repo = new S.Repository({ getItem: () => localStorage.getItem(KEY), setItem: (_, value) => localStorage.setItem(KEY, value) });
   const app = document.getElementById('app');
-  let bank, byId, active = null, view = 'home', displayedRun = null;
+  let bank, byId, active = null, view = 'home', displayedRun = null, activeCourse = null;
+  const courseCursorKey = 'hep-revisions-qcm-course-position-v1::' + SCOPE;
   const esc = value => String(value ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
   const text = value => `<span class="exercise-text">${esc(value)}</span>`;
   const comments = () => S.feedbackThreads(repo.state).filter(item => !item.deleted && item.comment.trim());
@@ -106,7 +107,8 @@
   function header() {
     if (view === 'exercise' && active) {
       const run = readRun(active);
-      return `<header class="qcm-focus-header"><button class="icon-button" data-action="home" aria-label="Exercices">←</button><span class="question-counter">QCM ${run.index + 1} / ${active.steps.length}</span><button class="btn secondary" data-action="open-context" aria-label="Voir la situation">Situation</button><button class="icon-button" data-action="open-hints" aria-label="Un rappel des concepts">?</button></header>`;
+      const progress = coursePosition(active, run), counter = activeCourse ? `Cours ${activeCourse} · QCM ${progress.index + 1} / ${progress.queue.length}` : `QCM ${run.index + 1} / ${active.steps.length}`;
+      return `<header class="qcm-focus-header"><button class="icon-button" data-action="home" aria-label="Exercices">←</button><span class="question-counter">${counter}</span><button class="btn secondary" data-action="open-context" aria-label="Voir la situation">Situation</button><button class="icon-button" data-action="open-hints" aria-label="Un rappel des concepts">?</button></header>`;
     }
     return `<header class="site-header"><button class="brand" data-action="home"><img class="brand-mark" src="icon.svg" alt=""><span><span class="brand-title">${esc(collection.label || 'Essai · QCM guidés')}</span><span class="brand-subtitle">Français · Bloc oral</span></span></button><nav class="header-actions" aria-label="Navigation des QCM"><button class="btn ghost" data-action="home">Exercices</button><button class="btn ghost" data-action="feedback">Mes retours <span class="badge" data-feedback-count>${comments().length}</span></button><button class="icon-button" data-action="settings" aria-label="Sauvegardes des QCM">↗</button></nav></header>`;
   }
@@ -117,40 +119,49 @@
       return `<article class="course-card exercise-tile"><h2>${esc(q.title)}</h2><p class="help-text">${q.steps.length} QCM${run.checked ? ` · ${score} / ${q.steps.length} lors du dernier essai` : Object.keys(run.revealed).length ? ` · ${Object.keys(run.revealed).length} / ${q.steps.length} réponses` : ''}</p><div class="actions"><button class="btn primary" data-exercise="${q.id}">${Object.keys(run.answers).length ? 'Reprendre les QCM' : 'Essayer les QCM'}</button><a class="btn secondary" href="oral.html#${q.id}">Rédiger sans QCM</a></div></article>`;
     }).join('')}</section><p class="notice">Le résultat des QCM mesure la reconnaissance d’une réponse. La rédaction et sa justification restent à travailler séparément.</p><p class="help-text"><a href="oral.html">Retour au bloc oral</a></p>`;
   }
+  // Parcours dérivés : chaque question conserve son exercice, sa révision et son essai.
+  const courseKey = q => { const match = /^[CS](\d+)$/.exec(q.course || q.referenceId || ''); return match ? String(Number(match[1])) : null; };
+  function courseQueue(key) {
+    return bank.families.flatMap(family => bank.exercises.filter(q => q.familyId === family.id && courseKey(q) === key).flatMap(q => q.steps.map((step, index) => ({ q, step, index }))));
+  }
+  function coursePosition(q, run) {
+    const queue = activeCourse ? courseQueue(activeCourse) : [];
+    return { queue, index: queue.findIndex(item => item.q.id === q.id && item.step.id === q.steps[run.index].id) };
+  }
+  function readCourseCursors() {
+    try { const value = JSON.parse(localStorage.getItem(courseCursorKey) || '{}'); return value && typeof value === 'object' && !Array.isArray(value) ? value : {}; } catch (_) { return {}; }
+  }
+  function selectCourseEntry(item) {
+    active = item.q;
+    const run = readRun(active);
+    if (run.index !== item.index) { run.index = item.index; writeRun(active, run); }
+    const cursors = readCourseCursors();
+    cursors[activeCourse] = { exerciseId: active.id, stepId: item.step.id, qcmRevision: active.qcmRevision };
+    try { localStorage.setItem(courseCursorKey, JSON.stringify(cursors)); } catch (_) { toast('La position du cours ne peut pas être enregistrée sur cet appareil.'); }
+  }
+  function openCourse(key) {
+    const queue = courseQueue(key); if (!queue.length) return false;
+    activeCourse = key;
+    const cursor = readCourseCursors()[key];
+    const saved = queue.find(item => item.q.id === cursor?.exerciseId && item.step.id === cursor?.stepId && item.q.qcmRevision === cursor?.qcmRevision);
+    const pending = saved || queue.find(item => !readRun(item.q).revealed[item.step.id]) || queue[queue.length - 1];
+    selectCourseEntry(pending); return true;
+  }
+  function courseStats(queue) {
+    return queue.reduce((stats, item) => { const run = readRun(item.q); if (run.revealed[item.step.id]) { stats.answered++; if (run.answers[item.step.id] === item.step.correctId) stats.score++; } return stats; }, { answered: 0, score: 0 });
+  }
   function oralHome() {
-    const available = bank.families.filter(family => bank.exercises.some(q => q.familyId === family.id));
-    // Le numéro attesté réunit cours et séminaire ; les références restent dans les données.
-    const sessionKey = q => { const key = q.course || q.referenceId || '', match = /^[CS](\d+)$/.exec(key); return match ? String(Number(match[1])) : key; };
-    const sessionLabel = key => /^\d+$/.test(key) ? `Séance ${key}` : 'Autres séances';
-    const sessionOrder = key => {
-      const dates = bank.exercises.filter(q => sessionKey(q) === key).map(q => {
-        const ref = (bank.courseReferences || {})[q.course || q.referenceId], [d, m, y] = String(ref?.date || '').split('.');
-        return y && m && d ? `${y}${m}${d}` : '99999999';
-      }).sort();
-      return `${dates[0] || '99999999'}${String(key).padStart(4, '0')}`;
-    };
     const query = oralNavigation.normalize(search);
-    const families = available.filter(family => !query || oralNavigation.normalize([
-      family.title, family.theme, oralNavigation.themeFor(family),
-      ...bank.exercises.filter(q => q.familyId === family.id).map(q => {
-        const ref = (bank.courseReferences || {})[q.course || q.referenceId], label = sessionLabel(sessionKey(q));
-        return `${label} ${label.replace(/\s+/g, '')} ${ref ? `${ref.label} ${ref.date}` : ''}`;
-      }),
-      ...bank.exercises.filter(q => q.familyId === family.id).map(q => [q.title, q.prompt, ...q.hints].join(' '))
-    ].join(' ')).includes(query));
-    const visible = new Set(families.map(family => family.id));
-    const sessions = [...new Set(bank.exercises.filter(q => visible.has(q.familyId)).map(sessionKey))].sort((a, b) => sessionOrder(a).localeCompare(sessionOrder(b)));
-    const groups = sessions.map(key => {
-      const exercises = bank.exercises.filter(q => visible.has(q.familyId) && sessionKey(q) === key);
-      return { theme: sessionLabel(key), families: available.filter(family => exercises.some(q => q.familyId === family.id)), exercises, seriesCount: exercises.length };
-    });
-    const seriesCount = groups.reduce((total, group) => total + group.seriesCount, 0);
-    return `<section class="home-hero oral-home-hero qcm-notions-hero"><h1 class="hero-title">Comprendre, puis rédiger</h1><p class="hero-description">Choisis une notion, réponds aux QCM, puis entraîne-toi à rédiger sans les choix.</p></section>
-      <form class="oral-tools qcm-home-filters" id="qcm-home-filters"><label class="oral-field" for="qcm-search">Rechercher une notion<input class="text-input" id="qcm-search" type="search" value="${esc(search)}" placeholder="Ex. : étayage, récit, bilinguisme…"></label><button class="btn secondary" type="submit">Rechercher</button>${search ? '<button class="btn ghost" type="button" data-action="clear-search">Tout afficher</button>' : ''}</form>
-      <p class="help-text oral-result-count" id="qcm-home-results" role="status" tabindex="-1">${seriesCount} série${seriesCount > 1 ? 's' : ''} · ${groups.length} séance${groups.length > 1 ? 's' : ''}</p><section class="oral-groups qcm-notions" aria-label="Séries par séance">${groups.map(group => `<details class="oral-group" data-qcm-theme="${esc(group.theme)}" data-qcm-manual="${!search}" ${search || expandedThemes.has(group.theme) ? 'open' : ''}><summary><span>${esc(group.theme)}</span><span class="oral-group-count">${group.seriesCount} série${group.seriesCount > 1 ? 's' : ''}</span></summary><div class="oral-group-content">${group.families.map(family => `<article class="oral-family qcm-family"><div><h2>${esc(family.title)}</h2>${group.exercises.filter(q => q.familyId === family.id).map(q => {
-        const run = readRun(q), answered = Object.keys(run.revealed).length, score = q.steps.filter(step => run.answers[step.id] === step.correctId).length;
-        return `<div class="qcm-family-case"><p class="help-text qcm-case-title">${esc(q.title)}</p><p class="help-text">${q.steps.length} QCM${run.checked ? ` · ${score} / ${q.steps.length} lors du dernier essai` : answered ? ` · ${answered} / ${q.steps.length} réponses` : ''}</p><div class="actions"><button class="btn primary" data-exercise="${esc(q.id)}" aria-label="${Object.keys(run.answers).length ? 'Reprendre' : 'Essayer'} les QCM : ${esc(family.title)}">${Object.keys(run.answers).length ? 'Reprendre les QCM' : 'Essayer les QCM'}</button><a class="btn secondary" href="oral.html#${esc(q.id)}" aria-label="Rédiger sans QCM : ${esc(family.title)}">Rédiger sans QCM</a></div></div>`;
-      }).join('')}</div></article>`).join('')}</div></details>`).join('') || '<p class="empty-state">Aucune notion ne correspond à cette recherche. Essaie un autre mot ou affiche toutes les notions.</p>'}</section>
+    const courses = [...new Set(bank.exercises.map(courseKey).filter(Boolean))].map(key => {
+      const queue = courseQueue(key), exercises = [...new Set(queue.map(item => item.q))];
+      const dates = exercises.map(q => { const [d, m, y] = String(bank.courseReferences[q.course || q.referenceId]?.date || '').split('.'); return y && m && d ? `${y}${m}${d}` : '99999999'; }).sort();
+      const label = `Cours ${key}`;
+      const haystack = [label, `Cours${key}`, ...exercises.map(q => { const family = bank.families.find(f => f.id === q.familyId), ref = bank.courseReferences[q.course || q.referenceId]; return [family?.title, family?.theme, q.title, q.prompt, ...q.hints, ...q.steps.map(s => s.prompt), ref?.date].join(' '); })].join(' ');
+      return { key, label, queue, date: dates[0], match: !query || oralNavigation.normalize(haystack).includes(query) };
+    }).filter(course => course.match).sort((a, b) => a.date.localeCompare(b.date) || Number(a.key) - Number(b.key));
+    return `<section class="home-hero oral-home-hero qcm-notions-hero"><h1 class="hero-title">Comprendre, puis rédiger</h1><p class="hero-description">Choisis un cours pour parcourir toutes ses questions, puis entraîne-toi à rédiger sans les choix.</p></section>
+      <form class="oral-tools qcm-home-filters" id="qcm-home-filters"><label class="oral-field" for="qcm-search">Rechercher un cours ou une notion<input class="text-input" id="qcm-search" type="search" value="${esc(search)}" placeholder="Ex. : Cours 1, étayage, récit…"></label><button class="btn secondary" type="submit">Rechercher</button>${search ? '<button class="btn ghost" type="button" data-action="clear-search">Tout afficher</button>' : ''}</form>
+      <p class="help-text oral-result-count" id="qcm-home-results" role="status" tabindex="-1">${courses.length} cours · ${courses.reduce((n, course) => n + course.queue.length, 0)} QCM</p><section class="exercise-grid qcm-courses" aria-label="Parcours par cours">${courses.map(course => { const stats = courseStats(course.queue); return `<article class="course-card exercise-tile"><h2>${course.label}</h2><p class="help-text">${course.queue.length} QCM${stats.answered ? ` · ${stats.answered} réponse${stats.answered > 1 ? 's' : ''} enregistrée${stats.answered > 1 ? 's' : ''}` : ''}</p><button class="btn primary" data-course="${course.key}" aria-label="${stats.answered || readCourseCursors()[course.key] ? 'Reprendre' : 'Commencer'} ${course.label}">${stats.answered || readCourseCursors()[course.key] ? 'Reprendre' : 'Commencer'} ${course.label}</button></article>`; }).join('') || '<p class="empty-state">Aucun cours ne correspond à cette recherche.</p>'}</section>
       <p class="notice">Le résultat des QCM mesure la reconnaissance d’une réponse. La rédaction et sa justification restent à travailler séparément.</p><p class="help-text"><a href="oral.html">Accéder directement aux exercices rédigés du bloc oral →</a></p>`;
   }
   function stepView(q, step, index, run) {
@@ -166,7 +177,11 @@
     const categories = ['Consigne', ...q.steps.map((s, i) => 'QCM ' + (i + 1)), 'Aides', 'Passage à la rédaction', 'Autre'];
     const ref = bank.courseReference || bank.courseReferences[q.referenceId], source = q.sources.find(s => s.file.includes('SYNTHESE')) || q.sources[0], step = q.steps[run.index];
     const score = q.steps.filter(s => run.answers[s.id] === s.correctId && run.revealed[s.id]).length;
-    return `<section class="question-shell"><article class="question-card"><h1 class="exercise-title">${esc(q.title)}</h1><p class="exercise-origin">${esc(ref.label)} · ${esc(ref.date)}</p>${stepView(q, step, run.index, run)}<button class="btn secondary qcm-report-button" data-action="report-step">Signaler un problème avec cette question</button><details class="feedback-panel" id="step-feedback" hidden><summary>Mon signalement sur cette question</summary><label class="field-label" for="step-feedback-category">Catégorie (facultative)</label><select class="select-input" id="step-feedback-category"><option value="">Sans catégorie</option><option>Question</option><option>Propositions</option><option>Correction</option><option>Autre</option></select><label class="field-label" for="step-feedback-comment">Mon commentaire</label><textarea class="feedback-textarea" id="step-feedback-comment" rows="4" maxlength="8000"></textarea><p class="help-text">Enregistré sur cet appareil avec la question et les contenus déjà consultés au moment de l’ouverture du signalement.</p><p class="save-status" data-save-status></p></details><div class="question-navigation">${run.index > 0 ? '<button class="btn secondary" data-action="previous">← QCM précédent</button>' : ''}${run.index + 1 < q.steps.length ? `<button class="btn primary" data-action="next" ${run.revealed[step.id] ? '' : 'disabled'}>QCM suivant →</button>` : ''}</div>${run.index === q.steps.length - 1 && run.checked ? `<section class="qcm-summary"><h2>Les QCM de cet exercice sont terminés</h2><p>${score} réponse${score > 1 ? 's' : ''} correcte${score > 1 ? 's' : ''} sur ${q.steps.length}. Tu peux maintenant construire ta propre réponse à la question complète.</p></section>` : ''}<div class="actions">${run.checked ? '<button class="btn secondary" data-action="restart">Recommencer les QCM</button>' : ''}<a class="btn ${run.checked ? 'primary' : 'secondary'}" href="oral.html#${q.id}">Rédiger cet exercice sans QCM →</a></div></article><details class="feedback-panel" ${saved?.comment ? 'open' : ''}><summary>Mon retour sur cet essai</summary><label class="field-label" for="feedback-category">Cela concerne…</label><select class="select-input" id="feedback-category">${categories.map(c => `<option ${(saved?.category || 'QCM ' + (run.index + 1)) === c ? 'selected' : ''}>${esc(c)}</option>`).join('')}</select><label class="field-label" for="feedback-comment">Mon commentaire</label><textarea class="feedback-textarea" id="feedback-comment" rows="4" maxlength="8000" placeholder="Ex. : deux propositions me semblent justes ; la correction n’explique pas leur différence…">${esc(saved?.comment || '')}</textarea><p class="help-text">Ton retour conserve les propositions dans l’ordre affiché et leurs explications.</p><p class="save-status" data-save-status></p></details></section>${supportDialogs(q, ref, source)}`;
+    const progress = coursePosition(q, run), index = activeCourse ? progress.index : run.index, total = activeCourse ? progress.queue.length : q.steps.length;
+    const stats = activeCourse ? courseStats(progress.queue) : { answered: Object.keys(run.revealed).length, score };
+    const finished = stats.answered === total;
+    const summary = activeCourse ? `Les QCM du Cours ${activeCourse} sont terminés` : 'Les QCM de cet exercice sont terminés';
+    return `<section class="question-shell"><article class="question-card"><h1 class="exercise-title">${esc(q.title)}</h1><p class="exercise-origin">${esc(ref.label)} · ${esc(ref.date)}</p>${stepView(q, step, run.index, run)}<button class="btn secondary qcm-report-button" data-action="report-step">Signaler un problème avec cette question</button><details class="feedback-panel" id="step-feedback" hidden><summary>Mon signalement sur cette question</summary><label class="field-label" for="step-feedback-category">Catégorie (facultative)</label><select class="select-input" id="step-feedback-category"><option value="">Sans catégorie</option><option>Question</option><option>Propositions</option><option>Correction</option><option>Autre</option></select><label class="field-label" for="step-feedback-comment">Mon commentaire</label><textarea class="feedback-textarea" id="step-feedback-comment" rows="4" maxlength="8000"></textarea><p class="help-text">Enregistré sur cet appareil avec la question et les contenus déjà consultés au moment de l’ouverture du signalement.</p><p class="save-status" data-save-status></p></details><div class="question-navigation">${index > 0 ? '<button class="btn secondary" data-action="previous">← QCM précédent</button>' : ''}${index + 1 < total ? `<button class="btn primary" data-action="next" ${run.revealed[step.id] ? '' : 'disabled'}>QCM suivant →</button>` : ''}</div>${index === total - 1 && finished ? `<section class="qcm-summary"><h2>${summary}</h2><p>${stats.score} réponse${stats.score > 1 ? 's' : ''} correcte${stats.score > 1 ? 's' : ''} sur ${total}. Tu peux maintenant construire ta propre réponse à la question complète.</p></section>` : ''}<div class="actions">${activeCourse ? (finished ? '<button class="btn secondary" data-action="course-first">Revoir le cours depuis le début</button>' : '') : run.checked ? '<button class="btn secondary" data-action="restart">Recommencer les QCM</button>' : ''}<a class="btn ${run.checked ? 'primary' : 'secondary'}" href="oral.html#${q.id}">Rédiger cet exercice sans QCM →</a></div></article><details class="feedback-panel" ${saved?.comment ? 'open' : ''}><summary>Mon retour sur cet essai</summary><label class="field-label" for="feedback-category">Cela concerne…</label><select class="select-input" id="feedback-category">${categories.map(c => `<option ${(saved?.category || 'QCM ' + (run.index + 1)) === c ? 'selected' : ''}>${esc(c)}</option>`).join('')}</select><label class="field-label" for="feedback-comment">Mon commentaire</label><textarea class="feedback-textarea" id="feedback-comment" rows="4" maxlength="8000" placeholder="Ex. : deux propositions me semblent justes ; la correction n’explique pas leur différence…">${esc(saved?.comment || '')}</textarea><p class="help-text">Ton retour conserve les propositions dans l’ordre affiché et leurs explications.</p><p class="save-status" data-save-status></p></details></section>${supportDialogs(q, ref, source)}`;
   }
   function feedback() {
     return `<h1>Mes retours sur les QCM</h1>${HEPFeedback.fields()}${HEPFeedback.archiveLink}<div class="actions"><button class="btn primary" data-action="copy" ${comments().length ? '' : 'disabled'}>Copier les retours</button><button class="btn secondary" data-action="export" ${comments().length ? '' : 'disabled'}>Télécharger les retours</button></div><div class="feedback-list">${comments().sort((a,b) => b.updatedAt.localeCompare(a.updatedAt)).map(item => `<article class="feedback-item"><span class="pill">${esc(item.category)}</span><h2>${esc(item.snapshot.question.split('\n')[0])}</h2><p class="exercise-text">${esc(item.comment)}</p><button class="btn ghost" data-exercise="${esc(item.questionId.split('::')[0])}">Revoir les QCM →</button></article>`).join('') || '<p class="empty-state">Tu peux laisser un retour dans chaque exercice.</p>'}</div><p class="help-text">Copie tes retours, puis envoie-les à Maxim par message. Aucun envoi automatique.</p>`;
@@ -208,7 +223,11 @@
   }
   function route() {
     let hash; try { hash = decodeURIComponent(location.hash.slice(1)); } catch (_) { hash = ''; }
-    active = byId.get(hash) || null; view = active ? 'exercise' : ['feedback', 'settings'].includes(hash) ? hash : 'home';
+    activeCourse = null; active = null;
+    const course = IS_ORAL && /^cours-(\d+)$/.exec(hash);
+    if (course) openCourse(String(Number(course[1])));
+    else active = byId.get(hash) || null;
+    view = active ? 'exercise' : ['feedback', 'settings'].includes(hash) ? hash : 'home';
     render(); document.getElementById('qcm-main').focus({ preventScroll: true }); window.scrollTo(0, 0);
   }
   function navigate(target) { if (location.hash.slice(1) === target) route(); else location.hash = target; }
@@ -218,6 +237,7 @@
   }
   app.addEventListener('click', async event => {
     const button = event.target.closest('button'); if (!button || button.disabled || !bank) return;
+    if (button.dataset.course) return navigate('cours-' + button.dataset.course);
     if (button.dataset.exercise) return navigate(button.dataset.exercise);
     const action = button.dataset.action;
     if (action === 'clear-search') { search = ''; render(); document.getElementById('qcm-search').focus({ preventScroll: true }); return; }
@@ -251,8 +271,14 @@
         if (view === 'exercise' && active?.id === q.id) { render(); const verdict = document.querySelector('.qcm-verdict'); verdict.focus({ preventScroll: true }); verdict.scrollIntoView({ block: 'nearest' }); }
       });
     }
+    if (action === 'course-first' && activeCourse) { selectCourseEntry(courseQueue(activeCourse)[0]); render(); document.getElementById('qcm-main').focus(); return; }
     if (['next', 'previous'].includes(action) && active) {
       const q = active;
+      if (activeCourse) {
+        const progress = coursePosition(q, displayedRun), target = progress.queue[progress.index + (action === 'next' ? 1 : -1)];
+        if (!target || (action === 'next' && !displayedRun.revealed[q.steps[displayedRun.index].id])) return;
+        return mutateRun(q, displayedRun, run => run, () => { selectCourseEntry(target); render(); const field = document.querySelector('.qcm-step'); field.setAttribute('tabindex', '-1'); field.focus({ preventScroll: true }); field.scrollIntoView({ block: 'start' }); });
+      }
       return mutateRun(q, displayedRun, run => {
         if (action === 'next' && run.revealed[q.steps[run.index].id]) run.index = Math.min(q.steps.length - 1, run.index + 1);
         if (action === 'previous') run.index = Math.max(0, run.index - 1);

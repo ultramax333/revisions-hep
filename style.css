@@ -318,8 +318,9 @@ summary::marker { color: var(--accent); }
 .qcm-summary { margin-top: 22px; padding: 16px; border: 1px solid var(--border); border-radius: 12px; }
 .qcm-summary h2 { font-size: 1.1rem; margin-bottom: 8px; }
 .qcm-focus-header { display: flex; align-items: center; gap: 6px; max-width: 800px; margin: 0 auto 10px; padding-bottom: 8px; border-bottom: 1px solid var(--border); }
-.qcm-focus-header .question-counter { margin-right: auto; font-size: .8125rem; white-space: nowrap; }
-.qcm-focus-header .btn { padding: 8px 10px; min-height: 44px; font-size: .875rem; }
+.qcm-focus-header .question-counter { flex: 1 1 auto; min-width: 0; margin-right: auto; font-size: .875rem; line-height: 1.3; white-space: normal; }
+.qcm-focus-header .btn { flex-shrink: 0; padding: 8px 10px; min-height: 44px; font-size: .875rem; white-space: nowrap; }
+.qcm-focus-header .icon-button { flex-shrink: 0; }
 .qcm-focus .question-shell { padding-top: 0; }
 .qcm-focus .question-card { padding: 0; margin-top: 0; border: 0; border-radius: 0; background: transparent; box-shadow: none; }
 .qcm-focus .exercise-title { margin: 0; font-size: 1rem; line-height: 1.3; }
