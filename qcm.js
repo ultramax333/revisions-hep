@@ -119,16 +119,25 @@
   }
   function oralHome() {
     const available = bank.families.filter(family => bank.exercises.some(q => q.familyId === family.id));
+    // Le numéro attesté réunit cours et séminaire ; les références restent dans les données.
+    const sessionKey = q => { const key = q.course || q.referenceId || '', match = /^[CS](\d+)$/.exec(key); return match ? String(Number(match[1])) : key; };
+    const sessionLabel = key => /^\d+$/.test(key) ? `Séance ${key}` : 'Autres séances';
+    const sessionOrder = key => {
+      const dates = bank.exercises.filter(q => sessionKey(q) === key).map(q => {
+        const ref = (bank.courseReferences || {})[q.course || q.referenceId], [d, m, y] = String(ref?.date || '').split('.');
+        return y && m && d ? `${y}${m}${d}` : '99999999';
+      }).sort();
+      return `${dates[0] || '99999999'}${String(key).padStart(4, '0')}`;
+    };
     const query = oralNavigation.normalize(search);
     const families = available.filter(family => !query || oralNavigation.normalize([
       family.title, family.theme, oralNavigation.themeFor(family),
-      ...bank.exercises.filter(q => q.familyId === family.id).map(q => { const ref = (bank.courseReferences || {})[q.course || q.referenceId]; return ref ? `${ref.label} ${ref.date}` : ''; }),
+      ...bank.exercises.filter(q => q.familyId === family.id).map(q => {
+        const ref = (bank.courseReferences || {})[q.course || q.referenceId], label = sessionLabel(sessionKey(q));
+        return `${label} ${label.replace(/\s+/g, '')} ${ref ? `${ref.label} ${ref.date}` : ''}`;
+      }),
       ...bank.exercises.filter(q => q.familyId === family.id).map(q => [q.title, q.prompt, ...q.hints].join(' '))
     ].join(' ')).includes(query));
-    // Bloc puis séance : une série se range sous le cours ou le séminaire dont elle relève.
-    const sessionKey = q => q.course || q.referenceId || '';
-    const sessionLabel = key => { const ref = (bank.courseReferences || {})[key]; return ref ? `${String(ref.label).split(' · ').pop()} · ${ref.date}` : 'Autres séances'; };
-    const sessionOrder = key => { const ref = (bank.courseReferences || {})[key], [d, m, y] = String(ref?.date || '').split('.'); return `${y || '9999'}${m || '99'}${d || '99'}${key.startsWith('C') ? 0 : 1}${key}`; };
     const visible = new Set(families.map(family => family.id));
     const sessions = [...new Set(bank.exercises.filter(q => visible.has(q.familyId)).map(sessionKey))].sort((a, b) => sessionOrder(a).localeCompare(sessionOrder(b)));
     const groups = sessions.map(key => {
