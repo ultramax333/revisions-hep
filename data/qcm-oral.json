@@ -362,33 +362,33 @@
         },
         {
           "id": "Q7",
-          "prompt": "Dans la situation, en préparant la leçon suivante, l’enseignante examine comment conserver la possibilité d’essayer qu’elle a laissée à l’élève quand elle s’adresse à lui. Avec la distinction de Simard, quelle analyse de cette réflexion convient ?",
+          "prompt": "Dans la situation, quelle analyse de la fonction dominante de « Tu peux prendre ton temps, chacun a le droit d’essayer » s’appuie sur la distinction de Simard ?",
           "correctId": "b",
           "choices": [
             {
               "id": "a",
-              "text": "Elle est didactique : l’enseignante prépare une aide à utiliser dans l’apprentissage du récit.",
-              "explanation": "Une aide peut soutenir un apprentissage tout en étant examinée sous l’angle de la relation. Le fait qu’elle intervienne dans le récit ne suffit pas à rendre didactique la préoccupation ciblée."
+              "text": "Didactique : laisser essayer fait de l’erreur un objet de savoir à enseigner dans ce récit.",
+              "explanation": "La crainte de se tromper est présente, mais la réponse n’examine pas une erreur du récit pour en faire apprendre la correction. Elle aménage d’abord la relation dans laquelle l’élève peut prendre le risque d’essayer."
             },
             {
               "id": "b",
-              "text": "Elle est pédagogique : l’enseignante examine la place qu’elle laisse à l’essai dans sa relation avec l’élève.",
-              "explanation": "L’objet de la réflexion est ici la façon de s’adresser à l’élève pour qu’il puisse essayer. Cette préoccupation relationnelle peut soutenir le travail sur un savoir, sans se confondre avec le choix de ce savoir."
+              "text": "Pédagogie : laisser essayer aménage la relation entre l’enseignante et l’élève pendant le travail sur le récit.",
+              "explanation": "L’autorisation répond à l’hésitation de l’élève et règle les conditions de leur relation pendant l’apprentissage. La préoccupation dominante est donc pédagogique, même si elle soutient ensuite le travail sur le savoir narratif."
             },
             {
               "id": "c",
-              "text": "Elle est didactique : la réflexion intervient pendant la préparation de la leçon suivante.",
-              "explanation": "La préparation d’une leçon peut examiner les savoirs à faire apprendre ou la relation avec les élèves. Son moment ne détermine pas la préoccupation : ici, l’enseignante examine la possibilité laissée à l’élève d’essayer."
+              "text": "Pédagogie : laisser essayer transmet une règle de comportement commune à toutes les matières.",
+              "explanation": "Opposer une règle générale à un contenu propre au français ne fournit pas le critère de Simard. Une règle peut elle aussi devenir un savoir enseigné ; ici le classement tient à la fonction de l’autorisation dans la relation avec cet élève."
             },
             {
               "id": "d",
-              "text": "Elle est pédagogique : l’enseignante examine une intervention formulée oralement.",
-              "explanation": "Le canal oral ne distingue pas pédagogie et didactique. Une question sur les liens du récit serait elle aussi orale ; ce qui compte ici est la relation dans laquelle l’élève peut essayer."
+              "text": "Didactique : laisser essayer aide l’élève à apprendre, même sans cibler une caractéristique du récit.",
+              "explanation": "Soutenir l’apprentissage ne suffit pas à qualifier toute intervention de didactique. L’aide décrite répond à l’hésitation dans la relation ; elle n’examine pas ici comment faire acquérir une caractéristique du récit."
             }
           ]
         }
       ],
-      "qcmRevision": "cf86cce71780"
+      "qcmRevision": "8972c41bb39e"
     },
     {
       "id": "FRA-ORAL-F16-V1",
@@ -1125,7 +1125,7 @@
             {
               "id": "b",
               "text": "Behavioriste (Skinner) : examiner comment l’obtention de la pomme favorise le réemploi de la demande après sa reprise.",
-              "explanation": "L’association est correcte et l’obtention du fruit est bien un fait du cas. Cette piste explique le réemploi favorisé par une conséquence. Elle cible la fréquence de reprise d’une réponse, alors que la question demande d’examiner la construction de la combinaison qui n’a pas été fournie telle quelle. L’erreur est de prendre la répétition renforcée pour l’opération ici ciblée."
+              "explanation": "L’association est correcte et l’obtention du fruit est bien un fait du cas. Cette piste explique le réemploi favorisé par une conséquence. Elle cible la fréquence de reprise d’une réponse, alors que la question demande d’examiner la construction de la combinaison qui n’a pas été fournie telle quelle ce jour-là. L’erreur est de prendre la répétition renforcée pour l’opération ici ciblée."
             },
             {
               "id": "c",
@@ -1140,7 +1140,7 @@
           ]
         }
       ],
-      "qcmRevision": "0e12e5441432"
+      "qcmRevision": "e5c33615b8ac"
     },
     {
       "id": "FRA-ORAL-F07-V2",
@@ -1272,7 +1272,7 @@
         "steps": [
           {
             "title": "Identifier les répétitions",
-            "text": "C reprend exactement « Le camion roule » : répétition totale. D reprend seulement « sur le toit », l’élément surprenant de l’énoncé, pour le confirmer : répétition partielle. Dans les deux cas, les mots conservés ne sont pas transformés et l’adulte n’ajoute aucune information."
+            "text": "C reprend exactement « Le camion roule » : répétition totale. D reprend seulement « Sur le toit ! », un fragment inchangé de l’énoncé précédent : répétition partielle. Dans les deux cas, les mots repris ne sont pas transformés et l’adulte n’ajoute aucune information."
           },
           {
             "title": "Examiner les reformulations",
@@ -1316,7 +1316,7 @@
       "familyId": "ORAL-F08",
       "referenceId": "C01",
       "variant": 2,
-      "contentRevision": "db55001e436b",
+      "contentRevision": "2ba52ae56f5c",
       "steps": [
         {
           "id": "Q1",
@@ -1373,7 +1373,7 @@
           ]
         }
       ],
-      "qcmRevision": "28bedb9ea8dd"
+      "qcmRevision": "9e85358773df"
     },
     {
       "id": "FRA-ORAL-F09-V2",
@@ -3343,50 +3343,50 @@
           "choices": [
             {
               "id": "a",
-              "text": "Le langage : elle examine comment B arrive à comprendre ce qu’A lui demande.",
-              "explanation": "L’observation vise l’activité par laquelle B construit le sens du message au moyen du français. La demande puis l’action apportent des indices de cette activité, qui mobilise aussi une langue et des paroles situées."
+              "text": "Le langage : ce cheminement concerne le sens que B construit à partir de signes déjà connus.",
+              "explanation": "B dispose des mots, mais doit relier la demande à l’objet et au lieu visés. Le changement examiné concerne l’activité de compréhension au moyen de ces signes, plutôt que l’acquisition d’un code ou le seul relevé d’une formulation."
             },
             {
               "id": "b",
-              "text": "La langue : elle examine les mots français que les deux enfants connaissent.",
-              "explanation": "Les mots connus appartiennent au système partagé, mais l’observation ciblée suit ce que B en fait pour comprendre cette demande précise. Un inventaire des ressources de la langue répondrait à une autre question."
+              "text": "La langue : ce cheminement correspond à la constitution du code français commun à A et B.",
+              "explanation": "La langue commune est déjà disponible : les deux enfants connaissent les mots. La précision fait évoluer l’interprétation de cette demande dans le jeu, pas la constitution du système partagé."
             },
             {
               "id": "c",
-              "text": "Le langage : elle examine le fait que B s’adresse à un partenaire.",
-              "explanation": "La présence d’un partenaire caractérise la situation d’échange, sans expliquer à elle seule le niveau visé. L’appui pertinent est ici le travail de compréhension que la demande et l’action rendent observable."
+              "text": "Le langage : ce cheminement correspond au fait qu’A et B possèdent un code français commun.",
+              "explanation": "Le code commun est une ressource de l’activité, mais n’en décrit pas le déroulement. Il était disponible avant la précision ; pour qualifier le cheminement observé, il faut distinguer cette ressource de son utilisation pour construire le sens."
             },
             {
               "id": "d",
-              "text": "La parole : elle examine les interventions individuelles produites pendant le jeu.",
-              "explanation": "Les interventions constituent bien des paroles et donnent accès à l’analyse. Mais l’observation annoncée porte sur le cheminement de compréhension de B, pas sur le relevé des formulations comme réalisations situées."
+              "text": "La parole : ce cheminement correspond à la réalisation linguistique de la demande « Quel objet et où ? ».",
+              "explanation": "La demande constitue bien une parole et fournit un indice du cheminement. L’analyse visée porte toutefois sur le passage de l’incertitude à une interprétation utilisable, et non sur cette réalisation linguistique prise comme donnée."
             }
           ]
         },
         {
           "id": "Q4",
-          "prompt": "Dans la situation, une observatrice conserve les formulations exactes, l’identité de chaque locuteur et le moment de chaque intervention. Quel niveau organise ce relevé ?",
+          "prompt": "Dans la situation, une observatrice note les énoncés d’A et de B avec leur locuteur et leur moment. Quelle analyse du statut de ce relevé convient ?",
           "correctId": "d",
           "choices": [
             {
               "id": "a",
-              "text": "Le langage, puisque la succession des interventions renseigne la compréhension du message.",
-              "explanation": "Ces données peuvent servir à examiner le langage, mais le relevé décrit d’abord ce qui a été dit par chacun dans ce contexte. Il ne retrace pas encore le cheminement psychologique de compréhension."
+              "text": "Le langage : ces énoncés constituent l’activité de compréhension elle-même, conservée dans le relevé.",
+              "explanation": "Le relevé conserve des réalisations observables. Elles peuvent renseigner la compréhension, mais ne sont pas l’activité psychologique elle-même. Confondre la donnée conservée et l’activité qu’elle aide à étudier change le niveau décrit."
             },
             {
               "id": "b",
-              "text": "La parole, puisque les deux locuteurs utilisent la langue française.",
-              "explanation": "Employer le français désigne le système mobilisé, sans suffire à caractériser la parole. Le relevé relève de la parole parce qu’il conserve des usages individuels effectivement produits dans la situation."
+              "text": "La parole : les signes de ces énoncés sont compréhensibles pour les francophones qui partagent le code.",
+              "explanation": "La partageabilité des signes caractérise la langue mobilisée. Elle n’établit pas, à elle seule, le statut d’un relevé de parole : ce sont les emplois effectivement réalisés dans cet échange que celui-ci conserve."
             },
             {
               "id": "c",
-              "text": "La langue, puisque les mots notés peuvent être employés par d’autres francophones.",
-              "explanation": "Les ressources sont partageables, mais le relevé porte sur leurs réalisations par ces locuteurs à ces moments. Il ne décrit pas l’ensemble des signes à disposition de la communauté."
+              "text": "La langue : ces énoncés sont du français, donc les noter revient à décrire le système commun.",
+              "explanation": "Des énoncés individuels donnent des exemples d’une langue, mais leur relevé n’est pas pour autant une description de ce système. Le passage de l’exemple réalisé au système partagé constitue ici la confusion."
             },
             {
               "id": "d",
-              "text": "La parole, puisque le relevé porte sur ces formulations produites par ces locuteurs à ces moments.",
-              "explanation": "L’identité du locuteur, la formulation réalisée et le contexte situent l’usage concret des signes. Ces données sont des paroles ; elles mobilisent le français et peuvent ensuite éclairer l’activité de langage."
+              "text": "La parole : ces énoncés sont des emplois du français réalisés dans cet échange précis.",
+              "explanation": "Les données conservées sont les réalisations des signes par A et B dans l’échange. Elles relèvent donc de la parole ; elles mobilisent la langue et peuvent servir à examiner le langage, sans se confondre avec ces deux autres niveaux."
             }
           ]
         },
@@ -3412,13 +3412,13 @@
             },
             {
               "id": "d",
-              "text": "La langue : la description porte sur deux enfants plutôt que sur un seul.",
-              "explanation": "Le nombre de personnes ne distingue pas la langue de la parole ou du langage : un échange à deux comprend aussi des réalisations individuelles et des activités de compréhension. Le critère pertinent est ici que la description vise les signes partagés, et non la seule présence de deux enfants."
+              "text": "La langue : un énoncé individuel conforme au français constitue le système partagé.",
+              "explanation": "La conformité d’un énoncé au français ne transforme pas cet usage individuel en système de signes partagé. Un énoncé est une réalisation de parole ; la description visée porte ici sur les ressources de la langue disponibles au-delà de cette réalisation."
             }
           ]
         }
       ],
-      "qcmRevision": "3ff6f4c14075"
+      "qcmRevision": "108526ab8a15"
     },
     {
       "id": "FRA-ORAL-F04-V2",
@@ -4108,5 +4108,5 @@
       "qcmRevision": "6feb29b29c63"
     }
   ],
-  "bankRevision": "3ec040c3a633"
+  "bankRevision": "608696aee8a6"
 }

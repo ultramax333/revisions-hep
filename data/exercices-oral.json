@@ -1329,7 +1329,7 @@
         "steps": [
           {
             "title": "Identifier les répétitions",
-            "text": "C reprend exactement « Le camion roule » : répétition totale. D reprend seulement « sur le toit », l’élément surprenant de l’énoncé, pour le confirmer : répétition partielle. Dans les deux cas, les mots conservés ne sont pas transformés et l’adulte n’ajoute aucune information."
+            "text": "C reprend exactement « Le camion roule » : répétition totale. D reprend seulement « Sur le toit ! », un fragment inchangé de l’énoncé précédent : répétition partielle. Dans les deux cas, les mots repris ne sont pas transformés et l’adulte n’ajoute aucune information."
           },
           {
             "title": "Examiner les reformulations",
@@ -1373,7 +1373,7 @@
       "familyId": "ORAL-F08",
       "referenceId": "C01",
       "variant": 2,
-      "contentRevision": "db55001e436b"
+      "contentRevision": "2ba52ae56f5c"
     },
     {
       "id": "FRA-ORAL-F09-V1",
@@ -5654,5 +5654,5 @@
       "contentRevision": "d9951ac14d58"
     }
   ],
-  "bankRevision": "8e41a22133bd"
+  "bankRevision": "2c9238aab89c"
 }
