@@ -308,28 +308,28 @@
       "steps": [
         {
           "id": "Q2",
-          "prompt": "Dans le triangle didactique, que désigne le pôle « savoirs » ?",
+          "prompt": "Dans le triangle didactique, que décrit la relation enseignant–savoirs ?",
           "correctId": "a",
           "choices": [
             {
               "id": "a",
-              "text": "Les contenus théoriques et pratiques que les élèves doivent acquérir.",
-              "explanation": "Le pôle savoirs désigne ce qui est à apprendre. Les deux autres pôles sont l’enseignant et les élèves."
+              "text": "Le travail de sélection et de transposition des contenus à enseigner.",
+              "explanation": "L’enseignant choisit, transpose, planifie et transmet le savoir : ces actions décrivent sa relation aux savoirs dans le triangle."
             },
             {
               "id": "b",
-              "text": "Les choix de supports et de tâches effectués pour enseigner un contenu.",
-              "explanation": "Choisir les supports et les tâches décrit le travail de l’enseignant sur le savoir, donc une relation entre deux pôles."
+              "text": "L’accompagnement et les échanges entre l’enseignant et les élèves.",
+              "explanation": "Accompagner les élèves et échanger avec eux décrit la relation enseignant–élèves, et non son travail sur les savoirs."
             },
             {
               "id": "c",
-              "text": "Les démarches par lesquelles les élèves construisent leurs connaissances.",
-              "explanation": "Construire ses connaissances décrit l’activité de l’élève dans sa relation au savoir, plutôt que le contenu visé."
+              "text": "La construction de connaissances et de savoir-faire par les élèves.",
+              "explanation": "Construire des connaissances et des savoir-faire décrit la relation élèves–savoirs. L’acteur de ce travail est ici l’élève."
             },
             {
               "id": "d",
-              "text": "Les échanges par lesquels l’enseignant accompagne les essais des élèves.",
-              "explanation": "Accompagner les essais décrit l’interaction enseignant–élève, au service d’un savoir qui reste à identifier."
+              "text": "L’ensemble des contenus théoriques et pratiques que les élèves doivent acquérir.",
+              "explanation": "Les contenus à acquérir constituent le pôle savoirs. Ils se distinguent des actions par lesquelles l’enseignant les choisit et les transforme pour les enseigner."
             }
           ]
         },
@@ -345,12 +345,12 @@
             },
             {
               "id": "b",
-              "text": "Les contenus théoriques d’une discipline, à l’exclusion de ses savoir-faire.",
-              "explanation": "Cette définition limite à tort les savoirs à la théorie. La didactique s’intéresse aussi aux savoirs pratiques."
+              "text": "Les notions théoriques propres à une discipline.",
+              "explanation": "Les notions théoriques font partie des savoirs visés, mais réduire la didactique à ces notions omet les savoir-faire pratiques."
             },
             {
               "id": "c",
-              "text": "Les savoirs à acquérir, aussi bien théoriques que pratiques.",
+              "text": "Les savoirs que les élèves doivent acquérir.",
               "explanation": "La didactique place les savoirs à acquérir au centre de ses préoccupations. Elle ne se réduit ni à la matière du cours ni à la relation seule."
             },
             {
@@ -388,7 +388,7 @@
           ]
         }
       ],
-      "qcmRevision": "dc0b3dd26b7f"
+      "qcmRevision": "e9a89d100cbd"
     },
     {
       "id": "FRA-ORAL-F16-V1",
@@ -504,8 +504,8 @@
             },
             {
               "id": "b",
-              "text": "Nommer les objets et les actions que l’enfant confirme derrière ses pointages.",
-              "explanation": "Les futurs auditeurs ne pourront pas suivre les gestes. Mettre en mots ce que l’enfant montre rendra le récit accessible ; l’adulte doit vérifier avec lui ce qu’il veut raconter."
+              "text": "Raconter les actions de la sortie en nommant ce que l’enfant montre du doigt.",
+              "explanation": "Les auditeurs ne verront pas les gestes. L’adulte vérifie avec l’enfant ce qu’il désigne par « là » et « ça », puis l’aide à nommer les objets et les actions pour les rendre compréhensibles dans le récit."
             },
             {
               "id": "c",
@@ -520,7 +520,7 @@
           ]
         }
       ],
-      "qcmRevision": "6b420ef447a3"
+      "qcmRevision": "a311e40fff63"
     },
     {
       "id": "FRA-ORAL-F21-V1",
@@ -843,7 +843,7 @@
       "steps": [
         {
           "id": "Q4",
-          "prompt": "Avec des cartes, un enfant raconte : « Le bateau est pris dans la tempête. Après ils sont sur l’île. Après ils font un feu. » Il veut raconter comment les passagers se mettent à l’abri. Quel élément du schéma narratif faut-il surtout développer entre la tempête et l’arrivée sur l’île ?",
+          "prompt": "Avec des cartes, un enfant raconte : « Le bateau est pris dans la tempête. Après ils sont sur l’île. Après ils font un feu. » Quel élément du schéma narratif faut-il surtout développer entre la tempête et l’arrivée sur l’île ?",
           "correctId": "b",
           "choices": [
             {
@@ -869,7 +869,7 @@
           ]
         }
       ],
-      "qcmRevision": "6fb28b320ca7"
+      "qcmRevision": "aba0c2115015"
     },
     {
       "id": "FRA-ORAL-F05-V2",
@@ -968,7 +968,7 @@
           "choices": [
             {
               "id": "a",
-              "text": "Il exprime une pensée dont le développement cognitif détermine l’apparition.",
+              "text": "Il dépend des capacités cognitives d’abstraction et de décentration.",
               "explanation": "Cette priorité du développement cognitif sur le verbal correspond à la présentation constructiviste de Piaget."
             },
             {
@@ -984,12 +984,12 @@
             {
               "id": "d",
               "text": "Il manifeste les règles d’un dispositif universel d’acquisition inné.",
-              "explanation": "Le dispositif universel inné renvoie au LAD de Chomsky, et non au rôle constitutif du langage chez Vygotski."
+              "explanation": "Le dispositif inné d’acquisition du langage (LAD) est l’hypothèse de Chomsky. Vygotski met ici au premier plan la médiation sociale et le rôle du langage dans la pensée."
             }
           ]
         }
       ],
-      "qcmRevision": "dde114b8659d"
+      "qcmRevision": "8d2c432bc05f"
     },
     {
       "id": "FRA-ORAL-F06-V1",
@@ -1120,7 +1120,7 @@
             {
               "id": "a",
               "text": "L’enfant dispose de capacités universelles et d’un dispositif inné d’acquisition du langage.",
-              "explanation": "Le LAD et les dispositions innées caractérisent cette approche. Ils ne désignent ni une récompense ni un scénario social."
+              "explanation": "Le dispositif inné d’acquisition du langage (LAD) et les dispositions innées caractérisent cette approche. Ils se distinguent d’une récompense ou d’un scénario social."
             },
             {
               "id": "b",
@@ -1140,7 +1140,7 @@
           ]
         }
       ],
-      "qcmRevision": "57663ab4f3bc"
+      "qcmRevision": "9fbe7e4e79a8"
     },
     {
       "id": "FRA-ORAL-F07-V2",
@@ -1353,7 +1353,7 @@
             {
               "id": "a",
               "text": "Le plan phonologique.",
-              "explanation": "Le changement audible n’est pas ici une correction d’articulation : l’adulte ajuste la forme verbale au sujet singulier."
+              "explanation": "L’adulte remplace « sont » par « est » pour accorder le verbe avec « la voiture ». Il corrige l’accord, pas la manière de prononcer un même mot."
             },
             {
               "id": "b",
@@ -1373,7 +1373,7 @@
           ]
         }
       ],
-      "qcmRevision": "5278d6ffcc4f"
+      "qcmRevision": "e17e1e11be31"
     },
     {
       "id": "FRA-ORAL-F09-V2",
@@ -1615,7 +1615,7 @@
       "steps": [
         {
           "id": "Q1",
-          "prompt": "Une enfant appelle « balle » une roue et une orange parce qu’elles sont rondes. Quel raisonnement décrit cet emploi du mot ?",
+          "prompt": "Une enfant appelle « balle » une roue et une orange parce qu’elles sont rondes. Comment caractériser cet emploi du mot « balle » ?",
           "correctId": "c",
           "choices": [
             {
@@ -1642,12 +1642,12 @@
         },
         {
           "id": "Q3",
-          "prompt": "Une enfant ne prononce pas encore « roue ». Quel essai permet d’observer si elle comprend ce mot, sans lui demander de le produire ?",
+          "prompt": "Une enfant ne prononce pas encore « roue ». Dans les essais proposés, l’adulte ne pointe aucun objet. Quel essai permet d’observer si elle comprend ce mot, sans lui demander de le produire ?",
           "correctId": "d",
           "choices": [
             {
               "id": "a",
-              "text": "Montrer une roue et demander son nom, avec le début du mot si elle hésite.",
+              "text": "Présenter une roue et demander son nom, avec le début du mot si elle hésite.",
               "explanation": "Cet essai demande de produire le nom, même avec une aide. Une absence de réponse ne permettrait pas de distinguer production et compréhension."
             },
             {
@@ -1662,14 +1662,14 @@
             },
             {
               "id": "d",
-              "text": "Dire « Montre la roue » parmi plusieurs objets, sans que l’adulte pointe lui-même l’objet.",
+              "text": "Disposer plusieurs objets et lui demander « Montre la roue ».",
               "explanation": "Le pointage relie le mot entendu à son référent sans exiger sa production. L’adulte doit éviter un geste qui donnerait la réponse."
             }
           ]
         },
         {
           "id": "Q4",
-          "prompt": "Une enfant appelle « balle » sa balle rouge, mais refuse ce mot pour une balle bleue et une balle jaune. Quel raisonnement décrit cet emploi ?",
+          "prompt": "Une enfant appelle « balle » sa balle rouge, mais refuse ce mot pour une balle bleue et une balle jaune. Que montre sa façon d’utiliser le mot « balle » ?",
           "correctId": "c",
           "choices": [
             {
@@ -1722,7 +1722,7 @@
           ]
         }
       ],
-      "qcmRevision": "5038d95710e4"
+      "qcmRevision": "914a17200ac1"
     },
     {
       "id": "FRA-ORAL-F12-V1",
@@ -1845,28 +1845,28 @@
           "choices": [
             {
               "id": "a",
-              "text": "Faire situer les pièces par rapport à la boîte et au pont.",
+              "text": "Faire préciser la position des pièces par rapport à la boîte et au pont.",
               "explanation": "Ce travail peut enrichir les prépositions et les relations spatiales. Il ne change pas directement les personnes grammaticales mobilisées."
             },
             {
               "id": "b",
-              "text": "Faire décrire une action par celui qui agit, puis par un témoin, puis en s’adressant à l’acteur.",
-              "explanation": "Les positions de parole font varier les personnes : parler de soi, d’un autre ou à l’autre ouvre les emplois de « je », « il/elle » et « tu »."
+              "text": "Faire décrire la même action par l’enfant qui agit, puis par un témoin.",
+              "explanation": "L’enfant qui agit parle de lui-même avec « je » ; le témoin parle de cet enfant avec « il » ou « elle ». Changer de locuteur fait ainsi varier la personne grammaticale."
             },
             {
               "id": "c",
-              "text": "Faire expliquer pourquoi une pièce est choisie plutôt qu’une autre.",
+              "text": "Faire expliquer le choix d’une pièce à un camarade qui ne l’a pas vu.",
               "explanation": "Justifier le choix peut faire construire un lien causal. Cet objectif diffère de la diversification des pronoms personnels."
             },
             {
               "id": "d",
-              "text": "Faire décrire par le même témoin les différentes actions d’un seul garçon.",
+              "text": "Faire décrire les différentes actions d’un même garçon par l’enfant qui les a observées.",
               "explanation": "Les actions changent, mais le témoin parle du même garçon à la troisième personne du singulier. Il peut conserver « il » ; cet aménagement ne fait pas varier les pronoms personnels."
             }
           ]
         }
       ],
-      "qcmRevision": "abcaaeac9309"
+      "qcmRevision": "1da7dd57b256"
     },
     {
       "id": "FRA-ORAL-F13-V1",
@@ -1937,7 +1937,7 @@
       "steps": [
         {
           "id": "Q1",
-          "prompt": "« On a fabriqué la pâte. On découpe les biscuits. On va les cuire. » L’enfant décrit un accompli, une activité actuelle et une cuisson à venir. Quel raisonnement identifie le point de référence de ce système ?",
+          "prompt": "« On a fabriqué la pâte. On découpe les biscuits. On va les cuire. » Autour de quel repère ces actions s’organisent-elles dans la progression de Boisseau, et pourquoi ?",
           "correctId": "c",
           "choices": [
             {
@@ -1953,7 +1953,7 @@
             {
               "id": "c",
               "text": "Le repère est présent : l’accompli et le projet s’organisent autour de l’activité actuelle.",
-              "explanation": "« A fabriqué » marque un avant et « va cuire » un après autour de « découpe ». L’articulation correspond au premier système, centré sur le présent."
+              "explanation": "« A fabriqué » marque un avant et « va cuire » un après autour de « découpe ». Cela correspond au système de Boisseau centré sur le présent : présent, passé composé, puis « aller » au présent suivi d’un infinitif."
             },
             {
               "id": "d",
@@ -1984,14 +1984,14 @@
             },
             {
               "id": "d",
-              "text": "Une action envisagée après le moment présent du récit.",
-              "explanation": "La projection part du repère passé. Elle peut être déjà passée lorsque l’enfant raconte ; ce n’est pas nécessairement un futur depuis maintenant."
+              "text": "Une action envisagée après le moment où l’enfant raconte.",
+              "explanation": "L’action est projetée depuis « on était prêts », la veille. Elle n’est pas présentée comme future par rapport au moment où l’enfant raconte."
             }
           ]
         },
         {
           "id": "Q3",
-          "prompt": "Complète le troisième système à trois temps de Boisseau : futur simple / futur antérieur / …",
+          "prompt": "Dans le troisième système à trois temps de Boisseau, quelle forme complète la série : futur simple / futur antérieur / … ?",
           "correctId": "b",
           "choices": [
             {
@@ -2002,7 +2002,7 @@
             {
               "id": "b",
               "text": "aller au futur suivi d’un infinitif",
-              "explanation": "Le troisième système associe futur simple, futur antérieur et futur aller dans le futur : par exemple « nous irons préparer »."
+              "explanation": "La série associe le futur simple, le futur antérieur et « aller » au futur suivi d’un infinitif : par exemple « nous irons préparer ». Cette dernière construction envisage une suite depuis un repère futur."
             },
             {
               "id": "c",
@@ -2012,12 +2012,12 @@
             {
               "id": "d",
               "text": "aller au passé composé suivi d’un infinitif",
-              "explanation": "Aller au passé composé présente un déplacement passé. Ce n’est pas le futur aller dans le futur de ce système."
+              "explanation": "« Aller » au passé composé présente un déplacement passé. La série demandée utilise « aller » au futur pour envisager une suite depuis un repère futur."
             }
           ]
         }
       ],
-      "qcmRevision": "281a6b761bfc"
+      "qcmRevision": "10b530a4867e"
     },
     {
       "id": "FRA-ORAL-F14-V1",
@@ -2088,7 +2088,7 @@
       "steps": [
         {
           "id": "Q1",
-          "prompt": "L’enfant dit : « Je prends les bottes. Je veux aller dans les flaques », et confirme ce but. L’adulte propose : « Je prends les bottes pour aller dans les flaques. » Quel raisonnement analyse la reprise dans la progression de Boisseau ?",
+          "prompt": "L’enfant dit : « Je prends les bottes. Je veux aller dans les flaques », et confirme ce but. L’adulte propose : « Je prends les bottes pour aller dans les flaques. » Que change cette reprise dans la construction de la phrase, dans la progression de Boisseau ?",
           "correctId": "a",
           "choices": [
             {
@@ -2114,7 +2114,7 @@
           ]
         }
       ],
-      "qcmRevision": "9c61a5ec9828"
+      "qcmRevision": "83f85dd1d0d8"
     },
     {
       "id": "FRA-ORAL-F15-V2",
@@ -2194,28 +2194,28 @@
           "choices": [
             {
               "id": "a",
-              "text": "Le récit est inventé par l’enfant plutôt que rapporté comme une expérience vécue.",
+              "text": "L’enfant invente le garçon qui cherche son bateau, au lieu de relater une expérience vécue.",
               "explanation": "Ce critère suit le sens courant d’« imagination ». Dans le cadre de Terwagne et Vanesse, la distinction retenue porte sur la complication et la suspension de sa résolution."
             },
             {
               "id": "b",
-              "text": "Le personnage accomplit plusieurs actions en se déplaçant entre différents lieux de recherche.",
+              "text": "Le garçon se déplace du pont vers la rivière et enchaîne plusieurs actions de recherche.",
               "explanation": "Un script ou un récit du quotidien peut aussi comporter plusieurs actions et lieux. Leur nombre ne montre pas la manière dont la complication trouve son issue."
             },
             {
               "id": "c",
-              "text": "Les pronoms et les connecteurs relient les phrases autour du même personnage et de sa recherche.",
+              "text": "« Il » reprend le garçon, et « alors » relie sa recherche à la demande de perche.",
               "explanation": "Pronoms et connecteurs assurent la cohésion. Ils peuvent apparaître dans les deux types de récits et ne distinguent pas une résolution immédiate d’une résolution suspendue."
             },
             {
               "id": "d",
-              "text": "La perte ouvre une recherche et la perche prépare une récupération qui n’est pas encore racontée.",
-              "explanation": "La perte ouvre une recherche, puis la perche prépare la récupération qui n’est pas encore racontée. La résolution reste suspendue : c’est le critère retenu dans ce cadre."
+              "text": "La perte du bateau lance une recherche, mais le récit s’arrête avant sa récupération.",
+              "explanation": "La perte pose une complication. Le récit développe des tentatives puis s’arrête avant de montrer comment le problème se règle : la résolution est suspendue. Ce critère caractérise ici le récit d’imagination chez Terwagne et Vanesse."
             }
           ]
         }
       ],
-      "qcmRevision": "87deaea0672d"
+      "qcmRevision": "27bc01326436"
     },
     {
       "id": "FRA-ORAL-F17-V2",
@@ -2705,7 +2705,7 @@
         },
         {
           "id": "Q2",
-          "prompt": "Dans le classement voix/corps du cours 04, quel ensemble relève du paraverbal ?",
+          "prompt": "Dans le classement qui distingue verbal, paraverbal et non-verbal, quel ensemble relève du paraverbal ?",
           "correctId": "c",
           "choices": [
             {
@@ -2731,7 +2731,7 @@
           ]
         }
       ],
-      "qcmRevision": "9ea6cf2fc97b"
+      "qcmRevision": "4cf3ade5fe6d"
     },
     {
       "id": "FRA-ORAL-F38-V1",
@@ -2910,7 +2910,7 @@
             {
               "id": "b",
               "text": "Reprendre un même genre en changeant le sujet sans changer les exigences.",
-              "explanation": "Changer le sujet renouvelle le contenu de l’activité, mais ne montre pas à lui seul un approfondissement des exigences. La progression spiralaire reprend le genre en approfondissant les capacités travaillées."
+              "explanation": "Changer le sujet renouvelle le contenu de l’activité, mais ne montre pas à lui seul un approfondissement des exigences."
             },
             {
               "id": "c",
@@ -2925,7 +2925,7 @@
           ]
         }
       ],
-      "qcmRevision": "52d0b0909dfc"
+      "qcmRevision": "c76e39909c93"
     },
     {
       "id": "FRA-ORAL-F27-V1",
@@ -3600,7 +3600,7 @@
             {
               "id": "a",
               "text": "La lecture enrichit le lexique ; cet enrichissement dépend surtout de la répétition des mêmes mots.",
-              "explanation": "Cette réponse réduit l’enrichissement aux répétitions et omet le retour du lexique sur la compréhension et les occasions de lire."
+              "explanation": "Cette réponse réduit l’enrichissement aux répétitions. Elle oublie que les mots acquis aident à mieux comprendre, donc à lire davantage."
             },
             {
               "id": "b",
@@ -3620,7 +3620,7 @@
           ]
         }
       ],
-      "qcmRevision": "34cd2dc8af7b"
+      "qcmRevision": "e87ecbaeefeb"
     },
     {
       "id": "FRA-ORAL-F03-V1",
@@ -3692,28 +3692,28 @@
           "choices": [
             {
               "id": "a",
-              "text": "Un genre de référence que les élèves pratiquent en conservant son utilité sociale.",
+              "text": "Un genre dont l’usage garde une utilité dans la vie sociale.",
               "explanation": "Un but social réel peut être conservé, mais ne définit pas la transformation en objet d’apprentissage : une pratique sociale possède déjà une utilité."
             },
             {
               "id": "b",
-              "text": "Un genre de référence que l’on fait produire par des élèves dans une classe.",
+              "text": "Un genre dont les productions sont réalisées dans une classe par des élèves.",
               "explanation": "Le lieu scolaire et le statut des locuteurs ne suffisent pas. Il faut identifier les caractéristiques que les élèves vont apprendre."
             },
             {
               "id": "c",
-              "text": "Un genre de référence que les élèves rencontrent à plusieurs reprises.",
+              "text": "Un genre dont les élèves répètent la pratique à plusieurs reprises.",
               "explanation": "La répétition offre des occasions de pratique. Elle ne précise pas ce qui est choisi comme contenu d’enseignement."
             },
             {
               "id": "d",
-              "text": "Un genre transformé en objet d’apprentissage par le choix de caractéristiques à travailler.",
+              "text": "Un genre dont des caractéristiques sont retenues comme objets d’apprentissage.",
               "explanation": "La didactisation retient les caractéristiques que les élèves doivent apprendre à comprendre ou à produire, dans des textes entiers ou partiels."
             }
           ]
         }
       ],
-      "qcmRevision": "12c630aaed51"
+      "qcmRevision": "c6b1033de9b6"
     },
     {
       "id": "FRA-ORAL-F36-V1",
@@ -3897,7 +3897,7 @@
       "steps": [
         {
           "id": "Q3",
-          "prompt": "En réponse à l’enseignante, Inès dit que le garçon retourne à la cabane « pour chercher sa sœur ». Malik ajoute : « Si c’est pour sa sœur, comme dit Inès, c’est qu’il ne l’a pas retrouvée avec les autres. » Quel raisonnement caractérise son écoute ?",
+          "prompt": "En réponse à l’enseignante, Inès dit que le garçon retourne à la cabane « pour chercher sa sœur ». Malik ajoute : « Si c’est pour sa sœur, comme dit Inès, c’est qu’il ne l’a pas retrouvée avec les autres. » Quel type d’écoute Malik manifeste-t-il et qu’est-ce qui le montre ?",
           "correctId": "d",
           "choices": [
             {
@@ -3924,7 +3924,7 @@
         },
         {
           "id": "Q4",
-          "prompt": "Après une histoire, huit élèves donnent des avis différents. L’enseignante pose chaque question, choisit le répondant et valide sa réponse avant de passer à la suivante. Quel raisonnement analyse la conduite de l’échange ?",
+          "prompt": "Après une histoire, huit élèves donnent des avis différents. L’enseignante pose chaque question, choisit le répondant et valide sa réponse avant de passer à la suivante. Comment cet échange est-il organisé ?",
           "correctId": "a",
           "choices": [
             {
@@ -3951,33 +3951,33 @@
         },
         {
           "id": "Q5",
-          "prompt": "Dans une discussion sur le don, Sami demande : « Tu parles de rendre la même bille ou d’en donner une autre ? » Lina répond : « De rendre la même. » Quel raisonnement montre qu’il s’agit d’une paire adjacente ?",
+          "prompt": "Dans une discussion sur le don, Sami demande : « Tu parles de rendre la même bille ou d’en donner une autre ? » Lina répond : « De rendre la même. » Qu’est-ce qui relie ces tours comme une paire adjacente ?",
           "correctId": "c",
           "choices": [
             {
               "id": "a",
-              "text": "Les deux tours se suivent sans intervention entre eux.",
+              "text": "Sami pose une question et Lina parle immédiatement après lui.",
               "explanation": "Deux tours peuvent se suivre tout en juxtaposant des propos indépendants. La succession ne suffit pas : il faut un lien entre leurs fonctions."
             },
             {
               "id": "b",
-              "text": "Les deux tours conservent le même objet, la bille.",
+              "text": "Sami parle de la bille et Lina reprend ce même objet.",
               "explanation": "Le même objet peut figurer dans plusieurs propos indépendants. Il ne suffit pas à établir que le second répond à ce qu’appelle le premier."
             },
             {
               "id": "c",
-              "text": "La réponse de Lina apporte la précision demandée par Sami.",
+              "text": "Lina précise à Sami laquelle des deux possibilités elle envisage.",
               "explanation": "La demande ouvre une alternative et la réponse choisit l’une des possibilités. Le premier tour oriente ainsi le contenu attendu dans le second."
             },
             {
               "id": "d",
-              "text": "Les deux locuteurs prennent chacun un tour sur le thème du don.",
+              "text": "Sami et Lina prennent chacun la parole sur le thème du don.",
               "explanation": "L’alternance des locuteurs et le thème commun ne suffisent pas. Une paire adjacente suppose que le second tour accomplisse une réponse attendue par le premier."
             }
           ]
         }
       ],
-      "qcmRevision": "b0a1b47e5886"
+      "qcmRevision": "02cec08b6a0c"
     },
     {
       "id": "FRA-ORAL-F19-V2",
@@ -4108,5 +4108,5 @@
       "qcmRevision": "fa2e0d2b40a4"
     }
   ],
-  "bankRevision": "b7b23316de32"
+  "bankRevision": "22679326f031"
 }
