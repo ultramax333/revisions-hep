@@ -3929,22 +3929,22 @@
           "choices": [
             {
               "id": "a",
-              "text": "Elle garde les traits du dialogue scolaire : l’enseignante structure et valide les réponses.",
+              "text": "Il garde les traits du dialogue scolaire : l’enseignante structure et valide les réponses.",
               "explanation": "Le dialogue scolaire est guidé par les objectifs, le questionnement et la validation de l’enseignante. Cette organisation est décrite ici."
             },
             {
               "id": "b",
-              "text": "Elle relève de la conversation : les élèves peuvent parler avec aisance devant le groupe.",
+              "text": "Il relève de la conversation : les élèves peuvent parler avec aisance devant le groupe.",
               "explanation": "L’aisance concerne la manière de parler, pas l’ouverture de l’échange. Les tours restent ici organisés et évalués par l’enseignante."
             },
             {
               "id": "c",
-              "text": "Elle relève de la discussion : les élèves expriment des avis différents sur une même histoire.",
+              "text": "Il relève de la discussion : les élèves expriment des avis différents sur une même histoire.",
               "explanation": "La diversité des avis ne montre pas encore leur examen par des idées et des arguments. Il faudrait observer la confrontation ou la mise en relation des propos."
             },
             {
               "id": "d",
-              "text": "Elle relève de la conversation : le nombre de participants dépasse celui d’un dialogue.",
+              "text": "Il relève de la conversation : le nombre de participants dépasse celui d’un dialogue.",
               "explanation": "Dans ce cadre, le dialogue est guidé par un but et peut réunir plusieurs élèves. Deux participants ne sont pas une condition de définition."
             }
           ]
@@ -3977,7 +3977,7 @@
           ]
         }
       ],
-      "qcmRevision": "02cec08b6a0c"
+      "qcmRevision": "509503352dd8"
     },
     {
       "id": "FRA-ORAL-F19-V2",
@@ -4108,5 +4108,5 @@
       "qcmRevision": "fa2e0d2b40a4"
     }
   ],
-  "bankRevision": "22679326f031"
+  "bankRevision": "101efa24367f"
 }
