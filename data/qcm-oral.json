@@ -308,87 +308,87 @@
       "steps": [
         {
           "id": "Q2",
-          "prompt": "Pour apprendre à relier les événements d’une histoire, une enseignante choisit deux images. Elle rassure un élève hésitant, puis demande ce qui a poussé le personnage à partir ; il reprend la parole. Dans le triangle didactique, quel élément correspond au pôle « savoirs » ?",
+          "prompt": "Dans le triangle didactique, que désigne le pôle « savoirs » ?",
           "correctId": "a",
           "choices": [
             {
               "id": "a",
-              "text": "La relation entre ce qui motive le départ et ce que fait le personnage dans l’histoire.",
-              "explanation": "Le contenu à apprendre est une relation entre événements du récit. Cette relation interne à l’histoire constitue le savoir visé ; elle se distingue des relations entre les acteurs du triangle."
+              "text": "Les contenus théoriques et pratiques que les élèves doivent acquérir.",
+              "explanation": "Le pôle savoirs désigne ce qui est à apprendre. Les deux autres pôles sont l’enseignant et les élèves."
             },
             {
               "id": "b",
-              "text": "La sélection d’une paire d’images pour soutenir l’apprentissage des relations entre événements.",
-              "explanation": "La confusion est entre le savoir et le travail que l’enseignante accomplit pour l’enseigner. Sélectionner le support relève ici de sa relation au savoir."
+              "text": "Les choix de supports et de tâches effectués pour enseigner un contenu.",
+              "explanation": "Choisir les supports et les tâches décrit le travail de l’enseignant sur le savoir, donc une relation entre deux pôles."
             },
             {
               "id": "c",
-              "text": "La construction d’un lien narratif par l’élève au moment où il reprend son récit.",
-              "explanation": "La confusion est entre le savoir et sa construction par l’apprenant. Ce processus renseigne la relation élève–savoir ; le pôle savoirs désigne le contenu qu’il cherche à construire."
+              "text": "Les démarches par lesquelles les élèves construisent leurs connaissances.",
+              "explanation": "Construire ses connaissances décrit l’activité de l’élève dans sa relation au savoir, plutôt que le contenu visé."
             },
             {
               "id": "d",
-              "text": "L’accompagnement de l’essai de l’élève pour l’aider à entrer dans le travail sur le récit.",
-              "explanation": "La confusion est entre le contenu appris et l’interaction qui le soutient. Accompagner l’essai situe l’action de l’enseignante envers l’élève, au service du savoir narratif."
+              "text": "Les échanges par lesquels l’enseignant accompagne les essais des élèves.",
+              "explanation": "Accompagner les essais décrit l’interaction enseignant–élève, au service d’un savoir qui reste à identifier."
             }
           ]
         },
         {
           "id": "Q6",
-          "prompt": "Dans la situation, l’enseignante se demande ensuite si sa question « Qu’est-ce qui a poussé le personnage à partir ? » aide à dépasser une suite d’actions simplement énumérées. Avec la distinction de Simard, quelle analyse de cette réflexion convient ?",
+          "prompt": "Quel objet est au centre de la didactique dans la distinction de Simard ?",
           "correctId": "c",
           "choices": [
             {
               "id": "a",
-              "text": "Elle est pédagogique : l’enseignante examine une question adressée personnellement à l’élève.",
-              "explanation": "L’adresse individuelle décrit la relation, mais la réflexion ciblée porte sur ce que la question fait travailler dans le récit. Toute interaction avec un élève n’a pas pour préoccupation première la relation enseignant–élève."
+              "text": "Les relations que l’enseignant noue avec les élèves pendant les apprentissages.",
+              "explanation": "La relation enseignant–élève est au centre de la pédagogie chez Simard. Elle intervient aussi dans une situation didactique."
             },
             {
               "id": "b",
-              "text": "Elle est didactique : l’enseignante intervient pendant une activité de français.",
-              "explanation": "La matière ne suffit pas à décider : une réflexion pédagogique peut avoir lieu en français. Il faut examiner ce qui préoccupe l’enseignante, ici le lien entre événements à faire construire."
+              "text": "Les contenus théoriques d’une discipline, à l’exclusion de ses savoir-faire.",
+              "explanation": "Cette définition limite à tort les savoirs à la théorie. La didactique s’intéresse aussi aux savoirs pratiques."
             },
             {
               "id": "c",
-              "text": "Elle est didactique : l’enseignante examine ce que la question fait construire dans le récit.",
-              "explanation": "Elle s’interroge sur le passage d’une énumération à des événements reliés. Le savoir narratif visé et sa mise au travail sont donc au centre de cette réflexion."
+              "text": "Les savoirs à acquérir, aussi bien théoriques que pratiques.",
+              "explanation": "La didactique place les savoirs à acquérir au centre de ses préoccupations. Elle ne se réduit ni à la matière du cours ni à la relation seule."
             },
             {
               "id": "d",
-              "text": "Elle est pédagogique : l’enseignante examine comment renouer l’échange après l’hésitation.",
-              "explanation": "Renouer l’échange est une fonction possible de l’intervention rassurante. La réflexion citée examine cependant l’effet de la question sur la construction du récit : elle cible ici le savoir, sans supprimer la dimension relationnelle de la scène."
+              "text": "Les formes d’organisation communes aux différentes matières scolaires.",
+              "explanation": "Une organisation commune peut soutenir l’enseignement de plusieurs matières. Elle ne définit pas la préoccupation didactique, centrée sur les savoirs."
             }
           ]
         },
         {
           "id": "Q7",
-          "prompt": "Dans la situation, quelle analyse de la fonction dominante de « Tu peux prendre ton temps, chacun a le droit d’essayer » s’appuie sur la distinction de Simard ?",
+          "prompt": "Dans la distinction de Simard, qu’étudie d’abord la pédagogie ?",
           "correctId": "b",
           "choices": [
             {
               "id": "a",
-              "text": "Didactique : laisser essayer fait de l’erreur un objet de savoir à enseigner dans ce récit.",
-              "explanation": "La crainte de se tromper est présente, mais la réponse n’examine pas une erreur du récit pour en faire apprendre la correction. Elle aménage d’abord la relation dans laquelle l’élève peut prendre le risque d’essayer."
+              "text": "La manière de transformer les savoirs de référence en contenus scolaires.",
+              "explanation": "Transformer un savoir pour l’enseigner relève d’une préoccupation didactique ; ce n’est pas l’objet premier de la pédagogie dans cette distinction."
             },
             {
               "id": "b",
-              "text": "Pédagogie : laisser essayer aménage la relation entre l’enseignante et l’élève pendant le travail sur le récit.",
-              "explanation": "L’autorisation répond à l’hésitation de l’élève et règle les conditions de leur relation pendant l’apprentissage. La préoccupation dominante est donc pédagogique, même si elle soutient ensuite le travail sur le savoir narratif."
+              "text": "La relation entre l’enseignant et l’élève, quelle que soit la matière.",
+              "explanation": "Simard centre la pédagogie sur la relation enseignant–élève. Cette relation se travaille aussi pendant l’étude d’un savoir disciplinaire."
             },
             {
               "id": "c",
-              "text": "Pédagogie : laisser essayer transmet une règle de comportement commune à toutes les matières.",
-              "explanation": "Opposer une règle générale à un contenu propre au français ne fournit pas le critère de Simard. Une règle peut elle aussi devenir un savoir enseigné ; ici le classement tient à la fonction de l’autorisation dans la relation avec cet élève."
+              "text": "La manière dont les élèves construisent un savoir propre à une discipline.",
+              "explanation": "Cet objet met au premier plan le savoir à acquérir et son apprentissage : il relève d’une préoccupation didactique."
             },
             {
               "id": "d",
-              "text": "Didactique : laisser essayer aide l’élève à apprendre, même sans cibler une caractéristique du récit.",
-              "explanation": "Soutenir l’apprentissage ne suffit pas à qualifier toute intervention de didactique. L’aide décrite répond à l’hésitation dans la relation ; elle n’examine pas ici comment faire acquérir une caractéristique du récit."
+              "text": "Les pratiques éducatives familiales, avant l’entrée dans les disciplines.",
+              "explanation": "La pédagogie ne se limite pas à l’éducation familiale ou à une période précédant les disciplines. Son objet est ici la relation dans l’enseignement."
             }
           ]
         }
       ],
-      "qcmRevision": "8972c41bb39e"
+      "qcmRevision": "dc0b3dd26b7f"
     },
     {
       "id": "FRA-ORAL-F16-V1",
@@ -467,60 +467,60 @@
       "steps": [
         {
           "id": "Q4",
-          "prompt": "Dans la situation, l’enfant raconte la sortie à son enseignante devant les photographies. Quelle analyse fonde le type de langage utilisé dans cet échange avec l’enseignante ?",
+          "prompt": "Quel critère distingue le langage d’évocation du langage en situation ?",
           "correctId": "c",
           "choices": [
             {
               "id": "a",
-              "text": "Il parle en situation : les photographies constituent le contexte présent auquel renvoient les mots de son récit.",
-              "explanation": "La confusion est entre la présence du support et celle de l’événement. Les photos sont devant l’enfant, mais la sortie racontée est terminée ; elles soutiennent son évocation."
+              "text": "Le locuteur emploie des temps du passé plutôt que le présent.",
+              "explanation": "Le temps grammatical ne décide pas seul : on peut évoquer au présent un événement passé ou imaginaire."
             },
             {
               "id": "b",
-              "text": "Il évoque la sortie : l’absence de l’autre classe pendant la visite transforme le type de langage qu’il utilise.",
-              "explanation": "La confusion est de faire dépendre le type de langage de la participation du destinataire à la visite. Le repère est ici l’événement terminé que l’enfant remet en mots ; un interlocuteur ayant vécu la sortie peut aussi en écouter l’évocation."
+              "text": "Le destinataire n’a pas participé à l’événement dont on parle.",
+              "explanation": "Le destinataire peut avoir vécu l’événement et en écouter l’évocation. Le critère concerne la situation dont le locuteur parle."
             },
             {
               "id": "c",
-              "text": "Il évoque la sortie : ses gestes et les photographies soutiennent la mise en mots d’un événement terminé.",
-              "explanation": "L’enfant parle d’une visite qu’il n’est plus en train de vivre. Les appuis présents ne rendent pas cette visite actuelle ; ils aident à l’évoquer, même si les références restent difficiles pour un autre auditeur."
+              "text": "Le locuteur parle d’une situation qu’il n’est pas en train de vivre.",
+              "explanation": "L’évocation porte sur des événements absents, passés, imaginaires ou à venir. En situation, les paroles sont ancrées dans le vécu présent."
             },
             {
               "id": "d",
-              "text": "Il parle en situation : le présent de « je fais » situe les actions du récit dans le moment de cet échange.",
-              "explanation": "La confusion est entre la forme verbale employée et le moment de l’événement raconté. Le contexte indique une sortie passée ; le présent de la formulation ne la transforme pas en action en cours."
+              "text": "Le locuteur raconte sans photographie ni objet devant lui.",
+              "explanation": "Un support présent peut aider à évoquer un événement absent. L’absence de photographies ne définit pas l’évocation."
             }
           ]
         },
         {
           "id": "Q2",
-          "prompt": "Dans la situation, l’enfant prépare un album écho pour raconter la sortie à l’autre classe, qui ne verra pas ses gestes. Quel objectif langagier prioritaire retenir pour ses prochains essais ?",
+          "prompt": "Dans la situation, l’enfant prépare un album écho pour raconter la sortie à une autre classe qui ne verra pas ses gestes. Quel objectif choisir pour ses prochains essais ?",
           "correctId": "b",
           "choices": [
             {
               "id": "a",
-              "text": "Préparer le récit au passé, en reliant les photographies par avant, après et enfin.",
-              "explanation": "La confusion est de traiter l’évocation comme un passage d’abord fondé sur les temps du passé et l’ordre des images. Après marque déjà une succession ; il reste surtout à mettre en mots les actions et les objets que là et ça laissent dépendre du pointage."
+              "text": "Raconter au passé, en reliant les photographies par « avant », « après » et « enfin ».",
+              "explanation": "Les temps et les organisateurs peuvent aider le récit. Ici, « après » marque déjà la succession ; « là » et « ça » laissent surtout les objets et les actions dépendre des gestes."
             },
             {
               "id": "b",
-              "text": "Préparer le récit de la sortie, en nommant les objets et les actions que l’enfant confirme derrière ses pointages.",
-              "explanation": "Là et ça sont accessibles à l’adulte qui suit les gestes, mais ne disent pas aux futurs auditeurs ce qui a été fait. L’album peut soutenir des reprises issues des paroles confirmées de l’enfant et rendre ces références accessibles par le langage."
+              "text": "Nommer les objets et les actions que l’enfant confirme derrière ses pointages.",
+              "explanation": "Les futurs auditeurs ne pourront pas suivre les gestes. Mettre en mots ce que l’enfant montre rendra le récit accessible ; l’adulte doit vérifier avec lui ce qu’il veut raconter."
             },
             {
               "id": "c",
-              "text": "Préparer la description de chaque photographie, en situant les objets par rapport à l’enfant.",
-              "explanation": "La confusion est entre reconstruire la scène visible et raconter l’expérience. Décrire où sont les objets peut fournir des mots, mais ne fait pas encore exprimer ce que l’enfant a fait et veut raconter de la sortie."
+              "text": "Décrire chaque photographie, en situant les objets par rapport à l’enfant.",
+              "explanation": "Décrire l’image peut fournir des mots, mais ne fait pas encore raconter ce que l’enfant a fait pendant la sortie."
             },
             {
               "id": "d",
-              "text": "Préparer une explication du choix des photographies, en reliant chaque image à ce que l’enfant veut montrer.",
-              "explanation": "La confusion est entre parler du support et remettre l’expérience en récit. Expliquer l’intérêt d’une photo peut nourrir l’échange ; le message à préparer porte ici sur les actions de la sortie, que les désignations restent à préciser."
+              "text": "Expliquer pourquoi chaque photographie a été choisie pour l’album.",
+              "explanation": "Expliquer le choix des photos fait parler du support. L’obstacle du récit porte ici sur les objets et actions que les auditeurs ne peuvent pas identifier."
             }
           ]
         }
       ],
-      "qcmRevision": "ae464de27ecd"
+      "qcmRevision": "6b420ef447a3"
     },
     {
       "id": "FRA-ORAL-F21-V1",
@@ -587,33 +587,33 @@
       "steps": [
         {
           "id": "Q4",
-          "prompt": "Un élève doit décrire un objet à un camarade qui ne le connaît pas. Avant de parler, il prépare trois idées et une image ; il formule ses phrases pendant la présentation. Quel raisonnement justifie le classement de cette modalité parmi les types d’oraux ?",
+          "prompt": "Qu’est-ce qui caractérise l’oral planifié parmi les types d’oraux du cours ?",
           "correctId": "d",
           "choices": [
             {
               "id": "a",
-              "text": "Un oral récité : les trois idées préparées constituent le texte que l’élève doit restituer.",
-              "explanation": "La confusion est entre préparer le contenu et mémoriser un texte. Les trois idées sont des repères ; aucun texte ne fixe les formulations à restituer mot à mot."
+              "text": "Le locuteur restitue un texte écrit appris mot à mot.",
+              "explanation": "La mémorisation d’un texte écrit caractérise ici l’oral récité. Préparer sa parole ne suppose pas d’en fixer tous les mots."
             },
             {
               "id": "b",
-              "text": "Un oral spontané : les phrases se construisent au moment où l’élève présente son objet.",
-              "explanation": "La confusion est de faire de la formulation au moment de parler le seul critère de l’oral spontané. Les trois idées et l’image ont été préparées avant la présentation ; cette anticipation organise la prise de parole."
+              "text": "Le locuteur construit sa parole dans l’immédiateté de l’échange.",
+              "explanation": "L’immédiateté et la relative liberté thématique caractérisent l’oral spontané. L’oral planifié comporte un travail préalable."
             },
             {
               "id": "c",
-              "text": "Un oral spontané : la description s’adresse à un camarade qui ne connaît pas l’objet.",
-              "explanation": "Un destinataire qui ne connaît pas l’objet peut aussi écouter une parole planifiée ou récitée. Cette différence de connaissances ne remplace pas le critère de préparation : trois idées et une image ont été travaillées avant la présentation."
+              "text": "Le locuteur s’adresse à un public qui ne connaît pas le sujet.",
+              "explanation": "Un public peu informé peut écouter chacun des types d’oraux. Le type dépend ici des conditions de préparation et de formulation."
             },
             {
               "id": "d",
-              "text": "Un oral planifié : les trois idées préparées guident la description que l’élève adresse au camarade.",
-              "explanation": "Les idées anticipées et l’image préparée soutiennent la présentation. L’élève organise ainsi sa prise de parole sans avoir à restituer un texte écrit mémorisé."
+              "text": "Le locuteur prépare sa parole à l’aide d’un support travaillé.",
+              "explanation": "L’anticipation et le support préparé organisent l’oral planifié. Les phrases peuvent encore être formulées au moment de parler."
             }
           ]
         }
       ],
-      "qcmRevision": "d68a03102876"
+      "qcmRevision": "5a20f4d2bc0c"
     },
     {
       "id": "FRA-ORAL-F29-V2",
@@ -684,87 +684,87 @@
       "steps": [
         {
           "id": "Q5",
-          "prompt": "Dans la situation, l’enseignant veut examiner ce qui rend une règle juste. Quelle question choisir pour ouvrir une discussion à visée philosophique ?",
+          "prompt": "Dans la situation, quelle question engagerait une discussion à visée philosophique sur la justice de cette règle ?",
           "correctId": "c",
           "choices": [
             {
               "id": "a",
               "text": "Qu’est-ce qui a fait juger cette règle juste par les joueurs de la partie ?",
-              "explanation": "La confusion est entre expliquer un jugement particulier et examiner le problème général qu’il peut ouvrir. Cette question aide à comprendre les motifs de ces joueurs ; elle ne fait pas encore de la justice d’une règle un problème commun à discuter."
+              "explanation": "Cette question fait expliquer le jugement de joueurs particuliers. Elle peut préparer la réflexion, mais ne pose pas encore le problème général de la justice d’une règle."
             },
             {
               "id": "b",
               "text": "Quelle règle juste pour les débutants allons-nous retenir pour la prochaine partie ?",
-              "explanation": "La confusion est entre une décision pratique du groupe et la question centrale d’une recherche philosophique. Le choix d’une règle peut s’appuyer sur une réflexion ; cette formulation demande directement de régler la prochaine partie."
+              "explanation": "Cette question demande de décider de la prochaine partie. Une décision pratique peut s’appuyer sur une réflexion, mais ne constitue pas ici la question philosophique à ouvrir."
             },
             {
               "id": "c",
               "text": "Une règle peut-elle être juste si elle traite différemment celui qui débute ?",
-              "explanation": "La question met en tension une même règle et des besoins différents. Elle part du jeu tout en faisant examiner ce que peut vouloir dire une règle juste, avec des raisons et des réponses discutables au-delà de cette seule partie."
+              "explanation": "Le traitement différent du débutant fait discuter ce qu’est une règle juste. La question dépasse la partie et ouvre plusieurs réponses à examiner."
             },
             {
               "id": "d",
               "text": "Quelles adaptations pour les débutants sont prévues par les règles des jeux que nous connaissons ?",
-              "explanation": "La confusion est entre recenser des pratiques prévues par des règles et examiner ce qui rend une règle juste. Cette question demande de retrouver des adaptations existantes ; leur présence dans plusieurs jeux ne pose pas encore le problème de leur justice."
+              "explanation": "Cette question fait recenser des règles existantes. Elle ne fait pas encore examiner les raisons qui les rendent justes ou injustes."
             }
           ]
         },
         {
           "id": "Q3",
-          "prompt": "Après une histoire où un personnage donne son repas, les élèves disent : « Il est gentil », « Il voulait peut-être qu’on l’aime » et « On doit toujours donner ». Dans une discussion philosophique, quelle relance ferait d’abord travailler la conceptualisation du don ?",
+          "prompt": "Après une histoire où un personnage donne son repas, les élèves disent : « Il est gentil », « Il voulait peut-être qu’on l’aime » et « On doit toujours donner ». Quelle relance vise d’abord la conceptualisation du don ?",
           "correctId": "c",
           "choices": [
             {
               "id": "a",
               "text": "Si deux personnes ont besoin du même repas, comment décider à qui le donner ?",
-              "explanation": "Cette relance fait émerger une difficulté de décision et peut conduire à problématiser. Elle ne vise pas d’abord les contours de ce qui compte comme un don."
+              "explanation": "Cette relance fait émerger une difficulté de décision : elle peut conduire à problématiser. Elle ne demande pas d’abord de préciser ce qui compte comme un don."
             },
             {
               "id": "b",
               "text": "Quelle raison permet de défendre l’idée qu’on doit toujours donner ?",
-              "explanation": "La relance demande une raison à l’appui d’une thèse : elle vise d’abord l’argumentation. Les opérations peuvent se soutenir, mais leur première cible diffère."
+              "explanation": "Demander une raison à l’appui d’une thèse vise d’abord l’argumentation. La conceptualisation précise le sens de la notion."
             },
             {
               "id": "c",
               "text": "Si on remet le repas à quelqu’un en attendant qu’il le rende, est-ce encore un don ?",
-              "explanation": "Comparer donner et remettre en attendant un retour fait examiner les limites de la notion de don. On cherche ce qui entre ou non dans son sens, sans fournir une définition finale."
+              "explanation": "Comparer donner et remettre avec retour attendu fait chercher les limites du don. C’est un travail sur ce qui entre dans le sens de la notion."
             },
             {
               "id": "d",
               "text": "Qu’est-ce qui, dans l’histoire, laisse penser qu’il voulait être aimé ?",
-              "explanation": "Cette relance fait examiner une interprétation des intentions du personnage à partir du récit. Elle ne vise pas d’abord à préciser la notion générale de don."
+              "explanation": "Cette relance fait interpréter l’intention du personnage à partir de l’histoire. Elle ne vise pas d’abord le sens général du don."
             }
           ]
         },
         {
           "id": "Q4",
-          "prompt": "Après une histoire où un personnage donne son repas, un élève affirme : « On doit toujours donner ». L’enseignante veut problématiser cette affirmation dans une discussion philosophique. Quelle relance convient en premier ?",
+          "prompt": "Un élève affirme : « On doit toujours donner ». Quelle relance fait d’abord travailler la problématisation dans une discussion philosophique ?",
           "correctId": "a",
           "choices": [
             {
               "id": "a",
               "text": "Si donner son repas aide l’autre mais nous laisse sans manger, qu’est-ce qui rend la décision difficile ?",
-              "explanation": "La relance met au jour deux enjeux qui entrent en tension. Elle ouvre l’examen de la difficulté contenue dans le toujours de l’affirmation, sans trancher à la place des élèves."
+              "explanation": "La relance met en tension aider l’autre et garder de quoi manger. Elle fait chercher ce qui pose problème dans l’affirmation « toujours donner »."
             },
             {
               "id": "b",
               "text": "Quand on prête quelque chose, est-ce qu’on le donne au même sens ?",
-              "explanation": "Cette comparaison fait d’abord préciser les limites de donner et prêter : elle vise la conceptualisation. Elle peut soutenir une problématisation, sans poser ici en premier le problème et ses enjeux."
+              "explanation": "Comparer donner et prêter fait d’abord préciser le sens et les limites du don : c’est un travail de conceptualisation."
             },
             {
               "id": "c",
-              "text": "À quel moment de l’histoire le personnage a-t-il donné son repas ?",
-              "explanation": "La question peut vérifier un fait du récit. Elle ne fait pas encore examiner le problème général contenu dans l’affirmation qu’il faudrait toujours donner."
+              "text": "Quels exemples de dons avons-nous déjà rencontrés dans nos lectures ?",
+              "explanation": "Recueillir des exemples peut nourrir la réflexion ou la conceptualisation. Cette demande ne fait pas encore formuler la difficulté contenue dans « toujours »."
             },
             {
               "id": "d",
               "text": "Quelle raison soutient l’idée qu’on doit toujours donner ?",
-              "explanation": "Demander une raison soutenant une affirmation vise d’abord l’argumentation. Problématiser cherche ici ce qui fait difficulté dans la question, avant de défendre une réponse."
+              "explanation": "Demander une raison fait soutenir une affirmation : cela vise d’abord l’argumentation, plutôt que la difficulté à examiner."
             }
           ]
         }
       ],
-      "qcmRevision": "8473e9f127cc"
+      "qcmRevision": "446848253e2d"
     },
     {
       "id": "FRA-ORAL-F34-V2",
@@ -843,33 +843,33 @@
       "steps": [
         {
           "id": "Q4",
-          "prompt": "Avec des cartes bateau, tempête, île et corde, un enfant raconte : « Le bateau est pris dans la tempête. Après ils sont sur l’île. Après ils font un feu. » Il veut raconter comment les passagers se mettent à l’abri. Quel diagnostic du schéma narratif cible le passage à rendre compréhensible ?",
+          "prompt": "Avec des cartes, un enfant raconte : « Le bateau est pris dans la tempête. Après ils sont sur l’île. Après ils font un feu. » Il veut raconter comment les passagers se mettent à l’abri. Quel élément du schéma narratif faut-il surtout développer entre la tempête et l’arrivée sur l’île ?",
           "correctId": "b",
           "choices": [
             {
               "id": "a",
-              "text": "La complication est à construire : la tempête doit devenir un danger qui empêche les passagers de rester sur le bateau.",
-              "explanation": "La confusion est entre poser la difficulté et raconter comment on y répond. Le bateau pris dans la tempête donne déjà la situation de danger à partir de laquelle l’enfant veut raconter la mise à l’abri."
+              "text": "La complication : le danger rencontré par les passagers.",
+              "explanation": "Le bateau pris dans la tempête pose déjà le danger. Le passage à développer porte sur ce que les passagers font pour en sortir."
             },
             {
               "id": "b",
-              "text": "Les actions sont à construire : l’arrivée à l’abri est annoncée, mais les moyens de l’atteindre ne sont pas racontés.",
-              "explanation": "La tempête pose la difficulté et la présence des passagers sur l’île indique une issue. Le lien manquant porte sur ce qu’ils font entre les deux : ces actions rendent la transformation compréhensible sans imposer à l’enfant une solution particulière."
+              "text": "Les actions : les tentatives des passagers pour atteindre l’abri.",
+              "explanation": "L’arrivée sur l’île donne une issue, mais le récit saute les moyens d’y parvenir. Développer les actions permet de relier le danger à cette issue."
             },
             {
               "id": "c",
-              "text": "La résolution est à construire : le récit ne précise pas les moyens par lesquels les passagers arrivent sur l’île.",
-              "explanation": "La confusion est entre l’issue de la difficulté et les actions qui y conduisent. L’arrivée sur l’île est déjà annoncée ; les moyens absents sont précisément le passage à développer avant cette issue."
+              "text": "La résolution : l’issue du danger rencontré par les passagers.",
+              "explanation": "L’arrivée à l’abri est déjà annoncée. Les tentatives qui y conduisent relèvent des actions ; la résolution correspond au dépassement de la difficulté."
             },
             {
               "id": "d",
-              "text": "La situation finale est à construire : le récit doit développer la vie des passagers sur l’île après le feu.",
-              "explanation": "La confusion est entre prolonger l’état après l’épreuve et expliquer son dépassement. Développer la vie sur l’île enrichirait la suite ; cela ne raconte pas comment les passagers ont quitté le danger pour atteindre cet abri."
+              "text": "La situation finale : la vie des passagers une fois à l’abri.",
+              "explanation": "Développer la vie à l’abri prolongerait la fin du récit. Cela n’expliquerait pas comment les passagers y sont arrivés."
             }
           ]
         }
       ],
-      "qcmRevision": "48bf17144fe3"
+      "qcmRevision": "6fb28b320ca7"
     },
     {
       "id": "FRA-ORAL-F05-V2",
@@ -936,60 +936,60 @@
       "steps": [
         {
           "id": "Q1",
-          "prompt": "Une enfant explique un pont en blocs à un camarade. Au premier essai, elle ne parvient pas à le stabiliser et nomme les pièces sans expliquer leurs liens. Après une nouvelle manipulation seule, elle construit un pont stable, puis explique ce qui soutient le dessus. Aux deux essais, le camarade pose la même question et approuve sa réponse. Quelle analyse relie l’écart entre ses explications à la différence observée avant les échanges ?",
+          "prompt": "Comment l’approche constructiviste de Piaget relie-t-elle développement cognitif et développement verbal ?",
           "correctId": "a",
           "choices": [
             {
               "id": "a",
-              "text": "Constructiviste (Piaget) : comparer les relations qu’elle réalise dans la construction et celles qu’elle parvient ensuite à exprimer.",
-              "explanation": "La différence est déjà observable dans la construction réalisée seule : les relations que l’enfant réussit à organiser sont ensuite exprimées. La lecture constructiviste examine ce que le développement cognitif rend possible dans le langage. Les deux échanges gardent la même question et la même approbation ; cet épisode prépare une lecture théorique, sans prouver une théorie générale."
+              "text": "Le développement cognitif détermine le développement verbal.",
+              "explanation": "Chez Piaget tel que présenté ici, le langage dépend des possibilités d’abstraction et de décentration liées au développement cognitif."
             },
             {
               "id": "b",
-              "text": "Historico-culturelle (Vygotski) : examiner les relations qui se construisent en cherchant une formulation avec le camarade.",
-              "explanation": "L’association est exacte : le langage peut participer à la construction de la pensée. Mais cette piste vise ce qui s’élabore pendant l’échange. La question porte sur la différence déjà présente avant les échanges : réussir à organiser les blocs, puis à expliquer leurs relations. Confondre ces deux directions du rapport pensée–langage fait manquer la cible."
+              "text": "Le langage contribue à constituer la pensée dans les échanges.",
+              "explanation": "Le rôle constitutif du langage dans la pensée caractérise la présentation historico-culturelle de Vygotski."
             },
             {
               "id": "c",
-              "text": "Behavioriste (Skinner) : examiner le réemploi des formulations favorisé par l’approbation reçue du camarade.",
-              "explanation": "L’approbation peut être analysée comme une conséquence renforçante. Elle est cependant donnée aux deux essais et concerne le réemploi d’une réponse après l’échange. Elle ne cible pas ici le changement de relations réalisées avant de parler. L’erreur consiste à retenir une conséquence présente au lieu de la différence à analyser."
+              "text": "Le renforcement des réponses verbales organise le développement cognitif.",
+              "explanation": "Le renforcement des réponses relève du mécanisme behavioriste ; il ne définit pas les stades cognitifs de Piaget."
             },
             {
               "id": "d",
-              "text": "Innéiste (Chomsky) : examiner les règles qui permettent de produire des combinaisons de mots dans ses explications.",
-              "explanation": "Cette association correspond aux dispositions innées d’acquisition du langage. Elle vise la possibilité de former des énoncés, tandis que la comparaison demandée porte sur les relations entre blocs d’abord réalisées, puis exprimées. La présence de phrases ne suffit pas à faire de leurs règles la différence pertinente dans ce cas."
+              "text": "Un dispositif inné d’acquisition du langage détermine les stades cognitifs.",
+              "explanation": "Le dispositif inné d’acquisition du langage appartient à l’approche de Chomsky. Le cours ne lui attribue pas la détermination des stades de Piaget."
             }
           ]
         },
         {
           "id": "Q2",
-          "prompt": "Pour expliquer un pont en blocs, une enfant nomme d’abord les pièces séparément. Un camarade lui demande ce qui soutient le dessus ; en cherchant à lui répondre, elle réorganise son explication. Quelle interprétation mobilise le rôle du langage dans l’approche historico-culturelle de Vygotski ?",
+          "prompt": "Quel rôle Vygotski attribue-t-il au langage dans l’approche historico-culturelle ?",
           "correctId": "c",
           "choices": [
             {
               "id": "a",
-              "text": "La nouvelle explication exprime les relations que son développement cognitif lui permet désormais de se représenter.",
-              "explanation": "Cette interprétation fait dépendre le développement verbal du développement cognitif, comme dans la présentation constructiviste. Elle ne rend pas compte du rôle constitutif du langage demandé ici."
+              "text": "Il exprime une pensée dont le développement cognitif détermine l’apparition.",
+              "explanation": "Cette priorité du développement cognitif sur le verbal correspond à la présentation constructiviste de Piaget."
             },
             {
               "id": "b",
-              "text": "La nouvelle explication réemploie des réponses dont les conséquences antérieures ont favorisé la répétition.",
-              "explanation": "Cette interprétation privilégie le renforcement des réponses, mécanisme behavioriste. L’approche historico-culturelle examine ici comment la mise en mots dans la relation contribue à la pensée."
+              "text": "Il reproduit les réponses verbales que le milieu a renforcées.",
+              "explanation": "Le réemploi d’une réponse renforcée relève du mécanisme behavioriste. Il ne décrit pas le rôle du langage demandé ici."
             },
             {
               "id": "c",
-              "text": "La recherche d’une formulation avec le camarade participe à l’organisation des relations que l’enfant cherche à expliquer.",
-              "explanation": "Le langage contribue à construire la pensée et aide à résoudre un problème. On examine donc ce qui s’élabore en cherchant à répondre au partenaire, sans transformer cette seule scène en preuve générale."
+              "text": "Il contribue à construire la pensée et à résoudre des problèmes.",
+              "explanation": "Le langage est constitutif de la pensée : dans la médiation sociale, chercher à dire peut aider à penser et à résoudre un problème."
             },
             {
               "id": "d",
-              "text": "La nouvelle explication manifeste les capacités universelles d’un dispositif inné d’acquisition du langage.",
-              "explanation": "La confusion attribue à Vygotski le dispositif inné postulé par Chomsky. Le cadre historico-culturel place ici au premier plan la médiation sociale et le rôle du langage dans la pensée."
+              "text": "Il manifeste les règles d’un dispositif universel d’acquisition inné.",
+              "explanation": "Le dispositif universel inné renvoie au LAD de Chomsky, et non au rôle constitutif du langage chez Vygotski."
             }
           ]
         }
       ],
-      "qcmRevision": "10f7e72e5e6d"
+      "qcmRevision": "dde114b8659d"
     },
     {
       "id": "FRA-ORAL-F06-V1",
@@ -1060,87 +1060,87 @@
       "steps": [
         {
           "id": "Q1",
-          "prompt": "Au goûter, un adulte dit plusieurs fois « Je veux une pomme ». L’enfant reprend cette phrase et reçoit le fruit. Quel raisonnement analyse cette scène avec l’approche behavioriste de Skinner ?",
+          "prompt": "Quel mécanisme caractérise le conditionnement opérant dans l’approche behavioriste du langage ?",
           "correctId": "d",
           "choices": [
             {
               "id": "a",
-              "text": "Le scénario proposer/demander offre à l’enfant une place prévisible et des ressources pour participer.",
-              "explanation": "Le rituel peut être étudié comme format, mais la question cible le rôle de la conséquence qui favorise une réponse. Ce mécanisme de renforcement caractérise la lecture behavioriste, même lorsqu’il se produit dans une interaction."
+              "text": "Un scénario prévisible répartit les rôles et soutient la participation de l’enfant.",
+              "explanation": "Le scénario prévisible et le soutien à la participation définissent le format d’interaction chez Bruner."
             },
             {
               "id": "b",
-              "text": "Les capacités de décentration de l’enfant déterminent ce qu’il peut exprimer pour son interlocuteur.",
-              "explanation": "La confusion attribue à la capacité de décentration ce qui est analysé comme effet d’une conséquence sur une réponse. Piaget conduit à examiner les capacités cognitives dont dépend le développement verbal."
+              "text": "L’abstraction et la décentration rendent possibles de nouvelles formulations.",
+              "explanation": "L’abstraction et la décentration appartiennent à l’explication constructiviste du développement verbal."
             },
             {
               "id": "c",
-              "text": "Les dispositions universelles de l’enfant rendent possible l’acquisition des règles de la demande.",
-              "explanation": "Cette explication privilégie les dispositions universelles et l’acquisition de règles, mécanisme innéiste. Le cadre demandé est behavioriste : il relie le modèle repris et les conséquences de la demande au réemploi de la réponse. Les deux lectures du cas ne mobilisent donc pas le même mécanisme."
+              "text": "Des dispositions universelles permettent d’acquérir des règles de langue.",
+              "explanation": "Les dispositions universelles sont au centre de l’approche innéiste. Le mécanisme behavioriste repose sur le milieu et le renforcement."
             },
             {
               "id": "d",
-              "text": "La remise du fruit après la phrase reprise peut favoriser le réemploi de cette manière de demander.",
-              "explanation": "L’analyse relie le modèle, sa reprise et la conséquence reçue. La demande est suivie de l’obtention du fruit ; c’est le rôle possible de cette conséquence dans le réemploi de la réponse qui est examiné."
+              "text": "Une conséquence renforce la réponse produite après un stimulus.",
+              "explanation": "Le schéma stimulus–réponse–renforcement relie la réponse à ses conséquences, qui peuvent favoriser sa répétition."
             }
           ]
         },
         {
           "id": "Q2",
-          "prompt": "Dans un rituel de goûter, un adulte et un enfant alternent les rôles : proposer puis demander. L’adulte fournit des formules et répond aux demandes. Quelle analyse privilégie l’approche interactionniste de Bruner ?",
+          "prompt": "Chez Bruner, qu’est-ce qu’un format d’interaction ?",
           "correctId": "b",
           "choices": [
             {
               "id": "a",
-              "text": "Les capacités d’abstraction qui conditionnent ce que l’enfant peut mettre en mots.",
-              "explanation": "Cette analyse privilégie le rapport entre développement cognitif et verbal de l’approche constructiviste. Bruner conduit ici à examiner le soutien dans la relation et le scénario prévisible de l’échange."
+              "text": "Une étape cognitive qui fixe les possibilités d’abstraction de l’enfant.",
+              "explanation": "L’étape cognitive et l’abstraction renvoient à l’explication constructiviste. Le format décrit l’organisation sociale des échanges."
             },
             {
               "id": "b",
-              "text": "Le scénario de rôles et les soutiens qui donnent à l’enfant une place dans l’échange.",
-              "explanation": "L’alternance proposer/demander organise un format d’interaction. L’analyse porte sur la façon dont l’adulte soutient la participation et les possibilités de l’enfant au sein de cette relation."
+              "text": "Un scénario prévisible d’échanges dans lequel l’adulte soutient l’enfant.",
+              "explanation": "Le format donne des rôles et un déroulement prévisibles, avec un étayage qui aide l’enfant à participer."
             },
             {
               "id": "c",
-              "text": "Les conséquences agréables qui favorisent la répétition des demandes produites.",
-              "explanation": "Ce mécanisme peut être examiné dans le même rituel, mais il privilégie le renforcement behavioriste. Le critère interactionniste est l’organisation de la relation et du soutien, au-delà des conséquences d’une réponse."
+              "text": "Une suite de réponses verbales sélectionnées par leurs récompenses.",
+              "explanation": "La sélection des réponses par leurs conséquences relève du renforcement behavioriste. Elle ne définit pas le format chez Bruner."
             },
             {
               "id": "d",
-              "text": "Les capacités universelles qui permettent l’acquisition des règles de la demande.",
-              "explanation": "Cette analyse donne la priorité aux dispositions innées, comme l’approche de Chomsky. Le format de Bruner renvoie à un scénario social prévisible qui soutient les usages de l’enfant."
+              "text": "Un ensemble de règles universelles fourni par un dispositif inné.",
+              "explanation": "Les règles universelles et le dispositif inné renvoient à Chomsky. Le format est un scénario d’interaction, pas un dispositif biologique."
             }
           ]
         },
         {
           "id": "Q3",
-          "prompt": "Dans la situation, on veut analyser le passage de la phrase reprise « Je veux une pomme » à la nouvelle combinaison « Je veux une poire ». Quelle piste d’analyse cible ce passage ?",
+          "prompt": "Quelle hypothèse Chomsky propose-t-il pour expliquer l’acquisition du langage ?",
           "correctId": "a",
           "choices": [
             {
               "id": "a",
-              "text": "Innéiste (Chomsky) : examiner les dispositions qui permettent d’acquérir des règles et de les mobiliser dans une demande nouvelle.",
-              "explanation": "La seconde demande combine une structure déjà rencontrée avec un autre nom de fruit. La lecture innéiste examine la capacité d’acquérir des règles et de produire des énoncés, plutôt que de mémoriser séparément chaque chaîne. Cette interprétation vise la combinaison nouvelle ; le seul changement de fruit ne démontre pas l’innéisme."
+              "text": "L’enfant dispose de capacités universelles et d’un dispositif inné d’acquisition du langage.",
+              "explanation": "Le LAD et les dispositions innées caractérisent cette approche. Ils ne désignent ni une récompense ni un scénario social."
             },
             {
               "id": "b",
-              "text": "Behavioriste (Skinner) : examiner comment l’obtention de la pomme favorise le réemploi de la demande après sa reprise.",
-              "explanation": "L’association est correcte et l’obtention du fruit est bien un fait du cas. Cette piste explique le réemploi favorisé par une conséquence. Elle cible la fréquence de reprise d’une réponse, alors que la question demande d’examiner la construction de la combinaison qui n’a pas été fournie telle quelle ce jour-là. L’erreur est de prendre la répétition renforcée pour l’opération ici ciblée."
+              "text": "L’enfant acquiert le langage par imitation de réponses que le milieu récompense.",
+              "explanation": "Imitation et renforcement correspondent à l’approche behavioriste de Skinner."
             },
             {
               "id": "c",
-              "text": "Interactionniste (Bruner) : examiner comment l’alternance proposer puis demander soutient la place de l’enfant dans le rituel.",
-              "explanation": "Le format prévisible et le soutien de la relation relèvent bien de Bruner. Cette analyse porte sur la participation à l’échange, organisée de la même façon aux deux moments. Elle ne cible pas la différence entre la phrase reprise et la combinaison nouvelle, même si elle reste une autre lecture possible du rituel."
+              "text": "L’enfant développe son langage dans des scénarios prévisibles soutenus par l’adulte.",
+              "explanation": "Les formats prévisibles et l’étayage de l’adulte sont caractéristiques de l’approche interactionniste de Bruner."
             },
             {
               "id": "d",
-              "text": "Constructiviste (Piaget) : examiner les représentations des fruits que l’enfant peut distinguer et mettre en mots dans sa demande.",
-              "explanation": "Le développement verbal dépend des capacités cognitives dans cette approche. Cette piste porterait sur ce que l’enfant comprend et distingue parmi les objets demandés. Le cas ne fait pas apparaître de changement de cette compréhension ; l’observation ciblée est une combinaison verbale nouvelle. Confondre changement de mot et changement de développement cognitif ne suffit pas à l’analyser."
+              "text": "L’enfant développe son langage selon ses capacités d’abstraction et de décentration.",
+              "explanation": "Le langage dépendant des capacités cognitives correspond à la présentation constructiviste de Piaget."
             }
           ]
         }
       ],
-      "qcmRevision": "e5c33615b8ac"
+      "qcmRevision": "57663ab4f3bc"
     },
     {
       "id": "FRA-ORAL-F07-V2",
@@ -1207,33 +1207,33 @@
       "steps": [
         {
           "id": "Q1",
-          "prompt": "Un élève explique un montage à un groupe derrière un panneau. Seul, il dit « Tu mets ça là » puis s’arrête. Après des questions sur les pièces et leur ordre, il les nomme et indique leur placement. Quel élément renseigne sa zone proximale de développement pour cette tâche ?",
+          "prompt": "Que désigne la zone proximale de développement pour une tâche ?",
           "correctId": "c",
           "choices": [
             {
               "id": "a",
-              "text": "Les questions de l’adulte sur les noms des pièces et l’ordre de placement.",
-              "explanation": "La confusion appelle ZPD les interventions elles-mêmes. Ces questions constituent l’étayage ; la ZPD compare ce que l’élève accomplit sans elles et avec elles."
+              "text": "Les interventions par lesquelles l’adulte prend en charge la part difficile de la tâche.",
+              "explanation": "Ces interventions constituent l’étayage. La ZPD désigne l’écart entre les réalisations sans aide et avec aide."
             },
             {
               "id": "b",
-              "text": "L’explication organisée que l’élève produit après les questions de l’adulte.",
-              "explanation": "La confusion réduit la ZPD au niveau atteint avec assistance. Cette production renseigne ce niveau potentiel dans la tâche ; il faut la comparer à la production sans aide pour décrire la distance."
+              "text": "Le niveau que l’enfant atteint avec l’aide d’un partenaire plus avancé.",
+              "explanation": "Le niveau avec assistance est le développement potentiel. Il est l’un des deux termes nécessaires pour décrire la ZPD."
             },
             {
               "id": "c",
-              "text": "La différence entre l’explication produite seul et celle produite avec les questions.",
-              "explanation": "La comparaison porte sur les deux niveaux : la formulation interrompue sans aide et les désignations avec ordre obtenues avec assistance. C’est cette distance que décrit la ZPD pour cette tâche."
+              "text": "La distance entre ce que l’enfant réussit seul et ce qu’il réussit avec une aide.",
+              "explanation": "La ZPD compare le niveau actuel, observé seul, et le niveau potentiel, observé avec un adulte ou un enfant plus avancé."
             },
             {
               "id": "d",
-              "text": "Le degré de précision linguistique de la première tentative sans questions.",
-              "explanation": "La confusion réduit la ZPD au niveau actuel. La première tentative renseigne ce que l’élève réalise seul ; elle ne suffit pas sans l’autre terme, ce qu’il réalise avec assistance."
+              "text": "Le niveau que l’enfant atteint sans les questions ni les modèles d’un partenaire.",
+              "explanation": "Le niveau sans assistance est le développement actuel. Le décrire seul ne donne pas la distance avec le niveau potentiel."
             }
           ]
         }
       ],
-      "qcmRevision": "d7dbf29ce13d"
+      "qcmRevision": "a9ec1fab1c3c"
     },
     {
       "id": "FRA-ORAL-F08-V2",
@@ -1320,60 +1320,60 @@
       "steps": [
         {
           "id": "Q1",
-          "prompt": "Dans la situation, A est une reformulation avec extension et B une reformulation sans extension. Quel critère justifie ce classement selon de Weck ?",
+          "prompt": "Qu’est-ce qui distingue une reformulation avec extension d’une reformulation sans extension chez de Weck ?",
           "correctId": "d",
           "choices": [
             {
               "id": "a",
-              "text": "A allonge l’énoncé, alors que B conserve le même nombre de mots.",
-              "explanation": "La confusion prend l’extension pour un allongement matériel. Ajouter des mots peut reformuler la même information ; leur nombre ne suffit pas. Ici, l’extension est établie par la cause nouvelle, le tapis qui bloque la porte."
+              "text": "Elle augmente le nombre de mots de l’énoncé repris.",
+              "explanation": "Un énoncé peut s’allonger en reformulant la même information. L’extension se juge au contenu ajouté, pas au nombre de mots."
             },
             {
               "id": "b",
-              "text": "A complète la négation avec « ne », alors que B ajuste l’accord du verbe.",
-              "explanation": "La confusion traite une modification de la forme comme un enrichissement du contenu. « Ferme pas » exprime déjà la négation ; ajouter « ne » ne fournit pas une information sur la scène. L’extension tient à la cause donnée après, pas à ce rétablissement formel."
+              "text": "Elle modifie la construction de la phrase reprise.",
+              "explanation": "Une construction peut être modifiée avec ou sans ajout d’information. Ce changement ne suffit pas à établir l’extension."
             },
             {
               "id": "c",
-              "text": "A augmente le nombre de verbes conjugués, alors que B ajuste un verbe déjà présent.",
-              "explanation": "La confusion assimile développement de la construction verbale et extension du message. Compter les verbes décrit la forme ; il faut examiner ce que la réponse apporte au contenu. Ici, la cause du blocage est une information nouvelle, alors qu’un simple développement de phrase ne suffit pas à établir une extension."
+              "text": "Elle rétablit une forme grammaticale attendue.",
+              "explanation": "Rétablir un accord ou une négation peut conserver le même message. Une correction formelle n’est pas nécessairement une extension."
             },
             {
               "id": "d",
-              "text": "A ajoute la cause du blocage de la porte, alors que B ajuste la forme du même fait.",
-              "explanation": "Dans A, l’enfant disait que la porte ne ferme pas ; la réponse ajoute ce qui l’en empêche. Dans B, remplacer « sont » par « est » conserve l’information de panne. C’est la différence entre ajout d’information et modification de forme qui justifie le classement."
+              "text": "Elle apporte une information nouvelle au message.",
+              "explanation": "L’extension enrichit le contenu du message ; une reformulation sans extension change sa forme en gardant ses informations."
             }
           ]
         },
         {
           "id": "Q5",
-          "prompt": "Un enfant dit « La voiture sont en panne ». L’adulte répond « La voiture est en panne ». Sur quel plan linguistique cette reprise intervient-elle ?",
+          "prompt": "Enfant : « La voiture sont en panne. »\nAdulte : « La voiture est en panne. »\nSur quel plan linguistique cette reprise intervient-elle ?",
           "correctId": "d",
           "choices": [
             {
               "id": "a",
               "text": "Le plan phonologique.",
-              "explanation": "La confusion traite le changement de forme entendue comme une correction de prononciation. L’adulte ajuste ici le verbe au sujet singulier : le changement concerne la construction de la phrase."
+              "explanation": "Le changement audible n’est pas ici une correction d’articulation : l’adulte ajuste la forme verbale au sujet singulier."
             },
             {
               "id": "b",
               "text": "Le plan lexico-sémantique.",
-              "explanation": "La confusion prend le remplacement du verbe pour le choix d’un autre mot ou d’un autre sens. « Sont » et « est » sont des formes du même verbe ; l’ajustement porte sur son accord avec « la voiture »."
+              "explanation": "« Sont » et « est » sont deux formes du même verbe. L’adulte ne choisit pas un mot de sens différent ; il ajuste l’accord."
             },
             {
               "id": "c",
               "text": "Le plan pragmatique.",
-              "explanation": "La confusion assimile toute amélioration de l’intelligibilité à une adaptation à la situation de communication. Le changement observé est l’accord grammatical ; il ne modifie pas le destinataire, le but ou les références du message."
+              "explanation": "La reprise conserve le destinataire, le but et les références du message. L’amélioration porte ici sur l’accord grammatical."
             },
             {
               "id": "d",
               "text": "Le plan syntaxique.",
-              "explanation": "L’adulte combine le sujet singulier avec la forme verbale correspondante. Il ajuste ainsi la construction de la phrase, en conservant l’information sur la panne."
+              "explanation": "L’adulte combine le sujet singulier « la voiture » avec « est ». Il modifie ainsi la construction de la phrase et garde l’information sur la panne."
             }
           ]
         }
       ],
-      "qcmRevision": "9e85358773df"
+      "qcmRevision": "5278d6ffcc4f"
     },
     {
       "id": "FRA-ORAL-F09-V2",
@@ -1460,87 +1460,87 @@
       "steps": [
         {
           "id": "Q1",
-          "prompt": "Une élève reconnaît les images de « fil » et « ville » quand l’adulte les nomme, mais elle prononce [fil] pour les deux. Quelle analyse du contraste à produire fonde une aide pour passer de [f] à [v] ?",
+          "prompt": "Une élève reconnaît « fil » et « ville » quand on les nomme, mais prononce [fil] pour les deux. Quel contraste articulatoire doit-elle réaliser pour produire [v] à partir de [f] ?",
           "correctId": "b",
           "choices": [
             {
               "id": "a",
-              "text": "Une opposition sourde/sonore : [v] se distingue de [f] par un volume de voix plus élevé.",
-              "explanation": "Le classement sourde/sonore convient, mais le critère est erroné. Le voisement concerne la vibration des cordes vocales, pas l’intensité de la voix ; parler plus fort ne suffit pas à produire [v]."
+              "text": "Augmenter l’intensité de la voix pendant la consonne.",
+              "explanation": "Parler plus fort modifie l’intensité. Le voisement distingue [v] de [f] par la vibration des cordes vocales, pas par le volume."
             },
             {
               "id": "b",
-              "text": "Une opposition sourde/sonore : [v] mobilise la vibration des cordes vocales, contrairement à [f].",
-              "explanation": "Le contraste [f]/[v] repose sur le voisement. Construire la consonne sonore à partir de sa correspondante sourde en attirant l’attention sur cette vibration reprend la piste du cours."
+              "text": "Faire vibrer les cordes vocales pendant la consonne.",
+              "explanation": "[f] est sourd et [v] sonore. Ces consonnes partagent le lieu et le mode d’articulation ; la vibration réalise le contraste visé."
             },
             {
               "id": "c",
-              "text": "Une opposition de lieu : [v] se produit plus en arrière dans la bouche que [f].",
-              "explanation": "La confusion change le trait ciblé : le cours utilise d’autres paires pour faire travailler une différence de lieu. [f] et [v] ont le même rapprochement lèvre inférieure/dents supérieures ; la différence visée ici est le voisement."
+              "text": "Déplacer le resserrement vers l’arrière de la bouche.",
+              "explanation": "Le lieu d’articulation est commun : lèvre inférieure et dents supérieures. Le déplacer ne cible pas la différence [f]/[v]."
             },
             {
               "id": "d",
-              "text": "Une opposition de lieu : le contact lèvre-dents explique à lui seul pourquoi [f] et [v] sont deux phonèmes.",
-              "explanation": "Le contact lèvre-dents est commun à ces deux consonnes : il décrit leur lieu partagé et ne suffit pas à expliquer le contraste. Prendre un trait commun pour le trait distinctif est l’erreur ; la vibration des cordes vocales les départage ici."
+              "text": "Remplacer le passage continu de l’air par une fermeture brève.",
+              "explanation": "Les deux consonnes sont fricatives : l’air passe avec friction. Une fermeture brève changerait le mode plutôt que le voisement."
             }
           ]
         },
         {
           "id": "Q3",
-          "prompt": "Sur deux images, un élève désigne correctement la cour et la tour quand l’adulte les nomme, mais prononce [tuʁ] pour les deux. Après le modèle [kuʁ] de l’enseignante, un nouvel essai est prévu. Quel résultat renseignerait directement la réalisation du contraste dans la désignation des deux images ?",
+          "prompt": "Un élève reconnaît la cour et la tour quand on les nomme, mais dit [tuʁ] pour les deux. Après le modèle [kuʁ], il nomme de nouveau les images. Quel résultat montre qu’il réalise le contraste dans les mots ?",
           "correctId": "d",
           "choices": [
             {
               "id": "a",
-              "text": "Il produit [kuʁ] pour la cour et [kuʁ] pour la tour dans son nouvel essai.",
-              "explanation": "La production de [k] est un acquis possible, mais elle est maintenant utilisée pour les deux mots. L’erreur consiste à prendre l’apparition d’un son cible pour la réalisation du contraste : il faut que deux formes distinctes correspondent aux deux mots."
+              "text": "Il produit [kuʁ] pour la cour et [kuʁ] pour la tour.",
+              "explanation": "[k] apparaît, mais sert maintenant aux deux mots. Produire la consonne cible ne suffit pas : il faut conserver deux formes distinctes."
             },
             {
               "id": "b",
               "text": "Il signale que les enregistrements [tuʁ] et [kuʁ] sont différents.",
-              "explanation": "La discrimination auditive renseigne la perception du contraste. Elle peut soutenir l’apprentissage, mais ne prouve pas que les mouvements articulatoires réalisent la différence dans la parole de l’élève."
+              "explanation": "Ce résultat renseigne la perception de la différence sonore, sans montrer sa réalisation dans la parole de l’élève."
             },
             {
               "id": "c",
-              "text": "Il répète [t] puis [k] isolément juste après les modèles de l’enseignante.",
-              "explanation": "Produire les consonnes isolées renseigne une possibilité articulatoire dans cette imitation. Cela ne montre pas encore que l’élève les distingue lorsqu’il nomme les deux images. Le critère porte ici sur le contraste dans les mots, pas seulement sur la réussite de deux gestes isolés."
+              "text": "Il répète correctement [t] et [k] isolés après les modèles.",
+              "explanation": "Cette imitation montre une possibilité articulatoire pour les sons isolés. Elle ne montre pas encore leur emploi distinct dans les deux mots."
             },
             {
               "id": "d",
-              "text": "Il produit [tuʁ] pour la tour et [kuʁ] pour la cour dans son nouvel essai.",
-              "explanation": "L’élève réalise deux consonnes initiales distinctes correspondant aux deux mots. C’est un indice direct de progrès de production dans cet essai ; un réemploi ultérieur permettra d’en examiner la stabilité."
+              "text": "Il produit [kuʁ] pour la cour et [tuʁ] pour la tour.",
+              "explanation": "Les deux formes produites correspondent aux deux mots. Ce nouvel essai montre un contraste réalisé ; d’autres observations en examineront la stabilité."
             }
           ]
         },
         {
           "id": "Q4",
-          "prompt": "Un élève prononce [tuʁ] lorsqu’il veut nommer la cour. L’adulte veut l’aider à produire le contraste entre [t] de « tour » et [k] de « cour ». Quelle orientation cible la différence articulatoire entre ces deux consonnes ?",
+          "prompt": "Un élève dit [tuʁ] pour « cour ». Pour passer du [t] de « tour » au [k] de « cour », quelle aide cible le trait articulatoire à changer ?",
           "correctId": "c",
           "choices": [
             {
               "id": "a",
-              "text": "Chercher une fermeture de la langue plus près de l’avant de la bouche.",
-              "explanation": "Cette direction rapprocherait l’articulation de [t], déjà produit. Pour [k], le dos de la langue se rapproche du palais mou, plus en arrière ; c’est la direction du déplacement qu’il faut contrôler."
+              "text": "Chercher une fermeture de la langue plus à l’avant de la bouche.",
+              "explanation": "La fermeture plus à l’avant rapproche du [t] déjà produit. Pour [k], le dos de la langue se rapproche du palais mou, plus en arrière."
             },
             {
               "id": "b",
               "text": "Faire vibrer les cordes vocales pendant la consonne initiale.",
-              "explanation": "La vibration concerne le voisement. [t] et [k] sont tous deux sourds : changer ce trait ne construit pas leur différence de lieu d’articulation."
+              "explanation": "[t] et [k] sont tous deux sourds. Faire vibrer les cordes vocales change le voisement, pas leur différence de lieu."
             },
             {
               "id": "c",
-              "text": "Chercher une fermeture de la langue plus vers l’arrière de la bouche.",
-              "explanation": "[t] est produit vers les alvéoles, à l’avant, alors que [k] mobilise le dos de la langue vers le palais mou. Le contraste visé porte donc sur le lieu, en déplaçant la fermeture vers l’arrière."
+              "text": "Chercher une fermeture de la langue plus à l’arrière de la bouche.",
+              "explanation": "Le passage de [t] à [k] déplace la fermeture de l’avant vers l’arrière de la bouche. C’est le lieu d’articulation qui change."
             },
             {
               "id": "d",
               "text": "Faire passer l’air en continu au lieu de le bloquer brièvement.",
-              "explanation": "Cette modification concerne le mode articulatoire, par exemple le passage d’une occlusive à une fricative. [t] et [k] ont tous deux une fermeture puis un relâchement ; leur différence porte sur l’endroit de cette fermeture."
+              "explanation": "[t] et [k] sont tous deux des occlusives. Un passage d’air continu changerait leur mode d’articulation, pas le lieu visé."
             }
           ]
         }
       ],
-      "qcmRevision": "31b4f8f7a19f"
+      "qcmRevision": "f7aa091a7820"
     },
     {
       "id": "FRA-ORAL-F10-V1",
@@ -1615,114 +1615,114 @@
       "steps": [
         {
           "id": "Q1",
-          "prompt": "Dans des relevés comparables, une enfant passe d’environ 10 à 180 mots différents entre 18 et 30 mois. Elle emploie aussi « balle » pour une roue et une orange, objets ronds. Quelle analyse de cet emploi de « balle » est fondée ?",
+          "prompt": "Une enfant appelle « balle » une roue et une orange parce qu’elles sont rondes. Quel raisonnement décrit cet emploi du mot ?",
           "correctId": "c",
           "choices": [
             {
               "id": "a",
-              "text": "Une explosion lexicale : le nombre de mots différents produits par l’enfant augmente rapidement.",
-              "explanation": "Le relevé de mots différents permet bien d’examiner une accélération du répertoire. Mais la question porte sur l’emploi de balle pour roue et orange : ce fait concerne l’étendue d’un mot, pas le nombre de mots acquis. C’est un critère juste appliqué à l’autre observation."
+              "text": "Il montre une explosion lexicale : plusieurs objets sont désormais nommés.",
+              "explanation": "Nommer plusieurs objets avec « balle » ne montre pas l’acquisition de mots différents. L’explosion lexicale concerne l’accélération de cette acquisition."
             },
             {
               "id": "b",
-              "text": "Une sous-extension : une propriété commune aux objets sert à regrouper leurs désignations.",
-              "explanation": "La confusion porte sur le sens de la généralisation. Une propriété commune peut guider le regroupement, mais le mot balle est ici étendu à des objets qui ne sont pas des balles ; son domaine est trop large, non trop restreint."
+              "text": "Il montre une sous-extension : la forme ronde limite les objets regroupés.",
+              "explanation": "Une propriété commune peut guider la généralisation. Mais le mot déborde ici la catégorie adulte : son domaine est trop large, pas trop restreint."
             },
             {
               "id": "c",
-              "text": "Une sur-extension : le même mot désigne des objets qui appartiennent à des catégories différentes.",
-              "explanation": "La roue et l’orange ont une forme ronde, mais ce ne sont pas des balles. Le domaine d’emploi du mot déborde donc la catégorie de l’usage adulte ; l’analyse porte sur cette étendue, distincte du nombre de mots acquis."
+              "text": "Il montre une sur-extension : « balle » s’applique à des objets qui ne sont pas des balles.",
+              "explanation": "La roue et l’orange sont rondes, mais ne sont pas des balles. L’enfant étend le mot au-delà de son domaine dans l’usage adulte."
             },
             {
               "id": "d",
-              "text": "Une explosion lexicale : l’enfant multiplie les emplois d’un mot pour désigner plusieurs objets.",
-              "explanation": "La confusion assimile occurrences et acquisition de mots différents. Réutiliser balle pour plusieurs objets ne multiplie pas les mots du répertoire ; l’explosion lexicale concerne son acquisition accélérée. Le relevé quantitatif et l’emploi observé renseignent deux évolutions différentes."
+              "text": "Il montre une explosion lexicale : le même mot est utilisé plus souvent.",
+              "explanation": "Augmenter les occurrences d’un même mot ne multiplie pas les mots acquis. Cela ne définit pas une explosion lexicale."
             }
           ]
         },
         {
           "id": "Q3",
-          "prompt": "Une enfant ne prononce pas encore le mot « roue » dans ses échanges. L’enseignante veut examiner sa compréhension de ce mot, séparément de sa capacité à le produire. Quel petit essai répond à cette intention ?",
+          "prompt": "Une enfant ne prononce pas encore « roue ». Quel essai permet d’observer si elle comprend ce mot, sans lui demander de le produire ?",
           "correctId": "d",
           "choices": [
             {
               "id": "a",
-              "text": "Montrer une roue et lui demander de la nommer, puis proposer le début du mot si elle hésite.",
-              "explanation": "Cet essai sollicite la production du mot, même si elle est aidée. Il ne répond pas directement à la question de savoir si l’enfant peut interpréter le mot lorsqu’elle l’entend."
+              "text": "Montrer une roue et demander son nom, avec le début du mot si elle hésite.",
+              "explanation": "Cet essai demande de produire le nom, même avec une aide. Une absence de réponse ne permettrait pas de distinguer production et compréhension."
             },
             {
               "id": "b",
-              "text": "Lui demander de regrouper une roue, une orange et une balle parmi plusieurs objets.",
-              "explanation": "Le regroupement peut renseigner une catégorisation, mais aucun mot n’est nécessairement interprété. Il ne suffit donc pas à examiner la compréhension du mot roue."
+              "text": "Demander de regrouper une roue, une orange et une balle parmi des objets.",
+              "explanation": "Le regroupement renseigne une catégorisation. Il peut être réussi sans avoir compris le mot « roue »."
             },
             {
               "id": "c",
-              "text": "Dire « roue » devant son image et lui proposer de le redire juste après.",
-              "explanation": "Redire après un modèle renseigne une possibilité de reprise sonore dans cet instant. Une répétition ne démontre pas, à elle seule, que le mot est interprété."
+              "text": "Dire « roue » devant son image et demander de le répéter.",
+              "explanation": "La répétition peut reproduire la forme sonore sans l’associer au bon objet. Elle ne suffit pas à montrer la compréhension."
             },
             {
               "id": "d",
-              "text": "Disposer plusieurs objets, nommer la roue sans la montrer et lui demander de la désigner.",
-              "explanation": "Associer le mot entendu à son référent permet d’observer sa compréhension sans demander sa production. Le pointage doit être recueilli sans geste qui fournisse la réponse ; le résultat reste limité à cet essai."
+              "text": "Dire « Montre la roue » parmi plusieurs objets, sans que l’adulte pointe lui-même l’objet.",
+              "explanation": "Le pointage relie le mot entendu à son référent sans exiger sa production. L’adulte doit éviter un geste qui donnerait la réponse."
             }
           ]
         },
         {
           "id": "Q4",
-          "prompt": "Une enfant appelle « balle » sa balle rouge, mais refuse ce mot pour une balle bleue et une balle jaune. Elle connaît et nomme plusieurs autres jouets. Quel raisonnement décrit l’emploi de « balle » ?",
+          "prompt": "Une enfant appelle « balle » sa balle rouge, mais refuse ce mot pour une balle bleue et une balle jaune. Quel raisonnement décrit cet emploi ?",
           "correctId": "c",
           "choices": [
             {
               "id": "a",
-              "text": "Une sous-extension : le nombre de mots qu’elle produit est encore inférieur à celui qu’elle comprend.",
-              "explanation": "Le décalage entre compréhension et production concerne deux capacités lexicales ; il ne définit pas l’étendue d’un mot. Pour la sous-extension, il faut comparer les choses désignées par balle à celles que ce mot peut désigner dans l’usage adulte."
+              "text": "Une sous-extension : elle produit moins de mots qu’elle n’en comprend.",
+              "explanation": "Le décalage entre mots compris et produits concerne deux capacités lexicales. Il ne définit pas le domaine d’emploi d’un mot."
             },
             {
               "id": "b",
-              "text": "Une sur-extension : elle multiplie les catégories en séparant les balles selon leur couleur.",
-              "explanation": "Ce raisonnement confond multiplier les catégories et étendre un même mot. La sur-extension désigne un domaine d’emploi trop large ; ici balle reste réservé à un exemplaire, ce qui réduit son domaine. Séparer les autres balles selon leur couleur n’établit pas une extension excessive du mot."
+              "text": "Une sur-extension : elle distingue plusieurs groupes selon la couleur.",
+              "explanation": "Créer des groupes ne signifie pas étendre le mot. Ici, « balle » exclut à tort d’autres balles : le domaine est trop restreint."
             },
             {
               "id": "c",
-              "text": "Une sous-extension : elle réserve le mot à un exemplaire alors que les autres balles relèvent aussi de ce mot.",
-              "explanation": "Le domaine d’emploi de balle est trop restreint : la couleur différente n’exclut pas les deux autres objets de la catégorie. C’est l’étendue des référents, et non le nombre total de mots connus, qui permet ce classement."
+              "text": "Une sous-extension : elle réserve le mot à une partie des objets qu’il peut désigner.",
+              "explanation": "Dans l’usage adulte, les trois objets sont des balles. Réserver le mot à l’exemplaire rouge constitue une généralisation insuffisante."
             },
             {
               "id": "d",
-              "text": "Une explosion lexicale : elle distingue sa balle des autres jouets qu’elle sait nommer.",
-              "explanation": "Distinguer plusieurs jouets ne renseigne pas sur l’accélération de l’acquisition de mots. L’observation ciblée est le refus de généraliser balle à d’autres balles."
+              "text": "Une explosion lexicale : elle différencie sa balle des autres jouets.",
+              "explanation": "Distinguer des objets ne montre pas une accélération de l’acquisition de mots. L’observation porte sur le domaine restreint de « balle »."
             }
           ]
         },
         {
           "id": "Q5",
-          "prompt": "Des relevés comparables de paroles spontanées comptent 10 mots différents à 18 mois, 40 à 24 mois et 180 à 30 mois. Pour examiner le rapprochement avec une explosion lexicale, quelle comparaison est pertinente ?",
+          "prompt": "Qu’est-ce que l’explosion lexicale ?",
           "correctId": "b",
           "choices": [
             {
               "id": "a",
-              "text": "Comparer le nombre de fois où l’enfant répète les mots à chaque période.",
-              "explanation": "La répétition d’un mot augmente le nombre d’occurrences sans ajouter une entrée au répertoire. L’explosion lexicale porte sur l’acquisition de mots, pas sur la seule fréquence de leur emploi."
+              "text": "La répétition plus fréquente des mots déjà employés par l’enfant.",
+              "explanation": "Employer davantage les mêmes mots augmente leurs occurrences. Cela ne mesure pas l’acquisition de mots différents."
             },
             {
               "id": "b",
-              "text": "Comparer les gains de mots différents pendant les deux intervalles de six mois.",
-              "explanation": "Le gain passe de 30 à 140 mots pour des durées égales : les acquisitions relevées s’accélèrent. Cela permet de rapprocher cette trajectoire de l’explosion lexicale ; les nombres construits ne deviennent pas une norme individuelle."
+              "text": "L’accélération de l’acquisition de mots produits et compris.",
+              "explanation": "Le répertoire s’enrichit de plus en plus vite, particulièrement entre 18 et 36 mois dans les repères du cours."
             },
             {
               "id": "c",
-              "text": "Comparer le nombre moyen de mots que l’enfant met dans une même phrase.",
-              "explanation": "La longueur des phrases peut renseigner sur l’évolution syntaxique. Elle ne mesure pas l’accélération de l’acquisition de mots différents, qui est la cible ici."
+              "text": "L’allongement rapide des phrases et l’apparition de constructions complexes.",
+              "explanation": "L’allongement et la complexification des phrases caractérisent l’explosion syntaxique. L’explosion lexicale porte sur l’acquisition de mots."
             },
             {
               "id": "d",
-              "text": "Comparer le total de 180 mots à celui relevé chez d’autres enfants du même âge.",
-              "explanation": "Une comparaison entre enfants situe un total à un moment donné. Elle ne montre pas l’accélération de cette enfant : il faut comparer ses gains sur des durées comparables."
+              "text": "L’élargissement du nombre d’objets désignés par un même mot.",
+              "explanation": "Étendre un mot à davantage d’objets concerne son domaine d’emploi, notamment la sur-extension, et non la vitesse d’acquisition du répertoire."
             }
           ]
         }
       ],
-      "qcmRevision": "6d73d273aed8"
+      "qcmRevision": "5038d95710e4"
     },
     {
       "id": "FRA-ORAL-F12-V1",
@@ -1813,60 +1813,60 @@
       "steps": [
         {
           "id": "Q1",
-          "prompt": "Un enfant disait « papa parti » ; dans un relevé ultérieur, il dit « moi je veux le camion parce que il est grand ». Quel élément du second énoncé atteste l’émergence d’une phrase complexe dans la progression du cours ?",
+          "prompt": "Dans « moi je veux le camion parce que il est grand », quel élément marque une phrase complexe dans la progression de Boisseau ?",
           "correctId": "d",
           "choices": [
             {
               "id": "a",
-              "text": "L’augmentation du nombre de mots entre les deux relevés.",
-              "explanation": "L’allongement appartient à l’explosion syntaxique, mais une phrase simple peut aussi s’allonger. Il ne suffit pas à montrer la relation entre deux constructions que demande ici le critère de phrase complexe."
+              "text": "Le nombre de mots qui allonge l’énoncé.",
+              "explanation": "Une phrase simple peut être longue. L’allongement ne suffit pas à montrer la relation entre les deux constructions."
             },
             {
               "id": "b",
               "text": "La reprise du locuteur par « moi » puis « je ».",
-              "explanation": "Cette reprise organise le sujet dans l’oral et participe à l’enrichissement observé. Elle ne construit pas, à elle seule, le lien entre la demande et sa raison ; ne pas confondre dislocation et émergence d’une phrase complexe."
+              "explanation": "La reprise du sujet organise l’énoncé parlé. Elle ne crée pas à elle seule le lien entre la demande et sa raison."
             },
             {
               "id": "c",
-              "text": "L’emploi de « veux » comme verbe conjugué au présent.",
-              "explanation": "Une forme conjuguée contribue à construire une phrase, mais peut apparaître dans une phrase simple. La présence de veux ne suffit donc pas à établir la complexification ciblée."
+              "text": "Le verbe « veux » conjugué au présent.",
+              "explanation": "Un verbe conjugué peut figurer dans une phrase simple. Sa présence ne suffit pas à identifier la complexification."
             },
             {
               "id": "d",
-              "text": "Le lien introduit par « parce que » entre la demande et sa raison.",
-              "explanation": "Le lien causal articule ce que l’enfant veut et ce qui motive son choix. Parce que figure parmi les constructions complexes de la progression du cours ; son rôle dépasse l’ajout d’un mot ou le seul allongement."
+              "text": "Le lien causal introduit par « parce que ».",
+              "explanation": "« Parce que » relie la demande à sa raison. Cette construction figure parmi les phrases complexes de la progression."
             }
           ]
         },
         {
           "id": "Q3",
-          "prompt": "Dans un jeu de construction, des enfants décrivent surtout l’action d’un camarade : « Il pose le cube. Il prend le toit. » L’enseignante veut travailler la diversification des pronoms personnels. Quel aménagement met cette cible au travail ?",
+          "prompt": "Dans un jeu de construction, les enfants disent surtout : « Il pose le cube. Il prend le toit. » Quel aménagement vise la diversification des pronoms personnels ?",
           "correctId": "b",
           "choices": [
             {
               "id": "a",
-              "text": "Demander de préciser la position des pièces par rapport à la boîte et au pont.",
-              "explanation": "Cette tâche peut enrichir les relations spatiales exprimées par les prépositions. Elle ne fait pas varier directement la personne qui parle, celle à qui l’on s’adresse ou celle dont on parle."
+              "text": "Faire situer les pièces par rapport à la boîte et au pont.",
+              "explanation": "Ce travail peut enrichir les prépositions et les relations spatiales. Il ne change pas directement les personnes grammaticales mobilisées."
             },
             {
               "id": "b",
-              "text": "Faire décrire une action tour à tour par celui qui agit, par un témoin et en s’adressant à l’acteur.",
-              "explanation": "Les positions changent : l’enfant peut parler de lui-même, d’un autre ou à l’autre, et mobiliser je, il/elle ou tu. La diversification des pronoms est liée à des personnes identifiables dans l’échange, plutôt qu’à une liste récitée."
+              "text": "Faire décrire une action par celui qui agit, puis par un témoin, puis en s’adressant à l’acteur.",
+              "explanation": "Les positions de parole font varier les personnes : parler de soi, d’un autre ou à l’autre ouvre les emplois de « je », « il/elle » et « tu »."
             },
             {
               "id": "c",
-              "text": "Demander d’expliquer pourquoi une pièce est choisie plutôt qu’une autre.",
-              "explanation": "Cette tâche peut faire construire un lien causal, déjà présent parmi les dimensions de la complexification. Elle ne vise pas directement la diversification des pronoms personnels."
+              "text": "Faire expliquer pourquoi une pièce est choisie plutôt qu’une autre.",
+              "explanation": "Justifier le choix peut faire construire un lien causal. Cet objectif diffère de la diversification des pronoms personnels."
             },
             {
               "id": "d",
-              "text": "Faire décrire successivement les gestes de plusieurs garçons par un même témoin.",
-              "explanation": "Les référents changent, mais le témoin continue de parler d’un garçon à la fois et peut garder il dans chaque description. Multiplier les personnes décrites n’impose pas de diversifier les personnes grammaticales ; changer les positions de parole ouvre notamment je et tu."
+              "text": "Faire décrire par le même témoin les différentes actions d’un seul garçon.",
+              "explanation": "Les actions changent, mais le témoin parle du même garçon à la troisième personne du singulier. Il peut conserver « il » ; cet aménagement ne fait pas varier les pronoms personnels."
             }
           ]
         }
       ],
-      "qcmRevision": "5c72ef253a8c"
+      "qcmRevision": "abcaaeac9309"
     },
     {
       "id": "FRA-ORAL-F13-V1",
@@ -1937,87 +1937,87 @@
       "steps": [
         {
           "id": "Q1",
-          "prompt": "Un enfant prépare le récit d’un atelier : « On a fabriqué la pâte. On découpe les biscuits. On va les cuire. » Il décrit une préparation accomplie, l’activité en cours et la cuisson à venir. Quel raisonnement identifie le point de référence de ce système ?",
+          "prompt": "« On a fabriqué la pâte. On découpe les biscuits. On va les cuire. » L’enfant décrit un accompli, une activité actuelle et une cuisson à venir. Quel raisonnement identifie le point de référence de ce système ?",
           "correctId": "c",
           "choices": [
             {
               "id": "a",
-              "text": "Le repère est passé : la préparation de la pâte est la première action donnée dans le récit.",
-              "explanation": "La confusion prend la première action pour le point de référence. Le passé composé situe ici un accompli avant l’activité présentée comme actuelle ; l’ordre d’énumération ne suffit pas à fixer le système."
+              "text": "Le repère est passé : la fabrication est la première action racontée.",
+              "explanation": "La première action racontée n’est pas forcément le point de référence. Ici, elle est accomplie avant le découpage présenté comme actuel."
             },
             {
               "id": "b",
-              "text": "Le repère est passé : a fabriqué est une forme au passé composé.",
-              "explanation": "Un temps du passé n’est pas automatiquement le repère de tout le système. Ici le passé composé situe un accompli avant l’activité actuelle découpe, suivie de la cuisson projetée. Le point de référence se détermine par ces relations, pas par la seule présence d’une forme composée."
+              "text": "Le repère est passé : une des formes verbales est au passé composé.",
+              "explanation": "La présence d’une forme passée ne rend pas tout le système passé. Il faut examiner ses relations avec les autres formes."
             },
             {
               "id": "c",
-              "text": "Le repère est présent : préparation accomplie et cuisson projetée s’organisent autour de l’activité actuelle.",
-              "explanation": "A fabriqué situe un avant, découpe l’activité actuelle et va cuire un après envisagé. Leur articulation correspond au premier système ; les trois phrases ne sont pas seulement trois temps nommés séparément."
+              "text": "Le repère est présent : l’accompli et le projet s’organisent autour de l’activité actuelle.",
+              "explanation": "« A fabriqué » marque un avant et « va cuire » un après autour de « découpe ». L’articulation correspond au premier système, centré sur le présent."
             },
             {
               "id": "d",
-              "text": "Le repère est présent : le locuteur est en train de parler au moment de produire les trois phrases.",
-              "explanation": "Le classement est juste, mais le critère ne l’établit pas. Un locuteur peut parler maintenant tout en organisant son récit depuis un repère passé ou futur. Il faut analyser les relations exprimées par les formes verbales."
+              "text": "Le repère est présent : l’enfant parle au moment de produire ces phrases.",
+              "explanation": "Un locuteur parle maintenant même quand il prend un repère passé ou futur. Le moment de parole ne suffit donc pas à identifier ce système."
             }
           ]
         },
         {
           "id": "Q2",
-          "prompt": "En évoquant la veille, un enfant raconte : « On avait préparé la pâte ; on était prêts ; on allait découper les biscuits. » Dans ce système, quel rapport « allait découper » exprime-t-il ?",
+          "prompt": "En évoquant la veille : « On avait préparé la pâte ; on était prêts ; on allait découper les biscuits. » Que marque « allait découper » par rapport à « était prêts » ?",
           "correctId": "a",
           "choices": [
             {
               "id": "a",
-              "text": "Une action envisagée après le moment passé où le groupe était prêt.",
-              "explanation": "Allait découper utilise aller à l’imparfait pour présenter une suite depuis le repère passé était prêts. Cette postériorité est relative à ce repère, sans annoncer nécessairement un événement encore futur au moment où l’enfant parle."
+              "text": "Une action envisagée après ce moment passé.",
+              "explanation": "Aller à l’imparfait suivi de l’infinitif projette ici la suite depuis « était prêts ». Cette suite est future par rapport au repère passé."
             },
             {
               "id": "b",
-              "text": "Une action déjà accomplie avant le moment passé où le groupe était prêt.",
-              "explanation": "La confusion attribue au futur aller à l’imparfait la fonction antérieure du plus-que-parfait. Dans cet extrait, avait préparé exprime l’accompli antérieur ; allait découper envisage la suite."
+              "text": "Une action accomplie avant ce moment passé.",
+              "explanation": "L’accompli antérieur est exprimé par « avait préparé », au plus-que-parfait, pas par « allait découper »."
             },
             {
               "id": "c",
-              "text": "Une action en cours au même moment passé que l’état « était prêts ».",
-              "explanation": "La confusion traite l’imparfait de aller comme si découper était directement présenté en cours. La construction aller+infinitif projette ici une action depuis ce repère passé."
+              "text": "Une action en cours au même moment passé.",
+              "explanation": "L’imparfait porte sur « aller » : avec l’infinitif, cette construction projette l’action plutôt que de la présenter en cours."
             },
             {
               "id": "d",
-              "text": "Une action envisagée après le moment présent où l’enfant raconte.",
-              "explanation": "La confusion prend toute projection pour un futur depuis le présent. Le système est centré sur un moment passé ; la suite alors envisagée peut elle-même être passée au moment du récit."
+              "text": "Une action envisagée après le moment présent du récit.",
+              "explanation": "La projection part du repère passé. Elle peut être déjà passée lorsque l’enfant raconte ; ce n’est pas nécessairement un futur depuis maintenant."
             }
           ]
         },
         {
           "id": "Q3",
-          "prompt": "Un enfant projette un atelier au lendemain : « Les biscuits seront prêts : nous les aurons cuits. » Il veut ensuite annoncer, depuis ce moment futur, une nouvelle préparation dans la même cuisine. Quelle formulation réalise le troisième membre du système à trois temps présenté au cours ?",
+          "prompt": "Complète le troisième système à trois temps de Boisseau : futur simple / futur antérieur / …",
           "correctId": "b",
           "choices": [
             {
               "id": "a",
-              "text": "Nous allions en préparer d’autres ensuite.",
-              "explanation": "Aller est à l’imparfait : cette construction envisage une suite depuis un repère passé. Elle correspond au deuxième système, pas à la projection depuis le repère futur demandé."
+              "text": "aller à l’imparfait suivi d’un infinitif",
+              "explanation": "Aller à l’imparfait exprime une projection depuis un repère passé : c’est le troisième membre du deuxième système."
             },
             {
               "id": "b",
-              "text": "Nous irons en préparer d’autres ensuite.",
-              "explanation": "Aller au futur suivi d’un infinitif réalise ici le futur aller dans le futur du cours. Seront et aurons cuits fournissent déjà le repère futur et l’accompli antérieur ; cette formulation envisage la suite depuis ce repère."
+              "text": "aller au futur suivi d’un infinitif",
+              "explanation": "Le troisième système associe futur simple, futur antérieur et futur aller dans le futur : par exemple « nous irons préparer »."
             },
             {
               "id": "c",
-              "text": "Nous allons en préparer d’autres ensuite.",
-              "explanation": "Aller est au présent : cette formulation peut annoncer un projet, mais le situe depuis le présent de parole. Elle n’exerce pas le troisième membre avec aller au futur demandé par le système du cours."
+              "text": "aller au présent suivi d’un infinitif",
+              "explanation": "Aller au présent appartient au premier système, avec présent et passé composé."
             },
             {
               "id": "d",
-              "text": "Nous sommes allés en préparer d’autres ensuite.",
-              "explanation": "Aller est au passé composé : la préparation est présentée comme un événement passé, et non comme la suite projetée depuis un repère futur. La présence du même infinitif ne suffit pas à conserver la relation temporelle."
+              "text": "aller au passé composé suivi d’un infinitif",
+              "explanation": "Aller au passé composé présente un déplacement passé. Ce n’est pas le futur aller dans le futur de ce système."
             }
           ]
         }
       ],
-      "qcmRevision": "c502d521b941"
+      "qcmRevision": "281a6b761bfc"
     },
     {
       "id": "FRA-ORAL-F14-V1",
@@ -2088,33 +2088,33 @@
       "steps": [
         {
           "id": "Q1",
-          "prompt": "Un enfant dit « Je prends les bottes. Je veux aller dans les flaques » et confirme le but des bottes. L’adulte propose « Je prends les bottes pour aller dans les flaques ». Quelle analyse de cette reprise correspond à la progression de Boisseau utilisée au cours ?",
+          "prompt": "L’enfant dit : « Je prends les bottes. Je veux aller dans les flaques », et confirme ce but. L’adulte propose : « Je prends les bottes pour aller dans les flaques. » Quel raisonnement analyse la reprise dans la progression de Boisseau ?",
           "correctId": "a",
           "choices": [
             {
               "id": "a",
-              "text": "Une construction complexifiée : « pour aller » relie une action au but qu’elle vise.",
-              "explanation": "Pour+infinitif figure parmi les constructions complexes de la progression du cours. La reprise explicite ici la relation entre prendre les bottes et ce que cela vise ; elle ne change pas le projet confirmé par l’enfant."
+              "text": "Elle complexifie la construction en reliant l’action à son but par « pour aller ».",
+              "explanation": "La progression classe « pour + infinitif » parmi les constructions complexes. La reprise exprime le lien de but entre prendre les bottes et aller dans les flaques."
             },
             {
               "id": "b",
-              "text": "Une construction complexifiée : « dans les flaques » ajoute une précision sur le lieu de l’action.",
-              "explanation": "Le repère de lieu contribue à la précision du message, mais une préposition ne suffit pas à établir le lien complexe entre les actions. Le critère retenu ici est l’expression du but par pour+infinitif."
+              "text": "Elle complexifie la construction en donnant un lieu avec « dans les flaques ».",
+              "explanation": "Le lieu est déjà présent dans l’énoncé de l’enfant. La complexification analysée tient au lien de but, pas à la présence de « dans »."
             },
             {
               "id": "c",
-              "text": "Une construction simple : « prends » reste le seul verbe conjugué de la phrase.",
-              "explanation": "La confusion importe un critère grammatical qui ne correspond pas au périmètre demandé. La progression de Boisseau classe aussi pour+infinitif parmi les constructions complexes ; le cours est le cadre explicite de cette question."
+              "text": "Elle conserve une construction simple puisqu’un seul verbe est conjugué.",
+              "explanation": "Le critère du nombre de verbes conjugués ne convient pas au cadre demandé : Boisseau inclut aussi « pour + infinitif » dans la complexité."
             },
             {
               "id": "d",
-              "text": "Une construction simple : la reprise conserve l’intention exprimée par l’enfant.",
-              "explanation": "La confusion assimile maintien du contenu et maintien de la structure. Une reformulation peut complexifier la syntaxe sans ajouter une nouvelle intention ; ici, elle rend le lien de but explicite."
+              "text": "Elle conserve une construction simple puisqu’elle garde le projet de l’enfant.",
+              "explanation": "Une reformulation peut garder le sens tout en changeant la structure. Ici, le projet reste le même et le lien de but devient explicite."
             }
           ]
         }
       ],
-      "qcmRevision": "fb309f7e3fa9"
+      "qcmRevision": "9c61a5ec9828"
     },
     {
       "id": "FRA-ORAL-F15-V2",
@@ -2189,33 +2189,33 @@
       "steps": [
         {
           "id": "Q1",
-          "prompt": "Dans la situation, on examine le récit de B, le garçon qui a perdu son bateau. Quel critère fonde le rapprochement avec le récit d’imagination décrit par Terwagne et Vanesse au cours ?",
+          "prompt": "Dans la situation, le récit B raconte le garçon qui a perdu son bateau. Quel critère le rapproche du récit d’imagination dans la distinction de Terwagne et Vanesse ?",
           "correctId": "d",
           "choices": [
             {
               "id": "a",
               "text": "Le récit est inventé par l’enfant plutôt que rapporté comme une expérience vécue.",
-              "explanation": "Ce critère suit le sens courant d’imagination, mais pas la distinction d’organisation retenue ici. Dans ce cadre, le quotidien peut comporter une complication vite résolue ; l’invention ne suffit pas à définir la suspension de résolution."
+              "explanation": "Ce critère suit le sens courant d’« imagination ». Dans le cadre de Terwagne et Vanesse, la distinction retenue porte sur la complication et la suspension de sa résolution."
             },
             {
               "id": "b",
               "text": "Le personnage accomplit plusieurs actions en se déplaçant entre différents lieux de recherche.",
-              "explanation": "La diversité des actions et des lieux peut enrichir un récit, mais un script ou une suite d’actions familières peut aussi en comporter. Ce nombre ne décrit pas à lui seul la relation entre complication et issue."
+              "explanation": "Un script ou un récit du quotidien peut aussi comporter plusieurs actions et lieux. Leur nombre ne montre pas la manière dont la complication trouve son issue."
             },
             {
               "id": "c",
               "text": "Les pronoms et les connecteurs relient les phrases autour du même personnage et de sa recherche.",
-              "explanation": "Ces moyens soutiennent la cohésion : ils font suivre les éléments du récit. Ils peuvent aussi apparaître dans un récit du quotidien ; ils ne suffisent pas à distinguer une résolution immédiate d’une résolution suspendue."
+              "explanation": "Pronoms et connecteurs assurent la cohésion. Ils peuvent apparaître dans les deux types de récits et ne distinguent pas une résolution immédiate d’une résolution suspendue."
             },
             {
               "id": "d",
-              "text": "La perte ouvre une recherche et une solution est préparée avant que la récupération soit racontée.",
-              "explanation": "La complication ne reçoit pas une issue immédiate : la recherche est développée puis la perche prépare la récupération. Celle-ci n’est pas encore racontée. Cette suspension de résolution, et non la seule invention, fonde le rapprochement dans le cadre du cours."
+              "text": "La perte ouvre une recherche et la perche prépare une récupération qui n’est pas encore racontée.",
+              "explanation": "La perte ouvre une recherche, puis la perche prépare la récupération qui n’est pas encore racontée. La résolution reste suspendue : c’est le critère retenu dans ce cadre."
             }
           ]
         }
       ],
-      "qcmRevision": "9752ae5fe920"
+      "qcmRevision": "87deaea0672d"
     },
     {
       "id": "FRA-ORAL-F17-V2",
@@ -2294,114 +2294,114 @@
       "steps": [
         {
           "id": "Q1",
-          "prompt": "D a neuf ans. Il entend et utilise l’italien et le français depuis sa naissance. Il emploie surtout l’italien dans les récits familiaux et le français à l’école, parfois les deux dans la même journée. Quelle analyse de son histoire d’exposition est fondée ?",
+          "prompt": "Quel critère définit le bilinguisme précoce simultané dans les repères du cours ?",
           "correctId": "c",
           "choices": [
             {
               "id": "a",
-              "text": "Un bilinguisme tardif : D utilise les deux langues alors qu’il a maintenant plus de six ans.",
-              "explanation": "La confusion utilise l’âge actuel au lieu du début d’acquisition. Le repère après six ans du bilinguisme tardif concerne le premier contact avec la nouvelle langue ; les deux langues sont ici présentes depuis la naissance."
+              "text": "Le locuteur utilise ses deux langues au cours d’une même journée.",
+              "explanation": "L’alternance dans une journée décrit l’usage actuel. Elle ne renseigne pas sur l’âge et l’ordre de début d’acquisition."
             },
             {
               "id": "b",
-              "text": "Un bilinguisme précoce consécutif : les deux langues sont utilisées dans des domaines différents.",
-              "explanation": "La confusion remplace la succession d’acquisition par une répartition des usages. Des domaines différents n’établissent pas qu’une langue ait commencé après l’autre ; les deux sont présentes dès la naissance."
+              "text": "Le locuteur réserve chacune des deux langues à un domaine différent.",
+              "explanation": "La répartition des domaines décrit les usages. Elle peut exister dans plusieurs situations de bilinguisme."
             },
             {
               "id": "c",
-              "text": "Un bilinguisme précoce simultané : les deux langues sont présentes dès la naissance.",
-              "explanation": "Le début de l’exposition correspond au cas simultané dans le cours et la lecture. Les domaines d’usage différents ne changent pas cette histoire et ne permettent pas, à eux seuls, de mesurer un niveau identique dans chaque langue."
+              "text": "Les deux langues se développent très tôt, dans la période de 0 à 3 ans.",
+              "explanation": "Le cours situe le précoce simultané entre 0 et 3 ans. Le critère concerne le début du développement des langues, pas l’égalité des compétences."
             },
             {
               "id": "d",
-              "text": "Un bilinguisme précoce consécutif : les deux langues sont parfois utilisées dans la même journée.",
-              "explanation": "Consécutif concerne la succession du début d’acquisition, pas l’alternance d’usages dans une journée. Un bilingue simultané ou tardif peut aussi alterner ; pour D, les deux langues sont présentes dès la naissance."
+              "text": "Le locuteur atteint un niveau comparable dans chacune des deux langues.",
+              "explanation": "Un bilingue peut avoir des compétences différentes selon les langues et les domaines. Un niveau égal ne définit pas le simultané."
             }
           ]
         },
         {
           "id": "Q3",
-          "prompt": "B utilise le portugais à la maison et rencontre régulièrement le français en entrant à l’école à quatre ans. Il observe beaucoup et parle encore peu en français. Quelle caractérisation de cette histoire convient dans les catégories de bilinguisme du cours ?",
+          "prompt": "Qu’est-ce qui définit le bilinguisme précoce consécutif dans les repères du cours ?",
           "correctId": "a",
           "choices": [
             {
               "id": "a",
-              "text": "Précoce consécutif : le français commence après une première langue, à quatre ans.",
-              "explanation": "L’acquisition d’une seconde langue commence ici entre trois et six ans après une première langue. C’est ce début d’exposition, et non la quantité actuelle de paroles, qui justifie le classement."
+              "text": "Une seconde langue commence entre 3 et 6 ans, après une première langue.",
+              "explanation": "Le critère associe la succession des acquisitions et le début de la seconde langue entre 3 et 6 ans."
             },
             {
               "id": "b",
-              "text": "Précoce simultané : les deux langues sont maintenant présentes dans sa vie quotidienne.",
-              "explanation": "L’usage actuel des deux langues ne signifie pas qu’elles se sont développées très tôt ensemble. L’histoire précise ici un début du français à quatre ans après le portugais."
+              "text": "Deux langues commencent avant 3 ans, avec des usages qui alternent.",
+              "explanation": "Ce début très précoce des deux langues renvoie au précoce simultané. Alterner les usages ne rend pas l’acquisition consécutive."
             },
             {
               "id": "c",
-              "text": "Précoce consécutif : la faible quantité de paroles en français définit cette catégorie.",
-              "explanation": "Une phase de faible parole peut être fréquente dans une acquisition consécutive, mais ne définit pas la catégorie. Le classement dépend du début de la nouvelle langue après une première, pas d’un comportement qui pourrait avoir plusieurs causes."
+              "text": "Une seconde langue commence après 6 ans, avec un bagage linguistique déjà développé.",
+              "explanation": "Un début après 6 ans relève ici du bilinguisme tardif. Le fait qu’une langue précède l’autre ne suffit pas à le dire précoce consécutif."
             },
             {
               "id": "d",
-              "text": "Tardif : le français est acquis à l’école plutôt que dans la famille.",
-              "explanation": "Le lieu d’acquisition ne définit pas le bilinguisme tardif. La catégorie enseignée renvoie à une seconde langue acquise après six ans ; le français commence ici à quatre ans."
+              "text": "Une seconde langue reste peu parlée, quel que soit l’âge auquel elle a commencé.",
+              "explanation": "Une phase muette est fréquente dans l’apprentissage consécutif, mais la faible production ne définit pas sa catégorie chronologique."
             }
           ]
         },
         {
           "id": "Q4",
-          "prompt": "C rencontre régulièrement le français pour la première fois à huit ans. Il a appris à lire et explique aisément des phénomènes en arabe, mais débute en français. Quelle caractérisation de cette histoire convient dans les catégories du cours ?",
+          "prompt": "Quel critère définit le bilinguisme tardif dans les repères du cours ?",
           "correctId": "c",
           "choices": [
             {
               "id": "a",
-              "text": "Précoce consécutif : une première langue est acquise avant le français.",
-              "explanation": "L’antériorité d’une langue ne suffit pas à classer toute acquisition comme précoce consécutive. Le début de la seconde langue se situe ici après six ans, dans la catégorie tardive du cours."
+              "text": "Le locuteur a plus de 6 ans au moment où l’on observe ses deux langues.",
+              "explanation": "L’âge actuel ne dit pas quand les deux langues ont commencé. Une personne de plus de 6 ans peut être bilingue depuis la naissance."
             },
             {
               "id": "b",
-              "text": "Précoce simultané : l’arabe et le français vont être utilisés pendant la même période.",
-              "explanation": "L’usage futur de deux langues pendant la même période ne décrit pas un développement très précoce commun. L’histoire distingue ici une première langue déjà développée et un début du français à huit ans."
+              "text": "Le locuteur apprend sa seconde langue à l’école plutôt qu’en famille.",
+              "explanation": "Le lieu d’acquisition ne fixe pas la catégorie. Une seconde langue peut commencer à l’école entre 3 et 6 ans ou après."
             },
             {
               "id": "c",
-              "text": "Tardif : la nouvelle langue commence à être acquise après six ans.",
-              "explanation": "Le début régulier du français à huit ans situe l’histoire dans cette catégorie. Le bagage linguistique et l’écrit sont des ressources à prendre en compte, sans remplacer le critère chronologique."
+              "text": "La seconde langue commence à être acquise après 6 ans.",
+              "explanation": "Le début de la nouvelle langue après 6 ans est le critère chronologique enseigné. Le bagage antérieur constitue alors une ressource."
             },
             {
               "id": "d",
-              "text": "Tardif : l’entrée dans l’écrit constitue le critère de cette catégorie.",
-              "explanation": "L’écrit peut intervenir dans une acquisition tardive et constitue ici une ressource. Il ne définit pas la catégorie : le critère est le début de la seconde langue après six ans."
+              "text": "La seconde langue commence lorsque le locuteur sait lire dans la première.",
+              "explanation": "L’écrit peut entrer en jeu dans l’acquisition tardive. Savoir lire n’est cependant pas le critère de définition de cette catégorie."
             }
           ]
         },
         {
           "id": "Q5",
-          "prompt": "Un élève commence le français à huit ans. Il explique déjà en arabe les étapes et les causes d’une expérience connue ; en français, il nomme le matériel mais juxtapose les actions. Des camarades doivent comprendre son explication en français. Quel usage de l’arabe cible le plus directement la difficulté observée ?",
+          "prompt": "Un élève sait expliquer en arabe les étapes et les causes d’une expérience. En français, il nomme le matériel mais juxtapose les actions. Il doit expliquer l’expérience à ses camarades en français. Quel appui sur l’arabe répond à cet obstacle ?",
           "correctId": "b",
           "choices": [
             {
               "id": "a",
-              "text": "Après son exposé français, lui demander une version arabe pour vérifier sa connaissance du phénomène, puis noter l’exactitude des deux présentations.",
-              "explanation": "La vérification en arabe renseigne sa connaissance du phénomène, déjà attestée ici. Elle ne travaille pas directement les relations entre étapes et causes que l’élève ne formule pas encore en français."
+              "text": "Lui faire présenter l’expérience en arabe après l’exposé français pour vérifier ses connaissances.",
+              "explanation": "La connaissance du phénomène est déjà observée en arabe. La vérifier à nouveau ne fait pas construire les relations manquantes dans l’explication française."
             },
             {
               "id": "b",
-              "text": "Lui faire organiser étapes et causes en arabe, puis travailler leurs formulations françaises pour reprendre l’explication devant les camarades.",
-              "explanation": "L’usage proposé mobilise les relations que l’élève sait déjà expliquer en arabe pour construire leur mise en mots en français. Il relie la ressource observée à l’obstacle précis d’une explication scolaire organisée."
+              "text": "Lui faire organiser étapes et causes en arabe, puis travailler leur formulation en français.",
+              "explanation": "Les étapes et les causes sont déjà disponibles dans une langue. Les reprendre pour en travailler l’expression française relie la ressource à l’obstacle observé."
             },
             {
               "id": "c",
-              "text": "Lui faire constituer un lexique arabe-français des noms du matériel, puis réemployer ces désignations pour refaire son exposé.",
-              "explanation": "Une mise en relation des mots peut être utile, mais les désignations du matériel sont déjà disponibles dans le cas. L’obstacle ciblé est l’expression des étapes et de leurs relations, que la liste de noms ne travaille pas directement."
+              "text": "Lui faire établir un lexique arabe–français du matériel, puis réemployer les noms dans l’exposé.",
+              "explanation": "Le lexique du matériel est déjà disponible en français. Une liste de noms ne fait pas directement exprimer les liens entre les actions."
             },
             {
               "id": "d",
-              "text": "Lui faire échanger en arabe des questions familières sur l’expérience, puis les reprendre en conversation française avec un camarade.",
-              "explanation": "L’échange conversationnel peut soutenir la communication, mais sa cible diffère ici de l’organisation d’une explication scolaire. La ressource attestée concerne déjà des étapes et des causes : c’est leur formulation en français qui est à travailler."
+              "text": "Lui faire échanger des questions familières en arabe, puis les reprendre en conversation française.",
+              "explanation": "La conversation peut soutenir la communication, mais sa cible diffère de l’explication scolaire structurée. Ici, il faut travailler étapes et causes."
             }
           ]
         }
       ],
-      "qcmRevision": "f095f3feb4f0"
+      "qcmRevision": "3bb3e6f6724f"
     },
     {
       "id": "FRA-ORAL-F20-V1",
@@ -2476,33 +2476,33 @@
       "steps": [
         {
           "id": "Q1",
-          "prompt": "Après une histoire entendue, un élève explique pourquoi le héros cherche une clé : « Parce que sa porte est fermée. » Il répond sans nouvelle relance. L’enseignante vérifie sa réponse en la confrontant aux événements du récit. Quel raisonnement identifie la capacité principalement visée par cette vérification ?",
+          "prompt": "Qu’est-ce qui définit principalement la compréhension de l’oral ?",
           "correctId": "a",
           "choices": [
             {
               "id": "a",
-              "text": "La compréhension : l’élève reconstruit une relation entre les événements du récit reçu.",
-              "explanation": "La vérification confronte son explication aux événements entendus : elle examine le sens construit à partir du récit. La formulation orale rend ici cette compréhension observable."
+              "text": "Construire le sens de paroles entendues à partir des mots et de la situation.",
+              "explanation": "Comprendre consiste à construire le sens du message reçu. Les indices verbaux et non verbaux peuvent y contribuer."
             },
             {
               "id": "b",
-              "text": "La production : l’élève répond à voix haute plutôt que par écrit.",
-              "explanation": "La réponse mobilise une production orale. Mais son moyen ne suffit pas à identifier l’objectif principal : la vérification décrite porte sur le sens du récit reçu."
+              "text": "Organiser des paroles adaptées à des interlocuteurs pour leur transmettre un message.",
+              "explanation": "Formuler et organiser un message pour autrui relève de la production de l’oral. Elle peut servir à montrer ce qui a été compris."
             },
             {
               "id": "c",
-              "text": "La production : l’élève construit une phrase avec parce que.",
-              "explanation": "La construction est réellement employée. Elle pourrait être enseignée comme objet ailleurs ; ici la vérification porte sur la relation du récit, pas sur cet emploi syntaxique à lui seul."
+              "text": "Identifier correctement les sons entendus et reproduire leur prononciation.",
+              "explanation": "Identifier et reproduire des sons mobilise perception et articulation, sans établir que le message est interprété."
             },
             {
               "id": "d",
-              "text": "La compréhension : l’élève n’a pas besoin d’une nouvelle question.",
-              "explanation": "L’absence de relance renseigne sur l’aide. Une réponse autonome peut être erronée ; c’est la relation expliquée et confrontée au récit qui fournit l’indice de compréhension."
+              "text": "Restituer de mémoire les mots exacts d’un message après son écoute.",
+              "explanation": "Une restitution fidèle des mots peut mobiliser la mémoire sans montrer leur interprétation. La compréhension vise le sens construit."
             }
           ]
         }
       ],
-      "qcmRevision": "c13d84db25e3"
+      "qcmRevision": "91942eb54392"
     },
     {
       "id": "FRA-ORAL-F22-V1",
@@ -2577,33 +2577,33 @@
       "steps": [
         {
           "id": "Q1",
-          "prompt": "Un enfant explique : « Mon frère, il garde les piles parce qu’elles peuvent encore servir. » Quel fait permet d’identifier la dislocation au sens des descriptions du français parlé du cours ?",
+          "prompt": "Dans « Mon frère, il garde les piles parce qu’elles peuvent encore servir », quel fait permet d’identifier la dislocation ?",
           "correctId": "a",
           "choices": [
             {
               "id": "a",
-              "text": "Le groupe mon frère est repris par il devant garde.",
-              "explanation": "Mon frère est détaché à gauche puis repris par il comme sujet de garde. Cette organisation constitue la dislocation ; elle n’est pas par elle-même une faute de la langue parlée."
+              "text": "« Mon frère » est repris par « il » devant « garde ».",
+              "explanation": "Le groupe nominal détaché à gauche est repris par le pronom sujet. Cette dislocation est une construction de la langue parlée, pas en soi une faute."
             },
             {
               "id": "b",
-              "text": "Le nom piles est repris par elles après parce que.",
-              "explanation": "La reprise assure un lien référentiel. Mais piles est complément de garde dans une proposition et elles sujet de peuvent dans une autre : ce n’est pas la reprise détachée du sujet qui définit ici la dislocation."
+              "text": "« Les piles » est repris par « elles » après « parce que ».",
+              "explanation": "Cette reprise assure un lien entre deux propositions : complément dans l’une, sujet dans l’autre. Elle ne constitue pas le détachement du sujet demandé ici."
             },
             {
               "id": "c",
-              "text": "Le pronom il est placé avant le verbe garde.",
-              "explanation": "Cet ordre existe dans une phrase simple sans groupe détaché. Un pronom sujet ne suffit donc pas à identifier une dislocation : il faut examiner son rapport avec mon frère."
+              "text": "« Il » est placé devant le verbe « garde ».",
+              "explanation": "Un pronom devant le verbe existe aussi sans dislocation. Il faut examiner sa reprise d’un groupe nominal détaché."
             },
             {
               "id": "d",
-              "text": "Parce que relie le fait de garder les piles à leur utilité possible.",
-              "explanation": "Ce lien causal contribue à la complexité de la phrase, mais ne définit pas la dislocation du sujet. Ces deux ressources sont distinctes et présentes ensemble."
+              "text": "« Parce que » relie la conservation des piles à leur utilité.",
+              "explanation": "Le lien causal construit une phrase complexe. Il ne définit pas la dislocation, qui concerne ici l’organisation du sujet."
             }
           ]
         }
       ],
-      "qcmRevision": "69247980ec48"
+      "qcmRevision": "12e039b0546e"
     },
     {
       "id": "FRA-ORAL-F25-V1",
@@ -2678,60 +2678,60 @@
       "steps": [
         {
           "id": "Q1",
-          "prompt": "Un élève dit « Pose le cube bleu à gauche du cylindre » tout en pointant à droite. Selon le classement qui distingue verbal, paraverbal, non verbal et coverbal, quelle analyse du pointage est justifiée ?",
+          "prompt": "Dans le classement de l’oralité du cours, qu’est-ce qui définit un geste coverbal ?",
           "correctId": "a",
           "choices": [
             {
               "id": "a",
-              "text": "Coverbal : le pointage accompagne la consigne et intervient dans l’indication de position.",
-              "explanation": "Le geste accompagne la consigne et donne une indication spatiale. Il contribue au sens reçu, ici en créant une contradiction : coverbal ne veut pas dire nécessairement conforme aux mots."
+              "text": "Un geste qui accompagne la parole et participe au sens du message.",
+              "explanation": "Le geste coverbal est un moyen corporel associé à la parole ; il peut la compléter ou même la contredire."
             },
             {
               "id": "b",
-              "text": "Non verbal seulement : la direction opposée aux mots fait sortir le geste du coverbal.",
-              "explanation": "Le geste est bien corporel, donc non verbal dans le classement retenu. L’erreur consiste à exiger une direction conforme aux mots pour le dire coverbal : ici, il accompagne la consigne et contribue au sens reçu en la contredisant. La concordance n’est pas une condition nécessaire."
+              "text": "Un geste qui remplace la parole lorsque le locuteur reste silencieux.",
+              "explanation": "Le geste silencieux est non verbal. Pour être coverbal, il doit accompagner la parole et contribuer avec elle au message."
             },
             {
               "id": "c",
-              "text": "Paraverbal : le pointage modifie l’interprétation d’une consigne dite à voix haute.",
-              "explanation": "Modifier l’interprétation ne suffit pas à être paraverbal. Dans ce classement, ce terme concerne les moyens vocaux ; le pointage est corporel et associé à la parole."
+              "text": "Un geste qui concorde avec les mots prononcés par le locuteur.",
+              "explanation": "La concordance n’est pas requise : un pointage contraire aux mots accompagne encore la parole et modifie le sens reçu."
             },
             {
               "id": "d",
-              "text": "Verbal : le pointage transmet une position comme pourrait le faire un mot.",
-              "explanation": "Un geste communique du sens sans devenir un mot ou une organisation de mots. La confusion porte sur contenu transmis et moyen de transmission."
+              "text": "Un geste qui règle le volume et l’intonation de la voix.",
+              "explanation": "Volume et intonation relèvent du paraverbal. Le geste coverbal décrit un moyen corporel associé aux mots."
             }
           ]
         },
         {
           "id": "Q2",
-          "prompt": "Un élève dit « Pose le cube bleu à gauche du cylindre ». Les mots sont à peine audibles pour le partenaire à deux mètres ; l’élève tourne le dos et pointe à droite. Dans le classement qui distingue verbal, paraverbal et non verbal, quelle observation relève du paraverbal ?",
+          "prompt": "Dans le classement voix/corps du cours 04, quel ensemble relève du paraverbal ?",
           "correctId": "c",
           "choices": [
             {
               "id": "a",
-              "text": "La position du corps, dos tourné vers le partenaire.",
-              "explanation": "La posture est corporelle : elle relève du non-verbal dans ce classement. Son effet sur la réception ne la rend pas vocale."
+              "text": "Le regard, la posture et la distance entre les interlocuteurs.",
+              "explanation": "Ces moyens corporels relèvent du non-verbal dans ce classement. Leur effet sur l’échange ne les rend pas vocaux."
             },
             {
               "id": "b",
-              "text": "La direction du doigt, différente de la relation à gauche.",
-              "explanation": "Le pointage est corporel et non verbal dans ce classement ; accompagnant la consigne, il est aussi coverbal. Ces statuts n’en font pas un moyen vocal."
+              "text": "Les mots choisis, leur ordre et les relations entre les phrases.",
+              "explanation": "Les mots et leur organisation relèvent du verbal. Le paraverbal concerne leur mise en voix."
             },
             {
               "id": "c",
-              "text": "Le volume qui rend les mots à peine audibles à cette distance.",
-              "explanation": "Le volume concerne la mise en voix et relève du paraverbal dans ce classement. Le PER emploie parfois non-verbal plus largement : le cadre explicitement demandé lève cette différence."
+              "text": "L’articulation, le rythme et le volume de la voix.",
+              "explanation": "Articulation, rythme et volume sont des moyens vocaux. Le classement demandé distingue ainsi le paraverbal du corps et des mots."
             },
             {
               "id": "d",
-              "text": "Les mots qui désignent le cube et sa position.",
-              "explanation": "Les mots et leur organisation relèvent du verbal. Distingue ce contenu de la manière dont la voix le rend audible."
+              "text": "Le pointage, les mimiques et les gestes associés à la parole.",
+              "explanation": "Ces moyens corporels relèvent du non-verbal ; lorsqu’ils accompagnent la parole, ils peuvent aussi être coverbaux."
             }
           ]
         }
       ],
-      "qcmRevision": "8ae3b94aae1d"
+      "qcmRevision": "9ea6cf2fc97b"
     },
     {
       "id": "FRA-ORAL-F38-V1",
@@ -2806,33 +2806,33 @@
       "steps": [
         {
           "id": "Q1",
-          "prompt": "Voici quatre activités, chacune décrite avec son objectif. Dans laquelle l’oral est-il principalement traité comme objet d’enseignement ?",
+          "prompt": "Que signifie traiter l’oral comme objet d’enseignement ?",
           "correctId": "d",
           "choices": [
             {
               "id": "a",
-              "text": "Discuter d’un album pour en construire l’interprétation à partir d’indices du texte.",
-              "explanation": "La discussion sert ici la compréhension du texte. La parole est outil ; sa seule présence ne prouve pas un objectif explicite de capacité orale."
+              "text": "Faire échanger les élèves pour qu’ils construisent un savoir dans une autre discipline.",
+              "explanation": "L’oral sert ici d’outil pour apprendre un autre contenu. La présence d’échanges ne définit pas à elle seule un enseignement de l’oral."
             },
             {
               "id": "b",
-              "text": "Proposer oralement les phrases d’une invitation que l’adulte écrit pour une autre classe.",
-              "explanation": "L’objectif annoncé est le message écrit, auquel l’oral fournit les formulations. Des apprentissages oraux peuvent s’ajouter, sans se déduire automatiquement du passage par la parole."
+              "text": "Faire formuler oralement un texte destiné à être écrit par un adulte.",
+              "explanation": "L’oral soutient ici la production d’un écrit. Des apprentissages oraux peuvent s’y ajouter s’ils deviennent des objectifs explicites."
             },
             {
               "id": "c",
-              "text": "Segmenter oralement des mots en syllabes pour préparer l’apprentissage de l’écrit.",
-              "explanation": "Les manipulations sont orales, mais la cible annoncée concerne l’entrée dans l’écrit. Moyen oral et domaine d’apprentissage ne coïncident pas nécessairement."
+              "text": "Faire exercer oralement des unités de langue pour préparer l’apprentissage de l’écrit.",
+              "explanation": "Le moyen est oral, mais l’objectif annoncé est l’entrée dans l’écrit. Il faut distinguer le moyen utilisé et ce qui est enseigné."
             },
             {
               "id": "d",
-              "text": "Raconter un récit connu en travaillant les reprises de personnages pour être compris des auditeurs.",
-              "explanation": "Les moyens de production orale et leurs effets sur des auditeurs sont explicitement travaillés. Le récit fournit le contenu ; la capacité à le faire comprendre par la parole est l’objet dominant."
+              "text": "Faire apprendre à comprendre et à produire des paroles adaptées à une situation.",
+              "explanation": "Les capacités de compréhension et de production orales deviennent elles-mêmes les apprentissages visés et observés."
             }
           ]
         }
       ],
-      "qcmRevision": "bfa206d4a5ed"
+      "qcmRevision": "f74eda83c1be"
     },
     {
       "id": "FRA-ORAL-F26-V1",
@@ -2899,33 +2899,33 @@
       "steps": [
         {
           "id": "Q1",
-          "prompt": "Une enseignante prévoit deux séquences de débat sur la cour. Dans la première, les élèves justifient leur choix d’un jeu. Dans la seconde, sur un autre sujet, ils doivent reprendre le raisonnement d’un camarade avant de lui répondre. Les groupes passent de quatre à six élèves et le même extrait audio sert de modèle. Quel élément justifie l’analyse de cette organisation comme progression spiralaire ?",
+          "prompt": "Quel principe caractérise une progression spiralaire de l’enseignement des genres ?",
           "correctId": "a",
           "choices": [
             {
               "id": "a",
-              "text": "Le travail relie désormais justification personnelle et prise en compte du raisonnement d’un pair.",
-              "explanation": "Le même genre est repris en travaillant une capacité qui s’appuie sur la première et l’approfondit : comprendre le raisonnement d’un autre avant de lui répondre. C’est cet enrichissement des exigences qui étaye ici la progression spiralaire."
+              "text": "Reprendre les genres à des degrés d’approfondissement croissants.",
+              "explanation": "Les capacités s’approfondissent lors des reprises. La progression peut aussi contraster des genres et relier des genres oraux et écrits apparentés."
             },
             {
               "id": "b",
-              "text": "Le sujet de la seconde discussion diffère de celui de la première.",
-              "explanation": "Changer le contenu peut renouveler l’activité, sans modifier les capacités travaillées. La progression spiralaire porte aussi sur l’approfondissement du genre ; le seul changement de sujet ne le démontre pas."
+              "text": "Reprendre un même genre en changeant le sujet sans changer les exigences.",
+              "explanation": "Changer le sujet renouvelle le contenu de l’activité, mais ne montre pas à lui seul un approfondissement des exigences. La progression spiralaire reprend le genre en approfondissant les capacités travaillées."
             },
             {
               "id": "c",
-              "text": "Le groupe comporte six élèves au lieu de quatre lors de la seconde séquence.",
-              "explanation": "Un effectif plus grand change les conditions et peut accroître les contraintes. Il ne précise pas à lui seul l’apprentissage approfondi. Ici, celui-ci est rendu identifiable par la nouvelle exigence argumentative."
+              "text": "Passer à un nouveau genre après chaque séquence, une fois le précédent achevé.",
+              "explanation": "Ce parcours traite les genres successivement sans reprise. La spirale prévoit de les retrouver pour approfondir les apprentissages."
             },
             {
               "id": "d",
-              "text": "Le même extrait audio sert de modèle aux deux séquences.",
-              "explanation": "Reprendre un support peut aider la continuité, mais peut aussi accompagner une répétition à l’identique. Le modèle commun ne suffit pas à établir l’évolution des capacités visées."
+              "text": "Travailler les genres oraux avant d’aborder leurs genres écrits apparentés.",
+              "explanation": "Le cours prévoit l’interaction des genres oraux et écrits apparentés, pas leur traitement dans cet ordre unique."
             }
           ]
         }
       ],
-      "qcmRevision": "41c6db0df723"
+      "qcmRevision": "52d0b0909dfc"
     },
     {
       "id": "FRA-ORAL-F27-V1",
@@ -3008,33 +3008,33 @@
       "steps": [
         {
           "id": "Q1",
-          "prompt": "Dans la situation, les auditeurs demandent qui veut entrer et quel était le problème. Dans l’analyse des dimensions du récit, quel constat porte sur la textualisation ?",
+          "prompt": "Dans la situation, les auditeurs demandent qui veut entrer et quel est le problème. Quel constat porte sur la textualisation du récit ?",
           "correctId": "a",
           "choices": [
             {
               "id": "a",
-              "text": "Le pronom il n’identifie pas clairement le personnage qui veut entrer.",
-              "explanation": "La textualisation concerne les unités linguistiques qui organisent le récit, notamment les reprises pronominales. Il apparaît sans personnage masculin déjà introduit dans le récit. Elle peut reprendre la fille ; ce n’est donc pas toute reprise pronominale qui est fautive. Le problème ciblé touche un moyen linguistique de liaison."
+              "text": "Le pronom « il » ne permet pas d’identifier clairement celui qui veut entrer.",
+              "explanation": "Les reprises pronominales sont des unités linguistiques de textualisation. Ici, aucun personnage masculin n’a été introduit avant « il »."
             },
             {
               "id": "b",
-              "text": "Le récit ne rend pas identifiable le problème à résoudre.",
-              "explanation": "Ce constat concerne l’organisation narrative et la structure du problème, pas le choix d’un moyen linguistique précis. Les deux dimensions peuvent agir sur la compréhension, sans être identiques."
+              "text": "Le problème que les personnages doivent résoudre n’est pas identifiable.",
+              "explanation": "Le problème touche ici l’organisation narrative et les contenus, plutôt qu’un moyen linguistique précis de mise en mots."
             },
             {
               "id": "c",
-              "text": "Le récit doit être adressé à deux camarades.",
-              "explanation": "Le destinataire fait partie de la situation de communication. Il oriente la production, mais ne désigne pas une unité linguistique de textualisation."
+              "text": "Le narrateur doit raconter son histoire à deux camarades.",
+              "explanation": "Le destinataire appartient à la situation de communication. Il oriente le récit mais ne constitue pas une unité de textualisation."
             },
             {
               "id": "d",
-              "text": "Les cartes fournissent une porte et une clé parmi les éléments disponibles.",
-              "explanation": "Ce constat décrit les supports et les ressources de contenu proposés à l’enfant. Ils ne constituent pas, par eux-mêmes, les reprises ou organisateurs par lesquels le récit sera mis en mots."
+              "text": "Les cartes proposent une porte et une clé parmi les contenus possibles.",
+              "explanation": "Les cartes fournissent des supports et des contenus. La textualisation concerne les unités par lesquelles le narrateur relie et formule ces contenus."
             }
           ]
         }
       ],
-      "qcmRevision": "50ff8dfc22e5"
+      "qcmRevision": "a041f5283c4b"
     },
     {
       "id": "FRA-ORAL-F30-V1",
@@ -3117,60 +3117,60 @@
       "steps": [
         {
           "id": "Q1",
-          "prompt": "Dans une discussion à visée démocratique et philosophique (DVDP) sur le partage, Noé propose le prochain tour à Nina, qui n’a pas encore parlé, en lui laissant le choix de le prendre. Maya demande ce que signifie « juste ». Léo demande une raison après une affirmation. Sara rapproche deux avis pour les faire examiner ensemble. Quelle intervention relève de la présidence dans la répartition proposée par Tozzi ?",
+          "prompt": "Dans la DVDP de Tozzi, quelle responsabilité appartient à la présidence de séance ?",
           "correctId": "a",
           "choices": [
             {
               "id": "a",
-              "text": "L’intervention de Noé.",
-              "explanation": "La présidence règle la forme démocratique et la distribution des tours. Donner priorité à une personne peu intervenue tout en respectant son droit de se taire correspond ici à cette responsabilité."
+              "text": "Distribuer les tours selon les règles démocratiques et respecter le droit de se taire.",
+              "explanation": "La présidence organise la forme démocratique : elle distribue les tours, donne priorité aux personnes peu intervenues et respecte le droit de se taire."
             },
             {
               "id": "b",
-              "text": "L’intervention de Maya.",
-              "explanation": "Faire préciser le sens de juste soutient le travail sur le contenu et la conceptualisation. C’est une intervention d’animation du fond, qui ne se confond pas avec la répartition des tours."
+              "text": "Faire préciser les concepts et mettre les arguments en relation avec la question.",
+              "explanation": "Le travail sur le fond et la progression des idées relève de l’animation. Il se distingue de l’attribution des tours."
             },
             {
               "id": "c",
-              "text": "L’intervention de Léo.",
-              "explanation": "Demander une raison fait examiner une affirmation et soutient l’argumentation. Cette fonction relève du contenu de la recherche plutôt que de l’organisation démocratique des tours."
+              "text": "Écouter une intervention puis la redire fidèlement à la demande de l’enseignant.",
+              "explanation": "Cette responsabilité est celle du reformulateur : restituer le propos d’un camarade plutôt qu’organiser la parole."
             },
             {
               "id": "d",
-              "text": "L’intervention de Sara.",
-              "explanation": "Mettre en relation deux avis soutient la progression des idées : Tozzi l’attribue à l’animation du fond. Le fait d’aider l’échange ne suffit pas à identifier la présidence."
+              "text": "Prendre des notes sur les idées comprises et les restituer à la fin de la discussion.",
+              "explanation": "Cette responsabilité est celle du synthétiseur, qui rend compte de ce qu’il a compris de l’ensemble de la discussion."
             }
           ]
         },
         {
           "id": "Q2",
-          "prompt": "À la fin d’une DVDP, un élève chargé de la synthèse consulte ses notes. Le groupe a défendu deux idées : partager la même quantité, ou tenir compte des besoins ; une objection a porté sur la manière de connaître ces besoins. Dans la répartition de Tozzi, quelle restitution correspond à cette responsabilité ?",
+          "prompt": "À la fin d’une DVDP, le groupe a discuté deux idées : partager la même quantité, ou tenir compte des besoins. Une objection porte sur la manière de connaître ces besoins. Que doit restituer l’élève chargé de la synthèse, à partir de ses notes ?",
           "correctId": "b",
           "choices": [
             {
               "id": "a",
-              "text": "Redire avec ses mots l’intervention du dernier élève sur la manière de connaître un besoin.",
-              "explanation": "Cette restitution peut être fidèle à une intervention, ce qui convient à une reformulation. La synthèse finale rend compte du travail de la discussion, plutôt que du seul dernier tour."
+              "text": "Le dernier propos sur la façon de connaître les besoins, reformulé fidèlement.",
+              "explanation": "Redire un propos fidèlement relève de la reformulation. La synthèse finale doit rendre compte du travail de la discussion dans son ensemble."
             },
             {
               "id": "b",
-              "text": "Restituer les deux façons de concevoir le partage et la difficulté soulevée pour l’une d’elles.",
-              "explanation": "Les notes servent à restituer les idées et la difficulté examinées. Le synthétiseur rend ce qu’il a compris de l’ensemble ; il n’a pas à déclarer quelle idée devrait gagner."
+              "text": "Les deux conceptions du partage et la difficulté soulevée pour l’une d’elles.",
+              "explanation": "Le synthétiseur reprend ce qu’il a compris des idées et de leurs liens, y compris la difficulté discutée. Il n’a pas à décider quelle thèse gagne."
             },
             {
               "id": "c",
-              "text": "Relever combien de fois la présidence a donné priorité aux élèves encore silencieux.",
-              "explanation": "Cette note examine l’application d’un cahier des charges : elle convient à une observation des rôles. Elle ne restitue pas le contenu de la recherche collective."
+              "text": "Le nombre de tours accordés en priorité aux élèves qui n’avaient pas parlé.",
+              "explanation": "Ce relevé convient à l’observation du fonctionnement démocratique et des rôles, plutôt qu’à la synthèse du contenu discuté."
             },
             {
               "id": "d",
-              "text": "Présenter le meilleur compromis qu’il propose après avoir écouté les différents points de vue.",
-              "explanation": "L’élève ajouterait une proposition personnelle de discutant. Une synthèse peut restituer un compromis réellement formulé, mais sa mission n’est pas de fabriquer une conclusion nouvelle à la place du groupe."
+              "text": "Le compromis qu’il juge le meilleur après avoir écouté les points de vue.",
+              "explanation": "Proposer un compromis personnel relève du rôle de discutant. Une synthèse restitue les idées effectivement exprimées plutôt que d’ajouter sa propre solution."
             }
           ]
         }
       ],
-      "qcmRevision": "bc5d47eb0594"
+      "qcmRevision": "0aa48a2a451e"
     },
     {
       "id": "FRA-ORAL-F33-V1",
@@ -3245,33 +3245,33 @@
       "steps": [
         {
           "id": "Q1",
-          "prompt": "Dans la situation, quel indice permet d’analyser le jeu de l’élève-médecin comme une parodie au sens du cours de langue ?",
+          "prompt": "Que désigne la parodie dans le travail sur le langage présenté au cours ?",
           "correctId": "a",
           "choices": [
             {
               "id": "a",
-              "text": "L’élève adopte une manière de parler liée à la position de médecin dans la consultation jouée.",
-              "explanation": "La parodie désigne ici le fait de parler comme on le ferait dans une situation ou depuis une position jouée. L’effet comique n’est pas nécessaire : l’élève assume une pratique langagière de consultation."
+              "text": "Une situation jouée où l’on parle à la manière d’une personne ou depuis un rôle.",
+              "explanation": "La parodie fait assumer un rôle énonciatif et une manière de parler liée à la situation jouée. Le comique n’en est pas une condition."
             },
             {
               "id": "b",
-              "text": "L’élève exprime dans le jeu une raison introduite par parce que.",
-              "explanation": "Cette relation est réellement formulée et peut être rendue visible par le jeu. Mais une phrase causale peut aussi être produite hors rôle : elle n’établit pas à elle seule la parodie."
+              "text": "Une imitation qui déforme les paroles d’une personne pour faire rire le public.",
+              "explanation": "Cette définition retient le sens courant comique de parodie. Le sens travaillé ici comprend des jeux de rôles sans intention de faire rire."
             },
             {
               "id": "c",
-              "text": "L’élève nomme la gorge dans le jeu, alors que ça reste dépendant du contexte partagé hors du jeu.",
-              "explanation": "Les désignations illustrent des usages différents du langage. La précision lexicale ne suffit pas à caractériser un jeu de rôles : une explication ordinaire peut elle aussi nommer précisément ses objets."
+              "text": "Une restitution de texte qui conserve les mots mémorisés et leur ordre.",
+              "explanation": "La restitution d’un texte mémorisé caractérise l’oral récité. La parodie peut donner lieu à des formulations inventées dans le rôle."
             },
             {
               "id": "d",
-              "text": "Une marionnette représente le patient auquel l’élève s’adresse.",
-              "explanation": "La marionnette est un appui matériel du jeu. Sa présence n’impose pas à elle seule une position langagière particulière : c’est la manière de parler dans la consultation jouée qui fonde ici l’analyse."
+              "text": "Une responsabilité d’échange qui consiste à redire le propos d’un camarade.",
+              "explanation": "Cette responsabilité est la reformulation dans une discussion. Le rôle langagier confié à un élève se distingue du personnage qu’il joue."
             }
           ]
         }
       ],
-      "qcmRevision": "e96f975f07c4"
+      "qcmRevision": "7266e4d00636"
     },
     {
       "id": "FRA-ORAL-F37-V1",
@@ -3338,87 +3338,87 @@
       "steps": [
         {
           "id": "Q3",
-          "prompt": "Dans la situation, une observatrice examine le cheminement de B, de la demande de précision à l’action qui convient. Quel niveau vise-t-elle principalement, et avec quel appui ?",
+          "prompt": "Que désigne le langage dans la définition de Brigaudiot ?",
           "correctId": "a",
           "choices": [
             {
               "id": "a",
-              "text": "Le langage : ce cheminement concerne le sens que B construit à partir de signes déjà connus.",
-              "explanation": "B dispose des mots, mais doit relier la demande à l’objet et au lieu visés. Le changement examiné concerne l’activité de compréhension au moyen de ces signes, plutôt que l’acquisition d’un code ou le seul relevé d’une formulation."
+              "text": "L’activité psychologique par laquelle un sujet produit du sens au moyen d’une langue.",
+              "explanation": "Le langage est une activité du sujet qui construit du sens au moyen d’une langue ; il ne désigne pas seulement le code disponible."
             },
             {
               "id": "b",
-              "text": "La langue : ce cheminement correspond à la constitution du code français commun à A et B.",
-              "explanation": "La langue commune est déjà disponible : les deux enfants connaissent les mots. La précision fait évoluer l’interprétation de cette demande dans le jeu, pas la constitution du système partagé."
+              "text": "Le système de signes dont une communauté dispose pour communiquer.",
+              "explanation": "Le système de signes partagé est la langue dans la distinction de Saussure. Il est un moyen de l’activité de langage."
             },
             {
               "id": "c",
-              "text": "Le langage : ce cheminement correspond au fait qu’A et B possèdent un code français commun.",
-              "explanation": "Le code commun est une ressource de l’activité, mais n’en décrit pas le déroulement. Il était disponible avant la précision ; pour qualifier le cheminement observé, il faut distinguer cette ressource de son utilisation pour construire le sens."
+              "text": "L’emploi concret de signes linguistiques par une personne dans un contexte précis.",
+              "explanation": "Cet emploi concret et situé définit la parole. Il peut renseigner l’activité de langage, sans se confondre avec elle."
             },
             {
               "id": "d",
-              "text": "La parole : ce cheminement correspond à la réalisation linguistique de la demande « Quel objet et où ? ».",
-              "explanation": "La demande constitue bien une parole et fournit un indice du cheminement. L’analyse visée porte toutefois sur le passage de l’incertitude à une interprétation utilisable, et non sur cette réalisation linguistique prise comme donnée."
+              "text": "La connaissance des règles qui permettent de former des phrases dans une langue.",
+              "explanation": "La connaissance des règles concerne des ressources linguistiques. L’activité de langage les mobilise pour signifier, plutôt que de s’y réduire."
             }
           ]
         },
         {
           "id": "Q4",
-          "prompt": "Dans la situation, une observatrice note les énoncés d’A et de B avec leur locuteur et leur moment. Quelle analyse du statut de ce relevé convient ?",
+          "prompt": "Qu’est-ce qui définit la parole dans la distinction de Saussure ?",
           "correctId": "d",
           "choices": [
             {
               "id": "a",
-              "text": "Le langage : ces énoncés constituent l’activité de compréhension elle-même, conservée dans le relevé.",
-              "explanation": "Le relevé conserve des réalisations observables. Elles peuvent renseigner la compréhension, mais ne sont pas l’activité psychologique elle-même. Confondre la donnée conservée et l’activité qu’elle aide à étudier change le niveau décrit."
+              "text": "L’activité psychologique qui construit du sens au moyen d’une langue.",
+              "explanation": "L’activité psychologique du sujet définit ici le langage. La parole en est une réalisation linguistique observable dans un contexte."
             },
             {
               "id": "b",
-              "text": "La parole : les signes de ces énoncés sont compréhensibles pour les francophones qui partagent le code.",
-              "explanation": "La partageabilité des signes caractérise la langue mobilisée. Elle n’établit pas, à elle seule, le statut d’un relevé de parole : ce sont les emplois effectivement réalisés dans cet échange que celui-ci conserve."
+              "text": "Le caractère commun des signes compris par les membres d’une communauté.",
+              "explanation": "Le partage des signes caractérise la nature sociale de la langue. Il ne définit pas leur emploi individuel dans une situation."
             },
             {
               "id": "c",
-              "text": "La langue : ces énoncés sont du français, donc les noter revient à décrire le système commun.",
-              "explanation": "Des énoncés individuels donnent des exemples d’une langue, mais leur relevé n’est pas pour autant une description de ce système. Le passage de l’exemple réalisé au système partagé constitue ici la confusion."
+              "text": "L’ensemble des signes et des règles disponibles dans une communauté.",
+              "explanation": "Le système disponible est la langue. La parole est son utilisation concrète, et non le système pris dans son ensemble."
             },
             {
               "id": "d",
-              "text": "La parole : ces énoncés sont des emplois du français réalisés dans cet échange précis.",
-              "explanation": "Les données conservées sont les réalisations des signes par A et B dans l’échange. Elles relèvent donc de la parole ; elles mobilisent la langue et peuvent servir à examiner le langage, sans se confondre avec ces deux autres niveaux."
+              "text": "L’utilisation concrète des signes linguistiques dans un contexte précis.",
+              "explanation": "La parole est de nature individuelle : une personne emploie effectivement les signes dans une situation précise."
             }
           ]
         },
         {
           "id": "Q5",
-          "prompt": "Dans la situation, pour décrire les ressources dont les deux enfants disposent avant l’échange, une observatrice s’intéresse aux mots français que chacun peut utiliser et comprendre, au-delà de ce qu’il dit pendant le jeu. Quel niveau vise cette description ?",
+          "prompt": "Pourquoi la langue est-elle dite « de nature sociale » chez Saussure ?",
           "correctId": "b",
           "choices": [
             {
               "id": "a",
-              "text": "La parole : la description concerne ce que chacun sait dire en français.",
-              "explanation": "La parole vise l’utilisation concrète dans un contexte précis. La description porte ici sur les ressources disponibles au-delà des énoncés effectivement réalisés pendant le jeu."
+              "text": "Elle est réalisée par une personne lorsqu’elle parle à un interlocuteur.",
+              "explanation": "L’emploi réalisé par une personne relève de la parole. Avoir un interlocuteur ne transforme pas cette réalisation en système partagé."
             },
             {
               "id": "b",
-              "text": "La langue : la description concerne des signes que les partenaires partagent.",
-              "explanation": "L’observation vise ici les mots du français disponibles pour communiquer. Elle considère le système partagé, et non une intervention individuelle ni le déroulement de la compréhension de cette demande."
+              "text": "Elle constitue un système de signes utilisé par une communauté.",
+              "explanation": "La langue est le système partagé par la communauté pour communiquer. Sa nature sociale ne dépend pas du nombre de personnes présentes dans un échange."
             },
             {
               "id": "c",
-              "text": "Le langage : la description concerne les ressources de deux sujets qui comprennent.",
-              "explanation": "Les sujets utilisent ces ressources dans leur activité de langage, mais ce n’est pas cette activité que la description cible. Elle porte sur les signes partagés dont cette activité se sert."
+              "text": "Elle correspond à l’activité par laquelle une personne comprend un message.",
+              "explanation": "Construire le sens d’un message relève de l’activité de langage. Cette activité mobilise la langue, mais n’en définit pas la nature sociale."
             },
             {
               "id": "d",
-              "text": "La langue : un énoncé individuel conforme au français constitue le système partagé.",
-              "explanation": "La conformité d’un énoncé au français ne transforme pas cet usage individuel en système de signes partagé. Un énoncé est une réalisation de parole ; la description visée porte ici sur les ressources de la langue disponibles au-delà de cette réalisation."
+              "text": "Elle regroupe les énoncés produits au cours d’un échange entre plusieurs personnes.",
+              "explanation": "Un relevé d’échange conserve des réalisations de parole. Plusieurs réalisations ne constituent pas à elles seules le système de la langue."
             }
           ]
         }
       ],
-      "qcmRevision": "108526ab8a15"
+      "qcmRevision": "9c9c24e3cada"
     },
     {
       "id": "FRA-ORAL-F04-V2",
@@ -3489,33 +3489,33 @@
       "steps": [
         {
           "id": "Q1",
-          "prompt": "Un élève connaît le trajet de sa classe à la bibliothèque. Il l’explique en français à des camarades, qui doivent le retrouver sur un plan. L’enseignante fait aussi travailler les noms des lieux et prévoit d’apprécier la connaissance du trajet par une explication orale. Dans la distinction des trois rôles de la langue de scolarisation, quel aspect correspond directement au français transversal ?",
+          "prompt": "Dans les trois rôles de la langue de scolarisation, que désigne le français transversal ?",
           "correctId": "d",
           "choices": [
             {
               "id": "a",
-              "text": "La connaissance du trajet sera appréciée à partir d’une réponse formulée en français.",
-              "explanation": "Cet aspect met au premier plan le poids de la langue dans l’évaluation : les formulations peuvent agir sur ce que l’élève arrive à montrer de sa connaissance. Il est lié au rôle transversal, mais cible une autre fonction du triple rôle."
+              "text": "Le français dont la maîtrise pèse sur l’évaluation et la réussite scolaire.",
+              "explanation": "Le poids dans l’évaluation est un autre rôle de la langue de scolarisation. Il est lié à son usage transversal, sans le définir."
             },
             {
               "id": "b",
-              "text": "Les noms français des lieux deviennent des éléments que l’enseignante fait étudier.",
-              "explanation": "Quand des moyens de langue sont directement travaillés pour être appris, le français devient objet d’apprentissage. Le rôle transversal concerne ici son usage pour communiquer et construire la connaissance spatiale."
+              "text": "Le français étudié comme discipline, avec ses contenus et ses savoir-faire.",
+              "explanation": "Il s’agit du français comme objet d’apprentissage dans la discipline. Transversal désigne son rôle d’outil dans les autres apprentissages."
             },
             {
               "id": "c",
-              "text": "Les formulations qui désignent les lieux sont travaillées pour améliorer l’explication orale.",
-              "explanation": "Ce travail vise les moyens de la production orale comme objet d’apprentissage. Pour identifier le français transversal, il faut examiner à quel contenu autre que la langue l’explication donne accès : ici la représentation du trajet."
+              "text": "Le français utilisé en dehors de l’école pour les échanges de la vie quotidienne.",
+              "explanation": "Les échanges hors de l’école participent aux expériences langagières. Le rôle transversal désigne ici la communication et les apprentissages scolaires."
             },
             {
               "id": "d",
-              "text": "L’explication en français sert aux camarades à construire leur représentation du trajet.",
-              "explanation": "Le français sert ici de médiation à un apprentissage spatial : écouter l’explication aide à retrouver le trajet sur le plan. Son rôle dépasse donc l’étude de la langue comme discipline."
+              "text": "Le français utilisé pour communiquer et apprendre dans toutes les disciplines.",
+              "explanation": "Le français assure la médiation des apprentissages dans les différentes disciplines ; il est alors outil d’apprentissage."
             }
           ]
         }
       ],
-      "qcmRevision": "0ab30c203962"
+      "qcmRevision": "45c2b3547e76"
     },
     {
       "id": "FRA-ORAL-F11-V1",
@@ -3594,33 +3594,33 @@
       "steps": [
         {
           "id": "Q3",
-          "prompt": "Dans une classe, Ana lit volontiers et rencontre souvent de nouveaux mots. Sami bute sur de nombreux mots, comprend moins bien certains passages et choisit de moins en moins de livres. Pour analyser cette évolution avec l’effet Matthieu, quel lien faut-il examiner ?",
+          "prompt": "Quelle relation définit l’effet Matthieu entre lecture et lexique ?",
           "correctId": "b",
           "choices": [
             {
               "id": "a",
-              "text": "Le nombre de livres lus renseigne surtout la quantité de mots rencontrés ; les mots déjà connus interviennent ensuite dans une autre dynamique.",
-              "explanation": "Cette lecture retient l’apport de la lecture au lexique, mais sépare le retour du lexique vers la compréhension et les lectures suivantes. L’effet Matthieu relie ces éléments dans un renforcement réciproque."
+              "text": "La lecture enrichit le lexique ; cet enrichissement dépend surtout de la répétition des mêmes mots.",
+              "explanation": "Cette réponse réduit l’enrichissement aux répétitions et omet le retour du lexique sur la compréhension et les occasions de lire."
             },
             {
               "id": "b",
-              "text": "Les mots déjà connus facilitent la compréhension de nouvelles lectures, qui offrent à leur tour des occasions d’en apprendre.",
-              "explanation": "Les deux sens de la relation sont présents : lire apporte des mots, et les ressources lexicales rendent de nouvelles lectures plus accessibles. Cette boucle permet d’examiner comment les écarts peuvent se creuser, sans établir toutes les causes des cas individuels."
+              "text": "La lecture enrichit le lexique, qui facilite la compréhension et de nouvelles lectures.",
+              "explanation": "Le cours décrit un renforcement réciproque : lire apporte des mots, qui aident à comprendre puis à lire davantage. Les écarts peuvent ainsi se creuser."
             },
             {
               "id": "c",
-              "text": "L’étendue des choses désignées par chaque mot explique directement pourquoi un élève choisit davantage de livres.",
-              "explanation": "L’étendue d’un mot renvoie notamment aux sous- et sur-extensions. Elle peut être étudiée, mais ne remplace pas la dynamique cumulative entre lecture, enrichissement lexical et compréhension."
+              "text": "Le lexique facilite la compréhension ; les lectures suivantes révèlent les acquis sans les modifier.",
+              "explanation": "Cette réponse retient l’effet des acquis sur la compréhension mais supprime l’enrichissement apporté par les nouvelles lectures."
             },
             {
               "id": "d",
-              "text": "Le lexique déjà acquis facilite la compréhension ; les lectures qui suivent manifestent surtout ces ressources antérieures.",
-              "explanation": "Ce raisonnement retient le rôle des acquis, mais réduit les nouvelles lectures à une manifestation de ce niveau. Dans l’effet Matthieu, elles apportent aussi des occasions nouvelles d’enrichir les ressources."
+              "text": "La lecture élargit le domaine d’emploi de chaque mot, ce qui explique l’accélération du vocabulaire.",
+              "explanation": "Le domaine d’emploi d’un mot concerne les généralisations, comme les sous- et sur-extensions. Ce n’est pas la boucle cumulative de l’effet Matthieu."
             }
           ]
         }
       ],
-      "qcmRevision": "c13378c244e7"
+      "qcmRevision": "34cd2dc8af7b"
     },
     {
       "id": "FRA-ORAL-F03-V1",
@@ -3687,33 +3687,33 @@
       "steps": [
         {
           "id": "Q3",
-          "prompt": "À la maison, un adulte explique une recette pour réaliser une pâte. En classe, des élèves expliquent la même recette à un autre groupe. L’enseignante prévoit un essai, un retour sur l’ordre des étapes et les verbes d’action, puis une nouvelle explication. Dans cette première approche de la transposition par les genres, qu’est-ce qui caractérise le genre didactisé ?",
+          "prompt": "Dans la première approche de la transposition par les genres, qu’est-ce qu’un genre didactisé ?",
           "correctId": "d",
           "choices": [
             {
               "id": "a",
-              "text": "L’explication conserve une utilité réelle pour le groupe qui prépare la pâte.",
-              "explanation": "Le maintien d’un but pratique donne une raison de communiquer, mais une pratique sociale possède déjà cette utilité. Il ne suffit pas à caractériser sa transformation en objet d’apprentissage."
+              "text": "Un genre de référence que les élèves pratiquent en conservant son utilité sociale.",
+              "explanation": "Un but social réel peut être conservé, mais ne définit pas la transformation en objet d’apprentissage : une pratique sociale possède déjà une utilité."
             },
             {
               "id": "b",
-              "text": "La recette est expliquée par des élèves à l’intérieur d’une classe.",
-              "explanation": "Le lieu et le statut des locuteurs ne suffisent pas. Une pratique devient objet d’enseignement par ce qu’on choisit d’y faire apprendre et travailler, pas par sa seule présence à l’école."
+              "text": "Un genre de référence que l’on fait produire par des élèves dans une classe.",
+              "explanation": "Le lieu scolaire et le statut des locuteurs ne suffisent pas. Il faut identifier les caractéristiques que les élèves vont apprendre."
             },
             {
               "id": "c",
-              "text": "Une seconde explication est prévue après la première tentative.",
-              "explanation": "Répéter une tâche peut offrir une nouvelle occasion de parler, mais ne précise pas à soi seul ce qui doit être appris. Ici, le retour est orienté vers des caractéristiques du genre retenues pour progresser."
+              "text": "Un genre de référence que les élèves rencontrent à plusieurs reprises.",
+              "explanation": "La répétition offre des occasions de pratique. Elle ne précise pas ce qui est choisi comme contenu d’enseignement."
             },
             {
               "id": "d",
-              "text": "L’ordre des étapes et les verbes d’action sont retenus pour être travaillés entre deux productions.",
-              "explanation": "Des caractéristiques de l’explication procédurale sont sélectionnées comme apprentissages. Les essais et retours les rendent travaillables : c’est cette transformation du genre en objet d’enseignement qui est visée."
+              "text": "Un genre transformé en objet d’apprentissage par le choix de caractéristiques à travailler.",
+              "explanation": "La didactisation retient les caractéristiques que les élèves doivent apprendre à comprendre ou à produire, dans des textes entiers ou partiels."
             }
           ]
         }
       ],
-      "qcmRevision": "b5dbfd67ade5"
+      "qcmRevision": "12c630aaed51"
     },
     {
       "id": "FRA-ORAL-F36-V1",
@@ -3784,33 +3784,33 @@
       "steps": [
         {
           "id": "Q3",
-          "prompt": "Un élève raconte un incident. L’auditeur restitue le problème, mais hésite sur l’identité du personnage qui a aidé. Pour le critère « rendre les personnages identifiables », quel indicateur recueillir lors d’un nouvel essai comparable ?",
+          "prompt": "Après le récit d’un incident, l’auditeur sait quel était le problème mais hésite sur l’identité de celui qui a aidé. Pour le critère « rendre les personnages identifiables », quel indicateur recueillir au prochain essai ?",
           "correctId": "b",
           "choices": [
             {
               "id": "a",
-              "text": "Le nombre de personnages que le narrateur mentionne dans son récit.",
-              "explanation": "Ce nombre décrit les acteurs présents dans le contenu. Il ne montre pas si l’auditeur peut comprendre qui agit ou qui est repris par les désignations."
+              "text": "Le nombre de personnages mentionnés par le narrateur.",
+              "explanation": "Le nombre d’acteurs ne dit pas si leurs désignations permettent de comprendre qui fait quoi."
             },
             {
               "id": "b",
-              "text": "La restitution par l’auditeur de l’identité de celui qui aide et de celui qui est aidé.",
-              "explanation": "Cette observation rend examinable l’effet des désignations : peut-on attribuer correctement les rôles aux personnages ? Elle se rapporte directement au critère retenu."
+              "text": "L’identité de celui qui aide et de celui qui est aidé, restituée par l’auditeur.",
+              "explanation": "La restitution des rôles par l’auditeur permet d’examiner directement si les personnages sont identifiables dans ce récit."
             },
             {
               "id": "c",
-              "text": "Le nombre de relances de l’adulte pendant la production du récit.",
-              "explanation": "Les aides doivent être notées pour interpréter les progrès. Leur nombre ne renseigne pas directement sur l’identité que l’auditeur attribue aux personnages."
+              "text": "Le nombre de relances apportées par l’adulte pendant le récit.",
+              "explanation": "Noter les aides est utile pour interpréter le progrès, mais leur nombre ne renseigne pas directement sur l’identité comprise par l’auditeur."
             },
             {
               "id": "d",
-              "text": "La présence d’un nom de personnage avant chaque nouvelle action racontée.",
-              "explanation": "La répétition de noms est un moyen possible de rendre les références claires, mais pas une condition nécessaire pour chaque action. Cet indicateur imposerait une forme au lieu d’examiner si les acteurs sont identifiables pour l’auditeur."
+              "text": "La présence d’un nom de personnage avant chaque nouvelle action.",
+              "explanation": "Répéter les noms est un moyen possible, pas une condition de chaque action. L’indicateur doit examiner l’identification, sans imposer ce procédé unique."
             }
           ]
         }
       ],
-      "qcmRevision": "74b34ad781fb"
+      "qcmRevision": "4e8ecff3f0cd"
     },
     {
       "id": "FRA-ORAL-F18-V1",
@@ -3897,87 +3897,87 @@
       "steps": [
         {
           "id": "Q3",
-          "prompt": "Après une histoire, l’enseignante demande : « Pourquoi le garçon retourne-t-il à la cabane ? » Inès : « Pour chercher sa sœur. » L’enseignante accueille la réponse et donne la parole à Malik. Malik lui répond : « Si c’est pour sa sœur, comme dit Inès, c’est qu’il ne l’a pas retrouvée avec les autres. » L’enseignante accueille aussi cette réponse. Avec les niveaux d’écoute du cours, quelle analyse de l’intervention de Malik convient ?",
+          "prompt": "En réponse à l’enseignante, Inès dit que le garçon retourne à la cabane « pour chercher sa sœur ». Malik ajoute : « Si c’est pour sa sœur, comme dit Inès, c’est qu’il ne l’a pas retrouvée avec les autres. » Quel raisonnement caractérise son écoute ?",
           "correctId": "d",
           "choices": [
             {
               "id": "a",
-              "text": "Écoute en écho : Malik répond lui aussi à la question posée par l’enseignante.",
-              "explanation": "L’adresse à l’enseignante et la même question n’empêchent pas la prise en compte d’un pair. Malik reprend la recherche de la sœur proposée par Inès pour formuler son hypothèse : ce lien dépasse une réponse seulement centrée sur la question adulte."
+              "text": "C’est une écoute en écho : Malik répond à la question posée par l’enseignante.",
+              "explanation": "Répondre à l’enseignante n’exclut pas de tenir compte d’un pair. Malik reprend la recherche de la sœur proposée par Inès."
             },
             {
               "id": "b",
-              "text": "Travail collaboratif : l’enseignante accueille les deux contributions et en règle la succession.",
-              "explanation": "L’accueil et l’organisation des tours décrivent le rôle de l’enseignante. Ils ne constituent pas à eux seuls un échange entre élèves ni une coconstruction du groupe. L’indice décisif dans la parole de Malik est ce qu’il fait de la proposition d’Inès."
+              "text": "C’est un travail collaboratif : l’enseignante accueille les réponses et règle les tours.",
+              "explanation": "L’accueil et la distribution des tours décrivent les actions de l’enseignante. Ils ne suffisent pas à montrer les échanges ou la coconstruction entre élèves."
             },
             {
               "id": "c",
-              "text": "Écoute marquée : Malik produit une intervention plus développée que celle d’Inès.",
-              "explanation": "La longueur est bien différente, mais ne démontre pas la prise en compte d’autrui. La même intervention longue pourrait répondre seulement à l’adulte ; ici, la proposition précise d’Inès sert à construire l’hypothèse de Malik."
+              "text": "C’est une écoute marquée : l’intervention de Malik est plus longue que celle d’Inès.",
+              "explanation": "La longueur ne démontre pas la prise en compte d’autrui. Une réponse longue pourrait rester centrée sur la seule question adulte."
             },
             {
               "id": "d",
-              "text": "Écoute marquée : Malik utilise la recherche de la sœur proposée par Inès pour avancer son hypothèse.",
-              "explanation": "Malik ne se contente pas de répondre après Inès : il prend sa proposition comme point de départ pour envisager que le garçon ne retrouve pas sa sœur avec les autres. Le lien entre les deux contenus justifie ici l’écoute marquée, sans exiger une idée originale comme condition générale."
+              "text": "C’est une écoute marquée : Malik utilise l’idée d’Inès pour construire son hypothèse.",
+              "explanation": "Malik prend le propos d’Inès comme point de départ de son hypothèse. Ce lien de contenu, plutôt que le simple fait de parler après elle, montre l’écoute marquée."
             }
           ]
         },
         {
           "id": "Q4",
-          "prompt": "Après une histoire, huit élèves donnent des avis différents. Chaque fois, l’enseignante pose une question, choisit qui répond et annonce si la réponse convient avant de passer à la suivante. Les élèves parlent avec aisance. Quelle analyse de la conduite de cet échange mobilise la distinction entre dialogue scolaire, conversation et discussion présentée au cours ?",
+          "prompt": "Après une histoire, huit élèves donnent des avis différents. L’enseignante pose chaque question, choisit le répondant et valide sa réponse avant de passer à la suivante. Quel raisonnement analyse la conduite de l’échange ?",
           "correctId": "a",
           "choices": [
             {
               "id": "a",
-              "text": "La conduite garde les traits du dialogue scolaire par le questionnement et la validation de l’enseignante.",
-              "explanation": "Le but et la structure des tours restent réglés par l’enseignante, qui valide les réponses. Plusieurs avis ne suffisent pas à transformer cette conduite en conversation ouverte ou en examen des arguments entre élèves."
+              "text": "Elle garde les traits du dialogue scolaire : l’enseignante structure et valide les réponses.",
+              "explanation": "Le dialogue scolaire est guidé par les objectifs, le questionnement et la validation de l’enseignante. Cette organisation est décrite ici."
             },
             {
               "id": "b",
-              "text": "L’aisance des élèves fait de cette conduite une conversation, même si l’enseignante décide des réponses recevables.",
-              "explanation": "L’aisance décrit une manière de parler, pas le degré d’ouverture de l’organisation. Structure, questionnement et validation restent ici contrôlés par l’enseignante."
+              "text": "Elle relève de la conversation : les élèves peuvent parler avec aisance devant le groupe.",
+              "explanation": "L’aisance concerne la manière de parler, pas l’ouverture de l’échange. Les tours restent ici organisés et évalués par l’enseignante."
             },
             {
               "id": "c",
-              "text": "La diversité des avis suffit à montrer que la conduite repose sur une discussion des arguments entre élèves.",
-              "explanation": "Une discussion examine des idées et des arguments. Le cas montre des réponses différentes, sans montrer leur confrontation ou leur mise en relation : la diversité ne démontre pas cette opération."
+              "text": "Elle relève de la discussion : les élèves expriment des avis différents sur une même histoire.",
+              "explanation": "La diversité des avis ne montre pas encore leur examen par des idées et des arguments. Il faudrait observer la confrontation ou la mise en relation des propos."
             },
             {
               "id": "d",
-              "text": "Le nombre d’intervenants fait de cette conduite une conversation, contrairement à un dialogue réservé à deux personnes.",
-              "explanation": "Dans cette distinction, le dialogue est une interaction guidée par un but. Le dialogue scolaire peut réunir plusieurs élèves : le nombre ne tranche pas à lui seul."
+              "text": "Elle relève de la conversation : le nombre de participants dépasse celui d’un dialogue.",
+              "explanation": "Dans ce cadre, le dialogue est guidé par un but et peut réunir plusieurs élèves. Deux participants ne sont pas une condition de définition."
             }
           ]
         },
         {
           "id": "Q5",
-          "prompt": "Dans une discussion sur le prêt, Lina demande : « Si on donne une bille pour qu’on nous la rende demain, est-ce encore un don ? » Sami répond : « Tu parles de rendre la même bille ou d’en donner une autre ? » Lina précise : « De rendre la même. » Zoé ajoute : « Moi, j’aime échanger mes billes. » Quel raisonnement permet d’analyser les tours de Sami puis de Lina comme une paire adjacente ?",
+          "prompt": "Dans une discussion sur le don, Sami demande : « Tu parles de rendre la même bille ou d’en donner une autre ? » Lina répond : « De rendre la même. » Quel raisonnement montre qu’il s’agit d’une paire adjacente ?",
           "correctId": "c",
           "choices": [
             {
               "id": "a",
-              "text": "Ils forment une paire parce que les deux tours se suivent sans autre intervention entre eux.",
-              "explanation": "La succession est bien présente, mais deux tours consécutifs peuvent juxtaposer des propos. Il faut examiner la fonction accomplie par le second par rapport à ce que le premier appelle."
+              "text": "Les deux tours se suivent sans intervention entre eux.",
+              "explanation": "Deux tours peuvent se suivre tout en juxtaposant des propos indépendants. La succession ne suffit pas : il faut un lien entre leurs fonctions."
             },
             {
               "id": "b",
-              "text": "Ils forment une paire parce que les deux élèves conservent le même référent, la bille prêtée.",
-              "explanation": "Un même objet peut soutenir plusieurs propos indépendants. La conservation du référent ne suffit pas : l’élément décisif est que Lina fournit la précision demandée par Sami."
+              "text": "Les deux tours conservent le même objet, la bille.",
+              "explanation": "Le même objet peut figurer dans plusieurs propos indépendants. Il ne suffit pas à établir que le second répond à ce qu’appelle le premier."
             },
             {
               "id": "c",
-              "text": "Ils forment une paire parce que Lina précise laquelle des deux possibilités proposées par Sami elle envisage.",
-              "explanation": "Sami demande de choisir entre rendre la même bille et en rendre une autre. Le tour de Lina accomplit cette précision : son contenu et sa fonction répondent à l’alternative ouverte, au-delà de la succession ou du thème."
+              "text": "La réponse de Lina apporte la précision demandée par Sami.",
+              "explanation": "La demande ouvre une alternative et la réponse choisit l’une des possibilités. Le premier tour oriente ainsi le contenu attendu dans le second."
             },
             {
               "id": "d",
-              "text": "Ils forment une paire parce que deux personnes différentes parlent à tour de rôle sur le prêt.",
-              "explanation": "L’alternance de locuteurs est présente, mais ne démontre pas le lien fonctionnel entre leurs tours. Un avis peut suivre une question sans lui répondre ; ici, la précision de Lina est guidée par la demande précédente."
+              "text": "Les deux locuteurs prennent chacun un tour sur le thème du don.",
+              "explanation": "L’alternance des locuteurs et le thème commun ne suffisent pas. Une paire adjacente suppose que le second tour accomplisse une réponse attendue par le premier."
             }
           ]
         }
       ],
-      "qcmRevision": "37e0b989c839"
+      "qcmRevision": "b0a1b47e5886"
     },
     {
       "id": "FRA-ORAL-F19-V2",
@@ -4052,61 +4052,61 @@
       "steps": [
         {
           "id": "Q2",
-          "prompt": "Après une explication enregistrée, une étudiante dit : « Je passe à un nouvel exemple avant d’avoir dit ce que montre le précédent. À la prochaine reprise, je terminerai l’idée avant d’en changer. » Elle réécoute le passage pour vérifier son analyse. Quelle analyse rend compte du versant métadiscursif de ce travail dans le schéma du rapport à l’oral de Colognesi présenté au cours ?",
+          "prompt": "Dans le schéma du rapport à l’oral de Colognesi, que recouvre la dimension métadiscursive ?",
           "correctId": "b",
           "choices": [
             {
               "id": "a",
-              "text": "Le travail est métadiscursif du fait de réécouter : cette pratique suffit à établir le recul sur la production.",
-              "explanation": "Réécouter donne un appui pour analyser, mais peut aussi rester une simple pratique. Le retour réflexif est ici rendu visible par ce que l’étudiante dit de l’enchaînement de ses idées, pas par le seul usage d’un enregistrement."
+              "text": "Les pratiques de prise de parole et d’écoute d’une personne.",
+              "explanation": "Ces pratiques relèvent du praxéologique. Les pratiquer ou les réécouter ne démontre pas encore un recul verbalisé."
             },
             {
               "id": "b",
-              "text": "Le travail est métadiscursif par l’analyse de l’enchaînement des idées ; la réécoute sert à la vérifier.",
-              "explanation": "Elle prend sa propre explication comme objet : elle repère le passage prématuré à l’exemple suivant et formule une reprise liée à ce diagnostic. C’est cette analyse verbalisée, vérifiée sur l’extrait, qui permet d’identifier le retour réflexif."
+              "text": "La verbalisation et la prise de recul sur les activités de parole et d’écoute.",
+              "explanation": "Le schéma associe le métadiscursif à une mise en mots et un recul sur l’activité. Réfléchir à une production se distingue du simple fait de la pratiquer."
             },
             {
               "id": "c",
-              "text": "Le travail reste praxéologique : la reprise annoncée n’étant pas encore réalisée, le recul sur la production reste à faire.",
-              "explanation": "Le projet de nouvel essai n’est pas encore réalisé, mais l’analyse de la production a déjà lieu. Reporter tout recul au changement effectif confond l’activité de réflexion et ses effets futurs sur la pratique."
+              "text": "Les conceptions qu’une personne se fait de l’oral et de son apprentissage.",
+              "explanation": "Ces conceptions relèvent du conceptuel. Le recul sur une activité peut les faire évoluer, mais ce possible effet ne définit pas la dimension métadiscursive."
             },
             {
               "id": "d",
-              "text": "Le travail est conceptuel : annoncer une autre façon de parler montre qu’elle redéfinit la nature de l’oral.",
-              "explanation": "Elle examine l’organisation d’une explication particulière. Une nouvelle action envisagée ne prouve pas une nouvelle conception générale de ce qu’est l’oral : passer du diagnostic local à cette conclusion change l’objet de l’analyse."
+              "text": "Les valeurs et les opinions qu’une personne attribue à l’oral.",
+              "explanation": "Ces valeurs et opinions relèvent de l’axiologique, plutôt que du retour réflexif sur une activité."
             }
           ]
         },
         {
           "id": "Q3",
-          "prompt": "Une étudiante connaît bien les mêmes quatre collègues. Elle dit : « Au repas, chacun prend la parole quand il veut ; pendant notre réunion de préparation, je préfère que nous demandions un tour avant de répondre. » Dans le schéma du rapport à l’oral de Colognesi, quelle analyse de sa préférence distingue le versant interactionnel des dimensions voisines ?",
+          "prompt": "Que recouvre la dimension interactionnelle du rapport à l’oral dans le schéma de Colognesi ?",
           "correctId": "d",
           "choices": [
             {
               "id": "a",
-              "text": "Sa préférence est interactionnelle parce qu’une demande de tour garantit que chacun parlera autant.",
-              "explanation": "La proposition de demander un tour concerne l’interaction, mais elle ne garantit pas une durée égale pour chacun. Ce résultat supposé n’est pas le critère qui permet d’analyser ici la façon d’envisager l’échange selon son contexte."
+              "text": "La façon d’entrer en contact avec les autres.",
+              "explanation": "Cet objet appartient à la dimension relationnelle. L’interactionnel concerne la façon d’envisager les échanges en fonction des contextes."
             },
             {
               "id": "b",
-              "text": "Sa préférence est relationnelle parce que les modalités des tours traduisent d’abord la proximité entre collègues.",
-              "explanation": "La proximité des personnes peut influer sur l’entrée en relation. Elle reste ici constante et n’explique pas, à elle seule, les deux modalités envisagées : prendre une dimension liée aux partenaires pour le critère du changement détourne l’analyse du contexte."
+              "text": "Les pratiques de prise de parole et d’écoute réalisées.",
+              "explanation": "Les pratiques relèvent de la dimension praxéologique. L’interactionnel porte sur la manière d’envisager les échanges selon les contextes, pas sur le seul relevé de ce que l’on fait."
             },
             {
               "id": "c",
-              "text": "Sa préférence est praxéologique parce qu’elle décrit une habitude de prise de parole déjà mise en œuvre dans les deux situations.",
-              "explanation": "Le repas est décrit comme une pratique, mais l’étudiante exprime pour la réunion une organisation qu’elle préfère. Traiter toute modalité envisagée comme une pratique déjà réalisée efface la différence entre ce qu’elle fait et sa façon d’envisager l’interaction."
+              "text": "Les émotions éprouvées à propos de la prise de parole.",
+              "explanation": "Les émotions et les sentiments relèvent de la dimension affective. Ils peuvent influencer les échanges, sans définir la dimension interactionnelle."
             },
             {
               "id": "d",
-              "text": "Sa préférence est interactionnelle parce qu’elle envisage une gestion des réponses adaptée à chacun des deux contextes.",
-              "explanation": "Elle propose des modalités différentes selon la situation de parole. Le critère est cette façon d’envisager l’interaction, et non un partage égal de la durée, la familiarité seule ou une habitude supposée déjà réalisée. Des dimensions relationnelles peuvent aussi intervenir, sans expliquer à elles seules cette préférence."
+              "text": "La façon d’envisager les échanges selon les contextes.",
+              "explanation": "L’interactionnel concerne la manière d’envisager l’échange en fonction de la situation. Le relationnel concerne plutôt les aspects de l’entrée en relation."
             }
           ]
         }
       ],
-      "qcmRevision": "6feb29b29c63"
+      "qcmRevision": "fa2e0d2b40a4"
     }
   ],
-  "bankRevision": "608696aee8a6"
+  "bankRevision": "b7b23316de32"
 }
