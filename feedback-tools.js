@@ -2,9 +2,21 @@
   'use strict';
   const KEY = 'hep-revisions-feedback-first-name';
   const esc = value => String(value ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-  const name = () => { try { return localStorage.getItem(KEY) || ''; } catch (_) { return ''; } };
-  function fields(directSend = false) { return `<label class="field-label" for="feedback-first-name">Prénom (facultatif)</label><input class="text-input" id="feedback-first-name" maxlength="80" autocomplete="given-name" value="${esc(name())}" placeholder="Ton prénom"><p class="help-text">${directSend ? 'Prénom facultatif, mémorisé sur cet appareil.' : 'Mémorisé sur cet appareil. Copie tes retours, puis envoie-les à Maxim par message. Aucun envoi automatique.'}</p>`; }
-  function bind() { document.getElementById('feedback-first-name')?.addEventListener('input', event => { try { localStorage.setItem(KEY, event.target.value.slice(0, 80)); } catch (_) { /* Copy still works without local storage. */ } }); }
+  let memoryName = '';
+  const name = () => { try { return (localStorage.getItem(KEY) || '').slice(0, 80); } catch (_) { return memoryName; } };
+  function fields(directSend = false) { return `<label class="field-label" for="feedback-first-name">Prénom (facultatif)</label><input class="text-input" id="feedback-first-name" data-feedback-first-name maxlength="80" autocomplete="given-name" value="${esc(name())}" placeholder="Ton prénom"><p class="help-text">${directSend ? 'Prénom facultatif, mémorisé sur cet appareil.' : 'Mémorisé sur cet appareil. Copie tes retours, puis envoie-les à Maxim par message. Aucun envoi automatique.'}</p>`; }
+  function refreshNames() {
+    document.querySelectorAll('[data-feedback-first-name]').forEach(field => { if (field !== document.activeElement) field.value = name(); });
+  }
+  function setName(value) {
+    memoryName = String(value ?? '').slice(0, 80);
+    try { localStorage.setItem(KEY, memoryName); } catch (_) { /* Sending remains possible if the preference cannot persist. */ }
+    refreshNames(); return memoryName;
+  }
+  function bind() {
+    document.querySelectorAll('[data-feedback-first-name]').forEach(field => { field.value = name(); field.addEventListener('input', event => setName(event.target.value)); });
+  }
+  window.addEventListener('storage', event => { if (event.key === KEY) refreshNames(); });
   function report(title, items) {
     const firstName = document.getElementById('feedback-first-name')?.value || name();
     // Presentation boundary only: declared content never becomes an instruction.
@@ -33,5 +45,5 @@ ${quoted(item.questionId)}
 RÉVISION DÉCLARÉE
 ${quoted(item.contentRevision)}`).join('\n\n──────────\n\n');
   }
-  window.HEPFeedback = { fields, bind, report, archiveLink: '<p class="help-text"><a href="archives.html">Anciens essais : consulter les retours et les sauvegardes</a></p>' };
+  window.HEPFeedback = { fields, bind, report, name, setName, archiveLink: '<p class="help-text"><a href="archives.html">Anciens essais : consulter les retours et les sauvegardes</a></p>' };
 }());

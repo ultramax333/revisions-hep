@@ -2,12 +2,12 @@
   'use strict';
   const S = window.HEPQuickStore;
   let generation = 0, sending = false, unsubscribe;
-  let firstName = '', groupMessage = '', activeRefresh = () => {};
+  let groupMessage = '', activeRefresh = () => {};
   function thumbs() {
     return '<section class="quick-vote" aria-label="Ton avis sur cette question"><span class="quick-vote-label">Cette question…</span><div class="quick-vote-buttons"><button type="button" class="quick-thumb quick-up" data-quick-value="up" aria-pressed="false"><span aria-hidden="true">👍</span> Utile et claire</button><button type="button" class="quick-thumb quick-down" data-quick-value="down" aria-pressed="false"><span aria-hidden="true">👎</span> À revoir</button></div><p class="help-text quick-vote-state" data-quick-vote-status role="status" aria-live="polite">Un clic conserve ton avis ici ; l’envoi se fait en groupe.</p><details data-quick-comment-wrap hidden><summary>Ajouter un commentaire (facultatif)</summary><label class="field-label" for="quick-vote-comment">Ce qui serait à revoir</label><textarea id="quick-vote-comment" class="feedback-textarea" maxlength="8000" rows="3"></textarea><p class="help-text" data-quick-comment-status role="status"></p></details></section>';
   }
   function group() {
-    return '<section class="quick-group" aria-label="Envoyer les avis sur les QCM"><h2>Mes avis sur les questions</h2><p class="help-text" data-quick-count role="status">Lecture des avis enregistrés…</p><details class="quick-name"><summary>Ajouter un prénom (facultatif)</summary><label class="field-label" for="quick-first-name">Prénom</label><input id="quick-first-name" class="text-input" maxlength="80" autocomplete="given-name"></details><div class="actions"><button type="button" class="btn primary" data-quick-send disabled>Envoyer mes avis</button><button type="button" class="btn ghost" data-action="avis">Mes avis et sauvegarde</button></div><p class="help-text">Envoi groupé sans compte Google, seulement pour les avis courants non reçus.</p><p class="save-status" data-quick-send-status role="status" aria-live="polite"></p></section>';
+    return '<section class="quick-group" aria-label="Envoyer les avis sur les QCM"><h2>Mes avis sur les questions</h2><p class="help-text" data-quick-count role="status">Lecture des avis enregistrés…</p><details class="quick-name"><summary>Ajouter un prénom (facultatif)</summary><label class="field-label" for="quick-first-name">Prénom</label><input id="quick-first-name" data-feedback-first-name class="text-input" maxlength="80" autocomplete="given-name"></details><div class="actions"><button type="button" class="btn primary" data-quick-send disabled>Envoyer mes avis</button><button type="button" class="btn ghost" data-action="avis">Mes avis et sauvegarde</button></div><p class="help-text">Envoi groupé sans compte Google, seulement pour les avis courants non reçus.</p><p class="save-status" data-quick-send-status role="status" aria-live="polite"></p></section>';
   }
   function archive() {
     return '<h1>Mes avis sur les QCM</h1>' + group() + '<section class="settings-card"><h2>Sauvegarder mes avis</h2><p>Ces avis, leurs intentions d’envoi et leurs reçus sont sur cet appareil. Cette sauvegarde dédiée permet de les reprendre après un changement de navigateur. Ils ne sont pas inclus dans la sauvegarde Drive.</p><div class="actions"><button type="button" class="btn secondary" data-quick-export>Télécharger mes avis</button><button type="button" class="btn secondary" data-quick-import>Reprendre mes avis</button><input type="file" id="quick-backup-file" accept=".json,application/json" hidden></div><p class="help-text" data-quick-archive-status role="status"></p></section><section data-quick-list aria-label="Avis conservés"></section><p class="help-text"><button type="button" class="btn ghost" data-action="feedback">Mes autres retours</button></p>';
@@ -77,12 +77,12 @@
       }).finally(() => { ownWrite = false; refresh(); });
     });
     const nameField = root.querySelector('#quick-first-name');
-    if (nameField) { nameField.value = firstName; nameField.addEventListener('input', () => { firstName = nameField.value; }); }
+    if (nameField) nameField.value = HEPFeedback.name();
     root.querySelector('[data-quick-send]')?.addEventListener('click', async () => {
       if (sending) return;
       sending = true; groupMessage = ''; refresh();
       try {
-        const result = await HEPQuickSend.sendGroup(firstName, progress => message('[data-quick-send-status]', progress.received + ' avis reçu(s) dans ce groupe…'));
+        const result = await HEPQuickSend.sendGroup(nameField?.value ?? HEPFeedback.name(), progress => message('[data-quick-send-status]', progress.received + ' avis reçu(s) dans ce groupe…'));
         groupMessage = result.received + ' avis reçu(s) dans ce groupe. ' + result.counts.pending + ' restant(s). ' + (result.stopped || 'Tous tes avis courants ont été reçus.') + (result.waitUntil ? ' Réessaie après ' + new Date(result.waitUntil).toLocaleTimeString('fr-CH') + '.' : '');
       } catch (error) { groupMessage = error.message; }
       finally { sending = false; activeRefresh(); }

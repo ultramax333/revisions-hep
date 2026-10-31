@@ -332,7 +332,8 @@
               "explanation": "Les contenus à acquérir constituent le pôle savoirs. Ils se distinguent des actions par lesquelles l’enseignant les choisit et les transforme pour les enseigner."
             }
           ],
-          "requiresContext": false
+          "requiresContext": false,
+          "level": "essentiel"
         },
         {
           "id": "Q6",
@@ -360,7 +361,8 @@
               "explanation": "Une organisation commune peut soutenir l’enseignement de plusieurs matières. Elle ne définit pas la préoccupation didactique, centrée sur les savoirs."
             }
           ],
-          "requiresContext": false
+          "requiresContext": false,
+          "level": "essentiel"
         },
         {
           "id": "Q7",
@@ -388,7 +390,8 @@
               "explanation": "La pédagogie ne se limite pas à l’éducation familiale ou à une période précédant les disciplines. Son objet est ici la relation dans l’enseignement."
             }
           ],
-          "requiresContext": false
+          "requiresContext": false,
+          "level": "essentiel"
         }
       ],
       "qcmRevision": "e9a89d100cbd"
@@ -494,11 +497,12 @@
               "explanation": "Un support présent peut aider à évoquer un événement absent. L’absence de photographies ne définit pas l’évocation."
             }
           ],
-          "requiresContext": false
+          "requiresContext": false,
+          "level": "essentiel"
         },
         {
           "id": "Q2",
-          "prompt": "Dans la situation, l’enfant prépare un album écho pour raconter la sortie à une autre classe qui ne verra pas ses gestes. Quel objectif choisir pour ses prochains essais ?",
+          "prompt": "Après une sortie, un enfant prépare un album écho avec des photos. Il raconte « Là je fais ça et après là » en montrant les photos du doigt. Une autre classe écoutera sans voir ses gestes : quel objectif travailler ?",
           "correctId": "b",
           "choices": [
             {
@@ -509,7 +513,7 @@
             {
               "id": "b",
               "text": "Raconter les actions de la sortie en nommant ce que l’enfant montre du doigt.",
-              "explanation": "Les auditeurs ne verront pas les gestes. L’adulte vérifie avec l’enfant ce qu’il désigne par « là » et « ça », puis l’aide à nommer les objets et les actions pour les rendre compréhensibles dans le récit."
+              "explanation": "L’album écho associe des photos à des paroles reprises avec l’aide de l’adulte pour faire raconter l’expérience. Ici, les auditeurs ne verront pas les gestes : nommer les objets et les actions aide à comprendre ce que « là » et « ça » désignent."
             },
             {
               "id": "c",
@@ -522,10 +526,11 @@
               "explanation": "Expliquer le choix des photos fait parler du support. L’obstacle du récit porte ici sur les objets et actions que les auditeurs ne peuvent pas identifier."
             }
           ],
-          "requiresContext": true
+          "requiresContext": false,
+          "level": "essentiel"
         }
       ],
-      "qcmRevision": "a311e40fff63"
+      "qcmRevision": "0e8cb2a3343a"
     },
     {
       "id": "FRA-ORAL-F21-V1",
@@ -616,7 +621,8 @@
               "explanation": "L’anticipation et le support préparé organisent l’oral planifié. Les phrases peuvent encore être formulées au moment de parler."
             }
           ],
-          "requiresContext": false
+          "requiresContext": false,
+          "level": "essentiel"
         }
       ],
       "qcmRevision": "5a20f4d2bc0c"
@@ -714,7 +720,8 @@
               "explanation": "Cette question fait recenser des règles existantes. Elle ne fait pas encore examiner les raisons qui les rendent justes ou injustes."
             }
           ],
-          "requiresContext": true
+          "requiresContext": true,
+          "level": "essentiel"
         },
         {
           "id": "Q3",
@@ -742,7 +749,8 @@
               "explanation": "Cette relance fait interpréter l’intention du personnage à partir de l’histoire. Elle ne vise pas d’abord le sens général du don."
             }
           ],
-          "requiresContext": false
+          "requiresContext": false,
+          "level": "essentiel"
         },
         {
           "id": "Q4",
@@ -770,7 +778,8 @@
               "explanation": "Demander une raison fait soutenir une affirmation : cela vise d’abord l’argumentation, plutôt que la difficulté à examiner."
             }
           ],
-          "requiresContext": false
+          "requiresContext": false,
+          "level": "essentiel"
         }
       ],
       "qcmRevision": "446848253e2d"
@@ -876,7 +885,8 @@
               "explanation": "Développer la vie à l’abri prolongerait la fin du récit. Cela n’expliquerait pas comment les passagers y sont arrivés."
             }
           ],
-          "requiresContext": false
+          "requiresContext": false,
+          "level": "essentiel"
         }
       ],
       "qcmRevision": "aba0c2115015"
@@ -970,7 +980,8 @@
               "explanation": "Le dispositif inné d’acquisition du langage appartient à l’approche de Chomsky. Le cours ne lui attribue pas la détermination des stades de Piaget."
             }
           ],
-          "requiresContext": false
+          "requiresContext": false,
+          "level": "essentiel"
         },
         {
           "id": "Q2",
@@ -998,7 +1009,8 @@
               "explanation": "Le dispositif inné d’acquisition du langage (LAD) est l’hypothèse de Chomsky. Vygotski met ici au premier plan la médiation sociale et le rôle du langage dans la pensée."
             }
           ],
-          "requiresContext": false
+          "requiresContext": false,
+          "level": "essentiel"
         }
       ],
       "qcmRevision": "8d2c432bc05f"
@@ -1096,7 +1108,8 @@
               "explanation": "Le schéma stimulus–réponse–renforcement relie la réponse à ses conséquences, qui peuvent favoriser sa répétition."
             }
           ],
-          "requiresContext": false
+          "requiresContext": false,
+          "level": "essentiel"
         },
         {
           "id": "Q2",
@@ -1124,7 +1137,8 @@
               "explanation": "Les règles universelles et le dispositif inné renvoient à Chomsky. Le format est un scénario d’interaction, pas un dispositif biologique."
             }
           ],
-          "requiresContext": false
+          "requiresContext": false,
+          "level": "essentiel"
         },
         {
           "id": "Q3",
@@ -1152,7 +1166,8 @@
               "explanation": "Le langage dépendant des capacités cognitives correspond à la présentation constructiviste de Piaget."
             }
           ],
-          "requiresContext": false
+          "requiresContext": false,
+          "level": "essentiel"
         }
       ],
       "qcmRevision": "9fbe7e4e79a8"
@@ -1246,7 +1261,8 @@
               "explanation": "Le niveau sans assistance est le développement actuel. Le décrire seul ne donne pas la distance avec le niveau potentiel."
             }
           ],
-          "requiresContext": false
+          "requiresContext": false,
+          "level": "essentiel"
         }
       ],
       "qcmRevision": "a9ec1fab1c3c"
@@ -1360,7 +1376,8 @@
               "explanation": "L’extension enrichit le contenu du message ; une reformulation sans extension change sa forme en gardant ses informations."
             }
           ],
-          "requiresContext": false
+          "requiresContext": false,
+          "level": "essentiel"
         },
         {
           "id": "Q5",
@@ -1388,7 +1405,8 @@
               "explanation": "L’adulte combine le sujet singulier « la voiture » avec « est ». Il modifie ainsi la construction de la phrase et garde l’information sur la panne."
             }
           ],
-          "requiresContext": false
+          "requiresContext": false,
+          "level": "essentiel"
         }
       ],
       "qcmRevision": "e17e1e11be31"
@@ -1502,7 +1520,8 @@
               "explanation": "Les deux consonnes sont fricatives : l’air passe avec friction. Une fermeture brève changerait le mode plutôt que le voisement."
             }
           ],
-          "requiresContext": false
+          "requiresContext": false,
+          "level": "essentiel"
         },
         {
           "id": "Q3",
@@ -1530,7 +1549,8 @@
               "explanation": "Les deux formes produites correspondent aux deux mots. Ce nouvel essai montre un contraste réalisé ; d’autres observations en examineront la stabilité."
             }
           ],
-          "requiresContext": false
+          "requiresContext": false,
+          "level": "essentiel"
         },
         {
           "id": "Q4",
@@ -1558,7 +1578,8 @@
               "explanation": "[t] et [k] sont tous deux des occlusives. Un passage d’air continu changerait leur mode d’articulation, pas le lieu visé."
             }
           ],
-          "requiresContext": false
+          "requiresContext": false,
+          "level": "essentiel"
         }
       ],
       "qcmRevision": "f7aa091a7820"
@@ -1660,7 +1681,8 @@
               "explanation": "Augmenter les occurrences d’un même mot ne multiplie pas les mots acquis. Cela ne définit pas une explosion lexicale."
             }
           ],
-          "requiresContext": false
+          "requiresContext": false,
+          "level": "essentiel"
         },
         {
           "id": "Q3",
@@ -1688,7 +1710,8 @@
               "explanation": "Le pointage relie le mot entendu à son référent sans exiger sa production. L’adulte doit éviter un geste qui donnerait la réponse."
             }
           ],
-          "requiresContext": false
+          "requiresContext": false,
+          "level": "essentiel"
         },
         {
           "id": "Q4",
@@ -1716,7 +1739,8 @@
               "explanation": "Distinguer des objets ne montre pas une accélération de l’acquisition de mots. L’observation porte sur le domaine restreint de « balle »."
             }
           ],
-          "requiresContext": false
+          "requiresContext": false,
+          "level": "essentiel"
         },
         {
           "id": "Q5",
@@ -1744,7 +1768,8 @@
               "explanation": "Étendre un mot à davantage d’objets concerne son domaine d’emploi, notamment la sur-extension, et non la vitesse d’acquisition du répertoire."
             }
           ],
-          "requiresContext": false
+          "requiresContext": false,
+          "level": "essentiel"
         }
       ],
       "qcmRevision": "914a17200ac1"
@@ -1862,7 +1887,8 @@
               "explanation": "« Parce que » relie la demande à sa raison. Cette construction figure parmi les phrases complexes de la progression."
             }
           ],
-          "requiresContext": false
+          "requiresContext": false,
+          "level": "essentiel"
         },
         {
           "id": "Q3",
@@ -1890,7 +1916,8 @@
               "explanation": "Les actions changent, mais le témoin parle du même garçon à la troisième personne du singulier. Il peut conserver « il » ; cet aménagement ne fait pas varier les pronoms personnels."
             }
           ],
-          "requiresContext": false
+          "requiresContext": false,
+          "level": "essentiel"
         }
       ],
       "qcmRevision": "1da7dd57b256"
@@ -1902,7 +1929,7 @@
       "context": "Trois enfants préparent oralement le récit d’un atelier cuisine. A dit : « Hier on a fabriqué la pâte. Maintenant on découpe les biscuits. Après on va les cuire. » B évoque la veille : « On avait préparé la pâte ; on était prêts ; on allait découper les biscuits. » C projette le lendemain : « Les biscuits seront prêts : nous les aurons cuits. Ensuite, nous irons en préparer d’autres. » C précise qu’il envisage la suite de l’activité dans la même cuisine ; il n’annonce pas un déplacement.",
       "prompt": "Compare les points de référence temporels des trois extraits. Justifie l’organisation des événements par les trois formes de chaque système, y compris aller au futur dans C. Propose une relance vérifiant la compréhension d’une relation temporelle au-delà de la répétition des formes.",
       "hints": [
-        "• Système à trois temps : Organisation en trois séries : présent / passé composé / futur avec aller ; imparfait / plus-que-parfait / futur avec aller à l’imparfait ; futur simple / futur antérieur / futur avec aller au futur.\nChaque série organise un avant et un après autour d’un repère présent, passé ou futur. Un temps relatif se lit par rapport à ce repère, pas seulement par rapport au moment où l’on parle. Le verbe aller conjugué suivi d’un infinitif peut servir à envisager une suite ; le contexte permet de le distinguer d’un déplacement.",
+        "La progression de Boisseau présente notamment trois systèmes de temps verbaux pour organiser les événements autour d’un repère présent, passé ou futur.\n• Système à trois temps : Organisation en trois séries : présent / passé composé / futur avec aller ; imparfait / plus-que-parfait / futur avec aller à l’imparfait ; futur simple / futur antérieur / futur avec aller au futur.\nChaque série organise un avant et un après autour d’un repère présent, passé ou futur. Un temps relatif se lit par rapport à ce repère, pas seulement par rapport au moment où l’on parle. Le verbe aller conjugué suivi d’un infinitif peut servir à envisager une suite ; le contexte permet de le distinguer d’un déplacement.",
         "Le passé composé peut situer un accompli avant le présent ; le plus-que-parfait, avant un repère passé ; le futur antérieur, avant un repère futur. Le futur avec aller se construit avec aller au présent, à l’imparfait ou au futur selon le système. Le tableau de progression abrège « futur aller dans le futur » en « futur dans le futur ». Identifie le repère puis les rapports entre événements ; reconnaître une terminaison ne suffit pas. Les sections d’âge sont des repères, pas un diagnostic."
       ],
       "criteria": [
@@ -1980,7 +2007,7 @@
             {
               "id": "c",
               "text": "Le repère est présent : l’accompli et le projet s’organisent autour de l’activité actuelle.",
-              "explanation": "« A fabriqué » marque un avant et « va cuire » un après autour de « découpe ». Cela correspond au système de Boisseau centré sur le présent : présent, passé composé, puis « aller » au présent suivi d’un infinitif."
+              "explanation": "La progression de Boisseau organise les temps verbaux en systèmes centrés sur un repère. « A fabriqué » situe un avant et « va cuire » un après par rapport à « découpe », au présent : c’est le premier système."
             },
             {
               "id": "d",
@@ -1988,7 +2015,8 @@
               "explanation": "Un locuteur parle maintenant même quand il prend un repère passé ou futur. Le moment de parole ne suffit donc pas à identifier ce système."
             }
           ],
-          "requiresContext": false
+          "requiresContext": false,
+          "level": "essentiel"
         },
         {
           "id": "Q2",
@@ -1998,7 +2026,7 @@
             {
               "id": "a",
               "text": "Une action envisagée après ce moment passé.",
-              "explanation": "Aller à l’imparfait suivi de l’infinitif projette ici la suite depuis « était prêts ». Cette suite est future par rapport au repère passé."
+              "explanation": "Les systèmes à trois temps de Boisseau organisent un avant et un après autour d’un repère présent, passé ou futur. Ici, « allait découper » envisage une suite à partir de « était prêts » : cette suite est future par rapport à ce moment passé."
             },
             {
               "id": "b",
@@ -2016,7 +2044,8 @@
               "explanation": "L’action est projetée depuis « on était prêts », la veille. Elle n’est pas présentée comme future par rapport au moment où l’enfant raconte."
             }
           ],
-          "requiresContext": false
+          "requiresContext": false,
+          "level": "essentiel"
         },
         {
           "id": "Q3",
@@ -2031,7 +2060,7 @@
             {
               "id": "b",
               "text": "aller au futur suivi d’un infinitif",
-              "explanation": "La série associe le futur simple, le futur antérieur et « aller » au futur suivi d’un infinitif : par exemple « nous irons préparer ». Cette dernière construction envisage une suite depuis un repère futur."
+              "explanation": "Boisseau décrit trois systèmes de temps verbaux, chacun organisé autour d’un repère. Le troisième se centre sur un repère futur : futur simple, futur antérieur et aller au futur suivi d’un infinitif, qui envisage une suite depuis ce repère."
             },
             {
               "id": "c",
@@ -2044,10 +2073,11 @@
               "explanation": "« Aller » au passé composé présente un déplacement passé. La série demandée utilise « aller » au futur pour envisager une suite depuis un repère futur."
             }
           ],
-          "requiresContext": false
+          "requiresContext": false,
+          "level": "essentiel"
         }
       ],
-      "qcmRevision": "10b530a4867e"
+      "qcmRevision": "0a2a012bfcb7"
     },
     {
       "id": "FRA-ORAL-F14-V1",
@@ -2142,7 +2172,8 @@
               "explanation": "Une reformulation peut garder le sens tout en changeant la structure. Ici, le projet reste le même et le lien de but devient explicite."
             }
           ],
-          "requiresContext": false
+          "requiresContext": false,
+          "level": "essentiel"
         }
       ],
       "qcmRevision": "83f85dd1d0d8"
@@ -2244,7 +2275,8 @@
               "explanation": "La perte pose une complication. Le récit développe des tentatives puis s’arrête avant de montrer comment le problème se règle : la résolution est suspendue. Ce critère caractérise ici le récit d’imagination chez Terwagne et Vanesse."
             }
           ],
-          "requiresContext": true
+          "requiresContext": true,
+          "level": "essentiel"
         }
       ],
       "qcmRevision": "27bc01326436"
@@ -2350,7 +2382,8 @@
               "explanation": "Un bilingue peut avoir des compétences différentes selon les langues et les domaines. Un niveau égal ne définit pas le simultané."
             }
           ],
-          "requiresContext": false
+          "requiresContext": false,
+          "level": "essentiel"
         },
         {
           "id": "Q3",
@@ -2378,7 +2411,8 @@
               "explanation": "Une phase muette est fréquente dans l’apprentissage consécutif, mais la faible production ne définit pas sa catégorie chronologique."
             }
           ],
-          "requiresContext": false
+          "requiresContext": false,
+          "level": "essentiel"
         },
         {
           "id": "Q4",
@@ -2406,38 +2440,40 @@
               "explanation": "L’écrit peut entrer en jeu dans l’acquisition tardive. Savoir lire n’est cependant pas le critère de définition de cette catégorie."
             }
           ],
-          "requiresContext": false
+          "requiresContext": false,
+          "level": "essentiel"
         },
         {
           "id": "Q5",
-          "prompt": "Un élève sait expliquer en arabe les étapes et les causes d’une expérience. En français, il nomme le matériel mais juxtapose les actions. Il doit expliquer l’expérience à ses camarades en français. Quel appui sur l’arabe répond à cet obstacle ?",
+          "prompt": "Quel rôle peuvent jouer les connaissances qu’un élève a construites dans sa langue familiale lorsqu’il apprend le français de scolarisation ?",
           "correctId": "b",
           "choices": [
             {
               "id": "a",
-              "text": "Lui faire présenter l’expérience en arabe après l’exposé français pour vérifier ses connaissances.",
-              "explanation": "La connaissance du phénomène est déjà observée en arabe. La vérifier à nouveau ne fait pas construire les relations manquantes dans l’explication française."
+              "text": "Montrer les formes grammaticales que l’élève sait déjà utiliser pour s’exprimer dans la langue de scolarisation.",
+              "explanation": "Connaître un contenu dans une langue ne renseigne pas directement sur les formes que l’élève peut produire en français. Les connaissances disponibles et leur formulation dans une autre langue sont deux choses à examiner."
             },
             {
               "id": "b",
-              "text": "Lui faire organiser étapes et causes en arabe, puis travailler leur formulation en français.",
-              "explanation": "Les étapes et les causes sont déjà disponibles dans une langue. Les reprendre pour en travailler l’expression française relie la ressource à l’obstacle observé."
+              "text": "Servir d’appui pour comprendre un contenu et apprendre à l’exprimer dans la langue de scolarisation.",
+              "explanation": "La langue de scolarisation sert à apprendre dans toutes les disciplines. Les connaissances construites dans une autre langue sont des ressources sur lesquelles s’appuyer ; apprendre à les exprimer en français reste un travail à accompagner."
             },
             {
               "id": "c",
-              "text": "Lui faire établir un lexique arabe–français du matériel, puis réemployer les noms dans l’exposé.",
-              "explanation": "Le lexique du matériel est déjà disponible en français. Une liste de noms ne fait pas directement exprimer les liens entre les actions."
+              "text": "Situer le début des acquisitions pour distinguer les bilinguismes précoce simultané, précoce consécutif et tardif.",
+              "explanation": "Les catégories simultané, consécutif et tardif se déterminent à partir du début de l’exposition aux langues. La présence de connaissances dans une langue ne donne pas, à elle seule, cette chronologie."
             },
             {
               "id": "d",
-              "text": "Lui faire échanger des questions familières en arabe, puis les reprendre en conversation française.",
-              "explanation": "La conversation peut soutenir la communication, mais sa cible diffère de l’explication scolaire structurée. Ici, il faut travailler étapes et causes."
+              "text": "Établir le temps d’exposition au français pour estimer le lexique que l’élève a pu y construire.",
+              "explanation": "Le temps d’exposition peut éclairer le lexique disponible en français. Des connaissances construites dans une autre langue ne mesurent pas ce temps : elles sont ici envisagées comme un appui pour apprendre."
             }
           ],
-          "requiresContext": false
+          "requiresContext": false,
+          "level": "essentiel"
         }
       ],
-      "qcmRevision": "3bb3e6f6724f"
+      "qcmRevision": "fd08f2277719"
     },
     {
       "id": "FRA-ORAL-F20-V1",
@@ -2536,7 +2572,8 @@
               "explanation": "Une restitution fidèle des mots peut mobiliser la mémoire sans montrer leur interprétation. La compréhension vise le sens construit."
             }
           ],
-          "requiresContext": false
+          "requiresContext": false,
+          "level": "essentiel"
         }
       ],
       "qcmRevision": "91942eb54392"
@@ -2638,7 +2675,8 @@
               "explanation": "Le lien causal construit une phrase complexe. Il ne définit pas la dislocation, qui concerne ici l’organisation du sujet."
             }
           ],
-          "requiresContext": false
+          "requiresContext": false,
+          "level": "essentiel"
         }
       ],
       "qcmRevision": "12e039b0546e"
@@ -2740,7 +2778,8 @@
               "explanation": "Volume et intonation relèvent du paraverbal. Le geste coverbal décrit un moyen corporel associé aux mots."
             }
           ],
-          "requiresContext": false
+          "requiresContext": false,
+          "level": "essentiel"
         },
         {
           "id": "Q2",
@@ -2768,7 +2807,8 @@
               "explanation": "Ces moyens corporels relèvent du non-verbal ; lorsqu’ils accompagnent la parole, ils peuvent aussi être coverbaux."
             }
           ],
-          "requiresContext": false
+          "requiresContext": false,
+          "level": "essentiel"
         }
       ],
       "qcmRevision": "4cf3ade5fe6d"
@@ -2870,7 +2910,8 @@
               "explanation": "Les capacités de compréhension et de production orales deviennent elles-mêmes les apprentissages visés et observés."
             }
           ],
-          "requiresContext": false
+          "requiresContext": false,
+          "level": "essentiel"
         }
       ],
       "qcmRevision": "f74eda83c1be"
@@ -2964,7 +3005,8 @@
               "explanation": "Le cours prévoit l’interaction des genres oraux et écrits apparentés, pas leur traitement dans cet ordre unique."
             }
           ],
-          "requiresContext": false
+          "requiresContext": false,
+          "level": "essentiel"
         }
       ],
       "qcmRevision": "c76e39909c93"
@@ -3074,7 +3116,8 @@
               "explanation": "Les cartes fournissent des supports et des contenus. La textualisation concerne les unités par lesquelles le narrateur relie et formule ces contenus."
             }
           ],
-          "requiresContext": true
+          "requiresContext": true,
+          "level": "essentiel"
         }
       ],
       "qcmRevision": "a041f5283c4b"
@@ -3160,62 +3203,35 @@
       "steps": [
         {
           "id": "Q1",
-          "prompt": "Dans la DVDP de Tozzi, quelle responsabilité appartient à la présidence de séance ?",
+          "prompt": "Dans une discussion à visée démocratique et philosophique (DVDP) de Tozzi, que fait la présidence de séance ?",
           "correctId": "a",
           "choices": [
             {
               "id": "a",
-              "text": "Distribuer les tours selon les règles démocratiques et respecter le droit de se taire.",
-              "explanation": "La présidence organise la forme démocratique : elle distribue les tours, donne priorité aux personnes peu intervenues et respecte le droit de se taire."
+              "text": "Elle distribue les tours de parole et règle leur organisation.",
+              "explanation": "La DVDP répartit les rôles pour articuler un échange démocratique et un travail philosophique. La présidence organise les tours de parole ; l’animation travaille le contenu en faisant préciser et relier les idées."
             },
             {
               "id": "b",
-              "text": "Faire préciser les concepts et mettre les arguments en relation avec la question.",
-              "explanation": "Le travail sur le fond et la progression des idées relève de l’animation. Il se distingue de l’attribution des tours."
+              "text": "Elle fait préciser les idées et relie les arguments.",
+              "explanation": "Faire préciser et relier les idées relève de l’animation du contenu. Cette responsabilité se distingue de l’organisation des tours confiée à la présidence."
             },
             {
               "id": "c",
-              "text": "Écouter une intervention puis la redire fidèlement à la demande de l’enseignant.",
-              "explanation": "Cette responsabilité est celle du reformulateur : restituer le propos d’un camarade plutôt qu’organiser la parole."
+              "text": "Elle redit fidèlement une intervention d’un autre élève.",
+              "explanation": "Restituer fidèlement une intervention est la tâche de reformulation. Elle fait reprendre le sens du propos d’un camarade, plutôt que distribuer la parole."
             },
             {
               "id": "d",
-              "text": "Prendre des notes sur les idées comprises et les restituer à la fin de la discussion.",
-              "explanation": "Cette responsabilité est celle du synthétiseur, qui rend compte de ce qu’il a compris de l’ensemble de la discussion."
+              "text": "Elle rassemble les idées de la discussion pour les restituer.",
+              "explanation": "Rassembler les idées de la discussion relève de la synthèse. Celle-ci restitue le travail collectif, tandis que la présidence organise les prises de parole."
             }
           ],
-          "requiresContext": false
-        },
-        {
-          "id": "Q2",
-          "prompt": "À la fin d’une DVDP, le groupe a discuté deux idées : partager la même quantité, ou tenir compte des besoins. Une objection porte sur la manière de connaître ces besoins. Que doit restituer l’élève chargé de la synthèse, à partir de ses notes ?",
-          "correctId": "b",
-          "choices": [
-            {
-              "id": "a",
-              "text": "Le dernier propos sur la façon de connaître les besoins, reformulé fidèlement.",
-              "explanation": "Redire un propos fidèlement relève de la reformulation. La synthèse finale doit rendre compte du travail de la discussion dans son ensemble."
-            },
-            {
-              "id": "b",
-              "text": "Les deux conceptions du partage et la difficulté soulevée pour l’une d’elles.",
-              "explanation": "Le synthétiseur reprend ce qu’il a compris des idées et de leurs liens, y compris la difficulté discutée. Il n’a pas à décider quelle thèse gagne."
-            },
-            {
-              "id": "c",
-              "text": "Le nombre de tours accordés en priorité aux élèves qui n’avaient pas parlé.",
-              "explanation": "Ce relevé convient à l’observation du fonctionnement démocratique et des rôles, plutôt qu’à la synthèse du contenu discuté."
-            },
-            {
-              "id": "d",
-              "text": "Le compromis qu’il juge le meilleur après avoir écouté les points de vue.",
-              "explanation": "Proposer un compromis personnel relève du rôle de discutant. Une synthèse restitue les idées effectivement exprimées plutôt que d’ajouter sa propre solution."
-            }
-          ],
-          "requiresContext": false
+          "requiresContext": false,
+          "level": "essentiel"
         }
       ],
-      "qcmRevision": "0aa48a2a451e"
+      "qcmRevision": "37431db24916"
     },
     {
       "id": "FRA-ORAL-F33-V1",
@@ -3314,7 +3330,8 @@
               "explanation": "Cette responsabilité est la reformulation dans une discussion. Le rôle langagier confié à un élève se distingue du personnage qu’il joue."
             }
           ],
-          "requiresContext": false
+          "requiresContext": false,
+          "level": "essentiel"
         }
       ],
       "qcmRevision": "7266e4d00636"
@@ -3326,7 +3343,7 @@
       "context": "Deux enfants francophones jouent. A dit : « Mets-le là. » B demande : « Quel objet et où ? » A désigne alors le cube rouge et le plateau. Après cette précision, B pose le cube sur le plateau. Les deux enfants connaissent les mots employés, mais ne regardaient pas le même objet au départ.",
       "prompt": "Distingue langage, langue et parole sur cette situation en justifiant chaque niveau. Explique ensuite pourquoi partager une langue ne suffisait pas à éviter le malentendu et ce que la précision apporte.",
       "hints": [
-        "• Langage : Activité psychologique par laquelle un sujet produit du sens au moyen d’une langue.\n• Langue : Ensemble de signes utilisés par une communauté pour communiquer ; de nature sociale.\n• Parole : Utilisation concrète des signes linguistiques dans un contexte précis.",
+        "Ces repères réunissent la définition du langage de Brigaudiot et la distinction entre langue et parole de Saussure.\n• Langage : Activité psychologique par laquelle un sujet produit du sens au moyen d’une langue.\n• Langue : Ensemble de signes utilisés par une communauté pour communiquer ; de nature sociale.\n• Parole : Utilisation concrète des signes linguistiques dans un contexte précis.",
         "Ces trois niveaux sont liés : une production précise mobilise un système partagé et une activité de construction du sens. Ils ne désignent pas trois objets séparés présents à tour de rôle.\nAppuie chaque distinction sur ce que la situation montre, puis examine ce qu’elle change pour comprendre une réussite ou un malentendu. Le nombre de langues utilisées ne correspond pas au nombre de capacités de langage d’une personne."
       ],
       "criteria": [
@@ -3390,7 +3407,7 @@
             {
               "id": "a",
               "text": "L’activité psychologique par laquelle un sujet produit du sens au moyen d’une langue.",
-              "explanation": "Le langage est une activité du sujet qui construit du sens au moyen d’une langue ; il ne désigne pas seulement le code disponible."
+              "explanation": "Brigaudiot définit le langage comme une activité psychologique par laquelle un sujet produit du sens au moyen d’une langue. Ce n’est ni le système de signes disponible, qui est la langue, ni seulement son emploi concret, qui est la parole."
             },
             {
               "id": "b",
@@ -3408,7 +3425,8 @@
               "explanation": "La connaissance des règles concerne des ressources linguistiques. L’activité de langage les mobilise pour signifier, plutôt que de s’y réduire."
             }
           ],
-          "requiresContext": false
+          "requiresContext": false,
+          "level": "essentiel"
         },
         {
           "id": "Q4",
@@ -3433,10 +3451,11 @@
             {
               "id": "d",
               "text": "L’utilisation concrète des signes linguistiques dans un contexte précis.",
-              "explanation": "La parole est de nature individuelle : une personne emploie effectivement les signes dans une situation précise."
+              "explanation": "Saussure distingue la langue, système social de signes, et la parole, utilisation concrète de ces signes. La parole correspond à l’usage individuel en contexte, et non au système disponible dans la communauté."
             }
           ],
-          "requiresContext": false
+          "requiresContext": false,
+          "level": "essentiel"
         },
         {
           "id": "Q5",
@@ -3451,7 +3470,7 @@
             {
               "id": "b",
               "text": "Elle constitue un système de signes utilisé par une communauté.",
-              "explanation": "La langue est le système partagé par la communauté pour communiquer. Sa nature sociale ne dépend pas du nombre de personnes présentes dans un échange."
+              "explanation": "Saussure distingue la langue, système social partagé, et la parole, son utilisation concrète. La langue est sociale parce que ses signes sont utilisés par une communauté ; cette propriété ne dépend pas du nombre de personnes présentes dans un échange."
             },
             {
               "id": "c",
@@ -3464,10 +3483,11 @@
               "explanation": "Un relevé d’échange conserve des réalisations de parole. Plusieurs réalisations ne constituent pas à elles seules le système de la langue."
             }
           ],
-          "requiresContext": false
+          "requiresContext": false,
+          "level": "essentiel"
         }
       ],
-      "qcmRevision": "9c9c24e3cada"
+      "qcmRevision": "a54d64eea25a"
     },
     {
       "id": "FRA-ORAL-F04-V2",
@@ -3562,7 +3582,8 @@
               "explanation": "Le français assure la médiation des apprentissages dans les différentes disciplines ; il est alors outil d’apprentissage."
             }
           ],
-          "requiresContext": false
+          "requiresContext": false,
+          "level": "essentiel"
         }
       ],
       "qcmRevision": "45c2b3547e76"
@@ -3668,7 +3689,8 @@
               "explanation": "Le domaine d’emploi d’un mot concerne les généralisations, comme les sous- et sur-extensions. Ce n’est pas la boucle cumulative de l’effet Matthieu."
             }
           ],
-          "requiresContext": false
+          "requiresContext": false,
+          "level": "essentiel"
         }
       ],
       "qcmRevision": "e87ecbaeefeb"
@@ -3762,7 +3784,8 @@
               "explanation": "La didactisation retient les caractéristiques que les élèves doivent apprendre à comprendre ou à produire, dans des textes entiers ou partiels."
             }
           ],
-          "requiresContext": false
+          "requiresContext": false,
+          "level": "essentiel"
         }
       ],
       "qcmRevision": "c6b1033de9b6"
@@ -3860,7 +3883,8 @@
               "explanation": "Répéter les noms est un moyen possible, pas une condition de chaque action. L’indicateur doit examiner l’identification, sans imposer ce procédé unique."
             }
           ],
-          "requiresContext": false
+          "requiresContext": false,
+          "level": "essentiel"
         }
       ],
       "qcmRevision": "4e8ecff3f0cd"
@@ -3974,7 +3998,8 @@
               "explanation": "Malik prend le propos d’Inès comme point de départ de son hypothèse. Ce lien de contenu, plutôt que le simple fait de parler après elle, montre l’écoute marquée."
             }
           ],
-          "requiresContext": false
+          "requiresContext": false,
+          "level": "essentiel"
         },
         {
           "id": "Q4",
@@ -4002,7 +4027,8 @@
               "explanation": "Dans ce cadre, le dialogue est guidé par un but et peut réunir plusieurs élèves. Deux participants ne sont pas une condition de définition."
             }
           ],
-          "requiresContext": false
+          "requiresContext": false,
+          "level": "essentiel"
         },
         {
           "id": "Q5",
@@ -4030,7 +4056,8 @@
               "explanation": "L’alternance des locuteurs et le thème commun ne suffisent pas. Une paire adjacente suppose que le second tour accomplisse une réponse attendue par le premier."
             }
           ],
-          "requiresContext": false
+          "requiresContext": false,
+          "level": "essentiel"
         }
       ],
       "qcmRevision": "509503352dd8"
@@ -4042,8 +4069,8 @@
       "context": "Un étudiant prépare une explication pour ses pairs. Il dit : « Dès que je m’écoute enregistré, je trouve ma voix ridicule ; je supprime tout. Une bonne explication devrait sortir spontanément. » Pendant un essai sans enregistrement, il accélère et dépasse le temps prévu. Il souhaite progresser, mais refuse les retours qui portent seulement sur son aisance générale.",
       "prompt": "Analyse les dimensions du rapport à l’oral visibles dans ses propos et les facteurs de stress possibles. Sépare observations et inférences. Propose deux modalités de préparation ou de retour qui l’aident à apprendre sur un objectif précis. Appuie la distinction des dimensions sur le schéma de Colognesi présenté en C03 ; explique ce qui distingue ses conceptions, ses pratiques et sa prise de recul sur une production.",
       "hints": [
-        "• Rapport à l’oral : Croyances qu’une personne se construit au fil de sa vie à propos de la parole et de l’écoute. Elles s’examinent à travers les dimensions affective, conceptuelle, métadiscursive, praxéologique, relationnelle, interactionnelle, axiologique et identitaire.\nDans le schéma C03d13 : affectif = émotions et sentiments à propos de l’oral ; conceptuel = conceptions de l’oral et de son apprentissage ; métadiscursif = verbalisation et prise de recul sur les activités de parole et d’écoute ; praxéologique = pratiques de parole et d’écoute.",
-        "Le même schéma distingue relationnel = aspects de l’entrée en relation ; interactionnel = façon d’envisager l’interaction selon les contextes ; axiologique = valeurs et opinions attribuées à l’oral ; identitaire = filtres liés à l’identité des personnes qui parlent et écoutent. Ces dimensions peuvent se croiser : justifie celle que les faits permettent d’examiner, sans en faire un trait fixe de personnalité.\n• Régulation émotionnelle : Processus par lesquels une personne agit sur les émotions qu’elle ressent, leur apparition et sa manière de les vivre et de les exprimer.\nLe stress peut dépendre du jugement, de l’enjeu, de la préparation, du sujet, du lieu, de la taille et du statut de l’audience. Une manifestation vocale ne prouve pas seule sa cause. Garde un objectif d’apprentissage observable et examine les effets d’un aménagement. Dans le schéma de C03, une prise de recul sur une production se distingue du simple fait de la pratiquer ; relationnel et interactionnel ne désignent pas le même objet. Les notes personnelles C03 rapprochent métadiscursif et transformation des croyances ; les questions utilisent ici le sens du schéma (verbalisation et prise de recul), sans confondre l’activité de réflexion avec son effet possible sur les croyances."
+        "• Rapport à l’oral : Croyances qu’une personne se construit au fil de sa vie à propos de la parole et de l’écoute. Elles s’examinent à travers les dimensions affective, conceptuelle, métadiscursive, praxéologique, relationnelle, interactionnelle, axiologique et identitaire.\nLe schéma de Colognesi et ses collègues (2023) organise ces huit dimensions du rapport à l’oral. Il distingue notamment : affectif = émotions et sentiments à propos de l’oral ; conceptuel = conceptions de l’oral et de son apprentissage ; métadiscursif = verbalisation et prise de recul sur les activités de parole et d’écoute ; praxéologique = pratiques de parole et d’écoute.",
+        "Le même schéma distingue relationnel = aspects de l’entrée en relation ; interactionnel = façon d’envisager l’interaction selon les contextes ; axiologique = valeurs et opinions attribuées à l’oral ; identitaire = filtres liés à l’identité des personnes qui parlent et écoutent. Ces dimensions peuvent se croiser : justifie celle que les faits permettent d’examiner, sans en faire un trait fixe de personnalité.\n• Régulation émotionnelle : Processus par lesquels une personne agit sur les émotions qu’elle ressent, leur apparition et sa manière de les vivre et de les exprimer.\nLe stress peut dépendre du jugement, de l’enjeu, de la préparation, du sujet, du lieu, de la taille et du statut de l’audience. Une manifestation vocale ne prouve pas seule sa cause. Garde un objectif d’apprentissage observable et examine les effets d’un aménagement. Dans le schéma de Colognesi, une prise de recul sur une production se distingue du simple fait de la pratiquer ; relationnel et interactionnel ne désignent pas le même objet. Certaines notes personnelles rapprochent métadiscursif et transformation des croyances ; les questions utilisent ici le sens du schéma (verbalisation et prise de recul), sans confondre l’activité de réflexion avec son effet possible sur les croyances."
       ],
       "criteria": [
         {
@@ -4119,7 +4146,7 @@
             {
               "id": "b",
               "text": "La verbalisation et la prise de recul sur les activités de parole et d’écoute.",
-              "explanation": "Le schéma associe le métadiscursif à une mise en mots et un recul sur l’activité. Réfléchir à une production se distingue du simple fait de la pratiquer."
+              "explanation": "Le schéma de Colognesi et ses collègues (2023) examine le rapport à la parole et à l’écoute selon huit dimensions. Le métadiscursif concerne la verbalisation et la prise de recul sur une activité orale ; les pratiques elles-mêmes relèvent du praxéologique."
             },
             {
               "id": "c",
@@ -4132,7 +4159,8 @@
               "explanation": "Ces valeurs et opinions relèvent de l’axiologique, plutôt que du retour réflexif sur une activité."
             }
           ],
-          "requiresContext": false
+          "requiresContext": false,
+          "level": "approfondissement"
         },
         {
           "id": "Q3",
@@ -4157,14 +4185,15 @@
             {
               "id": "d",
               "text": "La façon d’envisager les échanges selon les contextes.",
-              "explanation": "L’interactionnel concerne la manière d’envisager l’échange en fonction de la situation. Le relationnel concerne plutôt les aspects de l’entrée en relation."
+              "explanation": "Le schéma de Colognesi et ses collègues (2023) examine le rapport à la parole et à l’écoute selon huit dimensions. L’interactionnel concerne la manière d’envisager les échanges selon les contextes ; le relationnel décrit l’entrée en relation."
             }
           ],
-          "requiresContext": false
+          "requiresContext": false,
+          "level": "approfondissement"
         }
       ],
-      "qcmRevision": "fa2e0d2b40a4"
+      "qcmRevision": "967adf2a4a7b"
     }
   ],
-  "bankRevision": "3d0aafecf2e0"
+  "bankRevision": "c182116470c9"
 }
