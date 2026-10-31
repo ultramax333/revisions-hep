@@ -1,6 +1,9 @@
 (function () {
   'use strict';
-  const DB = 'hep-revisions-quick-feedback-v1', COLLECTION = 'fra-qcm-oral';
+  const COLLECTION = window.QCM_COLLECTION?.id;
+  const scopes = { 'fra-qcm-oral': { subject: 'Français', prefix: 'HEP-QCM' }, 'cla-qcm-s1': { subject: 'Organisation de la classe', prefix: 'CLA-QCM' }, 'dev-qcm-uf1': { subject: 'Développement', prefix: 'DEV-QCM' } };
+  if (!Object.hasOwn(scopes, COLLECTION)) throw Error('Collection d’avis QCM incompatible.');
+  const DB = 'hep-revisions-quick-feedback-v1' + (COLLECTION === 'fra-qcm-oral' ? '' : '-' + COLLECTION);
   const SCHEMA = 'hep-qcm-votes-local/1', UUID = /^[0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/;
   const clone = value => JSON.parse(JSON.stringify(value));
   const keyOf = q => JSON.stringify([q.questionId, q.contentRevision]);
@@ -132,7 +135,7 @@
     });
   }
   function validate(raw) {
-    if (!keys(raw, ['schema', 'collection', 'threads', 'intents']) || raw.schema !== SCHEMA || raw.collection !== COLLECTION || !object(raw.threads) || !object(raw.intents)) fail('Choisis une sauvegarde dédiée aux avis QCM du bloc oral.');
+    if (!keys(raw, ['schema', 'collection', 'threads', 'intents']) || raw.schema !== SCHEMA || raw.collection !== COLLECTION || !object(raw.threads) || !object(raw.intents)) fail('Choisis une sauvegarde dédiée aux avis QCM de cette matière.');
     if (Object.keys(raw.threads).length > 10000 || Object.keys(raw.intents).length > 50000) fail('Cette sauvegarde contient trop d’éléments.');
     const threadIDs = new Set(), versions = new Set();
     for (const [key, t] of Object.entries(raw.threads)) {
@@ -170,5 +173,5 @@
       return counts(state);
     });
   }
-  window.HEPQuickStore = { read, setVote, setComment, prepare, claim, complete, restore, validate, validAck, counts, currentReceived, keyOf, subscribe(fn) { listeners.add(fn); return () => listeners.delete(fn); } };
+  window.HEPQuickStore = { collection: COLLECTION, subject: scopes[COLLECTION].subject, exportPrefix: scopes[COLLECTION].prefix, read, setVote, setComment, prepare, claim, complete, restore, validate, validAck, counts, currentReceived, keyOf, subscribe(fn) { listeners.add(fn); return () => listeners.delete(fn); } };
 }());
