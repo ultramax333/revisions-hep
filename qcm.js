@@ -7,7 +7,7 @@
   const S = HEPStore, KEY = collection.storageKey || 'hep-revisions-qcm-state-v1', SCOPE = collection.id || 'fra-qcm-pilote';
   const repo = new S.Repository({ getItem: () => localStorage.getItem(KEY), setItem: (_, value) => localStorage.setItem(KEY, value) });
   const app = document.getElementById('app');
-  let bank, byId, active = null, view = 'home', displayedRun = null, activeCourse = null;
+  let bank, byId, active = null, view = 'home', displayedRun = null, activeCourse = null, stepFeedback = null;
   const courseCursorKey = 'hep-revisions-qcm-course-position-v1::' + SCOPE;
   const esc = value => String(value ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
   const text = value => `<span class="exercise-text">${esc(value)}</span>`;
@@ -18,8 +18,52 @@
   function status() {
     document.querySelectorAll('[data-save-status]').forEach(node => { node.textContent = repo.warning || HEPDrive.status(); });
     document.querySelectorAll('[data-feedback-count]').forEach(node => { node.textContent = comments().length; });
+    updatePanelDrive();
   }
   function changed() { status(); HEPDrive.schedule(); }
+  function updatePanelDrive() {
+    const button = document.querySelector('[data-action="panel-drive"]');
+    if (button && button.dataset.busy !== 'true') {
+      button.disabled = false;
+      button.textContent = HEPDrive.connected() ? 'Synchroniser Drive ici' : 'Connecter Drive ici';
+    }
+  }
+  function bindStepSend(question, snap, field, category, panel, saveDraft) {
+    const button = panel.querySelector('[data-action="send-step"]'), message = panel.querySelector('[data-send-status]'), nameField = document.getElementById('feedback-first-name');
+    const binding = { sending: false, sequence: 0, timer: null };
+    const current = () => ({ firstName: nameField?.value || '', feedback: { questionId: question.id, contentRevision: question.contentRevision, category: category.value || 'autre', comment: field.value, snapshot: snap } });
+    const attached = () => panel.isConnected && stepFeedback === binding;
+    binding.refresh = async override => {
+      const sequence = ++binding.sequence; clearTimeout(binding.timer);
+      if (!attached() || binding.sending) return;
+      if (!field.value.trim()) { button.disabled = true; button.textContent = 'Envoyer à Maxim'; message.textContent = 'Brouillon : écris ton commentaire avant de l’envoyer.'; return; }
+      try {
+        if (!window.HEPFeedbackSend) throw new Error('L’envoi à Maxim n’est pas encore disponible. Ton brouillon est conservé.');
+        const state = await HEPFeedbackSend.inspect(current());
+        if (!attached() || sequence !== binding.sequence || binding.sending) return;
+        const wait = Math.max(0, Math.ceil((state.retryAt - Date.now()) / 1000));
+        button.disabled = state.sent || state.sending || wait > 0;
+        button.textContent = state.sent ? 'Envoyé' : state.sending ? 'Envoi en cours…' : state.pending ? 'Réessayer l’envoi' : 'Envoyer à Maxim';
+        message.textContent = state.sent ? 'Envoi reçu.' : override || (wait ? 'Réessaie dans ' + wait + ' secondes. Ton brouillon est conservé.' : state.pending ? 'Envoi non confirmé. Ton brouillon est conservé ; tu peux réessayer.' : 'Brouillon enregistré sur cet appareil. Prêt à envoyer à Maxim.');
+        if (wait) binding.timer = setTimeout(() => binding.refresh(), Math.min(wait * 1000, 1000));
+      } catch (error) { if (attached() && sequence === binding.sequence && !binding.sending) { button.disabled = false; button.textContent = 'Envoyer à Maxim'; message.textContent = error.message; } }
+    };
+    binding.send = async () => {
+      if (binding.sending || !field.value.trim()) return;
+      saveDraft();
+      if (repo.warning) { message.textContent = 'Le brouillon n’a pas pu être sauvegardé. Télécharge une sauvegarde avant de l’envoyer.'; return; }
+      const input = current(), sentContent = JSON.stringify(input);
+      binding.sending = true; button.disabled = true; button.textContent = 'Envoi en cours…'; button.setAttribute('aria-busy', 'true'); message.textContent = 'Envoi à Maxim en cours…';
+      let nextMessage;
+      try {
+        await HEPFeedbackSend.send(input);
+        if (JSON.stringify(current()) !== sentContent) nextMessage = 'Le retour envoyé a été reçu. Tes modifications restent à envoyer.';
+      } catch (error) { nextMessage = JSON.stringify(current()) === sentContent ? error.message : 'Le précédent envoi n’est pas confirmé. Tes modifications restent en brouillon.'; }
+      finally { binding.sending = false; button.removeAttribute('aria-busy'); if (attached()) binding.refresh(nextMessage); }
+    };
+    nameField?.addEventListener('input', () => binding.refresh());
+    stepFeedback = binding; binding.refresh(); return binding;
+  }
   function writeRun(q, run) {
     const key = runKey(q), previous = repo.state.drafts[key];
     repo.state.drafts[key] = { text: JSON.stringify(run), updatedAt: new Date(Math.max(Date.now(), previous ? Date.parse(previous.updatedAt) + 1 : 0)).toISOString() };
@@ -181,15 +225,16 @@
     const stats = activeCourse ? courseStats(progress.queue) : { answered: Object.keys(run.revealed).length, score };
     const finished = stats.answered === total;
     const summary = activeCourse ? `Les QCM du Cours ${activeCourse} sont terminés` : 'Les QCM de cet exercice sont terminés';
-    return `<section class="question-shell"><article class="question-card"><h1 class="exercise-title">${esc(q.title)}</h1><p class="exercise-origin">${esc(ref.label)} · ${esc(ref.date)}</p>${stepView(q, step, run.index, run)}<button class="btn secondary qcm-report-button" data-action="report-step">Signaler un problème avec cette question</button><details class="feedback-panel" id="step-feedback" hidden><summary>Mon signalement sur cette question</summary>${HEPFeedback.fields()}<label class="field-label" for="step-feedback-category">Catégorie (facultative)</label><select class="select-input" id="step-feedback-category"><option value="">Sans catégorie</option><option>Question</option><option>Propositions</option><option>Correction</option><option>Autre</option></select><label class="field-label" for="step-feedback-comment">Mon commentaire</label><textarea class="feedback-textarea" id="step-feedback-comment" rows="4" maxlength="8000"></textarea><p class="help-text">Enregistré sur cet appareil avec la question et les contenus déjà consultés au moment de l’ouverture du signalement.</p><p class="save-status" data-save-status></p></details><div class="question-navigation">${index > 0 ? '<button class="btn secondary" data-action="previous">← QCM précédent</button>' : ''}${index + 1 < total ? `<button class="btn primary" data-action="next" ${run.revealed[step.id] ? '' : 'disabled'}>QCM suivant →</button>` : ''}</div>${index === total - 1 && finished ? `<section class="qcm-summary"><h2>${summary}</h2><p>${stats.score} réponse${stats.score > 1 ? 's' : ''} correcte${stats.score > 1 ? 's' : ''} sur ${total}. Tu peux maintenant construire ta propre réponse à la question complète.</p></section>` : ''}<div class="actions">${activeCourse ? (finished ? '<button class="btn secondary" data-action="course-first">Revoir le cours depuis le début</button>' : '') : run.checked ? '<button class="btn secondary" data-action="restart">Recommencer les QCM</button>' : ''}<a class="btn ${run.checked ? 'primary' : 'secondary'}" href="oral.html#${q.id}">Rédiger cet exercice sans QCM →</a></div></article><details class="feedback-panel" ${saved?.comment ? 'open' : ''}><summary>Mon retour sur cet essai</summary><label class="field-label" for="feedback-category">Cela concerne…</label><select class="select-input" id="feedback-category">${categories.map(c => `<option ${(saved?.category || 'QCM ' + (run.index + 1)) === c ? 'selected' : ''}>${esc(c)}</option>`).join('')}</select><label class="field-label" for="feedback-comment">Mon commentaire</label><textarea class="feedback-textarea" id="feedback-comment" rows="4" maxlength="8000" placeholder="Ex. : deux propositions me semblent justes ; la correction n’explique pas leur différence…">${esc(saved?.comment || '')}</textarea><p class="help-text">Ton retour conserve les propositions dans l’ordre affiché et leurs explications.</p><p class="save-status" data-save-status></p></details></section>${supportDialogs(q, ref, source)}`;
+    return `<section class="question-shell"><article class="question-card"><h1 class="exercise-title">${esc(q.title)}</h1><p class="exercise-origin">${esc(ref.label)} · ${esc(ref.date)}</p>${stepView(q, step, run.index, run)}<button class="btn secondary qcm-report-button" data-action="report-step">Signaler un problème avec cette question</button><details class="feedback-panel" id="step-feedback" hidden><summary>Mon signalement sur cette question</summary>${HEPFeedback.fields(true)}<label class="field-label" for="step-feedback-category">Catégorie (facultative)</label><select class="select-input" id="step-feedback-category"><option value="">Sans catégorie</option><option>Question</option><option>Propositions</option><option>Correction</option><option>Autre</option></select><label class="field-label" for="step-feedback-comment">Mon commentaire</label><textarea class="feedback-textarea" id="step-feedback-comment" rows="4" maxlength="8000"></textarea><p class="help-text">Le brouillon conserve la question et les contenus consultés au moment de l’ouverture du signalement.</p><div class="actions"><button class="btn primary" data-action="send-step" disabled>Envoyer à Maxim</button></div><p class="save-status" data-send-status role="status" aria-live="polite">Brouillon sur cet appareil.</p><p class="help-text">L’envoi à Maxim ne demande pas de compte Google.</p><details><summary>Sauvegarde personnelle avec Drive (facultative)</summary><p class="help-text">Connecte Drive ici pour sauvegarder depuis cet onglet. La connexion ne se transmet pas aux autres onglets et se termine au rechargement. Elle est indépendante de l’envoi à Maxim.</p><button class="btn secondary" data-action="panel-drive">${HEPDrive.connected() ? 'Synchroniser Drive ici' : 'Connecter Drive ici'}</button><p class="save-status" data-save-status></p></details></details><div class="question-navigation">${index > 0 ? '<button class="btn secondary" data-action="previous">← QCM précédent</button>' : ''}${index + 1 < total ? `<button class="btn primary" data-action="next" ${run.revealed[step.id] ? '' : 'disabled'}>QCM suivant →</button>` : ''}</div>${index === total - 1 && finished ? `<section class="qcm-summary"><h2>${summary}</h2><p>${stats.score} réponse${stats.score > 1 ? 's' : ''} correcte${stats.score > 1 ? 's' : ''} sur ${total}. Tu peux maintenant construire ta propre réponse à la question complète.</p></section>` : ''}<div class="actions">${activeCourse ? (finished ? '<button class="btn secondary" data-action="course-first">Revoir le cours depuis le début</button>' : '') : run.checked ? '<button class="btn secondary" data-action="restart">Recommencer les QCM</button>' : ''}<a class="btn ${run.checked ? 'primary' : 'secondary'}" href="oral.html#${q.id}">Rédiger cet exercice sans QCM →</a></div></article><details class="feedback-panel" ${saved?.comment ? 'open' : ''}><summary>Mon retour sur cet essai</summary><label class="field-label" for="feedback-category">Cela concerne…</label><select class="select-input" id="feedback-category">${categories.map(c => `<option ${(saved?.category || 'QCM ' + (run.index + 1)) === c ? 'selected' : ''}>${esc(c)}</option>`).join('')}</select><label class="field-label" for="feedback-comment">Mon commentaire</label><textarea class="feedback-textarea" id="feedback-comment" rows="4" maxlength="8000" placeholder="Ex. : deux propositions me semblent justes ; la correction n’explique pas leur différence…">${esc(saved?.comment || '')}</textarea><p class="help-text">Ton retour conserve les propositions dans l’ordre affiché et leurs explications.</p><p class="save-status" data-save-status></p></details></section>${supportDialogs(q, ref, source)}`;
   }
   function feedback() {
     return `<h1>Mes retours sur les QCM</h1>${HEPFeedback.fields()}${HEPFeedback.archiveLink}<div class="actions"><button class="btn primary" data-action="copy" ${comments().length ? '' : 'disabled'}>Copier les retours</button><button class="btn secondary" data-action="export" ${comments().length ? '' : 'disabled'}>Télécharger les retours</button></div><div class="feedback-list">${comments().sort((a,b) => b.updatedAt.localeCompare(a.updatedAt)).map(item => `<article class="feedback-item"><span class="pill">${esc(item.category)}</span><h2>${esc(item.snapshot.question.split('\n')[0])}</h2><p class="exercise-text">${esc(item.comment)}</p><button class="btn ghost" data-exercise="${esc(item.questionId.split('::')[0])}">Revoir les QCM →</button></article>`).join('') || '<p class="empty-state">Tu peux laisser un retour dans chaque exercice.</p>'}</div><p class="help-text">Copie tes retours, puis envoie-les à Maxim par message. Aucun envoi automatique.</p>`;
   }
   function settings() {
-    return `<h1>Sauvegardes des QCM</h1>${HEPFeedback.archiveLink}<section class="settings-card"><h2>Sur cet appareil</h2><p>Choix, résultats et retours sont conservés ici. Cet essai possède sa propre sauvegarde.</p><div class="actions"><button class="btn primary" data-action="backup">Télécharger une sauvegarde</button><button class="btn secondary" data-action="import">Importer une sauvegarde QCM</button><input id="backup-file" type="file" accept=".json,application/json" hidden></div></section><section class="settings-card"><h2>Google Drive, facultatif</h2><p>Dossier « ${esc(window.CONFIG.DRIVE_FOLDER)} ». La connexion est à renouveler après fermeture.</p><div class="actions">${HEPDrive.connected() ? '<button class="btn primary" data-action="sync">Synchroniser maintenant</button><button class="btn ghost" data-action="disconnect">Déconnecter</button>' : '<button class="btn primary" data-action="connect">Connecter Google Drive</button>'}</div><p data-save-status class="save-status"></p></section>`;
+    return `<h1>Sauvegardes des QCM</h1>${HEPFeedback.archiveLink}<section class="settings-card"><h2>Sur cet appareil</h2><p>Choix, résultats et retours sont conservés ici. Cet essai possède sa propre sauvegarde.</p><div class="actions"><button class="btn primary" data-action="backup">Télécharger une sauvegarde</button><button class="btn secondary" data-action="import">Importer une sauvegarde QCM</button><input id="backup-file" type="file" accept=".json,application/json" hidden></div></section><section class="settings-card"><h2>Google Drive, facultatif</h2><p>Dossier « ${esc(window.CONFIG.DRIVE_FOLDER)} ». La connexion vaut pour cet onglet et doit être renouvelée après rechargement.</p><div class="actions">${HEPDrive.connected() ? '<button class="btn primary" data-action="sync">Synchroniser maintenant</button><button class="btn ghost" data-action="disconnect">Déconnecter</button>' : '<button class="btn primary" data-action="connect">Connecter Google Drive</button>'}</div><p data-save-status class="save-status"></p></section>`;
   }
   function render() {
+    stepFeedback = null;
     // Read only the unfiltered view: search results open temporarily, not by preference.
     document.querySelectorAll('details[data-qcm-theme][data-qcm-manual="true"]').forEach(node => {
       if (node.open) expandedThemes.add(node.dataset.qcmTheme); else expandedThemes.delete(node.dataset.qcmTheme);
@@ -250,8 +295,18 @@
       panel.hidden = false; panel.open = true;
       const field = document.getElementById('step-feedback-comment'), category = document.getElementById('step-feedback-category');
       field.value = saved?.comment || ''; category.value = saved?.category === 'autre' ? '' : saved?.category || '';
-      const save = () => { repo.comment(question, category.value, field.value, snap); changed(); };
+      let binding;
+      const save = () => { repo.comment(question, category.value || 'autre', field.value, snap); changed(); binding?.refresh(); };
+      binding = bindStepSend(question, snap, field, category, panel, save);
       field.addEventListener('input', save); category.addEventListener('change', save); field.focus(); return;
+    }
+    if (action === 'send-step') return stepFeedback?.send();
+    if (action === 'panel-drive') {
+      button.disabled = true; button.dataset.busy = 'true';
+      try { if (HEPDrive.connected()) await HEPDrive.sync(); else await HEPDrive.connect(); }
+      catch (error) { toast(error.message); }
+      finally { button.dataset.busy = 'false'; status(); }
+      return;
     }
     if (action === 'close-dialog') { button.closest('dialog')?.close(); return; }
     if (action === 'open-context' && active) { const q = active; return mutateRun(q, displayedRun, run => { run.contextUsed = true; return run; }, run => { displayedRun = run; document.getElementById('qcm-context-dialog').showModal(); }); }

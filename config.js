@@ -1,1 +1,1 @@
-window.CONFIG = {"GOOGLE_CLIENT_ID": "200483680701-h963rk5t3l7v5j64ojgg2k410av8l9ft.apps.googleusercontent.com", "DRIVE_APP": "hep-revisions-v1", "APP_VERSION": "1.8.11", "DRIVE_FOLDER": "Révisions HEP"};
+window.CONFIG = {"GOOGLE_CLIENT_ID": "200483680701-h963rk5t3l7v5j64ojgg2k410av8l9ft.apps.googleusercontent.com", "DRIVE_APP": "hep-revisions-v1", "APP_VERSION": "1.8.12", "DRIVE_FOLDER": "Révisions HEP", "FEEDBACK_ENDPOINT": "https://hep-retours-revisions-01a16310.maximlang000.chatgpt.site/api/feedback"};
