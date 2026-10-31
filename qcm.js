@@ -7,10 +7,13 @@
   const S = HEPStore, KEY = collection.storageKey || 'hep-revisions-qcm-state-v1', SCOPE = collection.id || 'fra-qcm-pilote';
   const repo = new S.Repository({ getItem: () => localStorage.getItem(KEY), setItem: (_, value) => localStorage.setItem(KEY, value) });
   const app = document.getElementById('app');
-  let bank, byId, active = null, view = 'home', displayedRun = null, activeCourse = null, stepFeedback = null;
+  let bank, byId, active = null, view = 'home', displayedRun = null, activeCourse = null, activeMix = null, stepFeedback = null;
+  const runCache = new Map();
+  const mixKey = 'hep-revisions-qcm-mixed-position-v1::' + SCOPE;
   const courseCursorKey = 'hep-revisions-qcm-course-position-v1::' + SCOPE;
   const esc = value => String(value ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
   const text = value => `<span class="exercise-text">${esc(value)}</span>`;
+  const needsContext = step => step?.requiresContext === true;
   const comments = () => S.feedbackThreads(repo.state).filter(item => !item.deleted && item.comment.trim());
   const runKey = q => 'qcm2::' + q.id + '::' + q.qcmRevision;
   const legacyRunKey = q => 'qcm::' + q.id + '::' + q.qcmRevision;
@@ -75,8 +78,12 @@
     return result;
   }
   function readRun(q) {
-    let raw; try { raw = JSON.parse(repo.state.drafts[runKey(q)]?.text || repo.state.drafts[legacyRunKey(q)]?.text || 'null'); } catch (_) { raw = null; }
+    const key = runKey(q), source = repo.state.drafts[key]?.text || repo.state.drafts[legacyRunKey(q)]?.text || 'null';
+    const cached = runCache.get(key);
+    if (cached?.source === source) return JSON.parse(JSON.stringify(cached.run));
+    let raw; try { raw = JSON.parse(source); } catch (_) { raw = null; }
     const run = { id: typeof raw?.id === 'string' && /^[A-Za-z0-9-]{1,100}$/.test(raw.id) ? raw.id : S.uuid(), answers: {}, order: {}, revealed: {}, index: 0, checked: false, hintUsed: !!raw?.hintUsed, contextUsed: !!raw?.contextUsed };
+    if (typeof raw?.restartOf === 'string' && /^[A-Za-z0-9-]{1,100}$/.test(raw.restartOf) && raw.restartOf !== run.id) run.restartOf = raw.restartOf;
     for (const step of q.steps) {
       const ids = step.choices.map(c => c.id), order = raw?.order?.[step.id];
       run.order[step.id] = Array.isArray(order) && order.length === 4 && new Set(order).size === 4 && order.every(id => ids.includes(id)) ? order : shuffled(ids);
@@ -88,10 +95,16 @@
     run.checked = q.steps.every(step => run.revealed[step.id]);
     const firstPending = q.steps.findIndex(step => !run.revealed[step.id]);
     run.index = Number.isInteger(raw?.index) ? Math.min(Math.max(0, raw.index), q.steps.length - 1) : firstPending < 0 ? q.steps.length - 1 : firstPending;
-    if (!repo.state.drafts[runKey(q)] || JSON.stringify(raw) !== JSON.stringify(run)) writeRun(q, run);
+    // Reading statistics must never create or refresh a persisted attempt.
+    runCache.set(key, { source, run: JSON.parse(JSON.stringify(run)) });
     return run;
   }
-  const sameRun = (left, right) => left && right && left.id === right.id && left.index === right.index && S.stable(left.revealed) === S.stable(right.revealed) && S.stable(left.order) === S.stable(right.order);
+  function openRun(q) {
+    const run = readRun(q);
+    if (repo.state.drafts[runKey(q)]?.text !== JSON.stringify(run)) writeRun(q, run);
+    return run;
+  }
+  const sameRun = (left, right) => left && right && left.id === right.id && left.index === right.index && S.stable(left.answers) === S.stable(right.answers) && S.stable(left.revealed) === S.stable(right.revealed) && S.stable(left.order) === S.stable(right.order);
   function ingestLocal() {
     try { const saved = localStorage.getItem(KEY); if (saved) repo.ingest(JSON.parse(saved)); } catch (_) { /* Repository.save reports unavailable storage. */ }
   }
@@ -151,8 +164,8 @@
   function header() {
     if (view === 'exercise' && active) {
       const run = readRun(active);
-      const progress = coursePosition(active, run), counter = activeCourse ? `Cours ${activeCourse} · QCM ${progress.index + 1} / ${progress.queue.length}` : `QCM ${run.index + 1} / ${active.steps.length}`;
-      return `<header class="qcm-focus-header"><button class="icon-button" data-action="home" aria-label="Exercices">←</button><span class="question-counter">${counter}</span><button class="btn secondary" data-action="open-context" aria-label="Voir la situation">Situation</button><button class="icon-button" data-action="open-hints" aria-label="Un rappel des concepts">?</button></header>`;
+      const progress = coursePosition(active, run), counter = activeMix ? `Tout mélanger · QCM ${progress.index + 1} / ${progress.queue.length}` : activeCourse ? `Cours ${activeCourse} · QCM ${progress.index + 1} / ${progress.queue.length}` : `QCM ${run.index + 1} / ${active.steps.length}`;
+      return `<header class="qcm-focus-header"><button class="icon-button" data-action="home" aria-label="Exercices">←</button><span class="question-counter">${counter}</span>${needsContext(active.steps[run.index]) ? '<button class="btn secondary" data-action="open-context" aria-label="Voir la situation">Situation</button>' : ''}<button class="icon-button" data-action="open-hints" aria-label="Un rappel des concepts">?</button></header>`;
     }
     return `<header class="site-header"><button class="brand" data-action="home"><img class="brand-mark" src="icon.svg" alt=""><span><span class="brand-title">${esc(collection.label || 'Essai · QCM guidés')}</span><span class="brand-subtitle">Français · Bloc oral</span></span></button><nav class="header-actions" aria-label="Navigation des QCM"><button class="btn ghost" data-action="home">Exercices</button><button class="btn ghost" data-action="feedback">Mes retours <span class="badge" data-feedback-count>${comments().length}</span></button><button class="icon-button" data-action="settings" aria-label="Sauvegardes des QCM">↗</button></nav></header>`;
   }
@@ -169,7 +182,7 @@
     return bank.families.flatMap(family => bank.exercises.filter(q => q.familyId === family.id && courseKey(q) === key).flatMap(q => q.steps.map((step, index) => ({ q, step, index }))));
   }
   function coursePosition(q, run) {
-    const queue = activeCourse ? courseQueue(activeCourse) : [];
+    const queue = activeMix ? mixedQueue(activeMix) : activeCourse ? courseQueue(activeCourse) : [];
     return { queue, index: queue.findIndex(item => item.q.id === q.id && item.step.id === q.steps[run.index].id) };
   }
   function readCourseCursors() {
@@ -178,7 +191,8 @@
   function selectCourseEntry(item) {
     active = item.q;
     const run = readRun(active);
-    if (run.index !== item.index) { run.index = item.index; writeRun(active, run); }
+    run.index = item.index;
+    if (repo.state.drafts[runKey(active)]?.text !== JSON.stringify(run)) writeRun(active, run);
     const cursors = readCourseCursors();
     cursors[activeCourse] = { exerciseId: active.id, stepId: item.step.id, qcmRevision: active.qcmRevision };
     try { localStorage.setItem(courseCursorKey, JSON.stringify(cursors)); } catch (_) { toast('La position du cours ne peut pas être enregistrée sur cet appareil.'); }
@@ -194,6 +208,37 @@
   function courseStats(queue) {
     return queue.reduce((stats, item) => { const run = readRun(item.q); if (run.revealed[item.step.id]) { stats.answered++; if (run.answers[item.step.id] === item.step.correctId) stats.score++; } return stats; }, { answered: 0, score: 0 });
   }
+  const entryRef = item => ({ exerciseId: item.q.id, stepId: item.step.id, qcmRevision: item.q.qcmRevision });
+  const entryKey = item => JSON.stringify([item.exerciseId, item.stepId, item.qcmRevision]);
+  function allEntries() { return bank.exercises.flatMap(q => q.steps.map((step, index) => ({ q, step, index }))); }
+  function mixedQueue(mix) {
+    const entries = new Map(allEntries().map(item => [entryKey(entryRef(item)), item]));
+    return mix.order.map(ref => entries.get(entryKey(ref)));
+  }
+  function readMix() {
+    let value; try { value = JSON.parse(localStorage.getItem(mixKey) || 'null'); } catch (_) { return null; }
+    const entries = allEntries().map(item => entryKey(entryRef(item)));
+    if (value?.version !== 1 || typeof value.id !== 'string' || !Array.isArray(value.order) || value.order.length !== entries.length) return null;
+    const keys = value.order.map(ref => entryKey(ref || {}));
+    if (new Set(keys).size !== entries.length || !keys.every(key => entries.includes(key))) return null;
+    return { version: 1, id: value.id, order: value.order, cursor: keys.includes(entryKey(value.cursor || {})) ? value.cursor : value.order[0] };
+  }
+  function saveMix() {
+    try { localStorage.setItem(mixKey, JSON.stringify(activeMix)); } catch (_) { toast('Le mélange ne peut pas être enregistré sur cet appareil.'); }
+  }
+  function openMix(fresh = false) {
+    activeCourse = null;
+    activeMix = !fresh && readMix() || { version: 1, id: S.uuid(), order: shuffled(allEntries().map(entryRef)) };
+    const queue = mixedQueue(activeMix);
+    const target = queue.find(item => entryKey(entryRef(item)) === entryKey(activeMix.cursor || {})) || queue[0];
+    selectMixedEntry(target);
+  }
+  function selectMixedEntry(item) {
+    active = item.q;
+    const run = readRun(active); run.index = item.index;
+    if (repo.state.drafts[runKey(active)]?.text !== JSON.stringify(run)) writeRun(active, run);
+    activeMix.cursor = entryRef(item); saveMix();
+  }
   function oralHome() {
     const query = oralNavigation.normalize(search);
     const courses = [...new Set(bank.exercises.map(courseKey).filter(Boolean))].map(key => {
@@ -203,29 +248,31 @@
       const haystack = [label, `Cours${key}`, ...exercises.map(q => { const family = bank.families.find(f => f.id === q.familyId), ref = bank.courseReferences[q.course || q.referenceId]; return [family?.title, family?.theme, q.title, q.prompt, ...q.hints, ...q.steps.map(s => s.prompt), ref?.date].join(' '); })].join(' ');
       return { key, label, queue, date: dates[0], match: !query || oralNavigation.normalize(haystack).includes(query) };
     }).filter(course => course.match).sort((a, b) => a.date.localeCompare(b.date) || Number(a.key) - Number(b.key));
-    return `<section class="home-hero oral-home-hero qcm-notions-hero"><h1 class="hero-title">Comprendre, puis rédiger</h1><p class="hero-description">Choisis un cours pour parcourir toutes ses questions, puis entraîne-toi à rédiger sans les choix.</p></section>
+    const total = allEntries().length, mix = readMix();
+    return `<section class="qcm-mix-start" aria-label="Toutes les questions"><div><button class="btn primary" data-action="mix">Tout mélanger</button><p class="help-text">${total} QCM en ordre aléatoire. Réponses conservées.</p></div>${mix ? '<button class="btn ghost" data-action="new-mix">Nouveau mélange</button>' : ''}</section>
+      <section class="qcm-subject" aria-labelledby="qcm-subject-title"><h1 id="qcm-subject-title">Français</h1><section class="qcm-block" aria-labelledby="qcm-block-title"><h2 id="qcm-block-title">Bloc oral</h2><p class="hero-description">Des QCM avec une correction expliquée, puis à toi de rédiger sans les choix. Tu peux aussi <a href="oral.html">passer directement à la rédaction</a>.</p>
       <form class="oral-tools qcm-home-filters" id="qcm-home-filters"><label class="oral-field" for="qcm-search">Rechercher un cours ou une notion<input class="text-input" id="qcm-search" type="search" value="${esc(search)}" placeholder="Ex. : Cours 1, étayage, récit…"></label><button class="btn secondary" type="submit">Rechercher</button>${search ? '<button class="btn ghost" type="button" data-action="clear-search">Tout afficher</button>' : ''}</form>
-      <p class="help-text oral-result-count" id="qcm-home-results" role="status" tabindex="-1">${courses.length} cours · ${courses.reduce((n, course) => n + course.queue.length, 0)} QCM</p><section class="exercise-grid qcm-courses" aria-label="Parcours par cours">${courses.map(course => { const stats = courseStats(course.queue); return `<article class="course-card exercise-tile"><h2>${course.label}</h2><p class="help-text">${course.queue.length} QCM${stats.answered ? ` · ${stats.answered} réponse${stats.answered > 1 ? 's' : ''} enregistrée${stats.answered > 1 ? 's' : ''}` : ''}</p><button class="btn primary" data-course="${course.key}" aria-label="${stats.answered || readCourseCursors()[course.key] ? 'Reprendre' : 'Commencer'} ${course.label}">${stats.answered || readCourseCursors()[course.key] ? 'Reprendre' : 'Commencer'} ${course.label}</button></article>`; }).join('') || '<p class="empty-state">Aucun cours ne correspond à cette recherche.</p>'}</section>
-      <p class="notice">Le résultat des QCM mesure la reconnaissance d’une réponse. La rédaction et sa justification restent à travailler séparément.</p><p class="help-text"><a href="oral.html">Accéder directement aux exercices rédigés du bloc oral →</a></p>`;
+      <p class="help-text oral-result-count" id="qcm-home-results" role="status" tabindex="-1">${courses.length} cours · ${courses.reduce((n, course) => n + course.queue.length, 0)} QCM</p><div class="exercise-grid qcm-courses" role="group" aria-label="Parcours par cours">${courses.map(course => { const stats = courseStats(course.queue); return `<article class="course-card exercise-tile"><h3>${course.label}</h3><p class="help-text">${course.queue.length} QCM${stats.answered ? ` · ${stats.answered} réponse${stats.answered > 1 ? 's' : ''} enregistrée${stats.answered > 1 ? 's' : ''}` : ''}</p><button class="btn primary" data-course="${course.key}" aria-label="${stats.answered || readCourseCursors()[course.key] ? 'Reprendre' : 'Commencer'} ${course.label}">${stats.answered || readCourseCursors()[course.key] ? 'Reprendre' : 'Commencer'}</button></article>`; }).join('') || '<p class="empty-state">Aucun cours ne correspond à cette recherche.</p>'}</div></section></section>
+      <p class="notice">Le résultat des QCM mesure la reconnaissance d’une réponse. La rédaction et sa justification restent à travailler séparément.</p>`;
   }
   function stepView(q, step, index, run) {
     const selected = step.choices.find(c => c.id === run.answers[step.id]), correct = step.choices.find(c => c.id === step.correctId), revealed = !!run.revealed[step.id];
-    return `<fieldset class="qcm-step" data-step="${step.id}"><legend>${esc(step.prompt)}</legend>${typeof q.context === 'string' && q.context.trim() ? '<button class="qcm-context-cue" data-action="open-context">Clique sur « Situation » pour lire le contexte.</button>' : ''}<div class="qcm-choices">${run.order[step.id].map((id, i) => { const c = step.choices.find(c => c.id === id); return `<button class="qcm-choice ${selected?.id === id ? 'qcm-selected' : ''} ${revealed && id === step.correctId ? 'qcm-correct' : revealed && id === selected?.id ? 'qcm-incorrect' : ''}" data-choice="${id}" data-step="${step.id}" aria-label="${revealed && id === step.correctId ? 'Bonne réponse : ' : ''}${String.fromCharCode(65 + i)}. ${esc(c.text)}" aria-pressed="${selected?.id === id}" ${revealed ? 'disabled' : ''}><span><strong>${String.fromCharCode(65 + i)}.</strong> ${esc(c.text)}</span></button>`; }).join('')}</div>${revealed ? `<div class="qcm-verdict" role="status" tabindex="-1"><strong>${selected.id === step.correctId ? 'Bonne réponse.' : 'À reprendre.'}</strong><p>${text(correct.explanation)}</p>${selected.id !== step.correctId ? `<p><strong>Ton choix :</strong> ${text(selected.explanation)}</p>` : ''}<details><summary>Comprendre les autres propositions</summary>${run.order[step.id].filter(id => id !== step.correctId && id !== selected.id).map(id => { const c = step.choices.find(c => c.id === id), letter = String.fromCharCode(65 + run.order[step.id].indexOf(id)); return `<p><strong>${letter}.</strong> ${text(c.explanation)}</p>`; }).join('')}</details></div>` : ''}</fieldset>`;
+    return `<fieldset class="qcm-step" data-step="${step.id}"><legend>${esc(step.prompt)}</legend>${needsContext(step) ? '<button class="qcm-context-cue" data-action="open-context">Clique sur « Situation » pour lire le contexte.</button>' : ''}<div class="qcm-choices">${run.order[step.id].map((id, i) => { const c = step.choices.find(c => c.id === id); return `<button class="qcm-choice ${selected?.id === id ? 'qcm-selected' : ''} ${revealed && id === step.correctId ? 'qcm-correct' : revealed && id === selected?.id ? 'qcm-incorrect' : ''}" data-choice="${id}" data-step="${step.id}" aria-label="${revealed && id === step.correctId ? 'Bonne réponse : ' : ''}${String.fromCharCode(65 + i)}. ${esc(c.text)}" aria-pressed="${selected?.id === id}" ${revealed ? 'disabled' : ''}><span><strong>${String.fromCharCode(65 + i)}.</strong> ${esc(c.text)}</span></button>`; }).join('')}</div>${revealed ? `<div class="qcm-verdict" role="status" tabindex="-1"><strong>${selected.id === step.correctId ? 'Bonne réponse.' : 'À reprendre.'}</strong><p>${text(correct.explanation)}</p>${selected.id !== step.correctId ? `<p><strong>Ton choix :</strong> ${text(selected.explanation)}</p>` : ''}<details><summary>Comprendre les autres propositions</summary>${run.order[step.id].filter(id => id !== step.correctId && id !== selected.id).map(id => { const c = step.choices.find(c => c.id === id), letter = String.fromCharCode(65 + run.order[step.id].indexOf(id)); return `<p><strong>${letter}.</strong> ${text(c.explanation)}</p>`; }).join('')}</details></div>` : ''}</fieldset>`;
   }
-  function supportDialogs(q, ref, source) {
+  function supportDialogs(q, step, ref, source) {
     const head = title => `<div class="qcm-dialog-head"><h2>${title}</h2><button class="icon-button" data-action="close-dialog" aria-label="Fermer">×</button></div>`;
-    return `<dialog id="qcm-context-dialog" class="qcm-dialog" aria-labelledby="qcm-context-title">${head('<span id="qcm-context-title">La situation</span>')}<p class="exercise-origin">${esc(ref.label)} · ${esc(ref.date)}<br>Passage à relire : ${esc(source.location)}</p><div class="exercise-context">${text(q.context)}</div><h3>La question complète à préparer</h3><p>${text(q.prompt)}</p><h3>Avant de rédiger</h3><p class="help-text">${text(bank.assessmentConditions.writingInstruction)}</p><p class="help-text">${text(bank.assessmentConditions.learningInstruction)}</p></dialog><dialog id="qcm-hint-dialog" class="qcm-dialog" aria-labelledby="qcm-hint-title">${head('<span id="qcm-hint-title">Un rappel des concepts</span>')}${q.hints.map(h => `<p>${text(h)}</p>`).join('')}</dialog>`;
+    return `${needsContext(step) ? `<dialog id="qcm-context-dialog" class="qcm-dialog" aria-labelledby="qcm-context-title">${head('<span id="qcm-context-title">La situation</span>')}<p class="exercise-origin">${esc(ref.label)} · ${esc(ref.date)}<br>Passage à relire : ${esc(source.location)}</p><div class="exercise-context">${text(q.context)}</div><h3>La question complète à préparer</h3><p>${text(q.prompt)}</p><h3>Avant de rédiger</h3><p class="help-text">${text(bank.assessmentConditions.writingInstruction)}</p><p class="help-text">${text(bank.assessmentConditions.learningInstruction)}</p></dialog>` : ''}<dialog id="qcm-hint-dialog" class="qcm-dialog" aria-labelledby="qcm-hint-title">${head('<span id="qcm-hint-title">Un rappel des concepts</span>')}${q.hints.map(h => `<p>${text(h)}</p>`).join('')}</dialog>`;
   }
   function exercise() {
     const q = active, run = readRun(q), snap = snapshot(q, run), saved = S.currentFeedback(repo.state, feedbackQuestion(q), snap);
     const categories = ['Consigne', ...q.steps.map((s, i) => 'QCM ' + (i + 1)), 'Aides', 'Passage à la rédaction', 'Autre'];
     const ref = bank.courseReference || bank.courseReferences[q.referenceId], source = q.sources.find(s => s.file.includes('SYNTHESE')) || q.sources[0], step = q.steps[run.index];
     const score = q.steps.filter(s => run.answers[s.id] === s.correctId && run.revealed[s.id]).length;
-    const progress = coursePosition(q, run), index = activeCourse ? progress.index : run.index, total = activeCourse ? progress.queue.length : q.steps.length;
-    const stats = activeCourse ? courseStats(progress.queue) : { answered: Object.keys(run.revealed).length, score };
+    const progress = coursePosition(q, run), index = activeCourse || activeMix ? progress.index : run.index, total = activeCourse || activeMix ? progress.queue.length : q.steps.length;
+    const stats = activeCourse || activeMix ? courseStats(progress.queue) : { answered: Object.keys(run.revealed).length, score };
     const finished = stats.answered === total;
-    const summary = activeCourse ? `Les QCM du Cours ${activeCourse} sont terminés` : 'Les QCM de cet exercice sont terminés';
-    return `<section class="question-shell"><article class="question-card"><h1 class="exercise-title">${esc(q.title)}</h1><p class="exercise-origin">${esc(ref.label)} · ${esc(ref.date)}</p>${stepView(q, step, run.index, run)}<button class="btn secondary qcm-report-button" data-action="report-step">Signaler un problème avec cette question</button><details class="feedback-panel" id="step-feedback" hidden><summary>Mon signalement sur cette question</summary>${HEPFeedback.fields(true)}<label class="field-label" for="step-feedback-category">Catégorie (facultative)</label><select class="select-input" id="step-feedback-category"><option value="">Sans catégorie</option><option>Question</option><option>Propositions</option><option>Correction</option><option>Autre</option></select><label class="field-label" for="step-feedback-comment">Mon commentaire</label><textarea class="feedback-textarea" id="step-feedback-comment" rows="4" maxlength="8000"></textarea><p class="help-text">Le brouillon conserve la question et les contenus consultés au moment de l’ouverture du signalement.</p><div class="actions"><button class="btn primary" data-action="send-step" disabled>Envoyer à Maxim</button></div><p class="save-status" data-send-status role="status" aria-live="polite">Brouillon sur cet appareil.</p><p class="help-text">L’envoi à Maxim ne demande pas de compte Google.</p><details><summary>Sauvegarde personnelle avec Drive (facultative)</summary><p class="help-text">Connecte Drive ici pour sauvegarder depuis cet onglet. La connexion ne se transmet pas aux autres onglets et se termine au rechargement. Elle est indépendante de l’envoi à Maxim.</p><button class="btn secondary" data-action="panel-drive">${HEPDrive.connected() ? 'Synchroniser Drive ici' : 'Connecter Drive ici'}</button><p class="save-status" data-save-status></p></details></details><div class="question-navigation">${index > 0 ? '<button class="btn secondary" data-action="previous">← QCM précédent</button>' : ''}${index + 1 < total ? `<button class="btn primary" data-action="next" ${run.revealed[step.id] ? '' : 'disabled'}>QCM suivant →</button>` : ''}</div>${index === total - 1 && finished ? `<section class="qcm-summary"><h2>${summary}</h2><p>${stats.score} réponse${stats.score > 1 ? 's' : ''} correcte${stats.score > 1 ? 's' : ''} sur ${total}. Tu peux maintenant construire ta propre réponse à la question complète.</p></section>` : ''}<div class="actions">${activeCourse ? (finished ? '<button class="btn secondary" data-action="course-first">Revoir le cours depuis le début</button>' : '') : run.checked ? '<button class="btn secondary" data-action="restart">Recommencer les QCM</button>' : ''}<a class="btn ${run.checked ? 'primary' : 'secondary'}" href="oral.html#${q.id}">Rédiger cet exercice sans QCM →</a></div></article><details class="feedback-panel" ${saved?.comment ? 'open' : ''}><summary>Mon retour sur cet essai</summary><label class="field-label" for="feedback-category">Cela concerne…</label><select class="select-input" id="feedback-category">${categories.map(c => `<option ${(saved?.category || 'QCM ' + (run.index + 1)) === c ? 'selected' : ''}>${esc(c)}</option>`).join('')}</select><label class="field-label" for="feedback-comment">Mon commentaire</label><textarea class="feedback-textarea" id="feedback-comment" rows="4" maxlength="8000" placeholder="Ex. : deux propositions me semblent justes ; la correction n’explique pas leur différence…">${esc(saved?.comment || '')}</textarea><p class="help-text">Ton retour conserve les propositions dans l’ordre affiché et leurs explications.</p><p class="save-status" data-save-status></p></details></section>${supportDialogs(q, ref, source)}`;
+    const summary = activeMix ? 'Tous les QCM du mélange sont terminés' : activeCourse ? `Les QCM du Cours ${activeCourse} sont terminés` : 'Les QCM de cet exercice sont terminés';
+    return `<section class="question-shell"><article class="question-card"><h1 class="exercise-title">${esc(q.title)}</h1><p class="exercise-origin">${esc(ref.label)} · ${esc(ref.date)}</p>${stepView(q, step, run.index, run)}<button class="btn secondary qcm-report-button" data-action="report-step">Signaler un problème avec cette question</button><details class="feedback-panel" id="step-feedback" hidden><summary>Mon signalement sur cette question</summary>${HEPFeedback.fields(true)}<label class="field-label" for="step-feedback-category">Catégorie (facultative)</label><select class="select-input" id="step-feedback-category"><option value="">Sans catégorie</option><option>Question</option><option>Propositions</option><option>Correction</option><option>Autre</option></select><label class="field-label" for="step-feedback-comment">Mon commentaire</label><textarea class="feedback-textarea" id="step-feedback-comment" rows="4" maxlength="8000"></textarea><p class="help-text">Le brouillon conserve la question et les contenus consultés au moment de l’ouverture du signalement.</p><div class="actions"><button class="btn primary" data-action="send-step" disabled>Envoyer à Maxim</button></div><p class="save-status" data-send-status role="status" aria-live="polite">Brouillon sur cet appareil.</p><p class="help-text">L’envoi à Maxim ne demande pas de compte Google.</p><details><summary>Sauvegarde personnelle avec Drive (facultative)</summary><p class="help-text">Connecte Drive ici pour sauvegarder depuis cet onglet. La connexion ne se transmet pas aux autres onglets et se termine au rechargement. Elle est indépendante de l’envoi à Maxim.</p><button class="btn secondary" data-action="panel-drive">${HEPDrive.connected() ? 'Synchroniser Drive ici' : 'Connecter Drive ici'}</button><p class="save-status" data-save-status></p></details></details><div class="question-navigation">${index > 0 ? '<button class="btn secondary" data-action="previous">← QCM précédent</button>' : ''}${index + 1 < total ? `<button class="btn primary" data-action="next" ${run.revealed[step.id] ? '' : 'disabled'}>QCM suivant →</button>` : ''}</div>${index === total - 1 && finished ? `<section class="qcm-summary"><h2>${summary}</h2><p>${stats.score} réponse${stats.score > 1 ? 's' : ''} correcte${stats.score > 1 ? 's' : ''} sur ${total}. Tu peux maintenant construire ta propre réponse à la question complète.</p></section>` : ''}<div class="actions">${activeMix ? (finished ? '<button class="btn secondary" data-action="mix-first">Revoir le mélange depuis le début</button>' : '') : activeCourse ? (finished ? '<button class="btn secondary" data-action="course-first">Revoir le cours depuis le début</button>' : '') : run.checked ? '<button class="btn secondary" data-action="restart">Recommencer les QCM</button>' : ''}<a class="btn ${run.checked ? 'primary' : 'secondary'}" href="oral.html#${q.id}">Rédiger cet exercice sans QCM →</a></div></article><details class="feedback-panel" ${saved?.comment ? 'open' : ''}><summary>Mon retour sur cet essai</summary><label class="field-label" for="feedback-category">Cela concerne…</label><select class="select-input" id="feedback-category">${categories.map(c => `<option ${(saved?.category || 'QCM ' + (run.index + 1)) === c ? 'selected' : ''}>${esc(c)}</option>`).join('')}</select><label class="field-label" for="feedback-comment">Mon commentaire</label><textarea class="feedback-textarea" id="feedback-comment" rows="4" maxlength="8000" placeholder="Ex. : deux propositions me semblent justes ; la correction n’explique pas leur différence…">${esc(saved?.comment || '')}</textarea><p class="help-text">Ton retour conserve les propositions dans l’ordre affiché et leurs explications.</p><p class="save-status" data-save-status></p></details></section>${supportDialogs(q, step, ref, source)}`;
   }
   function feedback() {
     return `<h1>Mes retours sur les QCM</h1>${HEPFeedback.fields()}${HEPFeedback.archiveLink}<div class="actions"><button class="btn primary" data-action="copy" ${comments().length ? '' : 'disabled'}>Copier les retours</button><button class="btn secondary" data-action="export" ${comments().length ? '' : 'disabled'}>Télécharger les retours</button></div><div class="feedback-list">${comments().sort((a,b) => b.updatedAt.localeCompare(a.updatedAt)).map(item => `<article class="feedback-item"><span class="pill">${esc(item.category)}</span><h2>${esc(item.snapshot.question.split('\n')[0])}</h2><p class="exercise-text">${esc(item.comment)}</p><button class="btn ghost" data-exercise="${esc(item.questionId.split('::')[0])}">Revoir les QCM →</button></article>`).join('') || '<p class="empty-state">Tu peux laisser un retour dans chaque exercice.</p>'}</div><p class="help-text">Copie tes retours, puis envoie-les à Maxim par message. Aucun envoi automatique.</p>`;
@@ -239,7 +286,7 @@
     document.querySelectorAll('details[data-qcm-theme][data-qcm-manual="true"]').forEach(node => {
       if (node.open) expandedThemes.add(node.dataset.qcmTheme); else expandedThemes.delete(node.dataset.qcmTheme);
     });
-    app.innerHTML = `<div class="page ${view === 'exercise' ? 'qcm-focus' : ''}">${header()}<div id="qcm-main" tabindex="-1">${view === 'exercise' ? exercise() : view === 'feedback' ? feedback() : view === 'settings' ? settings() : home()}</div><footer class="footer"><span class="save-status" data-save-status></span>${view === 'exercise' ? '<button class="btn ghost small" data-action="feedback">Mes retours</button>' : ''}<a href="oral.html">Bloc oral</a></footer></div>`;
+    app.innerHTML = `<div class="page ${view === 'exercise' ? 'qcm-focus' : IS_ORAL && view === 'home' ? 'qcm-oral-home' : ''}">${header()}<div id="qcm-main" tabindex="-1">${view === 'exercise' ? exercise() : view === 'feedback' ? feedback() : view === 'settings' ? settings() : home()}</div><footer class="footer"><span class="save-status" data-save-status></span>${view === 'exercise' ? '<button class="btn ghost small" data-action="feedback">Mes retours</button>' : ''}<a href="oral.html">Bloc oral</a></footer></div>`;
     status(); HEPFeedback.bind();
     document.getElementById('qcm-home-filters')?.addEventListener('submit', event => {
       event.preventDefault(); search = document.getElementById('qcm-search').value.trim(); render();
@@ -268,10 +315,12 @@
   }
   function route() {
     let hash; try { hash = decodeURIComponent(location.hash.slice(1)); } catch (_) { hash = ''; }
-    activeCourse = null; active = null;
+    activeCourse = null; activeMix = null; active = null;
     const course = IS_ORAL && /^cours-(\d+)$/.exec(hash);
-    if (course) openCourse(String(Number(course[1])));
+    if (IS_ORAL && hash === 'tout-melanger') openMix();
+    else if (course) openCourse(String(Number(course[1])));
     else active = byId.get(hash) || null;
+    if (active) openRun(active);
     view = active ? 'exercise' : ['feedback', 'settings'].includes(hash) ? hash : 'home';
     render(); document.getElementById('qcm-main').focus({ preventScroll: true }); window.scrollTo(0, 0);
   }
@@ -282,6 +331,10 @@
   }
   app.addEventListener('click', async event => {
     const button = event.target.closest('button'); if (!button || button.disabled || !bank) return;
+    if (IS_ORAL && ['mix', 'new-mix'].includes(button.dataset.action)) {
+      if (button.dataset.action === 'new-mix') openMix(true);
+      return navigate('tout-melanger');
+    }
     if (button.dataset.course) return navigate('cours-' + button.dataset.course);
     if (button.dataset.exercise) return navigate(button.dataset.exercise);
     const action = button.dataset.action;
@@ -309,14 +362,14 @@
       return;
     }
     if (action === 'close-dialog') { button.closest('dialog')?.close(); return; }
-    if (action === 'open-context' && active) { const q = active; return mutateRun(q, displayedRun, run => { run.contextUsed = true; return run; }, run => { displayedRun = run; document.getElementById('qcm-context-dialog').showModal(); }); }
+    if (action === 'open-context' && active && needsContext(active.steps[displayedRun?.index])) { const q = active; return mutateRun(q, displayedRun, run => { run.contextUsed = true; return run; }, run => { displayedRun = run; document.getElementById('qcm-context-dialog').showModal(); }); }
     if (action === 'open-hints' && active) {
       const q = active;
       return mutateRun(q, displayedRun, run => { run.hintUsed = true; return run; }, run => { displayedRun = run; if (view === 'exercise' && active?.id === q.id) document.getElementById('qcm-hint-dialog').showModal(); });
     }
     if (button.dataset.choice && active) {
       const q = active, expected = displayedRun, step = q.steps[expected.index], choice = button.dataset.choice;
-      if (button.dataset.step !== step.id || !step.choices.some(c => c.id === choice)) return;
+      if (expected.revealed[step.id] || button.dataset.step !== step.id || !step.choices.some(c => c.id === choice)) return;
       return mutateRun(q, expected, run => {
         run.answers[step.id] = choice; run.revealed[step.id] = true;
         run.checked = q.steps.every(s => run.revealed[s.id]); return run;
@@ -326,13 +379,14 @@
         if (view === 'exercise' && active?.id === q.id) { render(); const verdict = document.querySelector('.qcm-verdict'); verdict.focus({ preventScroll: true }); verdict.scrollIntoView({ block: 'nearest' }); }
       });
     }
+    if (action === 'mix-first' && activeMix) { selectMixedEntry(mixedQueue(activeMix)[0]); render(); document.getElementById('qcm-main').focus(); return; }
     if (action === 'course-first' && activeCourse) { selectCourseEntry(courseQueue(activeCourse)[0]); render(); document.getElementById('qcm-main').focus(); return; }
     if (['next', 'previous'].includes(action) && active) {
       const q = active;
-      if (activeCourse) {
+      if (activeCourse || activeMix) {
         const progress = coursePosition(q, displayedRun), target = progress.queue[progress.index + (action === 'next' ? 1 : -1)];
         if (!target || (action === 'next' && !displayedRun.revealed[q.steps[displayedRun.index].id])) return;
-        return mutateRun(q, displayedRun, run => run, () => { selectCourseEntry(target); render(); const field = document.querySelector('.qcm-step'); field.setAttribute('tabindex', '-1'); field.focus({ preventScroll: true }); field.scrollIntoView({ block: 'start' }); });
+        return mutateRun(q, displayedRun, run => run, () => { if (activeMix) selectMixedEntry(target); else selectCourseEntry(target); render(); const field = document.querySelector('.qcm-step'); field.setAttribute('tabindex', '-1'); field.focus({ preventScroll: true }); field.scrollIntoView({ block: 'start' }); });
       }
       return mutateRun(q, displayedRun, run => {
         if (action === 'next' && run.revealed[q.steps[run.index].id]) run.index = Math.min(q.steps.length - 1, run.index + 1);
@@ -342,7 +396,7 @@
     }
     if (action === 'restart' && active) {
       const q = active;
-      return mutateRun(q, displayedRun, () => ({ id: S.uuid(), answers: {}, order: Object.fromEntries(q.steps.map(s => [s.id, shuffled(s.choices.map(c => c.id))])), revealed: {}, index: 0, checked: false, hintUsed: false }), () => { if (view === 'exercise' && active?.id === q.id) { render(); document.querySelector('.qcm-step').scrollIntoView(); } });
+      return mutateRun(q, displayedRun, run => ({ id: S.uuid(), restartOf: run.id, answers: {}, order: Object.fromEntries(q.steps.map(s => [s.id, shuffled(s.choices.map(c => c.id))])), revealed: {}, index: 0, checked: false, hintUsed: false }), () => { if (view === 'exercise' && active?.id === q.id) { render(); document.querySelector('.qcm-step').scrollIntoView(); } });
     }
     if (action === 'backup') return download('FRA-QCM-sauvegarde.json', { ...repo.state, scope: SCOPE });
     if (action === 'import') return document.getElementById('backup-file').click();

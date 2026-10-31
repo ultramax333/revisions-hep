@@ -22,6 +22,67 @@
   function snapshot(raw = {}) {
     return { question: text(raw.question, 16000), answer: text(raw.answer, 32000), hint: text(raw.hint, 4000), module: text(raw.module, 120), course: text(raw.course, 120) };
   }
+  // QCM attempts are complete snapshots, never a union of answers from different runs.
+  function qcmDraft(key, draft) {
+    const history = /^qcm-history::((?:qcm|qcm2)::.+)::[a-f0-9]{16}(?:::\d+)?$/.exec(key);
+    const base = history ? history[1] : key;
+    if (!/^(?:qcm|qcm2)::/.test(base)) return null;
+    let run; try { run = JSON.parse(draft.text); } catch (_) { return null; }
+    if (!run || !/^[A-Za-z0-9-]{1,100}$/.test(run.id || '') || !run.answers || typeof run.answers !== 'object' || Array.isArray(run.answers) || !run.order || typeof run.order !== 'object' || Array.isArray(run.order)) return null;
+    const parent = typeof run.restartOf === 'string' && /^[A-Za-z0-9-]{1,100}$/.test(run.restartOf) && run.restartOf !== run.id ? run.restartOf : null;
+    return { key: base.replace(/^qcm::/, 'qcm2::'), draft, run, parent, progress: Object.keys(run.answers).length > 0 || Object.values(run.revealed || {}).some(Boolean) || run.checked === true };
+  }
+  function coversRun(a, b) {
+    return a.run.id === b.run.id && (!b.parent || a.parent === b.parent)
+      && Object.entries(b.run.answers).every(([key, value]) => a.run.answers[key] === value)
+      && Object.entries(b.run.order).every(([key, value]) => stable(a.run.order[key]) === stable(value))
+      && Object.entries(b.run.revealed || {}).every(([key, value]) => !value || a.run.revealed?.[key])
+      && (!b.run.checked || a.run.checked) && (!b.run.hintUsed || a.run.hintUsed) && (!b.run.contextUsed || a.run.contextUsed);
+  }
+  function mergeDrafts(left, right) {
+    const out = Object.create(null), groups = new Map();
+    for (const [key, draft] of [...Object.entries(left), ...Object.entries(right)]) {
+      const item = qcmDraft(key, draft);
+      if (!item) { if (later(out[key], draft)) out[key] = draft; continue; }
+      if (!groups.has(item.key)) groups.set(item.key, new Map());
+      const variants = groups.get(item.key), previous = variants.get(draft.text);
+      if (!previous || later(previous.draft, draft)) variants.set(draft.text, item);
+    }
+    for (const [key, variants] of groups) {
+      const versions = [...variants.values()];
+      // Discard only a snapshot already fully represented by the same run.
+      // Reducing all variants (not just the winner) keeps regrouped merges stable.
+      const all = versions.filter(item => !versions.some(other => other !== item && coversRun(other, item) && (!coversRun(item, other) || later(item.draft, other.draft))));
+      const parents = new Map();
+      all.forEach(item => { if (item.parent) { if (!parents.has(item.run.id)) parents.set(item.run.id, new Set()); parents.get(item.run.id).add(item.parent); } });
+      const descends = (id, ancestor) => {
+        const pending = [...(parents.get(id) || [])], visited = new Set([id]);
+        while (pending.length) {
+          const next = pending.pop(); if (next === ancestor) return true;
+          if (!visited.has(next)) { visited.add(next); pending.push(...(parents.get(next) || [])); }
+        }
+        return false;
+      };
+      // An explicit restart supersedes its ancestors, even if their clocks differ.
+      const tips = all.filter(item => !all.some(other => other.run.id !== item.run.id && descends(other.run.id, item.run.id) && !descends(item.run.id, other.run.id)));
+      // An unmarked old empty may be an automatic 1.8.12 seed: keep it, but prefer answers.
+      const meaningful = tips.filter(item => item.progress || item.parent);
+      const pool = meaningful.length ? meaningful : tips;
+      const complete = pool.filter(item => !pool.some(other => coversRun(other, item) && !coversRun(item, other)));
+      const winner = complete.reduce((best, item) => !best || later(best.draft, item.draft) ? item : best, null);
+      out[key] = winner.draft;
+      for (const item of all.sort((a, b) => a.draft.text.localeCompare(b.draft.text))) {
+        if (item !== winner && coversRun(winner, item)) continue;
+        // Keep an immutable copy of the active snapshot too: an older client
+        // may still overwrite the main key, but cannot erase this retained copy.
+        const base = 'qcm-history::' + key + '::' + fingerprint(item.draft.text);
+        let savedKey = base, suffix = 0;
+        while (out[savedKey] && out[savedKey].text !== item.draft.text) savedKey = base + '::' + (++suffix);
+        out[savedKey] = item.draft;
+      }
+    }
+    return out;
+  }
   function normalize(raw, deviceId) {
     if (!raw || typeof raw !== 'object' || raw.schema !== SCHEMA) throw new Error('Ce fichier n’est pas une sauvegarde Révisions HEP compatible.');
     const out = empty();
@@ -41,9 +102,10 @@
         out[name][item.id] = item;
       });
     }
-    Object.entries(raw.drafts || {}).slice(0, 5000).forEach(([id, draft]) => {
+    Object.entries(raw.drafts || {}).forEach(([id, draft]) => {
       if (safeId(id) && draft && typeof draft === 'object') out.drafts[id] = { text: text(draft.text, 12000), updatedAt: stamp(draft.updatedAt) };
     });
+    out.drafts = mergeDrafts(out.drafts, {});
     if (raw.session && typeof raw.session === 'object' && safeId(raw.session.id) && Array.isArray(raw.session.ids)) {
       const ids = raw.session.ids.filter(safeId).slice(0, 10000);
       if (ids.length) out.session = { id: raw.session.id, ids, index: Math.min(Math.max(0, Number(raw.session.index) || 0), ids.length - 1), startedAt: stamp(raw.session.startedAt), mode: text(raw.session.mode, 40), updatedAt: stamp(raw.session.updatedAt) };
@@ -76,7 +138,7 @@
     // Keep the current edit of each device/version thread, including deletion markers.
     // Immutable variants of an ID conflict remain separate threads.
     out.feedback = Object.fromEntries(feedbackThreads(out).map(item => [item.id, item]));
-    Object.entries(right.drafts).forEach(([id, draft]) => { if (!out.drafts[id] || draft.updatedAt > out.drafts[id].updatedAt) out.drafts[id] = draft; });
+    out.drafts = mergeDrafts(left.drafts, right.drafts);
     if (right.sessionUpdatedAt > out.sessionUpdatedAt) { out.session = right.session; out.sessionUpdatedAt = right.sessionUpdatedAt; }
     return out;
   }

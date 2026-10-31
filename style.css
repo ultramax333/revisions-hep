@@ -383,3 +383,29 @@ pre.exercise-text { white-space: pre-wrap; overflow-wrap: anywhere; font: inheri
 /* Keep the situation entry visible beside the question, before its choices. */
 .qcm-context-cue { display: block; max-width: 100%; min-height: 44px; margin: 0 0 .5rem; padding: .3rem 0; border: 0; background: transparent; color: #ffaaa4; font: inherit; font-size: .9rem; line-height: 1.4; text-align: left; text-decoration: underline; text-underline-offset: .16em; overflow-wrap: anywhere; cursor: pointer; }
 .qcm-context-cue:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 3px; }
+
+/* Subject / block / course hierarchy on the oral QCM home. */
+.qcm-mix-start { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 8px 20px; padding: 14px 0 16px; border-bottom: 1px solid var(--border); }
+.qcm-mix-start .help-text { margin-top: 6px; }
+.qcm-mix-start > div { min-width: 0; }
+.qcm-subject { margin-top: 20px; }
+.qcm-subject > h1 { font-size: 1.6rem; }
+.qcm-block { margin-top: 12px; padding-left: 16px; border-left: 2px solid var(--border); }
+.qcm-block > h2 { font-size: 1.15rem; }
+.qcm-block > .hero-description { max-width: 760px; margin-top: 8px; font-size: .95rem; }
+.qcm-block .qcm-home-filters { margin: 14px 0 8px; padding: 0; }
+.qcm-courses { gap: 12px; }
+.qcm-courses .course-card { padding: 14px; }
+.qcm-courses h3 { font-size: 1.05rem; }
+.qcm-courses .help-text { margin: 5px 0 10px; }
+@media (max-width: 450px) { .qcm-block { padding-left: 10px; } .qcm-courses .course-card { padding: 12px; } }
+
+.qcm-oral-home .site-header { gap: 10px; padding-bottom: 12px; margin-bottom: 0; }
+.qcm-oral-home .header-actions { gap: 4px; }
+.qcm-oral-home .header-actions .btn { padding: 8px 9px; font-size: .875rem; }
+.qcm-block .qcm-home-filters { border: 0; border-radius: 0; background: transparent; }
+.qcm-courses { grid-template-columns: minmax(0, 1fr); }
+.qcm-courses .course-card { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 4px 12px; align-items: center; }
+.qcm-courses .help-text { grid-column: 1; margin: 0; }
+.qcm-courses .btn { grid-column: 2; grid-row: 1 / 3; margin: 0; }
+@media (min-width: 760px) { .qcm-courses { grid-template-columns: repeat(2, minmax(0, 1fr)); } }

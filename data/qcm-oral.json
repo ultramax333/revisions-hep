@@ -331,7 +331,8 @@
               "text": "L’ensemble des contenus théoriques et pratiques que les élèves doivent acquérir.",
               "explanation": "Les contenus à acquérir constituent le pôle savoirs. Ils se distinguent des actions par lesquelles l’enseignant les choisit et les transforme pour les enseigner."
             }
-          ]
+          ],
+          "requiresContext": false
         },
         {
           "id": "Q6",
@@ -358,7 +359,8 @@
               "text": "Les formes d’organisation communes aux différentes matières scolaires.",
               "explanation": "Une organisation commune peut soutenir l’enseignement de plusieurs matières. Elle ne définit pas la préoccupation didactique, centrée sur les savoirs."
             }
-          ]
+          ],
+          "requiresContext": false
         },
         {
           "id": "Q7",
@@ -385,7 +387,8 @@
               "text": "Les pratiques éducatives familiales, avant l’entrée dans les disciplines.",
               "explanation": "La pédagogie ne se limite pas à l’éducation familiale ou à une période précédant les disciplines. Son objet est ici la relation dans l’enseignement."
             }
-          ]
+          ],
+          "requiresContext": false
         }
       ],
       "qcmRevision": "e9a89d100cbd"
@@ -490,7 +493,8 @@
               "text": "Le locuteur raconte sans photographie ni objet devant lui.",
               "explanation": "Un support présent peut aider à évoquer un événement absent. L’absence de photographies ne définit pas l’évocation."
             }
-          ]
+          ],
+          "requiresContext": false
         },
         {
           "id": "Q2",
@@ -517,7 +521,8 @@
               "text": "Expliquer pourquoi chaque photographie a été choisie pour l’album.",
               "explanation": "Expliquer le choix des photos fait parler du support. L’obstacle du récit porte ici sur les objets et actions que les auditeurs ne peuvent pas identifier."
             }
-          ]
+          ],
+          "requiresContext": true
         }
       ],
       "qcmRevision": "a311e40fff63"
@@ -610,7 +615,8 @@
               "text": "Le locuteur prépare sa parole à l’aide d’un support travaillé.",
               "explanation": "L’anticipation et le support préparé organisent l’oral planifié. Les phrases peuvent encore être formulées au moment de parler."
             }
-          ]
+          ],
+          "requiresContext": false
         }
       ],
       "qcmRevision": "5a20f4d2bc0c"
@@ -707,7 +713,8 @@
               "text": "Quelles adaptations pour les débutants sont prévues par les règles des jeux que nous connaissons ?",
               "explanation": "Cette question fait recenser des règles existantes. Elle ne fait pas encore examiner les raisons qui les rendent justes ou injustes."
             }
-          ]
+          ],
+          "requiresContext": true
         },
         {
           "id": "Q3",
@@ -734,7 +741,8 @@
               "text": "Qu’est-ce qui, dans l’histoire, laisse penser qu’il voulait être aimé ?",
               "explanation": "Cette relance fait interpréter l’intention du personnage à partir de l’histoire. Elle ne vise pas d’abord le sens général du don."
             }
-          ]
+          ],
+          "requiresContext": false
         },
         {
           "id": "Q4",
@@ -761,7 +769,8 @@
               "text": "Quelle raison soutient l’idée qu’on doit toujours donner ?",
               "explanation": "Demander une raison fait soutenir une affirmation : cela vise d’abord l’argumentation, plutôt que la difficulté à examiner."
             }
-          ]
+          ],
+          "requiresContext": false
         }
       ],
       "qcmRevision": "446848253e2d"
@@ -866,7 +875,8 @@
               "text": "La situation finale : la vie des passagers une fois à l’abri.",
               "explanation": "Développer la vie à l’abri prolongerait la fin du récit. Cela n’expliquerait pas comment les passagers y sont arrivés."
             }
-          ]
+          ],
+          "requiresContext": false
         }
       ],
       "qcmRevision": "aba0c2115015"
@@ -959,7 +969,8 @@
               "text": "Un dispositif inné d’acquisition du langage détermine les stades cognitifs.",
               "explanation": "Le dispositif inné d’acquisition du langage appartient à l’approche de Chomsky. Le cours ne lui attribue pas la détermination des stades de Piaget."
             }
-          ]
+          ],
+          "requiresContext": false
         },
         {
           "id": "Q2",
@@ -986,7 +997,8 @@
               "text": "Il manifeste les règles d’un dispositif universel d’acquisition inné.",
               "explanation": "Le dispositif inné d’acquisition du langage (LAD) est l’hypothèse de Chomsky. Vygotski met ici au premier plan la médiation sociale et le rôle du langage dans la pensée."
             }
-          ]
+          ],
+          "requiresContext": false
         }
       ],
       "qcmRevision": "8d2c432bc05f"
@@ -1083,7 +1095,8 @@
               "text": "Une conséquence renforce la réponse produite après un stimulus.",
               "explanation": "Le schéma stimulus–réponse–renforcement relie la réponse à ses conséquences, qui peuvent favoriser sa répétition."
             }
-          ]
+          ],
+          "requiresContext": false
         },
         {
           "id": "Q2",
@@ -1110,7 +1123,8 @@
               "text": "Un ensemble de règles universelles fourni par un dispositif inné.",
               "explanation": "Les règles universelles et le dispositif inné renvoient à Chomsky. Le format est un scénario d’interaction, pas un dispositif biologique."
             }
-          ]
+          ],
+          "requiresContext": false
         },
         {
           "id": "Q3",
@@ -1137,7 +1151,8 @@
               "text": "L’enfant développe son langage selon ses capacités d’abstraction et de décentration.",
               "explanation": "Le langage dépendant des capacités cognitives correspond à la présentation constructiviste de Piaget."
             }
-          ]
+          ],
+          "requiresContext": false
         }
       ],
       "qcmRevision": "9fbe7e4e79a8"
@@ -1230,7 +1245,8 @@
               "text": "Le niveau que l’enfant atteint sans les questions ni les modèles d’un partenaire.",
               "explanation": "Le niveau sans assistance est le développement actuel. Le décrire seul ne donne pas la distance avec le niveau potentiel."
             }
-          ]
+          ],
+          "requiresContext": false
         }
       ],
       "qcmRevision": "a9ec1fab1c3c"
@@ -1343,7 +1359,8 @@
               "text": "Elle apporte une information nouvelle au message.",
               "explanation": "L’extension enrichit le contenu du message ; une reformulation sans extension change sa forme en gardant ses informations."
             }
-          ]
+          ],
+          "requiresContext": false
         },
         {
           "id": "Q5",
@@ -1370,7 +1387,8 @@
               "text": "Le plan syntaxique.",
               "explanation": "L’adulte combine le sujet singulier « la voiture » avec « est ». Il modifie ainsi la construction de la phrase et garde l’information sur la panne."
             }
-          ]
+          ],
+          "requiresContext": false
         }
       ],
       "qcmRevision": "e17e1e11be31"
@@ -1483,7 +1501,8 @@
               "text": "Remplacer le passage continu de l’air par une fermeture brève.",
               "explanation": "Les deux consonnes sont fricatives : l’air passe avec friction. Une fermeture brève changerait le mode plutôt que le voisement."
             }
-          ]
+          ],
+          "requiresContext": false
         },
         {
           "id": "Q3",
@@ -1510,7 +1529,8 @@
               "text": "Il produit [kuʁ] pour la cour et [tuʁ] pour la tour.",
               "explanation": "Les deux formes produites correspondent aux deux mots. Ce nouvel essai montre un contraste réalisé ; d’autres observations en examineront la stabilité."
             }
-          ]
+          ],
+          "requiresContext": false
         },
         {
           "id": "Q4",
@@ -1537,7 +1557,8 @@
               "text": "Faire passer l’air en continu au lieu de le bloquer brièvement.",
               "explanation": "[t] et [k] sont tous deux des occlusives. Un passage d’air continu changerait leur mode d’articulation, pas le lieu visé."
             }
-          ]
+          ],
+          "requiresContext": false
         }
       ],
       "qcmRevision": "f7aa091a7820"
@@ -1638,7 +1659,8 @@
               "text": "Il montre une explosion lexicale : le même mot est utilisé plus souvent.",
               "explanation": "Augmenter les occurrences d’un même mot ne multiplie pas les mots acquis. Cela ne définit pas une explosion lexicale."
             }
-          ]
+          ],
+          "requiresContext": false
         },
         {
           "id": "Q3",
@@ -1665,7 +1687,8 @@
               "text": "Disposer plusieurs objets et lui demander « Montre la roue ».",
               "explanation": "Le pointage relie le mot entendu à son référent sans exiger sa production. L’adulte doit éviter un geste qui donnerait la réponse."
             }
-          ]
+          ],
+          "requiresContext": false
         },
         {
           "id": "Q4",
@@ -1692,7 +1715,8 @@
               "text": "Une explosion lexicale : elle différencie sa balle des autres jouets.",
               "explanation": "Distinguer des objets ne montre pas une accélération de l’acquisition de mots. L’observation porte sur le domaine restreint de « balle »."
             }
-          ]
+          ],
+          "requiresContext": false
         },
         {
           "id": "Q5",
@@ -1719,7 +1743,8 @@
               "text": "L’élargissement du nombre d’objets désignés par un même mot.",
               "explanation": "Étendre un mot à davantage d’objets concerne son domaine d’emploi, notamment la sur-extension, et non la vitesse d’acquisition du répertoire."
             }
-          ]
+          ],
+          "requiresContext": false
         }
       ],
       "qcmRevision": "914a17200ac1"
@@ -1836,7 +1861,8 @@
               "text": "Le lien causal introduit par « parce que ».",
               "explanation": "« Parce que » relie la demande à sa raison. Cette construction figure parmi les phrases complexes de la progression."
             }
-          ]
+          ],
+          "requiresContext": false
         },
         {
           "id": "Q3",
@@ -1863,7 +1889,8 @@
               "text": "Faire décrire les différentes actions d’un même garçon par l’enfant qui les a observées.",
               "explanation": "Les actions changent, mais le témoin parle du même garçon à la troisième personne du singulier. Il peut conserver « il » ; cet aménagement ne fait pas varier les pronoms personnels."
             }
-          ]
+          ],
+          "requiresContext": false
         }
       ],
       "qcmRevision": "1da7dd57b256"
@@ -1960,7 +1987,8 @@
               "text": "Le repère est présent : l’enfant parle au moment de produire ces phrases.",
               "explanation": "Un locuteur parle maintenant même quand il prend un repère passé ou futur. Le moment de parole ne suffit donc pas à identifier ce système."
             }
-          ]
+          ],
+          "requiresContext": false
         },
         {
           "id": "Q2",
@@ -1987,7 +2015,8 @@
               "text": "Une action envisagée après le moment où l’enfant raconte.",
               "explanation": "L’action est projetée depuis « on était prêts », la veille. Elle n’est pas présentée comme future par rapport au moment où l’enfant raconte."
             }
-          ]
+          ],
+          "requiresContext": false
         },
         {
           "id": "Q3",
@@ -2014,7 +2043,8 @@
               "text": "aller au passé composé suivi d’un infinitif",
               "explanation": "« Aller » au passé composé présente un déplacement passé. La série demandée utilise « aller » au futur pour envisager une suite depuis un repère futur."
             }
-          ]
+          ],
+          "requiresContext": false
         }
       ],
       "qcmRevision": "10b530a4867e"
@@ -2111,7 +2141,8 @@
               "text": "Elle conserve une construction simple puisqu’elle garde le projet de l’enfant.",
               "explanation": "Une reformulation peut garder le sens tout en changeant la structure. Ici, le projet reste le même et le lien de but devient explicite."
             }
-          ]
+          ],
+          "requiresContext": false
         }
       ],
       "qcmRevision": "83f85dd1d0d8"
@@ -2212,7 +2243,8 @@
               "text": "La perte du bateau lance une recherche, mais le récit s’arrête avant sa récupération.",
               "explanation": "La perte pose une complication. Le récit développe des tentatives puis s’arrête avant de montrer comment le problème se règle : la résolution est suspendue. Ce critère caractérise ici le récit d’imagination chez Terwagne et Vanesse."
             }
-          ]
+          ],
+          "requiresContext": true
         }
       ],
       "qcmRevision": "27bc01326436"
@@ -2317,7 +2349,8 @@
               "text": "Le locuteur atteint un niveau comparable dans chacune des deux langues.",
               "explanation": "Un bilingue peut avoir des compétences différentes selon les langues et les domaines. Un niveau égal ne définit pas le simultané."
             }
-          ]
+          ],
+          "requiresContext": false
         },
         {
           "id": "Q3",
@@ -2344,7 +2377,8 @@
               "text": "Une seconde langue reste peu parlée, quel que soit l’âge auquel elle a commencé.",
               "explanation": "Une phase muette est fréquente dans l’apprentissage consécutif, mais la faible production ne définit pas sa catégorie chronologique."
             }
-          ]
+          ],
+          "requiresContext": false
         },
         {
           "id": "Q4",
@@ -2371,7 +2405,8 @@
               "text": "La seconde langue commence lorsque le locuteur sait lire dans la première.",
               "explanation": "L’écrit peut entrer en jeu dans l’acquisition tardive. Savoir lire n’est cependant pas le critère de définition de cette catégorie."
             }
-          ]
+          ],
+          "requiresContext": false
         },
         {
           "id": "Q5",
@@ -2398,7 +2433,8 @@
               "text": "Lui faire échanger des questions familières en arabe, puis les reprendre en conversation française.",
               "explanation": "La conversation peut soutenir la communication, mais sa cible diffère de l’explication scolaire structurée. Ici, il faut travailler étapes et causes."
             }
-          ]
+          ],
+          "requiresContext": false
         }
       ],
       "qcmRevision": "3bb3e6f6724f"
@@ -2499,7 +2535,8 @@
               "text": "Restituer de mémoire les mots exacts d’un message après son écoute.",
               "explanation": "Une restitution fidèle des mots peut mobiliser la mémoire sans montrer leur interprétation. La compréhension vise le sens construit."
             }
-          ]
+          ],
+          "requiresContext": false
         }
       ],
       "qcmRevision": "91942eb54392"
@@ -2600,7 +2637,8 @@
               "text": "« Parce que » relie la conservation des piles à leur utilité.",
               "explanation": "Le lien causal construit une phrase complexe. Il ne définit pas la dislocation, qui concerne ici l’organisation du sujet."
             }
-          ]
+          ],
+          "requiresContext": false
         }
       ],
       "qcmRevision": "12e039b0546e"
@@ -2701,7 +2739,8 @@
               "text": "Un geste qui règle le volume et l’intonation de la voix.",
               "explanation": "Volume et intonation relèvent du paraverbal. Le geste coverbal décrit un moyen corporel associé aux mots."
             }
-          ]
+          ],
+          "requiresContext": false
         },
         {
           "id": "Q2",
@@ -2728,7 +2767,8 @@
               "text": "Le pointage, les mimiques et les gestes associés à la parole.",
               "explanation": "Ces moyens corporels relèvent du non-verbal ; lorsqu’ils accompagnent la parole, ils peuvent aussi être coverbaux."
             }
-          ]
+          ],
+          "requiresContext": false
         }
       ],
       "qcmRevision": "4cf3ade5fe6d"
@@ -2829,7 +2869,8 @@
               "text": "Faire apprendre à comprendre et à produire des paroles adaptées à une situation.",
               "explanation": "Les capacités de compréhension et de production orales deviennent elles-mêmes les apprentissages visés et observés."
             }
-          ]
+          ],
+          "requiresContext": false
         }
       ],
       "qcmRevision": "f74eda83c1be"
@@ -2922,7 +2963,8 @@
               "text": "Travailler les genres oraux avant d’aborder leurs genres écrits apparentés.",
               "explanation": "Le cours prévoit l’interaction des genres oraux et écrits apparentés, pas leur traitement dans cet ordre unique."
             }
-          ]
+          ],
+          "requiresContext": false
         }
       ],
       "qcmRevision": "c76e39909c93"
@@ -3031,7 +3073,8 @@
               "text": "Les cartes proposent une porte et une clé parmi les contenus possibles.",
               "explanation": "Les cartes fournissent des supports et des contenus. La textualisation concerne les unités par lesquelles le narrateur relie et formule ces contenus."
             }
-          ]
+          ],
+          "requiresContext": true
         }
       ],
       "qcmRevision": "a041f5283c4b"
@@ -3140,7 +3183,8 @@
               "text": "Prendre des notes sur les idées comprises et les restituer à la fin de la discussion.",
               "explanation": "Cette responsabilité est celle du synthétiseur, qui rend compte de ce qu’il a compris de l’ensemble de la discussion."
             }
-          ]
+          ],
+          "requiresContext": false
         },
         {
           "id": "Q2",
@@ -3167,7 +3211,8 @@
               "text": "Le compromis qu’il juge le meilleur après avoir écouté les points de vue.",
               "explanation": "Proposer un compromis personnel relève du rôle de discutant. Une synthèse restitue les idées effectivement exprimées plutôt que d’ajouter sa propre solution."
             }
-          ]
+          ],
+          "requiresContext": false
         }
       ],
       "qcmRevision": "0aa48a2a451e"
@@ -3268,7 +3313,8 @@
               "text": "Une responsabilité d’échange qui consiste à redire le propos d’un camarade.",
               "explanation": "Cette responsabilité est la reformulation dans une discussion. Le rôle langagier confié à un élève se distingue du personnage qu’il joue."
             }
-          ]
+          ],
+          "requiresContext": false
         }
       ],
       "qcmRevision": "7266e4d00636"
@@ -3361,7 +3407,8 @@
               "text": "La connaissance des règles qui permettent de former des phrases dans une langue.",
               "explanation": "La connaissance des règles concerne des ressources linguistiques. L’activité de langage les mobilise pour signifier, plutôt que de s’y réduire."
             }
-          ]
+          ],
+          "requiresContext": false
         },
         {
           "id": "Q4",
@@ -3388,7 +3435,8 @@
               "text": "L’utilisation concrète des signes linguistiques dans un contexte précis.",
               "explanation": "La parole est de nature individuelle : une personne emploie effectivement les signes dans une situation précise."
             }
-          ]
+          ],
+          "requiresContext": false
         },
         {
           "id": "Q5",
@@ -3415,7 +3463,8 @@
               "text": "Elle regroupe les énoncés produits au cours d’un échange entre plusieurs personnes.",
               "explanation": "Un relevé d’échange conserve des réalisations de parole. Plusieurs réalisations ne constituent pas à elles seules le système de la langue."
             }
-          ]
+          ],
+          "requiresContext": false
         }
       ],
       "qcmRevision": "9c9c24e3cada"
@@ -3512,7 +3561,8 @@
               "text": "Le français utilisé pour communiquer et apprendre dans toutes les disciplines.",
               "explanation": "Le français assure la médiation des apprentissages dans les différentes disciplines ; il est alors outil d’apprentissage."
             }
-          ]
+          ],
+          "requiresContext": false
         }
       ],
       "qcmRevision": "45c2b3547e76"
@@ -3617,7 +3667,8 @@
               "text": "La lecture élargit le domaine d’emploi de chaque mot, ce qui explique l’accélération du vocabulaire.",
               "explanation": "Le domaine d’emploi d’un mot concerne les généralisations, comme les sous- et sur-extensions. Ce n’est pas la boucle cumulative de l’effet Matthieu."
             }
-          ]
+          ],
+          "requiresContext": false
         }
       ],
       "qcmRevision": "e87ecbaeefeb"
@@ -3710,7 +3761,8 @@
               "text": "Un genre dont des caractéristiques sont retenues comme objets d’apprentissage.",
               "explanation": "La didactisation retient les caractéristiques que les élèves doivent apprendre à comprendre ou à produire, dans des textes entiers ou partiels."
             }
-          ]
+          ],
+          "requiresContext": false
         }
       ],
       "qcmRevision": "c6b1033de9b6"
@@ -3807,7 +3859,8 @@
               "text": "La présence d’un nom de personnage avant chaque nouvelle action.",
               "explanation": "Répéter les noms est un moyen possible, pas une condition de chaque action. L’indicateur doit examiner l’identification, sans imposer ce procédé unique."
             }
-          ]
+          ],
+          "requiresContext": false
         }
       ],
       "qcmRevision": "4e8ecff3f0cd"
@@ -3920,7 +3973,8 @@
               "text": "C’est une écoute marquée : Malik utilise l’idée d’Inès pour construire son hypothèse.",
               "explanation": "Malik prend le propos d’Inès comme point de départ de son hypothèse. Ce lien de contenu, plutôt que le simple fait de parler après elle, montre l’écoute marquée."
             }
-          ]
+          ],
+          "requiresContext": false
         },
         {
           "id": "Q4",
@@ -3947,7 +4001,8 @@
               "text": "Il relève de la conversation : le nombre de participants dépasse celui d’un dialogue.",
               "explanation": "Dans ce cadre, le dialogue est guidé par un but et peut réunir plusieurs élèves. Deux participants ne sont pas une condition de définition."
             }
-          ]
+          ],
+          "requiresContext": false
         },
         {
           "id": "Q5",
@@ -3974,7 +4029,8 @@
               "text": "Sami et Lina prennent chacun la parole sur le thème du don.",
               "explanation": "L’alternance des locuteurs et le thème commun ne suffisent pas. Une paire adjacente suppose que le second tour accomplisse une réponse attendue par le premier."
             }
-          ]
+          ],
+          "requiresContext": false
         }
       ],
       "qcmRevision": "509503352dd8"
@@ -4075,7 +4131,8 @@
               "text": "Les valeurs et les opinions qu’une personne attribue à l’oral.",
               "explanation": "Ces valeurs et opinions relèvent de l’axiologique, plutôt que du retour réflexif sur une activité."
             }
-          ]
+          ],
+          "requiresContext": false
         },
         {
           "id": "Q3",
@@ -4102,11 +4159,12 @@
               "text": "La façon d’envisager les échanges selon les contextes.",
               "explanation": "L’interactionnel concerne la manière d’envisager l’échange en fonction de la situation. Le relationnel concerne plutôt les aspects de l’entrée en relation."
             }
-          ]
+          ],
+          "requiresContext": false
         }
       ],
       "qcmRevision": "fa2e0d2b40a4"
     }
   ],
-  "bankRevision": "101efa24367f"
+  "bankRevision": "3d0aafecf2e0"
 }

@@ -110,7 +110,8 @@
               "text": "A et B : répétitions totales.",
               "explanation": "La présence de mots déjà employés justifie ici la famille répétition. Pour le sous-type, il faut encore vérifier si tout l’énoncé de l’enfant est repris : ce n’est pas le cas de B."
             }
-          ]
+          ],
+          "requiresContext": false
         },
         {
           "id": "Q2",
@@ -137,7 +138,8 @@
               "text": "L’adulte remplace « a » par « est » et propose une autre construction pour la même chute.",
               "explanation": "« Il a tombé » devient « Il est tombé ». Le message de chute est conservé et sa formulation grammaticale change : c’est le critère qui justifie la reformulation."
             }
-          ]
+          ],
+          "requiresContext": false
         },
         {
           "id": "Q3",
@@ -164,7 +166,8 @@
               "text": "C : avec extension ; D : avec extension.",
               "explanation": "L’amélioration grammaticale permet de reconnaître une reformulation. Elle ne décide pas de l’extension, qui exige une information ajoutée : le lieu dans D, absent de C."
             }
-          ]
+          ],
+          "requiresContext": false
         }
       ],
       "qcmRevision": "d1294354ae84"
@@ -258,7 +261,8 @@
               "text": "Nommer les personnages avec aide, puis relier deux événements grâce à cette même aide.",
               "explanation": "L’enfant nomme déjà seul les personnages. Cette proposition retire le point de comparaison autonome ; or la ZPD exige de distinguer ce qui est réussi seul de ce qui l’est avec aide."
             }
-          ]
+          ],
+          "requiresContext": false
         },
         {
           "id": "Q2",
@@ -285,7 +289,8 @@
               "text": "La ZPD situe l’écart de réussite ; l’étayage consiste à fournir un récit que l’enfant peut répéter.",
               "explanation": "La première partie convient, mais l’adulte ne fournit pas le récit dans ce cas. Il pose des questions auxquelles l’enfant répond : il faut décrire l’aide effectivement observée, sans la remplacer par une autre."
             }
-          ]
+          ],
+          "requiresContext": false
         },
         {
           "id": "Q3",
@@ -312,7 +317,8 @@
               "text": "Espacer les questions selon les réussites, puis observer si l’enfant relie les événements sans ces relances.",
               "explanation": "Le soutien diminue progressivement et l’observation porte sur la part jusque-là aidée : relier les événements. La réussite accompagnée initiale indique une possibilité avec aide, sans établir déjà l’autonomie."
             }
-          ]
+          ],
+          "requiresContext": false
         }
       ],
       "qcmRevision": "c9b98f7c7f9b"
@@ -406,7 +412,8 @@
               "text": "Quels mots l’échange apporte-t-il pour exprimer les relations que l’enfant comprend déjà ?",
               "explanation": "Cette piste examine les moyens d’expression en supposant les relations déjà comprises. Elle peut être utile, mais elle ne cible pas la question cognitive posée ici : quelles relations l’enfant peut-il se représenter pour pouvoir les exprimer ? Le cours donne cette priorité au développement cognitif dans sa présentation de Piaget."
             }
-          ]
+          ],
+          "requiresContext": false
         },
         {
           "id": "Q2",
@@ -433,7 +440,8 @@
               "text": "Examiner comment l’enfant met en mots des relations qu’il s’était représentées avant l’échange.",
               "explanation": "Exprimer des relations déjà construites n’est pas incompatible avec le cadre de Vygotski. Mais cette piste ne cible pas la contribution du langage à leur élaboration, objet précis de la question. Elle suppose aussi une organisation préalable que la scène ne permet pas d’établir."
             }
-          ]
+          ],
+          "requiresContext": false
         },
         {
           "id": "Q3",
@@ -460,11 +468,12 @@
               "text": "Elle demande d’observer d’autres scènes avant de pouvoir proposer une interprétation théorique de ce cas.",
               "explanation": "D’autres observations sont nécessaires pour étayer et comparer des explications générales. Elles ne sont pas un préalable à toute interprétation raisonnée d’une scène. On peut mobiliser les cadres dès ce cas, en limitant la portée de la conclusion."
             }
-          ]
+          ],
+          "requiresContext": false
         }
       ],
       "qcmRevision": "22718a08b90e"
     }
   ],
-  "bankRevision": "27f2c1ba58fe"
+  "bankRevision": "38c9a0d65477"
 }
