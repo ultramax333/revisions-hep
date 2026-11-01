@@ -16,12 +16,13 @@
     const url = URL.createObjectURL(new Blob([JSON.stringify(value, null, 2)], { type: 'application/json;charset=utf-8' }));
     const a = document.createElement('a'); a.href = url; a.download = S.exportPrefix + '-avis-sauvegarde.json'; a.click(); setTimeout(() => URL.revokeObjectURL(url), 30000);
   }
-  function bind({ question, getSnapshot } = {}) {
+  function bind({ question, getSnapshot, mode = 'qcm' } = {}) {
     const gen = ++generation;
     unsubscribe?.();
     const root = document.getElementById('app'), voteBox = root.querySelector('.quick-vote');
     const comment = root.querySelector('#quick-vote-comment'), commentWrap = root.querySelector('[data-quick-comment-wrap]');
-    let editorVersion = null, ownWrite = false, commentQueue = Promise.resolve(), sequence = 0, voteError = '';
+    let editorVersion = null, ownWrite = false, commentQueue = Promise.resolve(), sequence = 0, voteError = '', otherMode = false;
+    const snapshotMode = snapshot => snapshot.question.startsWith('Sans les choix\n\n') ? 'sans-choix' : 'qcm';
     const message = (selector, text) => { if (gen === generation) { const node = root.querySelector(selector); if (node) node.textContent = text; } };
     const refresh = async () => {
       const seq = ++sequence;
@@ -33,9 +34,11 @@
         message('[data-quick-send-status]', sending ? 'Envoi groupé en cours…' : groupMessage);
         root.querySelectorAll('[data-quick-send]').forEach(button => { button.disabled = sending || !count.pending; button.textContent = sending ? 'Envoi en cours…' : 'Envoyer mes avis'; button.setAttribute('aria-busy', String(sending)); });
         if (voteBox) {
-          voteBox.querySelectorAll('[data-quick-value]').forEach(button => button.setAttribute('aria-pressed', String(thread?.current.value === button.dataset.quickValue)));
-          message('[data-quick-vote-status]', voteError || (thread ? (thread.current.value === 'up' ? '👍 Utile et claire. ' : '👎 À revoir. ') + (S.currentReceived(state, thread) ? 'Avis reçu.' : 'Avis enregistré sur cet appareil, à envoyer en groupe.') : 'Un clic conserve ton avis ici ; l’envoi se fait en groupe.'));
-          commentWrap.hidden = !thread || (thread.current.value !== 'down' && !thread.current.comment);
+          otherMode = !!thread && snapshotMode(thread.current.snapshot) !== mode;
+          voteBox.querySelectorAll('[data-quick-value]').forEach(button => button.setAttribute('aria-pressed', String(!otherMode && thread?.current.value === button.dataset.quickValue)));
+          message('[data-quick-vote-status]', voteError || (otherMode ? 'Un avis est conservé en mode ' + (mode === 'qcm' ? 'Sans les choix' : 'QCM') + '. Un clic sur un pouce le remplace pour ce mode-ci, sans reprendre son commentaire. Les intentions déjà préparées restent conservées.' : thread ? (thread.current.value === 'up' ? '👍 Utile et claire. ' : '👎 À revoir. ') + (S.currentReceived(state, thread) ? 'Avis reçu.' : 'Avis enregistré sur cet appareil, à envoyer en groupe.') : 'Un clic conserve ton avis ici ; l’envoi se fait en groupe.'));
+          commentWrap.hidden = otherMode || !thread || (thread.current.value !== 'down' && !thread.current.comment);
+          comment.disabled = otherMode;
           if (thread && document.activeElement !== comment && !ownWrite) { comment.value = thread.current.comment; editorVersion = thread.version; }
           if (thread && editorVersion === null) editorVersion = thread.version;
         }
@@ -45,7 +48,7 @@
           for (const t of Object.values(state.threads).sort((a, b) => b.current.updatedAt.localeCompare(a.current.updatedAt))) {
             const article = document.createElement('article'); article.className = 'feedback-item';
             const title = document.createElement('h2'); title.textContent = t.current.value === 'up' ? '👍 Utile et claire' : '👎 À revoir';
-            const status = document.createElement('p'); status.className = 'help-text'; status.textContent = S.currentReceived(state, t) ? 'Avis courant reçu.' : 'Avis courant à envoyer.';
+            const status = document.createElement('p'); status.className = 'help-text'; status.textContent = (S.currentReceived(state, t) ? 'Avis courant reçu.' : 'Avis courant à envoyer.') + ' Contexte : ' + (snapshotMode(t.current.snapshot) === 'qcm' ? 'QCM.' : 'Sans les choix.');
             const details = document.createElement('details'), summary = document.createElement('summary'); summary.textContent = 'Question et contenus conservés'; details.append(summary);
             for (const text of [t.current.snapshot.question, t.current.snapshot.answer, t.current.snapshot.hint, t.current.comment]) { if (!text) continue; const p = document.createElement('p'); p.className = 'exercise-text'; p.textContent = text; details.append(p); }
             article.append(title, status, details); list.append(article);
@@ -69,6 +72,7 @@
       finally { ownWrite = false; refresh(); }
     }));
     comment?.addEventListener('input', () => {
+      if (otherMode) return;
       const value = comment.value;
       ownWrite = true;
       commentQueue = commentQueue.then(async () => {

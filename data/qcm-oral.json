@@ -743,7 +743,8 @@
             }
           ],
           "requiresContext": false,
-          "level": "essentiel"
+          "level": "essentiel",
+          "sansChoix": true
         },
         {
           "id": "Q6",
@@ -772,7 +773,8 @@
             }
           ],
           "requiresContext": false,
-          "level": "essentiel"
+          "level": "essentiel",
+          "sansChoix": true
         },
         {
           "id": "Q7",
@@ -801,7 +803,8 @@
             }
           ],
           "requiresContext": false,
-          "level": "essentiel"
+          "level": "essentiel",
+          "sansChoix": true
         }
       ],
       "qcmRevision": "e9a89d100cbd",
@@ -910,7 +913,8 @@
             }
           ],
           "requiresContext": false,
-          "level": "essentiel"
+          "level": "essentiel",
+          "sansChoix": true
         },
         {
           "id": "Q2",
@@ -939,7 +943,8 @@
             }
           ],
           "requiresContext": false,
-          "level": "essentiel"
+          "level": "essentiel",
+          "sansChoix": false
         }
       ],
       "qcmRevision": "0e8cb2a3343a",
@@ -1036,7 +1041,8 @@
             }
           ],
           "requiresContext": false,
-          "level": "essentiel"
+          "level": "essentiel",
+          "sansChoix": true
         }
       ],
       "qcmRevision": "5a20f4d2bc0c",
@@ -1137,7 +1143,8 @@
             }
           ],
           "requiresContext": true,
-          "level": "essentiel"
+          "level": "essentiel",
+          "sansChoix": false
         },
         {
           "id": "Q3",
@@ -1166,7 +1173,8 @@
             }
           ],
           "requiresContext": false,
-          "level": "essentiel"
+          "level": "essentiel",
+          "sansChoix": false
         },
         {
           "id": "Q4",
@@ -1195,7 +1203,8 @@
             }
           ],
           "requiresContext": false,
-          "level": "essentiel"
+          "level": "essentiel",
+          "sansChoix": false
         }
       ],
       "qcmRevision": "446848253e2d",
@@ -1304,7 +1313,8 @@
             }
           ],
           "requiresContext": false,
-          "level": "essentiel"
+          "level": "essentiel",
+          "sansChoix": true
         }
       ],
       "qcmRevision": "aba0c2115015",
@@ -1401,7 +1411,8 @@
             }
           ],
           "requiresContext": false,
-          "level": "essentiel"
+          "level": "essentiel",
+          "sansChoix": true
         },
         {
           "id": "Q2",
@@ -1430,7 +1441,8 @@
             }
           ],
           "requiresContext": false,
-          "level": "essentiel"
+          "level": "essentiel",
+          "sansChoix": true
         }
       ],
       "qcmRevision": "8d2c432bc05f",
@@ -1531,7 +1543,8 @@
             }
           ],
           "requiresContext": false,
-          "level": "essentiel"
+          "level": "essentiel",
+          "sansChoix": true
         },
         {
           "id": "Q2",
@@ -1560,7 +1573,8 @@
             }
           ],
           "requiresContext": false,
-          "level": "essentiel"
+          "level": "essentiel",
+          "sansChoix": true
         },
         {
           "id": "Q3",
@@ -1589,7 +1603,8 @@
             }
           ],
           "requiresContext": false,
-          "level": "essentiel"
+          "level": "essentiel",
+          "sansChoix": true
         }
       ],
       "qcmRevision": "9fbe7e4e79a8",
@@ -1686,7 +1701,8 @@
             }
           ],
           "requiresContext": false,
-          "level": "essentiel"
+          "level": "essentiel",
+          "sansChoix": true
         }
       ],
       "qcmRevision": "a9ec1fab1c3c",
@@ -1803,7 +1819,8 @@
             }
           ],
           "requiresContext": false,
-          "level": "essentiel"
+          "level": "essentiel",
+          "sansChoix": true
         },
         {
           "id": "Q5",
@@ -1832,7 +1849,8 @@
             }
           ],
           "requiresContext": false,
-          "level": "essentiel"
+          "level": "essentiel",
+          "sansChoix": true
         }
       ],
       "qcmRevision": "e17e1e11be31",
@@ -1949,7 +1967,8 @@
             }
           ],
           "requiresContext": false,
-          "level": "essentiel"
+          "level": "essentiel",
+          "sansChoix": true
         },
         {
           "id": "Q3",
@@ -1978,7 +1997,8 @@
             }
           ],
           "requiresContext": false,
-          "level": "essentiel"
+          "level": "essentiel",
+          "sansChoix": false
         },
         {
           "id": "Q4",
@@ -2007,7 +2027,8 @@
             }
           ],
           "requiresContext": false,
-          "level": "essentiel"
+          "level": "essentiel",
+          "sansChoix": true
         }
       ],
       "qcmRevision": "f7aa091a7820",
@@ -2112,7 +2133,8 @@
             }
           ],
           "requiresContext": false,
-          "level": "essentiel"
+          "level": "essentiel",
+          "sansChoix": true
         },
         {
           "id": "Q3",
@@ -2141,7 +2163,8 @@
             }
           ],
           "requiresContext": false,
-          "level": "essentiel"
+          "level": "essentiel",
+          "sansChoix": false
         },
         {
           "id": "Q4",
@@ -2170,7 +2193,8 @@
             }
           ],
           "requiresContext": false,
-          "level": "essentiel"
+          "level": "essentiel",
+          "sansChoix": true
         },
         {
           "id": "Q5",
@@ -2199,7 +2223,8 @@
             }
           ],
           "requiresContext": false,
-          "level": "essentiel"
+          "level": "essentiel",
+          "sansChoix": true
         }
       ],
       "qcmRevision": "914a17200ac1",
@@ -2320,7 +2345,8 @@
             }
           ],
           "requiresContext": false,
-          "level": "essentiel"
+          "level": "essentiel",
+          "sansChoix": true
         },
         {
           "id": "Q3",
@@ -2349,7 +2375,8 @@
             }
           ],
           "requiresContext": false,
-          "level": "essentiel"
+          "level": "essentiel",
+          "sansChoix": false
         }
       ],
       "qcmRevision": "1da7dd57b256",
@@ -2450,7 +2477,8 @@
             }
           ],
           "requiresContext": false,
-          "level": "essentiel"
+          "level": "essentiel",
+          "sansChoix": true
         },
         {
           "id": "Q2",
@@ -2479,7 +2507,8 @@
             }
           ],
           "requiresContext": false,
-          "level": "essentiel"
+          "level": "essentiel",
+          "sansChoix": true
         },
         {
           "id": "Q3",
@@ -2508,7 +2537,8 @@
             }
           ],
           "requiresContext": false,
-          "level": "essentiel"
+          "level": "essentiel",
+          "sansChoix": true
         }
       ],
       "qcmRevision": "0a2a012bfcb7",
@@ -2609,7 +2639,8 @@
             }
           ],
           "requiresContext": false,
-          "level": "essentiel"
+          "level": "essentiel",
+          "sansChoix": true
         }
       ],
       "qcmRevision": "83f85dd1d0d8",
@@ -2714,7 +2745,8 @@
             }
           ],
           "requiresContext": true,
-          "level": "essentiel"
+          "level": "essentiel",
+          "sansChoix": false
         }
       ],
       "qcmRevision": "27bc01326436",
@@ -2823,7 +2855,8 @@
             }
           ],
           "requiresContext": false,
-          "level": "essentiel"
+          "level": "essentiel",
+          "sansChoix": true
         },
         {
           "id": "Q3",
@@ -2852,7 +2885,8 @@
             }
           ],
           "requiresContext": false,
-          "level": "essentiel"
+          "level": "essentiel",
+          "sansChoix": true
         },
         {
           "id": "Q4",
@@ -2881,7 +2915,8 @@
             }
           ],
           "requiresContext": false,
-          "level": "essentiel"
+          "level": "essentiel",
+          "sansChoix": true
         },
         {
           "id": "Q5",
@@ -2910,7 +2945,8 @@
             }
           ],
           "requiresContext": false,
-          "level": "essentiel"
+          "level": "essentiel",
+          "sansChoix": true
         }
       ],
       "qcmRevision": "fd08f2277719",
@@ -3015,7 +3051,8 @@
             }
           ],
           "requiresContext": false,
-          "level": "essentiel"
+          "level": "essentiel",
+          "sansChoix": true
         }
       ],
       "qcmRevision": "91942eb54392",
@@ -3120,7 +3157,8 @@
             }
           ],
           "requiresContext": false,
-          "level": "essentiel"
+          "level": "essentiel",
+          "sansChoix": true
         }
       ],
       "qcmRevision": "12e039b0546e",
@@ -3225,7 +3263,8 @@
             }
           ],
           "requiresContext": false,
-          "level": "essentiel"
+          "level": "essentiel",
+          "sansChoix": true
         },
         {
           "id": "Q2",
@@ -3254,7 +3293,8 @@
             }
           ],
           "requiresContext": false,
-          "level": "essentiel"
+          "level": "essentiel",
+          "sansChoix": true
         }
       ],
       "qcmRevision": "4cf3ade5fe6d",
@@ -3359,7 +3399,8 @@
             }
           ],
           "requiresContext": false,
-          "level": "essentiel"
+          "level": "essentiel",
+          "sansChoix": true
         }
       ],
       "qcmRevision": "f74eda83c1be",
@@ -3456,7 +3497,8 @@
             }
           ],
           "requiresContext": false,
-          "level": "essentiel"
+          "level": "essentiel",
+          "sansChoix": true
         }
       ],
       "qcmRevision": "c76e39909c93",
@@ -3569,7 +3611,8 @@
             }
           ],
           "requiresContext": true,
-          "level": "essentiel"
+          "level": "essentiel",
+          "sansChoix": true
         }
       ],
       "qcmRevision": "a041f5283c4b",
@@ -3682,7 +3725,8 @@
             }
           ],
           "requiresContext": false,
-          "level": "essentiel"
+          "level": "essentiel",
+          "sansChoix": true
         }
       ],
       "qcmRevision": "37431db24916",
@@ -3787,7 +3831,8 @@
             }
           ],
           "requiresContext": false,
-          "level": "essentiel"
+          "level": "essentiel",
+          "sansChoix": true
         }
       ],
       "qcmRevision": "7266e4d00636",
@@ -3884,7 +3929,8 @@
             }
           ],
           "requiresContext": false,
-          "level": "essentiel"
+          "level": "essentiel",
+          "sansChoix": true
         },
         {
           "id": "Q4",
@@ -3913,7 +3959,8 @@
             }
           ],
           "requiresContext": false,
-          "level": "essentiel"
+          "level": "essentiel",
+          "sansChoix": true
         },
         {
           "id": "Q5",
@@ -3942,7 +3989,8 @@
             }
           ],
           "requiresContext": false,
-          "level": "essentiel"
+          "level": "essentiel",
+          "sansChoix": true
         }
       ],
       "qcmRevision": "a54d64eea25a",
@@ -4043,7 +4091,8 @@
             }
           ],
           "requiresContext": false,
-          "level": "essentiel"
+          "level": "essentiel",
+          "sansChoix": true
         }
       ],
       "qcmRevision": "45c2b3547e76",
@@ -4152,7 +4201,8 @@
             }
           ],
           "requiresContext": false,
-          "level": "essentiel"
+          "level": "essentiel",
+          "sansChoix": true
         }
       ],
       "qcmRevision": "e87ecbaeefeb",
@@ -4249,7 +4299,8 @@
             }
           ],
           "requiresContext": false,
-          "level": "essentiel"
+          "level": "essentiel",
+          "sansChoix": true
         }
       ],
       "qcmRevision": "c6b1033de9b6",
@@ -4350,7 +4401,8 @@
             }
           ],
           "requiresContext": false,
-          "level": "essentiel"
+          "level": "essentiel",
+          "sansChoix": false
         }
       ],
       "qcmRevision": "4e8ecff3f0cd",
@@ -4467,7 +4519,8 @@
             }
           ],
           "requiresContext": false,
-          "level": "essentiel"
+          "level": "essentiel",
+          "sansChoix": true
         },
         {
           "id": "Q4",
@@ -4496,7 +4549,8 @@
             }
           ],
           "requiresContext": false,
-          "level": "essentiel"
+          "level": "essentiel",
+          "sansChoix": true
         },
         {
           "id": "Q5",
@@ -4525,7 +4579,8 @@
             }
           ],
           "requiresContext": false,
-          "level": "essentiel"
+          "level": "essentiel",
+          "sansChoix": false
         }
       ],
       "qcmRevision": "509503352dd8",
@@ -4630,7 +4685,8 @@
             }
           ],
           "requiresContext": false,
-          "level": "approfondissement"
+          "level": "approfondissement",
+          "sansChoix": true
         },
         {
           "id": "Q3",
@@ -4659,7 +4715,8 @@
             }
           ],
           "requiresContext": false,
-          "level": "approfondissement"
+          "level": "approfondissement",
+          "sansChoix": true
         }
       ],
       "qcmRevision": "967adf2a4a7b",
@@ -4725,7 +4782,8 @@
               "explanation": "Le plan phonologique concerne les sons et la prononciation des mots. Ici, l'adulte redit « chapeau » avec le bon son de départ : le mot reste le même."
             }
           ],
-          "level": "essentiel"
+          "level": "essentiel",
+          "sansChoix": true
         },
         {
           "id": "Q2",
@@ -4754,7 +4812,8 @@
               "explanation": "Le plan phonologique concerne les sons et la prononciation des mots. Ici, ce n'est pas ce qui change : l'adulte remplace « chat » par « tigre », le mot qui désigne cet animal."
             }
           ],
-          "level": "essentiel"
+          "level": "essentiel",
+          "sansChoix": true
         },
         {
           "id": "Q3",
@@ -4783,7 +4842,8 @@
               "explanation": "Le plan lexico-sémantique concerne le choix des mots et leur sens. Or, ici, l'adulte remet les mots dans l'ordre de la phrase : « a mangé » se place avant « la souris »."
             }
           ],
-          "level": "essentiel"
+          "level": "essentiel",
+          "sansChoix": true
         },
         {
           "id": "Q4",
@@ -4812,7 +4872,8 @@
               "explanation": "Le plan syntaxique concerne l'organisation des mots dans la phrase et leurs liens. Ici, ce n'est pas ce qui change : l'adulte invite l'enfant à regarder son camarade, la personne à qui il raconte."
             }
           ],
-          "level": "essentiel"
+          "level": "essentiel",
+          "sansChoix": true
         }
       ],
       "qcmRevision": "c9aaa103c4863285"
@@ -4876,7 +4937,8 @@
               "explanation": "Le plan syntaxique concerne l'organisation des mots dans la phrase et leurs liens. Ici, ce n'est pas ce qui change : l'adulte redit « escargot » avec le bon son à l'intérieur du mot : le mot reste le même."
             }
           ],
-          "level": "essentiel"
+          "level": "essentiel",
+          "sansChoix": true
         },
         {
           "id": "Q2",
@@ -4905,7 +4967,8 @@
               "explanation": "Le plan lexico-sémantique concerne le choix des mots et leur sens. Ici, l'adulte donne le mot « tournevis » à la place de « le truc pour visser »."
             }
           ],
-          "level": "essentiel"
+          "level": "essentiel",
+          "sansChoix": true
         },
         {
           "id": "Q3",
@@ -4934,7 +4997,8 @@
               "explanation": "Le plan pragmatique concerne l'adaptation de la parole à la situation et au partenaire, et le déroulement de l'échange. Or, ici, l'adulte change le temps du verbe : « va » devient « est allé » pour parler d'hier."
             }
           ],
-          "level": "essentiel"
+          "level": "essentiel",
+          "sansChoix": true
         },
         {
           "id": "Q4",
@@ -4963,7 +5027,8 @@
               "explanation": "Le plan phonologique concerne les sons et la prononciation des mots. Or, ici, l'adulte demande qui a pris quoi, une information qui manque à celui qui écoute."
             }
           ],
-          "level": "essentiel"
+          "level": "essentiel",
+          "sansChoix": true
         }
       ],
       "qcmRevision": "466c1800e82c7c58"
@@ -5027,7 +5092,8 @@
               "explanation": "Le plan lexico-sémantique concerne le choix des mots et leur sens. Ici, ce n'est pas ce qui change : l'adulte redit « roue » avec le bon son de départ : le mot reste le même."
             }
           ],
-          "level": "essentiel"
+          "level": "essentiel",
+          "sansChoix": true
         },
         {
           "id": "Q2",
@@ -5056,7 +5122,8 @@
               "explanation": "Le plan syntaxique concerne l'organisation des mots dans la phrase et leurs liens. Or, ici, l'adulte remplace « mains » par « ailes » pour désigner cette partie du papillon."
             }
           ],
-          "level": "essentiel"
+          "level": "essentiel",
+          "sansChoix": true
         },
         {
           "id": "Q3",
@@ -5085,7 +5152,8 @@
               "explanation": "Le plan syntaxique concerne l'organisation des mots dans la phrase et leurs liens. Ici, l'adulte corrige l'accord du verbe avec le sujet pluriel : « est » devient « sont », alors que les chevaux et le lieu restent les mêmes."
             }
           ],
-          "level": "essentiel"
+          "level": "essentiel",
+          "sansChoix": true
         },
         {
           "id": "Q4",
@@ -5114,7 +5182,8 @@
               "explanation": "Le plan lexico-sémantique concerne le choix des mots et leur sens. Or, ici, l'adulte demande ce qui s'est passé ensuite pour faire poursuivre le récit."
             }
           ],
-          "level": "essentiel"
+          "level": "essentiel",
+          "sansChoix": true
         }
       ],
       "qcmRevision": "35a2fd1cda5c6fb9"
@@ -5178,7 +5247,8 @@
               "explanation": "Le plan syntaxique concerne l'organisation des mots dans la phrase et leurs liens. Ici, ce n'est pas ce qui change : l'adulte redit « chocolat » avec le bon son de départ : le mot reste le même."
             }
           ],
-          "level": "essentiel"
+          "level": "essentiel",
+          "sansChoix": true
         },
         {
           "id": "Q2",
@@ -5207,7 +5277,8 @@
               "explanation": "Le plan syntaxique concerne l'organisation des mots dans la phrase et leurs liens. Ici, ce n'est pas ce qui change : l'adulte remplace « manteau de pluie » par « imperméable »."
             }
           ],
-          "level": "essentiel"
+          "level": "essentiel",
+          "sansChoix": true
         },
         {
           "id": "Q3",
@@ -5236,7 +5307,8 @@
               "explanation": "Le plan pragmatique concerne l'adaptation de la parole à la situation et au partenaire, et le déroulement de l'échange. Or, ici, l'adulte change le temps du verbe : « a mangé » devient « mangera » pour parler de demain."
             }
           ],
-          "level": "essentiel"
+          "level": "essentiel",
+          "sansChoix": true
         },
         {
           "id": "Q4",
@@ -5265,7 +5337,8 @@
               "explanation": "Le plan pragmatique concerne l'adaptation de la parole à la situation et au partenaire, et le déroulement de l'échange. Ici, l'adulte remercie l'enfant et ferme l'échange."
             }
           ],
-          "level": "essentiel"
+          "level": "essentiel",
+          "sansChoix": true
         }
       ],
       "qcmRevision": "f26d1f2331c0372a"
@@ -5329,7 +5402,8 @@
               "explanation": "Le plan syntaxique concerne l'organisation des mots dans la phrase et leurs liens. Or, ici, l'adulte redit « cheval » avec le bon son de départ : le mot reste le même."
             }
           ],
-          "level": "essentiel"
+          "level": "essentiel",
+          "sansChoix": true
         },
         {
           "id": "Q2",
@@ -5358,7 +5432,8 @@
               "explanation": "Le plan pragmatique concerne l'adaptation de la parole à la situation et au partenaire, et le déroulement de l'échange. Ici, ce n'est pas ce qui change : l'adulte nomme « cuillère » l'objet que l'enfant montre, à la place de « fourchette »."
             }
           ],
-          "level": "essentiel"
+          "level": "essentiel",
+          "sansChoix": true
         },
         {
           "id": "Q3",
@@ -5387,7 +5462,8 @@
               "explanation": "Le plan pragmatique concerne l'adaptation de la parole à la situation et au partenaire, et le déroulement de l'échange. Ici, ce n'est pas ce qui change : l'adulte remplace la préposition « dans » par « sur » dans la phrase."
             }
           ],
-          "level": "essentiel"
+          "level": "essentiel",
+          "sansChoix": true
         },
         {
           "id": "Q4",
@@ -5416,7 +5492,8 @@
               "explanation": "Le plan pragmatique concerne l'adaptation de la parole à la situation et au partenaire, et le déroulement de l'échange. Ici, l'adulte laisse du temps à l'enfant qui hésite et l'invite à reprendre la parole."
             }
           ],
-          "level": "essentiel"
+          "level": "essentiel",
+          "sansChoix": true
         }
       ],
       "qcmRevision": "add3a8b2a39421bf"
@@ -5480,7 +5557,8 @@
               "explanation": "Une répétition totale reprend tout l'énoncé de l'enfant, sans le modifier. Ici, tous les mots de l'enfant sont redits, du début à la fin."
             }
           ],
-          "level": "essentiel"
+          "level": "essentiel",
+          "sansChoix": true
         },
         {
           "id": "Q2",
@@ -5509,7 +5587,8 @@
               "explanation": "Une répétition totale reprend tout l'énoncé de l'enfant, sans le modifier. Or, ici l'adulte ne reprend qu'une partie de l'énoncé (« une souris grise » est repris tel que l'enfant l'a dit)."
             }
           ],
-          "level": "essentiel"
+          "level": "essentiel",
+          "sansChoix": true
         },
         {
           "id": "Q3",
@@ -5538,7 +5617,8 @@
               "explanation": "Une répétition totale reprend tout l'énoncé de l'enfant, sans le modifier. Or, ici la forme de l'énoncé est modifiée (« un truc pour les yeux » devient « des lunettes » : le mot change, sans information en plus)."
             }
           ],
-          "level": "essentiel"
+          "level": "essentiel",
+          "sansChoix": true
         },
         {
           "id": "Q4",
@@ -5567,7 +5647,8 @@
               "explanation": "Une répétition partielle reprend une partie de l'énoncé de l'enfant, sans la modifier. Or, ici l'adulte modifie l'énoncé et lui ajoute des informations (l'adulte reprend « un chien » et ajoute sa taille, sa couleur et ce qu'il fait)."
             }
           ],
-          "level": "essentiel"
+          "level": "essentiel",
+          "sansChoix": true
         }
       ],
       "qcmRevision": "f080b196aa6e9e24"
@@ -5631,7 +5712,8 @@
               "explanation": "Une répétition partielle reprend une partie de l'énoncé de l'enfant, sans la modifier. Or, ici l'adulte reprend tout l'énoncé, pas une partie (aucun mot n'est changé ni retiré)."
             }
           ],
-          "level": "approfondissement"
+          "level": "approfondissement",
+          "sansChoix": true
         },
         {
           "id": "Q2",
@@ -5660,7 +5742,8 @@
               "explanation": "Une répétition partielle reprend une partie de l'énoncé de l'enfant, sans la modifier. Ici, la fin de la phrase est reprise telle quelle."
             }
           ],
-          "level": "approfondissement"
+          "level": "approfondissement",
+          "sansChoix": true
         },
         {
           "id": "Q3",
@@ -5689,7 +5772,8 @@
               "explanation": "Une reformulation avec extension modifie l'énoncé et y ajoute des informations. Or, ici l'adulte n'ajoute aucune information (l'accord change (« va » devient « vont ») ; les mêmes assiettes et le même événement sont conservés, sans information en plus)."
             }
           ],
-          "level": "approfondissement"
+          "level": "approfondissement",
+          "sansChoix": true
         },
         {
           "id": "Q4",
@@ -5718,7 +5802,8 @@
               "explanation": "Une répétition partielle reprend une partie de l'énoncé de l'enfant, sans la modifier. Or, ici l'adulte modifie l'énoncé et lui ajoute des informations (l'adulte ajoute le lieu de l'achat et un autre achat)."
             }
           ],
-          "level": "approfondissement"
+          "level": "approfondissement",
+          "sansChoix": true
         }
       ],
       "qcmRevision": "325732fea56812b5"
@@ -5782,7 +5867,8 @@
               "explanation": "Une répétition partielle reprend une partie de l'énoncé de l'enfant, sans la modifier. Or, ici l'adulte reprend tout l'énoncé, pas une partie (l'adulte redit la phrase telle quelle)."
             }
           ],
-          "level": "approfondissement"
+          "level": "approfondissement",
+          "sansChoix": true
         },
         {
           "id": "Q2",
@@ -5811,7 +5897,8 @@
               "explanation": "Une répétition partielle reprend une partie de l'énoncé de l'enfant, sans la modifier. Ici, le groupe « le vase bleu » est repris sans changement."
             }
           ],
-          "level": "approfondissement"
+          "level": "approfondissement",
+          "sansChoix": true
         },
         {
           "id": "Q3",
@@ -5840,7 +5927,8 @@
               "explanation": "Une répétition partielle reprend une partie de l'énoncé de l'enfant, sans la modifier. Or, ici ce qui est repris est modifié (le mot est redit avec la bonne prononciation, sans information en plus)."
             }
           ],
-          "level": "approfondissement"
+          "level": "approfondissement",
+          "sansChoix": true
         },
         {
           "id": "Q4",
@@ -5869,7 +5957,8 @@
               "explanation": "Une répétition partielle reprend une partie de l'énoncé de l'enfant, sans la modifier. Or, ici l'adulte modifie l'énoncé et lui ajoute des informations (l'adulte ajoute que la fille est petite et ce qu'elle saute)."
             }
           ],
-          "level": "approfondissement"
+          "level": "approfondissement",
+          "sansChoix": true
         }
       ],
       "qcmRevision": "7d1d5519751a84ca"
@@ -5933,7 +6022,8 @@
               "explanation": "Une répétition partielle reprend une partie de l'énoncé de l'enfant, sans la modifier. Or, ici l'adulte reprend tout l'énoncé, pas une partie (l'énoncé entier est repris sans modification)."
             }
           ],
-          "level": "approfondissement"
+          "level": "approfondissement",
+          "sansChoix": true
         },
         {
           "id": "Q2",
@@ -5962,7 +6052,8 @@
               "explanation": "Une répétition totale reprend tout l'énoncé de l'enfant, sans le modifier. Or, ici l'adulte ne reprend qu'une partie de l'énoncé (l'adulte ne redit que la fin de la phrase, sans la modifier)."
             }
           ],
-          "level": "approfondissement"
+          "level": "approfondissement",
+          "sansChoix": true
         },
         {
           "id": "Q3",
@@ -5991,7 +6082,8 @@
               "explanation": "Une reformulation sans extension modifie la forme de l'énoncé sans y ajouter d'information. Ici, le temps du verbe est corrigé, sans information en plus. Le temps du verbe relève de la syntaxe dans les repères du cours (axe des temps de Boisseau) : la forme change, aucune information n'est ajoutée."
             }
           ],
-          "level": "approfondissement"
+          "level": "approfondissement",
+          "sansChoix": true
         },
         {
           "id": "Q4",
@@ -6020,7 +6112,8 @@
               "explanation": "Une répétition totale reprend tout l'énoncé de l'enfant, sans le modifier. Or, ici l'adulte ajoute des informations (l'adulte ajoute le lieu et la raison)."
             }
           ],
-          "level": "approfondissement"
+          "level": "approfondissement",
+          "sansChoix": true
         }
       ],
       "qcmRevision": "55336e5262fa531d"
@@ -6084,7 +6177,8 @@
               "explanation": "Une répétition partielle reprend une partie de l'énoncé de l'enfant, sans la modifier. Or, ici l'adulte reprend tout l'énoncé, pas une partie (la phrase est redite mot pour mot)."
             }
           ],
-          "level": "approfondissement"
+          "level": "approfondissement",
+          "sansChoix": true
         },
         {
           "id": "Q2",
@@ -6113,7 +6207,8 @@
               "explanation": "Une reformulation sans extension modifie la forme de l'énoncé sans y ajouter d'information. Or, ici les mots repris ne sont pas modifiés (« deux gâteaux » est repris tel quel)."
             }
           ],
-          "level": "approfondissement"
+          "level": "approfondissement",
+          "sansChoix": true
         },
         {
           "id": "Q3",
@@ -6142,7 +6237,8 @@
               "explanation": "Une reformulation avec extension modifie l'énoncé et y ajoute des informations. Or, ici l'adulte n'ajoute aucune information (« un truc pour écrire » devient « un stylo » : seule la désignation change)."
             }
           ],
-          "level": "approfondissement"
+          "level": "approfondissement",
+          "sansChoix": true
         },
         {
           "id": "Q4",
@@ -6171,7 +6267,8 @@
               "explanation": "Une reformulation avec extension modifie l'énoncé et y ajoute des informations. Ici, l'adulte ajoute la couleur du vélo et celle des roues."
             }
           ],
-          "level": "approfondissement"
+          "level": "approfondissement",
+          "sansChoix": true
         }
       ],
       "qcmRevision": "cdefcffde6ddd1c5"
@@ -6231,7 +6328,8 @@
               "explanation": "Il parle déjà l'albanais et découvre le français à 4 ans : c'est un bilinguisme précoce consécutif, pas un bilinguisme précoce simultané. Dans le bilinguisme précoce consécutif, une seconde langue s'acquiert entre 3 et 6 ans, après une première langue."
             }
           ],
-          "level": "essentiel"
+          "level": "essentiel",
+          "sansChoix": false
         },
         {
           "id": "Q2",
@@ -6260,7 +6358,8 @@
               "explanation": "Il parle déjà l'albanais et découvre le français à 4 ans : c'est un bilinguisme précoce consécutif. Dans le bilinguisme précoce consécutif, une seconde langue s'acquiert entre 3 et 6 ans, après une première langue."
             }
           ],
-          "level": "essentiel"
+          "level": "essentiel",
+          "sansChoix": false
         },
         {
           "id": "Q3",
@@ -6289,7 +6388,8 @@
               "explanation": "Il parle déjà l'albanais et découvre le français à 4 ans : c'est un bilinguisme précoce consécutif, pas un bilinguisme tardif. Dans le bilinguisme précoce consécutif, une seconde langue s'acquiert entre 3 et 6 ans, après une première langue."
             }
           ],
-          "level": "essentiel"
+          "level": "essentiel",
+          "sansChoix": false
         }
       ],
       "qcmRevision": "e10575958f25c220"
@@ -6349,7 +6449,8 @@
               "explanation": "Il a déjà une première langue, entre en français à 4 ans et traverse une phase où il parle peu mais comprend : c'est un bilinguisme précoce consécutif, pas un bilinguisme précoce simultané. Dans le bilinguisme précoce consécutif, une seconde langue s'acquiert entre 3 et 6 ans, après une première langue."
             }
           ],
-          "level": "approfondissement"
+          "level": "approfondissement",
+          "sansChoix": false
         },
         {
           "id": "Q2",
@@ -6378,7 +6479,8 @@
               "explanation": "Il entend ses deux langues dès la naissance et son lexique dépend de l'exposition à chacune : c'est un bilinguisme précoce simultané, pas un bilinguisme précoce consécutif. Dans le bilinguisme précoce simultané, les deux langues se développent très tôt : le cours situe ce repère de 0 à 3 ans, et Abdelilah-Bauer le réserve aux deux langues présentes dès la naissance ; ce cas entre dans les deux définitions."
             }
           ],
-          "level": "approfondissement"
+          "level": "approfondissement",
+          "sansChoix": false
         },
         {
           "id": "Q3",
@@ -6407,7 +6509,8 @@
               "explanation": "Il a déjà une première langue, entre en français à 4 ans et traverse une phase où il parle peu mais comprend : c'est un bilinguisme précoce consécutif, pas un bilinguisme tardif. Dans le bilinguisme précoce consécutif, une seconde langue s'acquiert entre 3 et 6 ans, après une première langue."
             }
           ],
-          "level": "approfondissement"
+          "level": "approfondissement",
+          "sansChoix": false
         }
       ],
       "qcmRevision": "1ab4980103e9ae5b"
@@ -6467,7 +6570,8 @@
               "explanation": "Elle reçoit ses deux langues dès la naissance : c'est un bilinguisme précoce simultané. Dans le bilinguisme précoce simultané, les deux langues se développent très tôt : le cours situe ce repère de 0 à 3 ans, et Abdelilah-Bauer le réserve aux deux langues présentes dès la naissance ; ce cas entre dans les deux définitions."
             }
           ],
-          "level": "approfondissement"
+          "level": "approfondissement",
+          "sansChoix": false
         },
         {
           "id": "Q2",
@@ -6496,7 +6600,8 @@
               "explanation": "Il entend ses deux langues dès la naissance : c'est un bilinguisme précoce simultané, pas un bilinguisme précoce consécutif. Dans le bilinguisme précoce simultané, les deux langues se développent très tôt : le cours situe ce repère de 0 à 3 ans, et Abdelilah-Bauer le réserve aux deux langues présentes dès la naissance ; ce cas entre dans les deux définitions."
             }
           ],
-          "level": "approfondissement"
+          "level": "approfondissement",
+          "sansChoix": false
         },
         {
           "id": "Q3",
@@ -6525,7 +6630,8 @@
               "explanation": "Il commence le français à 10 ans : c'est un bilinguisme tardif. Dans le bilinguisme tardif, la seconde langue s'acquiert après 6 ans."
             }
           ],
-          "level": "approfondissement"
+          "level": "approfondissement",
+          "sansChoix": false
         }
       ],
       "qcmRevision": "8e8b186d1df1ea89"
@@ -6585,7 +6691,8 @@
               "explanation": "Il parle déjà le tamoul et commence le français à 5 ans et demi : c'est un bilinguisme précoce consécutif, pas un bilinguisme précoce simultané. Dans le bilinguisme précoce consécutif, une seconde langue s'acquiert entre 3 et 6 ans, après une première langue."
             }
           ],
-          "level": "approfondissement"
+          "level": "approfondissement",
+          "sansChoix": false
         },
         {
           "id": "Q2",
@@ -6614,7 +6721,8 @@
               "explanation": "Il entend ses deux langues dès la naissance : c'est un bilinguisme précoce simultané, pas un bilinguisme précoce consécutif. Dans le bilinguisme précoce simultané, les deux langues se développent très tôt : le cours situe ce repère de 0 à 3 ans, et Abdelilah-Bauer le réserve aux deux langues présentes dès la naissance ; ce cas entre dans les deux définitions."
             }
           ],
-          "level": "approfondissement"
+          "level": "approfondissement",
+          "sansChoix": false
         },
         {
           "id": "Q3",
@@ -6643,7 +6751,8 @@
               "explanation": "Il entend ses deux langues dès la naissance : c'est un bilinguisme précoce simultané, pas un bilinguisme tardif. Dans le bilinguisme précoce simultané, les deux langues se développent très tôt : le cours situe ce repère de 0 à 3 ans, et Abdelilah-Bauer le réserve aux deux langues présentes dès la naissance ; ce cas entre dans les deux définitions."
             }
           ],
-          "level": "approfondissement"
+          "level": "approfondissement",
+          "sansChoix": false
         }
       ],
       "qcmRevision": "63c67e5cbc88446e"
@@ -6703,7 +6812,8 @@
               "explanation": "Il parle déjà l'albanais et découvre le français à 4 ans : c'est un bilinguisme précoce consécutif, pas un bilinguisme précoce simultané. Dans le bilinguisme précoce consécutif, une seconde langue s'acquiert entre 3 et 6 ans, après une première langue."
             }
           ],
-          "level": "approfondissement"
+          "level": "approfondissement",
+          "sansChoix": false
         },
         {
           "id": "Q2",
@@ -6732,7 +6842,8 @@
               "explanation": "Elle a déjà une première langue et avance en français, à 5 ans, du langage télégraphique aux phrases : c'est un bilinguisme précoce consécutif. Dans le bilinguisme précoce consécutif, une seconde langue s'acquiert entre 3 et 6 ans, après une première langue."
             }
           ],
-          "level": "approfondissement"
+          "level": "approfondissement",
+          "sansChoix": false
         },
         {
           "id": "Q3",
@@ -6761,7 +6872,8 @@
               "explanation": "Il entend ses deux langues depuis sa naissance : c'est un bilinguisme précoce simultané, pas un bilinguisme tardif. Dans le bilinguisme précoce simultané, les deux langues se développent très tôt : le cours situe ce repère de 0 à 3 ans, et Abdelilah-Bauer le réserve aux deux langues présentes dès la naissance ; ce cas entre dans les deux définitions."
             }
           ],
-          "level": "approfondissement"
+          "level": "approfondissement",
+          "sansChoix": false
         }
       ],
       "qcmRevision": "b7fe44df97369eef"
@@ -6821,7 +6933,8 @@
               "explanation": "Le savoir langagier désigne la maîtrise des actes fondamentaux de la communication (demander, nommer, influencer, convaincre…), acquise grâce aux interactions avec l'entourage. Cette notion voisine ne correspond pas à ce qui est présenté : des signes partagés par toute une communauté."
             }
           ],
-          "level": "essentiel"
+          "level": "essentiel",
+          "sansChoix": true
         },
         {
           "id": "Q2",
@@ -6850,7 +6963,8 @@
               "explanation": "Le langage est l'activité psychologique par laquelle un sujet produit du sens au moyen d'une langue. Cette notion n'est pas ce que la phrase met au premier plan : elle présente des paroles concrètes dites dans une situation précise."
             }
           ],
-          "level": "essentiel"
+          "level": "essentiel",
+          "sansChoix": true
         },
         {
           "id": "Q3",
@@ -6879,7 +6993,8 @@
               "explanation": "Les deux notions sont inversées : la parole est l'emploi concret des signes, le langage l'activité qui construit le sens."
             }
           ],
-          "level": "essentiel"
+          "level": "essentiel",
+          "sansChoix": true
         }
       ],
       "qcmRevision": "2587b1181d1f3650"
@@ -6939,7 +7054,8 @@
               "explanation": "La langue est l'ensemble des signes utilisés par une communauté pour communiquer, de nature sociale. Ici, ce sont des signes partagés par tous les locuteurs."
             }
           ],
-          "level": "approfondissement"
+          "level": "approfondissement",
+          "sansChoix": true
         },
         {
           "id": "Q2",
@@ -6968,7 +7084,8 @@
               "explanation": "Le savoir linguistique désigne la manière d'exprimer les actes de communication dans une langue définie, celle de l'entourage de l'enfant. Cette notion voisine ne correspond pas à ce qui est présenté : des paroles concrètes dites dans une situation précise."
             }
           ],
-          "level": "approfondissement"
+          "level": "approfondissement",
+          "sansChoix": true
         },
         {
           "id": "Q3",
@@ -6997,7 +7114,8 @@
               "explanation": "La maîtrise des actes de communication (demander, nommer) est le savoir langagier, et la manière de les exprimer dans une langue définie le savoir linguistique (Abdelilah-Bauer) : ce sont deux notions voisines, pas le langage ni la langue."
             }
           ],
-          "level": "approfondissement"
+          "level": "approfondissement",
+          "sansChoix": true
         }
       ],
       "qcmRevision": "8173d585fece927c"
@@ -7057,7 +7175,8 @@
               "explanation": "La parole est l'utilisation concrète des signes linguistiques dans un contexte précis. Cette notion n'est pas ce que la phrase met au premier plan : elle présente des signes partagés par toute une communauté."
             }
           ],
-          "level": "approfondissement"
+          "level": "approfondissement",
+          "sansChoix": true
         },
         {
           "id": "Q2",
@@ -7086,7 +7205,8 @@
               "explanation": "Le savoir langagier désigne la maîtrise des actes fondamentaux de la communication (demander, nommer, influencer, convaincre…), acquise grâce aux interactions avec l'entourage. Cette notion voisine ne correspond pas à ce qui est présenté : des paroles concrètes dites dans une situation précise."
             }
           ],
-          "level": "approfondissement"
+          "level": "approfondissement",
+          "sansChoix": true
         },
         {
           "id": "Q3",
@@ -7115,7 +7235,8 @@
               "explanation": "La langue est l'ensemble des signes utilisés par une communauté pour communiquer, de nature sociale ; la parole est l'utilisation concrète de ces signes dans un contexte précis (Saussure). Le critère est le système partagé d'un côté, l'emploi concret de l'autre."
             }
           ],
-          "level": "approfondissement"
+          "level": "approfondissement",
+          "sansChoix": true
         }
       ],
       "qcmRevision": "21aa6edc590610d3"
@@ -7175,7 +7296,8 @@
               "explanation": "La parole est l'utilisation concrète des signes linguistiques dans un contexte précis. Cette notion n'est pas ce que la phrase met au premier plan : elle présente des signes partagés par toute une communauté."
             }
           ],
-          "level": "approfondissement"
+          "level": "approfondissement",
+          "sansChoix": true
         },
         {
           "id": "Q2",
@@ -7204,7 +7326,8 @@
               "explanation": "La parole est l'utilisation concrète des signes linguistiques dans un contexte précis. Ici, ces mots ont été dits dans une situation précise."
             }
           ],
-          "level": "approfondissement"
+          "level": "approfondissement",
+          "sansChoix": true
         },
         {
           "id": "Q3",
@@ -7233,7 +7356,8 @@
               "explanation": "L'usage concret des signes dans un contexte précis est la parole (Saussure), et l'activité d'un sujet qui produit du sens le langage (Brigaudiot) : aucune des deux n'est un savoir au sens d'Abdelilah-Bauer."
             }
           ],
-          "level": "approfondissement"
+          "level": "approfondissement",
+          "sansChoix": true
         }
       ],
       "qcmRevision": "21a7d1e64dcb816c"
@@ -7293,7 +7417,8 @@
               "explanation": "La parole est l'utilisation concrète des signes linguistiques dans un contexte précis. Cette notion n'est pas ce que la phrase met au premier plan : elle présente des signes partagés par toute une communauté."
             }
           ],
-          "level": "approfondissement"
+          "level": "approfondissement",
+          "sansChoix": true
         },
         {
           "id": "Q2",
@@ -7322,7 +7447,8 @@
               "explanation": "La langue est l'ensemble des signes utilisés par une communauté pour communiquer, de nature sociale. Cette notion n'est pas ce que la phrase met au premier plan : elle présente des paroles concrètes dites dans une situation précise."
             }
           ],
-          "level": "approfondissement"
+          "level": "approfondissement",
+          "sansChoix": true
         },
         {
           "id": "Q3",
@@ -7351,7 +7477,8 @@
               "explanation": "L'utilisation concrète des signes dans un contexte précis est la parole, et l'ensemble des signes d'une communauté la langue (Saussure) : deux notions voisines, pas le langage ni le savoir langagier."
             }
           ],
-          "level": "approfondissement"
+          "level": "approfondissement",
+          "sansChoix": true
         }
       ],
       "qcmRevision": "777473d11a86f42f"
@@ -7415,7 +7542,8 @@
               "explanation": "Le verbal relève de la parole : les mots et leur organisation. Ici, l'élève choisit un mot."
             }
           ],
-          "level": "essentiel"
+          "level": "essentiel",
+          "sansChoix": true
         },
         {
           "id": "Q2",
@@ -7444,7 +7572,8 @@
               "explanation": "Le co-verbal désigne les gestes qui accompagnent la parole et contribuent avec elle au sens du message. Or, ici, l'élève soigne son articulation : ce n'est pas ce que cette catégorie décrit d'abord."
             }
           ],
-          "level": "essentiel"
+          "level": "essentiel",
+          "sansChoix": true
         },
         {
           "id": "Q3",
@@ -7473,7 +7602,8 @@
               "explanation": "Le verbal relève de la parole : les mots et leur organisation. Or, ici, l'élève exprime quelque chose par son visage : ce n'est pas ce que cette catégorie décrit d'abord."
             }
           ],
-          "level": "essentiel"
+          "level": "essentiel",
+          "sansChoix": true
         },
         {
           "id": "Q4",
@@ -7502,7 +7632,8 @@
               "explanation": "Ce geste est bien non verbal : le non-verbal inclut les gestes qui accompagnent la parole. Co-verbal est plus précis, car le geste accompagne les mots et contribue à leur sens."
             }
           ],
-          "level": "essentiel"
+          "level": "essentiel",
+          "sansChoix": true
         }
       ],
       "qcmRevision": "3c8e19aa7ad13486"
@@ -7566,7 +7697,8 @@
               "explanation": "Le paraverbal relève de la voix : diction, accentuation, rythme, débit. Or, ici, l'élève organise ses idées avec des mots de liaison : ce n'est pas ce que cette catégorie décrit d'abord."
             }
           ],
-          "level": "essentiel"
+          "level": "essentiel",
+          "sansChoix": true
         },
         {
           "id": "Q2",
@@ -7595,7 +7727,8 @@
               "explanation": "Le paraverbal relève de la voix : diction, accentuation, rythme, débit. Ici, l'élève règle son débit. Le cours 03 range le débit et l'accentuation dans le paraverbal ; le PER range volume, débit et intonation sous le non-verbal."
             }
           ],
-          "level": "essentiel"
+          "level": "essentiel",
+          "sansChoix": true
         },
         {
           "id": "Q3",
@@ -7624,7 +7757,8 @@
               "explanation": "Le non-verbal relève du corps : expressions du visage, regards, distance entre les personnes, posture, gestes. Ici, la distance entre interlocuteurs est une conduite proxémique, classée parmi les moyens non verbaux."
             }
           ],
-          "level": "essentiel"
+          "level": "essentiel",
+          "sansChoix": true
         },
         {
           "id": "Q4",
@@ -7653,7 +7787,8 @@
               "explanation": "Ce geste est bien non verbal : le non-verbal inclut les gestes qui accompagnent la parole. Co-verbal est plus précis, car le geste accompagne les mots et contribue à leur sens."
             }
           ],
-          "level": "essentiel"
+          "level": "essentiel",
+          "sansChoix": true
         }
       ],
       "qcmRevision": "daa162fd0b235585"
@@ -7717,7 +7852,8 @@
               "explanation": "Le paraverbal relève de la voix : diction, accentuation, rythme, débit. Or, ici, l'élève cherche d'autres mots pour son idée : ce n'est pas ce que cette catégorie décrit d'abord."
             }
           ],
-          "level": "essentiel"
+          "level": "essentiel",
+          "sansChoix": true
         },
         {
           "id": "Q2",
@@ -7746,7 +7882,8 @@
               "explanation": "Le non-verbal relève du corps : expressions du visage, regards, distance entre les personnes, posture, gestes. Or, ici, l'élève marque l'accentuation d'un mot : ce n'est pas ce que cette catégorie décrit d'abord."
             }
           ],
-          "level": "essentiel"
+          "level": "essentiel",
+          "sansChoix": true
         },
         {
           "id": "Q3",
@@ -7775,7 +7912,8 @@
               "explanation": "Le paraverbal relève de la voix : diction, accentuation, rythme, débit. Or, ici, l'élève utilise son regard : ce n'est pas ce que cette catégorie décrit d'abord."
             }
           ],
-          "level": "essentiel"
+          "level": "essentiel",
+          "sansChoix": true
         },
         {
           "id": "Q4",
@@ -7804,7 +7942,8 @@
               "explanation": "Ce geste est bien non verbal : le non-verbal inclut les gestes qui accompagnent la parole. Co-verbal est plus précis, car le geste accompagne les mots et contribue à leur sens."
             }
           ],
-          "level": "essentiel"
+          "level": "essentiel",
+          "sansChoix": true
         }
       ],
       "qcmRevision": "6881a6f5c0ebed6d"
@@ -7864,7 +8003,8 @@
               "explanation": "Le langage d'évocation parle de situations que l'on n'est pas en train de vivre : passées, imaginaires ou à venir. Ici, l'enfant parle d'un événement passé."
             }
           ],
-          "level": "essentiel"
+          "level": "essentiel",
+          "sansChoix": false
         },
         {
           "id": "Q2",
@@ -7893,7 +8033,8 @@
               "explanation": "Le langage d'évocation parle de situations que l'on n'est pas en train de vivre : passées, imaginaires ou à venir. Ici, l'enfant parle d'un événement à venir : ce n'est pas du langage en situation."
             }
           ],
-          "level": "essentiel"
+          "level": "essentiel",
+          "sansChoix": false
         },
         {
           "id": "Q3",
@@ -7922,7 +8063,8 @@
               "explanation": "Le langage en situation parle de ce que l'on voit, ressent ou fait dans l'instant présent. Ici, l'enfant parle de l'action qu'il fait en ce moment : ce n'est pas de l'évocation."
             }
           ],
-          "level": "essentiel"
+          "level": "essentiel",
+          "sansChoix": false
         },
         {
           "id": "Q4",
@@ -7951,7 +8093,8 @@
               "explanation": "Le langage d'évocation parle de situations que l'on n'est pas en train de vivre : passées, imaginaires ou à venir. Ici, l'enfant parle d'un événement passé : ce n'est pas du langage en situation."
             }
           ],
-          "level": "approfondissement"
+          "level": "approfondissement",
+          "sansChoix": false
         }
       ],
       "qcmRevision": "1431b2706c4ed820"
@@ -8011,7 +8154,8 @@
               "explanation": "Le langage en situation parle de ce que l'on voit, ressent ou fait dans l'instant présent. Ici, l'enfant parle de l'action qu'il fait en ce moment."
             }
           ],
-          "level": "approfondissement"
+          "level": "approfondissement",
+          "sansChoix": false
         },
         {
           "id": "Q2",
@@ -8040,7 +8184,8 @@
               "explanation": "Le langage en situation parle de ce que l'on voit, ressent ou fait dans l'instant présent. Ici, l'enfant parle de ce qu'il voit en ce moment : ce n'est pas de l'évocation."
             }
           ],
-          "level": "essentiel"
+          "level": "essentiel",
+          "sansChoix": false
         },
         {
           "id": "Q3",
@@ -8069,7 +8214,8 @@
               "explanation": "Le langage d'évocation parle de situations que l'on n'est pas en train de vivre : passées, imaginaires ou à venir. Ici, l'enfant parle d'un événement passé : ce n'est pas du langage en situation."
             }
           ],
-          "level": "approfondissement"
+          "level": "approfondissement",
+          "sansChoix": false
         },
         {
           "id": "Q4",
@@ -8098,7 +8244,8 @@
               "explanation": "Le langage d'évocation parle de situations que l'on n'est pas en train de vivre : passées, imaginaires ou à venir. Ici, l'enfant parle de son père, absent, même si le verbe est au présent."
             }
           ],
-          "level": "approfondissement"
+          "level": "approfondissement",
+          "sansChoix": false
         }
       ],
       "qcmRevision": "707dd0d1639463ad"
@@ -8158,7 +8305,8 @@
               "explanation": "L'oral comme outil pour apprendre est l'usage de la parole et de l'écoute pour apprendre autre chose : reformuler, verbaliser, échanger pour coopérer. Ici, la cible est un autre apprentissage : la parole sert à retenir ce qu'on observe."
             }
           ],
-          "level": "essentiel"
+          "level": "essentiel",
+          "sansChoix": true
         },
         {
           "id": "Q2",
@@ -8187,7 +8335,8 @@
               "explanation": "L'oral comme objet d'enseignement vise à faire apprendre à comprendre et à produire de l'oral : les capacités orales sont elles-mêmes la cible. Ici, la cible est une capacité orale : justifier son opinion."
             }
           ],
-          "level": "essentiel"
+          "level": "essentiel",
+          "sansChoix": true
         },
         {
           "id": "Q3",
@@ -8216,7 +8365,8 @@
               "explanation": "L'oral comme outil pour apprendre est l'usage de la parole et de l'écoute pour apprendre autre chose : reformuler, verbaliser, échanger pour coopérer. Ici, la cible est un autre apprentissage : la parole sert à construire le sens d'un texte."
             }
           ],
-          "level": "essentiel"
+          "level": "essentiel",
+          "sansChoix": true
         },
         {
           "id": "Q4",
@@ -8245,7 +8395,8 @@
               "explanation": "L'oral comme objet d'enseignement vise à faire apprendre à comprendre et à produire de l'oral : les capacités orales sont elles-mêmes la cible. Ici, la cible est une capacité orale : reprendre le même personnage en racontant."
             }
           ],
-          "level": "approfondissement"
+          "level": "approfondissement",
+          "sansChoix": true
         }
       ],
       "qcmRevision": "8640daa095d33dac"
@@ -8305,7 +8456,8 @@
               "explanation": "L'oral comme outil pour apprendre est l'usage de la parole et de l'écoute pour apprendre autre chose : reformuler, verbaliser, échanger pour coopérer. Ici, la cible est un autre apprentissage : la parole sert à construire le sens d'un texte."
             }
           ],
-          "level": "essentiel"
+          "level": "essentiel",
+          "sansChoix": true
         },
         {
           "id": "Q2",
@@ -8334,7 +8486,8 @@
               "explanation": "L'oral comme outil pour apprendre est l'usage de la parole et de l'écoute pour apprendre autre chose : reformuler, verbaliser, échanger pour coopérer. Ici, la cible est un autre apprentissage : la parole sert à comprendre un problème de mathématiques."
             }
           ],
-          "level": "essentiel"
+          "level": "essentiel",
+          "sansChoix": true
         },
         {
           "id": "Q3",
@@ -8363,7 +8516,8 @@
               "explanation": "L'oral comme objet d'enseignement vise à faire apprendre à comprendre et à produire de l'oral : les capacités orales sont elles-mêmes la cible. Ici, la cible est une capacité orale : marquer pauses et intonations."
             }
           ],
-          "level": "approfondissement"
+          "level": "approfondissement",
+          "sansChoix": true
         },
         {
           "id": "Q4",
@@ -8392,7 +8546,8 @@
               "explanation": "L'oral comme outil pour apprendre est l'usage de la parole et de l'écoute pour apprendre autre chose : reformuler, verbaliser, échanger pour coopérer. Ici, la cible est un autre apprentissage : la parole sert à retenir ce qu'on observe."
             }
           ],
-          "level": "approfondissement"
+          "level": "approfondissement",
+          "sansChoix": true
         }
       ],
       "qcmRevision": "14e9be7b21ce6a53"
@@ -8448,7 +8603,8 @@
               "explanation": "L'oral spontané est une parole formulée dans l'immédiateté de l'échange, avec une relative liberté thématique. Ici, les consignes sont formulées sur le moment."
             }
           ],
-          "level": "essentiel"
+          "level": "essentiel",
+          "sansChoix": false
         },
         {
           "id": "Q2",
@@ -8477,7 +8633,8 @@
               "explanation": "L'oral récité est la mise en voix d'un texte écrit mémorisé, dont la langue suit les normes de l'écrit. Ici, la comptine est un texte mémorisé."
             }
           ],
-          "level": "essentiel"
+          "level": "essentiel",
+          "sansChoix": false
         },
         {
           "id": "Q3",
@@ -8506,7 +8663,8 @@
               "explanation": "L'oral spontané est une parole formulée dans l'immédiateté de l'échange, avec une relative liberté thématique. Ici, les consignes sont formulées sur le moment."
             }
           ],
-          "level": "essentiel"
+          "level": "essentiel",
+          "sansChoix": false
         }
       ],
       "qcmRevision": "b15514fa62c41307"
@@ -8562,7 +8720,8 @@
               "explanation": "L'oral récité est la mise en voix d'un texte écrit mémorisé, dont la langue suit les normes de l'écrit. Ici, la comptine est un texte mémorisé."
             }
           ],
-          "level": "approfondissement"
+          "level": "approfondissement",
+          "sansChoix": false
         },
         {
           "id": "Q2",
@@ -8591,7 +8750,8 @@
               "explanation": "L'oral planifié est une parole anticipée et préparée à l'aide d'un support préalablement travaillé. Ici, les idées sont préparées à l'avance, sans texte appris par cœur."
             }
           ],
-          "level": "approfondissement"
+          "level": "approfondissement",
+          "sansChoix": false
         },
         {
           "id": "Q3",
@@ -8620,7 +8780,8 @@
               "explanation": "L'oral spontané est une parole formulée dans l'immédiateté de l'échange, avec une relative liberté thématique. Ici, les consignes sont formulées sur le moment."
             }
           ],
-          "level": "approfondissement"
+          "level": "approfondissement",
+          "sansChoix": false
         }
       ],
       "qcmRevision": "247f5980d81fa57e"
@@ -8680,7 +8841,8 @@
               "explanation": "Les capacités langagières argumentatives désignent le travail de pensée dans la discussion : problématiser, recentrer, interpréter, conceptualiser et argumenter. Problématiser, c'est soulever la complexité d'une question et examiner les implicites et les conséquences d'une affirmation. Ici, la relance fait chercher ce qui rend la question difficile."
             }
           ],
-          "level": "essentiel"
+          "level": "essentiel",
+          "sansChoix": true
         },
         {
           "id": "Q2",
@@ -8709,7 +8871,8 @@
               "explanation": "Conceptualiser, c'est définir un concept et ses attributs, pour préciser ce dont on parle. Or, ici, la relance relie le changement à une expérience connue : ce n'est pas ce que cette catégorie décrit d'abord."
             }
           ],
-          "level": "essentiel"
+          "level": "essentiel",
+          "sansChoix": true
         },
         {
           "id": "Q3",
@@ -8738,7 +8901,8 @@
               "explanation": "Interpréter, c'est relier un concept aux expériences et aux représentations pour se l'approprier et le comprendre. Or, ici, la relance demande une raison et un exemple : ce n'est pas ce que cette catégorie décrit d'abord."
             }
           ],
-          "level": "essentiel"
+          "level": "essentiel",
+          "sansChoix": true
         },
         {
           "id": "Q4",
@@ -8767,7 +8931,8 @@
               "explanation": "Problématiser, c'est soulever la complexité d'une question et examiner les implicites et les conséquences d'une affirmation. Or, ici, la relance fait préciser le sens de deux mots : ce n'est pas ce que cette catégorie décrit d'abord."
             }
           ],
-          "level": "essentiel"
+          "level": "essentiel",
+          "sansChoix": true
         }
       ],
       "qcmRevision": "ed3ab51d0193b1e0"
@@ -8827,7 +8992,8 @@
               "explanation": "Les capacités langagières argumentatives désignent le travail de pensée dans la discussion : problématiser, recentrer, interpréter, conceptualiser et argumenter. Problématiser, c'est soulever la complexité d'une question et examiner les implicites et les conséquences d'une affirmation. Ici, la relance fait examiner une conséquence de l'affirmation."
             }
           ],
-          "level": "essentiel"
+          "level": "essentiel",
+          "sansChoix": true
         },
         {
           "id": "Q2",
@@ -8856,7 +9022,8 @@
               "explanation": "Interpréter, c'est relier un concept aux expériences et aux représentations pour se l'approprier et le comprendre. Or, ici, la relance ramène vers le thème de départ : ce n'est pas ce que cette catégorie décrit d'abord."
             }
           ],
-          "level": "essentiel"
+          "level": "essentiel",
+          "sansChoix": true
         },
         {
           "id": "Q3",
@@ -8885,7 +9052,8 @@
               "explanation": "Interpréter, c'est relier un concept aux expériences et aux représentations pour se l'approprier et le comprendre. Or, ici, la relance demande de justifier ce qui est affirmé : ce n'est pas ce que cette catégorie décrit d'abord."
             }
           ],
-          "level": "essentiel"
+          "level": "essentiel",
+          "sansChoix": true
         }
       ],
       "qcmRevision": "d99a15c80e8187bd"
@@ -8945,7 +9113,8 @@
               "explanation": "Problématiser, c'est soulever la complexité d'une question et examiner les implicites et les conséquences d'une affirmation. Or, ici, la relance demande de définir un mot : ce n'est pas ce que cette catégorie décrit d'abord."
             }
           ],
-          "level": "essentiel"
+          "level": "essentiel",
+          "sansChoix": true
         },
         {
           "id": "Q2",
@@ -8974,7 +9143,8 @@
               "explanation": "Les capacités langagières argumentatives désignent le travail de pensée dans la discussion : problématiser, recentrer, interpréter, conceptualiser et argumenter. Recentrer, c'est revenir au thème, à ce que les autres ont dit ou à sa propre idée, pour maintenir le cap. Ici, la relance ramène vers le cap commun, à partir de ce qu'un autre a dit."
             }
           ],
-          "level": "approfondissement"
+          "level": "approfondissement",
+          "sansChoix": true
         },
         {
           "id": "Q3",
@@ -9003,7 +9173,8 @@
               "explanation": "Argumenter, c'est justifier, donner des exemples, démontrer ou expliquer comment on sait que ce que l'on dit est vrai. Or, ici, la relance relie l'idée à une situation connue : ce n'est pas ce que cette catégorie décrit d'abord."
             }
           ],
-          "level": "essentiel"
+          "level": "essentiel",
+          "sansChoix": true
         }
       ],
       "qcmRevision": "bb5a27cbd804438e"
@@ -9063,7 +9234,8 @@
               "explanation": "Observer, c'est examiner la tenue des rôles ou le travail de pensée : questions, définitions, positions, arguments. Or, ici, l'élève demande une définition et relie des interventions : ce n'est pas ce que cette catégorie décrit d'abord."
             }
           ],
-          "level": "essentiel"
+          "level": "essentiel",
+          "sansChoix": true
         },
         {
           "id": "Q2",
@@ -9092,7 +9264,8 @@
               "explanation": "Discuter, c'est proposer un point de vue argumenté, réagir aux autres et apporter des idées. Or, ici, l'élève redit fidèlement le propos d'une camarade : ce n'est pas ce que cette catégorie décrit d'abord."
             }
           ],
-          "level": "essentiel"
+          "level": "essentiel",
+          "sansChoix": true
         },
         {
           "id": "Q3",
@@ -9121,7 +9294,8 @@
               "explanation": "Reformuler, c'est écouter, comprendre et redire fidèlement le propos d'un camarade. Or, ici, l'élève réunit les idées importantes et les restitue : ce n'est pas ce que cette catégorie décrit d'abord."
             }
           ],
-          "level": "essentiel"
+          "level": "essentiel",
+          "sansChoix": true
         },
         {
           "id": "Q4",
@@ -9150,7 +9324,8 @@
               "explanation": "Un rôle langagier est une responsabilité dans les échanges ; il se distingue des capacités que cette responsabilité fait travailler. Observer, c'est examiner la tenue des rôles ou le travail de pensée : questions, définitions, positions, arguments. Ici, l'élève examine le travail de pensée et la tenue des rôles."
             }
           ],
-          "level": "essentiel"
+          "level": "essentiel",
+          "sansChoix": true
         }
       ],
       "qcmRevision": "99194a223c24050c"
@@ -9210,7 +9385,8 @@
               "explanation": "Animer, c'est faire progresser la recherche : demander une précision, une définition ou une raison, relier les interventions et la question. Or, ici, l'élève organise les tours de parole et respecte le droit de se taire : ce n'est pas ce que cette catégorie décrit d'abord."
             }
           ],
-          "level": "essentiel"
+          "level": "essentiel",
+          "sansChoix": true
         },
         {
           "id": "Q2",
@@ -9239,7 +9415,8 @@
               "explanation": "Animer, c'est faire progresser la recherche : demander une précision, une définition ou une raison, relier les interventions et la question. Or, ici, l'élève défend un point de vue et réagit aux autres : ce n'est pas ce que cette catégorie décrit d'abord."
             }
           ],
-          "level": "essentiel"
+          "level": "essentiel",
+          "sansChoix": true
         },
         {
           "id": "Q3",
@@ -9268,7 +9445,8 @@
               "explanation": "Discuter, c'est proposer un point de vue argumenté, réagir aux autres et apporter des idées. Or, ici, l'élève redit fidèlement la proposition d'un camarade : ce n'est pas ce que cette catégorie décrit d'abord."
             }
           ],
-          "level": "approfondissement"
+          "level": "approfondissement",
+          "sansChoix": true
         }
       ],
       "qcmRevision": "aad12e08b90cef35"
@@ -9328,7 +9506,8 @@
               "explanation": "Discuter, c'est proposer un point de vue argumenté, réagir aux autres et apporter des idées. Or, ici, l'élève demande une raison et relie le groupe à la question : ce n'est pas ce que cette catégorie décrit d'abord."
             }
           ],
-          "level": "essentiel"
+          "level": "essentiel",
+          "sansChoix": true
         },
         {
           "id": "Q2",
@@ -9357,7 +9536,8 @@
               "explanation": "Animer, c'est faire progresser la recherche : demander une précision, une définition ou une raison, relier les interventions et la question. Or, ici, l'élève gère le temps et donne leur place à ceux qui parlent peu : ce n'est pas ce que cette catégorie décrit d'abord."
             }
           ],
-          "level": "essentiel"
+          "level": "essentiel",
+          "sansChoix": true
         },
         {
           "id": "Q3",
@@ -9386,7 +9566,8 @@
               "explanation": "Un rôle langagier est une responsabilité dans les échanges ; il se distingue des capacités que cette responsabilité fait travailler. Synthétiser, c'est réunir les idées importantes des échanges et les restituer. Ici, l'élève rassemble les idées qui sont revenues et les restitue."
             }
           ],
-          "level": "approfondissement"
+          "level": "approfondissement",
+          "sansChoix": true
         }
       ],
       "qcmRevision": "5fc0046f9bf3b75d"
@@ -9442,7 +9623,8 @@
               "explanation": "Le schéma narratif décrit une transformation en cinq moments : situation initiale, complication, actions, résolution et situation finale. La situation initiale installe les personnages et leur situation de départ (avant). Ici, la phrase installe le personnage et sa vie de départ."
             }
           ],
-          "level": "essentiel"
+          "level": "essentiel",
+          "sansChoix": true
         },
         {
           "id": "Q2",
@@ -9471,7 +9653,8 @@
               "explanation": "La complication introduit ce qui déclenche le changement ou le problème. Or, ici, la phrase dénoue le problème : ce n'est pas ce que cette catégorie décrit d'abord."
             }
           ],
-          "level": "essentiel"
+          "level": "essentiel",
+          "sansChoix": true
         },
         {
           "id": "Q3",
@@ -9500,7 +9683,8 @@
               "explanation": "La résolution dénoue le problème et montre la conséquence des actions. Or, ici, la découverte du lit sec rompt la situation de départ et déclenche la recherche : ce n'est pas ce que cette catégorie décrit d'abord."
             }
           ],
-          "level": "essentiel"
+          "level": "essentiel",
+          "sansChoix": true
         },
         {
           "id": "Q4",
@@ -9529,7 +9713,8 @@
               "explanation": "La situation initiale installe les personnages et leur situation de départ (avant). Or, ici, la phrase donne le nouvel état de la situation : ce n'est pas ce que cette catégorie décrit d'abord."
             }
           ],
-          "level": "essentiel"
+          "level": "essentiel",
+          "sansChoix": true
         }
       ],
       "qcmRevision": "363fdf3386fe4a7f"
@@ -9585,7 +9770,8 @@
               "explanation": "La résolution dénoue le problème et montre la conséquence des actions. Or, ici, l'arrivée du renard rompt la tranquillité et déclenche le problème : ce n'est pas ce que cette catégorie décrit d'abord."
             }
           ],
-          "level": "essentiel"
+          "level": "essentiel",
+          "sansChoix": true
         },
         {
           "id": "Q2",
@@ -9614,7 +9800,8 @@
               "explanation": "Les actions développent ce que les personnages font ou subissent. Or, ici, la phrase donne le nouvel état après les événements : ce n'est pas ce que cette catégorie décrit d'abord."
             }
           ],
-          "level": "approfondissement"
+          "level": "approfondissement",
+          "sansChoix": true
         },
         {
           "id": "Q3",
@@ -9643,7 +9830,8 @@
               "explanation": "La complication introduit ce qui déclenche le changement ou le problème. Or, ici, la phrase raconte ce que font les personnages : ce n'est pas ce que cette catégorie décrit d'abord."
             }
           ],
-          "level": "approfondissement"
+          "level": "approfondissement",
+          "sansChoix": true
         }
       ],
       "qcmRevision": "8636a087c912d022"
@@ -9699,7 +9887,8 @@
               "explanation": "Le schéma narratif décrit une transformation en cinq moments : situation initiale, complication, actions, résolution et situation finale. Les actions développent ce que les personnages font ou subissent. Ici, la phrase raconte ce que fait le personnage face au problème."
             }
           ],
-          "level": "approfondissement"
+          "level": "approfondissement",
+          "sansChoix": true
         },
         {
           "id": "Q2",
@@ -9728,7 +9917,8 @@
               "explanation": "Les actions développent ce que les personnages font ou subissent. Or, ici, la première phrase installe la situation de départ, avant que le problème apparaisse : ce n'est pas ce que cette catégorie décrit d'abord."
             }
           ],
-          "level": "approfondissement"
+          "level": "approfondissement",
+          "sansChoix": true
         },
         {
           "id": "Q3",
@@ -9757,7 +9947,8 @@
               "explanation": "Le schéma narratif décrit une transformation en cinq moments : situation initiale, complication, actions, résolution et situation finale. La résolution dénoue le problème et montre la conséquence des actions. Ici, le retour de l'eau met fin à la disparition de la rivière, après l'action des habitants."
             }
           ],
-          "level": "approfondissement"
+          "level": "approfondissement",
+          "sansChoix": true
         }
       ],
       "qcmRevision": "2d68a3e1c3ae9687"
@@ -9821,7 +10012,8 @@
               "explanation": "La ligne « Langue et textualisation » porte sur les désignations et pronoms qui font suivre les personnages, et sur les organisateurs et les temps qui rendent les liens lisibles. Or, ici, il manque l'indication d'un lieu : ce n'est pas ce que cette catégorie décrit d'abord."
             }
           ],
-          "level": "essentiel"
+          "level": "essentiel",
+          "sansChoix": true
         },
         {
           "id": "Q2",
@@ -9850,7 +10042,8 @@
               "explanation": "La ligne « Situation et contenus » porte sur qui raconte, pour qui et dans quel but, et sur les personnages, lieux, moments et événements à rendre identifiables. Or, ici, la fin du récit manque : ce n'est pas ce que cette catégorie décrit d'abord."
             }
           ],
-          "level": "essentiel"
+          "level": "essentiel",
+          "sansChoix": true
         },
         {
           "id": "Q3",
@@ -9879,7 +10072,8 @@
               "explanation": "La ligne « Oralité et supports » porte sur la voix, les intonations, les pauses, les gestes, le regard et le matériel. Or, ici, les liens entre actions reposent sur un seul organisateur : ce n'est pas ce que cette catégorie décrit d'abord."
             }
           ],
-          "level": "essentiel"
+          "level": "essentiel",
+          "sansChoix": true
         },
         {
           "id": "Q4",
@@ -9908,7 +10102,8 @@
               "explanation": "La ligne « Langue et textualisation » porte sur les désignations et pronoms qui font suivre les personnages, et sur les organisateurs et les temps qui rendent les liens lisibles. Or, ici, l'élève joue de sa voix : ce n'est pas ce que cette catégorie décrit d'abord."
             }
           ],
-          "level": "essentiel"
+          "level": "essentiel",
+          "sansChoix": true
         }
       ],
       "qcmRevision": "ad923a6e4cfdf975"
@@ -9972,7 +10167,8 @@
               "explanation": "La grille relie situation et contenus, structure, langue et textualisation, oralité et supports pour analyser un récit oral. La ligne « Situation et contenus » porte sur qui raconte, pour qui et dans quel but, et sur les personnages, lieux, moments et événements à rendre identifiables. Ici, les personnages ne sont pas identifiables."
             }
           ],
-          "level": "approfondissement"
+          "level": "approfondissement",
+          "sansChoix": true
         },
         {
           "id": "Q2",
@@ -10001,7 +10197,8 @@
               "explanation": "La ligne « Situation et contenus » porte sur qui raconte, pour qui et dans quel but, et sur les personnages, lieux, moments et événements à rendre identifiables. Or, ici, les actions des personnages ne répondent pas au problème : ce n'est pas ce que cette catégorie décrit d'abord."
             }
           ],
-          "level": "essentiel"
+          "level": "essentiel",
+          "sansChoix": true
         },
         {
           "id": "Q3",
@@ -10030,7 +10227,8 @@
               "explanation": "La grille relie situation et contenus, structure, langue et textualisation, oralité et supports pour analyser un récit oral. La ligne « Langue et textualisation » porte sur les désignations et pronoms qui font suivre les personnages, et sur les organisateurs et les temps qui rendent les liens lisibles. Ici, on observe les désignations qui font suivre le personnage. Alterner nom et pronom est normal ; le récit complet permettrait de juger la clarté. Ici, on identifie la ligne à observer, sans diagnostiquer une erreur."
             }
           ],
-          "level": "approfondissement"
+          "level": "approfondissement",
+          "sansChoix": true
         },
         {
           "id": "Q4",
@@ -10059,7 +10257,8 @@
               "explanation": "La ligne « Structure » porte sur le problème ou l'événement qui organise le récit, sur la façon dont les actions y répondent et sur la fin. Or, ici, l'élève s'appuie sur ses gestes et son matériel : ce n'est pas ce que cette catégorie décrit d'abord."
             }
           ],
-          "level": "essentiel"
+          "level": "essentiel",
+          "sansChoix": true
         }
       ],
       "qcmRevision": "9eab481a6fd5be04"
@@ -10123,7 +10322,8 @@
               "explanation": "La ligne « Structure » porte sur le problème ou l'événement qui organise le récit, sur la façon dont les actions y répondent et sur la fin. Or, ici, le moment n'est pas indiqué : ce n'est pas ce que cette catégorie décrit d'abord."
             }
           ],
-          "level": "approfondissement"
+          "level": "approfondissement",
+          "sansChoix": true
         },
         {
           "id": "Q2",
@@ -10152,7 +10352,8 @@
               "explanation": "La ligne « Situation et contenus » porte sur qui raconte, pour qui et dans quel but, et sur les personnages, lieux, moments et événements à rendre identifiables. Or, ici, on observe l'organisation des événements : ce n'est pas ce que cette catégorie décrit d'abord."
             }
           ],
-          "level": "essentiel"
+          "level": "essentiel",
+          "sansChoix": true
         },
         {
           "id": "Q3",
@@ -10181,7 +10382,8 @@
               "explanation": "La ligne « Structure » porte sur le problème ou l'événement qui organise le récit, sur la façon dont les actions y répondent et sur la fin. Or, ici, le temps des verbes change sans raison : ce n'est pas ce que cette catégorie décrit d'abord."
             }
           ],
-          "level": "approfondissement"
+          "level": "approfondissement",
+          "sansChoix": true
         },
         {
           "id": "Q4",
@@ -10210,7 +10412,8 @@
               "explanation": "La ligne « Structure » porte sur le problème ou l'événement qui organise le récit, sur la façon dont les actions y répondent et sur la fin. Or, ici, le regard de l'élève n'est pas dirigé vers l'auditeur : ce n'est pas ce que cette catégorie décrit d'abord."
             }
           ],
-          "level": "approfondissement"
+          "level": "approfondissement",
+          "sansChoix": true
         }
       ],
       "qcmRevision": "140d30f5d1b81733"
@@ -10270,7 +10473,8 @@
               "explanation": "Boisseau organise les repères de développement syntaxique selon les pronoms, les temps, les complexités et les prépositions. L'axe des pronoms porte sur la diversification des pronoms personnels (je, tu, il, elle, nous, vous…). Ici, l'observation porte sur les pronoms employés."
             }
           ],
-          "level": "essentiel"
+          "level": "essentiel",
+          "sansChoix": true
         },
         {
           "id": "Q2",
@@ -10299,7 +10503,8 @@
               "explanation": "L'axe des complexités syntaxiques porte sur les liens entre propositions, comme parce que, que, quand, si. Or, ici, l'observation porte sur la forme verbale qui situe l'événement : ce n'est pas ce que cette catégorie décrit d'abord."
             }
           ],
-          "level": "essentiel"
+          "level": "essentiel",
+          "sansChoix": true
         },
         {
           "id": "Q3",
@@ -10328,7 +10533,8 @@
               "explanation": "L'axe des prépositions porte sur les mots qui relient des groupes, notamment les relations de lieu. Or, ici, l'observation porte sur un lien entre deux propositions : ce n'est pas ce que cette catégorie décrit d'abord."
             }
           ],
-          "level": "essentiel"
+          "level": "essentiel",
+          "sansChoix": true
         },
         {
           "id": "Q4",
@@ -10357,7 +10563,8 @@
               "explanation": "Boisseau organise les repères de développement syntaxique selon les pronoms, les temps, les complexités et les prépositions. L'axe des prépositions porte sur les mots qui relient des groupes, notamment les relations de lieu. Ici, l'observation porte sur les mots qui indiquent des positions."
             }
           ],
-          "level": "essentiel"
+          "level": "essentiel",
+          "sansChoix": true
         }
       ],
       "qcmRevision": "8ff95c02c99d0006"
@@ -10417,7 +10624,8 @@
               "explanation": "L'axe des prépositions porte sur les mots qui relient des groupes, notamment les relations de lieu. Or, ici, l'observation porte sur les pronoms qui reprennent les personnages : ce n'est pas ce que cette catégorie décrit d'abord."
             }
           ],
-          "level": "approfondissement"
+          "level": "approfondissement",
+          "sansChoix": true
         },
         {
           "id": "Q2",
@@ -10446,7 +10654,8 @@
               "explanation": "L'axe des complexités syntaxiques porte sur les liens entre propositions, comme parce que, que, quand, si. Or, ici, les formes verbales situent les moments les uns par rapport aux autres : ce n'est pas ce que cette catégorie décrit d'abord."
             }
           ],
-          "level": "approfondissement"
+          "level": "approfondissement",
+          "sansChoix": true
         },
         {
           "id": "Q3",
@@ -10475,7 +10684,8 @@
               "explanation": "L'axe des prépositions porte sur les mots qui relient des groupes, notamment les relations de lieu. Or, ici, la construction avec « que » en complète une autre : ce n'est pas ce que cette catégorie décrit d'abord."
             }
           ],
-          "level": "approfondissement"
+          "level": "approfondissement",
+          "sansChoix": true
         },
         {
           "id": "Q4",
@@ -10504,7 +10714,8 @@
               "explanation": "Boisseau organise les repères de développement syntaxique selon les pronoms, les temps, les complexités et les prépositions. L'axe des prépositions porte sur les mots qui relient des groupes, notamment les relations de lieu. Ici, « chez » et « avec » relient des groupes de la phrase. La phrase contient aussi d'autres éléments (pronoms, temps), mais la question désigne la construction observée."
             }
           ],
-          "level": "approfondissement"
+          "level": "approfondissement",
+          "sansChoix": true
         }
       ],
       "qcmRevision": "76c9514c6fc284f4"
@@ -10564,7 +10775,8 @@
               "explanation": "L'axe des prépositions porte sur les mots qui relient des groupes, notamment les relations de lieu. Or, ici, l'observation porte sur le choix des pronoms : ce n'est pas ce que cette catégorie décrit d'abord."
             }
           ],
-          "level": "approfondissement"
+          "level": "approfondissement",
+          "sansChoix": true
         },
         {
           "id": "Q2",
@@ -10593,7 +10805,8 @@
               "explanation": "L'axe des complexités syntaxiques porte sur les liens entre propositions, comme parce que, que, quand, si. La phrase contient bien « quand », mais la question désigne les formes « avait mangé », « dormait » et « suis arrivé », qui situent les événements : ce n'est pas ce que cette catégorie décrit d'abord."
             }
           ],
-          "level": "approfondissement"
+          "level": "approfondissement",
+          "sansChoix": true
         },
         {
           "id": "Q3",
@@ -10622,7 +10835,8 @@
               "explanation": "Boisseau organise les repères de développement syntaxique selon les pronoms, les temps, les complexités et les prépositions. L'axe des complexités syntaxiques porte sur les liens entre propositions, comme parce que, que, quand, si. Ici, l'observation porte sur des liens entre propositions."
             }
           ],
-          "level": "approfondissement"
+          "level": "approfondissement",
+          "sansChoix": true
         },
         {
           "id": "Q4",
@@ -10651,7 +10865,8 @@
               "explanation": "L'axe des temps porte sur les formes verbales qui situent les événements, comme les systèmes à trois temps. Or, ici, l'observation porte sur le mot qui indique la position : ce n'est pas ce que cette catégorie décrit d'abord."
             }
           ],
-          "level": "approfondissement"
+          "level": "approfondissement",
+          "sansChoix": true
         }
       ],
       "qcmRevision": "8eeb761d956fd292"
@@ -10711,7 +10926,8 @@
               "explanation": "Cette phrase décrit l'approche interactionniste, pas l'approche behavioriste. L'approche interactionniste explique le langage par la relation : l'adulte étaye l'enfant dans des formats d'interaction prévisibles."
             }
           ],
-          "level": "essentiel"
+          "level": "essentiel",
+          "sansChoix": true
         },
         {
           "id": "Q2",
@@ -10740,7 +10956,8 @@
               "explanation": "L'approche interactionniste explique le langage par la relation : l'adulte étaye l'enfant dans des formats d'interaction prévisibles. Elle peut éclairer aussi la situation, mais ce qui est mis au premier plan ici est plutôt ceci : la réaction de la mère encourage la réponse de l'enfant, qui la reproduit plus souvent."
             }
           ],
-          "level": "essentiel"
+          "level": "essentiel",
+          "sansChoix": true
         },
         {
           "id": "Q3",
@@ -10769,7 +10986,8 @@
               "explanation": "L'approche historico-culturelle fait du langage un moyen de construire la pensée, avec l'adulte comme médiateur dans la zone proximale de développement. Elle peut éclairer aussi la situation, mais ce qui est mis au premier plan ici est plutôt ceci : l'adulte récompense la réponse attendue puis devient plus exigeant."
             }
           ],
-          "level": "essentiel"
+          "level": "essentiel",
+          "sansChoix": true
         },
         {
           "id": "Q4",
@@ -10798,7 +11016,8 @@
               "explanation": "L'approche innéiste explique l'acquisition du langage par des dispositions innées et des capacités universelles, dont un dispositif inné (le LAD). Elle peut éclairer aussi la situation, mais ce qui est mis au premier plan ici est plutôt ceci : l'enfant imite son milieu et ses réponses sont encouragées."
             }
           ],
-          "level": "approfondissement"
+          "level": "approfondissement",
+          "sansChoix": true
         }
       ],
       "qcmRevision": "e556affbbd30b47e"
@@ -10858,7 +11077,8 @@
               "explanation": "L'approche innéiste explique l'acquisition du langage par des dispositions innées et des capacités universelles, dont un dispositif inné (le LAD)."
             }
           ],
-          "level": "essentiel"
+          "level": "essentiel",
+          "sansChoix": true
         },
         {
           "id": "Q2",
@@ -10887,7 +11107,8 @@
               "explanation": "C'est un format d'interaction, notion de Bruner (approche interactionniste)."
             }
           ],
-          "level": "essentiel"
+          "level": "essentiel",
+          "sansChoix": true
         },
         {
           "id": "Q3",
@@ -10916,7 +11137,8 @@
               "explanation": "L'approche constructiviste fait dépendre le développement verbal du développement cognitif (stades, abstraction, décentration). Elle peut éclairer aussi la situation, mais ce qui est mis au premier plan ici est plutôt ceci : des capacités universelles sont présentes dès la naissance."
             }
           ],
-          "level": "approfondissement"
+          "level": "approfondissement",
+          "sansChoix": true
         },
         {
           "id": "Q4",
@@ -10945,7 +11167,8 @@
               "explanation": "L'approche historico-culturelle fait du langage un moyen de construire la pensée, avec l'adulte comme médiateur dans la zone proximale de développement. Elle peut éclairer aussi la situation, mais ce qui est mis au premier plan ici est plutôt ceci : un dispositif présent dès la naissance rend l'acquisition possible sans entraînement."
             }
           ],
-          "level": "approfondissement"
+          "level": "approfondissement",
+          "sansChoix": true
         }
       ],
       "qcmRevision": "d0503c329d2ec033"
@@ -11005,7 +11228,8 @@
               "explanation": "Cette phrase décrit l'approche historico-culturelle, pas l'approche constructiviste. L'approche historico-culturelle fait du langage un moyen de construire la pensée, avec l'adulte comme médiateur dans la zone proximale de développement."
             }
           ],
-          "level": "essentiel"
+          "level": "essentiel",
+          "sansChoix": true
         },
         {
           "id": "Q2",
@@ -11034,7 +11258,8 @@
               "explanation": "L'approche constructiviste fait dépendre le développement verbal du développement cognitif (stades, abstraction, décentration). Ici, le développement cognitif détermine le développement verbal."
             }
           ],
-          "level": "essentiel"
+          "level": "essentiel",
+          "sansChoix": true
         },
         {
           "id": "Q3",
@@ -11063,7 +11288,8 @@
               "explanation": "L'approche constructiviste fait dépendre le développement verbal du développement cognitif (stades, abstraction, décentration). Ici, l'abstraction et la décentration déterminent les possibilités langagières."
             }
           ],
-          "level": "approfondissement"
+          "level": "approfondissement",
+          "sansChoix": true
         },
         {
           "id": "Q4",
@@ -11092,7 +11318,8 @@
               "explanation": "L'approche interactionniste explique le langage par la relation : l'adulte étaye l'enfant dans des formats d'interaction prévisibles. Elle peut éclairer aussi la situation, mais ce qui est mis au premier plan ici est plutôt ceci : l'évolution des stades cognitifs explique celle du langage."
             }
           ],
-          "level": "approfondissement"
+          "level": "approfondissement",
+          "sansChoix": true
         }
       ],
       "qcmRevision": "4c81d3981d1f3e74"
@@ -11152,7 +11379,8 @@
               "explanation": "Cette phrase décrit l'approche interactionniste, pas l'approche historico-culturelle. L'approche interactionniste explique le langage par la relation : l'adulte étaye l'enfant dans des formats d'interaction prévisibles."
             }
           ],
-          "level": "essentiel"
+          "level": "essentiel",
+          "sansChoix": true
         },
         {
           "id": "Q2",
@@ -11181,7 +11409,8 @@
               "explanation": "L'approche behavioriste explique le langage par le milieu : stimulus, réponse, renforcement, imitation. Elle peut éclairer aussi la situation, mais ce qui est mis au premier plan ici est plutôt ceci : le dialogue avec la grande sœur, médiatrice, construit la pensée de l'enfant et l'aide à résoudre le problème."
             }
           ],
-          "level": "essentiel"
+          "level": "essentiel",
+          "sansChoix": true
         },
         {
           "id": "Q3",
@@ -11210,7 +11439,8 @@
               "explanation": "L'approche historico-culturelle fait du langage un moyen de construire la pensée, avec l'adulte comme médiateur dans la zone proximale de développement. Ici, l'aide d'une partenaire plus avancée rend possible ce que l'enfant ne réussit pas seul, et le langage l'aide à résoudre des problèmes."
             }
           ],
-          "level": "approfondissement"
+          "level": "approfondissement",
+          "sansChoix": true
         },
         {
           "id": "Q4",
@@ -11239,7 +11469,8 @@
               "explanation": "L'approche interactionniste explique le langage par la relation : l'adulte étaye l'enfant dans des formats d'interaction prévisibles. Bruner décrit aussi une aide de l'adulte, expliquée par la relation et les formats prévisibles ; ici, le trait mis au premier plan est le rôle du langage dans la construction de la pensée : l'adulte joue le rôle de médiateur et le dialogue construit la pensée de l'élève."
             }
           ],
-          "level": "approfondissement"
+          "level": "approfondissement",
+          "sansChoix": true
         }
       ],
       "qcmRevision": "9db8648dba16a2e1"
@@ -11299,7 +11530,8 @@
               "explanation": "Cette phrase décrit l'approche constructiviste, pas l'approche interactionniste. L'approche constructiviste fait dépendre le développement verbal du développement cognitif (stades, abstraction, décentration)."
             }
           ],
-          "level": "essentiel"
+          "level": "essentiel",
+          "sansChoix": true
         },
         {
           "id": "Q2",
@@ -11328,7 +11560,8 @@
               "explanation": "L'approche constructiviste fait dépendre le développement verbal du développement cognitif (stades, abstraction, décentration). Elle peut éclairer aussi la situation, mais ce qui est mis au premier plan ici est plutôt ceci : un scénario d'échange prévisible, appelé format d'interaction, dans lequel l'adulte soutient l'enfant."
             }
           ],
-          "level": "essentiel"
+          "level": "essentiel",
+          "sansChoix": true
         },
         {
           "id": "Q3",
@@ -11357,7 +11590,8 @@
               "explanation": "L'approche behavioriste explique le langage par le milieu : stimulus, réponse, renforcement, imitation. Elle peut éclairer aussi la situation, mais ce qui est mis au premier plan ici est plutôt ceci : ce scénario d'échange prévisible est un format d'interaction."
             }
           ],
-          "level": "approfondissement"
+          "level": "approfondissement",
+          "sansChoix": true
         },
         {
           "id": "Q4",
@@ -11386,7 +11620,8 @@
               "explanation": "L'approche constructiviste fait dépendre le développement verbal du développement cognitif (stades, abstraction, décentration). Elle peut éclairer aussi la situation, mais ce qui est mis au premier plan ici est plutôt ceci : l'enfant apprend dans la relation, avec des stratégies verbales et non verbales."
             }
           ],
-          "level": "approfondissement"
+          "level": "approfondissement",
+          "sansChoix": true
         }
       ],
       "qcmRevision": "923074a0d7b57208"
@@ -11446,7 +11681,8 @@
               "explanation": "Le triangle didactique relie ces trois pôles : l'enseignant·e sélectionne, transpose, planifie et transmet le savoir ; l'élève construit ses connaissances ; l'enseignant·e et l'élève interagissent. Le savoir y garde sa place à côté de la relation enseignant–élève."
             }
           ],
-          "level": "essentiel"
+          "level": "essentiel",
+          "sansChoix": true
         },
         {
           "id": "Q2",
@@ -11475,7 +11711,8 @@
               "explanation": "L'hétérogénéité désigne la diversité des langues et des niveaux des élèves ; elle est un contexte de l'enseignement, pas un pôle du triangle."
             }
           ],
-          "level": "essentiel"
+          "level": "essentiel",
+          "sansChoix": true
         },
         {
           "id": "Q3",
@@ -11504,7 +11741,8 @@
               "explanation": "Le triangle didactique relie les savoirs, l'enseignant·e et les élèves. Dans la relation entre l'enseignant·e et le savoir, l'enseignant·e sélectionne, transpose, planifie et transmet : planifier les étapes d'une notion en fait partie."
             }
           ],
-          "level": "essentiel"
+          "level": "essentiel",
+          "sansChoix": true
         }
       ],
       "qcmRevision": "693be975d990c8e6"
@@ -11564,7 +11802,8 @@
               "explanation": "La didactique couvre les savoirs théoriques et pratiques : la différence ne passe pas entre théorie et pratique."
             }
           ],
-          "level": "essentiel"
+          "level": "essentiel",
+          "sansChoix": true
         },
         {
           "id": "Q2",
@@ -11593,7 +11832,8 @@
               "explanation": "L'organisation du groupe pour soutenir la participation relève d'abord de la pédagogie."
             }
           ],
-          "level": "essentiel"
+          "level": "essentiel",
+          "sansChoix": false
         },
         {
           "id": "Q3",
@@ -11622,7 +11862,8 @@
               "explanation": "Examiner comment une activité rend accessible un savoir relève d'abord de la didactique."
             }
           ],
-          "level": "essentiel"
+          "level": "essentiel",
+          "sansChoix": false
         }
       ],
       "qcmRevision": "9a2f10c47fa2a171"
@@ -11678,7 +11919,8 @@
               "explanation": "C'est la distinction de Saussure entre le système social et son emploi."
             }
           ],
-          "level": "essentiel"
+          "level": "essentiel",
+          "sansChoix": true
         },
         {
           "id": "Q2",
@@ -11707,7 +11949,8 @@
               "explanation": "Elle désigne l'utilisation concrète des signes dans un contexte précis, pas la maîtrise d'actes de communication."
             }
           ],
-          "level": "essentiel"
+          "level": "essentiel",
+          "sansChoix": true
         },
         {
           "id": "Q3",
@@ -11736,7 +11979,8 @@
               "explanation": "Le langage est l'activité de production du sens au moyen d'une langue. Ici on demande les ressources d'une langue qui expriment les actes de communication : les savoirs linguistiques."
             }
           ],
-          "level": "essentiel"
+          "level": "essentiel",
+          "sansChoix": true
         }
       ],
       "qcmRevision": "23fd0b99dc3fb962"
@@ -11792,7 +12036,8 @@
               "explanation": "C'est le schéma narratif, qui concerne l'organisation d'un récit et non le rapport à l'oral."
             }
           ],
-          "level": "approfondissement"
+          "level": "approfondissement",
+          "sansChoix": true
         },
         {
           "id": "Q2",
@@ -11821,7 +12066,8 @@
               "explanation": "La dimension praxéologique porte sur les pratiques effectives de parole et d'écoute ; elle est voisine, mais la description demandée vise les émotions, comme la peur d'être jugé."
             }
           ],
-          "level": "approfondissement"
+          "level": "approfondissement",
+          "sansChoix": true
         },
         {
           "id": "Q3",
@@ -11850,7 +12096,8 @@
               "explanation": "Le rapport à l'oral désigne les croyances construites sur parler et écouter ; Colognesi en examine huit dimensions. La dimension conceptuelle porte sur la façon de concevoir l'oral et son apprentissage."
             }
           ],
-          "level": "approfondissement"
+          "level": "approfondissement",
+          "sansChoix": true
         },
         {
           "id": "Q4",
@@ -11879,7 +12126,8 @@
               "explanation": "La dimension axiologique porte sur les valeurs et opinions attribuées à l'oral ; elle est voisine, mais la description demandée vise les pratiques effectives de parole et d'écoute."
             }
           ],
-          "level": "approfondissement"
+          "level": "approfondissement",
+          "sansChoix": true
         }
       ],
       "qcmRevision": "99793ec221047fd6"
@@ -11935,7 +12183,8 @@
               "explanation": "La dimension affective porte sur les émotions, comme la peur d'être jugé ; elle est voisine, mais la description demandée vise les liens avec les autres."
             }
           ],
-          "level": "approfondissement"
+          "level": "approfondissement",
+          "sansChoix": true
         },
         {
           "id": "Q2",
@@ -11964,7 +12213,8 @@
               "explanation": "Le rapport à l'oral désigne les croyances construites sur parler et écouter ; Colognesi en examine huit dimensions. La dimension axiologique porte sur les valeurs et opinions attribuées à l'oral."
             }
           ],
-          "level": "approfondissement"
+          "level": "approfondissement",
+          "sansChoix": true
         },
         {
           "id": "Q3",
@@ -11993,7 +12243,8 @@
               "explanation": "La dimension relationnelle porte sur les liens avec les autres ; elle est voisine, mais la description demandée vise ce que l'identité des personnes fait percevoir quand elles parlent ou écoutent."
             }
           ],
-          "level": "approfondissement"
+          "level": "approfondissement",
+          "sansChoix": true
         },
         {
           "id": "Q4",
@@ -12022,7 +12273,8 @@
               "explanation": "C'est la régulation émotionnelle (Gross), qui n'est qu'un aspect : elle aide à oser parler, mais ne définit pas le rapport à l'oral."
             }
           ],
-          "level": "essentiel"
+          "level": "essentiel",
+          "sansChoix": true
         }
       ],
       "qcmRevision": "0c698e105a6dda76"
@@ -12086,7 +12338,8 @@
               "explanation": "Cette grille est celle de Dumais, qui concerne la pragmatique et non la syntaxe."
             }
           ],
-          "level": "essentiel"
+          "level": "essentiel",
+          "sansChoix": true
         },
         {
           "id": "Q2",
@@ -12115,7 +12368,8 @@
               "explanation": "Boisseau propose des repères pour développer la syntaxe parlée à partir des constructions déjà disponibles chez l'enfant. Pn signifie pronom et GV groupe verbal : c'est la construction sur laquelle Boisseau s'appuie."
             }
           ],
-          "level": "essentiel"
+          "level": "essentiel",
+          "sansChoix": true
         },
         {
           "id": "Q3",
@@ -12144,7 +12398,8 @@
               "explanation": "Éliminer les dislocations n'est pas une opération de Boisseau : on s'appuie sur ces constructions."
             }
           ],
-          "level": "essentiel"
+          "level": "essentiel",
+          "sansChoix": true
         }
       ],
       "qcmRevision": "d1a7824d8a40ed20"
@@ -12204,7 +12459,8 @@
               "explanation": "Didactique et pédagogique sont les deux approches de Simard, pas les visées de ce dispositif."
             }
           ],
-          "level": "approfondissement"
+          "level": "approfondissement",
+          "sansChoix": true
         },
         {
           "id": "Q2",
@@ -12233,7 +12489,8 @@
               "explanation": "Le droit égal à la parole ne rend pas les propos philosophiques : le travail de questionnement et de justification reste nécessaire, et toutes les affirmations ne se valent pas."
             }
           ],
-          "level": "essentiel"
+          "level": "essentiel",
+          "sansChoix": true
         },
         {
           "id": "Q3",
@@ -12262,7 +12519,8 @@
               "explanation": "C'est le dialogue scolaire habituel, structuré par l'enseignant, et non la DVP."
             }
           ],
-          "level": "essentiel"
+          "level": "essentiel",
+          "sansChoix": true
         },
         {
           "id": "Q4",
@@ -12291,7 +12549,8 @@
               "explanation": "On peut contester une idée dans la DVP, sans agresser la personne qui l'émet."
             }
           ],
-          "level": "essentiel"
+          "level": "essentiel",
+          "sansChoix": true
         }
       ],
       "qcmRevision": "96169d723c062963"
@@ -12351,7 +12610,8 @@
               "explanation": "Les règles organisent l'échange, elles ne sont pas le support qui suscite la question."
             }
           ],
-          "level": "essentiel"
+          "level": "essentiel",
+          "sansChoix": true
         },
         {
           "id": "Q2",
@@ -12380,7 +12640,8 @@
               "explanation": "Elle permet de passer du support particulier à un problème que le groupe peut examiner."
             }
           ],
-          "level": "essentiel"
+          "level": "essentiel",
+          "sansChoix": true
         },
         {
           "id": "Q3",
@@ -12409,7 +12670,8 @@
               "explanation": "Être impartial, c'est ne favoriser personne et ne pas prendre parti, sans être neutre : l'enseignant·e fait examiner les raisons de chaque avis avec la même exigence."
             }
           ],
-          "level": "essentiel"
+          "level": "essentiel",
+          "sansChoix": false
         },
         {
           "id": "Q4",
@@ -12438,7 +12700,8 @@
               "explanation": "C'est l'oral récité."
             }
           ],
-          "level": "essentiel"
+          "level": "essentiel",
+          "sansChoix": true
         }
       ],
       "qcmRevision": "49f0754e196065b3"
@@ -12494,7 +12757,8 @@
               "explanation": "Ces deux traits appartiennent à l'approche historico-culturelle de Vygotski."
             }
           ],
-          "level": "essentiel"
+          "level": "essentiel",
+          "sansChoix": false
         },
         {
           "id": "Q2",
@@ -12523,7 +12787,8 @@
               "explanation": "L'étayage est une aide, pas un dispositif inné ; la ZPD n'est pas une aide mais un écart."
             }
           ],
-          "level": "essentiel"
+          "level": "essentiel",
+          "sansChoix": false
         },
         {
           "id": "Q3",
@@ -12552,7 +12817,8 @@
               "explanation": "La reprise comprend les répétitions et les reformulations."
             }
           ],
-          "level": "essentiel"
+          "level": "essentiel",
+          "sansChoix": true
         },
         {
           "id": "Q4",
@@ -12581,7 +12847,8 @@
               "explanation": "Les deux sont des reprises de l'adulte."
             }
           ],
-          "level": "essentiel"
+          "level": "essentiel",
+          "sansChoix": true
         }
       ],
       "qcmRevision": "420fc0691bf019b1"
@@ -12637,7 +12904,8 @@
               "explanation": "L1 16 vise à observer le fonctionnement de la langue et à s'approprier des outils de base : la cible est l'étude de la langue, pas la production d'un récit dit."
             }
           ],
-          "level": "essentiel"
+          "level": "essentiel",
+          "sansChoix": false
         },
         {
           "id": "Q2",
@@ -12666,7 +12934,8 @@
               "explanation": "La parole est utilisée pour produire un texte écrit : elle est le moyen de l'activité, tandis que la cible annoncée est l'écrit."
             }
           ],
-          "level": "approfondissement"
+          "level": "approfondissement",
+          "sansChoix": false
         },
         {
           "id": "Q3",
@@ -12695,7 +12964,8 @@
               "explanation": "C'est la visée prioritaire, plus générale que l'acquis d'un cycle."
             }
           ],
-          "level": "essentiel"
+          "level": "essentiel",
+          "sansChoix": true
         },
         {
           "id": "Q4",
@@ -12724,7 +12994,8 @@
               "explanation": "Dans le PER (Plan d'études romand), objectifs, progression et attentes articulent apprentissages visés, travail au fil du cycle et acquis recherchés. La progression organise le travail au fil du cycle et des degrés ; l'attente exprime l'acquis visé à la fin."
             }
           ],
-          "level": "essentiel"
+          "level": "essentiel",
+          "sansChoix": true
         }
       ],
       "qcmRevision": "bc509c47b1bacb48"
@@ -12784,7 +13055,8 @@
               "explanation": "C'est l'organisation du conte merveilleux. Le conte merveilleux montre ce qui change dans la situation du personnage au fil des actions."
             }
           ],
-          "level": "essentiel"
+          "level": "essentiel",
+          "sansChoix": true
         },
         {
           "id": "Q2",
@@ -12813,7 +13085,8 @@
               "explanation": "C'est l'organisation du conte merveilleux. Le conte merveilleux montre ce qui change dans la situation du personnage au fil des actions."
             }
           ],
-          "level": "essentiel"
+          "level": "essentiel",
+          "sansChoix": true
         },
         {
           "id": "Q3",
@@ -12842,7 +13115,8 @@
               "explanation": "C'est l'organisation de l'anecdote. L'anecdote installe une situation (exposition), un événement qui fait problème (nœud), puis son issue (dénouement)."
             }
           ],
-          "level": "essentiel"
+          "level": "essentiel",
+          "sansChoix": true
         },
         {
           "id": "Q4",
@@ -12871,7 +13145,8 @@
               "explanation": "Cette distinction concerne la transposition d'un genre en objet d'enseignement."
             }
           ],
-          "level": "essentiel"
+          "level": "essentiel",
+          "sansChoix": true
         }
       ],
       "qcmRevision": "f61485ce70faca7b"
@@ -12931,7 +13206,8 @@
               "explanation": "Ces organisations varient selon le genre, alors que le schéma narratif a cinq moments."
             }
           ],
-          "level": "essentiel"
+          "level": "essentiel",
+          "sansChoix": true
         },
         {
           "id": "Q2",
@@ -12960,7 +13236,8 @@
               "explanation": "Il sert à choisir des apprentissages et des tâches à partir du genre."
             }
           ],
-          "level": "essentiel"
+          "level": "essentiel",
+          "sansChoix": true
         },
         {
           "id": "Q3",
@@ -12989,7 +13266,8 @@
               "explanation": "C'est l'organisation du récit, décrite par le schéma narratif."
             }
           ],
-          "level": "essentiel"
+          "level": "essentiel",
+          "sansChoix": true
         },
         {
           "id": "Q4",
@@ -13018,7 +13296,8 @@
               "explanation": "C'est la mise en voix d'un texte, c'est-à-dire l'oral récité."
             }
           ],
-          "level": "essentiel"
+          "level": "essentiel",
+          "sansChoix": true
         }
       ],
       "qcmRevision": "ef2f1a94439a3c45"
@@ -13074,7 +13353,8 @@
               "explanation": "La compétence phonologique porte sur la forme sonore des mots : distinguer et produire les phonèmes."
             }
           ],
-          "level": "essentiel"
+          "level": "essentiel",
+          "sansChoix": true
         },
         {
           "id": "Q2",
@@ -13103,7 +13383,8 @@
               "explanation": "Cette définition est celle de la compétence pragmatique, qui porte sur l'efficacité de la communication selon la situation, les partenaires et le but ; la compétence lexico-sémantique porte sur le choix des mots et le sens qu'ils construisent."
             }
           ],
-          "level": "essentiel"
+          "level": "essentiel",
+          "sansChoix": true
         },
         {
           "id": "Q3",
@@ -13132,7 +13413,8 @@
               "explanation": "Cette définition est celle de la compétence phonologique, qui porte sur la forme sonore des mots : distinguer et produire les phonèmes ; la compétence syntaxique porte sur l'organisation grammaticale des mots en phrase."
             }
           ],
-          "level": "essentiel"
+          "level": "essentiel",
+          "sansChoix": true
         },
         {
           "id": "Q4",
@@ -13161,7 +13443,8 @@
               "explanation": "Cette définition est celle de la compétence syntaxique, qui porte sur l'organisation grammaticale des mots en phrase ; la compétence pragmatique porte sur l'efficacité de la communication selon la situation, les partenaires et le but."
             }
           ],
-          "level": "essentiel"
+          "level": "essentiel",
+          "sansChoix": true
         }
       ],
       "qcmRevision": "64c74e3836cd6e59"
@@ -13225,7 +13508,8 @@
               "explanation": "Le discursif porte sur la conduite adoptée (raconter, expliquer, décrire…), la cohérence et la cohésion du discours, pas sur l'ouverture et la clôture de l'échange."
             }
           ],
-          "level": "approfondissement"
+          "level": "approfondissement",
+          "sansChoix": true
         },
         {
           "id": "Q2",
@@ -13254,7 +13538,8 @@
               "explanation": "Reprendre ou reformuler les propos d'un camarade fait entrer l'élève dans le propos commun et l'aide à l'enrichir : l'écoute entre élèves devient utile."
             }
           ],
-          "level": "essentiel"
+          "level": "essentiel",
+          "sansChoix": false
         },
         {
           "id": "Q3",
@@ -13283,7 +13568,8 @@
               "explanation": "Elles aident l'élève à relier les éléments choisis pour produire une histoire."
             }
           ],
-          "level": "essentiel"
+          "level": "essentiel",
+          "sansChoix": true
         },
         {
           "id": "Q4",
@@ -13312,7 +13598,8 @@
               "explanation": "Une répétition totale est une forme de reprise dans un échange, pas un dispositif photographique."
             }
           ],
-          "level": "essentiel"
+          "level": "essentiel",
+          "sansChoix": true
         }
       ],
       "qcmRevision": "3060793b90523611"
@@ -13372,7 +13659,8 @@
               "explanation": "Ce sont des voyelles arrondies plus fines, qui viennent après les points d'appui."
             }
           ],
-          "level": "essentiel"
+          "level": "essentiel",
+          "sansChoix": true
         },
         {
           "id": "Q2",
@@ -13401,7 +13689,8 @@
               "explanation": "Les premiers mots précèdent l'explosion syntaxique de plusieurs mois."
             }
           ],
-          "level": "essentiel"
+          "level": "essentiel",
+          "sansChoix": true
         },
         {
           "id": "Q3",
@@ -13430,7 +13719,8 @@
               "explanation": "Les règles de vie organisent la discussion à visée philosophique, elles ne sont pas des activités des MER."
             }
           ],
-          "level": "essentiel"
+          "level": "essentiel",
+          "sansChoix": true
         },
         {
           "id": "Q4",
@@ -13459,7 +13749,8 @@
               "explanation": "Cette appréciation ne transmet aucun contenu : on ne peut pas savoir si Mila a compris ce que son partenaire a dit."
             }
           ],
-          "level": "approfondissement"
+          "level": "approfondissement",
+          "sansChoix": false
         }
       ],
       "qcmRevision": "169769353cc27016"
@@ -13515,7 +13806,8 @@
               "explanation": "Le babil est une succession de sons proches de syllabes ; il apparaît vers 7 mois. Ici, l'enfant produit une suite de sons proches de syllabes."
             }
           ],
-          "level": "essentiel"
+          "level": "essentiel",
+          "sansChoix": true
         },
         {
           "id": "Q2",
@@ -13544,7 +13836,8 @@
               "explanation": "L'explosion syntaxique est le développement rapide des constructions de phrases à partir d'environ 2 ans et demi : phrases plus longues, phrases complexes, dislocation à gauche. Or, ici, l'enfant emploie des mots qui répondent à des situations d'échange : ce n'est pas ce que cette catégorie décrit d'abord."
             }
           ],
-          "level": "essentiel"
+          "level": "essentiel",
+          "sansChoix": true
         },
         {
           "id": "Q3",
@@ -13573,7 +13866,8 @@
               "explanation": "Les premiers mots apparaissent vers 10 à 12 mois et répondent à des situations d'échange : onomatopées, interjections, noms de proches ou d'objets. Or, ici, le nombre de mots assimilés par jour est très élevé : ce n'est pas ce que cette catégorie décrit d'abord."
             }
           ],
-          "level": "essentiel"
+          "level": "essentiel",
+          "sansChoix": true
         },
         {
           "id": "Q4",
@@ -13602,7 +13896,8 @@
               "explanation": "L'explosion syntaxique est le développement rapide des constructions de phrases à partir d'environ 2 ans et demi : phrases plus longues, phrases complexes, dislocation à gauche. Ici, les phrases s'allongent et une dislocation à gauche apparaît."
             }
           ],
-          "level": "essentiel"
+          "level": "essentiel",
+          "sansChoix": true
         }
       ],
       "qcmRevision": "9ef659e4088c8dc4"
@@ -13658,7 +13953,8 @@
               "explanation": "L'explosion syntaxique est le développement rapide des constructions de phrases à partir d'environ 2 ans et demi : phrases plus longues, phrases complexes, dislocation à gauche. Or, ici, l'enfant répète des suites de sons proches de syllabes avant les premiers mots : ce n'est pas ce que cette catégorie décrit d'abord."
             }
           ],
-          "level": "essentiel"
+          "level": "essentiel",
+          "sansChoix": true
         },
         {
           "id": "Q2",
@@ -13687,7 +13983,8 @@
               "explanation": "L'explosion lexicale est l'accélération rapide de l'acquisition des mots, surtout entre 18 et 36 mois, avec huit à dix mots assimilés par jour. Or, ici, l'enfant emploie des mots isolés adaptés à des situations d'échange : ce n'est pas ce que cette catégorie décrit d'abord."
             }
           ],
-          "level": "essentiel"
+          "level": "essentiel",
+          "sansChoix": true
         },
         {
           "id": "Q3",
@@ -13716,7 +14013,8 @@
               "explanation": "Les premiers mots apparaissent vers 10 à 12 mois et répondent à des situations d'échange : onomatopées, interjections, noms de proches ou d'objets. Or, ici, le rythme d'acquisition des mots est d'environ huit à dix par jour : ce n'est pas ce que cette catégorie décrit d'abord."
             }
           ],
-          "level": "essentiel"
+          "level": "essentiel",
+          "sansChoix": true
         },
         {
           "id": "Q4",
@@ -13745,7 +14043,8 @@
               "explanation": "L'explosion syntaxique est le développement rapide des constructions de phrases à partir d'environ 2 ans et demi : phrases plus longues, phrases complexes, dislocation à gauche. Ici, des phrases complexes apparaissent avec les phrases plus longues."
             }
           ],
-          "level": "essentiel"
+          "level": "essentiel",
+          "sansChoix": true
         }
       ],
       "qcmRevision": "ebd07ecad64ed299"
@@ -13801,7 +14100,8 @@
               "explanation": "L'explosion lexicale est l'accélération de l'acquisition des mots entre 18 et 36 mois. Elle décrit le rythme des acquisitions, pas l'étendue du domaine auquel un mot s'applique."
             }
           ],
-          "level": "essentiel"
+          "level": "essentiel",
+          "sansChoix": true
         },
         {
           "id": "Q2",
@@ -13830,7 +14130,8 @@
               "explanation": "L'explosion lexicale est l'accélération de l'acquisition des mots entre 18 et 36 mois. Elle décrit le rythme des acquisitions, pas l'étendue du domaine auquel un mot s'applique."
             }
           ],
-          "level": "essentiel"
+          "level": "essentiel",
+          "sansChoix": true
         },
         {
           "id": "Q3",
@@ -13859,7 +14160,8 @@
               "explanation": "Les deux mots ne se distinguent que par un seul phonème ([t] et [k]) ; changer ce son change le mot."
             }
           ],
-          "level": "essentiel"
+          "level": "essentiel",
+          "sansChoix": false
         },
         {
           "id": "Q4",
@@ -13888,7 +14190,8 @@
               "explanation": "Pendant les deux premières années, un écart de production ne prédit rien à lui seul ; ce sont les difficultés de compréhension qui doivent retenir l'attention."
             }
           ],
-          "level": "essentiel"
+          "level": "essentiel",
+          "sansChoix": true
         }
       ],
       "qcmRevision": "b320c50117ea566d"
@@ -13948,7 +14251,8 @@
               "explanation": "La discussion est un échange qui examine une question en confrontant des idées et des arguments, dans une recherche commune. Or, ici, l'enseignante dirige l'échange par ses questions et valide les réponses : ce n'est pas ce que cette catégorie décrit d'abord."
             }
           ],
-          "level": "essentiel"
+          "level": "essentiel",
+          "sansChoix": true
         },
         {
           "id": "Q2",
@@ -13977,7 +14281,8 @@
               "explanation": "Le dialogue scolaire habituel est dirigé par l'enseignant, orienté par des objectifs et limité dans le temps ; le questionnement et la validation des réponses lui donnent souvent une fonction évaluative. Or, ici, l'échange est peu contraint et change de sujet au gré des imprévus : ce n'est pas ce que cette catégorie décrit d'abord."
             }
           ],
-          "level": "essentiel"
+          "level": "essentiel",
+          "sansChoix": true
         },
         {
           "id": "Q3",
@@ -14006,7 +14311,8 @@
               "explanation": "La discussion est un échange qui examine une question en confrontant des idées et des arguments, dans une recherche commune. Ici, les élèves examinent une question en confrontant idées et raisons. Les formes d'échange peuvent se mêler en classe ; la question vise la forme qui domine dans la scène."
             }
           ],
-          "level": "essentiel"
+          "level": "essentiel",
+          "sansChoix": true
         },
         {
           "id": "Q4",
@@ -14035,7 +14341,8 @@
               "explanation": "La conversation est un échange moins formel, moins contraint et plus ouvert aux imprévus qu'un dialogue guidé par un but. Or, ici, chaque équipe cherche à convaincre l'autre : ce n'est pas ce que cette catégorie décrit d'abord."
             }
           ],
-          "level": "essentiel"
+          "level": "essentiel",
+          "sansChoix": true
         }
       ],
       "qcmRevision": "b17aee8552ef84be"
@@ -14095,7 +14402,8 @@
               "explanation": "La conversation est un échange moins formel, moins contraint et plus ouvert aux imprévus qu'un dialogue guidé par un but. Or, ici, l'enseignante pose la question, attend la réponse prévue et enchaîne : ce n'est pas ce que cette catégorie décrit d'abord."
             }
           ],
-          "level": "essentiel"
+          "level": "essentiel",
+          "sansChoix": true
         },
         {
           "id": "Q2",
@@ -14124,7 +14432,8 @@
               "explanation": "Le dialogue scolaire habituel est dirigé par l'enseignant, orienté par des objectifs et limité dans le temps ; le questionnement et la validation des réponses lui donnent souvent une fonction évaluative. Or, ici, l'échange est libre et s'ouvre aux imprévus : ce n'est pas ce que cette catégorie décrit d'abord."
             }
           ],
-          "level": "essentiel"
+          "level": "essentiel",
+          "sansChoix": true
         },
         {
           "id": "Q3",
@@ -14153,7 +14462,8 @@
               "explanation": "La discussion est un échange qui examine une question en confrontant des idées et des arguments, dans une recherche commune. Ici, les élèves précisent leurs idées en confrontant leurs arguments pour chercher ensemble. Les formes d'échange peuvent se mêler en classe ; la question vise la forme qui domine dans la scène."
             }
           ],
-          "level": "essentiel"
+          "level": "essentiel",
+          "sansChoix": true
         },
         {
           "id": "Q4",
@@ -14182,7 +14492,8 @@
               "explanation": "La discussion est un échange qui examine une question en confrontant des idées et des arguments, dans une recherche commune. Or, ici, l'intention est de convaincre : ce n'est pas ce que cette catégorie décrit d'abord."
             }
           ],
-          "level": "essentiel"
+          "level": "essentiel",
+          "sansChoix": true
         }
       ],
       "qcmRevision": "c48c0f83074a7286"
@@ -14238,7 +14549,8 @@
               "explanation": "L'écoute en écho est centrée sur les questions de l'enseignant et les réponses qui leur font suite, sans appui manifeste sur les propos des camarades. Ici, elle répond à la question de l'enseignante, sans reprendre ce qu'a dit un camarade."
             }
           ],
-          "level": "essentiel"
+          "level": "essentiel",
+          "sansChoix": false
         },
         {
           "id": "Q2",
@@ -14267,7 +14579,8 @@
               "explanation": "L'écoute marquée prend en compte la parole des autres élèves ; elle se repère à une reprise d'information, à un complément ou à un désaccord. Ici, il exprime un désaccord à propos d'un propos de Lina."
             }
           ],
-          "level": "essentiel"
+          "level": "essentiel",
+          "sansChoix": false
         },
         {
           "id": "Q3",
@@ -14296,7 +14609,8 @@
               "explanation": "L'écoute en écho est centrée sur les questions de l'enseignant et les réponses qui leur font suite, sans appui manifeste sur les propos des camarades. Ici, il répond à la question de l'enseignante, sans s'appuyer sur un camarade."
             }
           ],
-          "level": "essentiel"
+          "level": "essentiel",
+          "sansChoix": false
         },
         {
           "id": "Q4",
@@ -14325,7 +14639,8 @@
               "explanation": "L'écoute marquée prend en compte la parole des autres élèves ; elle se repère à une reprise d'information, à un complément ou à un désaccord. Ici, il exprime un désaccord à propos d'un propos de Lina."
             }
           ],
-          "level": "essentiel"
+          "level": "essentiel",
+          "sansChoix": false
         }
       ],
       "qcmRevision": "c011dc47efdcecfb"
@@ -14381,7 +14696,8 @@
               "explanation": "La reprise est la réaction de l'adulte qui reprend tout ou partie d'un énoncé de l'enfant, par répétition ou reformulation. Cette notion voisine n'est pas ce que la question désigne ici : la sœur assume la part difficile (montrer le premier cube) puis laisse la responsabilité à Léo."
             }
           ],
-          "level": "approfondissement"
+          "level": "approfondissement",
+          "sansChoix": true
         },
         {
           "id": "Q2",
@@ -14410,7 +14726,8 @@
               "explanation": "La zone proximale de développement est la distance entre ce que l'enfant réussit seul et ce qu'il réussit avec l'aide d'un adulte ou d'un enfant plus avancé. Ici, on situe l'écart entre la réussite seul et la réussite avec aide."
             }
           ],
-          "level": "approfondissement"
+          "level": "approfondissement",
+          "sansChoix": true
         },
         {
           "id": "Q3",
@@ -14439,7 +14756,8 @@
               "explanation": "Un format d'interaction est un scénario prévisible d'échanges dans lequel l'adulte soutient l'enfant. Ici, le scénario est prévisible et l'adulte y soutient l'enfant."
             }
           ],
-          "level": "approfondissement"
+          "level": "approfondissement",
+          "sansChoix": true
         },
         {
           "id": "Q4",
@@ -14468,7 +14786,8 @@
               "explanation": "Le conditionnement opérant est un apprentissage où une réponse est renforcée par ses conséquences : stimulus, réponse, renforcement. Cette notion voisine n'est pas ce que la question désigne ici : l'adulte assume la part difficile puis laisse progressivement la responsabilité à l'enfant."
             }
           ],
-          "level": "approfondissement"
+          "level": "approfondissement",
+          "sansChoix": true
         }
       ],
       "qcmRevision": "654564706edd6170"
@@ -14524,7 +14843,8 @@
               "explanation": "La dimension discursive porte sur la conduite adoptée (raconter, expliquer, décrire…), la cohérence et la cohésion du discours. Or, ici, l'aide porte sur le regard et la posture de l'élève : ce n'est pas ce que cette catégorie décrit d'abord."
             }
           ],
-          "level": "approfondissement"
+          "level": "approfondissement",
+          "sansChoix": true
         },
         {
           "id": "Q2",
@@ -14553,7 +14873,8 @@
               "explanation": "La dimension du contenu porte sur les informations données, le message transmis et les connaissances nécessaires pour le comprendre. Les cartes peuvent fournir des idées à raconter, donc cette dimension est liée ; mais l'appui fourni est un support visuel, et la question porte sur la nature de cet appui."
             }
           ],
-          "level": "approfondissement"
+          "level": "approfondissement",
+          "sansChoix": true
         },
         {
           "id": "Q3",
@@ -14582,7 +14903,8 @@
               "explanation": "La dimension communicationnelle porte sur la prise en compte des partenaires, le registre, le but, les conditions matérielles, l'écoute et la capacité à commencer ou à clore une conversation. Or, ici, l'aide porte sur la conduite du récit et son ordre : ce n'est pas ce que cette catégorie décrit d'abord."
             }
           ],
-          "level": "approfondissement"
+          "level": "approfondissement",
+          "sansChoix": true
         },
         {
           "id": "Q4",
@@ -14611,7 +14933,8 @@
               "explanation": "La dimension matérielle porte sur les appuis textuels, visuels ou autres qui soutiennent l'échange. Or, ici, l'aide porte sur une information manquante au message : ce n'est pas ce que cette catégorie décrit d'abord."
             }
           ],
-          "level": "approfondissement"
+          "level": "approfondissement",
+          "sansChoix": true
         }
       ],
       "qcmRevision": "9e1513db8348f765"
@@ -14667,7 +14990,8 @@
               "explanation": "La dimension émotionnelle porte sur l'attitude (aisance, enthousiasme, trac) et la manifestation des émotions. Ici, l'aide porte sur l'accueil de l'hésitation et sur l'aisance de l'élève. Une même aide peut toucher plusieurs dimensions ; la question vise celle que l'aide cible d'abord."
             }
           ],
-          "level": "approfondissement"
+          "level": "approfondissement",
+          "sansChoix": true
         },
         {
           "id": "Q2",
@@ -14696,7 +15020,8 @@
               "explanation": "La dimension émotionnelle porte sur l'attitude (aisance, enthousiasme, trac) et la manifestation des émotions. Or, ici, l'aide porte sur la prise en compte du partenaire et la manière de lui demander : ce n'est pas ce que cette catégorie décrit d'abord."
             }
           ],
-          "level": "approfondissement"
+          "level": "approfondissement",
+          "sansChoix": true
         }
       ],
       "qcmRevision": "245a909a7cffde51"
@@ -14752,7 +15077,8 @@
               "explanation": "Les quatre consonnes de base sont [p], [t], [m] et [f], produites à l'avant de la bouche ; elles soutiennent l'acquisition d'autres consonnes."
             }
           ],
-          "level": "essentiel"
+          "level": "essentiel",
+          "sansChoix": true
         }
       ],
       "qcmRevision": "5538ce0e9b06f93f"
@@ -14808,7 +15134,8 @@
               "explanation": "C'est la dimension affective du rapport à l'oral (Colognesi) : les émotions ; elle décrit ce qu'on ressent, pas les moyens d'agir sur elles."
             }
           ],
-          "level": "essentiel"
+          "level": "essentiel",
+          "sansChoix": true
         }
       ],
       "qcmRevision": "652d9bec90decb72"
@@ -14864,7 +15191,8 @@
               "explanation": "C'est le schéma narratif, qui organise un récit. Il ne décrit pas ce que fait l'auditeur pour anticiper les propos d'un locuteur."
             }
           ],
-          "level": "essentiel"
+          "level": "essentiel",
+          "sansChoix": true
         }
       ],
       "qcmRevision": "00cdc194b1fbd2b6"
@@ -14924,7 +15252,8 @@
               "explanation": "C'est l'album écho : un dispositif qui associe des photographies de l'enfant en activité à des textes oraux. Il aide à remettre en mots une expérience terminée, ce n'est pas l'album comme objet d'entrée dans l'écrit."
             }
           ],
-          "level": "essentiel"
+          "level": "essentiel",
+          "sansChoix": true
         }
       ],
       "qcmRevision": "872bba24baee31f7"
@@ -14980,7 +15309,8 @@
               "explanation": "Verbaliser, reformuler, coopérer et écouter exigent un climat de respect, de confiance et de sécurité : c'est le premier ingrédient pour travailler l'oral, pour l'enseignant·e comme pour l'élève."
             }
           ],
-          "level": "essentiel"
+          "level": "essentiel",
+          "sansChoix": true
         }
       ],
       "qcmRevision": "8cfd22bde45758bc"
@@ -15036,7 +15366,8 @@
               "explanation": "Sans aide ciblée, les écarts de départ se maintiennent, voire se creusent (effet Matthieu) : combattre l'inégalité demande d'aider davantage ceux qui en ont le plus besoin."
             }
           ],
-          "level": "essentiel"
+          "level": "essentiel",
+          "sansChoix": true
         }
       ],
       "qcmRevision": "ef847f84bc3e84a7"
@@ -15092,7 +15423,8 @@
               "explanation": "Cette composante porte sur la manière de dire (prononciation, volume, débit, gestes). Ici, la consigne porte sur l'ordre des événements, pas sur la voix ni sur le corps."
             }
           ],
-          "level": "essentiel"
+          "level": "essentiel",
+          "sansChoix": false
         }
       ],
       "qcmRevision": "2c6fe2821ce4f7bb"
@@ -15148,7 +15480,8 @@
               "explanation": "Ce sont les salutations finales de la clôture, qui précède le constat."
             }
           ],
-          "level": "essentiel"
+          "level": "essentiel",
+          "sansChoix": true
         }
       ],
       "qcmRevision": "1a76d0ee58486c03"
@@ -15208,7 +15541,8 @@
               "explanation": "La langue pèse dans les évaluations, donc dans la réussite scolaire et sociale. Ici, la situation montre l'usage du français pour apprendre en mathématiques, pas son poids dans l'évaluation."
             }
           ],
-          "level": "essentiel"
+          "level": "essentiel",
+          "sansChoix": true
         }
       ],
       "qcmRevision": "0f3cf7e8bee4338c"
@@ -16570,5 +16904,5 @@
       "stepId": "Q1"
     }
   ],
-  "bankRevision": "0c79bf83891a"
+  "bankRevision": "091323feb720"
 }

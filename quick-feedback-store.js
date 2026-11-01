@@ -74,7 +74,9 @@
     return transaction(true, state => {
       const key = keyOf(question);
       const thread = state.threads[key] || { questionId: question.questionId, contentRevision: question.contentRevision, threadId: crypto.randomUUID(), version: 0 };
-      nextCurrent(thread, value, thread.current?.comment || '', snapshot);
+      const mode = snap => snap?.question.startsWith('Sans les choix\n\n') ? 'sans-choix' : 'qcm';
+      const comment = mode(thread.current?.snapshot) === mode(snapshot) ? thread.current?.comment || '' : '';
+      nextCurrent(thread, value, comment, snapshot);
       state.threads[key] = thread;
       return thread;
     });

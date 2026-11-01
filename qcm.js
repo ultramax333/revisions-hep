@@ -14,6 +14,15 @@
   const app = document.getElementById('app');
   let bank, byId, active = null, view = 'home', displayedRun = null, activeCourse = null, activeMix = null, stepFeedback = null;
   const quickSeen = new Map();
+  let withoutChoices = false, scIndex = 0, displayedSC = null, displayedSCNavigation = '', scPending = Promise.resolve();
+  const scStore = window.HEPSansChoixStore?.create({ repo, scope: SCOPE, ingest: ingestLocal, changed, store: S });
+  const visibleRun = q => withoutChoices ? { index: scIndex, id: 'sans-choix::' + q.id + '::' + q.qcmRevision + '::' + q.steps[scIndex].id } : readRun(q);
+  const stepDone = item => withoutChoices ? !!scStore.read(item.q, item.step).selfEvaluation : !!readRun(item.q).revealed[item.step.id];
+  const questionLabel = () => withoutChoices ? 'questions sans les choix' : 'QCM';
+  function modeControls() {
+    if (!GROUPED_COURSES) return '';
+    return `<div class="qcm-mode-switch" role="group" aria-label="Mode de révision"><button class="btn ${withoutChoices ? 'secondary' : 'primary'}" data-action="mode-qcm" aria-pressed="${!withoutChoices}">QCM</button><button class="btn ${withoutChoices ? 'primary' : 'secondary'}" data-action="mode-sc" aria-pressed="${withoutChoices}">Sans les choix</button></div>`;
+  }
   let levelsEnabled = false, levelFilter = 'essentiel', emptyPathMessage = '';
   const runCache = new Map(), mixExpansionCache = new Map();
   const mixKey = 'hep-revisions-qcm-mixed-position-v1::' + SCOPE;
@@ -74,8 +83,8 @@
     nameField?.addEventListener('input', () => binding.refresh());
     stepFeedback = binding; binding.refresh(); return binding;
   }
-  const levelStorageKey = name => 'qcm-level-' + name + '::' + SCOPE + '::' + levelFilter;
-  const selectedLevelKey = 'qcm-selected-level::' + SCOPE;
+  const levelStorageKey = name => (withoutChoices ? 'sc-level-' : 'qcm-level-') + name + '::' + SCOPE + '::' + levelFilter;
+  const selectedLevelKey = () => (withoutChoices ? 'sc-selected-level::' : 'qcm-selected-level::') + SCOPE;
   function writeNavigation(key, value) {
     ingestLocal();
     const previous = repo.state.drafts[key];
@@ -83,10 +92,10 @@
     repo.save(); changed();
   }
   function restoreLevelChoice() {
-    let saved; try { saved = JSON.parse(repo.state.drafts[selectedLevelKey]?.text || 'null'); } catch (_) { saved = null; }
+    let saved; try { saved = JSON.parse(repo.state.drafts[selectedLevelKey()]?.text || 'null'); } catch (_) { saved = null; }
     levelFilter = saved === 'tout' ? 'tout' : 'essentiel';
   }
-  const stepEligible = step => !levelsEnabled || levelFilter === 'tout' || step.level === 'essentiel';
+  const stepEligible = step => (!withoutChoices || step.sansChoix === true) && (!levelsEnabled || levelFilter === 'tout' || step.level === 'essentiel');
   const exerciseEntries = q => q.steps.map((step, index) => ({ q, step, index })).filter(item => stepEligible(item.step));
   function levelControls() {
     if (!levelsEnabled) return '';
@@ -135,6 +144,10 @@
   }
   function refreshRunControls() {
     if (view !== 'exercise' || !active || !displayedRun) return;
+    if (withoutChoices) {
+      if (scStore.read(active, active.steps[scIndex]).token !== displayedSC?.token) toast('Cette réponse a changé ailleurs. Une nouvelle action l’actualisera ; tes saisies restent conservées.');
+      return;
+    }
     const current = readRun(active);
     if (!sameRun(current, displayedRun)) { toast('Cet essai a changé ailleurs. Une nouvelle action l’actualisera ; tes retours précédents restent conservés.'); return; }
     document.querySelectorAll('[data-choice]').forEach(button => { button.setAttribute('aria-pressed', String(current.answers[button.dataset.step] === button.dataset.choice)); });
@@ -172,7 +185,7 @@
     repo.state.drafts[key] = { text: 'true', updatedAt: new Date().toISOString() };
     repo.save(); changed();
   }
-  function stepSnapshot(q, step, run) { return quickSnapshot(q, step, run); }
+  function stepSnapshot(q, step, run) { return withoutChoices ? scSnapshot(q, step, run) : quickSnapshot(q, step, run); }
   function quickSnapshot(q, step, run) {
     // Track panels actually opened in this tab, separately from attempt/hint flags.
     // No hidden correct answer is serialized before correction is displayed.
@@ -197,11 +210,11 @@
   }
   function header() {
     if (view === 'exercise' && active) {
-      const run = readRun(active);
+      const run = visibleRun(active);
       const progress = coursePosition(active, run), counter = activeMix ? `Tout mélanger · QCM ${progress.index + 1} / ${progress.queue.length}` : activeCourse ? `${esc(courseLabel(activeCourse))} · QCM ${progress.index + 1} / ${progress.queue.length}` : `QCM ${run.index + 1} / ${active.steps.length}`;
-      return `<header class="qcm-focus-header"><button class="icon-button" data-action="home" aria-label="Exercices">←</button><span class="question-counter">${counter}</span>${needsContext(active.steps[run.index]) ? '<button class="btn secondary" data-action="open-context" aria-label="Voir la situation">Situation</button>' : ''}<button class="icon-button" data-action="open-hints" aria-label="Un rappel des concepts">?</button></header>`;
+      return `<header class="qcm-focus-header"><button class="icon-button" data-action="home" aria-label="Exercices">←</button><span class="question-counter">${withoutChoices ? 'Sans les choix · ' + counter.replace(/QCM/g, 'Question') : counter}</span>${needsContext(active.steps[run.index]) ? '<button class="btn secondary" data-action="open-context" aria-label="Voir la situation">Situation</button>' : ''}<button class="icon-button" data-action="open-hints" aria-label="Un rappel des concepts">?</button></header>`;
     }
-    return `<header class="site-header"><button class="brand" data-action="home"><img class="brand-mark" src="icon.svg" alt=""><span><span class="brand-title">${esc(collection.label || 'Essai · QCM guidés')}</span><span class="brand-subtitle">${esc(collection.subtitle || 'Français · Bloc oral')}</span></span></button><nav class="header-actions" aria-label="Navigation des QCM"><button class="btn ghost" data-action="home">Exercices</button><button class="btn ghost" data-action="avis">Mes avis</button><button class="btn ghost" data-action="feedback">Mes retours <span class="badge" data-feedback-count>${comments().length}</span></button><button class="icon-button" data-action="settings" aria-label="Sauvegardes des QCM">↗</button></nav></header>`;
+    return `<header class="site-header"><button class="brand" data-action="home"><img class="brand-mark" src="icon.svg" alt=""><span><span class="brand-title">${esc(withoutChoices ? (collection.subject || '') + ' · Sans les choix' : collection.label || 'Essai · QCM guidés')}</span><span class="brand-subtitle">${esc(collection.subtitle || 'Français · Bloc oral')}</span></span></button><nav class="header-actions" aria-label="Navigation des QCM"><button class="btn ghost" data-action="home">Exercices</button><button class="btn ghost" data-action="avis">Mes avis</button><button class="btn ghost" data-action="feedback">Mes retours <span class="badge" data-feedback-count>${comments().length}</span></button><button class="icon-button" data-action="settings" aria-label="Sauvegardes des QCM">↗</button></nav></header>`;
   }
   function home() {
     if (GROUPED_COURSES) return oralHome();
@@ -226,31 +239,41 @@
     const queue = activeMix ? mixedQueue(activeMix) : activeCourse ? courseQueue(activeCourse) : [];
     return { queue, index: queue.findIndex(item => item.q.id === q.id && item.step.id === q.steps[run.index].id) };
   }
+  function scNavigationVersion() {
+    return activeMix ? repo.state.drafts[levelStorageKey('mixed-position-v2')]?.text || '' : S.stable(readCourseCursors()[activeCourse] || null);
+  }
   function readCourseCursors() {
-    try { const source = levelsEnabled ? repo.state.drafts[levelStorageKey('course-position')]?.text || (levelFilter === 'tout' ? localStorage.getItem(courseCursorKey) : '{}') : localStorage.getItem(courseCursorKey); const value = JSON.parse(source || '{}'); return value && typeof value === 'object' && !Array.isArray(value) ? value : {}; } catch (_) { return {}; }
+    try { const source = withoutChoices ? repo.state.drafts[levelStorageKey('course-position')]?.text : levelsEnabled ? repo.state.drafts[levelStorageKey('course-position')]?.text || (levelFilter === 'tout' ? localStorage.getItem(courseCursorKey) : '{}') : localStorage.getItem(courseCursorKey); const value = JSON.parse(source || '{}'); return value && typeof value === 'object' && !Array.isArray(value) ? value : {}; } catch (_) { return {}; }
   }
   function selectCourseEntry(item) {
     active = item.q;
-    const run = readRun(active);
-    run.index = item.index;
-    if (repo.state.drafts[runKey(active)]?.text !== JSON.stringify(run)) writeRun(active, run);
+    if (withoutChoices) scIndex = item.index;
+    else {
+      const run = readRun(active); run.index = item.index;
+      if (repo.state.drafts[runKey(active)]?.text !== JSON.stringify(run)) writeRun(active, run);
+    }
     const cursors = readCourseCursors();
     cursors[activeCourse] = { exerciseId: active.id, stepId: item.step.id, qcmRevision: active.qcmRevision };
-    try { if (levelsEnabled) writeNavigation(levelStorageKey('course-position'), cursors); else localStorage.setItem(courseCursorKey, JSON.stringify(cursors)); } catch (_) { toast('La position du cours ne peut pas être enregistrée sur cet appareil.'); }
+    try { if (withoutChoices || levelsEnabled) writeNavigation(levelStorageKey('course-position'), cursors); else localStorage.setItem(courseCursorKey, JSON.stringify(cursors)); } catch (_) { toast('La position du cours ne peut pas être enregistrée sur cet appareil.'); }
   }
   function openCourse(key) {
     const queue = courseQueue(key);
-    if (!queue.length) { showEmptyPath('Aucun QCM pour ' + courseLabel(key) + (levelsEnabled && levelFilter === 'essentiel' ? ' dans Essentiel. Choisis Tout pour ouvrir ce cours.' : '. Reviens aux cours disponibles.')); return false; }
+    if (!queue.length) { showEmptyPath('Aucune question pour ' + courseLabel(key) + (levelsEnabled && levelFilter === 'essentiel' ? ' dans Essentiel. Choisis Tout pour ouvrir ce cours.' : '. Reviens aux cours disponibles.')); return false; }
     activeCourse = key;
     const cursor = readCourseCursors()[key];
     const saved = queue.find(item => item.q.id === cursor?.exerciseId && item.step.id === cursor?.stepId && item.q.qcmRevision === cursor?.qcmRevision);
-    const pending = saved || queue.find(item => !readRun(item.q).revealed[item.step.id]) || queue[queue.length - 1];
+    const pending = saved || queue.find(item => !stepDone(item)) || queue[queue.length - 1];
     selectCourseEntry(pending); return true;
   }
   function showEmptyPath(message) {
     active = null; activeCourse = null; activeMix = null; view = 'home'; emptyPathMessage = message;
   }
   function courseStats(queue) {
+    if (withoutChoices) return queue.reduce((stats, item) => {
+      const record = scStore.read(item.q, item.step);
+      if (record.selfEvaluation) { stats.answered++; if (record.selfEvaluation === 'known') stats.score++; }
+      return stats;
+    }, { answered: 0, score: 0 });
     return queue.reduce((stats, item) => { const run = readRun(item.q); if (run.revealed[item.step.id]) { stats.answered++; if (run.answers[item.step.id] === item.step.correctId) stats.score++; } return stats; }, { answered: 0, score: 0 });
   }
   const entryRef = item => ({ exerciseId: item.q.id, stepId: item.step.id, qcmRevision: item.q.qcmRevision });
@@ -281,7 +304,7 @@
     return mix.order.map(ref => entries.get(entryKey(ref)));
   }
   function readMix() {
-    let value; try { const source = levelsEnabled ? repo.state.drafts[levelStorageKey('mixed-position-v2')]?.text || repo.state.drafts[levelStorageKey('mixed-position')]?.text || (levelFilter === 'tout' ? localStorage.getItem(mixKey) : 'null') : localStorage.getItem(mixKey); value = expandedMix(JSON.parse(source || 'null')); } catch (_) { return null; }
+    let value; try { const source = withoutChoices ? repo.state.drafts[levelStorageKey('mixed-position-v2')]?.text : levelsEnabled ? repo.state.drafts[levelStorageKey('mixed-position-v2')]?.text || repo.state.drafts[levelStorageKey('mixed-position')]?.text || (levelFilter === 'tout' ? localStorage.getItem(mixKey) : 'null') : localStorage.getItem(mixKey); value = expandedMix(JSON.parse(source || 'null')); } catch (_) { return null; }
     const entries = allEntries().map(item => entryKey(entryRef(item)));
     if (!entries.length) return null;
     if (value?.version !== 1 || typeof value.id !== 'string' || !Array.isArray(value.order) || value.order.length > entries.length || !value.order.length) return null;
@@ -298,7 +321,7 @@
   }
   function saveMix() {
     try {
-      if (levelsEnabled) {
+      if (withoutChoices || levelsEnabled) {
         const compact = compactMix(activeMix);
         if (JSON.stringify(compact).length > 12000) throw Error('Mélange trop volumineux.');
         // Separate key prevents an older client overwriting the extended mixture.
@@ -308,7 +331,7 @@
   }
   function openMix(fresh = false) {
     const entries = allEntries();
-    if (!entries.length) { showEmptyPath('Aucun QCM dans Essentiel pour ce mélange. Choisis Tout pour mélanger les questions.'); return false; }
+    if (!entries.length) { showEmptyPath('Aucune question disponible pour ce mélange. Choisis Tout ou le mode QCM.'); return false; }
     activeCourse = null;
     activeMix = !fresh && readMix() || { version: 1, id: S.uuid(), order: shuffled(entries.map(entryRef)) };
     const queue = mixedQueue(activeMix);
@@ -317,8 +340,11 @@
   }
   function selectMixedEntry(item) {
     active = item.q;
-    const run = readRun(active); run.index = item.index;
-    if (repo.state.drafts[runKey(active)]?.text !== JSON.stringify(run)) writeRun(active, run);
+    if (withoutChoices) scIndex = item.index;
+    else {
+      const run = readRun(active); run.index = item.index;
+      if (repo.state.drafts[runKey(active)]?.text !== JSON.stringify(run)) writeRun(active, run);
+    }
     activeMix.cursor = entryRef(item); saveMix();
   }
   function oralHome() {
@@ -332,11 +358,58 @@
       return { key, label, queue, date: dates[0] || '99999999', match: !query || oralNavigation.normalize(haystack).includes(query) };
     }).filter(course => course.match);
     const total = allEntries().length, mix = readMix();
-    return `${levelControls()}${emptyPathMessage ? `<p class="notice" role="status">${esc(emptyPathMessage)}</p>` : ''}<section class="qcm-mix-start" aria-label="Toutes les questions"><div><button class="btn primary" data-action="mix" ${total ? '' : 'disabled'}>Tout mélanger</button><p class="help-text">${total ? total + ' QCM en ordre aléatoire. Réponses conservées.' : 'Aucun QCM dans Essentiel. Choisis Tout.'}</p></div>${mix ? '<button class="btn ghost" data-action="new-mix">Nouveau mélange</button>' : ''}</section>
-      ${window.HEPQuickUI?.group() || ''}<section class="qcm-subject" aria-labelledby="qcm-subject-title"><h1 id="qcm-subject-title">${esc(collection.subject || 'Français')}</h1><section class="qcm-block" aria-labelledby="qcm-block-title"><h2 id="qcm-block-title">${esc(collection.block || 'Bloc oral')}</h2><p class="hero-description">Des QCM avec une correction expliquée, à ton rythme.${writingHome ? ' Les exercices rédigés du bloc oral ont aussi leur <a href="oral.html">accès direct à la rédaction</a>.' : ''}</p>
+    return `${modeControls()}${levelControls()}${emptyPathMessage ? `<p class="notice" role="status">${esc(emptyPathMessage)}</p>` : ''}<section class="qcm-mix-start" aria-label="Toutes les questions"><div><button class="btn primary" data-action="mix" ${total ? '' : 'disabled'}>Tout mélanger</button><p class="help-text">${total ? total + ' ' + questionLabel() + ' en ordre aléatoire. Réponses conservées.' : 'Aucune question disponible dans ce niveau. Choisis Tout ou QCM.'}</p></div>${mix ? '<button class="btn ghost" data-action="new-mix">Nouveau mélange</button>' : ''}</section>
+      ${window.HEPQuickUI?.group() || ''}<section class="qcm-subject" aria-labelledby="qcm-subject-title"><h1 id="qcm-subject-title">${esc(collection.subject || 'Français')}</h1><section class="qcm-block" aria-labelledby="qcm-block-title"><h2 id="qcm-block-title">${esc(collection.block || 'Bloc oral')}</h2><p class="hero-description">${withoutChoices ? 'Écris ou pense ta réponse, puis affiche la réponse attendue et déclare « Je savais » ou « À revoir ». Les résultats QCM restent séparés.' : 'Des QCM avec une correction expliquée, à ton rythme.'}${writingHome && !withoutChoices ? ' Les exercices rédigés du bloc oral ont aussi leur <a href="oral.html">accès direct à la rédaction</a>.' : ''}</p>
       <form class="oral-tools qcm-home-filters" id="qcm-home-filters"><label class="oral-field" for="qcm-search">Rechercher un cours ou une notion<input class="text-input" id="qcm-search" type="search" value="${esc(search)}" placeholder="${esc(collection.searchPlaceholder || 'Ex. : Cours 1, étayage, récit…')}"></label><button class="btn secondary" type="submit">Rechercher</button>${search ? '<button class="btn ghost" type="button" data-action="clear-search">Tout afficher</button>' : ''}</form>
-      <p class="help-text oral-result-count" id="qcm-home-results" role="status" tabindex="-1">${courses.length} cours · ${courses.reduce((n, course) => n + course.queue.length, 0)} QCM</p><div class="exercise-grid qcm-courses" role="group" aria-label="Parcours par cours">${courses.map(course => { const stats = courseStats(course.queue); return `<article class="course-card exercise-tile"><h3>${esc(course.label)}</h3><p class="help-text">${course.queue.length} QCM${stats.answered ? ` · ${stats.answered} réponse${stats.answered > 1 ? 's' : ''} enregistrée${stats.answered > 1 ? 's' : ''}` : ''}</p><button class="btn primary" data-course="${esc(course.key)}" ${course.queue.length ? '' : 'disabled'} aria-label="${esc(course.queue.length ? (stats.answered || readCourseCursors()[course.key] ? 'Reprendre' : 'Commencer') + ' ' + course.label : 'Aucun QCM Essentiel pour ' + course.label + '. Choisis Tout.')}">${course.queue.length ? (stats.answered || readCourseCursors()[course.key] ? 'Reprendre' : 'Commencer') : 'Aucun Essentiel'}</button></article>`; }).join('') || '<p class="empty-state">Aucun cours ne correspond à cette recherche.</p>'}</div></section></section>
-      ${writingHome ? '<p class="notice">Le résultat des QCM mesure la reconnaissance d’une réponse. La rédaction et sa justification restent à travailler séparément.</p>' : ''}`;
+      <p class="help-text oral-result-count" id="qcm-home-results" role="status" tabindex="-1">${courses.length} cours · ${courses.reduce((n, course) => n + course.queue.length, 0)} ${questionLabel()}</p><div class="exercise-grid qcm-courses" role="group" aria-label="Parcours par cours">${courses.map(course => { const stats = courseStats(course.queue); return `<article class="course-card exercise-tile"><h3>${esc(course.label)}</h3><p class="help-text">${course.queue.length} ${questionLabel()}${stats.answered ? ` · ${stats.answered} ${withoutChoices ? 'autoévaluation' : 'réponse'}${stats.answered > 1 ? 's' : ''} enregistrée${stats.answered > 1 ? 's' : ''}` : ''}</p><button class="btn primary" data-course="${esc(course.key)}" ${course.queue.length ? '' : 'disabled'} aria-label="${esc(course.queue.length ? (stats.answered || readCourseCursors()[course.key] ? 'Reprendre' : 'Commencer') + ' ' + course.label : 'Aucune question Essentiel pour ' + course.label + '. Choisis Tout.')}">${course.queue.length ? (stats.answered || readCourseCursors()[course.key] ? 'Reprendre' : 'Commencer') : 'Aucun Essentiel'}</button></article>`; }).join('') || '<p class="empty-state">Aucun cours ne correspond à cette recherche.</p>'}</div></section></section>
+      ${writingHome && !withoutChoices ? '<p class="notice">Le résultat des QCM mesure la reconnaissance d’une réponse. La rédaction et sa justification restent à travailler séparément.</p>' : ''}`;
+  }
+  function scSnapshot(q, step, run) {
+    const record = displayedSC, seen = quickSeen.get(run.id) || {};
+    const response = document.getElementById('sc-response')?.value ?? record.response;
+    const correct = record.revealed ? step.choices.find(choice => choice.id === step.correctId) : null;
+    return {
+      question: 'Sans les choix\n\n' + step.prompt,
+      answer: 'Ma réponse personnelle :\n' + (response || 'Réponse pensée ou non écrite.') + '\n\n' + (correct ? 'Réponse attendue :\n' + correct.text + '\n\n' + correct.explanation : 'Réponse attendue non affichée.') + (record.selfEvaluation ? '\n\nAutoévaluation déclarée : ' + (record.selfEvaluation === 'known' ? 'Je savais' : 'À revoir') : ''),
+      hint: (seen.context ? 'Situation consultée :\n' + q.context : '') + (seen.hints ? '\n\nRappel consulté :\n' + hintText(q) : ''), module: q.module, course: q.course
+    };
+  }
+  function scExercise() {
+    const q = active, step = q.steps[scIndex], record = scStore.read(q, step), run = visibleRun(q);
+    const ref = bank.courseReference || bank.courseReferences[q.referenceId], source = q.sources.find(s => s.file.includes('SYNTHESE')) || q.sources[0];
+    const progress = coursePosition(q, run), stats = courseStats(progress.queue), total = progress.queue.length;
+    const correct = record.revealed ? step.choices.find(choice => choice.id === step.correctId) : null;
+    const alternatives = scStore.alternatives(q, step);
+    return `<section class="question-shell"><article class="question-card">${levelControls()}<p class="exercise-origin">${esc(referenceLabel(ref))}${ref.date ? ' · ' + esc(ref.date) : ''}</p><fieldset class="qcm-step sc-step" tabindex="-1"><legend>${esc(step.prompt)}</legend>${needsContext(step) ? '<button class="qcm-context-cue" data-action="open-context">Clique sur « Situation » pour lire le contexte.</button>' : ''}<label class="field-label" for="sc-response">Ma réponse (facultative)</label><p class="help-text">Écris ici ou réponds dans ta tête, puis compare avec la réponse attendue.</p><textarea class="feedback-textarea sc-response" id="sc-response" rows="4" maxlength="8000">${esc(record.response)}</textarea><p class="save-status" id="sc-response-status" role="status" aria-live="polite">${repo.warning ? esc(repo.warning) : record.token ? 'Réponse conservée sur cet appareil.' : 'La réponse écrite est facultative.'}</p><button class="btn secondary" data-action="sc-refresh" id="sc-refresh" hidden>Recharger cette question</button>${correct ? `<section class="sc-expected" tabindex="-1" aria-labelledby="sc-expected-title"><h2 id="sc-expected-title">Réponse attendue</h2><p>${text(correct.text)}</p><p>${text(correct.explanation)}</p></section><div class="actions sc-self-evaluation" role="group" aria-label="Mon autoévaluation"><button class="btn ${record.selfEvaluation === 'known' ? 'primary' : 'secondary'}" data-action="sc-known" aria-pressed="${record.selfEvaluation === 'known'}">Je savais</button><button class="btn ${record.selfEvaluation === 'review' ? 'primary' : 'secondary'}" data-action="sc-review" aria-pressed="${record.selfEvaluation === 'review'}">À revoir</button></div><p class="help-text" role="status">${record.selfEvaluation ? 'Autoévaluation déclarée : ' + (record.selfEvaluation === 'known' ? 'Je savais.' : 'À revoir.') : 'Choisis « Je savais » ou « À revoir » pour poursuivre. Aucune note automatique.'}</p>` : '<button class="btn primary" data-action="sc-reveal">Voir la réponse</button>'}</fieldset>${alternatives.length ? `<details class="sc-alternatives"><summary>Autres réponses conservées (${alternatives.length})</summary><p class="help-text">Ces saisies d’autres onglets ou reprises restent disponibles. Tu peux en copier le texte.</p>${alternatives.map(item => `<p>${text(item.response)}</p>`).join('')}</details>` : ''}${window.HEPQuickUI?.thumbs() || ''}<button class="btn secondary qcm-report-button" data-action="report-step">Signaler un problème avec cette question</button>${scReportPanel()}<div class="question-navigation">${progress.index > 0 ? '<button class="btn secondary" data-action="previous">← Question précédente</button>' : ''}${progress.index + 1 < total ? `<button class="btn primary" data-action="next" ${record.selfEvaluation ? '' : 'disabled'}>Question suivante →</button>` : ''}</div>${progress.index === total - 1 && total > 0 && stats.answered === total ? `<section class="qcm-summary"><h2>Parcours Sans les choix terminé</h2><p>Autoévaluations déclarées : ${stats.score} « Je savais » ; ${stats.answered - stats.score} « À revoir ». Elles restent distinctes des résultats QCM.</p>${window.HEPQuickUI?.group() || ''}</section>` : ''}<div class="actions"><button class="btn secondary" data-action="${activeMix ? 'mix-first' : 'course-first'}">Revoir ${activeMix ? 'le mélange' : 'le cours'} depuis le début</button></div></article></section>${supportDialogs(q, step, ref, source)}`;
+  }
+  function scReportPanel() {
+    return `<details class="feedback-panel" id="step-feedback" hidden><summary>Mon signalement sur cette question Sans les choix</summary>${HEPFeedback.fields(true)}<label class="field-label" for="step-feedback-category">Catégorie (facultative)</label><select class="select-input" id="step-feedback-category"><option value="">Sans catégorie</option><option>Question</option><option>Réponse attendue</option><option>Aides</option><option>Autre</option></select><label class="field-label" for="step-feedback-comment">Mon commentaire</label><textarea class="feedback-textarea" id="step-feedback-comment" rows="4" maxlength="8000"></textarea><p class="help-text">Le signalement conserve le mode, la question, ta réponse et uniquement les contenus déjà affichés à son ouverture.</p><div class="actions"><button class="btn primary" data-action="send-step" disabled>Envoyer à Maxim</button></div><p class="save-status" data-send-status role="status" aria-live="polite">Brouillon sur cet appareil.</p><p class="help-text">L’envoi à Maxim ne demande pas de compte Google.</p><details><summary>Sauvegarde personnelle avec Drive (facultative)</summary><button class="btn secondary" data-action="panel-drive">${HEPDrive.connected() ? 'Synchroniser Drive ici' : 'Connecter Drive ici'}</button><p class="save-status" data-save-status></p></details></details>`;
+  }
+  function bindSCResponse() {
+    const q = active, step = q.steps[scIndex], field = document.getElementById('sc-response'), message = document.getElementById('sc-response-status');
+    let expected = { ...displayedSC };
+    field.addEventListener('input', () => {
+      const response = field.value;
+      displayedSC = { ...displayedSC, response };
+      message.textContent = 'Enregistrement de la réponse…';
+      scPending = scPending.catch(() => {}).then(async () => {
+        try {
+          const result = await scStore.update(q, step, expected, { response });
+          if (result.ok) expected = result.current;
+          if (!field.isConnected) return;
+          if (result.ok) {
+            displayedSC = { ...result.current, response: field.value };
+            message.textContent = result.current.saved ? 'Réponse conservée sur cet appareil.' : repo.warning;
+          } else {
+            message.textContent = result.retained?.saved ? 'Une autre réponse a changé ailleurs. Ta saisie est conservée séparément ; recharge cette question pour choisir quoi reprendre.' : 'La réponse a changé ailleurs. Ta saisie reste visible ; conserve-la avant de recharger.';
+            document.getElementById('sc-refresh').hidden = false;
+          }
+        } catch (error) {
+          try { scStore.retain(q, step, expected, response); } catch (_) { /* The complete text stays in the field. */ }
+          if (field.isConnected) { message.textContent = error.message; document.getElementById('sc-refresh').hidden = false; }
+        }
+      });
+    });
   }
   function stepView(q, step, index, run) {
     const selected = step.choices.find(c => c.id === run.answers[step.id]), correct = step.choices.find(c => c.id === step.correctId), revealed = !!run.revealed[step.id];
@@ -361,7 +434,7 @@
     return `<h1>Mes retours sur les QCM</h1>${HEPFeedback.fields()}${HEPFeedback.archiveLink}<div class="actions"><button class="btn primary" data-action="copy" ${comments().length ? '' : 'disabled'}>Copier les retours</button><button class="btn secondary" data-action="export" ${comments().length ? '' : 'disabled'}>Télécharger les retours</button></div><div class="feedback-list">${comments().sort((a,b) => b.updatedAt.localeCompare(a.updatedAt)).map(item => `<article class="feedback-item"><span class="pill">${esc(item.category)}</span><h2>${esc(item.snapshot.question.split('\n')[0])}</h2><p class="exercise-text">${esc(item.comment)}</p><button class="btn ghost" data-exercise="${esc(item.questionId.split('::')[0])}">Revoir les QCM →</button></article>`).join('') || '<p class="empty-state">Tu peux laisser un retour dans chaque exercice.</p>'}</div><p class="help-text">Copie tes retours, puis envoie-les à Maxim par message. Aucun envoi automatique.</p>`;
   }
   function settings() {
-    return `<h1>Sauvegardes des QCM</h1>${HEPFeedback.archiveLink}<section class="settings-card"><h2>Sur cet appareil</h2><p>Choix, résultats et retours sont conservés ici. Cet essai possède sa propre sauvegarde.</p><div class="actions"><button class="btn primary" data-action="backup">Télécharger une sauvegarde</button><button class="btn secondary" data-action="import">Importer une sauvegarde QCM</button><input id="backup-file" type="file" accept=".json,application/json" hidden></div></section><section class="settings-card"><h2>Google Drive, facultatif</h2><p>Dossier « ${esc(window.CONFIG.DRIVE_FOLDER)} ». La connexion vaut pour cet onglet et doit être renouvelée après rechargement.</p><div class="actions">${HEPDrive.connected() ? '<button class="btn primary" data-action="sync">Synchroniser maintenant</button><button class="btn ghost" data-action="disconnect">Déconnecter</button>' : '<button class="btn primary" data-action="connect">Connecter Google Drive</button>'}</div><p data-save-status class="save-status"></p></section>`;
+    return `<h1>Sauvegardes de la collection</h1>${HEPFeedback.archiveLink}<section class="settings-card"><h2>Sur cet appareil</h2><p>Les choix et résultats QCM, les réponses et autoévaluations Sans les choix, leurs parcours et les retours sont conservés séparément dans la sauvegarde de cette collection.</p><div class="actions"><button class="btn primary" data-action="backup">Télécharger une sauvegarde</button><button class="btn secondary" data-action="import">Importer une sauvegarde QCM</button><input id="backup-file" type="file" accept=".json,application/json" hidden></div></section><section class="settings-card"><h2>Google Drive, facultatif</h2><p>Dossier « ${esc(window.CONFIG.DRIVE_FOLDER)} ». La connexion vaut pour cet onglet et doit être renouvelée après rechargement.</p><div class="actions">${HEPDrive.connected() ? '<button class="btn primary" data-action="sync">Synchroniser maintenant</button><button class="btn ghost" data-action="disconnect">Déconnecter</button>' : '<button class="btn primary" data-action="connect">Connecter Google Drive</button>'}</div><p data-save-status class="save-status"></p></section>`;
   }
   function render() {
     stepFeedback = null;
@@ -369,14 +442,16 @@
     document.querySelectorAll('details[data-qcm-theme][data-qcm-manual="true"]').forEach(node => {
       if (node.open) expandedThemes.add(node.dataset.qcmTheme); else expandedThemes.delete(node.dataset.qcmTheme);
     });
-    app.innerHTML = `<div class="page ${view === 'exercise' ? 'qcm-focus' : GROUPED_COURSES && view === 'home' ? 'qcm-oral-home' : ''}">${header()}<div id="qcm-main" tabindex="-1">${view === 'exercise' ? exercise() : view === 'feedback' ? feedback() : view === 'settings' ? settings() : view === 'avis' ? (window.HEPQuickUI?.archive() || '') : home()}</div><footer class="footer"><span class="save-status" data-save-status></span>${view === 'exercise' ? '<button class="btn ghost small" data-action="avis">Mes avis</button><button class="btn ghost small" data-action="feedback">Mes retours</button>' : ''}<a href="index.html">Matières</a>${writingHome ? '<a href="oral.html">Exercices rédigés du bloc oral</a>' : ''}</footer></div>`;
+    app.innerHTML = `<div class="page ${view === 'exercise' ? 'qcm-focus' : GROUPED_COURSES && view === 'home' ? 'qcm-oral-home' : ''}">${header()}<div id="qcm-main" tabindex="-1">${view === 'exercise' ? (withoutChoices ? scExercise() : exercise()) : view === 'feedback' ? feedback() : view === 'settings' ? settings() : view === 'avis' ? (window.HEPQuickUI?.archive() || '') : home()}</div><footer class="footer"><span class="save-status" data-save-status></span>${view === 'exercise' ? '<button class="btn ghost small" data-action="avis">Mes avis</button><button class="btn ghost small" data-action="feedback">Mes retours</button>' : ''}<a href="index.html">Matières</a>${writingHome ? '<a href="oral.html">Exercices rédigés du bloc oral</a>' : ''}</footer></div>`;
+    if (view === 'exercise' && withoutChoices) { displayedRun = visibleRun(active); displayedSC = scStore.read(active, active.steps[scIndex]); displayedSCNavigation = scNavigationVersion(); }
     status(); HEPFeedback.bind();
-    window.HEPQuickUI?.bind(view === 'exercise' ? { question: { questionId: stepQuestion(active, active.steps[readRun(active).index]).id, contentRevision: active.qcmRevision }, getSnapshot: () => quickSnapshot(active, active.steps[displayedRun.index], displayedRun) } : {});
+    window.HEPQuickUI?.bind(view === 'exercise' ? { question: { questionId: stepQuestion(active, active.steps[visibleRun(active).index]).id, contentRevision: active.qcmRevision }, mode: withoutChoices ? 'sans-choix' : 'qcm', getSnapshot: () => withoutChoices ? scSnapshot(active, active.steps[displayedRun.index], displayedRun) : quickSnapshot(active, active.steps[displayedRun.index], displayedRun) } : {});
     document.getElementById('qcm-home-filters')?.addEventListener('submit', event => {
       event.preventDefault(); search = document.getElementById('qcm-search').value.trim(); render();
       document.getElementById('qcm-home-results').focus({ preventScroll: true });
     });
-    if (view === 'exercise') {
+    if (view === 'exercise' && withoutChoices) bindSCResponse();
+    if (view === 'exercise' && !withoutChoices) {
       const q = active, run = readRun(q), snap = snapshot(q, run);
       displayedRun = run;
       const step = q.steps[run.index];
@@ -399,32 +474,47 @@
   }
   function route() {
     let hash; try { hash = decodeURIComponent(location.hash.slice(1)); } catch (_) { hash = ''; }
-    activeCourse = null; activeMix = null; active = null; emptyPathMessage = '';
+    withoutChoices = GROUPED_COURSES && (hash === 'sans-choix' || hash.startsWith('sans-choix/'));
+    if (withoutChoices) {
+      if (!scStore) throw Error('Le mode Sans les choix n’est pas disponible. Recharge la page en ligne.');
+      hash = hash.slice('sans-choix'.length).replace(/^\//, '');
+    }
+    if (levelsEnabled) restoreLevelChoice();
+    activeCourse = null; activeMix = null; active = null; scIndex = 0; emptyPathMessage = '';
     const course = GROUPED_COURSES && /^cours-([0-9]+(?:-[0-9]+)?)$/.exec(hash);
     if (GROUPED_COURSES && hash === 'tout-melanger') openMix();
     else if (course) openCourse(IS_ORAL ? String(Number(course[1])) : course[1]);
     else active = byId.get(hash) || null;
-    if (active && levelsEnabled && !activeCourse && !activeMix) {
-      const target = active, entries = exerciseEntries(target), run = readRun(target);
+    if (active && (levelsEnabled || withoutChoices) && !activeCourse && !activeMix) {
+      const target = active, entries = withoutChoices ? courseQueue(courseKey(target)).filter(item => item.q.id === target.id) : exerciseEntries(target), run = visibleRun(target);
       if (entries.length) { activeCourse = courseKey(target); selectCourseEntry(entries.find(item => item.index === run.index) || entries[0]); }
       else openCourse(courseKey(target));
     }
-    if (active) openRun(active);
+    if (active && !withoutChoices) openRun(active);
     view = active ? 'exercise' : ['feedback', 'settings', 'avis'].includes(hash) ? hash : 'home';
     render(); document.getElementById('qcm-main').focus({ preventScroll: true }); window.scrollTo(0, 0);
   }
-  function navigate(target) { if (location.hash.slice(1) === target) route(); else location.hash = target; }
+  function navigate(target) {
+    const destination = withoutChoices ? 'sans-choix' + (target ? '/' + target : '') : target;
+    if (location.hash.slice(1) === destination) route(); else location.hash = destination;
+  }
   function download(name, value, mime = 'application/json') {
     const url = URL.createObjectURL(new Blob([typeof value === 'string' ? value : JSON.stringify(value, null, 2)], { type: mime + ';charset=utf-8' }));
     const a = document.createElement('a'); a.href = url; a.download = name; a.click(); setTimeout(() => URL.revokeObjectURL(url), 30000);
   }
   app.addEventListener('click', async event => {
     const button = event.target.closest('button'); if (!button || button.disabled || !bank) return;
+    if (withoutChoices) { await scPending; if (!button.isConnected || button.disabled) return; }
+    if (button.dataset.action === 'mode-sc' || button.dataset.action === 'mode-qcm') {
+      const destination = button.dataset.action === 'mode-sc' ? 'sans-choix' : '';
+      if (location.hash.slice(1) === destination) route(); else location.hash = destination;
+      return;
+    }
     if (button.dataset.levelFilter && levelsEnabled) {
       const next = button.dataset.levelFilter;
       if (!['essentiel', 'tout'].includes(next) || next === levelFilter) return;
       // Read the other filter's independent cursor/mixture without changing an answer.
-      levelFilter = next; writeNavigation(selectedLevelKey, next); route(); return;
+      levelFilter = next; writeNavigation(selectedLevelKey(), next); route(); return;
     }
     if (GROUPED_COURSES && ['mix', 'new-mix'].includes(button.dataset.action)) {
       if (button.dataset.action === 'new-mix') openMix(true);
@@ -456,7 +546,42 @@
       finally { button.dataset.busy = 'false'; status(); }
       return;
     }
+    if (withoutChoices && active && ['sc-reveal', 'sc-known', 'sc-review', 'next', 'previous', 'sc-refresh'].includes(action)) {
+      if (action === 'sc-refresh') { route(); return; }
+      const q = active, step = q.steps[scIndex], expected = displayedSC;
+      const progress = coursePosition(q, displayedRun), target = progress.queue[progress.index + (action === 'previous' ? -1 : 1)];
+      if (['next', 'previous'].includes(action) && (!target || (action === 'next' && !expected.selfEvaluation))) return;
+      if (['sc-known', 'sc-review'].includes(action) && !expected.revealed) return;
+      const patch = action === 'sc-reveal' ? { revealed: true } : action === 'sc-known' ? { selfEvaluation: 'known' } : action === 'sc-review' ? { selfEvaluation: 'review' } : null;
+      try {
+        // Navigation also checks the displayed version, but creates no answer.
+        ingestLocal();
+        const expectedNavigation = displayedSCNavigation;
+        const result = patch ? await scStore.update(q, step, expected, patch) : await scStore.exclusive(() => {
+          ingestLocal();
+          if (!button.isConnected || !withoutChoices || active?.id !== q.id || active.steps[scIndex].id !== step.id) return { ok: false, departed: true };
+          if (scStore.read(q, step).token !== expected.token || scNavigationVersion() !== expectedNavigation) return { ok: false };
+          if (activeMix) selectMixedEntry(target); else selectCourseEntry(target);
+          return { ok: true };
+        });
+        if (result.departed || !button.isConnected) return;
+        if (!result.ok) {
+          if (activeMix) openMix(); else if (activeCourse) openCourse(activeCourse);
+          render(); toast('Le parcours ou la réponse a changé ailleurs. Il a été actualisé sans accepter cette action périmée.'); return;
+        }
+        render();
+        if (result.current?.saved === false) toast(repo.warning);
+        const focus = document.querySelector(action === 'sc-reveal' ? '.sc-expected' : '.qcm-step');
+        focus?.focus({ preventScroll: true }); focus?.scrollIntoView({ block: 'nearest' });
+      } catch (error) { toast(error.message); }
+      return;
+    }
     if (action === 'close-dialog') { button.closest('dialog')?.close(); return; }
+    if (withoutChoices && active && ['open-context', 'open-hints'].includes(action)) {
+      if (action === 'open-context' && !needsContext(active.steps[scIndex])) return;
+      document.getElementById(action === 'open-context' ? 'qcm-context-dialog' : 'qcm-hint-dialog').showModal();
+      markQuickSeen(displayedRun, action === 'open-context' ? 'context' : 'hints'); return;
+    }
     if (action === 'open-context' && active && needsContext(active.steps[displayedRun?.index])) { const q = active; return mutateRun(q, displayedRun, run => { run.contextUsed = true; return run; }, run => { displayedRun = run; document.getElementById('qcm-context-dialog').showModal(); markQuickSeen(run, 'context'); }); }
     if (action === 'open-hints' && active) {
       const q = active;
@@ -504,6 +629,14 @@
     if (['connect', 'sync'].includes(action)) { button.disabled = true; try { if (action === 'connect') await HEPDrive.connect(); else await HEPDrive.sync(); render(); } catch (error) { button.disabled = false; toast(error.message); } }
   });
   window.addEventListener('hashchange', () => { if (bank) route(); });
+  window.addEventListener('pagehide', () => {
+    if (!withoutChoices || !active || !displayedSC) return;
+    const field = document.getElementById('sc-response'), step = active.steps[scIndex];
+    // A queued lock request may not run before this page is destroyed.
+    if (field && field.value !== scStore.read(active, step).response) {
+      try { scStore.retain(active, step, displayedSC, field.value); } catch (_) { /* Quota warnings already request an export. */ }
+    }
+  });
   window.addEventListener('storage', event => { if (event.key === KEY && event.newValue) { try { repo.ingest(JSON.parse(event.newValue)); status(); refreshRunControls(); } catch (_) { toast('La sauvegarde d’un autre onglet est illisible.'); } } });
   (async () => {
     try {

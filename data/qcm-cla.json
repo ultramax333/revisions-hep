@@ -512,6 +512,7 @@
             }
           ],
           "level": "essentiel",
+          "sansChoix": true,
           "notionId": "N01"
         },
         {
@@ -542,6 +543,7 @@
             }
           ],
           "level": "essentiel",
+          "sansChoix": true,
           "notionId": "N02"
         }
       ],
@@ -599,6 +601,7 @@
             }
           ],
           "level": "essentiel",
+          "sansChoix": false,
           "notionId": "N03"
         },
         {
@@ -629,6 +632,7 @@
             }
           ],
           "level": "essentiel",
+          "sansChoix": true,
           "notionId": "N03"
         },
         {
@@ -659,6 +663,7 @@
             }
           ],
           "level": "essentiel",
+          "sansChoix": true,
           "notionId": "N03"
         }
       ],
@@ -716,6 +721,7 @@
             }
           ],
           "level": "essentiel",
+          "sansChoix": true,
           "notionId": "N04"
         },
         {
@@ -746,6 +752,7 @@
             }
           ],
           "level": "essentiel",
+          "sansChoix": true,
           "notionId": "N04"
         },
         {
@@ -776,6 +783,7 @@
             }
           ],
           "level": "essentiel",
+          "sansChoix": true,
           "notionId": "N04"
         },
         {
@@ -806,6 +814,7 @@
             }
           ],
           "level": "essentiel",
+          "sansChoix": true,
           "notionId": "N04"
         },
         {
@@ -836,6 +845,7 @@
             }
           ],
           "level": "essentiel",
+          "sansChoix": true,
           "notionId": "N04"
         },
         {
@@ -866,6 +876,7 @@
             }
           ],
           "level": "essentiel",
+          "sansChoix": true,
           "notionId": "N04"
         }
       ],
@@ -923,6 +934,7 @@
             }
           ],
           "level": "essentiel",
+          "sansChoix": false,
           "notionId": "N05"
         },
         {
@@ -953,6 +965,7 @@
             }
           ],
           "level": "essentiel",
+          "sansChoix": false,
           "notionId": "N05"
         },
         {
@@ -983,6 +996,7 @@
             }
           ],
           "level": "essentiel",
+          "sansChoix": false,
           "notionId": "N05"
         }
       ],
@@ -1040,6 +1054,7 @@
             }
           ],
           "level": "approfondissement",
+          "sansChoix": true,
           "notionId": "N06"
         },
         {
@@ -1070,6 +1085,7 @@
             }
           ],
           "level": "approfondissement",
+          "sansChoix": true,
           "notionId": "N06"
         },
         {
@@ -1100,6 +1116,7 @@
             }
           ],
           "level": "approfondissement",
+          "sansChoix": true,
           "notionId": "N06"
         },
         {
@@ -1130,6 +1147,7 @@
             }
           ],
           "level": "approfondissement",
+          "sansChoix": true,
           "notionId": "N06"
         }
       ],
@@ -1187,6 +1205,7 @@
             }
           ],
           "level": "essentiel",
+          "sansChoix": false,
           "notionId": "N07"
         },
         {
@@ -1217,6 +1236,7 @@
             }
           ],
           "level": "approfondissement",
+          "sansChoix": true,
           "notionId": "N08"
         }
       ],
@@ -1274,6 +1294,7 @@
             }
           ],
           "level": "essentiel",
+          "sansChoix": true,
           "notionId": "N09"
         },
         {
@@ -1304,6 +1325,7 @@
             }
           ],
           "level": "essentiel",
+          "sansChoix": true,
           "notionId": "N09"
         },
         {
@@ -1334,6 +1356,7 @@
             }
           ],
           "level": "essentiel",
+          "sansChoix": true,
           "notionId": "N09"
         },
         {
@@ -1364,6 +1387,7 @@
             }
           ],
           "level": "essentiel",
+          "sansChoix": true,
           "notionId": "N09"
         },
         {
@@ -1394,6 +1418,7 @@
             }
           ],
           "level": "essentiel",
+          "sansChoix": true,
           "notionId": "N09"
         },
         {
@@ -1424,6 +1449,7 @@
             }
           ],
           "level": "essentiel",
+          "sansChoix": true,
           "notionId": "N09"
         }
       ],
@@ -1481,6 +1507,7 @@
             }
           ],
           "level": "essentiel",
+          "sansChoix": true,
           "notionId": "N10"
         },
         {
@@ -1511,6 +1538,7 @@
             }
           ],
           "level": "approfondissement",
+          "sansChoix": true,
           "notionId": "N10"
         }
       ],
@@ -1568,6 +1596,7 @@
             }
           ],
           "level": "essentiel",
+          "sansChoix": true,
           "notionId": "N11"
         },
         {
@@ -1598,6 +1627,7 @@
             }
           ],
           "level": "essentiel",
+          "sansChoix": true,
           "notionId": "N11"
         },
         {
@@ -1628,6 +1658,7 @@
             }
           ],
           "level": "essentiel",
+          "sansChoix": true,
           "notionId": "N11"
         }
       ],
@@ -1685,6 +1716,7 @@
             }
           ],
           "level": "essentiel",
+          "sansChoix": true,
           "notionId": "N12"
         },
         {
@@ -1715,6 +1747,7 @@
             }
           ],
           "level": "essentiel",
+          "sansChoix": true,
           "notionId": "N12"
         },
         {
@@ -1745,6 +1778,7 @@
             }
           ],
           "level": "essentiel",
+          "sansChoix": true,
           "notionId": "N12"
         },
         {
@@ -1775,6 +1809,7 @@
             }
           ],
           "level": "essentiel",
+          "sansChoix": true,
           "notionId": "N12"
         }
       ],
@@ -1832,6 +1867,7 @@
             }
           ],
           "level": "essentiel",
+          "sansChoix": true,
           "notionId": "N13"
         }
       ],
@@ -1889,6 +1925,7 @@
             }
           ],
           "level": "essentiel",
+          "sansChoix": true,
           "notionId": "N15"
         }
       ],
@@ -1946,6 +1983,7 @@
             }
           ],
           "level": "essentiel",
+          "sansChoix": true,
           "notionId": "N16"
         },
         {
@@ -1976,6 +2014,7 @@
             }
           ],
           "level": "essentiel",
+          "sansChoix": true,
           "notionId": "N16"
         },
         {
@@ -2006,6 +2045,7 @@
             }
           ],
           "level": "essentiel",
+          "sansChoix": true,
           "notionId": "N16"
         },
         {
@@ -2036,6 +2076,7 @@
             }
           ],
           "level": "essentiel",
+          "sansChoix": true,
           "notionId": "N16"
         }
       ],
@@ -2093,6 +2134,7 @@
             }
           ],
           "level": "essentiel",
+          "sansChoix": true,
           "notionId": "N16"
         },
         {
@@ -2123,6 +2165,7 @@
             }
           ],
           "level": "essentiel",
+          "sansChoix": true,
           "notionId": "N16"
         },
         {
@@ -2153,6 +2196,7 @@
             }
           ],
           "level": "essentiel",
+          "sansChoix": true,
           "notionId": "N16"
         },
         {
@@ -2183,6 +2227,7 @@
             }
           ],
           "level": "essentiel",
+          "sansChoix": true,
           "notionId": "N16"
         },
         {
@@ -2213,6 +2258,7 @@
             }
           ],
           "level": "essentiel",
+          "sansChoix": true,
           "notionId": "N16"
         }
       ],
@@ -2270,6 +2316,7 @@
             }
           ],
           "level": "essentiel",
+          "sansChoix": true,
           "notionId": "N17"
         },
         {
@@ -2300,6 +2347,7 @@
             }
           ],
           "level": "essentiel",
+          "sansChoix": true,
           "notionId": "N17"
         }
       ],
@@ -2357,6 +2405,7 @@
             }
           ],
           "level": "essentiel",
+          "sansChoix": true,
           "notionId": "N18"
         },
         {
@@ -2387,6 +2436,7 @@
             }
           ],
           "level": "essentiel",
+          "sansChoix": true,
           "notionId": "N18"
         }
       ],
@@ -2444,6 +2494,7 @@
             }
           ],
           "level": "essentiel",
+          "sansChoix": true,
           "notionId": "N19"
         },
         {
@@ -2474,6 +2525,7 @@
             }
           ],
           "level": "essentiel",
+          "sansChoix": true,
           "notionId": "N19"
         },
         {
@@ -2504,6 +2556,7 @@
             }
           ],
           "level": "essentiel",
+          "sansChoix": true,
           "notionId": "N19"
         }
       ],
@@ -2561,6 +2614,7 @@
             }
           ],
           "level": "approfondissement",
+          "sansChoix": true,
           "notionId": "N20"
         }
       ],
@@ -2618,6 +2672,7 @@
             }
           ],
           "level": "essentiel",
+          "sansChoix": true,
           "notionId": "N61"
         },
         {
@@ -2648,6 +2703,7 @@
             }
           ],
           "level": "essentiel",
+          "sansChoix": true,
           "notionId": "N61"
         },
         {
@@ -2678,6 +2734,7 @@
             }
           ],
           "level": "approfondissement",
+          "sansChoix": true,
           "notionId": "N14"
         }
       ],
@@ -2735,6 +2792,7 @@
             }
           ],
           "level": "essentiel",
+          "sansChoix": true,
           "notionId": "N21"
         },
         {
@@ -2765,6 +2823,7 @@
             }
           ],
           "level": "essentiel",
+          "sansChoix": true,
           "notionId": "N21"
         }
       ],
@@ -2822,6 +2881,7 @@
             }
           ],
           "level": "essentiel",
+          "sansChoix": false,
           "notionId": "N22"
         },
         {
@@ -2852,6 +2912,7 @@
             }
           ],
           "level": "essentiel",
+          "sansChoix": true,
           "notionId": "N22"
         },
         {
@@ -2882,6 +2943,7 @@
             }
           ],
           "level": "essentiel",
+          "sansChoix": true,
           "notionId": "N22"
         },
         {
@@ -2912,6 +2974,7 @@
             }
           ],
           "level": "essentiel",
+          "sansChoix": true,
           "notionId": "N22"
         },
         {
@@ -2942,6 +3005,7 @@
             }
           ],
           "level": "essentiel",
+          "sansChoix": true,
           "notionId": "N24"
         }
       ],
@@ -2999,6 +3063,7 @@
             }
           ],
           "level": "essentiel",
+          "sansChoix": true,
           "notionId": "N23"
         },
         {
@@ -3029,6 +3094,7 @@
             }
           ],
           "level": "essentiel",
+          "sansChoix": true,
           "notionId": "N23"
         },
         {
@@ -3059,6 +3125,7 @@
             }
           ],
           "level": "essentiel",
+          "sansChoix": true,
           "notionId": "N23"
         },
         {
@@ -3089,6 +3156,7 @@
             }
           ],
           "level": "essentiel",
+          "sansChoix": true,
           "notionId": "N23"
         },
         {
@@ -3119,6 +3187,7 @@
             }
           ],
           "level": "essentiel",
+          "sansChoix": true,
           "notionId": "N23"
         },
         {
@@ -3149,6 +3218,7 @@
             }
           ],
           "level": "essentiel",
+          "sansChoix": true,
           "notionId": "N23"
         }
       ],
@@ -3206,6 +3276,7 @@
             }
           ],
           "level": "essentiel",
+          "sansChoix": true,
           "notionId": "N25"
         },
         {
@@ -3236,6 +3307,7 @@
             }
           ],
           "level": "essentiel",
+          "sansChoix": true,
           "notionId": "N25"
         }
       ],
@@ -3293,6 +3365,7 @@
             }
           ],
           "level": "approfondissement",
+          "sansChoix": false,
           "notionId": "N26"
         },
         {
@@ -3323,6 +3396,7 @@
             }
           ],
           "level": "approfondissement",
+          "sansChoix": false,
           "notionId": "N26"
         }
       ],
@@ -3380,6 +3454,7 @@
             }
           ],
           "level": "essentiel",
+          "sansChoix": true,
           "notionId": "N27"
         },
         {
@@ -3410,6 +3485,7 @@
             }
           ],
           "level": "essentiel",
+          "sansChoix": true,
           "notionId": "N28"
         },
         {
@@ -3440,6 +3516,7 @@
             }
           ],
           "level": "essentiel",
+          "sansChoix": true,
           "notionId": "N28"
         },
         {
@@ -3470,6 +3547,7 @@
             }
           ],
           "level": "essentiel",
+          "sansChoix": true,
           "notionId": "N28"
         },
         {
@@ -3500,6 +3578,7 @@
             }
           ],
           "level": "essentiel",
+          "sansChoix": true,
           "notionId": "N28"
         },
         {
@@ -3530,6 +3609,7 @@
             }
           ],
           "level": "essentiel",
+          "sansChoix": true,
           "notionId": "N60"
         }
       ],
@@ -3587,6 +3667,7 @@
             }
           ],
           "level": "essentiel",
+          "sansChoix": true,
           "notionId": "N29"
         },
         {
@@ -3617,6 +3698,7 @@
             }
           ],
           "level": "essentiel",
+          "sansChoix": true,
           "notionId": "N29"
         },
         {
@@ -3647,6 +3729,7 @@
             }
           ],
           "level": "essentiel",
+          "sansChoix": true,
           "notionId": "N29"
         }
       ],
@@ -3704,6 +3787,7 @@
             }
           ],
           "level": "essentiel",
+          "sansChoix": true,
           "notionId": "N30"
         },
         {
@@ -3734,6 +3818,7 @@
             }
           ],
           "level": "essentiel",
+          "sansChoix": true,
           "notionId": "N30"
         },
         {
@@ -3764,6 +3849,7 @@
             }
           ],
           "level": "essentiel",
+          "sansChoix": true,
           "notionId": "N30"
         },
         {
@@ -3794,6 +3880,7 @@
             }
           ],
           "level": "essentiel",
+          "sansChoix": true,
           "notionId": "N31"
         }
       ],
@@ -3851,6 +3938,7 @@
             }
           ],
           "level": "approfondissement",
+          "sansChoix": true,
           "notionId": "N32"
         },
         {
@@ -3881,6 +3969,7 @@
             }
           ],
           "level": "approfondissement",
+          "sansChoix": true,
           "notionId": "N32"
         },
         {
@@ -3911,6 +4000,7 @@
             }
           ],
           "level": "approfondissement",
+          "sansChoix": true,
           "notionId": "N32"
         }
       ],
@@ -3968,6 +4058,7 @@
             }
           ],
           "level": "essentiel",
+          "sansChoix": true,
           "notionId": "N33"
         },
         {
@@ -3998,6 +4089,7 @@
             }
           ],
           "level": "essentiel",
+          "sansChoix": true,
           "notionId": "N33"
         }
       ],
@@ -4055,6 +4147,7 @@
             }
           ],
           "level": "essentiel",
+          "sansChoix": false,
           "notionId": "N34"
         },
         {
@@ -4085,6 +4178,7 @@
             }
           ],
           "level": "essentiel",
+          "sansChoix": true,
           "notionId": "N34"
         },
         {
@@ -4115,6 +4209,7 @@
             }
           ],
           "level": "essentiel",
+          "sansChoix": true,
           "notionId": "N34"
         },
         {
@@ -4145,6 +4240,7 @@
             }
           ],
           "level": "essentiel",
+          "sansChoix": true,
           "notionId": "N34"
         },
         {
@@ -4175,6 +4271,7 @@
             }
           ],
           "level": "essentiel",
+          "sansChoix": true,
           "notionId": "N34"
         },
         {
@@ -4205,6 +4302,7 @@
             }
           ],
           "level": "essentiel",
+          "sansChoix": true,
           "notionId": "N34"
         }
       ],
@@ -4262,6 +4360,7 @@
             }
           ],
           "level": "approfondissement",
+          "sansChoix": true,
           "notionId": "N35"
         },
         {
@@ -4292,6 +4391,7 @@
             }
           ],
           "level": "approfondissement",
+          "sansChoix": true,
           "notionId": "N35"
         }
       ],
@@ -4349,6 +4449,7 @@
             }
           ],
           "level": "essentiel",
+          "sansChoix": true,
           "notionId": "N36"
         },
         {
@@ -4379,6 +4480,7 @@
             }
           ],
           "level": "essentiel",
+          "sansChoix": true,
           "notionId": "N36"
         }
       ],
@@ -4436,6 +4538,7 @@
             }
           ],
           "level": "approfondissement",
+          "sansChoix": false,
           "notionId": "N37"
         },
         {
@@ -4466,6 +4569,7 @@
             }
           ],
           "level": "approfondissement",
+          "sansChoix": true,
           "notionId": "N37"
         },
         {
@@ -4496,6 +4600,7 @@
             }
           ],
           "level": "approfondissement",
+          "sansChoix": true,
           "notionId": "N37"
         },
         {
@@ -4526,6 +4631,7 @@
             }
           ],
           "level": "approfondissement",
+          "sansChoix": true,
           "notionId": "N37"
         },
         {
@@ -4556,6 +4662,7 @@
             }
           ],
           "level": "approfondissement",
+          "sansChoix": true,
           "notionId": "N37"
         }
       ],
@@ -4613,6 +4720,7 @@
             }
           ],
           "level": "essentiel",
+          "sansChoix": true,
           "notionId": "N38"
         },
         {
@@ -4643,6 +4751,7 @@
             }
           ],
           "level": "essentiel",
+          "sansChoix": true,
           "notionId": "N38"
         },
         {
@@ -4673,6 +4782,7 @@
             }
           ],
           "level": "essentiel",
+          "sansChoix": true,
           "notionId": "N38"
         }
       ],
@@ -4730,6 +4840,7 @@
             }
           ],
           "level": "approfondissement",
+          "sansChoix": true,
           "notionId": "N39"
         },
         {
@@ -4760,6 +4871,7 @@
             }
           ],
           "level": "approfondissement",
+          "sansChoix": true,
           "notionId": "N39"
         },
         {
@@ -4790,6 +4902,7 @@
             }
           ],
           "level": "approfondissement",
+          "sansChoix": true,
           "notionId": "N39"
         }
       ],
@@ -4847,6 +4960,7 @@
             }
           ],
           "level": "essentiel",
+          "sansChoix": true,
           "notionId": "N40"
         },
         {
@@ -4877,6 +4991,7 @@
             }
           ],
           "level": "essentiel",
+          "sansChoix": true,
           "notionId": "N40"
         },
         {
@@ -4907,6 +5022,7 @@
             }
           ],
           "level": "approfondissement",
+          "sansChoix": true,
           "notionId": "N41"
         }
       ],
@@ -4964,6 +5080,7 @@
             }
           ],
           "level": "essentiel",
+          "sansChoix": true,
           "notionId": "N42"
         },
         {
@@ -4994,6 +5111,7 @@
             }
           ],
           "level": "essentiel",
+          "sansChoix": true,
           "notionId": "N42"
         },
         {
@@ -5024,6 +5142,7 @@
             }
           ],
           "level": "essentiel",
+          "sansChoix": true,
           "notionId": "N42"
         },
         {
@@ -5054,6 +5173,7 @@
             }
           ],
           "level": "essentiel",
+          "sansChoix": true,
           "notionId": "N42"
         },
         {
@@ -5084,6 +5204,7 @@
             }
           ],
           "level": "essentiel",
+          "sansChoix": true,
           "notionId": "N42"
         }
       ],
@@ -5141,6 +5262,7 @@
             }
           ],
           "level": "essentiel",
+          "sansChoix": true,
           "notionId": "N43"
         },
         {
@@ -5171,6 +5293,7 @@
             }
           ],
           "level": "essentiel",
+          "sansChoix": true,
           "notionId": "N43"
         }
       ],
@@ -5228,6 +5351,7 @@
             }
           ],
           "level": "approfondissement",
+          "sansChoix": true,
           "notionId": "N44"
         },
         {
@@ -5258,6 +5382,7 @@
             }
           ],
           "level": "approfondissement",
+          "sansChoix": true,
           "notionId": "N44"
         },
         {
@@ -5288,6 +5413,7 @@
             }
           ],
           "level": "approfondissement",
+          "sansChoix": true,
           "notionId": "N44"
         }
       ],
@@ -5345,6 +5471,7 @@
             }
           ],
           "level": "essentiel",
+          "sansChoix": true,
           "notionId": "N45"
         },
         {
@@ -5375,6 +5502,7 @@
             }
           ],
           "level": "essentiel",
+          "sansChoix": true,
           "notionId": "N45"
         },
         {
@@ -5405,6 +5533,7 @@
             }
           ],
           "level": "essentiel",
+          "sansChoix": true,
           "notionId": "N45"
         },
         {
@@ -5435,6 +5564,7 @@
             }
           ],
           "level": "essentiel",
+          "sansChoix": true,
           "notionId": "N46"
         }
       ],
@@ -5492,6 +5622,7 @@
             }
           ],
           "level": "essentiel",
+          "sansChoix": true,
           "notionId": "N47"
         },
         {
@@ -5522,6 +5653,7 @@
             }
           ],
           "level": "essentiel",
+          "sansChoix": true,
           "notionId": "N47"
         },
         {
@@ -5552,6 +5684,7 @@
             }
           ],
           "level": "essentiel",
+          "sansChoix": true,
           "notionId": "N48"
         },
         {
@@ -5582,6 +5715,7 @@
             }
           ],
           "level": "essentiel",
+          "sansChoix": true,
           "notionId": "N48"
         }
       ],
@@ -5639,6 +5773,7 @@
             }
           ],
           "level": "essentiel",
+          "sansChoix": true,
           "notionId": "N49"
         },
         {
@@ -5669,6 +5804,7 @@
             }
           ],
           "level": "essentiel",
+          "sansChoix": true,
           "notionId": "N49"
         }
       ],
@@ -5726,6 +5862,7 @@
             }
           ],
           "level": "approfondissement",
+          "sansChoix": true,
           "notionId": "N50"
         },
         {
@@ -5756,6 +5893,7 @@
             }
           ],
           "level": "approfondissement",
+          "sansChoix": true,
           "notionId": "N50"
         }
       ],
@@ -5813,6 +5951,7 @@
             }
           ],
           "level": "essentiel",
+          "sansChoix": true,
           "notionId": "N51"
         },
         {
@@ -5843,6 +5982,7 @@
             }
           ],
           "level": "essentiel",
+          "sansChoix": false,
           "notionId": "N51"
         }
       ],
@@ -5900,6 +6040,7 @@
             }
           ],
           "level": "essentiel",
+          "sansChoix": true,
           "notionId": "N52"
         },
         {
@@ -5930,6 +6071,7 @@
             }
           ],
           "level": "essentiel",
+          "sansChoix": true,
           "notionId": "N52"
         },
         {
@@ -5960,6 +6102,7 @@
             }
           ],
           "level": "essentiel",
+          "sansChoix": true,
           "notionId": "N52"
         },
         {
@@ -5990,6 +6133,7 @@
             }
           ],
           "level": "essentiel",
+          "sansChoix": true,
           "notionId": "N52"
         }
       ],
@@ -6047,6 +6191,7 @@
             }
           ],
           "level": "essentiel",
+          "sansChoix": false,
           "notionId": "N53"
         },
         {
@@ -6077,6 +6222,7 @@
             }
           ],
           "level": "essentiel",
+          "sansChoix": false,
           "notionId": "N53"
         },
         {
@@ -6107,6 +6253,7 @@
             }
           ],
           "level": "essentiel",
+          "sansChoix": false,
           "notionId": "N53"
         },
         {
@@ -6137,6 +6284,7 @@
             }
           ],
           "level": "essentiel",
+          "sansChoix": false,
           "notionId": "N53"
         }
       ],
@@ -6194,6 +6342,7 @@
             }
           ],
           "level": "essentiel",
+          "sansChoix": true,
           "notionId": "N54"
         },
         {
@@ -6224,6 +6373,7 @@
             }
           ],
           "level": "essentiel",
+          "sansChoix": true,
           "notionId": "N54"
         },
         {
@@ -6254,6 +6404,7 @@
             }
           ],
           "level": "essentiel",
+          "sansChoix": true,
           "notionId": "N54"
         }
       ],
@@ -6311,6 +6462,7 @@
             }
           ],
           "level": "essentiel",
+          "sansChoix": true,
           "notionId": "N55"
         },
         {
@@ -6341,6 +6493,7 @@
             }
           ],
           "level": "essentiel",
+          "sansChoix": true,
           "notionId": "N56"
         },
         {
@@ -6371,6 +6524,7 @@
             }
           ],
           "level": "essentiel",
+          "sansChoix": true,
           "notionId": "N56"
         },
         {
@@ -6401,6 +6555,7 @@
             }
           ],
           "level": "essentiel",
+          "sansChoix": true,
           "notionId": "N56"
         }
       ],
@@ -6458,6 +6613,7 @@
             }
           ],
           "level": "essentiel",
+          "sansChoix": true,
           "notionId": "N57"
         },
         {
@@ -6488,6 +6644,7 @@
             }
           ],
           "level": "essentiel",
+          "sansChoix": true,
           "notionId": "N57"
         },
         {
@@ -6518,6 +6675,7 @@
             }
           ],
           "level": "essentiel",
+          "sansChoix": false,
           "notionId": "N64"
         }
       ],
@@ -6575,6 +6733,7 @@
             }
           ],
           "level": "essentiel",
+          "sansChoix": true,
           "notionId": "N59"
         },
         {
@@ -6605,6 +6764,7 @@
             }
           ],
           "level": "essentiel",
+          "sansChoix": true,
           "notionId": "N59"
         }
       ],
@@ -6662,6 +6822,7 @@
             }
           ],
           "level": "essentiel",
+          "sansChoix": false,
           "notionId": "N63"
         }
       ],
@@ -6719,6 +6880,7 @@
             }
           ],
           "level": "essentiel",
+          "sansChoix": true,
           "notionId": "N62"
         },
         {
@@ -6749,6 +6911,7 @@
             }
           ],
           "level": "essentiel",
+          "sansChoix": true,
           "notionId": "N62"
         }
       ],
@@ -6810,6 +6973,7 @@
             }
           ],
           "level": "essentiel",
+          "sansChoix": true,
           "notionId": "N01"
         },
         {
@@ -6840,6 +7004,7 @@
             }
           ],
           "level": "approfondissement",
+          "sansChoix": true,
           "notionId": "N01b"
         }
       ],
@@ -6901,6 +7066,7 @@
             }
           ],
           "level": "essentiel",
+          "sansChoix": true,
           "notionId": "N02"
         },
         {
@@ -6931,6 +7097,7 @@
             }
           ],
           "level": "essentiel",
+          "sansChoix": false,
           "notionId": "N02"
         }
       ],
@@ -6992,6 +7159,7 @@
             }
           ],
           "level": "essentiel",
+          "sansChoix": true,
           "notionId": "N02"
         },
         {
@@ -7022,6 +7190,7 @@
             }
           ],
           "level": "essentiel",
+          "sansChoix": true,
           "notionId": "N02"
         },
         {
@@ -7052,6 +7221,7 @@
             }
           ],
           "level": "essentiel",
+          "sansChoix": true,
           "notionId": "N02"
         },
         {
@@ -7082,6 +7252,7 @@
             }
           ],
           "level": "essentiel",
+          "sansChoix": true,
           "notionId": "N02"
         },
         {
@@ -7112,6 +7283,7 @@
             }
           ],
           "level": "essentiel",
+          "sansChoix": true,
           "notionId": "N02"
         }
       ],
@@ -7173,6 +7345,7 @@
             }
           ],
           "level": "essentiel",
+          "sansChoix": true,
           "notionId": "N03"
         },
         {
@@ -7203,6 +7376,7 @@
             }
           ],
           "level": "essentiel",
+          "sansChoix": true,
           "notionId": "N03"
         }
       ],
@@ -7260,6 +7434,7 @@
             }
           ],
           "level": "essentiel",
+          "sansChoix": true,
           "notionId": "N04"
         },
         {
@@ -7290,6 +7465,7 @@
             }
           ],
           "level": "essentiel",
+          "sansChoix": true,
           "notionId": "N04"
         },
         {
@@ -7320,6 +7496,7 @@
             }
           ],
           "level": "essentiel",
+          "sansChoix": false,
           "notionId": "N04"
         },
         {
@@ -7350,6 +7527,7 @@
             }
           ],
           "level": "essentiel",
+          "sansChoix": false,
           "notionId": "N04"
         }
       ],
@@ -7407,6 +7585,7 @@
             }
           ],
           "level": "essentiel",
+          "sansChoix": true,
           "notionId": "N05"
         },
         {
@@ -7437,6 +7616,7 @@
             }
           ],
           "level": "essentiel",
+          "sansChoix": true,
           "notionId": "N05"
         },
         {
@@ -7467,6 +7647,7 @@
             }
           ],
           "level": "essentiel",
+          "sansChoix": true,
           "notionId": "N05"
         },
         {
@@ -7497,6 +7678,7 @@
             }
           ],
           "level": "essentiel",
+          "sansChoix": true,
           "notionId": "N05"
         },
         {
@@ -7527,6 +7709,7 @@
             }
           ],
           "level": "essentiel",
+          "sansChoix": true,
           "notionId": "N05"
         },
         {
@@ -7557,6 +7740,7 @@
             }
           ],
           "level": "essentiel",
+          "sansChoix": true,
           "notionId": "N05"
         }
       ],
@@ -7614,6 +7798,7 @@
             }
           ],
           "level": "essentiel",
+          "sansChoix": false,
           "notionId": "N06"
         },
         {
@@ -7644,6 +7829,7 @@
             }
           ],
           "level": "essentiel",
+          "sansChoix": true,
           "notionId": "N06"
         },
         {
@@ -7674,6 +7860,7 @@
             }
           ],
           "level": "essentiel",
+          "sansChoix": true,
           "notionId": "N06"
         },
         {
@@ -7704,6 +7891,7 @@
             }
           ],
           "level": "essentiel",
+          "sansChoix": true,
           "notionId": "N06"
         }
       ],
@@ -7761,6 +7949,7 @@
             }
           ],
           "level": "approfondissement",
+          "sansChoix": true,
           "notionId": "N07"
         },
         {
@@ -7791,6 +7980,7 @@
             }
           ],
           "level": "approfondissement",
+          "sansChoix": true,
           "notionId": "N07"
         },
         {
@@ -7821,6 +8011,7 @@
             }
           ],
           "level": "approfondissement",
+          "sansChoix": true,
           "notionId": "N07"
         },
         {
@@ -7851,6 +8042,7 @@
             }
           ],
           "level": "approfondissement",
+          "sansChoix": true,
           "notionId": "N07"
         }
       ],
@@ -7908,6 +8100,7 @@
             }
           ],
           "level": "approfondissement",
+          "sansChoix": true,
           "notionId": "N08"
         }
       ],
@@ -7965,6 +8158,7 @@
             }
           ],
           "level": "essentiel",
+          "sansChoix": true,
           "notionId": "N20"
         },
         {
@@ -7995,6 +8189,7 @@
             }
           ],
           "level": "essentiel",
+          "sansChoix": true,
           "notionId": "N33"
         }
       ],
@@ -8052,6 +8247,7 @@
             }
           ],
           "level": "essentiel",
+          "sansChoix": true,
           "notionId": "N21"
         },
         {
@@ -8082,6 +8278,7 @@
             }
           ],
           "level": "essentiel",
+          "sansChoix": true,
           "notionId": "N21"
         },
         {
@@ -8112,6 +8309,7 @@
             }
           ],
           "level": "essentiel",
+          "sansChoix": false,
           "notionId": "N21"
         }
       ],
@@ -8169,6 +8367,7 @@
             }
           ],
           "level": "essentiel",
+          "sansChoix": true,
           "notionId": "N22"
         },
         {
@@ -8199,6 +8398,7 @@
             }
           ],
           "level": "essentiel",
+          "sansChoix": true,
           "notionId": "N22"
         },
         {
@@ -8229,6 +8429,7 @@
             }
           ],
           "level": "essentiel",
+          "sansChoix": true,
           "notionId": "N22"
         }
       ],
@@ -8286,6 +8487,7 @@
             }
           ],
           "level": "essentiel",
+          "sansChoix": true,
           "notionId": "N23"
         },
         {
@@ -8316,6 +8518,7 @@
             }
           ],
           "level": "essentiel",
+          "sansChoix": true,
           "notionId": "N23"
         },
         {
@@ -8346,6 +8549,7 @@
             }
           ],
           "level": "essentiel",
+          "sansChoix": true,
           "notionId": "N23"
         }
       ],
@@ -8403,6 +8607,7 @@
             }
           ],
           "level": "essentiel",
+          "sansChoix": true,
           "notionId": "N24"
         },
         {
@@ -8433,6 +8638,7 @@
             }
           ],
           "level": "essentiel",
+          "sansChoix": true,
           "notionId": "N24"
         }
       ],
@@ -8490,6 +8696,7 @@
             }
           ],
           "level": "essentiel",
+          "sansChoix": true,
           "notionId": "N25"
         },
         {
@@ -8520,6 +8727,7 @@
             }
           ],
           "level": "essentiel",
+          "sansChoix": true,
           "notionId": "N25"
         },
         {
@@ -8550,6 +8758,7 @@
             }
           ],
           "level": "essentiel",
+          "sansChoix": false,
           "notionId": "N25"
         }
       ],
@@ -8607,6 +8816,7 @@
             }
           ],
           "level": "essentiel",
+          "sansChoix": true,
           "notionId": "N26"
         },
         {
@@ -8637,6 +8847,7 @@
             }
           ],
           "level": "essentiel",
+          "sansChoix": true,
           "notionId": "N26"
         },
         {
@@ -8667,6 +8878,7 @@
             }
           ],
           "level": "essentiel",
+          "sansChoix": false,
           "notionId": "N26"
         }
       ],
@@ -8724,6 +8936,7 @@
             }
           ],
           "level": "essentiel",
+          "sansChoix": true,
           "notionId": "N27"
         },
         {
@@ -8754,6 +8967,7 @@
             }
           ],
           "level": "essentiel",
+          "sansChoix": true,
           "notionId": "N27"
         }
       ],
@@ -8811,6 +9025,7 @@
             }
           ],
           "level": "approfondissement",
+          "sansChoix": false,
           "notionId": "N28"
         },
         {
@@ -8841,6 +9056,7 @@
             }
           ],
           "level": "approfondissement",
+          "sansChoix": false,
           "notionId": "N28"
         },
         {
@@ -8871,6 +9087,7 @@
             }
           ],
           "level": "approfondissement",
+          "sansChoix": true,
           "notionId": "N28"
         }
       ],
@@ -8928,6 +9145,7 @@
             }
           ],
           "level": "approfondissement",
+          "sansChoix": true,
           "notionId": "N29"
         },
         {
@@ -8958,6 +9176,7 @@
             }
           ],
           "level": "approfondissement",
+          "sansChoix": true,
           "notionId": "N29"
         },
         {
@@ -8988,6 +9207,7 @@
             }
           ],
           "level": "approfondissement",
+          "sansChoix": true,
           "notionId": "N29"
         },
         {
@@ -9018,6 +9238,7 @@
             }
           ],
           "level": "approfondissement",
+          "sansChoix": true,
           "notionId": "N29"
         }
       ],
@@ -9075,6 +9296,7 @@
             }
           ],
           "level": "approfondissement",
+          "sansChoix": true,
           "notionId": "N30"
         },
         {
@@ -9105,6 +9327,7 @@
             }
           ],
           "level": "approfondissement",
+          "sansChoix": true,
           "notionId": "N30"
         },
         {
@@ -9135,6 +9358,7 @@
             }
           ],
           "level": "approfondissement",
+          "sansChoix": true,
           "notionId": "N30"
         },
         {
@@ -9165,6 +9389,7 @@
             }
           ],
           "level": "approfondissement",
+          "sansChoix": true,
           "notionId": "N30"
         }
       ],
@@ -9222,6 +9447,7 @@
             }
           ],
           "level": "approfondissement",
+          "sansChoix": true,
           "notionId": "N31"
         }
       ],
@@ -9279,6 +9505,7 @@
             }
           ],
           "level": "essentiel",
+          "sansChoix": true,
           "notionId": "N40"
         },
         {
@@ -9309,6 +9536,7 @@
             }
           ],
           "level": "essentiel",
+          "sansChoix": true,
           "notionId": "N40"
         }
       ],
@@ -9366,6 +9594,7 @@
             }
           ],
           "level": "essentiel",
+          "sansChoix": true,
           "notionId": "N41"
         },
         {
@@ -9396,6 +9625,7 @@
             }
           ],
           "level": "essentiel",
+          "sansChoix": true,
           "notionId": "N42"
         },
         {
@@ -9426,6 +9656,7 @@
             }
           ],
           "level": "essentiel",
+          "sansChoix": true,
           "notionId": "N43"
         },
         {
@@ -9456,6 +9687,7 @@
             }
           ],
           "level": "essentiel",
+          "sansChoix": true,
           "notionId": "N41"
         },
         {
@@ -9486,6 +9718,7 @@
             }
           ],
           "level": "essentiel",
+          "sansChoix": true,
           "notionId": "N42"
         },
         {
@@ -9516,6 +9749,7 @@
             }
           ],
           "level": "essentiel",
+          "sansChoix": true,
           "notionId": "N41"
         }
       ],
@@ -9573,6 +9807,7 @@
             }
           ],
           "level": "essentiel",
+          "sansChoix": true,
           "notionId": "N46"
         },
         {
@@ -9603,6 +9838,7 @@
             }
           ],
           "level": "approfondissement",
+          "sansChoix": true,
           "notionId": "N45"
         }
       ],
@@ -9660,6 +9896,7 @@
             }
           ],
           "level": "essentiel",
+          "sansChoix": true,
           "notionId": "N44"
         },
         {
@@ -9690,6 +9927,7 @@
             }
           ],
           "level": "essentiel",
+          "sansChoix": true,
           "notionId": "N44"
         },
         {
@@ -9720,6 +9958,7 @@
             }
           ],
           "level": "essentiel",
+          "sansChoix": true,
           "notionId": "N44"
         },
         {
@@ -9750,6 +9989,7 @@
             }
           ],
           "level": "essentiel",
+          "sansChoix": true,
           "notionId": "N44"
         },
         {
@@ -9780,6 +10020,7 @@
             }
           ],
           "level": "essentiel",
+          "sansChoix": true,
           "notionId": "N44"
         },
         {
@@ -9810,6 +10051,7 @@
             }
           ],
           "level": "essentiel",
+          "sansChoix": true,
           "notionId": "N44"
         }
       ],
@@ -9867,6 +10109,7 @@
             }
           ],
           "level": "essentiel",
+          "sansChoix": true,
           "notionId": "N47"
         }
       ],
@@ -9924,6 +10167,7 @@
             }
           ],
           "level": "essentiel",
+          "sansChoix": true,
           "notionId": "N48"
         },
         {
@@ -9954,6 +10198,7 @@
             }
           ],
           "level": "essentiel",
+          "sansChoix": true,
           "notionId": "N49"
         }
       ],
@@ -10011,6 +10256,7 @@
             }
           ],
           "level": "essentiel",
+          "sansChoix": true,
           "notionId": "N50"
         },
         {
@@ -10041,6 +10287,7 @@
             }
           ],
           "level": "essentiel",
+          "sansChoix": true,
           "notionId": "N50"
         },
         {
@@ -10071,6 +10318,7 @@
             }
           ],
           "level": "essentiel",
+          "sansChoix": true,
           "notionId": "N50"
         },
         {
@@ -10101,6 +10349,7 @@
             }
           ],
           "level": "essentiel",
+          "sansChoix": true,
           "notionId": "N50"
         },
         {
@@ -10131,6 +10380,7 @@
             }
           ],
           "level": "essentiel",
+          "sansChoix": true,
           "notionId": "N50"
         },
         {
@@ -10161,6 +10411,7 @@
             }
           ],
           "level": "essentiel",
+          "sansChoix": true,
           "notionId": "N50"
         }
       ],
@@ -10218,6 +10469,7 @@
             }
           ],
           "level": "essentiel",
+          "sansChoix": true,
           "notionId": "N51"
         },
         {
@@ -10248,6 +10500,7 @@
             }
           ],
           "level": "essentiel",
+          "sansChoix": true,
           "notionId": "N51"
         },
         {
@@ -10278,6 +10531,7 @@
             }
           ],
           "level": "essentiel",
+          "sansChoix": true,
           "notionId": "N51"
         },
         {
@@ -10308,6 +10562,7 @@
             }
           ],
           "level": "essentiel",
+          "sansChoix": true,
           "notionId": "N51"
         },
         {
@@ -10338,6 +10593,7 @@
             }
           ],
           "level": "essentiel",
+          "sansChoix": true,
           "notionId": "N51"
         }
       ],
@@ -10395,6 +10651,7 @@
             }
           ],
           "level": "essentiel",
+          "sansChoix": true,
           "notionId": "N52"
         },
         {
@@ -10425,6 +10682,7 @@
             }
           ],
           "level": "essentiel",
+          "sansChoix": true,
           "notionId": "N52"
         },
         {
@@ -10455,6 +10713,7 @@
             }
           ],
           "level": "essentiel",
+          "sansChoix": true,
           "notionId": "N52"
         },
         {
@@ -10485,11 +10744,12 @@
             }
           ],
           "level": "essentiel",
+          "sansChoix": true,
           "notionId": "N52"
         }
       ],
       "qcmRevision": "2bba5b2c36c5df64"
     }
   ],
-  "bankRevision": "43f52b642df424b0"
+  "bankRevision": "4a0e3d74e2f4d6de"
 }
