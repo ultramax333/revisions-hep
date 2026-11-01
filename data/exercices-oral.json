@@ -771,7 +771,7 @@
       "context": "Pendant une activité sur les espaces de l’école, un élève explique le trajet jusqu’à la bibliothèque à des camarades qui doivent le retrouver sur un plan. Il connaît le trajet et peut le montrer, mais dit surtout : « après là, puis là ». Il parle aussi une autre langue en famille. L’enseignante souhaite qu’il puisse faire comprendre le trajet sans guider le doigt des camarades. L’enseignante prévoit ensuite d’apprécier la connaissance du trajet à partir d’une explication orale en français.",
       "prompt": "Montre comment la langue de scolarisation est ici outil et objet d’apprentissage. Propose deux interventions complémentaires, l’une pour soutenir l’explication du trajet, l’autre pour travailler un moyen linguistique précis. Justifie la prise en compte des ressources de l’élève. Explique comment cette évaluation pourrait rendre visibles ou masquer certaines connaissances du trajet.",
       "hints": [
-        "• Langue de scolarisation : Langue dans laquelle on enseigne et apprend ; elle est discipline, outil transversal et facteur de réussite par son rôle dans l’évaluation.\n• Oral comme outil pour apprendre : Usage de la parole et de l’écoute pour apprendre : reformuler, verbaliser, échanger pour coopérer.\n• Oral comme objet d’enseignement : Enseignement de la parole (langue parlée), qui développe les capacités à comprendre et à produire de l’oral.",
+        "• Langue de scolarisation : Langue dans laquelle on enseigne et apprend. Elle est à la fois objet d’apprentissage (la discipline français), outil d’apprentissage dans toutes les disciplines (français transversal) et condition de la réussite scolaire et sociale, par son poids dans l’évaluation.\n• Oral comme outil pour apprendre : Usage de la parole et de l’écoute pour apprendre : reformuler, verbaliser, échanger pour coopérer.\n• Oral comme objet d’enseignement : Enseignement de la parole (langue parlée), qui développe les capacités à comprendre et à produire de l’oral.",
         "Les fonctions peuvent s’articuler : communiquer un savoir disciplinaire, étudier les moyens de langue, puis faire apprécier un apprentissage par une réponse dans cette langue. Une difficulté de formulation peut peser sur ce que l’évaluation montre du contenu.\nLe PER invite à reconnaître les langues d’origine comme connaissances positives et à s’appuyer sur elles. Leur présence ne prouve pas la maîtrise de tout domaine dans chacune. Examine les connaissances, expériences et moyens d’expression disponibles ; relie l’aide à un obstacle observé."
       ],
       "criteria": [
@@ -1374,6 +1374,73 @@
       "referenceId": "C01",
       "variant": 2,
       "contentRevision": "2ba52ae56f5c"
+    },
+    {
+      "id": "FRA-ORAL-F08-V3",
+      "title": "Une reprise dans la suite du récit",
+      "kind": "Analyser une interaction",
+      "context": "Exemple d’interaction en classe de L2, dans un travail autour d’une histoire (Anne-Claire Blanc, 2026, Enseignement et apprentissage du langage au cycle 1, diapositive 62).\n1. Élève : et alors il dit je j’apporte au le mouton non non\n2. Enseignante : non\n3. Élève : à le bambi\n4. Enseignante : au chevreuil ouais\n5. Élève : le chevreuil\n6. Enseignante : mhm\n7. Élève : et alors l’apporte au chevreuil",
+      "prompt": "Analyse le tour 4 et la suite : compare les formulations des tours 1 et 3, puis classe la reprise du tour 4 selon de Weck et justifie son sous-type. Identifie les deux plans linguistiques travaillés avec leurs indices. Explique la fonction de cette reprise, distingue-la des réactions brèves non, ouais et mhm, puis relève le réemploi aux tours 5 et 7. Justifie en quoi l’intervention aide la poursuite du récit et précise ce que cette suite permet de conclure sur l’apprentissage.",
+      "hints": [
+        "• Reprise : Réaction de l’adulte qui reprend tout ou partie d’un énoncé de l’enfant, par répétition ou reformulation.\n• Répétition : Reprise totale ou partielle de l’énoncé de l’enfant, pour attester cet énoncé, c’est-à-dire le confirmer.\n• Reformulation : Reprise qui vise à enrichir le langage de l’enfant : correction implicite, avec ou sans extension (ajout d’informations), pour se mettre d’accord sur l’intelligibilité du message.\nUn changement de mot peut préciser la désignation sans ajouter un événement à l’histoire. Une marque d’accord ou de désaccord ne constitue pas, à elle seule, une reprise des mots de l’élève.",
+        "• Reformulation sans extension : Reprise qui modifie la forme sans ajouter d’information au message.\n• Reformulation avec extension : Reprise qui modifie l’énoncé et ajoute des informations pour enrichir le message.\n• Compétence lexico-sémantique : Capacité à choisir des mots pour désigner quelque chose et construire une signification.\n• Syntaxe : Ensemble des règles par lesquelles on combine les mots en phrases.\nCompare le nom employé et la construction grammaticale. Puis cherche qui reprend quels mots et à quel tour. Un réemploi juste après un modèle montre un effet dans l’échange ; pour apprécier une acquisition durable, il faut aussi observer d’autres utilisations indépendantes."
+      ],
+      "criteria": [
+        {
+          "id": "c1",
+          "text": "Je compare les tours 1 et 3 puis justifie la reformulation sans extension du tour 4."
+        },
+        {
+          "id": "c2",
+          "text": "Je relève bambi/chevreuil pour le plan lexico-sémantique et à le/au pour le plan syntaxique."
+        },
+        {
+          "id": "c3",
+          "text": "J’explique la correction implicite et la poursuite du récit, en distinguant les réactions brèves de la reprise."
+        },
+        {
+          "id": "c4",
+          "text": "Je cite les réemplois des tours 5 et 7 et limite ma conclusion à l’effet local observé."
+        }
+      ],
+      "answer": {
+        "summary": "Le tour 4 reformule la désignation et la construction sans ajouter d’événement ; les tours 5 et 7 montrent un réemploi local qui permet de poursuivre le récit.",
+        "steps": [
+          {
+            "title": "Comparer puis classer",
+            "text": "Au tour 1, l’élève hésite avec je j’apporte, au le mouton et non non. Au tour 3, il substitue bambi à mouton et produit à le. Le tour 4 reprend ce passage sous la forme au chevreuil. La désignation et la construction changent, mais l’enseignante n’ajoute ni action ni information nouvelle à l’histoire : c’est une reformulation sans extension, au sens de de Weck."
+          },
+          {
+            "title": "Relier les deux plans et la fonction",
+            "text": "Le passage de bambi à chevreuil travaille le plan lexico-sémantique : il précise le nom de l’animal. Le passage de à le à au travaille le plan syntaxique : la préposition à et l’article le sont contractés. La reformulation enrichit le langage par une correction implicite, tout en permettant de se mettre d’accord sur une formulation intelligible et de continuer le récit."
+          },
+          {
+            "title": "Distinguer les réactions brèves",
+            "text": "Non, au tour 2, marque un désaccord sans reprendre un mot de la proposition à ajuster. Ouais accompagne et atteste la formulation du tour 4 ; ce mot seul n’est pas une répétition totale ou partielle de l’énoncé de l’élève. Mhm, au tour 6, marque l’écoute et soutient ici la poursuite. Ces réactions brèves participent à l’échange ; on les distingue de la reprise linguistique au chevreuil."
+          },
+          {
+            "title": "Appuyer la conclusion sur la suite",
+            "text": "Au tour 5, l’élève réemploie le nom dans le chevreuil. Au tour 7, il réemploie au chevreuil dans la continuation du récit. La suite atteste donc une reprise locale du nom puis de la construction fournis par l’adulte. Elle ne suffit pas à établir un réemploi indépendant ou une acquisition durable. L’aide a cependant rendu possible la poursuite de ce récit sans fournir une nouvelle intrigue à la place de l’élève."
+          }
+        ],
+        "pitfalls": [
+          "Classer ouais ou mhm comme une répétition linguistique sans mots repris.",
+          "Confondre un mot plus précis avec un ajout d’événement, ou le réemploi immédiat avec une acquisition durable."
+        ]
+      },
+      "sources": [
+        {
+          "file": "2026-09-17_BP1-18FRA_Cours_1_support_etudiant.pdf",
+          "location": "Anne-Claire Blanc, 2026, Enseignement et apprentissage du langage au cycle 1 : d 62/PDF 22, sept tours de l’exemple 1 ; d 59–61/PDF 20–21, types de reprises et plans ; d 54/58/PDF 18/20, étayage et transfert progressif."
+        }
+      ],
+      "module": "BP1-18FRA",
+      "course": "C01",
+      "collection": "fra-oral",
+      "familyId": "ORAL-F08",
+      "referenceId": "C01",
+      "variant": 3,
+      "contentRevision": "6ba0b3584167"
     },
     {
       "id": "FRA-ORAL-F09-V1",
@@ -2562,8 +2629,8 @@
       "context": "A entend et utilise l’italien et le français en famille depuis sa naissance. B utilise le portugais à la maison et rencontre régulièrement le français en entrant à l’école à quatre ans ; il observe beaucoup et parle encore peu en français. C rencontre régulièrement le français pour la première fois à huit ans ; il a appris à lire et explique aisément des phénomènes en arabe, mais débute en français.",
       "prompt": "Caractérise les trois histoires à l’aide des catégories du cours, sans en déduire un niveau identique dans chaque langue. Analyse ce que les observations de B et C permettent ou non de conclure. Propose pour l’un d’eux une aide à l’apprentissage scolaire qui tienne compte de ses ressources.",
       "hints": [
-        "• Bilinguisme : Usage de deux langues avec des compétences qui peuvent différer selon les domaines, les situations et les périodes de la vie.\n• Bilinguisme précoce simultané : Développement très précoce de deux langues ; repère de 0 à 3 ans. L’exposition à chaque langue influence notamment le lexique.\n• Bilinguisme précoce consécutif : Acquisition d’une seconde langue entre 3 et 6 ans après une première langue, avec des étapes fréquentes allant de la langue première aux phrases dans la nouvelle langue.\n• Bilinguisme tardif : Acquisition d’une seconde langue après 6 ans, avec un bagage linguistique et cognitif déjà important et l’intervention de l’écrit.\nLes catégories décrivent le début et l’histoire de l’exposition, pas l’âge actuel ni un niveau identique dans les deux langues. C02 donne 0–3 ans pour le simultané ; Abdelilah-Bauer précise « dès la naissance » p.34. Les cas ne se situent pas à cette frontière.",
-        "• Langue de scolarisation : Langue dans laquelle on enseigne et apprend ; elle est discipline, outil transversal et facteur de réussite par son rôle dans l’évaluation.\nLes ressources varient selon les domaines et les occasions d’utiliser chaque langue. La phase muette souvent observée dans une acquisition consécutive peut précéder les essais de mots et de phrases ; il faut observer aussi la compréhension. Les compétences conversationnelles soutiennent les échanges quotidiens ; les usages académiques mobilisent la langue pour expliquer, comprendre des consignes ou construire des connaissances. Une réussite conversationnelle ne les établit pas toutes. Les langues d’origine sont des connaissances positives, sur lesquelles l’enseignement peut s’appuyer."
+        "• Bilinguisme : Usage de deux langues avec des compétences qui peuvent différer selon les domaines, les situations et les périodes de la vie.\n• Bilinguisme précoce simultané : Développement de deux langues dès la petite enfance (repère : 0 à 3 ans). L’enfant a une perception élargie des sons et une conscience métalinguistique dès 1 an : il perçoit qu’il existe plusieurs langues autour de lui. La quantité de lexique dans chaque langue est liée au temps d’exposition. Cette situation n’est pas en soi un risque pour la scolarité, surtout si l’une des langues est la langue de scolarisation.\n• Bilinguisme précoce consécutif : Acquisition d’une seconde langue entre 3 et 6 ans, après une première langue déjà acquise. L’enfant allophone passe souvent par quatre étapes : sa langue 1, une phase muette, un langage télégraphique, puis la production de phrases dans la langue de scolarisation.\n• Bilinguisme tardif : Acquisition d’une seconde langue après 6 ans. L’enfant dispose déjà d’un bagage linguistique et cognitif important et l’écrit entre en jeu. Il doit développer les compétences académiques dans la langue de scolarisation, et pas seulement les compétences conversationnelles, pour atteindre au plus vite le niveau d’un enfant natif et suivre le cursus scolaire normal.\nLes catégories décrivent le début et l’histoire de l’exposition, pas l’âge actuel ni un niveau identique dans les deux langues. C02 donne 0–3 ans pour le simultané ; Abdelilah-Bauer précise « dès la naissance » p. 34. Les cas ne se situent pas à cette frontière.",
+        "• Langue de scolarisation : Langue dans laquelle on enseigne et apprend. Elle est à la fois objet d’apprentissage (la discipline français), outil d’apprentissage dans toutes les disciplines (français transversal) et condition de la réussite scolaire et sociale, par son poids dans l’évaluation.\nLes ressources varient selon les domaines et les occasions d’utiliser chaque langue. La phase muette souvent observée dans une acquisition consécutive peut précéder les essais de mots et de phrases ; il faut observer aussi la compréhension. Les compétences conversationnelles soutiennent les échanges quotidiens ; les compétences académiques mobilisent la langue pour expliquer, comprendre des consignes ou construire des connaissances. La distinction entre compétences conversationnelles et compétences académiques est celle de Cummins (2001) : une réussite conversationnelle ne les établit pas toutes. Les langues d’origine sont des connaissances positives, sur lesquelles l’enseignement peut s’appuyer."
       ],
       "criteria": [
         {
@@ -2607,7 +2674,7 @@
       "sources": [
         {
           "file": "1-18FRA_A26_cours 2_étu.pdf",
-          "location": "Diapositives59–62, PDF p.22–24."
+          "location": "Diapositives 59–62, PDF p. 22–24 : trois situations de bilinguisme, caractéristiques, étapes fréquentes de Tabors et compétences académiques/conversationnelles de Cummins."
         },
         {
           "file": "02_Abdelilah-Bauer_2015_Developpement_langage_pp019-037.pdf",
@@ -2637,8 +2704,8 @@
       "context": "F rencontre régulièrement le français pour la première fois à neuf ans, après plusieurs années de scolarité en espagnol. D, âgé aussi de neuf ans, entend et utilise l’italien et le français depuis sa naissance : il emploie surtout l’italien dans les récits familiaux et le français dans les activités scolaires, parfois les deux dans la même journée. E a utilisé le turc avant de rencontrer régulièrement le français à son entrée à l’école à cinq ans. Après quelques mois, F joue et converse facilement en français, mais peine à expliquer oralement les étapes d’une expérience et à comprendre une consigne longue.",
       "prompt": "Situe les trois parcours dans les catégories du cours. Explique pourquoi la conversation de F ne suffit pas à conclure à une maîtrise de la langue de scolarisation. Propose un appui pour l’explication de l’expérience et un signe permettant d’en observer l’effet.",
       "hints": [
-        "• Bilinguisme : Usage de deux langues avec des compétences qui peuvent différer selon les domaines, les situations et les périodes de la vie.\n• Bilinguisme précoce simultané : Développement très précoce de deux langues ; repère de 0 à 3 ans. L’exposition à chaque langue influence notamment le lexique.\n• Bilinguisme précoce consécutif : Acquisition d’une seconde langue entre 3 et 6 ans après une première langue, avec des étapes fréquentes allant de la langue première aux phrases dans la nouvelle langue.\n• Bilinguisme tardif : Acquisition d’une seconde langue après 6 ans, avec un bagage linguistique et cognitif déjà important et l’intervention de l’écrit.\nLes catégories décrivent le début et l’histoire de l’exposition, pas l’âge actuel ni un niveau identique dans les deux langues. C02 donne 0–3 ans pour le simultané ; Abdelilah-Bauer précise « dès la naissance » p.34. Les cas ne se situent pas à cette frontière.",
-        "• Langue de scolarisation : Langue dans laquelle on enseigne et apprend ; elle est discipline, outil transversal et facteur de réussite par son rôle dans l’évaluation.\nLes ressources varient selon les domaines et les occasions d’utiliser chaque langue. La phase muette souvent observée dans une acquisition consécutive peut précéder les essais de mots et de phrases ; il faut observer aussi la compréhension. Les compétences conversationnelles soutiennent les échanges quotidiens ; les usages académiques mobilisent la langue pour expliquer, comprendre des consignes ou construire des connaissances. Une réussite conversationnelle ne les établit pas toutes. Les langues d’origine sont des connaissances positives, sur lesquelles l’enseignement peut s’appuyer."
+        "• Bilinguisme : Usage de deux langues avec des compétences qui peuvent différer selon les domaines, les situations et les périodes de la vie.\n• Bilinguisme précoce simultané : Développement de deux langues dès la petite enfance (repère : 0 à 3 ans). L’enfant a une perception élargie des sons et une conscience métalinguistique dès 1 an : il perçoit qu’il existe plusieurs langues autour de lui. La quantité de lexique dans chaque langue est liée au temps d’exposition. Cette situation n’est pas en soi un risque pour la scolarité, surtout si l’une des langues est la langue de scolarisation.\n• Bilinguisme précoce consécutif : Acquisition d’une seconde langue entre 3 et 6 ans, après une première langue déjà acquise. L’enfant allophone passe souvent par quatre étapes : sa langue 1, une phase muette, un langage télégraphique, puis la production de phrases dans la langue de scolarisation.\n• Bilinguisme tardif : Acquisition d’une seconde langue après 6 ans. L’enfant dispose déjà d’un bagage linguistique et cognitif important et l’écrit entre en jeu. Il doit développer les compétences académiques dans la langue de scolarisation, et pas seulement les compétences conversationnelles, pour atteindre au plus vite le niveau d’un enfant natif et suivre le cursus scolaire normal.\nLes catégories décrivent le début et l’histoire de l’exposition, pas l’âge actuel ni un niveau identique dans les deux langues. C02 donne 0–3 ans pour le simultané ; Abdelilah-Bauer précise « dès la naissance » p. 34. Les cas ne se situent pas à cette frontière.",
+        "• Langue de scolarisation : Langue dans laquelle on enseigne et apprend. Elle est à la fois objet d’apprentissage (la discipline français), outil d’apprentissage dans toutes les disciplines (français transversal) et condition de la réussite scolaire et sociale, par son poids dans l’évaluation.\nLes ressources varient selon les domaines et les occasions d’utiliser chaque langue. La phase muette souvent observée dans une acquisition consécutive peut précéder les essais de mots et de phrases ; il faut observer aussi la compréhension. Les compétences conversationnelles soutiennent les échanges quotidiens ; les compétences académiques mobilisent la langue pour expliquer, comprendre des consignes ou construire des connaissances. La distinction entre compétences conversationnelles et compétences académiques est celle de Cummins (2001) : une réussite conversationnelle ne les établit pas toutes. Les langues d’origine sont des connaissances positives, sur lesquelles l’enseignement peut s’appuyer."
       ],
       "criteria": [
         {
@@ -2682,7 +2749,7 @@
       "sources": [
         {
           "file": "1-18FRA_A26_cours 2_étu.pdf",
-          "location": "Diapositives59–62, PDF p.22–24."
+          "location": "Diapositives 59–62, PDF p. 22–24 : trois situations de bilinguisme, caractéristiques, étapes fréquentes de Tabors et compétences académiques/conversationnelles de Cummins."
         },
         {
           "file": "02_Abdelilah-Bauer_2015_Developpement_langage_pp019-037.pdf",
@@ -3272,7 +3339,7 @@
       "context": "Un enfant explique : « Les piles, elles sont tombés, alors le robot il marche plus. » Il montre les piles sorties du robot. L’adulte reprend seulement : « Il faut dire : les piles sont tombées, le robot ne fonctionne plus. Il ne faut pas ajouter elles ou il. » L’objectif annoncé était de soutenir une explication orale de la panne.",
       "prompt": "Analyse le choix de correction à partir de la dislocation et des caractéristiques de l’oral. Distingue ce qui peut être conservé de ce qui mérite un travail. Propose une reprise orale cohérente avec l’objectif et justifie-la.",
       "hints": [
-        "• Langue parlée : Usages de la parole qui varient en fonction de la situation de communication. Le texte y est produit de façon plus spontanée, dans un espace-temps partagé, et se planifie en même temps qu’il se dit : reprises, hésitations, ruptures, répétitions, énoncés coordonnés, mots supprimés par souci de rapidité.\n• Dislocation : Construction du français parlé qui répète le sujet : un groupe nominal est repris par un pronom (dislocation à gauche : le groupe précède le pronom) ou annoncé par lui (dislocation à droite : il le suit).\nLes notes originales S02 (repère d12) relèvent aussi la double thématisation par pronom tonique/pronom sujet, comme moi/je : complément explicite, pas exemple exact attribué à Surcouf.",
+        "• Langue parlée : Usages de la parole qui varient en fonction de la situation de communication. La communication orale est souvent immédiate, dans un espace-temps partagé. Le texte y est produit de façon plus spontanée, avec plus de liberté thématique, et se planifie en même temps qu’il se dit : reprises, hésitations, ruptures, répétitions, énoncés coordonnés, mots supprimés par souci de rapidité.\n• Dislocation : Construction du français parlé qui répète le sujet : un groupe nominal est repris par un pronom (dislocation à gauche : le groupe précède le pronom) ou annoncé par lui (dislocation à droite : il le suit).\nLes notes originales S02 (repère d12) relèvent aussi la double thématisation par pronom tonique/pronom sujet, comme moi/je : complément explicite, pas exemple exact attribué à Surcouf.",
         "Une reprise pronominale n’est pas toujours une dislocation : examine sa fonction dans la construction, notamment la reprise du sujet dans la même organisation de phrase. Un pronom peut aussi reprendre un référent dans une autre proposition. Surcouf et Gagnon font considérer les structures du français parlé plutôt que d’appliquer automatiquement celles de l’écrit normé.\nDislocation, hésitation ou absence de ne ne prouvent pas une incapacité. L’objectif et la situation orientent ce qui mérite un travail. Certaines différences orthographiques ne s’entendent pas : une transcription ordinaire ne prouve pas une erreur orale de ce type. Aucun chiffre divergent de C03 et de la lecture ne sert de norme."
       ],
       "criteria": [
@@ -3326,6 +3393,10 @@
         {
           "file": "2026-09-24_BP1-18FRA-2_NOTES_SEMINAIRE_02.docx",
           "location": "Notes originales S02, repère d12 : double thématisation moi/je, complément distinct de la définition commune de dislocation."
+        },
+        {
+          "file": "Diaporama du cours 3_Oral_RGagnon.pdf",
+          "location": "Diapositives 38 et 41–43, PDF p. 18–20 : caractéristiques de la langue parlée, dont liberté thématique."
         }
       ],
       "module": "BP1-18FRA",
@@ -3343,7 +3414,7 @@
       "context": "Lors d’un conseil, une élève dit : « Moi, je… je pense qu’on devrait garder les vélos parce que y en a qui aiment pas courir. » Son camarade résume : « Elle sait pas parler correctement : elle répète et elle oublie ne. » La proposition et sa raison ont pourtant été comprises par plusieurs élèves, qui les discutent.",
       "prompt": "Analyse ce jugement en distinguant caractéristiques de la langue parlée et capacités mobilisées. Propose une intervention de l’enseignant qui préserve l’échange et un objectif oral pertinent pour la suite, avec un signe de progrès.",
       "hints": [
-        "• Langue parlée : Usages de la parole qui varient en fonction de la situation de communication. Le texte y est produit de façon plus spontanée, dans un espace-temps partagé, et se planifie en même temps qu’il se dit : reprises, hésitations, ruptures, répétitions, énoncés coordonnés, mots supprimés par souci de rapidité.\n• Dislocation : Construction du français parlé qui répète le sujet : un groupe nominal est repris par un pronom (dislocation à gauche : le groupe précède le pronom) ou annoncé par lui (dislocation à droite : il le suit).\nLes notes originales S02 (repère d12) relèvent aussi la double thématisation par pronom tonique/pronom sujet, comme moi/je : complément explicite, pas exemple exact attribué à Surcouf.",
+        "• Langue parlée : Usages de la parole qui varient en fonction de la situation de communication. La communication orale est souvent immédiate, dans un espace-temps partagé. Le texte y est produit de façon plus spontanée, avec plus de liberté thématique, et se planifie en même temps qu’il se dit : reprises, hésitations, ruptures, répétitions, énoncés coordonnés, mots supprimés par souci de rapidité.\n• Dislocation : Construction du français parlé qui répète le sujet : un groupe nominal est repris par un pronom (dislocation à gauche : le groupe précède le pronom) ou annoncé par lui (dislocation à droite : il le suit).\nLes notes originales S02 (repère d12) relèvent aussi la double thématisation par pronom tonique/pronom sujet, comme moi/je : complément explicite, pas exemple exact attribué à Surcouf.",
         "Une reprise pronominale n’est pas toujours une dislocation : examine sa fonction dans la construction, notamment la reprise du sujet dans la même organisation de phrase. Un pronom peut aussi reprendre un référent dans une autre proposition. Surcouf et Gagnon font considérer les structures du français parlé plutôt que d’appliquer automatiquement celles de l’écrit normé.\nDislocation, hésitation ou absence de ne ne prouvent pas une incapacité. L’objectif et la situation orientent ce qui mérite un travail. Certaines différences orthographiques ne s’entendent pas : une transcription ordinaire ne prouve pas une erreur orale de ce type. Aucun chiffre divergent de C03 et de la lecture ne sert de norme."
       ],
       "criteria": [
@@ -3397,6 +3468,10 @@
         {
           "file": "2026-09-24_BP1-18FRA-2_NOTES_SEMINAIRE_02.docx",
           "location": "Notes originales S02, repère d12 : double thématisation moi/je, complément distinct de la définition commune de dislocation."
+        },
+        {
+          "file": "Diaporama du cours 3_Oral_RGagnon.pdf",
+          "location": "Diapositives 38 et 41–43, PDF p. 18–20 : caractéristiques de la langue parlée, dont liberté thématique."
         }
       ],
       "module": "BP1-18FRA",
@@ -3944,15 +4019,15 @@
       "title": "Choisir une priorité dans un récit de fiction",
       "kind": "Analyser une situation",
       "context": "Consigne : inventer pour deux camarades une histoire avec un personnage, un problème et une issue, à partir de cartes. Production : « La fille trouve une clé. Il veut entrer. Après le loup. Et après elle ouvre. » Les cartes montrent une fille, un loup, une porte et une clé. Les auditeurs demandent qui veut entrer et quel était le problème. Aucun renseignement sur la voix ou les gestes n’est fourni.",
-      "prompt": "Analyse les acquis et les difficultés sur plusieurs dimensions du récit, en tenant compte de la consigne et des supports. Choisis une priorité de régulation, justifie-la et propose une aide puis un indicateur de progrès. Précise les limites de la transcription. Précise aussi comment les temps verbaux et les reprises de personnages contribuent au récit.",
+      "prompt": "Analyse les acquis et les difficultés selon les six composantes d’un genre de texte oral (situation de communication, contenus thématiques, structuration, unités linguistiques, oralité, supports), en tenant compte de la consigne et des supports. Choisis une priorité de régulation, justifie-la et propose une aide puis un indicateur de progrès. Précise les limites de la transcription. Précise aussi comment les temps verbaux et les reprises de personnages contribuent au récit.",
       "hints": [
-        "• Récit oral : Mise en parole d’actions et d’évènements reliés, avec des personnages, une organisation, une clôture et une unité d’ensemble. Il peut raconter une fiction ou relater des faits présentés comme réels.\n• Genre de texte : Outil pour aider l’élève à raconter ou relater, qui permet de se représenter le texte à produire ; dimensions enseignables : situation de communication, structure, contenus, langue, oralité, supports matériels.\n• Textualisation : Unités linguistiques du genre (la langue) : temps du verbe, usage des pronoms (reprises) et d’organisateurs textuels, logiques et spatio-temporels.",
-        "• Cohérence : Organisation logique des évènements et des informations qui rend l’histoire compréhensible.\n• Cohésion : Ensemble des moyens linguistiques qui relient les éléments du récit, notamment les connecteurs et les pronoms de reprise.\n• Schéma narratif : Outil d’analyse en cinq moments : situation initiale, complication, actions, résolution, situation finale. Il repère la transformation entre l’avant et l’après.\nRelève les acquis autant que les difficultés et relie la priorité à la consigne et aux auditeurs. Le schéma est un outil d’analyse, pas une obligation de produire cinq phrases. Analyse voix et corps seulement si des observations sont fournies ; une transcription ordinaire ne les restitue pas automatiquement."
+        "• Récit oral : Mise en parole d’une histoire qui a quatre caractéristiques : des personnages ; des actions et des évènements liés par un rapport logique ; une clôture et une complétude ; une mise en forme langagière et linguistique. Il peut raconter une fiction ou relater des faits présentés comme réels.\n• Genre de texte : Forme de texte reconnue socialement et culturellement, caractérisée par des contenus, une structure et des configurations d’unités langagières.\n• Composantes d’un genre de texte oral : Les six aspects selon lesquels on décrit un genre de texte oral : la situation de communication, les contenus thématiques, la structuration, les unités linguistiques, l’oralité et les supports. Cette grille vaut pour les genres oraux ; le conte inventé à l’oral en est un exemple.\n• Textualisation : Unités linguistiques du genre (la langue) : temps du verbe, usage des pronoms (reprises) et d’organisateurs textuels, logiques et spatio-temporels.",
+        "• Cohérence : Organisation logique des évènements et des informations qui rend l’histoire compréhensible.\n• Cohésion : Ensemble des moyens linguistiques qui relient les éléments du récit, notamment les connecteurs et les pronoms de reprise.\n• Schéma narratif : Outil d’analyse en cinq moments : situation initiale, complication, actions, résolution, situation finale. Il repère la transformation entre l’avant et l’après.\nDans le schéma de Larivaille d’après Propp, l’avant est un état initial (équilibre), le pendant une transformation agie ou subie (provocation ou déclencheur, action, sanction ou conséquence), et l’après un état final (équilibre). Il fait comprendre le passage d’un équilibre initial à un nouvel équilibre final. La ligne présentée dans le support comme « Dans le PER » nomme ces cinq moments : situation initiale, complication, actions, résolution, situation finale.\nPour analyser les six composantes, demande-toi : qui parle à qui et dans quel but (situation de communication) ; de quoi parle-t-on (contenus thématiques) ; comment le texte est-il organisé (structuration) ; quels mots, temps, pronoms et organisateurs sont employés (unités linguistiques) ; que sait-on de la voix et du corps (oralité) ; sur quels objets ou documents s’appuie-t-on (supports) ?\nRelève les acquis autant que les difficultés et relie la priorité à la consigne et aux auditeurs. Le schéma est un outil d’analyse, pas une obligation de produire cinq phrases. Analyse voix et corps seulement si des observations sont fournies ; une transcription ordinaire ne les restitue pas automatiquement."
       ],
       "criteria": [
         {
           "id": "c1",
-          "text": "J’analyse plusieurs dimensions en relevant aussi les acquis. Je prends en compte les temps verbaux et les reprises."
+          "text": "J’examine les six composantes avec les faits disponibles, en distinguant acquis, difficultés et éléments non documentés. Je prends en compte les temps verbaux et les reprises de personnages."
         },
         {
           "id": "c2",
@@ -3972,7 +4047,7 @@
         "steps": [
           {
             "title": "Analyser les dimensions",
-            "text": "Le contenu reprend plusieurs cartes et des actions. La structure ne rend pas explicite le problème ni le rapport entre le loup et l’ouverture. Dans la textualisation, il n’identifie pas clairement le personnage qui veut entrer : aucun personnage masculin n’est introduit dans la phrase précédente. Elle peut en revanche reprendre la fille, seul personnage féminin fourni. Les demandes des auditeurs confirment une difficulté d’accès au sens. Les verbes trouve, veut et ouvre restent au présent, qui peut porter ce récit de fiction. Le problème n’est pas ce choix à lui seul, mais les relations et référents rendus insuffisamment explicites."
+            "text": "La situation de communication est de raconter une fiction à deux camarades. Les cartes sont les supports ; les personnages et actions qu’elles rendent disponibles alimentent les contenus thématiques. La structuration ne rend pas explicite le problème ni le rapport entre le loup et l’ouverture. Dans les unités linguistiques (textualisation), il n’identifie pas clairement le personnage qui veut entrer : aucun personnage masculin n’est introduit dans la phrase précédente. Elle peut en revanche reprendre la fille, seul personnage féminin fourni. Les demandes des auditeurs confirment une difficulté d’accès au sens. Les verbes trouve, veut et ouvre restent au présent, qui peut porter ce récit de fiction. Le problème n’est pas ce choix à lui seul, mais les relations et référents rendus insuffisamment explicites. L’oralité ne peut pas être analysée ici : aucune observation de la voix ou du corps n’est fournie."
           },
           {
             "title": "Choisir la priorité",
@@ -4008,6 +4083,10 @@
         {
           "file": "1-18FRA_A26_cours 2_étu.pdf",
           "location": "d53/PDF20 : cohérence et cohésion, définitions communes déjà vérifiées."
+        },
+        {
+          "file": "2026-10-08_BP1-18FRA-1_SUPPORT_COURS_04_ORAL.pdf",
+          "location": "Diapositives 31 et 35–36, PDF p. 31 et 35–36 : six composantes des genres oraux, quatre caractéristiques du récit, schéma de Larivaille et ligne intitulée « Dans le PER »."
         }
       ],
       "module": "BP1-18FRA",
@@ -4016,22 +4095,22 @@
       "familyId": "ORAL-F27",
       "referenceId": "S04",
       "variant": 1,
-      "contentRevision": "030e10356801"
+      "contentRevision": "e0d7866726b9"
     },
     {
       "id": "FRA-ORAL-F27-V2",
       "title": "Relater un incident à quelqu’un qui n’y était pas",
       "kind": "Analyser une situation",
       "context": "Consigne : raconter à une autre classe un incident réel de la sortie. Un élève dit : « On était au musée. Le sac de Noé est resté dans le bus. La maîtresse a appelé le chauffeur. Il l’a rapporté à midi. » Une observation fournie indique que le récit est audible, avec des pauses entre les événements. Les auditeurs comprennent l’incident mais demandent qui a rapporté quoi. L’élève regardait surtout son enseignante.",
-      "prompt": "Analyse situation, contenu, organisation, moyens langagiers et éléments vocaux/corporels observés. Choisis une priorité, propose une régulation et un indicateur. Justifie pourquoi tu ne corriges pas toutes les dimensions de façon identique. Précise aussi comment les temps verbaux et les reprises de personnages contribuent au récit.",
+      "prompt": "Analyse les six composantes d’un genre de texte oral : situation de communication, contenus thématiques, structuration, unités linguistiques, oralité et supports. Appuie-toi sur les faits fournis et indique ce qui n’est pas documenté. Choisis une priorité, propose une régulation et un indicateur. Justifie pourquoi tu ne corriges pas toutes les dimensions de façon identique. Précise aussi comment les temps verbaux et les reprises de personnages contribuent au récit.",
       "hints": [
-        "• Récit oral : Mise en parole d’actions et d’évènements reliés, avec des personnages, une organisation, une clôture et une unité d’ensemble. Il peut raconter une fiction ou relater des faits présentés comme réels.\n• Genre de texte : Outil pour aider l’élève à raconter ou relater, qui permet de se représenter le texte à produire ; dimensions enseignables : situation de communication, structure, contenus, langue, oralité, supports matériels.\n• Textualisation : Unités linguistiques du genre (la langue) : temps du verbe, usage des pronoms (reprises) et d’organisateurs textuels, logiques et spatio-temporels.",
-        "• Cohérence : Organisation logique des évènements et des informations qui rend l’histoire compréhensible.\n• Cohésion : Ensemble des moyens linguistiques qui relient les éléments du récit, notamment les connecteurs et les pronoms de reprise.\n• Schéma narratif : Outil d’analyse en cinq moments : situation initiale, complication, actions, résolution, situation finale. Il repère la transformation entre l’avant et l’après.\nRelève les acquis autant que les difficultés et relie la priorité à la consigne et aux auditeurs. Le schéma est un outil d’analyse, pas une obligation de produire cinq phrases. Analyse voix et corps seulement si des observations sont fournies ; une transcription ordinaire ne les restitue pas automatiquement."
+        "• Récit oral : Mise en parole d’une histoire qui a quatre caractéristiques : des personnages ; des actions et des évènements liés par un rapport logique ; une clôture et une complétude ; une mise en forme langagière et linguistique. Il peut raconter une fiction ou relater des faits présentés comme réels.\n• Genre de texte : Forme de texte reconnue socialement et culturellement, caractérisée par des contenus, une structure et des configurations d’unités langagières.\n• Composantes d’un genre de texte oral : Les six aspects selon lesquels on décrit un genre de texte oral : la situation de communication, les contenus thématiques, la structuration, les unités linguistiques, l’oralité et les supports. Cette grille vaut pour les genres oraux ; le conte inventé à l’oral en est un exemple.\n• Textualisation : Unités linguistiques du genre (la langue) : temps du verbe, usage des pronoms (reprises) et d’organisateurs textuels, logiques et spatio-temporels.",
+        "• Cohérence : Organisation logique des évènements et des informations qui rend l’histoire compréhensible.\n• Cohésion : Ensemble des moyens linguistiques qui relient les éléments du récit, notamment les connecteurs et les pronoms de reprise.\n• Schéma narratif : Outil d’analyse en cinq moments : situation initiale, complication, actions, résolution, situation finale. Il repère la transformation entre l’avant et l’après.\nDans le schéma de Larivaille d’après Propp, l’avant est un état initial (équilibre), le pendant une transformation agie ou subie (provocation ou déclencheur, action, sanction ou conséquence), et l’après un état final (équilibre). Il fait comprendre le passage d’un équilibre initial à un nouvel équilibre final. La ligne présentée dans le support comme « Dans le PER » nomme ces cinq moments : situation initiale, complication, actions, résolution, situation finale.\nPour analyser les six composantes, demande-toi : qui parle à qui et dans quel but (situation de communication) ; de quoi parle-t-on (contenus thématiques) ; comment le texte est-il organisé (structuration) ; quels mots, temps, pronoms et organisateurs sont employés (unités linguistiques) ; que sait-on de la voix et du corps (oralité) ; sur quels objets ou documents s’appuie-t-on (supports) ?\nRelève les acquis autant que les difficultés et relie la priorité à la consigne et aux auditeurs. Le schéma est un outil d’analyse, pas une obligation de produire cinq phrases. Analyse voix et corps seulement si des observations sont fournies ; une transcription ordinaire ne les restitue pas automatiquement."
       ],
       "criteria": [
         {
           "id": "c1",
-          "text": "J’analyse les dimensions avec les faits disponibles. Je prends en compte les temps verbaux et les reprises."
+          "text": "J’examine les six composantes avec les faits disponibles, en distinguant acquis, difficultés et éléments non documentés. Je prends en compte les temps verbaux et les reprises de personnages."
         },
         {
           "id": "c2",
@@ -4051,7 +4130,7 @@
         "steps": [
           {
             "title": "Reconnaître les acquis",
-            "text": "Lieu, incident, démarche et issue sont présents dans un ordre intelligible. Les pauses et l’audibilité soutiennent l’accès au récit. Le regard surtout adressé à l’enseignante donne une piste sur l’orientation vers le public, sans prouver une absence d’attention aux autres. Était installe le cadre ; les passés composés est resté, a appelé et a rapporté présentent les événements successifs de l’incident relaté. Ce repérage n’oblige pas à traiter le récit comme un conte de fiction."
+            "text": "La situation de communication consiste à relater un incident réel à une autre classe, qui n’y a pas assisté. Les contenus thématiques donnent le lieu, le sac oublié, l’appel et le retour du sac. Leur structuration rend intelligibles l’incident, la démarche et l’issue. Sur le plan des unités linguistiques, était installe le cadre ; les passés composés est resté, a appelé et a rapporté présentent les événements successifs. Les pauses et l’audibilité observées relèvent de l’oralité et soutiennent la compréhension. Le regard surtout adressé à l’enseignante donne une piste sur l’orientation vers le public, sans prouver une absence d’attention aux autres. Aucun support matériel de la prise de parole n’est décrit. Ce repérage n’oblige pas à traiter le récit comme un conte de fiction."
           },
           {
             "title": "Examiner la priorité",
@@ -4083,6 +4162,10 @@
         {
           "file": "1-18FRA_A26_cours 2_étu.pdf",
           "location": "d53/PDF20 : cohérence et cohésion, définitions communes déjà vérifiées."
+        },
+        {
+          "file": "2026-10-08_BP1-18FRA-1_SUPPORT_COURS_04_ORAL.pdf",
+          "location": "Diapositives 31 et 35–36, PDF p. 31 et 35–36 : six composantes des genres oraux, quatre caractéristiques du récit, schéma de Larivaille et ligne intitulée « Dans le PER »."
         }
       ],
       "module": "BP1-18FRA",
@@ -4091,7 +4174,7 @@
       "familyId": "ORAL-F27",
       "referenceId": "S04",
       "variant": 2,
-      "contentRevision": "aab1556916eb"
+      "contentRevision": "b3bbe62979e9"
     },
     {
       "id": "FRA-ORAL-F28-V1",
@@ -4532,6 +4615,77 @@
       "contentRevision": "a1e34c9b1ce8"
     },
     {
+      "id": "FRA-ORAL-F30-V3",
+      "title": "Choisir des rôles pour une capacité",
+      "kind": "Construire et justifier une intervention",
+      "context": "Dans un atelier de philosophie, l’enseignante veut travailler la précision des idées et le maintien du thème. Voici les liens représentés entre rôles et capacités dans le support de Roxane Gagnon (2026), cours 3, diapositives 53–58. Chaque ligne donne les capacités reliées au rôle par une flèche :\nAnimer : problématiser ; recentrer ; conceptualiser.\nPrésider la séance : problématiser ; recentrer.\nReformuler : conceptualiser.\nSynthétiser : problématiser ; interpréter ; conceptualiser.\nRendre compte : interpréter ; conceptualiser.\nDiscuter : recentrer.\nObserver : interpréter ; conceptualiser.\nUn lien absent de cette liste n’interdit pas de travailler la capacité depuis ce rôle. Argumenter n’a pas de schéma de liens dans ce document.",
+      "prompt": "À partir du document, choisis deux rôles pour conceptualiser et deux pour recentrer. Pour chacun, justifie le choix par un lien représenté et par la responsabilité exercée. Propose ensuite une intervention pour faire préciser le sens d’un mot ou d’une idée, puis une pour examiner la raison d’un avis ; nomme la capacité travaillée et indique ce que tu observerais chez les élèves. Relie pensée, formulation et objectif d’oral pour expliquer pourquoi distribuer les rôles ne suffit pas.",
+      "hints": [
+        "• Rôle langagier : Responsabilité définie dans les échanges : animer, présider, reformuler, synthétiser, rendre compte, discuter ou observer.\n• Capacité langagière argumentative : Moyen de construire et discuter une pensée à l’oral : problématiser, recentrer, interpréter, conceptualiser et argumenter.\nLe rôle dit qui assume une responsabilité dans l’échange ; la capacité dit quel travail de pensée et de langage est exercé. Les flèches du document mettent ces deux plans en relation ; elles ne constituent pas une liste de possibilités exclusives.",
+        "• Conceptualiser : Définir un concept et ses attributs, pour préciser ce dont on parle.\n• Recentrer : Revenir au thème, à ce que les autres ont dit ou à sa propre idée, pour maintenir le cap.\n• Argumenter : Justifier, donner des exemples, démontrer ou expliquer comment on sait qu’une affirmation est vraie.\nAnimer soutient le contenu de la discussion ; présider organise les tours et les règles ; reformuler restitue le sens d’un propos ; synthétiser reprend les idées et leurs liens ; rendre compte restitue la discussion ; discuter apporte des idées à examiner ; observer relève et analyse des faits. Justifie chaque choix en montrant comment la responsabilité peut faire travailler la capacité. Une relance doit être suivie d’une réponse ou d’une reprise permettant d’en observer l’effet."
+      ],
+      "criteria": [
+        {
+          "id": "c1",
+          "text": "Je choisis deux rôles reliés à conceptualiser et justifie chacun par sa responsabilité."
+        },
+        {
+          "id": "c2",
+          "text": "Je choisis deux rôles reliés à recentrer et justifie chacun par sa responsabilité."
+        },
+        {
+          "id": "c3",
+          "text": "Je propose une intervention de conceptualisation et une d’argumentation, avec un indice observable de leur effet."
+        },
+        {
+          "id": "c4",
+          "text": "J’explique le lien entre pensée, formulation et objectif d’oral, au-delà de la seule répartition des rôles."
+        }
+      ],
+      "answer": {
+        "summary": "Les rôles offrent plusieurs appuis pour une même capacité ; ce sont les interventions et les réponses des élèves qui montrent le travail de pensée et de formulation réalisé.",
+        "steps": [
+          {
+            "title": "Choisir pour conceptualiser",
+            "text": "On peut choisir animer et reformuler : ces deux liens figurent dans le document. L’animation peut demander une définition ou une distinction ; la reformulation peut faire redire précisément le sens d’une idée et permettre à son auteur de l’ajuster. Synthétiser, rendre compte et observer sont aussi des choix admis si la justification relie leur responsabilité à la précision d’un concept. Une case vide dans le tableau d’origine n’interdit pas une capacité."
+          },
+          {
+            "title": "Choisir pour recentrer",
+            "text": "Animer et présider sont deux choix possibles et représentés. L’animation rappelle la question ou demande le rapport entre une intervention et le thème. La présidence peut rappeler le sujet et les règles du tour de parole pour maintenir la discussion dans son cadre. Discuter est également relié à recentrer : un élève peut ramener son propos au thème ou à une idée déjà exprimée. Le choix reste à justifier par ce que la personne ferait."
+          },
+          {
+            "title": "Proposer et observer deux interventions",
+            "text": "« Quand tu dis juste, qu’est-ce que tu veux dire ? Peux-tu le distinguer d’égal ? » est une proposition pour conceptualiser : on examine ensuite si l’élève explicite le sens du mot et la distinction. « Quelle raison te fait penser cela ? Est-ce que cet exemple soutient ta raison ? » travaille l’argumentation : on observe la raison produite et son lien avec l’avis, puis son examen par les camarades. Ces interventions sont proposées pour l’entraînement ; plusieurs formulations conviennent si elles font travailler la même capacité."
+          },
+          {
+            "title": "Relier pensée, langue et objectif",
+            "text": "Distribuer des rôles organise la participation. Pour apprendre à l’oral, les élèves doivent aussi chercher des idées, les préciser dans des formulations compréhensibles, écouter et reprendre celles des autres selon l’objectif. Un élève peut porter un rôle sans définir une notion ni examiner une raison. L’enseignante choisit donc une intervention en fonction de la capacité visée et vérifie dans la suite de l’échange ce que les élèves en font."
+          }
+        ],
+        "pitfalls": [
+          "Traiter les liens représentés comme des possibilités exclusives ou inventer un schéma pour argumenter.",
+          "Confondre une responsabilité distribuée avec la capacité effectivement travaillée."
+        ]
+      },
+      "sources": [
+        {
+          "file": "Diaporama du cours 3_Oral_RGagnon.pdf",
+          "location": "Roxane Gagnon, 2026 : d 51–58/PDF 24–28, rapport réflexif à la langue, cinq capacités, sept rôles et quatre schémas de liens ; d 66–67/PDF 32, intervention et objectif d’enseignement de l’oral."
+        },
+        {
+          "file": "05_Tozzi_2021_Discussion_visee_philosophique_pp101-109.pdf",
+          "location": "P. 104 et 107 imprimées, PDF p. 4 et 7 : responsabilités dans la DVDP, interventions de l’animation, rapport entre pensée et formulation, conceptualisation et argumentation. Les liens entre sept rôles et quatre capacités viennent du support C03, pas de cette lecture."
+        }
+      ],
+      "module": "BP1-18FRA",
+      "course": "C03",
+      "collection": "fra-oral",
+      "familyId": "ORAL-F30",
+      "referenceId": "C03",
+      "variant": 3,
+      "contentRevision": "40f73e054bdc"
+    },
+    {
       "id": "FRA-ORAL-F31-V1",
       "title": "Parce que je préfère n’explique pas tout",
       "kind": "Analyser une situation",
@@ -4814,10 +4968,10 @@
       "title": "Deux échanges autour d’une consultation",
       "kind": "Comparer et justifier",
       "context": "Dans un jeu ajouté, un élève-médecin dit à la marionnette-patient : « Je vais regarder ta gorge parce que tu dis que tu as mal. Ouvre la bouche, s’il te plaît. » Puis, hors du rôle, il dit à son camarade : « Attends, passe ça. Là. » Les objets désignés sont présents. L’enseignante veut analyser l’effet du jeu sur les usages langagiers.",
-      "prompt": "Compare les deux situations d’énonciation et les moyens langagiers observés. Explique en quoi le jeu relève de la parodie au sens du cours, sans généraliser à tous les jeux. Propose une aide pour faire poursuivre l’échange dans le rôle et un signe d’apprentissage. Distingue le rôle énonciatif joué d’une responsabilité langagière dans l’organisation d’un échange.",
+      "prompt": "Compare les deux situations d’énonciation et les moyens langagiers observés. Explique en quoi le jeu relève de la parodie au sens du cours. Propose une aide pour faire poursuivre l’échange dans le rôle et un signe d’apprentissage. Distingue le rôle énonciatif joué d’une responsabilité langagière dans l’organisation d’un échange.",
       "hints": [
         "• Parodie : Situation jouée dans laquelle on parle à la manière d’une personne ou comme on le ferait dans une situation donnée.\n• Rôle énonciatif : Place que prend celui qui parle : l’élève s’exprime comme un personnage dans la situation jouée.\n• Rôle langagier : Responsabilité définie dans les échanges : animer, présider, reformuler, synthétiser, rendre compte, discuter ou observer.\n• Théâtralisation : Mise en jeu d’un texte ou d’une situation par des personnages, des voix, des gestes et des actions.\nLe jeu de rôles n’exige pas un effet comique. Le personnage joué donne une position d’énonciation ; présider, reformuler ou synthétiser sont d’autres responsabilités. Un album doit avoir été lu et compris avant le travail théâtral présenté par le cours.",
-        "• Script langagier : Trame d’une scène à jouer qui fournit une structure et des contenus adaptés aux objectifs et au niveau des élèves.\n• Syntaxe : Ensemble des règles par lesquelles on combine les mots en phrases.\n• Étayage : Aide de l’adulte qui, par ses interventions verbales et non verbales, assume dans l’interaction la part encore difficile pour l’enfant et met en évidence les caractéristiques cognitives, langagières et interactionnelles de la tâche, avant de lui en laisser progressivement la responsabilité.\nParce que peut exprimer un motif ; si peut présenter une condition. Compare les relations réellement formulées dans et hors rôle, sans assimiler brièveté et incapacité ni attribuer au jeu un effet universel. Les voix et gestes ne s’analysent que s’ils sont décrits. Une aide prépare une nouvelle formulation, pas seulement la récitation des répliques."
+        "• Script langagier : Trame d’une scène à jouer qui fournit une structure et des contenus adaptés aux objectifs et au niveau des élèves.\n• Syntaxe : Ensemble des règles par lesquelles on combine les mots en phrases.\n• Étayage : Aide de l’adulte qui, par ses interventions verbales et non verbales, assume dans l’interaction la part encore difficile pour l’enfant et met en évidence les caractéristiques cognitives, langagières et interactionnelles de la tâche, avant de lui en laisser progressivement la responsabilité.\nParce que peut exprimer un motif ; si peut présenter une condition. Compare les relations réellement formulées dans et hors rôle, sans assimiler brièveté et incapacité. Les voix et gestes ne s’analysent que s’ils sont décrits. Une aide prépare une nouvelle formulation, pas seulement la récitation des répliques."
       ],
       "criteria": [
         {
@@ -4830,7 +4984,7 @@
         },
         {
           "id": "c3",
-          "text": "Je limite la conclusion aux observations du cas."
+          "text": "Je relie les compétences révélées par le jeu de rôles aux formulations observées dans les deux situations."
         },
         {
           "id": "c4",
@@ -4846,7 +5000,7 @@
           },
           {
             "title": "Interpréter la parodie",
-            "text": "L’élève joue une pratique langagière de consultation : il assume une position et des formulations liées au médecin. Cette parodie crée ici des occasions d’expliciter davantage les relations, sans prouver que tout jeu de rôles produit nécessairement cet effet. La place du personnage joué est un rôle énonciatif. Elle ne suffit pas à attribuer une responsabilité de présidence ou de reformulation du groupe : ces rôles langagiers supposent une fonction organisée dans les échanges."
+            "text": "L’élève joue une pratique langagière de consultation : il assume une position et des formulations liées au médecin. Le jeu de rôles révèle des compétences plus diversifiées et plus normatives que les prises de parole habituelles de l’élève. Ici, le rôle de médecin s’accompagne d’une relation causale et de désignations explicites, alors que les paroles hors rôle s’appuient davantage sur le contexte partagé. La place du personnage joué est un rôle énonciatif. Elle ne suffit pas à attribuer une responsabilité de présidence ou de reformulation du groupe : ces rôles langagiers supposent une fonction organisée dans les échanges."
           },
           {
             "title": "Aider et observer",
@@ -4878,7 +5032,7 @@
       "familyId": "ORAL-F33",
       "referenceId": "C04",
       "variant": 1,
-      "contentRevision": "eec0cf7d474c"
+      "contentRevision": "35c09aa75f52"
     },
     {
       "id": "FRA-ORAL-F33-V2",
@@ -4888,7 +5042,7 @@
       "prompt": "Analyse les différences d’énonciation et de syntaxe dans et hors rôle. Justifie le lien entre théâtralisation et parodie d’une situation langagière. Propose un étayage qui laisse construire une réponse au gardien et un critère de réussite. Distingue le rôle énonciatif joué d’une responsabilité langagière dans l’organisation d’un échange.",
       "hints": [
         "• Parodie : Situation jouée dans laquelle on parle à la manière d’une personne ou comme on le ferait dans une situation donnée.\n• Rôle énonciatif : Place que prend celui qui parle : l’élève s’exprime comme un personnage dans la situation jouée.\n• Rôle langagier : Responsabilité définie dans les échanges : animer, présider, reformuler, synthétiser, rendre compte, discuter ou observer.\n• Théâtralisation : Mise en jeu d’un texte ou d’une situation par des personnages, des voix, des gestes et des actions.\nLe jeu de rôles n’exige pas un effet comique. Le personnage joué donne une position d’énonciation ; présider, reformuler ou synthétiser sont d’autres responsabilités. Un album doit avoir été lu et compris avant le travail théâtral présenté par le cours.",
-        "• Script langagier : Trame d’une scène à jouer qui fournit une structure et des contenus adaptés aux objectifs et au niveau des élèves.\n• Syntaxe : Ensemble des règles par lesquelles on combine les mots en phrases.\n• Étayage : Aide de l’adulte qui, par ses interventions verbales et non verbales, assume dans l’interaction la part encore difficile pour l’enfant et met en évidence les caractéristiques cognitives, langagières et interactionnelles de la tâche, avant de lui en laisser progressivement la responsabilité.\nParce que peut exprimer un motif ; si peut présenter une condition. Compare les relations réellement formulées dans et hors rôle, sans assimiler brièveté et incapacité ni attribuer au jeu un effet universel. Les voix et gestes ne s’analysent que s’ils sont décrits. Une aide prépare une nouvelle formulation, pas seulement la récitation des répliques."
+        "• Script langagier : Trame d’une scène à jouer qui fournit une structure et des contenus adaptés aux objectifs et au niveau des élèves.\n• Syntaxe : Ensemble des règles par lesquelles on combine les mots en phrases.\n• Étayage : Aide de l’adulte qui, par ses interventions verbales et non verbales, assume dans l’interaction la part encore difficile pour l’enfant et met en évidence les caractéristiques cognitives, langagières et interactionnelles de la tâche, avant de lui en laisser progressivement la responsabilité.\nParce que peut exprimer un motif ; si peut présenter une condition. Compare les relations réellement formulées dans et hors rôle, sans assimiler brièveté et incapacité. Les voix et gestes ne s’analysent que s’ils sont décrits. Une aide prépare une nouvelle formulation, pas seulement la récitation des répliques."
       ],
       "criteria": [
         {
@@ -4925,7 +5079,7 @@
           }
         ],
         "pitfalls": [
-          "Inventer une supériorité générale du langage joué sur tout échange spontané.",
+          "Assimiler la brièveté des paroles hors rôle à une absence de capacités langagières.",
           "Fournir les deux côtés du dialogue puis attribuer l’invention aux élèves."
         ]
       },
@@ -4949,7 +5103,7 @@
       "familyId": "ORAL-F33",
       "referenceId": "C04",
       "variant": 2,
-      "contentRevision": "7d51580b7f1f"
+      "contentRevision": "396d7d6fe2e6"
     },
     {
       "id": "FRA-ORAL-F34-V1",
@@ -4958,7 +5112,7 @@
       "context": "Un groupe dispose de cartes représentant une fillette, un dragon, une forêt et une lanterne. Sa première production est : « Il y a une fille, un dragon, une forêt et une lanterne. » La consigne était d’inventer ensemble une histoire puis de la raconter à un autre groupe. Les élèves n’ont encore précisé ni but ni difficulté.",
       "prompt": "Analyse ce que les cartes apportent et ce qui reste à construire. Propose une utilisation du schéma actantiel et du schéma narratif comme aides souples, une relance de l’adulte et un critère de réussite du récit pour les auditeurs. Compare ce que le choix libre des cartes et l’attribution préalable de fonctions actantielles aident à construire dans le récit.",
       "hints": [
-        "• Cartes à raconter : Jeu de cartes illustrées à interprétation ouverte (personnages, objets, lieux), créé à partir du schéma actantiel : aide matérielle qui structure le récit que l’élève invente et stimule son imaginaire.\n• Schéma narratif : Outil d’analyse en cinq moments : situation initiale, complication, actions, résolution, situation finale. Il repère la transformation entre l’avant et l’après.\nLe schéma actantiel relie les fonctions dans une quête : un sujet cherche un objet, concret ou symbolique ; un destinateur motive cette quête et un destinataire en bénéficie ; des adjuvants aident le sujet et des opposants l’entravent. Un actant peut être une personne, un animal, un objet ou une force de la nature.",
+        "• Cartes à raconter : Jeu de cartes illustrées à interprétation ouverte (personnages, objets, lieux), créé à partir du schéma actantiel : aide matérielle qui structure le récit que l’élève invente et stimule son imaginaire.\n• Schéma narratif : Outil d’analyse en cinq moments : situation initiale, complication, actions, résolution, situation finale. Il repère la transformation entre l’avant et l’après.\nDans le schéma de Larivaille d’après Propp, l’avant est un état initial (équilibre), le pendant une transformation agie ou subie (provocation ou déclencheur, action, sanction ou conséquence), et l’après un état final (équilibre). Il fait comprendre le passage d’un équilibre initial à un nouvel équilibre final. La ligne présentée dans le support comme « Dans le PER » nomme ces cinq moments : situation initiale, complication, actions, résolution, situation finale.\nLe schéma actantiel relie les fonctions dans une quête : un sujet cherche un objet, concret ou symbolique ; un destinateur motive cette quête et un destinataire en bénéficie ; des adjuvants aident le sujet et des opposants l’entravent. Un actant peut être une personne, un animal, un objet ou une force de la nature.",
         "• Cohérence : Organisation logique des évènements et des informations qui rend l’histoire compréhensible.\n• Étayage : Aide de l’adulte qui, par ses interventions verbales et non verbales, assume dans l’interaction la part encore difficile pour l’enfant et met en évidence les caractéristiques cognitives, langagières et interactionnelles de la tâche, avant de lui en laisser progressivement la responsabilité.\nDans l’organisation narrative, la complication rompt la situation initiale ; les actions ou tentatives répondent à la difficulté ; la résolution en donne l’issue. Pour aider, fais chercher un lien ou un rôle encore à construire, puis laisse l’enfant décider de l’histoire. Le schéma narratif examine l’enchainement des événements ; le schéma actantiel examine les buts, les aides et les obstacles. Une même image peut recevoir différents rôles selon l’histoire."
       ],
       "criteria": [
@@ -5024,6 +5178,10 @@
         {
           "file": "1-18FRA_A26_cours 2_étu.pdf",
           "location": "Diapositive53, PDF p.20 : cohérence, cohésion et aide au récit."
+        },
+        {
+          "file": "2026-10-08_BP1-18FRA-1_SUPPORT_COURS_04_ORAL.pdf",
+          "location": "Diapositive 36, PDF p. 36 : avant/pendant/après, équilibres et transformation chez Larivaille d’après Propp ; cinq moments de la ligne intitulée « Dans le PER »."
         }
       ],
       "module": "BP1-18FRA",
@@ -5041,7 +5199,7 @@
       "context": "Avec des cartes bateau, tempête, île et corde, un enfant raconte : « Le bateau est pris dans la tempête. Après ils sont sur l’île. Après ils font un feu. » Il explique qu’il voudrait raconter comment les passagers se mettent à l’abri. La corde n’a pas encore de rôle dans son récit ; plusieurs solutions restent possibles.",
       "prompt": "Analyse le lien manquant et le rôle possible des cartes sans inventer une solution imposée. Propose une aide fondée sur les schémas narratif et actantiel, une relance laissant choisir l’enfant et un critère de compréhension du nouveau récit.",
       "hints": [
-        "• Cartes à raconter : Jeu de cartes illustrées à interprétation ouverte (personnages, objets, lieux), créé à partir du schéma actantiel : aide matérielle qui structure le récit que l’élève invente et stimule son imaginaire.\n• Schéma narratif : Outil d’analyse en cinq moments : situation initiale, complication, actions, résolution, situation finale. Il repère la transformation entre l’avant et l’après.\nLe schéma actantiel relie les fonctions dans une quête : un sujet cherche un objet, concret ou symbolique ; un destinateur motive cette quête et un destinataire en bénéficie ; des adjuvants aident le sujet et des opposants l’entravent. Un actant peut être une personne, un animal, un objet ou une force de la nature.",
+        "• Cartes à raconter : Jeu de cartes illustrées à interprétation ouverte (personnages, objets, lieux), créé à partir du schéma actantiel : aide matérielle qui structure le récit que l’élève invente et stimule son imaginaire.\n• Schéma narratif : Outil d’analyse en cinq moments : situation initiale, complication, actions, résolution, situation finale. Il repère la transformation entre l’avant et l’après.\nDans le schéma de Larivaille d’après Propp, l’avant est un état initial (équilibre), le pendant une transformation agie ou subie (provocation ou déclencheur, action, sanction ou conséquence), et l’après un état final (équilibre). Il fait comprendre le passage d’un équilibre initial à un nouvel équilibre final. La ligne présentée dans le support comme « Dans le PER » nomme ces cinq moments : situation initiale, complication, actions, résolution, situation finale.\nLe schéma actantiel relie les fonctions dans une quête : un sujet cherche un objet, concret ou symbolique ; un destinateur motive cette quête et un destinataire en bénéficie ; des adjuvants aident le sujet et des opposants l’entravent. Un actant peut être une personne, un animal, un objet ou une force de la nature.",
         "• Cohérence : Organisation logique des évènements et des informations qui rend l’histoire compréhensible.\n• Étayage : Aide de l’adulte qui, par ses interventions verbales et non verbales, assume dans l’interaction la part encore difficile pour l’enfant et met en évidence les caractéristiques cognitives, langagières et interactionnelles de la tâche, avant de lui en laisser progressivement la responsabilité.\nDans l’organisation narrative, la complication rompt la situation initiale ; les actions ou tentatives répondent à la difficulté ; la résolution en donne l’issue. Pour aider, fais chercher un lien ou un rôle encore à construire, puis laisse l’enfant décider de l’histoire. Le schéma narratif examine l’enchainement des événements ; le schéma actantiel examine les buts, les aides et les obstacles. Une même image peut recevoir différents rôles selon l’histoire."
       ],
       "criteria": [
@@ -5099,6 +5257,10 @@
         {
           "file": "1-18FRA_A26_cours 2_étu.pdf",
           "location": "Diapositive53, PDF p.20 : cohérence, cohésion et aide au récit."
+        },
+        {
+          "file": "2026-10-08_BP1-18FRA-1_SUPPORT_COURS_04_ORAL.pdf",
+          "location": "Diapositive 36, PDF p. 36 : avant/pendant/après, équilibres et transformation chez Larivaille d’après Propp ; cinq moments de la ligne intitulée « Dans le PER »."
         }
       ],
       "module": "BP1-18FRA",
@@ -5654,5 +5816,5 @@
       "contentRevision": "d9951ac14d58"
     }
   ],
-  "bankRevision": "aa588ecbb4e6"
+  "bankRevision": "8268bf021f8f"
 }
