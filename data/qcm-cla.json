@@ -577,7 +577,7 @@
       "prompt": "",
       "hints": [
         "Archambault et Chouinard (2003) décrivent six propriétés de la vie de classe qui expliquent pourquoi l'enseignant doit organiser, observer et ajuster en permanence.",
-        "Les six caractéristiques (Archambault et Chouinard, 2003) : multiplicité = beaucoup d'événements et de personnes aux buts, capacités et intérêts distincts ; simultanéité = plusieurs événements au même moment ; immédiateté = des événements qui demandent une réponse très rapide ; imprévisibilité = une activité qui prend une tournure inattendue ; caractère public (notoriété) = des événements connus de tout le groupe, dont les faits et gestes de l'enseignant ; historicité = un groupe qui accumule des expériences communes, des habitudes et des normes. Dissymétrie (relation pédagogique), surcharge et régularité (cours 02) sont d'autres outils."
+        "Les six caractéristiques (Archambault et Chouinard, 2003) : multiplicité = beaucoup d'événements et de personnes aux buts, capacités et intérêts distincts ; simultanéité = plusieurs événements au même moment ; immédiateté = des événements qui demandent une réponse très rapide ; imprévisibilité = une activité qui prend une tournure inattendue ; caractère public (notoriété) = des événements connus de tout le groupe, dont les faits et gestes de l'enseignant ; historicité = un groupe qui accumule des expériences communes, des habitudes et des normes. Les premières semaines de classe déterminent la forme des rencontres pour le reste de l'année ; il est donc essentiel d'établir dès le départ un fonctionnement cohérent et efficace, puis de le rappeler et de l'ajuster (Archambault et Chouinard, 2003). Dissymétrie (relation pédagogique), surcharge et régularité (cours 02) sont d'autres outils."
       ],
       "sources": [
         {
@@ -662,7 +662,7 @@
             {
               "id": "b",
               "text": "Le caractère public concerne les témoins de l'événement dans le groupe ; l'historicité, ce que le groupe a accumulé : habitudes et normes.",
-              "explanation": "Le caractère public tient aux élèves témoins : le dérangement d'un élève peut gagner la classe et chacun repère la manière de gérer de l'enseignant. L'historicité tient au passé commun, qui influence les rencontres suivantes."
+              "explanation": "Le caractère public tient aux élèves témoins : le dérangement d'un élève peut gagner la classe et chacun repère la manière de gérer de l'enseignant. L'historicité tient au passé commun, aux habitudes et aux normes du groupe. Les premières semaines de classe déterminent la forme des rencontres pour le reste de l'année : établir dès le départ un fonctionnement cohérent et efficace est donc essentiel, puis il faut le rappeler et l'ajuster (Archambault et Chouinard, 2003)."
             },
             {
               "id": "c",
@@ -680,7 +680,7 @@
           "notionId": "N03"
         }
       ],
-      "qcmRevision": "9432888957580340"
+      "qcmRevision": "025242bb49ef0d18"
     },
     {
       "id": "CLA-C-F03",
@@ -1029,7 +1029,7 @@
       "context": "",
       "prompt": "",
       "hints": [
-        "Chaque courant privilégie un objectif et des moyens différents ; ils continuent d'influencer les pratiques et peuvent se combiner.",
+        "Chaque courant privilégie un objectif et des moyens différents. Il apparaît toutefois que seule une approche pluraliste permet de gérer la diversité des situations qui surviennent en classe (Gaudreau et al., 2016).",
         "Les cinq courants (cours 01, d'après Lusignan, 2001) : behaviorisme (Skinner) = contrôler et modifier les comportements par le renforcement, la punition et le modelage ; efficacité de l'enseignement (Weber, Doyle, Kounin) = prévenir les problèmes de comportement par l'organisation de la classe, une relation positive et des séances stimulantes ; humanisme (Gordon, Rogers, Glasser, Gossen) = développer l'autonomie et la responsabilisation par la communication, la résolution de problèmes, les conséquences naturelles, la réparation et l'auto-évaluation ; psychologie sociale (Lewin) = développer les relations positives entre élèves et le pouvoir d'agir du groupe par la collaboration et la coopération ; cognitivisme (Archambault et Chouinard) = enseigner des stratégies cognitives et métacognitives (enseignement explicite des comportements, grilles d'autogestion, contrats, feuilles de route) en évitant la punition. Repérez l'objectif visé, puis les moyens, ou l'auteur selon la question."
       ],
       "sources": [
@@ -1270,7 +1270,7 @@
       "prompt": "",
       "hints": [
         "Cherchez ce que la pratique organise ou règle : le temps, l'espace ou le matériel ; ce que les élèves savent devoir faire ; la relation avec chacun ; l'intérêt et la mise au travail ; la réaction à un écart ; la posture de l'adulte.",
-        "Gérer les ressources : organiser le temps, l'espace, le matériel, les moyens technologiques et les ressources humaines. Établir des attentes claires : règles, comportements attendus enseignés, consignes compréhensibles, routines et procédures, rétroaction positive. Développer des relations positives : communication, temps avec chaque élève, relations entre élèves, liens avec les familles. Capter et maintenir l'attention et l'engagement : intérêt, sens et utilité de l'activité, participation, suivi des progrès, différenciation, tâche morcelée. Intervenir face à l'indiscipline : rester calme, chercher ce qui explique le comportement, enseigner le comportement attendu. La personne enseignante : attitudes, compétences socio-émotionnelles, façon d'exercer l'autorité, sentiment d'efficacité personnelle. Une pratique peut relever de plusieurs composantes (organiser le matériel peut soutenir l'autonomie et l'attention) : on cherche celle que le geste décrit vise directement."
+        "Gérer les ressources : organiser le temps, l'espace, le matériel, les moyens technologiques et les ressources humaines. Établir des attentes claires : règles, comportements attendus enseignés explicitement (démonstration, pratique guidée, pratique autonome), consignes compréhensibles, routines et procédures, rétroaction positive. Développer des relations positives : communication, temps avec chaque élève, relations entre élèves, liens avec les familles. Capter et maintenir l'attention et l'engagement : intérêt, sens et utilité de l'activité, participation, suivi des progrès, différenciation, tâche morcelée. Intervenir face à l'indiscipline : rester calme, chercher ce qui explique le comportement, enseigner le comportement attendu. La personne enseignante : attitudes, compétences socio-émotionnelles, façon d'exercer l'autorité, sentiment d'efficacité personnelle. Une pratique peut relever de plusieurs composantes (organiser le matériel peut soutenir l'autonomie et l'attention) : on cherche celle que le geste décrit vise directement."
       ],
       "sources": [
         {
@@ -1334,7 +1334,7 @@
             {
               "id": "d",
               "text": "Établir des attentes claires",
-              "explanation": "Établir des attentes claires, c'est enseigner les comportements attendus et les procédures : montrer, faire pratiquer avec aide, puis laisser les élèves réaliser eux-mêmes."
+              "explanation": "Établir des attentes claires, c'est enseigner explicitement les comportements attendus et les procédures : montrer, faire pratiquer avec aide, puis laisser les élèves réaliser eux-mêmes."
             }
           ],
           "level": "essentiel",
@@ -1466,7 +1466,7 @@
           "notionId": "N09"
         }
       ],
-      "qcmRevision": "95ccbd69ccb79d57"
+      "qcmRevision": "836b442dbca68212"
     },
     {
       "id": "CLA-C-F08",
@@ -1571,7 +1571,7 @@
       "context": "",
       "prompt": "",
       "hints": [
-        "Établir des attentes claires, c'est faire savoir aux élèves ce qu'ils doivent faire et comment s'y prendre.",
+        "Établir des attentes claires, c'est enseigner explicitement aux élèves les comportements attendus et les procédures, pour qu'ils sachent quoi faire et comment s'y prendre.",
         "Règle = fixe une attente. Procédure = précise comment accomplir une action. Routine = suite organisée de consignes suivie de façon stable et cohérente, qui peut intégrer des procédures. Rétroaction positive = renseigne l'élève sur ce qu'il réussit dans le comportement attendu. Cherchez ce que la phrase ou le critère fait : fixer une attente, détailler une manière de faire, stabiliser un fonctionnement ou constater une réussite."
       ],
       "sources": [
@@ -2381,7 +2381,7 @@
       "prompt": "",
       "hints": [
         "La CUA se distingue des autres façons d'agir sur l'accès à une même situation.",
-        "CUA = approche qui consiste à anticiper les besoins des divers apprenants et à intégrer au curriculum des stratégies efficaces qui rendent l'apprentissage plus accessible, en prévoyant plusieurs chemins d'accès. Adaptation = aide particulière qui répond à un besoin identifié. Non-considération = fournir la même chose à tous malgré les différences d'accès, ce qui peut laisser subsister un obstacle. Certaines difficultés demandent aussi une intervention ciblée et la collaboration de professionnels, de collègues et des familles. L'accessibilité préparée pour le groupe et une aide ciblée peuvent se compléter ; des professionnels peuvent contribuer à cette aide sans créer une catégorie exclusive."
+        "CUA = approche qui consiste à anticiper les besoins des divers apprenants et à intégrer au curriculum des stratégies efficaces qui rendent l'apprentissage plus accessible, en prévoyant plusieurs chemins d'accès. Adaptation = aide particulière qui répond à un besoin identifié. Non-considération = fournir la même chose à tous malgré les différences d'accès, ce qui peut laisser subsister un obstacle. Certains comportements nécessitent des interventions ciblées qui dépassent une gestion de classe efficace. La cohérence et la collaboration entre acteurs scolaires, communauté et familles sont une condition essentielle de la gestion éducative des comportements difficiles en milieu inclusif (Gaudreau et al., 2016). L'accessibilité préparée pour le groupe et une aide ciblée peuvent se compléter ; des professionnels peuvent contribuer à cette aide sans créer une catégorie exclusive."
       ],
       "sources": [
         {
@@ -2470,7 +2470,7 @@
       "prompt": "",
       "hints": [
         "Les trois scènes du visuel du cours montrent trois façons d'agir sur l'accès à une même situation.",
-        "Trois scènes du visuel du cours : non-considération = le même support pour tous malgré les différences, un obstacle subsiste ; adaptation = supports ajustés aux personnes pour qu'elles surmontent l'obstacle, une aide particulière répond à un besoin identifié ; CUA = l'environnement commun est transformé dès le départ (clôture opaque remplacée par une clôture qui laisse voir). Gestion réflexive = relier ce qui était prévu aux effets constatés, puis ajuster ; elle peut accompagner chacune des trois approches. L'accessibilité préparée pour le groupe et une aide ciblée peuvent se compléter. Cherchez ce que la situation décrit : support identique, support ajusté pour une personne, ou environnement transformé pour tous."
+        "Trois scènes du visuel du cours : non-considération = le même support pour tous malgré les différences, un obstacle subsiste ; adaptation = supports ajustés aux personnes pour qu'elles surmontent l'obstacle, une aide particulière répond à un besoin identifié ; CUA = l'environnement commun est transformé dès le départ (clôture opaque remplacée par une clôture qui laisse voir). Gestion réflexive = relier ce qui était prévu aux effets constatés, puis ajuster ; elle peut accompagner chacune des trois approches. Une évaluation objective des comportements des élèves et de leurs fonctions, combinée à cette pratique réflexive, est incontournable pour gérer efficacement les comportements en classe (Gaudreau et al., 2016). L'accessibilité préparée pour le groupe et une aide ciblée peuvent se compléter. Cherchez ce que la situation décrit : support identique, support ajusté pour une personne, ou environnement transformé pour tous."
       ],
       "sources": [
         {
@@ -2648,7 +2648,7 @@
       "prompt": "",
       "hints": [
         "La synthèse distingue deux façons d'agir face aux écarts : préparer le fonctionnement de la classe, ou répondre à ce qui survient.",
-        "Intervenir face à l'indiscipline en donnant la priorité à la prévention (Gaudreau, 2024) : organiser, clarifier, soutenir les relations et l'engagement réduit le besoin de réagir. Interventions préventives = préparent le fonctionnement de la classe avant les écarts ; interventions correctives = répondent à un écart survenu. La prévention et la correction vont ensemble, la prévention prenant la plus grande place. Le repère de 80 % d'interventions préventives et de 20 % d'interventions correctives oriente l'action vers l'anticipation ; il sert de repère de priorité, non de quota à appliquer à chaque séance."
+        "Intervenir face à l'indiscipline en donnant la priorité à la prévention (Gaudreau, 2024) : organiser, clarifier, soutenir les relations et l'engagement réduit le besoin de réagir. Interventions préventives = préparent le fonctionnement de la classe avant les écarts ; interventions correctives = répondent à un écart survenu. La prévention et la correction vont ensemble, la prévention prenant la plus grande place. Le repère de 80 % d'interventions préventives et de 20 % d'interventions correctives oriente l'action vers l'anticipation ; selon les notes du cours, les interventions préventives « devraient couvrir 80 % » des interventions."
       ],
       "sources": [
         {
@@ -2696,8 +2696,8 @@
           "choices": [
             {
               "id": "a",
-              "text": "Chaque séance doit comporter 80 % d'interventions préventives et 20 % d'interventions correctives.",
-              "explanation": "Les proportions servent de repère de priorité, plutôt que de quota à appliquer à chaque séance."
+              "text": "La prévention et la correction ont la même place : chacune intervient selon les écarts observés.",
+              "explanation": "Le repère donne la plus grande place à la prévention : les interventions préventives devraient couvrir 80 % des interventions, contre 20 % pour les correctives. Les deux n'ont donc pas la même place."
             },
             {
               "id": "b",
@@ -2707,7 +2707,7 @@
             {
               "id": "c",
               "text": "La prévention occupe la plus grande place, et la correction reste nécessaire : les deux vont ensemble.",
-              "explanation": "Le repère de 80 % d'interventions préventives pour 20 % d'interventions correctives oriente l'action vers l'anticipation (Gaudreau, 2024). C'est un repère de priorité, pas un quota par séance : ici, les gestes préventifs réduisent les écarts et la reprise calme reste utile."
+              "explanation": "Le repère de 80 % d'interventions préventives pour 20 % d'interventions correctives oriente l'action vers l'anticipation (Gaudreau, 2024). Ici, les gestes préventifs réduisent les écarts et la reprise calme reste utile."
             },
             {
               "id": "d",
@@ -2721,7 +2721,7 @@
         },
         {
           "id": "Q3",
-          "prompt": "Que signifie le repère de 80 % d'interventions préventives et de 20 % d'interventions correctives (Gaudreau, 2024) ?",
+          "prompt": "À quoi correspond le repère “80 % / 20 %” attribué à Gaudreau (2024) dans le cours ?",
           "requiresContext": false,
           "correctId": "c",
           "choices": [
@@ -2737,13 +2737,13 @@
             },
             {
               "id": "c",
-              "text": "Un repère de priorité qui oriente l'action vers l'anticipation, sans quota à appliquer à chaque séance.",
+              "text": "Les interventions préventives devraient couvrir 80 % des interventions, contre 20 % pour les correctives.",
               "explanation": "Le repère oriente l'action vers l'anticipation : organiser, clarifier, soutenir les relations et l'engagement réduit le besoin de réagir. La prévention et la correction vont ensemble, la prévention prenant la plus grande place."
             },
             {
               "id": "d",
-              "text": "Un quota que chaque séance doit respecter pour que la gestion de classe soit jugée efficace.",
-              "explanation": "Ces proportions servent de repère de priorité, plutôt que de quota à appliquer à chaque séance."
+              "text": "Les interventions correctives devraient couvrir 80 % des interventions, contre 20 % pour les préventives.",
+              "explanation": "C'est l'inverse du repère : ce sont les interventions préventives qui devraient couvrir 80 % des interventions, la correction restant nécessaire pour les 20 % restants."
             }
           ],
           "level": "approfondissement",
@@ -2751,7 +2751,7 @@
           "notionId": "N14"
         }
       ],
-      "qcmRevision": "967fe39ec0b1d94d"
+      "qcmRevision": "956fe09b35d3900a"
     },
     {
       "id": "CLA-C-F20",
@@ -2768,7 +2768,7 @@
       "prompt": "",
       "hints": [
         "Le cours donne six fonctions pour examiner un local ; il faut savoir ce qu'est une fonction avant de les appliquer.",
-        "Fonction d'un local = rôle que son aménagement doit assurer pour soutenir la vie et les apprentissages des élèves (Steele, 1973). Type d'espace = manière d'occuper le lieu (se retirer, agir en petit groupe, se réunir). Stresseur = élément du cadre de vie qui provoque un état de stress. Principe de la classe flexible = fondement qui guide son aménagement et son fonctionnement. Demandez-vous ce que la notion prend pour objet."
+        "Fonction d'un local = rôle que son aménagement doit assurer pour soutenir la vie et les apprentissages des élèves (Steele, 1973). Type d'espace = manière d'occuper le lieu (se retirer, agir en petit groupe, se réunir). Stresseur = élément du cadre de vie qui provoque un état de stress. Principe de la classe flexible = fondement qui guide son aménagement et son fonctionnement. Pour Gaudreau (2024), la gestion des ressources spatio-temporelles est sans contredit le premier élément de la gestion de classe qui doit être ajusté lorsqu'on y observe des lacunes. Demandez-vous ce que la notion prend pour objet."
       ],
       "sources": [
         {
@@ -3430,7 +3430,7 @@
       "prompt": "",
       "hints": [
         "Il ne faut pas confondre un élément de l'environnement et l'état qu'il provoque chez la personne.",
-        "Stresseur = élément du cadre de vie qui provoque un état de stress ; le stress est la réaction de la personne. Stresseurs examinés dans la classe : la surcharge environnementale (par exemple une accumulation de matériel), le désordre (message que l'enseignant n'est pas prêt, élèves peu enclins à prendre soin des lieux), les affichages trop nombreux (ils noient l'information utile), la densité (place dont chacun dispose et passages entre les personnes) et le bruit. Besoin psychologique et fonction du local sont d'autres notions. Repérez ce que la situation décrit."
+        "Stresseur = élément du cadre de vie qui provoque un état de stress ; le stress est la réaction de la personne. Stresseurs examinés dans la classe : la surcharge environnementale (par exemple une accumulation de matériel), le désordre (message que l'enseignant n'est pas prêt, élèves peu enclins à prendre soin des lieux), les affichages trop nombreux (ils noient l'information utile), la densité (place dont chacun dispose et passages entre les personnes) et le bruit. Les lieux d'enseignement doivent être bien rangés et permettre de circuler aisément. Les affichages doivent servir la mission éducative, soutenir l'autonomie des élèves dans leurs apprentissages ou clarifier les attentes comportementales (Gaudreau, 2024). Besoin psychologique et fonction du local sont d'autres notions. Repérez ce que la situation décrit."
       ],
       "sources": [
         {
@@ -3484,7 +3484,7 @@
             {
               "id": "b",
               "text": "Les affichages",
-              "explanation": "Des affichages trop nombreux peuvent noyer l'information utile. Ils gagnent à soutenir les apprentissages ou à clarifier les comportements attendus, plutôt qu'à occuper toute la place disponible."
+              "explanation": "Des affichages trop nombreux noient l'information importante. Ils doivent servir la mission éducative, soutenir l'autonomie des élèves dans leurs apprentissages ou clarifier les attentes comportementales (Gaudreau, 2024)."
             },
             {
               "id": "c",
@@ -3572,7 +3572,7 @@
             {
               "id": "a",
               "text": "Le désordre",
-              "explanation": "Le désordre envoie le message que l'enseignant n'est pas prêt à enseigner et n'encourage pas les élèves à prendre soin des lieux. Un local rangé permet aussi de circuler aisément."
+              "explanation": "Le désordre envoie le message que l'enseignant n'est pas prêt à enseigner et n'encourage pas les élèves à prendre soin des lieux. Les lieux d'enseignement doivent être bien rangés et permettre d'y circuler aisément (Gaudreau, 2024)."
             },
             {
               "id": "b",
@@ -3618,7 +3618,7 @@
             {
               "id": "d",
               "text": "Les affichages aux murs du local",
-              "explanation": "Les affichages concernent les informations placées aux murs, qui peuvent noyer l'information utile ; le cas décrit du matériel entassé."
+              "explanation": "Les affichages concernent les informations placées aux murs, qui, lorsqu'elles sont trop nombreuses, noient l'information utile ; le cas décrit du matériel entassé."
             }
           ],
           "level": "essentiel",
@@ -3626,7 +3626,7 @@
           "notionId": "N60"
         }
       ],
-      "qcmRevision": "bf4bced30a045975"
+      "qcmRevision": "08400ae3c55ff185"
     },
     {
       "id": "CLA-C-F26",
@@ -3914,7 +3914,7 @@
       "prompt": "",
       "hints": [
         "Gaudreau (2024) compare huit plans en indiquant pour chacun des atouts et des contraintes.",
-        "Les huit plans (Gaudreau, 2024, tableau 4.1) : demi-rectangle = réduit les risques de conflits, bonne visibilité, mais tables qui peuvent gêner les déplacements ; demi-lune sans pupitres = facilite les interactions, grands groupes, mais position parfois inconfortable ; îlots de quatuors en demi-lune = travail coopératif, mais déplacements limités en petit local ; dyades en demi-lune = entraide, bonne visibilité, local assez vaste ; dyades en rangées = espace utilisé efficacement, déplacements et travail coopératif, mais plénières peu efficaces ; individuels en rangées = espace, déplacements et concentration, mais travail coopératif difficile ; cercle ou rectangle fermé = contacts visuels et échanges, mais altercations et pas de vue d'ensemble ; U avec rangées = espace et démonstrations, mais déplacements restreints. Aucun plan n'est universel : le choix dépend de l'objectif et du local."
+        "Les huit plans (Gaudreau, 2024, tableau 4.1) : demi-rectangle = réduit les risques de conflits, bonne visibilité, mais tables qui peuvent gêner les déplacements ; demi-lune sans pupitres = facilite les interactions, grands groupes, mais position parfois inconfortable ; îlots de quatuors en demi-lune = travail coopératif, mais déplacements limités en petit local ; dyades en demi-lune = entraide, bonne visibilité, local assez vaste ; dyades en rangées = espace utilisé efficacement, déplacements et travail coopératif, mais plénières peu efficaces ; individuels en rangées = espace, déplacements et concentration, mais travail coopératif difficile ; cercle ou rectangle fermé = contacts visuels et échanges, mais altercations et pas de vue d'ensemble ; U avec rangées = espace et démonstrations, mais déplacements restreints. Dans une classe fixe, faciliter la circulation des élèves et de l'enseignant est un élément essentiel : l'enseignant doit pouvoir circuler partout et accéder facilement à chacun pour intervenir avec proximité et superviser les apprentissages (Gaudreau, 2024). Aucun plan n'est universel : le choix dépend de l'objectif et du local."
       ],
       "sources": [
         {
@@ -4034,7 +4034,7 @@
       "prompt": "",
       "hints": [
         "Le cours oppose deux façons d'organiser la classe, l'une souple, l'autre stable.",
-        "Classe flexible (Connac, 2022) = organisation pensée selon une logique pédagogique centrée sur l'élève et son confort, sans modèle prédéfini ; ses aménagements varient selon les besoins et les styles pédagogiques des enseignants, et les élèves choisissent et changent de station de travail. Classe fixe = mobilier organisé de manière stable et place assignée à chaque élève. Plans de tables, types d'espace et coins d'activités sont d'autres notions."
+        "Classe flexible (Connac, 2022) = organisation pensée selon une logique pédagogique centrée sur l'élève et son confort, sans modèle prédéfini ; ses aménagements varient selon les besoins et les styles pédagogiques des enseignants, et les élèves choisissent et changent de station de travail. Classe fixe = mobilier organisé de manière stable et place assignée à chaque élève. Pour soutenir réellement le bien-être et l'engagement à l'égard de l'objet d'apprentissage, la classe flexible doit répondre aux besoins physiques, sociaux et cognitifs des élèves (Sorrell, 2019, repris par Gaudreau, 2024). Cette condition porte sur la classe flexible dans son ensemble. Plans de tables, types d'espace et coins d'activités sont d'autres notions."
       ],
       "sources": [
         {
@@ -4123,7 +4123,7 @@
       "prompt": "",
       "hints": [
         "Laquerre (2018), repris par Gaudreau (2024), pose cinq fondements de la classe flexible.",
-        "Cinq principes de la classe flexible (Laquerre, 2018, dans Gaudreau, 2024) : choix = choisir sa place, sa station de travail et son assise selon l'activité, ses besoins et la tâche ; mouvement = pouvoir changer de posture et se déplacer pour travailler ; confort = répondre aux besoins physiques, sociaux et cognitifs (se relaxer, s'isoler, s'installer sur une assise confortable) ; vie en communauté = être impliqué dans la vie de la classe ; coopération = favoriser les interactions et la coopération entre élèves, et les former à coopérer. Les fonctions du local sont d'autres notions."
+        "Cinq principes de la classe flexible (Laquerre, 2018, dans Gaudreau, 2024) : choix = choisir sa place, sa station de travail et son assise selon l'activité, ses besoins et la tâche ; mouvement = pouvoir changer de posture et se déplacer pour travailler ; confort = pouvoir se relaxer, s'isoler et s'installer confortablement ; vie en communauté = être impliqué dans la vie de la classe ; coopération = favoriser les interactions et la coopération entre élèves, et les former à coopérer. Pour soutenir réellement le bien-être et l'engagement dans l'apprentissage, c'est la classe flexible dans son ensemble qui doit répondre aux besoins physiques, sociaux et cognitifs (Sorrell, 2019, repris par Gaudreau, 2024). La variation des postures et le mouvement augmentent l'attention des élèves (Benden, 2015, cité dans le cours 02). Les fonctions du local sont d'autres notions."
       ],
       "sources": [
         {
@@ -4218,7 +4218,7 @@
             {
               "id": "d",
               "text": "Le confort",
-              "explanation": "Le confort répond aux besoins physiques, sociaux et cognitifs des élèves : se relaxer, s'isoler, s'installer sur une assise confortable."
+              "explanation": "Le confort concerne ici la possibilité de se relaxer, de s'isoler et de s'installer confortablement. Répondre aux besoins physiques, sociaux et cognitifs est une condition de la classe flexible dans son ensemble pour soutenir réellement le bien-être et l'engagement des élèves (Sorrell, 2019, repris par Gaudreau, 2024)."
             }
           ],
           "level": "essentiel",
@@ -4249,7 +4249,7 @@
             {
               "id": "d",
               "text": "Le confort",
-              "explanation": "Le confort répond aux besoins physiques, sociaux et cognitifs. La situation décrit des responsabilités."
+              "explanation": "Le confort concerne la détente et une installation confortable. La situation décrit des responsabilités partagées dans la vie de la classe."
             }
           ],
           "level": "essentiel",
@@ -4319,7 +4319,7 @@
           "notionId": "N34"
         }
       ],
-      "qcmRevision": "87dbdcec86fd4d11"
+      "qcmRevision": "63242eb804d2e5d3"
     },
     {
       "id": "CLA-C-F31",
@@ -4514,7 +4514,7 @@
       "prompt": "",
       "hints": [
         "Chaque source citée dans le cours rapporte un constat précis ; il s'agit de rattacher le constat à sa source.",
-        "Constats et sources du cours 02 : Barrett et ses collègues (34 classes, 751 élèves) estiment à 25 % en moyenne la contribution des facteurs d'aménagement dans leur modèle de progression (ce chiffre décrit cette étude, pas un gain assuré) ; Weinstein et Mignano (1993) observent que les élèves d'un local attrayant tendent à persister davantage dans la tâche et à être plus attentifs, avec plus de cohésion et de participation ; Herz et ses collègues (2023) rapportent, à partir d'entretiens au collège, que des regroupements choisis par affinité et en confiance peuvent faciliter l'aide discrète entre pairs ; Dupuis Brouillette et Saint-Jean (2020) décrivent un adulte qui observe, accompagne et questionne l'enfant dans les coins ; Gaudreau (2024) rappelle que la classe flexible n'est pas un déterminant essentiel des apprentissages."
+        "Constats et sources du cours 02 : Barrett et ses collègues (34 classes, 751 élèves) estiment à 25 % en moyenne la contribution des facteurs d'aménagement dans leur modèle de progression (ce chiffre décrit cette étude, pas un gain assuré) ; Weinstein et Mignano (1993) observent que les élèves d'un local attrayant tendent à persister davantage dans la tâche et à être plus attentifs, avec plus de cohésion et de participation ; Herz et ses collègues (2023) montrent, à partir d'entretiens avec 48 collégiens de la 6e à la 4e, que la pratique de l'aménagement flexible facilite l'entraide spontanée entre pairs : les regroupements choisis par affinité et en confiance permettent une aide discrète ; Dupuis Brouillette et Saint-Jean (2020) décrivent un adulte qui observe, accompagne et questionne l'enfant dans les coins ; Gaudreau (2024) rappelle que la classe flexible n'est pas un déterminant essentiel des apprentissages : les rares études rapportées ne permettent pas à ce jour de démontrer de différences notables de concentration selon que la place est choisie ou assignée, ni d'effets sur la progression en lecture des élèves de première année. Les pratiques pédagogiques et le climat relationnel doivent d'abord être pris en compte pour en tirer de réels bénéfices."
       ],
       "sources": [
         {
@@ -4531,13 +4531,13 @@
           "choices": [
             {
               "id": "a",
-              "text": "Des regroupements choisis par affinité peuvent faciliter l'aide discrète entre pairs.",
-              "explanation": "C'est un constat des entretiens rapportés par Herz et ses collègues (2023) au collège."
+              "text": "L'aménagement flexible facilite l'entraide spontanée entre pairs dans les classes de collège étudiées.",
+              "explanation": "C'est le constat des entretiens rapportés par Herz et ses collègues (2023) auprès de 48 collégiens de la 6e à la 4e : l'aménagement flexible facilite l'entraide spontanée entre pairs, avec des regroupements choisis par affinité et en confiance."
             },
             {
               "id": "b",
               "text": "La classe flexible n'est pas un déterminant essentiel des apprentissages.",
-              "explanation": "C'est ce que rappelle Gaudreau (2024), qui note aussi que les recherches rapportées restent limitées."
+              "explanation": "Gaudreau (2024) rappelle que la classe flexible n'est pas un déterminant essentiel des apprentissages. Les rares études rapportées ne permettent pas à ce jour de démontrer de différences notables de concentration selon que la place est choisie ou assignée, ni d'effets sur la progression en lecture des élèves de première année."
             },
             {
               "id": "c",
@@ -4587,7 +4587,7 @@
         },
         {
           "id": "Q3",
-          "prompt": "Qui rapporte, à partir d'entretiens au collège, que des regroupements choisis par affinité peuvent faciliter l'aide discrète entre pairs ?",
+          "prompt": "Qui montre, à partir d'entretiens au collège, que la pratique de l'aménagement flexible facilite l'entraide spontanée entre pairs ?",
           "requiresContext": false,
           "correctId": "c",
           "choices": [
@@ -4604,7 +4604,7 @@
             {
               "id": "c",
               "text": "Herz et al. (2023)",
-              "explanation": "Les entretiens rapportés par Herz et ses collègues montrent que des regroupements choisis par affinité et en confiance peuvent faciliter l'aide discrète entre pairs."
+              "explanation": "Les entretiens rapportés par Herz et ses collègues (2023) auprès de 48 collégiens de la 6e à la 4e montrent que la pratique de l'aménagement flexible facilite l'entraide spontanée entre pairs. Les regroupements choisis par affinité et en confiance permettent de demander de l'aide discrètement, en sous-groupe."
             },
             {
               "id": "d",
@@ -4679,7 +4679,7 @@
           "notionId": "N37"
         }
       ],
-      "qcmRevision": "18cae061c4cfeb50"
+      "qcmRevision": "aee6804662262a70"
     },
     {
       "id": "CLA-C-F34",
@@ -9129,7 +9129,7 @@
       "prompt": "",
       "hints": [
         "Gaudreau (2024) compare plusieurs dispositions et recommande de les considérer comme temporaires.",
-        "Pour décider : à chaque disposition, un avantage et une limite. Rangées : concentration, mais coopération plus difficile. Îlots : coopération favorisée, mais déplacements pouvant être limités dans un petit local. Demi-rectangle : bonne visibilité, mais circulation pouvant être gênée. Cercle ou rectangle fermé : échanges, mais pas de vue d'ensemble."
+        "Pour décider : à chaque disposition, un avantage et une limite. Rangées : concentration, mais coopération plus difficile. Îlots : coopération favorisée, mais déplacements limités dans un petit local. Demi-rectangle : bonne visibilité, mais circulation pouvant être gênée. Cercle ou rectangle fermé : échanges, mais pas de vue d'ensemble."
       ],
       "sources": [
         {
@@ -9162,7 +9162,7 @@
             {
               "id": "d",
               "text": "Travail coopératif favorisé, mais déplacements limités en petit local.",
-              "explanation": "Les îlots favorisent le travail coopératif, mais peuvent limiter les déplacements dans un petit local."
+              "explanation": "Les îlots favorisent le travail coopératif, mais limitent les déplacements dans un petit local."
             }
           ],
           "level": "approfondissement",
@@ -9209,7 +9209,7 @@
             {
               "id": "a",
               "text": "Des îlots",
-              "explanation": "Les îlots favorisent le travail coopératif mais peuvent limiter les déplacements."
+              "explanation": "Les îlots favorisent le travail coopératif, mais limitent les déplacements dans un petit local."
             },
             {
               "id": "b",
@@ -9232,7 +9232,7 @@
           "notionId": "N28"
         }
       ],
-      "qcmRevision": "b20a5412dd958c76"
+      "qcmRevision": "17c11b9709150bd9"
     },
     {
       "id": "CLA-S-F19",
@@ -10892,5 +10892,5 @@
       "qcmRevision": "2bba5b2c36c5df64"
     }
   ],
-  "bankRevision": "54ef720405230814"
+  "bankRevision": "5720c0168da5b21f"
 }
