@@ -6196,7 +6196,7 @@
       "prompt": "",
       "hints": [
         "Sépare toujours le lien, relativement stable, de ce qu'on observe à un moment précis. Pour chaque énoncé, demande-toi : est-ce un lien, un comportement, une façon de se lier ou un modèle mental ?",
-        "Attachement : lien émotionnel durable et relativement stable avec une figure principale d'attachement (FPA). La recherche de proximité vise protection, réconfort et sécurité ; des réponses sensibles et cohérentes de la FPA favorisent la sécurité intérieure qui soutient l'exploration. Conduite d'attachement : comportement observable qui recherche ou maintient la proximité avec la FPA, surtout sous stress ou inconfort, et qui varie selon l'enfant, les interactions et le contexte. Profil : façon dont l'enfant se lie à sa FPA, repérée par ses comportements (sécurisé, évitant, ambivalent, désorganisé). modèle opérationnel interne (MOI) : modèle mental cognitif et affectif, construit à partir d'expériences relationnelles répétées, qui représente soi, autrui et les attentes d'une relation et guide l'anticipation, l'interprétation et le comportement. L'éthologie étudie et quantifie les comportements des espèces animales."
+        "Attachement : lien émotionnel fort, spécifique et durable avec une figure principale d'attachement (FPA), qui reste relativement stable. La recherche de proximité vise protection, réconfort et sécurité ; des réponses sensibles et cohérentes de la FPA favorisent la sécurité intérieure, base de l'exploration. Conduite d'attachement : comportement observable qui recherche ou maintient la proximité avec la FPA, surtout sous stress ou inconfort, et qui varie selon l'enfant, les interactions et le contexte. Profil : façon dont l'enfant se lie à sa FPA, repérée par ses comportements (sécurisé, évitant, ambivalent, désorganisé). modèle opérationnel interne (MOI) : modèle mental cognitif et affectif, construit à partir d'expériences relationnelles répétées, qui représente soi, autrui et les attentes d'une relation et guide l'anticipation, l'interprétation et le comportement. L'éthologie étudie et quantifie les comportements des espèces animales."
       ],
       "sources": [
         {
@@ -6223,8 +6223,8 @@
             },
             {
               "id": "c",
-              "text": "Un lien émotionnel durable avec une figure principale d'attachement.",
-              "explanation": "Pour Bowlby, l'attachement est un lien émotionnel durable, relativement stable, avec une figure principale d'attachement (FPA). Quand elle répond avec sensibilité et cohérence, l'enfant gagne une sécurité intérieure qui soutient son exploration."
+              "text": "Un lien fort, spécifique et durable avec une figure principale d'attachement.",
+              "explanation": "Pour Bowlby, l'attachement est un lien émotionnel fort, spécifique et durable avec une figure principale d'attachement (FPA), lien qui reste relativement stable. Quand elle répond avec sensibilité et cohérence, l'enfant gagne une sécurité intérieure qui soutient son exploration."
             },
             {
               "id": "d",
@@ -6361,7 +6361,7 @@
           "notionId": "N04"
         }
       ],
-      "qcmRevision": "8227c317759159da"
+      "qcmRevision": "fc845b03da78961f"
     },
     {
       "id": "DEV-B-F04",
@@ -7137,7 +7137,7 @@
       "prompt": "",
       "hints": [
         "Pense à ce qui rend une émotion primaire : elle est présente très tôt, largement biologique et universelle, avant que l'enfant se représente comme une personne distincte. Pour chaque situation, cherche la fonction de l'émotion : se protéger d'un danger, réagir à un obstacle, signaler l'inattendu.",
-        "Émotions primaires : les premières émotions, largement fondées biologiquement et universelles (joie, surprise, peur, colère, dégoût, tristesse), aux fonctions adaptatives et relationnelles. La peur aide à se protéger d'un danger, la colère intervient face à un obstacle, la surprise signale l'inattendu."
+        "Émotions primaires : les premières émotions, largement fondées biologiquement et universelles (joie, surprise, peur, colère, dégoût, tristesse), aux fonctions adaptatives, qui jouent un rôle important dans l'établissement du lien avec autrui et sont liées au développement cognitif. La peur sert à se protéger d'un danger, la colère à faire face à un obstacle, la surprise à détecter l'inattendu."
       ],
       "sources": [
         {
@@ -7160,7 +7160,7 @@
             {
               "id": "b",
               "text": "Elles sont largement fondées sur la biologie et universelles.",
-              "explanation": "Les émotions primaires sont les premières émotions : joie, surprise, peur, colère, dégoût et tristesse. Largement fondées biologiquement et universelles, elles ont des fonctions adaptatives et participent aux liens avec autrui."
+              "explanation": "Les émotions primaires sont les premières émotions : joie, surprise, peur, colère, dégoût et tristesse. Largement fondées biologiquement et universelles, elles ont des fonctions adaptatives, jouent un rôle important dans l'établissement du lien avec autrui et sont liées au développement cognitif."
             },
             {
               "id": "c",
@@ -7284,7 +7284,7 @@
             {
               "id": "b",
               "text": "Joie, surprise, peur, colère, dégoût, tristesse.",
-              "explanation": "Les émotions primaires sont les premières émotions : joie, surprise, peur, colère, dégoût et tristesse. Largement fondées biologiquement et universelles, elles ont des fonctions adaptatives et relationnelles."
+              "explanation": "Les émotions primaires sont les premières émotions : joie, surprise, peur, colère, dégoût et tristesse. Largement fondées biologiquement et universelles, elles ont des fonctions adaptatives, jouent un rôle important dans l'établissement du lien avec autrui et sont liées au développement cognitif."
             },
             {
               "id": "c",
@@ -7302,7 +7302,7 @@
           "notionId": "N12"
         }
       ],
-      "qcmRevision": "399b5bd61450da8a"
+      "qcmRevision": "704a1ff401c84f29"
     },
     {
       "id": "DEV-B-F09",
@@ -7461,7 +7461,7 @@
             {
               "id": "a",
               "text": "Un état émotionnel qui précède l'expérience émotionnelle.",
-              "explanation": "Une réaction peut apparaître avant que l'enfant soit capable d'identifier consciemment ce qu'il ressent : l'état émotionnel (les pleurs) précède l'expérience émotionnelle (la prise de conscience)."
+              "explanation": "L'état émotionnel apparaît avant la capacité d'identifier consciemment l'émotion : l'état émotionnel (les pleurs) précède l'expérience émotionnelle (la prise de conscience), qui suppose que l'enfant ait développé la conscience de soi."
             },
             {
               "id": "b",
@@ -7484,7 +7484,7 @@
           "notionId": "N14"
         }
       ],
-      "qcmRevision": "3da8e3b829b4cd29"
+      "qcmRevision": "0042b306c61b0c98"
     },
     {
       "id": "DEV-B-F10",
@@ -7501,7 +7501,7 @@
       "prompt": "",
       "hints": [
         "Se représenter soi-même comme une personne distincte est un seuil du développement. Demande-toi ce qu'il rend possible ensuite.",
-        "Conscience de soi : capacité à se représenter mentalement comme une personne distincte et unique, et à exprimer cette identité. Elle apparaît vers 18-24 mois et s'étudie notamment avec l'expérience du miroir de Lewis et Brooks-Gunn (1979). La représentation de soi rend possibles des émotions secondaires : les émotions auto-conscientes (empathie, embarras, jalousie) apparaissent vers le milieu de la deuxième année."
+        "Conscience de soi : capacité à se représenter mentalement comme une personne distincte et unique, et à exprimer cette identité. Elle apparaît vers 18-24 mois et s'étudie notamment avec l'expérience du miroir de Lewis et Brooks-Gunn (1979). La conscience de soi est une étape clé : elle rend possibles la différenciation entre soi et autrui, les émotions auto-conscientes et l'évaluation de ses propres comportements. La représentation de soi rend possibles des émotions secondaires : les émotions auto-conscientes (empathie, embarras, jalousie) apparaissent vers le milieu de la deuxième année."
       ],
       "sources": [
         {
@@ -7560,7 +7560,7 @@
             {
               "id": "c",
               "text": "Des émotions secondaires : empathie, embarras, jalousie.",
-              "explanation": "La représentation de soi rend possibles des émotions secondaires. Les émotions auto-conscientes (empathie, embarras, jalousie) apparaissent vers le milieu de la deuxième année et sont liées à la conscience de soi."
+              "explanation": "La représentation de soi rend possibles des émotions secondaires. Les émotions auto-conscientes (empathie, embarras, jalousie) apparaissent vers le milieu de la deuxième année et sont liées à la conscience de soi ; les émotions auto-évaluatives, elles aussi secondaires, deviennent possibles après la deuxième année."
             },
             {
               "id": "d",
@@ -7604,7 +7604,7 @@
           "notionId": "N15b"
         }
       ],
-      "qcmRevision": "24be6e762b816263"
+      "qcmRevision": "7f30acf7f80d13e2"
     },
     {
       "id": "DEV-B-F11",
@@ -7644,7 +7644,7 @@
             {
               "id": "b",
               "text": "Une émotion issue de l'évaluation de ses actions selon des normes.",
-              "explanation": "C'est l'émotion auto-évaluative (Lewis), qui demande en plus de juger ses actions au regard de normes, règles et objectifs intériorisés."
+              "explanation": "C'est l'émotion auto-évaluative (Lewis), elle aussi secondaire, qui demande en plus de juger ses actions au regard de normes, règles et objectifs intériorisés."
             },
             {
               "id": "c",
@@ -7941,7 +7941,7 @@
           "notionId": "N16"
         }
       ],
-      "qcmRevision": "e1d6a403e00546c3"
+      "qcmRevision": "f41ccf174fa7bff0"
     },
     {
       "id": "DEV-B-F12",
@@ -7958,7 +7958,7 @@
       "prompt": "",
       "hints": [
         "Une émotion auto-évaluative ajoute un jugement sur ses propres actions. Cherche ce que l'enfant doit avoir pour juger : des repères, une capacité de jugement, une explication de la cause.",
-        "Émotion auto-évaluative : émotion issue de l'évaluation de ses actions selon des normes, règles et objectifs (NRO) intériorisés et d'une attribution causale interne ; elle apparaît après la deuxième année. NRO : repères que l'enfant a faits siens et auxquels il compare son comportement. Attribution causale interne : explication qui situe en soi la cause d'un événement ; globale lorsqu'elle vise l'ensemble de la personne (« je suis »), spécifique lorsqu'elle vise ce que la personne a fait (« j'ai fait »). L'enfant cherche d'abord l'origine de l'événement, puis évalue le résultat (échec ou réussite selon les NRO), puis explique celui-ci par sa personne ou son action."
+        "Émotion auto-évaluative : émotion secondaire issue de l'évaluation de ses actions selon des normes, règles et objectifs (NRO) intériorisés et d'une attribution causale interne ; elle apparaît après la deuxième année. NRO : repères que l'enfant a faits siens et auxquels il compare son comportement. Attribution causale interne : explication qui situe en soi la cause d'un événement ; globale lorsqu'elle vise l'ensemble de la personne (« je suis »), spécifique lorsqu'elle vise ce que la personne a fait (« j'ai fait »). L'enfant cherche d'abord l'origine de l'événement, puis évalue le résultat (échec ou réussite selon les NRO), puis explique celui-ci par sa personne ou son action."
       ],
       "sources": [
         {
@@ -8109,7 +8109,7 @@
       "prompt": "",
       "hints": [
         "Pose deux questions : le résultat est-il un échec ou une réussite (selon les normes, règles et objectifs (NRO)) ? L'explication vise-t-elle la personne (« je suis ») ou l'action (« j'ai fait ») ?",
-        "Modèle cognitif-attributionnel de Lewis : le résultat et le type d'attribution interne se combinent. Cinq moments : un événement se produit ; l'enfant en recherche l'origine ; il évalue le résultat selon les normes, règles et objectifs (NRO) intériorisés, échec ou réussite ; l'attribution porte sur sa personne (globale, « je suis ») ou sur une action précise (spécifique, « j'ai fait ») ; la combinaison conduit à l'une des quatre émotions. Échec + globale : honte. Échec + spécifique : culpabilité. Réussite + globale : orgueil. Réussite + spécifique : fierté. Les attributions spécifiques favorisent l'apprentissage et la motivation, et les paroles de l'adulte peuvent orienter l'attribution."
+        "Modèle cognitif-attributionnel de Lewis : le résultat et le type d'attribution interne se combinent ; l'attribution causale interne est le mécanisme central, et son type détermine l'émotion ressentie. Cinq moments : un événement se produit ; l'enfant en recherche l'origine ; il évalue le résultat selon les normes, règles et objectifs (NRO) intériorisés, échec ou réussite ; l'attribution porte sur sa personne (globale, « je suis ») ou sur une action précise (spécifique, « j'ai fait ») ; la combinaison conduit à l'une des quatre émotions. Échec + globale : honte. Échec + spécifique : culpabilité. Réussite + globale : orgueil. Réussite + spécifique : fierté. Les attributions spécifiques favorisent l'apprentissage et la motivation, et les paroles de l'adulte peuvent orienter l'attribution."
       ],
       "sources": [
         {
@@ -8158,7 +8158,7 @@
             {
               "id": "a",
               "text": "Le résultat évalué (échec ou réussite) et le type d'attribution interne (globale ou spécifique).",
-              "explanation": "Dans le modèle cognitif-attributionnel de Lewis, le résultat et le type d'attribution interne se combinent : leur combinaison conduit à l'une des quatre émotions auto-évaluatives (honte, culpabilité, orgueil ou fierté)."
+              "explanation": "Dans le modèle cognitif-attributionnel de Lewis, le résultat et le type d'attribution interne se combinent ; l'attribution causale interne est le mécanisme central : son type détermine l'émotion ressentie, parmi les quatre émotions auto-évaluatives (honte, culpabilité, orgueil ou fierté)."
             },
             {
               "id": "b",
@@ -8522,7 +8522,7 @@
           "notionId": "N19b"
         }
       ],
-      "qcmRevision": "a3078988efd6a632"
+      "qcmRevision": "da67fd5296af3791"
     },
     {
       "id": "DEV-B-F14",
@@ -8539,7 +8539,7 @@
       "prompt": "",
       "hints": [
         "Relie sécurité relationnelle, stress et exploration : que permet un cadre sécurisant à l'élève ?",
-        "L'enseignant peut devenir une figure de sécurité relationnelle secondaire. Une relation sécurisante réduit l'impact du stress (séparation, nouveauté, règles, peur de l'échec), favorise l'exploration et, indirectement, l'engagement et les apprentissages."
+        "La sécurité relationnelle est une condition de l'apprentissage. L'enseignant peut devenir une figure de sécurité relationnelle secondaire. Une relation sécurisante réduit l'impact du stress (séparation, nouveauté, règles, peur de l'échec), favorise l'exploration et, indirectement, l'engagement et les apprentissages."
       ],
       "sources": [
         {
@@ -8567,7 +8567,7 @@
             {
               "id": "c",
               "text": "Moins de stress, plus d'exploration, puis davantage d'engagement.",
-              "explanation": "Une relation sécurisante réduit l'impact du stress (séparation, nouveauté, règles, peur de l'échec). Elle favorise l'exploration et, indirectement, l'engagement et les apprentissages : l'élève ose explorer, réfléchir et persévérer."
+              "explanation": "La sécurité relationnelle est une condition de l'apprentissage : une relation sécurisante réduit l'impact du stress (séparation, nouveauté, règles, peur de l'échec). Elle favorise l'exploration et, indirectement, l'engagement et les apprentissages : l'élève ose explorer, réfléchir et persévérer."
             },
             {
               "id": "d",
@@ -8611,7 +8611,7 @@
           "notionId": "N20"
         }
       ],
-      "qcmRevision": "1698a75cbf04177d"
+      "qcmRevision": "748b0e00f6ddf220"
     },
     {
       "id": "DEV-B-F15",
@@ -8828,7 +8828,7 @@
             {
               "id": "a",
               "text": "Chercher les états mentaux qui expliquent un comportement.",
-              "explanation": "Mentaliser, c'est chercher ce que l'enfant ressent, croit ou attend pour comprendre son comportement. Voir des pleurs ou un refus donne un point de départ plutôt qu'une explication complète."
+              "explanation": "Mentaliser, c'est chercher ce que l'enfant ressent, croit ou attend pour comprendre son comportement. Comprendre les émotions suppose de s'intéresser aux états mentaux qui sous-tendent les comportements (pleurs, refus), plutôt qu'aux comportements eux-mêmes."
             },
             {
               "id": "b",
@@ -8913,7 +8913,7 @@
           "notionId": "N22"
         }
       ],
-      "qcmRevision": "507af0d46065ecfc"
+      "qcmRevision": "2805fbc64766ace3"
     },
     {
       "id": "DEV-B-F17",
@@ -9010,7 +9010,7 @@
             {
               "id": "a",
               "text": "La capacité d'adopter la perspective d'autrui, distincte de la sienne.",
-              "explanation": "La décentration est la capacité d'adopter la perspective d'autrui en distinguant son point de vue du sien. C'est le mécanisme de la théorie de l'esprit."
+              "explanation": "La décentration est la capacité d'adopter la perspective d'autrui en distinguant son point de vue du sien. C'est le mécanisme de la théorie de l'esprit (Thommen) ; pour Duval et al., le mécanisme central est la construction d'une méta-représentation."
             },
             {
               "id": "b",
@@ -9033,7 +9033,7 @@
           "notionId": "N25"
         }
       ],
-      "qcmRevision": "6ba38db2c33951b2"
+      "qcmRevision": "d7131452e61e24de"
     },
     {
       "id": "DEV-B-F18",
@@ -9050,7 +9050,7 @@
       "prompt": "",
       "hints": [
         "Une capacité peut exister sans que l'enfant sache l'expliquer. Compare ce que chaque tâche exige : comprendre une intention, attribuer un savoir ou une incertitude, attribuer une fausse croyance, relier croyance et émotion.",
-        "Warneken et Tomasello : compréhension de certaines intentions d'autrui dès environ 18 mois. Tâche de la poupée : l'enfant attribue un savoir ou une incertitude selon l'accès de la poupée à l'information. Sally et Anne : l'enfant attribue une croyance différente de la réalité qu'il connaît (fausse croyance). Incertitude : plusieurs croyances restent possibles faute d'information. Ces capacités émergent progressivement, et les repères d'âge se comprennent avec les exigences de chaque tâche."
+        "Warneken et Tomasello : compréhension de certaines intentions d'autrui dès environ 18 mois. Les tâches de théorie de l'esprit placent l'enfant dans des situations où son propre savoir peut différer de celui qu'il doit attribuer à autrui. Tâche de la poupée, de premier ordre : l'enfant attribue un savoir ou une incertitude selon l'accès de la poupée à l'information. Sally et Anne : l'enfant attribue une croyance différente de la réalité qu'il connaît (fausse croyance). Incertitude : plusieurs croyances restent possibles faute d'information. Ces capacités émergent progressivement, et les repères d'âge se comprennent avec les exigences de chaque tâche."
       ],
       "sources": [
         {
@@ -9170,7 +9170,7 @@
       "prompt": "",
       "hints": [
         "Demande-toi ce que vise la pensée : la situation elle-même, ou la façon dont quelqu'un d'autre se la représente.",
-        "Représentation : ce que je sais d'une situation, l'idée que je m'en fais. Méta-représentation : la représentation que j'attribue à autrui (ce que je pense qu'il pense, croit ou ressent)."
+        "Représentation : ce que je sais d'une situation, l'idée que je m'en fais. Méta-représentation : la représentation que j'attribue à autrui (ce que je pense qu'il pense, croit ou ressent). Pour Duval et al. (2011), construire une méta-représentation est le mécanisme central de la théorie de l'esprit."
       ],
       "sources": [
         {
@@ -9229,7 +9229,7 @@
             {
               "id": "c",
               "text": "La représentation que j'attribue à autrui, ce qu'il pense, croit ou ressent.",
-              "explanation": "Une méta-représentation est la représentation que j'attribue à autrui : ce que je pense qu'il pense, croit ou ressent. Elle vise la manière dont quelqu'un d'autre se représente la situation."
+              "explanation": "Une méta-représentation est la représentation que j'attribue à autrui : ce que je pense qu'il pense, croit ou ressent. Elle vise la manière dont quelqu'un d'autre se représente la situation. Pour Duval et al. (2011), la construire est le mécanisme central de la théorie de l'esprit."
             },
             {
               "id": "d",
@@ -9366,7 +9366,7 @@
           "notionId": "N27"
         }
       ],
-      "qcmRevision": "9097ef4f06e29acc"
+      "qcmRevision": "f2897306158e2b9b"
     },
     {
       "id": "DEV-B-F20",
@@ -9596,7 +9596,7 @@
       "prompt": "",
       "hints": [
         "Deux questions différentes : combien de points de vue (ordre) et quel type d'état mental (cognitif ou affectif) ?",
-        "État mental cognitif (épistémique) : ce qu'une personne pense, croit, sait, veut ou imagine. État mental affectif : ce qu'une personne ressent ou éprouve. Premier ordre : j'attribue un état mental à une autre personne. Deuxième ordre : j'attribue à une personne un état mental concernant celui d'une autre. L'ordre indique l'emboîtement des perspectives ; le type indique la nature de l'état mental."
+        "État mental cognitif (épistémique) : ce qu'une personne pense, croit, sait, veut, souhaite ou imagine, y compris ses intentions. État mental affectif : ce qu'une personne ressent ou éprouve. Premier ordre : j'attribue un état mental à une autre personne. Deuxième ordre : j'attribue à une personne un état mental concernant celui d'une autre. L'ordre indique l'emboîtement des perspectives ; le type indique la nature de l'état mental."
       ],
       "sources": [
         {
@@ -9619,7 +9619,7 @@
             {
               "id": "b",
               "text": "Ce qu'une personne pense, croit, sait, veut ou imagine.",
-              "explanation": "Un état mental cognitif, ou épistémique, concerne ce qu'une personne pense, croit, sait, veut ou imagine. Attribuer à la mère la croyance que le chocolat est dans le placard est une méta-représentation cognitive."
+              "explanation": "Un état mental cognitif, ou épistémique, concerne ce qu'une personne pense, croit, sait, veut, souhaite ou imagine, y compris ses intentions. Attribuer à la mère la croyance que le chocolat est dans le placard est une méta-représentation cognitive."
             },
             {
               "id": "c",
@@ -9676,7 +9676,7 @@
             {
               "id": "a",
               "text": "Un état mental cognitif.",
-              "explanation": "Croire est un état mental cognitif : il concerne ce qu'une personne pense, croit, sait, veut ou imagine."
+              "explanation": "Croire est un état mental cognitif : il concerne ce qu'une personne pense, croit, sait, veut, souhaite ou imagine, y compris ses intentions."
             },
             {
               "id": "b",
@@ -9815,7 +9815,7 @@
             {
               "id": "d",
               "text": "Un état mental cognitif.",
-              "explanation": "Vouloir fait partie des états mentaux cognitifs : ce qu'une personne pense, croit, sait, veut ou imagine."
+              "explanation": "Vouloir fait partie des états mentaux cognitifs : ce qu'une personne pense, croit, sait, veut, souhaite ou imagine, y compris ses intentions."
             }
           ],
           "level": "essentiel",
@@ -9831,7 +9831,7 @@
             {
               "id": "a",
               "text": "Un état mental cognitif.",
-              "explanation": "Un état mental cognitif concerne ce qu'une personne pense, croit, sait, veut ou imagine. Ici, Rita éprouve de la fierté."
+              "explanation": "Un état mental cognitif concerne ce qu'une personne pense, croit, sait, veut, souhaite ou imagine, y compris ses intentions. Ici, Rita éprouve de la fierté."
             },
             {
               "id": "b",
@@ -9854,7 +9854,7 @@
           "notionId": "N32"
         }
       ],
-      "qcmRevision": "7073de96f58de602"
+      "qcmRevision": "b90d4b548c3aabbd"
     },
     {
       "id": "DEV-B-F22",
@@ -10177,7 +10177,7 @@
       "prompt": "",
       "hints": [
         "Distingue trois choses : où est la bille, ce que l'enfant sait, et ce que Sally croit.",
-        "Fausse croyance : croyance attribuée à autrui qui diffère de la réalité que l'on connaît soi-même. L'enfant doit distinguer la réalité, son propre savoir et la croyance de l'autre, et inhiber son propre savoir, c'est-à-dire le mettre de côté pour répondre du point de vue de l'autre. Réponse réaliste : attribuer à autrui une représentation conforme à mon propre savoir de la réalité. Incertitude : plusieurs croyances restent possibles faute d'information."
+        "Fausse croyance : croyance attribuée à autrui qui diffère de la réalité que l'on connaît soi-même. L'enfant doit distinguer la réalité, son propre savoir et la croyance de l'autre, et inhiber son propre savoir ou sa propre croyance, c'est-à-dire les mettre de côté, pour activer le savoir ou la croyance qu'il attribue à autrui (Wimmer et Perner, 1983). Réponse réaliste : attribuer à autrui une représentation conforme à mon propre savoir de la réalité. Incertitude : plusieurs croyances restent possibles faute d'information."
       ],
       "sources": [
         {
@@ -10303,7 +10303,7 @@
             {
               "id": "d",
               "text": "De la croyance attribuée à l'autre personne.",
-              "explanation": "C'est précisément ce que l'enfant doit retenir pour répondre : la croyance de Sally."
+              "explanation": "C'est précisément ce que l'enfant doit activer pour répondre : la croyance de Sally."
             }
           ],
           "level": "essentiel",
@@ -10342,7 +10342,7 @@
           "notionId": "N34"
         }
       ],
-      "qcmRevision": "9c703733bc3f0641"
+      "qcmRevision": "2291ee28a8197f56"
     },
     {
       "id": "DEV-B-F24",
@@ -10630,7 +10630,7 @@
       "prompt": "",
       "hints": [
         "Pour chaque proposition, distingue les faits observés, les états mentaux envisagés et les informations dont dispose chaque personne.",
-        "À l'école, prendre en compte intentions, émotions et points de vue aide à coopérer, à s'ajuster et à traiter conflits et malentendus. Théorie de l'esprit : capacité d'attribuer à autrui des états mentaux non directement observables, inférés à partir d'indices et du contexte. Implicites sociaux : ce qui n'est pas formulé directement dans la situation. L'enseignant peut expliciter intentions, attentes et points de vue."
+        "À l'école, la théorie de l'esprit contribue à comprendre les intentions, les émotions et les points de vue d'autrui et intervient dans de nombreuses situations sociales : coopérer, s'ajuster à l'autre, traiter conflits et malentendus. Théorie de l'esprit : capacité d'attribuer à autrui des états mentaux non directement observables, inférés à partir d'indices et du contexte. Implicites sociaux : ce qui n'est pas formulé directement dans la situation. Pour favoriser la prise en compte des états mentaux, l'enseignant explicite intentions, attentes et points de vue."
       ],
       "sources": [
         {
@@ -10736,5 +10736,5 @@
       "qcmRevision": "b1e7ac31240f94ad"
     }
   ],
-  "bankRevision": "f94a806d5a215bec"
+  "bankRevision": "493a2e3a41098ee7"
 }
