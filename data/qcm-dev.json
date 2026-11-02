@@ -341,7 +341,7 @@
       "prompt": "",
       "hints": [
         "Pensez à l'échelle de la transformation : la vie d'un individu ou l'histoire d'une espèce.",
-        "Pour décider : l'ontogenèse est le développement d'un individu, de l'œuf fécondé à l'état adulte ; la phylogenèse est la filiation des espèces vivantes au cours de l'évolution ; au XIXe siècle, Haeckel a proposé la loi de récapitulation (le développement de l'individu reproduirait l'histoire évolutive de son espèce), une idée rejetée. Le développement, la maturation et l'apprentissage sont d'autres notions."
+        "Pour décider : l'ontogenèse est le développement d'un individu, de l'œuf fécondé à l'état adulte ; la phylogenèse est la filiation des espèces vivantes au cours de l'évolution ; en 1866, Haeckel a proposé la loi biogénétique fondamentale, ou loi de récapitulation (le développement de l'individu reproduirait l'histoire évolutive de son espèce), une idée rejetée. Le développement, la maturation et l'apprentissage sont d'autres notions."
       ],
       "sources": [
         {
@@ -374,7 +374,7 @@
             {
               "id": "d",
               "text": "Le processus par lequel une fonction atteint la maturité, selon une évolution interne.",
-              "explanation": "C'est la maturation : une évolution interne, caractéristique de l'espèce, comme la puberté."
+              "explanation": "C'est la maturation : une évolution interne qui correspond à un programme de développement caractéristique de l'espèce, comme la puberté."
             }
           ],
           "level": "essentiel",
@@ -475,7 +475,7 @@
           "notionId": "N02"
         }
       ],
-      "qcmRevision": "75aad01c88365840"
+      "qcmRevision": "770cc65dcd4f3547"
     },
     {
       "id": "DEV-A-F02",
@@ -492,7 +492,7 @@
       "prompt": "",
       "hints": [
         "Chaque notion répond à une question : ce qui se transforme (développement), ce qui s'acquiert par l'interaction avec le milieu (apprentissage), ce qui évolue de l'intérieur (maturation).",
-        "Pour décider : le développement est l'ensemble des processus de transformation qui affectent soit les organismes vivants, soit les institutions humaines (société, culture, économie), soit leurs différentes propriétés. L'apprentissage est une modification des capacités ou du comportement qui résulte d'une interaction avec le milieu et enrichit ce que l'organisme peut faire. La maturation est le processus par lequel un organisme ou une fonction atteint la maturité, selon une évolution interne caractéristique de l'espèce, comme la puberté ; ses conditions et son déroulement restent liés à l'environnement. Un apprentissage élémentaire dépend directement d'un stimulus ; un apprentissage complexe fait intervenir des représentations symboliques."
+        "Pour décider : le développement est l'ensemble des processus de transformation qui affectent soit les organismes vivants, soit les institutions humaines (société, culture, économie), soit leurs différentes propriétés. Ce n'est pas une série d'étapes vers un plein épanouissement : c'est un phénomène continu. L'apprentissage est une modification des capacités ou du comportement qui résulte d'une interaction avec le milieu et enrichit ce que l'organisme peut faire. La maturation est le processus par lequel un organisme ou une fonction atteint la maturité, par une évolution interne qui correspond à un programme de développement caractéristique de l'espèce, comme la puberté (une étape programmée) ; elle implique toujours, sinon exclusivement, cette évolution interne. Un apprentissage élémentaire dépend directement d'un stimulus ; un apprentissage complexe fait intervenir des représentations symboliques."
       ],
       "sources": [
         {
@@ -510,7 +510,7 @@
             {
               "id": "a",
               "text": "Les transformations des organismes vivants, des institutions humaines ou de leurs différentes propriétés.",
-              "explanation": "Le développement regroupe les transformations elles-mêmes, sans les réduire à une suite d'étapes menant à un plein épanouissement. Dans le module, on l'aborde sous l'angle de la pensée, de la vie affective et de la socialisation."
+              "explanation": "Le développement regroupe les transformations elles-mêmes. Ce n'est pas une série d'étapes par lesquelles l'être vivant passerait pour atteindre son plein épanouissement (cette définition est rejetée) : c'est un phénomène continu. Dans le module, on l'aborde sous l'angle de la pensée, de la vie affective et de la socialisation."
             },
             {
               "id": "b",
@@ -551,7 +551,7 @@
             {
               "id": "c",
               "text": "Le processus par lequel une fonction atteint la maturité, par une évolution interne caractéristique de l'espèce.",
-              "explanation": "La maturation suit une évolution interne caractéristique de l'espèce, comme la puberté. Ses conditions et son déroulement restent liés à l'environnement, mais le changement vient d'abord de l'organisme."
+              "explanation": "La maturation suit une évolution interne qui correspond à un programme de développement caractéristique de l'espèce, comme la puberté. Elle implique toujours, sinon exclusivement, cette évolution interne : le changement vient du programme de l'organisme, non de l'interaction avec le milieu."
             },
             {
               "id": "d",
@@ -618,7 +618,7 @@
             {
               "id": "d",
               "text": "D'une maturation",
-              "explanation": "La puberté est l'exemple donné par le cours d'une maturation : le changement provient du développement de l'organisme, selon une évolution interne caractéristique de l'espèce."
+              "explanation": "La puberté est l'exemple donné par le cours d'une maturation, une étape programmée : le changement provient du programme de l'organisme, selon une évolution interne caractéristique de l'espèce."
             }
           ],
           "level": "essentiel",
@@ -634,7 +634,7 @@
             {
               "id": "a",
               "text": "Une évolution interne, caractéristique de l'espèce.",
-              "explanation": "La maturation met au premier plan une évolution interne caractéristique de l'espèce ; ses conditions et son déroulement restent liés à l'environnement. La question porte sur le critère distinctif d'un apprentissage complexe : les représentations symboliques."
+              "explanation": "La maturation met au premier plan une évolution interne qui correspond à un programme de développement caractéristique de l'espèce. La question porte sur le critère distinctif d'un apprentissage complexe : les représentations symboliques."
             },
             {
               "id": "b",
@@ -680,7 +680,7 @@
             {
               "id": "d",
               "text": "Le processus par lequel une fonction atteint la maturité, par une évolution interne caractéristique de l'espèce.",
-              "explanation": "C'est la maturation : le changement provient d'abord du développement de l'organisme, par exemple à la puberté."
+              "explanation": "C'est la maturation : le changement provient du programme de l'organisme, par exemple à la puberté."
             }
           ],
           "level": "essentiel",
@@ -688,7 +688,7 @@
           "notionId": "N03"
         }
       ],
-      "qcmRevision": "a39825ddfde33489"
+      "qcmRevision": "fbd39816c83e0551"
     },
     {
       "id": "DEV-A-F03",
@@ -704,8 +704,8 @@
       "context": "",
       "prompt": "",
       "hints": [
-        "La reproduction ne copie pas à l'identique : elle s'accompagne de variations et parfois d'erreurs. Les notes ajoutent que l'environnement compte aussi.",
-        "Pour décider : la diversité produite par la reproduction crée des variantes qui peuvent avoir une utilité dans l'évolution ; un caryotype présente les chromosomes d'un individu, regroupés par paires, et on peut examiner leur nombre. Selon les notes, l'existence d'un risque génétique n'exclut pas des effets de l'environnement sur lesquels on peut travailler."
+        "La reproduction ne copie pas à l'identique : elle s'accompagne de beaucoup d'erreurs génétiques, qui produisent de la variation. L'environnement compte aussi.",
+        "Pour décider : la diversité produite par la reproduction crée des variantes, probablement une « stratégie » utile dans l'évolution ; un caryotype présente les chromosomes d'un individu, regroupés par paires, et on peut examiner leur nombre. L'existence d'un risque génétique n'exclut pas des effets de l'environnement sur lesquels on peut travailler."
       ],
       "sources": [
         {
@@ -723,7 +723,7 @@
             {
               "id": "a",
               "text": "À créer des variantes qui sont utiles à l'évolution.",
-              "explanation": "La reproduction s'accompagne de variations et parfois d'erreurs génétiques. Cette diversité crée des variantes, ce qui peut avoir une utilité dans l'évolution."
+              "explanation": "La reproduction s'accompagne de beaucoup d'erreurs génétiques, qui produisent de la variation. Cette diversité crée des variantes : c'est probablement une « stratégie » utile dans l'évolution."
             },
             {
               "id": "b",
@@ -778,7 +778,7 @@
         },
         {
           "id": "Q3",
-          "prompt": "Un enfant présente un risque génétique. Que retiennent les notes du cours sur le rôle de son environnement ?",
+          "prompt": "Un enfant présente un risque génétique. Que retient le cours sur le rôle de son environnement ?",
           "requiresContext": false,
           "correctId": "c",
           "choices": [
@@ -795,12 +795,12 @@
             {
               "id": "c",
               "text": "Des effets de l'environnement restent possibles et peuvent se travailler.",
-              "explanation": "Selon les notes, l'existence d'un risque génétique n'exclut pas des effets de l'environnement sur lesquels on peut travailler. Le développement articule facteurs biologiques et conditions de vie."
+              "explanation": "L'existence d'un risque génétique n'exclut pas des effets de l'environnement sur lesquels on peut travailler. Le développement articule facteurs biologiques et conditions de vie."
             },
             {
               "id": "d",
               "text": "Son développement est fixé par ses gènes, sans effet de l'environnement.",
-              "explanation": "C'est un déterminisme proche de celui de Galton (cours 03-04). Les notes disent au contraire que l'environnement compte."
+              "explanation": "C'est un déterminisme proche de celui de Galton (cours 03-04). Le cours dit au contraire que l'environnement compte."
             }
           ],
           "level": "essentiel",
@@ -808,7 +808,7 @@
           "notionId": "N53"
         }
       ],
-      "qcmRevision": "81befca6a2620c50"
+      "qcmRevision": "fdbdad3092b62162"
     },
     {
       "id": "DEV-A-F04",
@@ -1007,7 +1007,7 @@
       "prompt": "",
       "hints": [
         "La plasticité désigne la capacité du cerveau à se modifier ; la myélinisation reste sensible à l'expérience.",
-        "Pour décider : selon le cours, la myélinisation semble rester sensible à l'expérience et à l'apprentissage tout au long du développement ; plus largement, selon l'Inserm, la plasticité cérébrale désigne les mécanismes par lesquels le cerveau se modifie en réorganisant ses connexions et ses réseaux de neurones. Des expériences enrichissantes peuvent favoriser la myélinisation ; des conditions défavorables peuvent en perturber le déroulement."
+        "Pour décider : selon le cours, la myélinisation semble rester sensible à l'expérience et à l'apprentissage tout au long du développement ; plus largement, selon l'Inserm, la plasticité cérébrale désigne les mécanismes par lesquels le cerveau se modifie en réorganisant ses connexions et ses réseaux de neurones. Des influences positives favorisent la myélinisation ; des influences négatives peuvent entraîner des anomalies de la myélinisation."
       ],
       "sources": [
         {
@@ -1061,7 +1061,7 @@
             {
               "id": "b",
               "text": "La pratique musicale d'un enfant.",
-              "explanation": "Le cours range la méditation, la pratique musicale et l'enrichissement de l'environnement parmi les influences positives. La myélinisation reste sensible à l'expérience : c'est ce que le support appelle plasticité."
+              "explanation": "Le cours range la méditation, la pratique musicale et l'enrichissement de l'environnement parmi les influences positives. La myélinisation reste sensible à l'expérience : c'est sa plasticité."
             },
             {
               "id": "c",
@@ -1071,7 +1071,7 @@
             {
               "id": "d",
               "text": "Le cœur d'un enfant qui s'accélère à l'écoute d'une sirène, avant même la peur.",
-              "explanation": "C'est l'exemple de l'allostasie par anticipation, une adaptation de l'organisme à une situation."
+              "explanation": "C'est l'exemple de l'allostasie par anticipation, une réponse adaptative de l'organisme à une situation de stress."
             }
           ],
           "level": "essentiel",
@@ -1079,7 +1079,7 @@
           "notionId": "N11"
         }
       ],
-      "qcmRevision": "fc0ce7df2730447c"
+      "qcmRevision": "61a7fa0794684e82"
     },
     {
       "id": "DEV-A-F06",
@@ -1096,7 +1096,7 @@
       "prompt": "",
       "hints": [
         "À l'adolescence, deux régions du cerveau ne mûrissent pas au même rythme.",
-        "Pour décider : le décalage développemental désigne la différence de rythme de maturation entre régions cérébrales : à l'adolescence, la maturation du système limbique est plus avancée que celle du cortex préfrontal, qui se poursuit jusque vers 25-30 ans. Le cortex préfrontal soutient les fonctions exécutives : la régulation, la planification et le contrôle du comportement."
+        "Pour décider : le décalage développemental, ou mismatch développemental, désigne la différence de rythme de maturation entre régions cérébrales : à l'adolescence, le système limbique est mûr dès la puberté, alors que la maturation du cortex préfrontal se poursuit jusque vers 25-30 ans. Le cortex préfrontal soutient les fonctions exécutives : la régulation, la planification et le contrôle du comportement."
       ],
       "sources": [
         {
@@ -1119,7 +1119,7 @@
             {
               "id": "b",
               "text": "La différence de rythme de maturation entre régions du cerveau, limbique et préfrontale.",
-              "explanation": "À l'adolescence, la maturation du système limbique est plus avancée que celle du cortex préfrontal. Le décalage développemental désigne cette différence de rythme : les régions ne deviennent pas matures au même âge."
+              "explanation": "À l'adolescence, le système limbique est mûr dès la puberté, alors que le cortex préfrontal poursuit sa maturation. Le décalage développemental désigne cette différence de rythme : les régions ne deviennent pas matures au même âge."
             },
             {
               "id": "c",
@@ -1155,7 +1155,7 @@
             {
               "id": "c",
               "text": "Les fonctions exécutives : la régulation, la planification et le contrôle de son comportement.",
-              "explanation": "Le cortex préfrontal soutient les fonctions exécutives. Sa maturation se poursuit jusque vers 25-30 ans, alors que le système limbique est déjà avancé à la puberté."
+              "explanation": "Le cortex préfrontal soutient les fonctions exécutives. Sa maturation se poursuit jusque vers 25-30 ans, alors que le système limbique est mûr dès la puberté."
             },
             {
               "id": "d",
@@ -1191,7 +1191,7 @@
             {
               "id": "d",
               "text": "Le système limbique est plus avancé que le cortex préfrontal.",
-              "explanation": "À l'adolescence, la maturation du système limbique est plus avancée que celle du cortex préfrontal, qui soutient la régulation, la planification et le contrôle du comportement et mûrit jusque vers 25-30 ans."
+              "explanation": "À l'adolescence, le système limbique est mûr dès la puberté, alors que le cortex préfrontal, qui soutient la régulation, la planification et le contrôle du comportement, mûrit jusque vers 25-30 ans."
             }
           ],
           "level": "essentiel",
@@ -1199,7 +1199,7 @@
           "notionId": "N12"
         }
       ],
-      "qcmRevision": "0554b815a89cb88c"
+      "qcmRevision": "547c9e26adf55370"
     },
     {
       "id": "DEV-A-F07",
@@ -1216,7 +1216,7 @@
       "prompt": "",
       "hints": [
         "Dans les deux cas, la réponse à un stimulus change avec l'expérience : elle diminue ou elle augmente.",
-        "Pour décider : l'habituation est la diminution progressive d'une réponse face à un stimulus répété ou constant ; elle concerne un signal inoffensif et l'effet reste très spécifique au stimulus. La sensibilisation est l'augmentation ou l'amplification d'une réponse à un stimulus souvent intense ou menaçant ; l'effet peut s'étendre à d'autres stimuli, même neutres. Ce sont deux apprentissages élémentaires : dans l'habituation la libération de neurotransmetteurs diminue, dans la sensibilisation elle augmente."
+        "Pour décider : l'habituation est la diminution progressive d'une réponse face à un stimulus répété ou constant ; elle concerne un signal inoffensif et l'effet reste très spécifique au stimulus. La sensibilisation est l'augmentation ou l'amplification d'une réponse à un stimulus souvent intense ou menaçant ; l'effet peut s'étendre à d'autres stimuli, même neutres. Ce sont deux apprentissages élémentaires : dans l'habituation la libération de neurotransmetteurs diminue (dépression synaptique à court ou à long terme), dans la sensibilisation elle augmente (facilitation synaptique)."
       ],
       "sources": [
         {
@@ -1243,8 +1243,8 @@
             },
             {
               "id": "c",
-              "text": "Une modification du fonctionnement de l'organisme pour s'adapter à une situation.",
-              "explanation": "C'est l'allostasie : l'organisme préserve sa stabilité en changeant son fonctionnement, parfois par anticipation."
+              "text": "Une modification du fonctionnement de l'organisme pour s'adapter à une situation de stress.",
+              "explanation": "C'est l'allostasie : l'organisme atteint la stabilité par le changement, face au stress, parfois par anticipation."
             },
             {
               "id": "d",
@@ -1394,7 +1394,7 @@
             {
               "id": "b",
               "text": "Une libération de neurotransmetteurs qui diminue à la synapse.",
-              "explanation": "C'est le mécanisme synaptique de l'habituation. Une diminution de la libération de neurotransmetteurs réduit la réponse ; une augmentation la facilite, comme dans la sensibilisation."
+              "explanation": "C'est le mécanisme synaptique de l'habituation, la dépression synaptique : la libération de neurotransmetteurs baisse et la réponse diminue. Dans la sensibilisation, la facilitation synaptique l'augmente et renforce la transmission."
             },
             {
               "id": "c",
@@ -1443,7 +1443,7 @@
           "notionId": "N14"
         }
       ],
-      "qcmRevision": "7352230336890acb"
+      "qcmRevision": "f3eafdef17e715d0"
     },
     {
       "id": "DEV-A-F08",
@@ -1517,8 +1517,8 @@
       "context": "",
       "prompt": "",
       "hints": [
-        "Trois idées différentes : garder l'équilibre, s'adapter à une situation, subir le coût d'adaptations répétées.",
-        "Pour décider : l'homéostasie est la capacité de l'organisme à maintenir ses constantes internes à un niveau stable malgré les variations de l'environnement (température, pH sanguin, glycémie). L'allostasie est le processus par lequel l'organisme préserve sa stabilité en modifiant son fonctionnement ou ses comportements pour s'adapter à une situation, parfois par anticipation. La charge allostatique est le coût cumulé pour l'organisme lorsque ces adaptations sont trop intenses ou trop prolongées."
+        "Trois idées différentes : garder l'équilibre, s'adapter au changement, subir le coût d'adaptations répétées.",
+        "Pour décider : l'homéostasie est la capacité de l'organisme à maintenir ses constantes internes à un niveau stable malgré les variations de l'environnement (température, pH sanguin, glycémie). L'allostasie est le processus par lequel l'organisme atteint la stabilité par le changement : il modifie ses paramètres physiologiques ou ses comportements pour répondre de manière adaptative à des situations de stress, parfois par anticipation. La charge allostatique est le coût cumulé pour l'organisme lorsque ces adaptations sont trop intenses ou trop prolongées."
       ],
       "sources": [
         {
@@ -1572,12 +1572,12 @@
             {
               "id": "b",
               "text": "La capacité de maintenir ses constantes internes à un niveau stable malgré les variations du milieu.",
-              "explanation": "L'homéostasie est le maintien des constantes internes à un niveau stable malgré les variations de l'environnement. La définition demandée ici met au premier plan l'adaptation du fonctionnement à une situation : l'allostasie."
+              "explanation": "L'homéostasie est le maintien des constantes internes à un niveau stable malgré les variations de l'environnement. La définition demandée ici met au premier plan l'adaptation au changement, face au stress : l'allostasie."
             },
             {
               "id": "c",
-              "text": "Le processus par lequel l'organisme reste stable en modifiant son fonctionnement ou ses comportements pour s'adapter.",
-              "explanation": "L'adaptation de l'allostasie peut être physiologique ou comportementale, et elle peut intervenir par anticipation. Elle aide à faire face à une situation."
+              "text": "Le processus par lequel l'organisme atteint la stabilité par le changement, en s'adaptant à des situations de stress.",
+              "explanation": "L'adaptation de l'allostasie peut être physiologique ou comportementale, et elle peut intervenir par anticipation. Là où l'homéostasie maintient un équilibre constant, elle s'adapte au changement face au stress."
             },
             {
               "id": "d",
@@ -1598,7 +1598,7 @@
             {
               "id": "a",
               "text": "L'homéostasie",
-              "explanation": "L'homéostasie maintient les constantes internes à un niveau stable. Manger quand on a faim puis retrouver la satiété est l'exemple du cours. Rappel : l'homéostasie maintient des constantes, l'allostasie s'adapte à une situation, la charge allostatique est le coût cumulé de ces adaptations."
+              "explanation": "L'homéostasie maintient les constantes internes à un niveau stable. Manger quand on a faim puis retrouver la satiété est l'exemple du cours. Rappel : l'homéostasie maintient des constantes, l'allostasie s'adapte au changement, la charge allostatique est le coût cumulé de ces adaptations."
             },
             {
               "id": "b",
@@ -1608,7 +1608,7 @@
             {
               "id": "c",
               "text": "L'allostasie",
-              "explanation": "L'allostasie modifie le fonctionnement pour s'adapter à une situation, comme l'alerte devant une sirène. Ici, l'équilibre de base est simplement rétabli."
+              "explanation": "L'allostasie modifie le fonctionnement pour répondre à une situation de stress, comme l'alerte devant une sirène. Ici, l'équilibre de base est simplement rétabli."
             },
             {
               "id": "d",
@@ -1644,7 +1644,7 @@
             {
               "id": "d",
               "text": "L'allostasie",
-              "explanation": "L'allostasie préserve la stabilité en modifiant le fonctionnement pour s'adapter. Elle peut intervenir par anticipation : ici, le cœur s'accélère avant la peur. Rappel : trois notions voisines, l'homéostasie, l'allostasie et la charge allostatique, décrivent l'équilibre, l'adaptation et son coût."
+              "explanation": "L'allostasie atteint la stabilité par le changement : le fonctionnement se modifie pour répondre à la situation. Elle peut intervenir par anticipation : ici, le cœur s'accélère avant la peur. Rappel : trois notions voisines, l'homéostasie, l'allostasie et la charge allostatique, décrivent l'équilibre, l'adaptation et son coût."
             }
           ],
           "level": "essentiel",
@@ -1706,7 +1706,7 @@
             {
               "id": "d",
               "text": "L'allostasie",
-              "explanation": "L'organisme s'adapte par anticipation à une situation attendue : c'est l'allostasie, comme pour la sirène. Rappel : l'homéostasie maintient les constantes, l'allostasie ajuste le fonctionnement à une situation, parfois par anticipation."
+              "explanation": "L'organisme s'adapte par anticipation à une situation attendue : c'est l'allostasie, comme pour la sirène. Rappel : l'homéostasie maintient les constantes, l'allostasie atteint la stabilité par le changement face au stress, parfois par anticipation."
             }
           ],
           "level": "essentiel",
@@ -1737,7 +1737,7 @@
             {
               "id": "d",
               "text": "L'allostasie",
-              "explanation": "L'allostasie modifie le fonctionnement pour s'adapter à une situation, parfois par anticipation. Ici, le cas décrit le retour à un équilibre."
+              "explanation": "L'allostasie modifie le fonctionnement pour répondre à une situation de stress, parfois par anticipation. Ici, le cas décrit le retour à un équilibre."
             }
           ],
           "level": "essentiel",
@@ -1776,7 +1776,7 @@
           "notionId": "N16"
         }
       ],
-      "qcmRevision": "7373a75d8fcca13b"
+      "qcmRevision": "9b9804e4ee6fa7c3"
     },
     {
       "id": "DEV-A-F10",
@@ -1825,8 +1825,8 @@
             },
             {
               "id": "d",
-              "text": "La production de variations génétiques, parfois d'erreurs, lors de la reproduction.",
-              "explanation": "C'est la diversité génétique produite par la reproduction, qui peut servir dans l'évolution."
+              "text": "La production de variations génétiques, avec beaucoup d'erreurs, lors de la reproduction.",
+              "explanation": "C'est la diversité génétique produite par la reproduction, qui est probablement une « stratégie » utile dans l'évolution."
             }
           ],
           "level": "essentiel",
@@ -1865,7 +1865,7 @@
           "notionId": "N17"
         }
       ],
-      "qcmRevision": "f96274affb102e89"
+      "qcmRevision": "6bb9facf6247c12a"
     },
     {
       "id": "DEV-A-F11",
@@ -2095,7 +2095,7 @@
       "prompt": "",
       "hints": [
         "L'approche comportementaliste s'appuie sur ce qui s'observe ; le conditionnement opérant relie un comportement à ses conséquences.",
-        "Pour décider : selon l'Office québécois de la langue française, le behaviourisme est une théorie qui fonde l'étude scientifique du fonctionnement psychologique sur les seules données observables du comportement. Le conditionnement opérant est un apprentissage dans lequel les conséquences d'un comportement modifient la probabilité de sa répétition : les renforcements l'augmentent, les punitions la diminuent, par ajout ou retrait d'un élément. L'analyse fonctionnelle examine les antécédents (ce qui précède), le comportement observable et les conséquences (ce qui suit)."
+        "Pour décider : selon l'Office québécois de la langue française, le behaviourisme est une théorie qui fonde l'étude scientifique du fonctionnement psychologique sur les seules données observables du comportement. Le conditionnement opérant, aussi appelé instrumental, est un apprentissage qui explique les comportements volontaires : les conséquences d'un comportement (récompense, punition) modifient la probabilité de sa répétition ; les renforcements l'augmentent, les punitions la diminuent, par ajout ou retrait d'un élément. L'analyse fonctionnelle examine les antécédents (ce qui précède), le comportement observable et les conséquences (ce qui suit)."
       ],
       "sources": [
         {
@@ -2144,7 +2144,7 @@
             {
               "id": "a",
               "text": "Un apprentissage où les conséquences d'un comportement modifient la probabilité de sa répétition.",
-              "explanation": "Le conditionnement opérant, aussi appelé instrumental, relie ce qui suit un comportement à sa répétition : les renforcements l'augmentent et les punitions la diminuent."
+              "explanation": "Le conditionnement opérant, aussi appelé instrumental, explique les comportements volontaires : on apprend par la récompense et la punition, car ce qui suit un comportement en change la répétition ; les renforcements l'augmentent et les punitions la diminuent."
             },
             {
               "id": "b",
@@ -2291,7 +2291,7 @@
           "notionId": "N21"
         }
       ],
-      "qcmRevision": "6ba3a5b90f626cc9"
+      "qcmRevision": "de0e1f54039ece47"
     },
     {
       "id": "DEV-A-F13",
@@ -2613,7 +2613,7 @@
       "context": "",
       "prompt": "",
       "hints": [
-        "Faire diminuer un comportement inapproprié ne suffit pas à construire le comportement souhaité.",
+        "La punition peut réduire un comportement inapproprié, mais elle n'augmente pas le comportement approprié.",
         "Pour décider : le renforcement concurrent soutient une activité qui entre en concurrence avec le comportement problématique. Les quatre conséquences se distinguent par ce qui est ajouté ou retiré et par l'effet sur le comportement : renforcement positif, renforcement négatif, punition positive, punition négative."
       ],
       "sources": [
@@ -2637,7 +2637,7 @@
             {
               "id": "b",
               "text": "Le soutien d'une activité qui entre en concurrence avec le comportement problématique.",
-              "explanation": "Diminuer un comportement inapproprié ne construit pas à lui seul le comportement souhaité. Le renforcement concurrent soutient une activité qui prend la place du geste que l'on cherche à réduire, par exemple un atelier d'occupation."
+              "explanation": "La punition peut réduire un comportement inapproprié, mais elle n'augmente pas le comportement approprié. Le renforcement concurrent soutient une activité qui entre en concurrence avec le comportement problématique : par exemple, chez des personnes qui se mutilent, un atelier d'occupation fait concurrence à ce geste."
             },
             {
               "id": "c",
@@ -2686,7 +2686,7 @@
           "notionId": "N23"
         }
       ],
-      "qcmRevision": "ea43a6b581317d58"
+      "qcmRevision": "17ae71c146d44eab"
     },
     {
       "id": "DEV-A-F15",
@@ -3102,7 +3102,7 @@
       "prompt": "",
       "hints": [
         "Chaque auteur pose le problème de la mesure d'une façon différente : le crâne, l'hérédité, les processus supérieurs de la pensée.",
-        "Pour décider : Gall (phrénologie) lit les facultés mentales dans les bosses du crâne ; Galton étend l'hérédité des caractéristiques physiques aux caractéristiques morales et sociales (déterminisme) ; Binet et Simon mesurent mémoire, compréhension et raisonnement, avec un test à validité prédictive des performances scolaires. Spearman, Thurstone et Sternberg sont d'autres auteurs du cours."
+        "Pour décider : Gall (phrénologie) lit les facultés mentales dans les bosses du crâne ; Galton étend l'hérédité des caractéristiques physiques aux caractéristiques morales et sociales (déterminisme) ; Binet et Simon, après l'échec de la phrénologie, mesurent mémoire, compréhension et raisonnement, avec le premier test d'intelligence à validité prédictive des performances scolaires. Spearman, Thurstone et Sternberg sont d'autres auteurs du cours."
       ],
       "sources": [
         {
@@ -3228,7 +3228,7 @@
             {
               "id": "d",
               "text": "Ses résultats renseignent sur une performance ultérieure, ici scolaire.",
-              "explanation": "Le test cherche notamment à prévoir les performances scolaires et à repérer les enfants pouvant suivre l'école régulière. La validité prédictive relie ainsi la mesure à un usage concret."
+              "explanation": "Le test cherche notamment à prévoir les performances scolaires et à repérer les enfants pouvant suivre l'école régulière ; c'est le premier test d'intelligence ayant une validité prédictive. La validité prédictive relie ainsi la mesure à un usage concret."
             }
           ],
           "level": "essentiel",
@@ -3236,7 +3236,7 @@
           "notionId": "N27"
         }
       ],
-      "qcmRevision": "dbde845e70e1df0d"
+      "qcmRevision": "0e70aece32e78c01"
     },
     {
       "id": "DEV-A-F17",
@@ -3276,7 +3276,7 @@
             {
               "id": "b",
               "text": "Un score qui situe des performances à des tests par rapport à une population de référence.",
-              "explanation": "C'est le QI standard, issu d'une standardisation sur de nombreux individus."
+              "explanation": "C'est le QI standard, issu d'une standardisation des scores d'un grand nombre de personnes."
             },
             {
               "id": "c",
@@ -3369,7 +3369,7 @@
             {
               "id": "b",
               "text": "Un score qui situe des performances à des tests par rapport à une population de référence.",
-              "explanation": "Le QI standard découle d'une standardisation sur de nombreux individus. La logique est de comparer des résultats, puis de les présenter sur une échelle commune, ce qui le distingue du quotient historique d'âges."
+              "explanation": "Le QI standard découle d'une standardisation : on fait passer les tests à un grand nombre de personnes, puis on standardise les scores. La logique est de comparer des résultats, puis de les présenter sur une échelle commune, ce qui le distingue du quotient historique d'âges."
             },
             {
               "id": "c",
@@ -3387,7 +3387,7 @@
           "notionId": "N29"
         }
       ],
-      "qcmRevision": "24a732d201ff6cfd"
+      "qcmRevision": "fbc07ea3e3369db9"
     },
     {
       "id": "DEV-A-F18",
@@ -3404,7 +3404,7 @@
       "prompt": "",
       "hints": [
         "Trois façons de regrouper ce que l'on mesure : une capacité générale, plusieurs capacités distinctes, une organisation hiérarchique.",
-        "Pour décider : Spearman privilégie un facteur g, un facteur général d'intelligence qui rassemble ce que les performances intellectuelles ont en commun ; Thurstone distingue sept habiletés mentales primaires. Le modèle Cattell–Horn–Carroll (CHC) organise les capacités en trois niveaux (facteur général, grandes capacités, capacités spécifiques). Les grandes capacités sont regroupées en connaissances acquises, capacités générales indépendantes du domaine (raisonnement fluide, mémoire à court terme, stockage et récupération en mémoire à long terme), capacités sensorielles et motrices, vitesse générale."
+        "Pour décider : Spearman privilégie un facteur g, un facteur général d'intelligence qui rassemble ce que les performances intellectuelles ont en commun ; Thurstone distingue sept habiletés mentales primaires. La théorie actuelle est le modèle Cattell–Horn–Carroll (CHC) : il organise les capacités en trois niveaux (facteur général, grandes capacités, capacités spécifiques). Les grandes capacités sont regroupées en connaissances acquises, capacités générales indépendantes du domaine (raisonnement fluide, mémoire à court terme, stockage et récupération en mémoire à long terme), capacités sensorielles et motrices, vitesse générale."
       ],
       "sources": [
         {
@@ -3830,7 +3830,7 @@
       "prompt": "",
       "hints": [
         "Le QI n'est que la partie visible : d'autres dimensions influencent la réussite.",
-        "Pour décider : l'iceberg distingue le QI visible d'autres compétences (motivation, gestion du stress, autorégulation, créativité, compétences sociales, intelligence émotionnelle, habiletés pratiques). Le concept de soi est la façon dont on se représente ; l'estime de soi, la valeur que l'on s'accorde ; l'efficacité perçue, la confiance dans sa capacité à réussir une tâche précise."
+        "Pour décider : l'iceberg distingue le QI visible d'autres compétences (motivation, concept de soi, estime de soi, efficacité perçue, gestion du stress, autorégulation, créativité, sagesse, intelligence émotionnelle, personnalité, compétences sociales, théorie de l'esprit, empathie, état d'esprit ou mindset, habiletés pratiques, intelligences multiples autres que langagière et logico-mathématique), qui restent sous la surface et ne sont pas forcément mesurées. Le concept de soi est la façon dont on se représente ; l'estime de soi, la valeur que l'on s'accorde ; l'efficacité perçue, la confiance dans sa capacité à réussir une tâche précise."
       ],
       "sources": [
         {
@@ -3858,7 +3858,7 @@
             {
               "id": "c",
               "text": "Le QI visible et d'autres compétences moins visibles.",
-              "explanation": "Motivation, gestion du stress, autorégulation, créativité, compétences sociales ou habiletés pratiques peuvent influencer la réussite et ce que l'on parvient à montrer dans une épreuve."
+              "explanation": "Motivation, gestion du stress, autorégulation, créativité, compétences sociales, habiletés pratiques et bien d'autres compétences ou formes d'intelligence restent sous la surface et influencent la réussite et ce qu'un élève est capable de montrer durant un test de QI."
             },
             {
               "id": "d",
@@ -3964,7 +3964,7 @@
           "notionId": "N37"
         }
       ],
-      "qcmRevision": "84b78ba1f21e9468"
+      "qcmRevision": "33f6ecbbe90f10ee"
     },
     {
       "id": "DEV-A-F21",
@@ -3981,7 +3981,7 @@
       "prompt": "",
       "hints": [
         "La théorie de Sternberg regarde trois rapports à l'activité intelligente : les processus, la nouveauté, l'environnement.",
-        "Pour décider : la théorie triarchique distingue les dimensions analytique, créative et pratique de l'intelligence, avec trois sous-théories. Componentielle (analytique) : métacomposantes (conduite du traitement), performance (exécution) et acquisition de connaissances. Expérientielle (créative) : faire face à ce qui est nouveau et rendre plus automatiques des traitements devenus familiers. Contextuelle (pratique) : s'ajuster à un milieu (adaptation), choisir un milieu (sélection) ou transformer celui dans lequel on agit (modification)."
+        "Pour décider : la théorie triarchique distingue les dimensions analytique, créative et pratique de l'intelligence, avec trois sous-théories. Componentielle (analytique) : métacomposantes (conduite du traitement), performance (exécution) et acquisition de connaissances. Expérientielle (créative) : faire face à ce qui est nouveau et rendre plus automatiques des traitements devenus familiers ; l'automatisation joue un rôle fondamental dans l'acquisition de connaissances, et la répétition la permet. Contextuelle (pratique) : s'ajuster à un milieu (adaptation), choisir un milieu (sélection) ou transformer celui dans lequel on agit (modification)."
       ],
       "sources": [
         {
@@ -4045,7 +4045,7 @@
             {
               "id": "d",
               "text": "La dimension créative : l'automatisation d'un traitement devenu familier",
-              "explanation": "L'intelligence créative (sous-théorie expérientielle) concerne la nouveauté et l'automatisation de traitements devenus familiers. La répétition contribue à cette automatisation. Rappel : la théorie triarchique de Sternberg distingue les dimensions analytique, créative et pratique de l'intelligence."
+              "explanation": "L'intelligence créative (sous-théorie expérientielle) concerne la nouveauté et l'automatisation de traitements devenus familiers. La répétition permet cette automatisation, qui joue un rôle fondamental dans l'acquisition de connaissances. Rappel : la théorie triarchique de Sternberg distingue les dimensions analytique, créative et pratique de l'intelligence."
             }
           ],
           "level": "essentiel",
@@ -4208,7 +4208,7 @@
           "notionId": "N39"
         }
       ],
-      "qcmRevision": "2d45374df4113d78"
+      "qcmRevision": "f61e09e0da730671"
     },
     {
       "id": "DEV-A-F22",
@@ -4225,7 +4225,7 @@
       "prompt": "",
       "hints": [
         "Un symptôme se voit dans les apprentissages ; les fonctions cognitives sont ce qui sert à connaître.",
-        "Pour décider : les fonctions cognitives servent à percevoir et reconnaître, agir, communiquer, se souvenir, planifier. Un trouble des apprentissages est un symptôme observé dans les apprentissages ; le diagnostic neuropsychologique porte sur les fonctions. Les praxies concernent l'organisation des gestes ; les gnosies, la reconnaissance. L'attention et la mémoire sont les piliers des constructions cognitives intermédiaires."
+        "Pour décider : les fonctions cognitives servent à percevoir et reconnaître, agir, communiquer, se souvenir, planifier. Les troubles spécifiques des apprentissages sont des symptômes observés dans les apprentissages ; le diagnostic neuropsychologique porte sur les fonctions. Les praxies concernent l'organisation des gestes ; les gnosies, la reconnaissance. L'attention et la mémoire sont les piliers des constructions cognitives intermédiaires."
       ],
       "sources": [
         {
@@ -4279,7 +4279,7 @@
             {
               "id": "b",
               "text": "Un symptôme observé dans les apprentissages",
-              "explanation": "Un trouble des apprentissages est un symptôme : on l'observe dans les apprentissages, alors que le diagnostic neuropsychologique porte sur les fonctions."
+              "explanation": "Les troubles spécifiques des apprentissages sont des symptômes : on les observe dans les apprentissages, alors que le diagnostic neuropsychologique porte sur les fonctions."
             },
             {
               "id": "c",
@@ -4390,7 +4390,7 @@
           "notionId": "N40"
         }
       ],
-      "qcmRevision": "5f9720e38c3ab3e5"
+      "qcmRevision": "cd49056727afb9aa"
     },
     {
       "id": "DEV-A-F23",
@@ -4407,7 +4407,7 @@
       "prompt": "",
       "hints": [
         "Deux conceptions s'opposent : une intelligence qui peut progresser par l'éducation, une intelligence fixée à la naissance.",
-        "Pour décider : l'éducabilité cognitive de Binet est la possibilité de développer l'intelligence par l'éducation, y compris chez des enfants présentant une déficience intellectuelle ; l'orthopédie mentale vise à apprendre à apprendre. Galton affirme que l'éducation ne peut guère changer les capacités reçues à la naissance."
+        "Pour décider : l'éducabilité cognitive de Binet est la possibilité de développer l'intelligence par l'éducation, que Binet affirme très fortement, y compris chez des enfants présentant une déficience intellectuelle ; l'orthopédie mentale vise à apprendre à apprendre. Galton affirme que l'éducation ne peut guère changer les capacités reçues à la naissance."
       ],
       "sources": [
         {
@@ -4425,7 +4425,7 @@
             {
               "id": "a",
               "text": "La possibilité de développer l'intelligence par l'éducation, même en cas de déficience intellectuelle.",
-              "explanation": "Binet l'affirme aussi pour les enfants présentant une déficience intellectuelle. Penser l'intelligence comme une quantité fixe conduit à se désintéresser de ceux qui ont le plus de difficultés ; l'éducabilité engage à chercher comment les faire progresser."
+              "explanation": "Binet l'affirme très fortement, y compris pour les enfants présentant une déficience intellectuelle. Il proteste contre l'idée que l'intelligence est une quantité fixe, impossible à augmenter : ce pessimisme conduit les maîtres à se désintéresser des élèves qui manquent d'intelligence. L'éducabilité engage à chercher comment faire progresser les enfants."
             },
             {
               "id": "b",
@@ -4528,7 +4528,7 @@
             {
               "id": "c",
               "text": "L'éducabilité cognitive de Binet",
-              "explanation": "Binet affirme la possibilité de développer l'intelligence par l'éducation, y compris pour les enfants présentant une déficience intellectuelle."
+              "explanation": "Binet affirme très fortement la possibilité de développer l'intelligence par l'éducation, y compris pour les enfants présentant une déficience intellectuelle."
             },
             {
               "id": "d",
@@ -4541,7 +4541,7 @@
           "notionId": "N41"
         }
       ],
-      "qcmRevision": "a1c8e9ef8f044d2c"
+      "qcmRevision": "4257c3de81a4d1f4"
     },
     {
       "id": "DEV-A-F24",
@@ -4558,7 +4558,7 @@
       "prompt": "",
       "hints": [
         "La démarche collective est une boucle : on observe, on analyse, on formule une hypothèse, on fixe un objectif, on agit, puis on réévalue.",
-        "Pour décider : évaluation = décrire la situation à partir d'éléments observables ; analyse = examiner ces éléments et leurs relations avec les personnes concernées ; hypothèse de compréhension = explication possible de la difficulté, qui orientera l'action ; objectifs = préciser le changement recherché ; mise en œuvre = réaliser l'action choisie, puis revenir à l'évaluation pour examiner son effet. Une attente de stabilité (« cela ne changera pas ») peut entretenir l'inaction : le cours la rapproche de l'impuissance apprise."
+        "Pour décider : évaluation = décrire la situation à partir d'éléments observables ; analyse = examiner ces éléments et leurs relations avec les personnes concernées ; hypothèse de compréhension = explication possible de la difficulté, qui orientera l'action ; objectifs = préciser le changement recherché ; mise en œuvre = réaliser l'action choisie, puis revenir à l'évaluation pour examiner son effet. Une attente de stabilité (« cela ne changera pas ») forme une boucle : on ne fait rien pour que cela change, et la croyance initiale se confirme. C'est un biais cognitif qui se renforce de manière automatique, et le mécanisme de l'impuissance apprise."
       ],
       "sources": [
         {
@@ -4724,7 +4724,7 @@
         },
         {
           "id": "Q6",
-          "prompt": "Un enseignant se dit « cela ne changera pas », n'essaie rien et constate que rien ne change. Avec quelle notion le cours rapproche-t-il cette boucle ?",
+          "prompt": "Un enseignant se dit « cela ne changera pas », n'essaie rien et constate que rien ne change. Quelle notion du cours décrit cette boucle ?",
           "requiresContext": false,
           "correctId": "d",
           "choices": [
@@ -4746,7 +4746,7 @@
             {
               "id": "d",
               "text": "L'impuissance apprise",
-              "explanation": "Une attente de stabilité entretient l'inaction : on ne tente rien, l'absence de changement confirme ensuite la croyance. Le cours rapproche cette boucle de l'impuissance apprise."
+              "explanation": "Une attente de stabilité forme une boucle : on ne tente rien, rien ne change, et la croyance initiale se confirme et se renforce de manière automatique. C'est un biais cognitif, et c'est le mécanisme de l'impuissance apprise."
             }
           ],
           "level": "approfondissement",
@@ -4785,7 +4785,7 @@
           "notionId": "N42"
         }
       ],
-      "qcmRevision": "6636a672b89f9805"
+      "qcmRevision": "c19b2c16d7f49fe7"
     },
     {
       "id": "DEV-A-F25",
@@ -4802,7 +4802,7 @@
       "prompt": "",
       "hints": [
         "Piaget décrit des transformations de l'action et du raisonnement au fil de quatre périodes.",
-        "Pour décider : un schème est l'organisation d'une action qui se retrouve dans des situations semblables. La permanence de l'objet (l'objet continue d'exister même lorsqu'il n'est plus perçu) apparaît à la période sensorimotrice. À la période préopératoire, l'animisme attribue une vie ou des intentions aux choses, l'égocentrisme est la difficulté de quitter son propre point de vue et la conservation (maintien d'une quantité malgré une transformation perceptive) n'est pas encore assurée. La classification regroupe selon un critère, la sériation range selon un ordre. Périodes : sensorimotrice, préopératoire, opérations concrètes, opérations formelles."
+        "Pour décider : un schème est la structure ou l'organisation des actions, qui se transfère ou se généralise lorsque l'action est répétée dans des circonstances semblables ou analogues ; l'adaptation repose sur l'assimilation, l'accommodation et l'équilibration. La permanence de l'objet (l'objet continue d'exister même lorsqu'il n'est plus perçu) apparaît à la période sensorimotrice. À la période préopératoire, l'animisme attribue une vie ou des intentions aux choses, l'égocentrisme est la difficulté de quitter son propre point de vue et la conservation (maintien d'une quantité malgré une transformation perceptive) n'est pas encore assurée. La classification regroupe selon un critère (sa forme hiérarchique n'est pas encore maîtrisée à la période préopératoire), la sériation range selon un ordre. Périodes : sensorimotrice, préopératoire, opérations concrètes, opérations formelles."
       ],
       "sources": [
         {
@@ -4829,7 +4829,7 @@
             },
             {
               "id": "c",
-              "text": "L'organisation d'une action qui se retrouve dans des situations semblables.",
+              "text": "L'organisation des actions, qui se transfère à des circonstances analogues.",
               "explanation": "Répéter un geste ne revient pas seulement à le reproduire exactement : c'est transférer une manière d'agir. Le schème fait partie de l'arrière-plan de l'approche de Piaget."
             },
             {
@@ -4844,14 +4844,14 @@
         },
         {
           "id": "Q2",
-          "prompt": "Après avoir déplacé des jetons, un enfant dit qu'il n'y en a plus « la même chose » parce qu'une rangée paraît plus grande. Que ne maîtrise-t-il pas encore ?",
+          "prompt": "Après avoir déplacé des jetons, un enfant dit qu'il n'y en a plus « la même chose » parce qu'une rangée paraît plus grande. Quelle notion ce comportement montre-t-il qu'il ne maîtrise pas encore ?",
           "requiresContext": false,
           "correctId": "b",
           "choices": [
             {
               "id": "a",
               "text": "La classification",
-              "explanation": "Elle consiste à regrouper selon un critère. Ici, le jugement porte sur la quantité de jetons."
+              "explanation": "La classification consiste à regrouper selon un critère. Chez Piaget, sa forme hiérarchique n'est pas encore maîtrisée au stade préopératoire. Ici, le comportement décrit porte sur la quantité de jetons, pas sur un regroupement."
             },
             {
               "id": "b",
@@ -4905,7 +4905,7 @@
           "notionId": "N44"
         }
       ],
-      "qcmRevision": "6a0207abecb22ee5"
+      "qcmRevision": "fba2adae0eefbeba"
     },
     {
       "id": "DEV-A-F26",
@@ -4975,8 +4975,8 @@
             },
             {
               "id": "b",
-              "text": "L'organisation d'une action qui se retrouve dans des situations semblables.",
-              "explanation": "C'est le schème de Piaget : l'organisation d'une action qui se retrouve dans des situations semblables. L'échafaudage est un appui apporté par une autre personne."
+              "text": "L'organisation des actions, qui se transfère à des circonstances analogues.",
+              "explanation": "C'est le schème de Piaget : l'organisation des actions, qui se transfère à des circonstances analogues. L'échafaudage est un appui apporté par une autre personne."
             },
             {
               "id": "c",
@@ -4994,7 +4994,7 @@
           "notionId": "N45"
         }
       ],
-      "qcmRevision": "cbdae5b4ecc6f0b2"
+      "qcmRevision": "1986900d31930578"
     },
     {
       "id": "DEV-A-F27",
@@ -5867,7 +5867,7 @@
       "prompt": "",
       "hints": [
         "La neurodiversité change le regard : on s'interroge sur les conditions dans lesquelles des fonctionnements différents trouvent leur place.",
-        "Pour décider : la neurodiversité envisage les différences de fonctionnement neurologique comme une dimension de la diversité humaine ; le cours pose aussi l'exigence d'assurer à chaque enfant un environnement protecteur et sécurisant, quelle que soit l'ampleur du défi."
+        "Pour décider : la neurodiversité envisage les différences de fonctionnement neurologique comme une dimension de la diversité humaine ; le terme est attribué à Judith Singer, qui l'aurait employé la première ; le cours pose aussi l'exigence d'assurer à chaque enfant un environnement protecteur et sécurisant, quelle que soit l'ampleur du défi."
       ],
       "sources": [
         {
@@ -5895,7 +5895,7 @@
             {
               "id": "c",
               "text": "De voir les différences neurologiques comme une dimension de la diversité humaine.",
-              "explanation": "Au lieu de ne voir qu'un écart à une norme, on s'interroge aussi sur les conditions dans lesquelles des fonctionnements différents peuvent trouver leur place. L'autisme et le TDAH sont des exemples évoqués."
+              "explanation": "Au lieu de ne voir qu'un écart à une norme, on s'interroge aussi sur les conditions dans lesquelles des fonctionnements différents peuvent trouver leur place. Dans cette perspective, l'autisme est envisagé comme une variation normale plutôt que comme un désordre ; certains étendent ce cadre au TDAH."
             },
             {
               "id": "d",
@@ -5939,7 +5939,7 @@
           "notionId": "N52"
         }
       ],
-      "qcmRevision": "62a2223bad2fb0e9"
+      "qcmRevision": "e4e9960554de507d"
     },
     {
       "id": "DEV-B-F01",
@@ -10736,5 +10736,5 @@
       "qcmRevision": "b1e7ac31240f94ad"
     }
   ],
-  "bankRevision": "80791b758f0690c7"
+  "bankRevision": "f94a806d5a215bec"
 }

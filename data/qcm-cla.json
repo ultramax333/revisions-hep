@@ -4936,7 +4936,7 @@
       "prompt": "",
       "hints": [
         "Le temps vécu par l'enfant et le temps mesuré par des repères communs ne sont pas la même chose.",
-        "Temps subjectif (Droit-Volet, 2001) = temps personnel de l'expérience vécue, concret, affectif et intuitif. Temps conventionnel = temps mesuré, objectif et codifié, organisé par des repères communs comme les heures et le calendrier. L'enfant construit ces repères progressivement : situer un événement grâce à un autre, utiliser les jours et les heures, coordonner des systèmes conventionnels (vers 8–9 ans), organiser en tableau (vers 10–11 ans) ; coordonner les nombres et les unités demande aussi un apprentissage (Tartas, 2017). Alloué et engagement sont des composantes du temps scolaire, une autre notion."
+        "Temps subjectif (Droit-Volet, 2001) = temps personnel de l'expérience vécue, concret, affectif et intuitif. Temps conventionnel = temps mesuré, objectif, codifié et notionnel : il est pensé à l'aide de repères communs comme les heures et le calendrier. Le temps de l'enfant est d'abord affectif et intuitif : jusqu'à 4–5 ans, il vit le temps mais ne le pense pas ; vers 8 ans, il s'approche d'une notion du temps conventionnel, réellement intégré vers 11 ans environ. Tartas (2017) précise des étapes : situer un événement grâce à un autre, utiliser les jours et les heures, coordonner des systèmes conventionnels (vers 8–9 ans), organiser en tableau (vers 10–11 ans) ; coordonner les nombres et les unités demande aussi un apprentissage. Les notes du cours ajoutent qu'une difficulté en mathématiques entraîne aussi une difficulté dans le repérage du temps. Alloué et engagement sont des composantes du temps scolaire, une autre notion."
       ],
       "sources": [
         {
@@ -4968,8 +4968,8 @@
             },
             {
               "id": "d",
-              "text": "Un temps mesuré, objectif et codifié, organisé par des repères communs : heures et calendrier.",
-              "explanation": "Le temps conventionnel aide à situer les événements indépendamment de l'impression du moment. L'enfant le construit progressivement à partir de son quotidien (Droit-Volet, 2001)."
+              "text": "Un temps mesuré, objectif, codifié et notionnel, pensé à l'aide de repères communs : heures et calendrier.",
+              "explanation": "Le temps conventionnel est notionnel : il est pensé à l'aide de repères communs, contrairement au temps subjectif vécu. L'enfant construit progressivement ces repères à partir de son quotidien ; ils l'aident à situer les événements indépendamment de l'impression du moment."
             }
           ],
           "level": "essentiel",
@@ -5039,7 +5039,7 @@
           "notionId": "N41"
         }
       ],
-      "qcmRevision": "e5a9e3a8016aa5dc"
+      "qcmRevision": "7f5483a8f0acdb0c"
     },
     {
       "id": "CLA-C-F37",
@@ -5447,7 +5447,7 @@
       "prompt": "",
       "hints": [
         "Une transition est un moment de passage dans la journée scolaire ; elle se distingue de la routine, du rituel et de la pause active.",
-        "Transition = moment de passage entre deux activités ou deux temps de la journée scolaire, flou et moins structuré. Routine = suite organisée de consignes suivie de façon stable et cohérente. Rituel = suite d'étapes dont les actions portent une signification particulière. Pause active = brève interruption de l'enseignement pendant laquelle les élèves bougent. Une routine peut faciliter une transition. Une transition gagne à être courte, flexible et facile à discerner, avec des signaux de départ et d'arrêt non équivoques et une durée prévue pour le passage."
+        "Transition = moment de passage entre deux activités ou deux temps de la journée scolaire, flou et moins structuré. Routine = suite organisée de consignes suivie de façon stable et cohérente. Rituel = suite d'étapes dont les actions portent une signification particulière. Pause active = brève interruption de l'enseignement pendant laquelle les élèves bougent. Une routine peut faciliter une transition. Pour Gauthier et al. (2003), une transition gagne à être courte, flexible et facile à discerner, avec des signaux de départ et d'arrêt non équivoques et une durée prévue pour le passage."
       ],
       "sources": [
         {
@@ -5506,7 +5506,7 @@
             {
               "id": "c",
               "text": "Une transition",
-              "explanation": "Une transition est un moment de passage flou et moins structuré. Les délais trop longs entre deux activités et les changements brusques favorisent la dispersion des élèves."
+              "explanation": "Une transition est un moment de passage flou et moins structuré. Les délais trop longs entre deux activités et les changements brusques favorisent la dispersion des élèves (Gauthier et al., 2003)."
             },
             {
               "id": "d",
@@ -5573,7 +5573,7 @@
             {
               "id": "d",
               "text": "Il est court, flexible et facile à discerner, avec des signaux de départ et d'arrêt clairs.",
-              "explanation": "Une transition gagne à être courte, flexible et facile à discerner : les élèves identifient la fin de l'activité et le départ de la suivante, grâce à des signaux non équivoques et à une durée prévue pour le passage (Gaudreau, 2024)."
+              "explanation": "Une transition gagne à être courte, flexible et facile à discerner : les élèves identifient la fin de l'activité et le départ de la suivante, grâce à des signaux non équivoques et à une durée prévue pour le passage (Gauthier et al., 2003)."
             }
           ],
           "level": "essentiel",
@@ -5581,7 +5581,7 @@
           "notionId": "N46"
         }
       ],
-      "qcmRevision": "42b3af10850b25dc"
+      "qcmRevision": "4ed34ee1cbecb8ef"
     },
     {
       "id": "CLA-C-F41",
@@ -5598,7 +5598,7 @@
       "prompt": "",
       "hints": [
         "Une routine s'enseigne et s'ajuste.",
-        "Routine (Harper et al., 2017) = suite organisée de consignes suivie de façon stable et cohérente ; elle s'enseigne, devient progressivement automatique et reste pertinente. Rituel = actions porteuses d'une signification particulière. Transition = moment de passage. Médiateur externe = support extérieur. Enchaînement signal, routine, récompense : un signal mal perçu, une routine peu claire ou une récompense vague peut expliquer un échec ; il s'agit de modifier la bonne étape plutôt que de multiplier les rappels. Il faut généralement environ 30 jours pour acquérir une nouvelle habitude ; la pertinence de la routine doit néanmoins être évaluée."
+        "Routine (Harper et al., 2017) = suite organisée de consignes suivie de façon stable et cohérente ; elle s'enseigne, devient progressivement automatique et reste pertinente. Rituel = actions porteuses d'une signification particulière. Transition = moment de passage. Médiateur externe = support extérieur. Enchaînement signal, routine, récompense : un signal mal perçu, une routine peu claire ou une récompense vague peut expliquer un échec ; il s'agit de modifier la bonne étape plutôt que de multiplier les rappels. Il faut généralement 30 jours pour acquérir une nouvelle habitude et développer des automatismes : mettre en place une routine qu'on modifie ou qu'on abandonne la semaine suivante est désastreux (Harper et al., 2017) ; la pertinence de la routine doit néanmoins être évaluée."
       ],
       "sources": [
         {
@@ -5626,7 +5626,7 @@
             {
               "id": "c",
               "text": "Une suite organisée de consignes pour accomplir une tâche, suivie de façon stable et cohérente.",
-              "explanation": "Une routine permet aux élèves d'anticiper, d'agir avec moins d'aide et de prendre davantage de responsabilités ; l'enseignant répète moins les mêmes indications (Harper et al., 2017)."
+              "explanation": "Planifier des routines apporte stabilité, cohérence, autonomie et responsabilisation : les élèves savent à quoi s'attendre et agissent avec moins d'interventions de l'adulte (Harper et al., 2017)."
             },
             {
               "id": "d",
@@ -5713,13 +5713,13 @@
             },
             {
               "id": "b",
-              "text": "Une habitude demande généralement environ 30 jours : changer trop tôt peut empêcher l'automatisation.",
-              "explanation": "Harper et al. donnent généralement environ 30 jours comme repère d'acquisition d'une habitude. Modifier ou supprimer une routine après une semaine peut empêcher les automatismes de se construire ; il faut néanmoins évaluer si la routine reste pertinente et rend le service attendu."
+              "text": "Une habitude demande généralement 30 jours : changer ou abandonner trop tôt compromet l'installation.",
+              "explanation": "Harper et al. donnent généralement 30 jours comme repère pour acquérir une habitude et développer des automatismes : mettre en place une routine qu'on modifie ou qu'on abandonne la semaine suivante est désastreux. Il faut néanmoins évaluer si la routine reste pertinente et rend le service attendu."
             },
             {
               "id": "c",
               "text": "Une routine bien enseignée doit être automatique en une semaine ; sinon, il faut l'abandonner.",
-              "explanation": "Le repère donné est d'environ 30 jours : abandonner après une semaine peut empêcher l'automatisation."
+              "explanation": "Le repère donné est de 30 jours : abandonner la routine après une semaine est désastreux pour son installation."
             },
             {
               "id": "d",
@@ -5732,7 +5732,7 @@
           "notionId": "N48"
         }
       ],
-      "qcmRevision": "d202884bb9f8eaec"
+      "qcmRevision": "4ca06ed8f782919d"
     },
     {
       "id": "CLA-C-F42",
@@ -5856,12 +5856,12 @@
             {
               "id": "a",
               "text": "L'attente entre deux activités disparaît puisque le passage devient un moment très structuré.",
-              "explanation": "La transition est un moment flou et moins structuré ; une routine peut la faciliter, mais l'avantage attendu ici porte sur l'anticipation et l'autonomie des élèves."
+              "explanation": "La transition est un moment flou et moins structuré ; une routine peut la faciliter, mais l'avantage attendu ici porte sur la stabilité et l'autonomie des élèves."
             },
             {
               "id": "b",
-              "text": "Les élèves peuvent anticiper et agir avec moins d'aide, et l'enseignant répète moins les mêmes indications.",
-              "explanation": "Une routine permet aux élèves d'anticiper, d'agir avec moins d'aide et de prendre davantage de responsabilités ; l'enseignant consacre moins de temps à répéter et davantage à accompagner les apprentissages (Harper et al., 2017). Le vestiaire est l'un des moments où elle organise le rangement et les responsabilités."
+              "text": "Les élèves savent à quoi s'attendre et agissent avec autonomie, avec moins d'interventions de l'adulte.",
+              "explanation": "Une routine apporte stabilité, cohérence, autonomie et responsabilisation : les élèves savent à quoi s'attendre, accomplissent leurs tâches avec moins d'interventions de l'adulte et prennent progressivement des responsabilités ; l'enseignant a alors davantage de temps pour travailler avec des élèves seuls ou en petits groupes (Harper et al., 2017). Le vestiaire est l'un des moments où elle organise le rangement et les responsabilités."
             },
             {
               "id": "c",
@@ -5910,7 +5910,7 @@
           "notionId": "N50"
         }
       ],
-      "qcmRevision": "ace054123fba8b4a"
+      "qcmRevision": "fec95eeed3d320fd"
     },
     {
       "id": "CLA-C-F44",
@@ -5927,7 +5927,7 @@
       "prompt": "",
       "hints": [
         "Le cours cite plusieurs notions voisines qui touchent au déroulement de la journée scolaire.",
-        "Pause active = brève interruption de l'enseignement pendant laquelle les élèves bougent ; elle peut stimuler ou apaiser selon le mouvement proposé (DSBG et fit4future). Formes données au cours : gymnastique des doigts, activité corporelle adaptée à la classe. Transition = passage ; routine = suite de consignes stable ; médiateur = support. Ses effets dépendent de sa longueur et du contexte de la classe."
+        "Pause active = brève interruption de l'enseignement pendant laquelle les élèves bougent ; elle peut stimuler ou apaiser selon le mouvement proposé (DSBG et fit4future). Formes données au cours : gymnastique des doigts, activité corporelle adaptée à la classe. Transition = passage ; routine = suite de consignes stable ; médiateur = support. Ses effets sont bénéfiques, mais dépendent de sa longueur et du contexte de la classe (Ruhland et Lange, 2021)."
       ],
       "sources": [
         {
@@ -5955,7 +5955,7 @@
             {
               "id": "c",
               "text": "Une brève interruption de l'enseignement pendant laquelle les élèves bougent.",
-              "explanation": "Une pause active peut stimuler ou apaiser selon le mouvement proposé (DSBG et fit4future). Ses effets dépendent de sa longueur et du contexte de la classe : on la prépare selon l'état du groupe, avec un retour clair à l'activité."
+              "explanation": "Une pause active peut stimuler ou apaiser selon le mouvement proposé (DSBG et fit4future). Ses effets sont bénéfiques, mais dépendent de sa longueur et du contexte de la classe, notamment des compétences sociales (Ruhland et Lange, 2021) : on la prépare selon l'état du groupe, avec un retour clair à l'activité."
             },
             {
               "id": "d",
@@ -5999,7 +5999,7 @@
           "notionId": "N51"
         }
       ],
-      "qcmRevision": "265dbfbab662983e"
+      "qcmRevision": "5c9f8bd7383c077c"
     },
     {
       "id": "CLA-C-F45",
@@ -6016,7 +6016,7 @@
       "prompt": "",
       "hints": [
         "Choisir une modalité revient à organiser qui travaille avec qui ; l'alternance les enchaîne.",
-        "Modalités (Rey, 2016) : travail en collectif = toute la classe collabore avec l'enseignant, avec des échanges possibles entre élèves ; travail individuel = chaque élève accomplit une tâche sans échange avec les autres ; travail de groupe = plusieurs élèves collaborent à une même tâche ; alternance = enchaînement de modalités, par exemple d'un échange collectif à une recherche individuelle, puis à une confrontation en groupe et à une mise en commun. L'alternance est distincte de la nature des activités (découverte, révision, production)."
+        "Modalités (Rey, 2016) : travail en collectif = toute la classe collabore avec l'enseignant, avec des échanges possibles entre élèves ; travail individuel = chaque élève accomplit une tâche sans échange avec les autres ; travail de groupe = plusieurs élèves collaborent à une même tâche ; alternance = enchaînement régulier de moments de travail en individuel, en duo, en sous-groupes et en collectif, selon la fonction de chacun : faire émerger les représentations en collectif, chercher seul, confronter en petits groupes, puis mettre en commun. L'alternance est distincte de la nature des activités (découverte, révision, production)."
       ],
       "sources": [
         {
@@ -6127,7 +6127,7 @@
             {
               "id": "a",
               "text": "L'alternance de modalités de travail",
-              "explanation": "L'alternance enchaîne les modalités, par exemple d'un échange collectif à une recherche individuelle, puis à une confrontation en groupe et à une mise en commun. Chaque changement prend du temps et peut disperser l'attention."
+              "explanation": "L'alternance enchaîne les modalités selon leur fonction : faire émerger les représentations en collectif, chercher seul, confronter en petits groupes, puis mettre en commun. Pour Rey, une alternance régulière de situations de travail relativement courtes est en général favorable à l'efficacité des apprentissages."
             },
             {
               "id": "b",
@@ -6150,7 +6150,7 @@
           "notionId": "N52"
         }
       ],
-      "qcmRevision": "70c116e5ccdfc69c"
+      "qcmRevision": "b61daa3402918d3a"
     },
     {
       "id": "CLA-C-F46",
@@ -6167,7 +6167,7 @@
       "prompt": "",
       "hints": [
         "Chaque modalité a des intérêts et des points de vigilance propres (Rey, 2016) ; l'alternance a les siens.",
-        "Vigilances (Rey, 2016 ; cours 03) : collectif = limiter la durée, organiser les prises de parole, surveiller les biais liés aux compétences ou au genre, repérer ceux qui ne participent plus ; individuel = vérifier la compréhension des consignes et l'engagement de chacun, prévoir ce que feront les plus rapides ; groupe = apprendre à travailler ensemble, donner des rôles, veiller à la participation de tous, choisir une tâche qui justifie la confrontation ; alternance = chaque changement prend du temps et peut disperser l'attention : alterner ne veut pas dire multiplier les changements sans les préparer."
+        "Vigilances (Rey, 2016 ; cours 03) : collectif = limiter la durée, organiser les prises de parole, surveiller les biais liés aux compétences ou au genre, repérer ceux qui ne participent plus ; individuel = vérifier la compréhension des consignes et l'engagement de chacun, prévoir ce que feront les plus rapides ; groupe = apprendre à travailler ensemble, donner des rôles, veiller à la participation de tous, choisir une tâche qui justifie la confrontation ; alternance = le passage d'une situation de travail à une autre disperse souvent l'attention et prend un temps nettement plus long qu'on ne le pense : il faut en tenir compte dans l'estimation des horaires (Rey, 2016, p. 84–85)."
       ],
       "sources": [
         {
@@ -6194,8 +6194,8 @@
             },
             {
               "id": "c",
-              "text": "Préparer chaque changement de modalité, qui prend du temps et peut disperser l'attention des élèves.",
-              "explanation": "C'est la vigilance de l'alternance, qui enchaîne les modalités : chaque changement prend du temps et peut disperser l'attention, d'où l'importance de le préparer."
+              "text": "Compter dans l'horaire le temps de chaque changement de modalité, qui disperse souvent l'attention.",
+              "explanation": "C'est la vigilance de l'alternance, qui enchaîne les modalités : chaque changement disperse souvent l'attention et prend plus de temps qu'on ne le pense, d'où l'importance de le compter dans l'horaire (Rey, 2016)."
             },
             {
               "id": "d",
@@ -6225,8 +6225,8 @@
             },
             {
               "id": "c",
-              "text": "Préparer chaque changement de modalité, qui prend du temps et peut disperser l'attention des élèves.",
-              "explanation": "C'est la vigilance de l'alternance, qui enchaîne les modalités : chaque changement prend du temps et peut disperser l'attention, d'où l'importance de le préparer."
+              "text": "Compter dans l'horaire le temps de chaque changement de modalité, qui disperse souvent l'attention.",
+              "explanation": "C'est la vigilance de l'alternance, qui enchaîne les modalités : chaque changement disperse souvent l'attention et prend plus de temps qu'on ne le pense, d'où l'importance de le compter dans l'horaire (Rey, 2016)."
             },
             {
               "id": "d",
@@ -6251,8 +6251,8 @@
             },
             {
               "id": "b",
-              "text": "Préparer chaque changement de modalité, qui prend du temps et peut disperser l'attention des élèves.",
-              "explanation": "C'est la vigilance de l'alternance, qui enchaîne les modalités : chaque changement prend du temps et peut disperser l'attention, d'où l'importance de le préparer."
+              "text": "Compter dans l'horaire le temps de chaque changement de modalité, qui disperse souvent l'attention.",
+              "explanation": "C'est la vigilance de l'alternance, qui enchaîne les modalités : chaque changement disperse souvent l'attention et prend plus de temps qu'on ne le pense, d'où l'importance de le compter dans l'horaire (Rey, 2016)."
             },
             {
               "id": "c",
@@ -6292,8 +6292,8 @@
             },
             {
               "id": "d",
-              "text": "Préparer chaque changement de modalité, qui prend du temps et peut disperser l'attention des élèves.",
-              "explanation": "Chaque changement de modalité prend du temps et peut disperser l'attention : alterner ne veut pas dire multiplier les changements sans les préparer."
+              "text": "Compter dans l'horaire le temps de chaque changement de modalité, qui disperse souvent l'attention.",
+              "explanation": "Le passage d'une situation de travail à une autre disperse souvent l'attention et prend un temps nettement plus long qu'on ne le pense : il faut en tenir compte dans l'estimation des horaires (Rey, 2016, p. 84–85)."
             }
           ],
           "level": "essentiel",
@@ -6301,7 +6301,7 @@
           "notionId": "N53"
         }
       ],
-      "qcmRevision": "bd58083ee342ee4d"
+      "qcmRevision": "2511343a253caf2b"
     },
     {
       "id": "CLA-C-F47",
@@ -6318,7 +6318,7 @@
       "prompt": "",
       "hints": [
         "Le travail de groupe et le travail en collectif ont chacun leurs mécanismes propres.",
-        "Un conflit sociocognitif est un désaccord entre conceptions qui peut conduire à revoir son raisonnement ; il suppose que chacun ait cherché et puisse expliquer sa démarche. L'institutionnalisation formule le savoir commun à retenir et lui donne sa forme et son nom de référence. Une stratégie métacognitive sert à réfléchir à sa manière de faire et à la réguler. Ces processus peuvent se rencontrer dans une même activité. Demandez-vous quelle définition la question appelle."
+        "Un conflit sociocognitif est un désaccord entre conceptions qui peut conduire à revoir son raisonnement ; il suppose que chacun se soit d'abord engagé dans la recherche. L'institutionnalisation formule le savoir commun à retenir et lui donne sa forme et son nom de référence. Une stratégie métacognitive sert à réfléchir à sa manière de faire et à la réguler. Ces processus peuvent se rencontrer dans une même activité. Demandez-vous quelle définition la question appelle."
       ],
       "sources": [
         {
@@ -6341,7 +6341,7 @@
             {
               "id": "b",
               "text": "Un désaccord entre conceptions qui peut amener chacun à revoir son raisonnement.",
-              "explanation": "Le conflit sociocognitif est le désaccord entre conceptions qui peut amener chacun à revoir son raisonnement. Il suppose que chacun ait cherché et puisse expliquer sa démarche, d'où la recherche individuelle avant le groupe."
+              "explanation": "Le conflit sociocognitif est le désaccord entre conceptions qui peut amener chacun à revoir son raisonnement. Il suppose que chacun se soit d'abord engagé dans la recherche, d'où un moment de travail individuel avant le groupe."
             },
             {
               "id": "c",
@@ -6377,7 +6377,7 @@
             {
               "id": "c",
               "text": "Le conflit sociocognitif",
-              "explanation": "L'opposition entre deux centrations peut aider chacun à comprendre la conservation de la quantité (Rey, 2016). C'est un désaccord entre conceptions qui peut amener chacun à revoir son raisonnement, à condition que chacun ait cherché et puisse expliquer sa démarche."
+              "explanation": "L'opposition entre deux centrations peut aider chacun à comprendre la conservation de la quantité (Rey, 2016). C'est un désaccord entre conceptions qui peut amener chacun à revoir son raisonnement, à condition que chacun se soit d'abord engagé dans la recherche."
             },
             {
               "id": "d",
@@ -6421,7 +6421,7 @@
           "notionId": "N54"
         }
       ],
-      "qcmRevision": "6c26275a46bfb218"
+      "qcmRevision": "b504b3876258d33d"
     },
     {
       "id": "CLA-C-F48",
@@ -6798,7 +6798,7 @@
       "prompt": "",
       "hints": [
         "Une séance réaliste réserve du temps à ce qui la fait fonctionner.",
-        "Une préparation compte le fonctionnement réel de la classe : accueil, écoute, rangement, transitions, pauses si nécessaire, gestion des conflits, ainsi que la révision, l'alternance des modalités et ce que feront les élèves qui terminent plus vite. Dans l'exercice du cours, les durées annoncées totalisent 60 minutes pour une plage de 50 minutes (premier problème), et aucun temps explicite n'est prévu pour accueillir, distribuer, ranger, changer d'activité ni absorber un imprévu (second problème). Décaler la dernière ligne corrige le calcul, non le second problème. Les décisions possibles : garder, réduire ou répartir des tâches sur une autre séance, et réserver le temps nécessaire."
+        "Une préparation compte le fonctionnement réel de la classe : accueil, écoute, rangement, transitions, pauses si nécessaire, gestion des conflits, ainsi que la révision, l'alternance des modalités et ce que feront les élèves qui terminent plus vite. Dans l'exercice du cours, aucun temps explicite n'est prévu pour accueillir, distribuer, ranger, changer d'activité ni absorber un imprévu (premier problème), et les horaires se chevauchent : les durées annoncées totalisent 60 minutes pour une plage de 50 minutes (second problème). Décaler la dernière ligne corrige le calcul, non le premier problème. Les décisions possibles : garder, réduire ou répartir des tâches sur une autre séance, et réserver le temps nécessaire."
       ],
       "sources": [
         {
@@ -6816,7 +6816,7 @@
             {
               "id": "a",
               "text": "Raccourcir chaque tâche dans la même proportion, sans réserver de temps pour le fonctionnement réel de la classe.",
-              "explanation": "Raccourcir toutes les tâches supprime le chevauchement mais laisse le second problème : aucun temps n'est réservé à l'accueil, au matériel, aux transitions et aux imprévus."
+              "explanation": "Raccourcir toutes les tâches supprime le chevauchement mais laisse le premier problème : aucun temps n'est réservé à l'accueil, au matériel, aux transitions et aux imprévus."
             },
             {
               "id": "b",
@@ -6839,7 +6839,7 @@
           "notionId": "N63"
         }
       ],
-      "qcmRevision": "8913e9c68a13b0a9"
+      "qcmRevision": "401d31224b124b19"
     },
     {
       "id": "CLA-C-F52",
@@ -10892,5 +10892,5 @@
       "qcmRevision": "2bba5b2c36c5df64"
     }
   ],
-  "bankRevision": "5720c0168da5b21f"
+  "bankRevision": "5d30c9d54a4d9adb"
 }
