@@ -717,6 +717,11 @@
       "id": "ORAL-P-F99",
       "title": "Schéma narratif et terminologie de Larivaille : équilibre, provocation, action, sanction, transformation",
       "course": "C04"
+    },
+    {
+      "id": "ORAL-P-F100",
+      "title": "Les quatre grandes missions de l'enseignement de l'oral à l'école",
+      "course": "C03"
     }
   ],
   "assessmentConditions": {
@@ -4511,10 +4516,10 @@
       "title": "Sortir de la suite question–réponse",
       "kind": "Construire une réponse",
       "context": "Après une histoire, l’enseignante pose une question, désigne rapidement un élève, valide sa réponse puis passe à une autre question. Les mêmes quatre élèves répondent. Quand un autre commence à redire une idée déjà donnée, elle l’interrompt : « On l’a déjà dit. » Les élèves s’adressent à elle et reprennent rarement un propos de camarade.",
-      "prompt": "Analyse les effets possibles de cette organisation sur la parole et l’écoute. Propose deux modifications appuyées sur Péroz et les niveaux d’écoute du cours. Indique quels faits permettraient d’observer un changement dans l’échange entre élèves. Caractérise aussi la conduite de l’échange au regard de la conversation et du dialogue scolaire de C03. Explique aussi ce qu’il faudrait observer dans l’enchaînement de deux tours pour identifier une paire adjacente, au-delà d’un thème commun.",
+      "prompt": "Analyse les effets possibles de cette organisation sur la parole et l’écoute. Propose deux modifications appuyées sur les pistes et les niveaux d’écoute du cours 02. Indique quels faits permettraient d’observer un changement dans l’échange entre élèves. Caractérise aussi la conduite de l’échange au regard de la conversation et du dialogue scolaire de C03. Explique aussi ce qu’il faudrait observer dans l’enchaînement de deux tours pour identifier une paire adjacente, au-delà d’un thème commun.",
       "hints": [
         "• Écoute : Attention à la personne qui parle et au message dans le but de la comprendre, de poser des questions et d’élargir son vocabulaire ; écoute active et réponse appropriée.\n• Écoute en écho : Écoute centrée sur les questions de l’enseignant et les réponses qui leur font suite, sans appui manifeste sur les propos des camarades.\n• Écoute marquée : Écoute qui prend en compte la parole des autres élèves.\n• Travail collaboratif : Échanges dans le groupe et entre les élèves.\nC02 distingue écoute en écho, écoute marquée et travail collaboratif. Pour ce dernier, les notes originales précisent les échanges dans le groupe et entre élèves : observe quels propos sont repris, complétés ou discutés. Le nombre de participants, l’accord et le silence ne démontrent pas seuls la compréhension.",
-        "• Conversation : Échange moins formel, moins contraint et plus ouvert aux imprévus qu’un dialogue guidé par un but.\n• Dialogue : Interaction guidée par un but ; le dialogue scolaire habituel est structuré par l’enseignant, ses objectifs, le temps et la validation des réponses.\n• Discussion : Échange qui examine une question par la confrontation d’idées et d’arguments.\nCes termes éclairent des buts et organisations sans être des catégories mutuellement exclusives de toute interaction. Péroz propose de soutenir parler, parler dans le thème et parler plus longtemps, par les questions ouvertes, le temps laissé et la reprise d’une question à plusieurs élèves. Accueillir une reprise peut ouvrir une place dans l’échange. Paire adjacente : Deux tours de parole liés : le premier oriente la réponse attendue dans le second. Une salutation suivie d’une salutation peut en donner un exemple. Deux tours consécutifs sur le même thème ne démontrent pas, à eux seuls, ce lien fonctionnel."
+        "• Conversation : Échange moins formel, moins contraint et plus ouvert aux imprévus qu’un dialogue guidé par un but.\n• Dialogue : Interaction guidée par un but ; le dialogue scolaire habituel est structuré par l’enseignant, ses objectifs, le temps et la validation des réponses.\n• Discussion : Échange qui examine une question par la confrontation d’idées et d’arguments.\nCes termes éclairent des buts et organisations sans être des catégories mutuellement exclusives de toute interaction. Trois compétences sont à développer selon Péroz (2018) : parler, parler dans le thème et parler longtemps. Le cours 02 donne des pistes pour les soutenir, comme les questions ouvertes, le temps laissé pour réfléchir et la répétition des questions. Accueillir une reprise peut ouvrir une place dans l’échange. Paire adjacente : Deux tours de parole liés : le premier oriente la réponse attendue dans le second. Une salutation suivie d’une salutation peut en donner un exemple. Deux tours consécutifs sur le même thème ne démontrent pas, à eux seuls, ce lien fonctionnel."
       ],
       "criteria": [
         {
@@ -4523,7 +4528,7 @@
         },
         {
           "id": "c2",
-          "text": "Je propose deux modifications fondées sur les pistes de Péroz."
+          "text": "Je propose deux modifications fondées sur les pistes du cours 02."
         },
         {
           "id": "c3",
@@ -4587,7 +4592,7 @@
       "familyId": "ORAL-F18",
       "referenceId": "C02",
       "variant": 1,
-      "contentRevision": "80df29552d00",
+      "contentRevision": "23aa8c9a2c4a",
       "steps": [
         {
           "id": "Q3",
@@ -4680,7 +4685,7 @@
           "sansChoix": false
         }
       ],
-      "qcmRevision": "509503352dd8",
+      "qcmRevision": "02fa6fb19baa",
       "courseGroupKey": "2",
       "hasWrittenExercise": true
     },
@@ -13550,7 +13555,7 @@
       "prompt": "",
       "hints": [
         "Pour chaque nom, relie-le à ce qu'il organise ou à ce qu'il propose : une grille d'observation, des pistes pour faire parler, un jeu de cartes, un dispositif photographique.",
-        "Non verbal : Le regard, la posture, les gestes et la proxémie, c’est-à-dire la distance entre les interlocuteurs. Matériel : Les appuis textuels, visuels ou autres qui soutiennent l’échange. Communicationnel : La prise en compte des partenaires, le registre de langue, le but, les conditions matérielles (salle, bruit…), l’écoute et la capacité à commencer ou à clore une conversation. Discursif : La conduite adoptée : raconter, expliquer, décrire, argumenter ou dialoguer ; la cohérence et la cohésion du discours. Contenu : Les informations données, le message transmis et les connaissances nécessaires pour le comprendre. Émotionnel : L’attitude, notamment l’aisance, l’enthousiasme ou le trac, et la manifestation des émotions : soupirs, rires ou mise en mots de l’émotion. Album écho (Boisseau, 2008 ; cours) : Dispositif associant des photographies de l’enfant en activité à des textes oraux qui reprennent ses paroles en les améliorant légèrement. L’enfant raconte plusieurs fois son album avec l’aide de l’adulte. Cartes à raconter ; 125 Cartes à raconter (Frossard et al., 2017) : Jeu de cartes illustrées à interprétation ouverte (personnages, objets, lieux), créé à partir du schéma actantiel : aide matérielle qui structure le récit que l’élève invente et stimule son imaginaire. Péroz : temps de réflexion, questions ouvertes, répétition de la question, reprises des propos des camarades, échanges en demi-classes."
+        "Non verbal : Le regard, la posture, les gestes et la proxémie, c’est-à-dire la distance entre les interlocuteurs. Matériel : Les appuis textuels, visuels ou autres qui soutiennent l’échange. Communicationnel : La prise en compte des partenaires, le registre de langue, le but, les conditions matérielles (salle, bruit…), l’écoute et la capacité à commencer ou à clore une conversation. Discursif : La conduite adoptée : raconter, expliquer, décrire, argumenter ou dialoguer ; la cohérence et la cohésion du discours. Contenu : Les informations données, le message transmis et les connaissances nécessaires pour le comprendre. Émotionnel : L’attitude, notamment l’aisance, l’enthousiasme ou le trac, et la manifestation des émotions : soupirs, rires ou mise en mots de l’émotion. Album écho (Boisseau, 2008 ; cours) : Dispositif associant des photographies de l’enfant en activité à des textes oraux qui reprennent ses paroles en les améliorant légèrement. L’enfant raconte plusieurs fois son album avec l’aide de l’adulte. Cartes à raconter ; 125 Cartes à raconter (Frossard et al., 2017) : Jeu de cartes illustrées à interprétation ouverte (personnages, objets, lieux), créé à partir du schéma actantiel : aide matérielle qui structure le récit que l’élève invente et stimule son imaginaire. Pistes du cours 02 pour favoriser la prise de parole : temps de réflexion, questions ouvertes, répétition de la question, reprises des propos des camarades, échanges en demi-classes."
       ],
       "sources": [
         {
@@ -14599,7 +14604,7 @@
       "prompt": "",
       "hints": [
         "Cherche si l'élève répond à l'enseignante seulement, ou s'il s'appuie sur ce qu'un camarade vient de dire.",
-        "Trois niveaux d'écoute (cours 02, d'après Péroz) : écoute en écho, centrée sur l'adulte ; écoute marquée, qui prend en compte la parole des camarades (reprise d'information, complément, désaccord) ; travail collaboratif, où les élèves échangent entre eux dans le groupe."
+        "Trois niveaux d'écoute (cours 02) : écoute en écho, centrée sur l'adulte ; écoute marquée, qui prend en compte la parole des camarades (reprise d'information, complément, désaccord) ; travail collaboratif, où les élèves échangent entre eux dans le groupe."
       ],
       "sources": [
         {
@@ -15359,7 +15364,7 @@
       "prompt": "",
       "hints": [
         "Cherche la condition qui rend la prise de parole possible avant tout dispositif, tout support ou toute règle précise.",
-        "Pour verbaliser, reformuler, coopérer et écouter, l'enseignant·e comme l'élève ont besoin d'un cadre. Parmi les conditions de l'oral en classe, le cours cite des objectifs clairs de compréhension et de production, du temps pour construire son intervention (Péroz) et des règles de prise de parole. La question demande celle que le cours place en premier."
+        "Pour verbaliser, reformuler, coopérer et écouter, l'enseignant·e comme l'élève ont besoin d'un cadre. Parmi les conditions de l'oral en classe, le cours cite des objectifs clairs de compréhension et de production, du temps pour construire son intervention et des règles de prise de parole. La question demande celle que le cours place en premier."
       ],
       "sources": [
         {
@@ -15382,7 +15387,7 @@
             {
               "id": "b",
               "text": "Un temps de préparation pour que chaque élève construise son intervention.",
-              "explanation": "Laisser du temps pour réfléchir et construire son intervention est une piste de Péroz pour favoriser la prise de parole, pas le premier ingrédient du cours."
+              "explanation": "Laisser du temps pour réfléchir et construire son intervention est une piste du cours 02 pour favoriser la prise de parole, pas le premier ingrédient du cours."
             },
             {
               "id": "c",
@@ -15399,7 +15404,7 @@
           "sansChoix": true
         }
       ],
-      "qcmRevision": "8cfd22bde45758bc"
+      "qcmRevision": "81dbbaa8cb9e5071"
     },
     {
       "id": "ORAL-P-F79",
@@ -17476,7 +17481,7 @@
       "prompt": "",
       "hints": [
         "Cherche ce que l'enseignante veut faire développer chez l'élève : oser intervenir, rester dans le sujet proposé, ou développer son propos.",
-        "Trois compétences sont à développer chez les élèves : parler, parler dans le thème et parler longtemps. Parler dans le thème demande de maintenir son attention sur le sujet proposé par l’adulte. Pour interpréter les deux autres, on peut regarder si l’élève ose intervenir (parler) et s’il développe son propos (parler longtemps) : cette lecture est proposée par la synthèse. Donner un tour de parole ne travaille pas automatiquement ces trois dimensions. Choix du cours qui modifient les occasions d’apprendre : laisser un temps de réflexion avant de répondre ; poser des questions ouvertes ; répéter les questions ; accepter que les élèves répètent ou reformulent les propos des autres ; organiser certains échanges en demi-classes."
+        "Trois compétences sont à développer chez les élèves, selon Péroz (2018) : parler, parler dans le thème et parler longtemps. Parler dans le thème demande de maintenir son attention sur le sujet proposé par l’adulte. Pour interpréter les deux autres, on peut regarder si l’élève ose intervenir (parler) et s’il développe son propos (parler longtemps) : cette lecture est proposée par la synthèse. Donner un tour de parole ne travaille pas automatiquement ces trois dimensions. Choix du cours qui modifient les occasions d’apprendre : laisser un temps de réflexion avant de répondre ; poser des questions ouvertes ; répéter les questions ; accepter que les élèves répètent ou reformulent les propos des autres ; organiser certains échanges en demi-classes."
       ],
       "sources": [
         {
@@ -18002,6 +18007,126 @@
         }
       ],
       "qcmRevision": "cdcdbff32fd27a30"
+    },
+    {
+      "id": "ORAL-P-F100",
+      "familyId": "ORAL-P-F100",
+      "module": "BP1-18FRA",
+      "collection": "fra-qcm-oral",
+      "sourceBankId": "QCM_BP1-18FRA_S1_ORAL_PILIERS",
+      "course": "C03",
+      "referenceId": "C03",
+      "courseGroupKey": "3",
+      "hasWrittenExercise": false,
+      "title": "Cours 3 · QCM",
+      "context": "",
+      "prompt": "",
+      "hints": [
+        "Chaque mission répond à une finalité précise de l'enseignement de l'oral à l'école : cherche ce que la mission vise avant de chercher son nom.",
+        "Missions de l'enseignement de l'oral (cours 3) : l'enseignement de l'oral à l'école poursuit quatre grandes missions : favoriser l'apprentissage ; renforcer la cohésion sociale ; assurer la promotion sociale ou l'égalité des chances ; développer des capacités langagières en compréhension de l'oral (CO) et en production de l'oral (PO), objectifs L1 13-14 du PER. Oral outil : Usage de la parole et de l’écoute pour apprendre : reformuler, verbaliser, échanger pour coopérer. Oral objet d'enseignement : Enseignement de la parole (langue parlée), qui développe les capacités à comprendre et à produire de l’oral. Les trois premières missions se rattachent à l'oral pour apprendre ; la quatrième vise l'oral comme objet d'enseignement. Enseigner l'oral comme objet contribue aussi à réduire les inégalités sociales. Pour reconnaître la mission d'une activité, cherche l'objectif visé."
+      ],
+      "sources": [
+        {
+          "file": "SYNTHESE_BP1-18FRA_S1_COURS_03.docx",
+          "location": "2 Faire progresser la compréhension et la production : Des usages familiers aux usages scolaires"
+        }
+      ],
+      "steps": [
+        {
+          "id": "Q1",
+          "prompt": "Quelles sont les quatre grandes missions de l'enseignement de l'oral à l'école ?",
+          "requiresContext": false,
+          "correctId": "b",
+          "choices": [
+            {
+              "id": "a",
+              "text": "Favoriser l'apprentissage ; renforcer la cohésion sociale ; conscientiser le rapport à l'oral pour le transformer ; passer des oraux familiers aux oraux scolaires.",
+              "explanation": "Favoriser l'apprentissage et renforcer la cohésion sociale sont deux des quatre missions. Conscientiser le rapport à l'oral relève de la réflexion sur les croyances concernant la parole et l'écoute ; passer des oraux familiers aux oraux scolaires est une étape de l'apprentissage de l'oral, chez Dolz et de Pietro. Ces deux voisins ne figurent pas dans la liste des quatre missions : il manque la promotion sociale ou l'égalité des chances et le développement de la compréhension et de la production orales."
+            },
+            {
+              "id": "b",
+              "text": "Favoriser l'apprentissage ; renforcer la cohésion sociale ; assurer la promotion sociale ou l'égalité des chances ; développer la compréhension et la production orales.",
+              "explanation": "Ces quatre missions donnent quatre finalités à l'enseignement de l'oral : soutenir les apprentissages, créer du lien dans le groupe, favoriser l'égalité des chances et faire progresser les capacités à comprendre et à produire de l'oral. La dernière vise directement les capacités langagières orales ; les trois premières se rattachent aux usages de l'oral pour apprendre. L'oral enseigné comme objet contribue aussi à réduire les inégalités sociales."
+            },
+            {
+              "id": "c",
+              "text": "Renforcer la cohésion sociale ; assurer la promotion sociale ou l'égalité des chances ; passer des oraux familiers aux oraux scolaires ; instaurer un climat de confiance.",
+              "explanation": "La cohésion sociale et la promotion sociale ou l'égalité des chances sont deux missions. Le passage des oraux familiers aux oraux scolaires est une étape de l'apprentissage de l'oral, chez Dolz et de Pietro ; le climat de respect, de confiance et de sécurité est une condition des échanges, des reformulations et de la verbalisation. Ces deux voisins ne figurent pas dans la liste des quatre missions : il manque favoriser l'apprentissage et développer la compréhension et la production orales."
+            },
+            {
+              "id": "d",
+              "text": "Favoriser l'apprentissage ; assurer la promotion sociale ou l'égalité des chances ; conscientiser le rapport à l'oral pour le transformer ; instaurer un climat de confiance.",
+              "explanation": "Favoriser l'apprentissage et assurer la promotion sociale ou l'égalité des chances sont deux missions. Conscientiser le rapport à l'oral concerne les croyances sur la parole et l'écoute ; instaurer un climat de respect, de confiance et de sécurité est une condition des échanges et de la verbalisation. Ces deux voisins ne figurent pas dans la liste des quatre missions : il manque renforcer la cohésion sociale et développer la compréhension et la production orales."
+            }
+          ],
+          "level": "essentiel",
+          "sansChoix": true,
+          "notionId": "N100"
+        },
+        {
+          "id": "Q2",
+          "prompt": "Laquelle des quatre grandes missions de l'enseignement de l'oral consiste à enseigner l'oral lui-même, comme objet d'enseignement ?",
+          "requiresContext": false,
+          "correctId": "a",
+          "choices": [
+            {
+              "id": "a",
+              "text": "Développer la compréhension et la production orales",
+              "explanation": "L'oral est un objet d'enseignement quand on l'enseigne lui-même, pour développer les capacités à le comprendre et à le produire. La mission « développer des capacités langagières en compréhension (CO) et en production (PO) de l'oral », objectifs L1 13-14 du PER, vise ces capacités ; le cours conclut que les dispositifs qui enseignent l'oral comme objet poursuivent ces objectifs."
+            },
+            {
+              "id": "b",
+              "text": "Favoriser l'apprentissage",
+              "explanation": "Favoriser l'apprentissage fait partie des trois premières missions rattachées à l'oral pour apprendre : la parole et l'écoute servent à apprendre un contenu, en reformulant, en verbalisant ou en échangeant pour coopérer. Dans cet usage, les capacités orales sont mobilisées au service d'un autre apprentissage."
+            },
+            {
+              "id": "c",
+              "text": "Renforcer la cohésion sociale",
+              "explanation": "Renforcer la cohésion sociale nomme une finalité sociale de l'enseignement de l'oral, plutôt que les capacités orales que l'on enseigne. Pour identifier l'oral comme objet d'enseignement, on cherche ce que les élèves apprennent à comprendre ou à produire à l'oral."
+            },
+            {
+              "id": "d",
+              "text": "Assurer la promotion sociale ou l'égalité des chances",
+              "explanation": "Assurer la promotion sociale ou l'égalité des chances est une finalité sociale. Le cours précise que l'oral enseigné comme objet contribue à réduire les inégalités, mais la mission qui consiste à enseigner l'oral lui-même est celle des capacités de compréhension et de production orales."
+            }
+          ],
+          "level": "essentiel",
+          "sansChoix": true,
+          "notionId": "N100"
+        },
+        {
+          "id": "Q3",
+          "prompt": "Des élèves se racontent à tour de rôle ce qu'ils ont retenu d'une leçon de sciences, afin de mieux la mémoriser. Quelle mission de l'enseignement de l'oral cette activité poursuit-elle ?",
+          "requiresContext": false,
+          "correctId": "c",
+          "choices": [
+            {
+              "id": "a",
+              "text": "Développer la compréhension et la production orales",
+              "explanation": "Cette mission vise des capacités de compréhension et de production orales, ce qui fait de l'oral un objet d'enseignement. Ici, les élèves parlent, mais l'objectif visé est de mémoriser une leçon de sciences, pas de développer une capacité orale."
+            },
+            {
+              "id": "b",
+              "text": "Assurer la promotion sociale ou l'égalité des chances",
+              "explanation": "Cette mission est une finalité sociale, qui concerne notamment l'écart entre la langue de la maison et celle de l'école. L'objectif visé ici est de mémoriser une leçon, pas de réduire un écart."
+            },
+            {
+              "id": "c",
+              "text": "Favoriser l'apprentissage",
+              "explanation": "Pour reconnaître la mission, on cherche l'objectif visé : ici, les élèves utilisent la parole pour mieux mémoriser une leçon de sciences. L'oral sert à apprendre ce contenu ; l'activité poursuit donc la mission de favoriser l'apprentissage, rattachée à l'oral pour apprendre."
+            },
+            {
+              "id": "d",
+              "text": "Renforcer la cohésion sociale",
+              "explanation": "Se raconter à tour de rôle peut créer du lien, mais la cohésion sociale n'est pas l'objectif annoncé : on vise ici à mieux mémoriser une leçon."
+            }
+          ],
+          "level": "essentiel",
+          "sansChoix": true,
+          "notionId": "N100"
+        }
+      ],
+      "qcmRevision": "60d261d9a223ed5e"
     }
   ],
   "courseGroups": [
@@ -18872,6 +18997,18 @@
       "stepId": "Q1"
     },
     {
+      "exerciseId": "ORAL-P-F100",
+      "stepId": "Q1"
+    },
+    {
+      "exerciseId": "ORAL-P-F100",
+      "stepId": "Q2"
+    },
+    {
+      "exerciseId": "ORAL-P-F100",
+      "stepId": "Q3"
+    },
+    {
       "exerciseId": "ORAL-P-F45",
       "stepId": "Q1"
     },
@@ -19604,5 +19741,5 @@
       "stepId": "Q1"
     }
   ],
-  "bankRevision": "870017c077c4"
+  "bankRevision": "2d965aa9eb70"
 }

@@ -2777,10 +2777,10 @@
       "title": "Sortir de la suite question–réponse",
       "kind": "Construire une réponse",
       "context": "Après une histoire, l’enseignante pose une question, désigne rapidement un élève, valide sa réponse puis passe à une autre question. Les mêmes quatre élèves répondent. Quand un autre commence à redire une idée déjà donnée, elle l’interrompt : « On l’a déjà dit. » Les élèves s’adressent à elle et reprennent rarement un propos de camarade.",
-      "prompt": "Analyse les effets possibles de cette organisation sur la parole et l’écoute. Propose deux modifications appuyées sur Péroz et les niveaux d’écoute du cours. Indique quels faits permettraient d’observer un changement dans l’échange entre élèves. Caractérise aussi la conduite de l’échange au regard de la conversation et du dialogue scolaire de C03. Explique aussi ce qu’il faudrait observer dans l’enchaînement de deux tours pour identifier une paire adjacente, au-delà d’un thème commun.",
+      "prompt": "Analyse les effets possibles de cette organisation sur la parole et l’écoute. Propose deux modifications appuyées sur les pistes et les niveaux d’écoute du cours 02. Indique quels faits permettraient d’observer un changement dans l’échange entre élèves. Caractérise aussi la conduite de l’échange au regard de la conversation et du dialogue scolaire de C03. Explique aussi ce qu’il faudrait observer dans l’enchaînement de deux tours pour identifier une paire adjacente, au-delà d’un thème commun.",
       "hints": [
         "• Écoute : Attention à la personne qui parle et au message dans le but de la comprendre, de poser des questions et d’élargir son vocabulaire ; écoute active et réponse appropriée.\n• Écoute en écho : Écoute centrée sur les questions de l’enseignant et les réponses qui leur font suite, sans appui manifeste sur les propos des camarades.\n• Écoute marquée : Écoute qui prend en compte la parole des autres élèves.\n• Travail collaboratif : Échanges dans le groupe et entre les élèves.\nC02 distingue écoute en écho, écoute marquée et travail collaboratif. Pour ce dernier, les notes originales précisent les échanges dans le groupe et entre élèves : observe quels propos sont repris, complétés ou discutés. Le nombre de participants, l’accord et le silence ne démontrent pas seuls la compréhension.",
-        "• Conversation : Échange moins formel, moins contraint et plus ouvert aux imprévus qu’un dialogue guidé par un but.\n• Dialogue : Interaction guidée par un but ; le dialogue scolaire habituel est structuré par l’enseignant, ses objectifs, le temps et la validation des réponses.\n• Discussion : Échange qui examine une question par la confrontation d’idées et d’arguments.\nCes termes éclairent des buts et organisations sans être des catégories mutuellement exclusives de toute interaction. Péroz propose de soutenir parler, parler dans le thème et parler plus longtemps, par les questions ouvertes, le temps laissé et la reprise d’une question à plusieurs élèves. Accueillir une reprise peut ouvrir une place dans l’échange. Paire adjacente : Deux tours de parole liés : le premier oriente la réponse attendue dans le second. Une salutation suivie d’une salutation peut en donner un exemple. Deux tours consécutifs sur le même thème ne démontrent pas, à eux seuls, ce lien fonctionnel."
+        "• Conversation : Échange moins formel, moins contraint et plus ouvert aux imprévus qu’un dialogue guidé par un but.\n• Dialogue : Interaction guidée par un but ; le dialogue scolaire habituel est structuré par l’enseignant, ses objectifs, le temps et la validation des réponses.\n• Discussion : Échange qui examine une question par la confrontation d’idées et d’arguments.\nCes termes éclairent des buts et organisations sans être des catégories mutuellement exclusives de toute interaction. Trois compétences sont à développer selon Péroz (2018) : parler, parler dans le thème et parler longtemps. Le cours 02 donne des pistes pour les soutenir, comme les questions ouvertes, le temps laissé pour réfléchir et la répétition des questions. Accueillir une reprise peut ouvrir une place dans l’échange. Paire adjacente : Deux tours de parole liés : le premier oriente la réponse attendue dans le second. Une salutation suivie d’une salutation peut en donner un exemple. Deux tours consécutifs sur le même thème ne démontrent pas, à eux seuls, ce lien fonctionnel."
       ],
       "criteria": [
         {
@@ -2789,7 +2789,7 @@
         },
         {
           "id": "c2",
-          "text": "Je propose deux modifications fondées sur les pistes de Péroz."
+          "text": "Je propose deux modifications fondées sur les pistes du cours 02."
         },
         {
           "id": "c3",
@@ -2853,17 +2853,17 @@
       "familyId": "ORAL-F18",
       "referenceId": "C02",
       "variant": 1,
-      "contentRevision": "80df29552d00"
+      "contentRevision": "23aa8c9a2c4a"
     },
     {
       "id": "FRA-ORAL-F18-V2",
       "title": "Une discussion où les réponses se juxtaposent",
       "kind": "Construire une réponse",
       "context": "En demi-classe, les élèves répondent à « Pourquoi le personnage repart-il ? ». Plusieurs donnent un avis, mais chaque prise de parole recommence sans lien avec la précédente. Un élève dit « Je pense pareil que Lina » ; l’enseignant répond immédiatement « Très bien » et passe à quelqu’un d’autre. Il souhaite que les élèves construisent davantage ensemble.",
-      "prompt": "Analyse la limite de cet échange et propose deux interventions favorisant la prise en compte des camarades, en t’appuyant sur Péroz et les niveaux d’écoute. Donne un signe observable de construction collaborative et précise ce qu’une simple déclaration d’accord ne prouve pas. Caractérise aussi la conduite de l’échange au regard de la conversation et du dialogue scolaire de C03.",
+      "prompt": "Analyse la limite de cet échange et propose deux interventions favorisant la prise en compte des camarades, en t’appuyant sur les pistes et les niveaux d’écoute du cours 02. Donne un signe observable de construction collaborative et précise ce qu’une simple déclaration d’accord ne prouve pas. Caractérise aussi la conduite de l’échange au regard de la conversation et du dialogue scolaire de C03.",
       "hints": [
         "• Écoute : Attention à la personne qui parle et au message dans le but de la comprendre, de poser des questions et d’élargir son vocabulaire ; écoute active et réponse appropriée.\n• Écoute en écho : Écoute centrée sur les questions de l’enseignant et les réponses qui leur font suite, sans appui manifeste sur les propos des camarades.\n• Écoute marquée : Écoute qui prend en compte la parole des autres élèves.\n• Travail collaboratif : Échanges dans le groupe et entre les élèves.\nC02 distingue écoute en écho, écoute marquée et travail collaboratif. Pour ce dernier, les notes originales précisent les échanges dans le groupe et entre élèves : observe quels propos sont repris, complétés ou discutés. Le nombre de participants, l’accord et le silence ne démontrent pas seuls la compréhension.",
-        "• Conversation : Échange moins formel, moins contraint et plus ouvert aux imprévus qu’un dialogue guidé par un but.\n• Dialogue : Interaction guidée par un but ; le dialogue scolaire habituel est structuré par l’enseignant, ses objectifs, le temps et la validation des réponses.\n• Discussion : Échange qui examine une question par la confrontation d’idées et d’arguments.\nCes termes éclairent des buts et organisations sans être des catégories mutuellement exclusives de toute interaction. Péroz propose de soutenir parler, parler dans le thème et parler plus longtemps, par les questions ouvertes, le temps laissé et la reprise d’une question à plusieurs élèves. Accueillir une reprise peut ouvrir une place dans l’échange."
+        "• Conversation : Échange moins formel, moins contraint et plus ouvert aux imprévus qu’un dialogue guidé par un but.\n• Dialogue : Interaction guidée par un but ; le dialogue scolaire habituel est structuré par l’enseignant, ses objectifs, le temps et la validation des réponses.\n• Discussion : Échange qui examine une question par la confrontation d’idées et d’arguments.\nCes termes éclairent des buts et organisations sans être des catégories mutuellement exclusives de toute interaction. Trois compétences sont à développer selon Péroz (2018) : parler, parler dans le thème et parler longtemps. Le cours 02 donne des pistes pour les soutenir, comme les questions ouvertes, le temps laissé pour réfléchir et la répétition des questions. Accueillir une reprise peut ouvrir une place dans l’échange."
       ],
       "criteria": [
         {
@@ -2924,7 +2924,7 @@
       "familyId": "ORAL-F18",
       "referenceId": "C02",
       "variant": 2,
-      "contentRevision": "0f2d4d8f2f3a"
+      "contentRevision": "d708faf33849"
     },
     {
       "id": "FRA-ORAL-F19-V1",
@@ -5816,5 +5816,5 @@
       "contentRevision": "d9951ac14d58"
     }
   ],
-  "bankRevision": "8268bf021f8f"
+  "bankRevision": "b5dec2d8b42b"
 }

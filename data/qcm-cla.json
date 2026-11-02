@@ -15,6 +15,10 @@
     {
       "key": "3",
       "label": "Cours 3"
+    },
+    {
+      "key": "4",
+      "label": "Cours 4"
     }
   ],
   "courseReferences": {
@@ -28,6 +32,10 @@
     },
     "C03": {
       "label": "Cours 3",
+      "date": ""
+    },
+    "C04": {
+      "label": "Cours 4",
       "date": ""
     },
     "S01": {
@@ -303,6 +311,11 @@
       "id": "CLA-C-F52",
       "title": "Les étapes de la démarche d'analyse d'une pratique (cours 01)",
       "course": "C01"
+    },
+    {
+      "id": "CLA-C-F53",
+      "title": "Pourquoi établir des attentes claires et enseigner explicitement les comportements attendus (Gaudreau, 2024)",
+      "course": "C04"
     },
     {
       "id": "CLA-S-F01",
@@ -6918,6 +6931,134 @@
       "qcmRevision": "096d5cea9d8b3025"
     },
     {
+      "id": "CLA-C-F53",
+      "familyId": "CLA-C-F53",
+      "module": "BP1-18CLA",
+      "collection": "cla-qcm-s1",
+      "sourceBankId": "QCM_BP1-18CLA_S1_COURS",
+      "course": "C04",
+      "referenceId": "C04",
+      "courseGroupKey": "4",
+      "hasWrittenExercise": false,
+      "title": "Cours 4 · QCM",
+      "context": "",
+      "prompt": "",
+      "hints": [
+        "Cherchez ce que chaque pratique fait : fixer ou faire connaître l'attente, faire produire le comportement attendu, soutenir ce comportement par un retour, ou agir sur un écart.",
+        "Établir des attentes claires est une composante de la gestion de classe (Gaudreau, 2024) : règles, comportements attendus enseignés, consignes compréhensibles, routines et procédures, rétroaction positive. Enseignement explicite des comportements attendus : montrer la conduite demandée, puis la faire pratiquer avec aide et enfin de manière autonome. Rétroaction positive : attention donnée de manière sincère et enthousiaste aux élèves qui respectent les attentes comportementales. Les autres composantes du modèle sont gérer les ressources, développer des relations positives, capter et maintenir l'attention et l'engagement, intervenir face à l'indiscipline, et la personne enseignante. Gérer les ressources porte sur l'organisation du temps, de l'espace, du matériel et des ressources humaines ou technologiques. Développer des relations positives porte sur la qualité des liens avec les élèves, entre élèves et avec les familles. Capter et maintenir l'attention et l'engagement consiste notamment à susciter l'intérêt pour les activités et à soutenir la participation aux apprentissages."
+      ],
+      "sources": [
+        {
+          "file": "15_Gaudreau_2024_Gestion_classe_Attentes_claires_pp069-075__SYNTHESE.docx",
+          "location": "2 Donner de l'attention aux comportements attendus : Pourquoi des attentes claires sont indispensables"
+        },
+        {
+          "file": "15_Gaudreau_2024_Gestion_classe_Attentes_claires_pp069-075__SYNTHESE.docx",
+          "location": "1 Passer d'une attente à un comportement appris : Pourquoi expliquer une consigne ne suffit pas"
+        },
+        {
+          "file": "SYNTHESE_BP1-18CLA_S1_COURS_01.docx",
+          "location": "Modèle des 6 composantes de la gestion de classe (cours d. 25-31, Gaudreau)"
+        }
+      ],
+      "steps": [
+        {
+          "id": "Q1",
+          "prompt": "Une enseignante fait pratiquer l'entrée en classe : les élèves posent leur sac, sortent leur cahier puis commencent la tâche indiquée au tableau. Elle fait aussi préciser la façon de demander la parole. À quelle composante du modèle de gestion de classe de Gaudreau (2024) ces pratiques se rattachent-elles ?",
+          "requiresContext": false,
+          "correctId": "c",
+          "choices": [
+            {
+              "id": "a",
+              "text": "Développer des relations positives",
+              "explanation": "Développer des relations positives concerne la qualité des liens avec les élèves, entre élèves et avec les familles. Ici, l'enseignante travaille les façons d'agir à l'entrée en classe et lors d'une demande de parole : ce sont une routine et une règle de conduite."
+            },
+            {
+              "id": "b",
+              "text": "Capter et maintenir l'attention et l'engagement",
+              "explanation": "Cette composante du modèle de Gaudreau vise notamment à susciter l'intérêt pour les activités et à soutenir la participation aux apprentissages. Faire apprendre une routine d'entrée et une règle de prise de parole relève de l'établissement des attentes, même si cela peut aussi faciliter l'engagement."
+            },
+            {
+              "id": "c",
+              "text": "Établir des attentes claires",
+              "explanation": "Dans le modèle de Gaudreau, cette composante rassemble les règles, les consignes, les routines, les procédures et l'enseignement des comportements attendus. Faire pratiquer l'entrée en classe et préciser la demande de parole apprend aux élèves comment agir. La rétroaction positive contribue elle aussi à l'établissement et au respect de ces attentes."
+            },
+            {
+              "id": "d",
+              "text": "Gérer les ressources",
+              "explanation": "Gérer les ressources consiste à organiser le temps, l'espace, le matériel et les ressources humaines ou technologiques. Ici, les sacs et les cahiers servent à décrire la conduite apprise ; l'enseignante travaille la routine d'entrée, plutôt que l'aménagement ou la disponibilité de ces ressources."
+            }
+          ],
+          "level": "essentiel",
+          "sansChoix": true,
+          "notionId": "N65"
+        },
+        {
+          "id": "Q2",
+          "prompt": "Selon Gaudreau (2024), l'enseignement explicite des comportements attendus est une étape indispensable à l'établissement d'attentes claires. Quel est son rôle ?",
+          "requiresContext": false,
+          "correctId": "b",
+          "choices": [
+            {
+              "id": "a",
+              "text": "Encourager les élèves qui respectent déjà les attentes de la classe.",
+              "explanation": "Encourager les élèves qui respectent les attentes est la rétroaction positive, que Gaudreau traite après l'enseignement explicite : elle soutient l'adoption et le maintien de comportements déjà enseignés."
+            },
+            {
+              "id": "b",
+              "text": "Apprendre aux élèves comment réaliser le comportement demandé.",
+              "explanation": "Une consigne claire ne garantit pas que les élèves sachent produire le comportement dans le contexte où il est attendu. L'enseignement explicite (montrer, faire pratiquer avec aide, puis sans aide) comble cet écart : pour ceux qui doivent encore apprendre le comportement, la simple formulation d'une directive claire ne suffit pas, il faut expliquer et s'exercer."
+            },
+            {
+              "id": "c",
+              "text": "Rappeler aux élèves les règles de fonctionnement de la classe.",
+              "explanation": "Réitérer les règles est une autre pratique, citée dans l'autotest de Gaudreau. L'enseignement explicite explique et fait pratiquer le comportement attendu : redire la règle ne remplace pas cet apprentissage."
+            },
+            {
+              "id": "d",
+              "text": "Fixer à l'avance les conséquences des écarts de conduite des élèves.",
+              "explanation": "Clarifier les conséquences des écarts de conduite est une autre pratique de l'autotest. L'enseignement explicite apprend aux élèves à réaliser le comportement attendu et peut prévenir de nouveaux écarts ; il peut aussi être entrepris quand l'enseignant observe des comportements inappropriés."
+            }
+          ],
+          "level": "essentiel",
+          "sansChoix": true,
+          "notionId": "N66"
+        },
+        {
+          "id": "Q3",
+          "prompt": "Un enseignant observe des comportements inappropriés chez ses élèves. Selon Gaudreau (2024), quel devrait être son premier réflexe ?",
+          "requiresContext": false,
+          "correctId": "d",
+          "choices": [
+            {
+              "id": "a",
+              "text": "Leur rappeler les conséquences prévues pour ces écarts",
+              "explanation": "Rappeler les conséquences prévues relève d'une intervention corrective. Le critère de Gaudreau est d'abord d'enseigner le comportement attendu, ce qui réduit aussi la fréquence des interventions correctives."
+            },
+            {
+              "id": "b",
+              "text": "Leur reformuler la directive de façon encore plus claire",
+              "explanation": "Gaudreau précise que la simple formulation d'une directive claire ne suffit pas à celui qui doit encore apprendre le comportement : il faut expliquer et s'exercer. Reformuler la directive reste une formulation."
+            },
+            {
+              "id": "c",
+              "text": "Leur manifester sa désapprobation pour freiner le comportement",
+              "explanation": "Manifester sa désapprobation relève d'une gestion réactive : dans l'étude de Pas et al. (2015) que cite Gaudreau, elle est plus fréquente dans les classes où les comportements des élèves ne sont pas conformes aux attentes. Elle n'enseigne pas le comportement attendu."
+            },
+            {
+              "id": "d",
+              "text": "Leur enseigner de manière explicite le comportement attendu",
+              "explanation": "Pour Gaudreau, le premier réflexe de tout enseignant qui observe des comportements inappropriés devrait être de leur enseigner de manière explicite le comportement attendu : il le montre, puis le fait pratiquer avec aide et sans aide, au lieu de réagir seulement à l'écart."
+            }
+          ],
+          "level": "essentiel",
+          "sansChoix": true,
+          "notionId": "N66"
+        }
+      ],
+      "qcmRevision": "1e07df0702732a07"
+    },
+    {
       "id": "CLA-S-F01",
       "familyId": "CLA-S-F01",
       "module": "BP1-18CLA",
@@ -10751,5 +10892,5 @@
       "qcmRevision": "2bba5b2c36c5df64"
     }
   ],
-  "bankRevision": "4a0e3d74e2f4d6de"
+  "bankRevision": "54ef720405230814"
 }
