@@ -8,7 +8,7 @@
   function useful(input) {
     const data = JSON.parse(JSON.stringify({ firstName: input.firstName, feedback: input.feedback, collection: input.collection || input.client?.collection || window.QCM_COLLECTION?.id || 'fra-qcm-oral' }));
     if (typeof data.firstName !== 'string' || data.firstName.length > 80 || !data.feedback || typeof data.feedback !== 'object') throw issue('Vérifie le prénom et le commentaire avant l’envoi.', 'invalid');
-    if (!['fra-qcm-oral', 'cla-qcm-s1', 'dev-qcm-uf1'].includes(data.collection)) throw issue('Collection de retour incompatible.', 'invalid');
+    if (!['fra-qcm-oral', 'cla-qcm-s1', 'dev-qcm-uf1', 'shs-qcm-s1'].includes(data.collection)) throw issue('Collection de retour incompatible.', 'invalid');
     const f = data.feedback;
     if (typeof f.questionId !== 'string' || !f.questionId || typeof f.contentRevision !== 'string' || !/^[0-9a-f]{12,64}$/i.test(f.contentRevision) || typeof f.category !== 'string' || !f.category || typeof f.comment !== 'string' || !f.comment.trim()) throw issue('Le retour est incomplet. Ton brouillon reste sur cet appareil.', 'invalid');
     if (!f.snapshot || typeof f.snapshot !== 'object') throw issue('Le contenu de la question manque. Rouvre le signalement.', 'invalid');

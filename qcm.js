@@ -1,7 +1,7 @@
 (function () {
   'use strict';
   const collection = window.QCM_COLLECTION || {};
-  const IS_ORAL = collection.id === 'fra-qcm-oral', GROUPED_COURSES = ['fra-qcm-oral', 'cla-qcm-s1', 'dev-qcm-uf1'].includes(collection.id), oralNavigation = window.HEPOralNavigation;
+  const IS_ORAL = collection.id === 'fra-qcm-oral', GROUPED_COURSES = ['fra-qcm-oral', 'cla-qcm-s1', 'dev-qcm-uf1', 'shs-qcm-s1'].includes(collection.id), oralNavigation = window.HEPOralNavigation;
   const canWrite = q => q.hasWrittenExercise === true || (q.hasWrittenExercise === undefined && IS_ORAL);
   const writingHome = collection.hasWriting === true || IS_ORAL;
   const exportPrefix = collection.exportPrefix || 'FRA-QCM';
@@ -231,7 +231,7 @@
     }).join('')}</section><p class="notice">Le résultat des QCM mesure la reconnaissance d’une réponse. La rédaction et sa justification restent à travailler séparément.</p><p class="help-text"><a href="oral.html">Retour au bloc oral</a></p>`;
   }
   // Parcours dérivés : chaque question conserve son exercice, sa révision et son essai.
-  const courseKey = q => { if (typeof q.courseGroupKey === 'string') return q.courseGroupKey; const match = /^[CS](\d+)$/.exec(q.course || q.referenceId || ''); return match ? String(Number(match[1])) : null; };
+  const courseKey = q => { if (typeof q.courseGroupKey === 'string') return q.courseGroupKey; const match = /^[CS](\d+)$/.exec(q.referenceId || q.course || ''); return match ? String(Number(match[1])) : null; };
   const groupDefinitions = () => bank.courseGroups || [...new Set(bank.exercises.map(courseKey).filter(Boolean))].map(key => ({ key, label: 'Cours ' + key }));
   const courseLabel = key => groupDefinitions().find(group => group.key === key)?.label || 'Cours ' + key;
   function orderedCourseEntries() {
@@ -371,17 +371,25 @@
     const courses = groupDefinitions().map(group => {
       const key = group.key;
       const queue = courseQueue(key), exercises = bank.exercises.filter(q => courseKey(q) === key);
-      const dates = exercises.map(q => { const [d, m, y] = String(bank.courseReferences[q.course || q.referenceId]?.date || '').split('.'); return y && m && d ? `${y}${m}${d}` : '99999999'; }).sort();
+      const dates = exercises.map(q => { const [d, m, y] = String(bank.courseReferences[q.referenceId || q.course]?.date || '').split('.'); return y && m && d ? `${y}${m}${d}` : '99999999'; }).sort();
       const label = group.label;
-      const haystack = [label, `Cours${key}`, ...exercises.map(q => { const family = bank.families.find(f => f.id === q.familyId), ref = bank.courseReferences[q.course || q.referenceId]; return [family?.title, family?.theme, q.title, q.prompt, ...q.hints, ...q.steps.map(s => s.prompt), ref?.date].join(' '); })].join(' ');
-      return { key, label, queue, date: dates[0] || '99999999', match: !query || oralNavigation.normalize(haystack).includes(query) };
+      const courseAlias = collection.id === 'shs-qcm-s1' ? label.replace(/\s+/g, '') : `Cours${key}`;
+      const haystack = [bank.blocks?.find(block => block.key === group.block)?.label, label, courseAlias, ...exercises.map(q => { const family = bank.families.find(f => f.id === q.familyId), ref = bank.courseReferences[q.referenceId || q.course]; return [family?.title, family?.theme, q.title, q.prompt, ...q.hints, ...q.steps.map(s => s.prompt), ref?.date].join(' '); })].join(' ');
+      return { key, label, block: group.block, queue, date: dates[0] || '99999999', match: !query || oralNavigation.normalize(haystack).includes(query) };
     }).filter(course => course.match);
     const total = allEntries().length, mix = readMix();
-    return `${modeControls()}${levelControls()}${emptyPathMessage ? `<p class="notice" role="status">${esc(emptyPathMessage)}</p>` : ''}<section class="qcm-mix-start" aria-label="Toutes les questions"><div><button class="btn primary" data-action="mix" ${total ? '' : 'disabled'}>Tout mélanger</button><p class="help-text">${total ? total + ' ' + questionLabel() + ' en ordre aléatoire. Réponses conservées.' : esc(emptySelection())}</p></div>${mix ? '<button class="btn ghost" data-action="new-mix">Nouveau mélange</button>' : ''}</section>
+    return `<div class="quiz-help-entry"><button type="button" class="btn quiz-help-button" data-quiz-help>Comment utiliser ce quiz ?</button></div>${modeControls()}${levelControls()}${emptyPathMessage ? `<p class="notice" role="status">${esc(emptyPathMessage)}</p>` : ''}<section class="qcm-mix-start" aria-label="Toutes les questions"><div><button class="btn primary" data-action="mix" ${total ? '' : 'disabled'}>Tout mélanger</button><p class="help-text">${total ? total + ' ' + questionLabel() + ' en ordre aléatoire. Réponses conservées.' : esc(emptySelection())}</p></div>${mix ? '<button class="btn ghost" data-action="new-mix">Nouveau mélange</button>' : ''}</section>
       ${window.HEPQuickUI?.group() || ''}<section class="qcm-subject" aria-labelledby="qcm-subject-title"><h1 id="qcm-subject-title">${esc(collection.subject || 'Français')}</h1><section class="qcm-block" aria-labelledby="qcm-block-title"><h2 id="qcm-block-title">${esc(collection.block || 'Bloc oral')}</h2><p class="hero-description">${withoutChoices ? 'Écris ou pense ta réponse, puis affiche la réponse attendue et déclare « Je savais » ou « À revoir ». Les résultats QCM restent séparés.' : 'Des QCM avec une correction expliquée, à ton rythme.'}${writingHome && !withoutChoices ? ' Les exercices rédigés du bloc oral ont aussi leur <a href="oral.html">accès direct à la rédaction</a>.' : ''}</p>
       <form class="oral-tools qcm-home-filters" id="qcm-home-filters"><label class="oral-field" for="qcm-search">Rechercher un cours ou une notion<input class="text-input" id="qcm-search" type="search" value="${esc(search)}" placeholder="${esc(collection.searchPlaceholder || 'Ex. : Cours 1, étayage, récit…')}"></label><button class="btn secondary" type="submit">Rechercher</button>${search ? '<button class="btn ghost" type="button" data-action="clear-search">Tout afficher</button>' : ''}</form>
-      <p class="help-text oral-result-count" id="qcm-home-results" role="status" tabindex="-1">${courses.length} cours · ${courses.reduce((n, course) => n + course.queue.length, 0)} ${questionLabel()}</p><div class="exercise-grid qcm-courses" role="group" aria-label="Parcours par cours">${courses.map(course => { const stats = courseStats(course.queue); return `<article class="course-card exercise-tile"><h3>${esc(course.label)}</h3><p class="help-text">${course.queue.length} ${questionLabel()}${stats.answered ? ` · ${stats.answered} ${withoutChoices ? 'autoévaluation' : 'réponse'}${stats.answered > 1 ? 's' : ''} enregistrée${stats.answered > 1 ? 's' : ''}` : ''}</p><button class="btn primary" data-course="${esc(course.key)}" ${course.queue.length ? '' : 'disabled'} aria-label="${esc(course.queue.length ? (stats.answered || readCourseCursors()[course.key] ? 'Reprendre' : 'Commencer') + ' ' + course.label : 'Aucune question disponible pour ' + course.label + '. ' + emptySelection())}">${course.queue.length ? (stats.answered || readCourseCursors()[course.key] ? 'Reprendre' : 'Commencer') : 'Aucune question'}</button></article>`; }).join('') || '<p class="empty-state">Aucun cours ne correspond à cette recherche.</p>'}</div></section></section>
+      <p class="help-text oral-result-count" id="qcm-home-results" role="status" tabindex="-1">${courses.length} cours · ${courses.reduce((n, course) => n + course.queue.length, 0)} ${questionLabel()}</p><div class="exercise-grid qcm-courses" role="group" aria-label="Parcours par cours">${renderCourseBlocks(courses, course => { const stats = courseStats(course.queue); return `<article class="course-card exercise-tile"><h3>${esc(course.label)}</h3><p class="help-text">${course.queue.length} ${questionLabel()}${stats.answered ? ` · ${stats.answered} ${withoutChoices ? 'autoévaluation' : 'réponse'}${stats.answered > 1 ? 's' : ''} enregistrée${stats.answered > 1 ? 's' : ''}` : ''}</p><button class="btn primary" data-course="${esc(course.key)}" ${course.queue.length ? '' : 'disabled'} aria-label="${esc(course.queue.length ? (stats.answered || readCourseCursors()[course.key] ? 'Reprendre' : 'Commencer') + ' ' + course.label : 'Aucune question disponible pour ' + course.label + '. ' + emptySelection())}">${course.queue.length ? (stats.answered || readCourseCursors()[course.key] ? 'Reprendre' : 'Commencer') : 'Aucune question'}</button></article>`; }) || '<p class="empty-state">Aucun cours ne correspond à cette recherche.</p>'}</div></section></section>
       ${writingHome && !withoutChoices ? '<p class="notice">Le résultat des QCM mesure la reconnaissance d’une réponse. La rédaction et sa justification restent à travailler séparément.</p>' : ''}`;
+  }
+  function renderCourseBlocks(courses, card) {
+    if (!bank.blocks) return courses.map(card).join('');
+    return bank.blocks.map(block => {
+      const entries = courses.filter(course => course.block === block.key);
+      return entries.length ? `<section class="qcm-discipline" aria-label="${esc(block.label)}"><h3>${esc(block.label)}</h3><div class="exercise-grid">${entries.map(card).join('')}</div></section>` : '';
+    }).join('');
   }
   function scSnapshot(q, step, run) {
     const record = displayedSC, seen = quickSeen.get(run.id) || {};

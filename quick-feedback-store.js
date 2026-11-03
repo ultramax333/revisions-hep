@@ -1,7 +1,7 @@
 (function () {
   'use strict';
   const COLLECTION = window.QCM_COLLECTION?.id;
-  const scopes = { 'fra-qcm-oral': { subject: 'Français', prefix: 'HEP-QCM' }, 'cla-qcm-s1': { subject: 'Organisation de la classe', prefix: 'CLA-QCM' }, 'dev-qcm-uf1': { subject: 'Développement', prefix: 'DEV-QCM' } };
+  const scopes = { 'fra-qcm-oral': { subject: 'Français', prefix: 'HEP-QCM' }, 'cla-qcm-s1': { subject: 'Organisation de la classe', prefix: 'CLA-QCM' }, 'dev-qcm-uf1': { subject: 'Développement', prefix: 'DEV-QCM' }, 'shs-qcm-s1': { subject: 'Sciences humaines et sociales', prefix: 'SHS-QCM' } };
   if (!Object.hasOwn(scopes, COLLECTION)) throw Error('Collection d’avis QCM incompatible.');
   const DB = 'hep-revisions-quick-feedback-v1' + (COLLECTION === 'fra-qcm-oral' ? '' : '-' + COLLECTION);
   const SCHEMA = 'hep-qcm-votes-local/1', UUID = /^[0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/;

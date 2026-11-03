@@ -417,3 +417,16 @@ pre.exercise-text { white-space: pre-wrap; overflow-wrap: anywhere; font: inheri
 .qcm-courses .help-text { grid-column: 1; margin: 0; }
 .qcm-courses .btn { grid-column: 2; grid-row: 1 / 3; margin: 0; }
 @media (min-width: 760px) { .qcm-courses { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+/* Help remains legible in both themes, with normal touch targets. */
+.quiz-help-entry { margin: .35rem 0 1rem; }
+.btn.quiz-help-button { background: #a51d2d; color: #fff; border: 2px solid #db6370; min-height: 44px; white-space: normal; text-align: center; }
+.btn.quiz-help-button:not(:disabled):not([aria-disabled="true"]):hover { background: #861522; color: #fff; }
+.quiz-help-button:focus-visible, .quiz-help-dialog :focus-visible { outline: 3px solid #f4b949; outline-offset: 3px; }
+.quiz-help-dialog { color: var(--text, #f3f5fa); background: var(--bg-card, #172134); border: 1px solid var(--border, #66738a); border-radius: 16px; width: min(650px, calc(100vw - 24px)); max-height: calc(100dvh - 32px); padding: clamp(16px, 4vw, 28px); overflow: auto; box-sizing: border-box; }
+.quiz-help-dialog::backdrop { background: rgb(0 0 0 / 65%); }
+.quiz-help-dialog h2 { margin-top: 0; }
+.quiz-help-dialog li + li { margin-top: .8rem; }
+.quiz-help-dialog li, .quiz-help-dialog p { overflow-wrap: anywhere; line-height: 1.55; }
+.qcm-discipline { grid-column: 1 / -1; min-width: 0; }
+.qcm-discipline .course-card h3 { grid-column: 1 / -1; }
+.qcm-discipline .course-card .btn { grid-row: 2; }

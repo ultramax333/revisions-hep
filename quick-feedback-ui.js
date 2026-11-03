@@ -4,10 +4,10 @@
   let generation = 0, sending = false, unsubscribe;
   let groupMessage = '', activeRefresh = () => {};
   function thumbs() {
-    return '<section class="quick-vote" aria-label="Ton avis sur cette question"><span class="quick-vote-label">Cette question…</span><div class="quick-vote-buttons"><button type="button" class="quick-thumb quick-up" data-quick-value="up" aria-pressed="false"><span aria-hidden="true">👍</span> Utile et claire</button><button type="button" class="quick-thumb quick-down" data-quick-value="down" aria-pressed="false"><span aria-hidden="true">👎</span> À revoir</button></div><p class="help-text quick-vote-state" data-quick-vote-status role="status" aria-live="polite">Un clic conserve ton avis ici ; l’envoi se fait en groupe.</p><details data-quick-comment-wrap hidden><summary>Ajouter un commentaire (facultatif)</summary><label class="field-label" for="quick-vote-comment">Ce qui serait à revoir</label><textarea id="quick-vote-comment" class="feedback-textarea" maxlength="8000" rows="3"></textarea><p class="help-text" data-quick-comment-status role="status"></p></details></section>';
+    return '<section class="quick-vote" aria-label="Ton avis sur cette question"><span class="quick-vote-label">Cette question…</span><div class="quick-vote-buttons"><button type="button" class="quick-thumb quick-up" data-quick-value="up" aria-pressed="false"><span aria-hidden="true">👍</span> Utile et claire</button><button type="button" class="quick-thumb quick-down" data-quick-value="down" aria-pressed="false"><span aria-hidden="true">👎</span> À revoir</button></div><p class="help-text quick-vote-state" data-quick-vote-status role="status" aria-live="polite">Ton avis part automatiquement à Maxim. En cas d’échec, il reste sur cet appareil.</p><details data-quick-comment-wrap hidden><summary>Ajouter un commentaire (facultatif)</summary><label class="field-label" for="quick-vote-comment">Ce qui serait à revoir</label><textarea id="quick-vote-comment" class="feedback-textarea" maxlength="8000" rows="3"></textarea><p class="help-text" data-quick-comment-status role="status"></p></details></section>';
   }
   function group() {
-    return '<section class="quick-group" aria-label="Envoyer les avis sur les QCM"><h2>Mes avis sur les questions</h2><p class="help-text" data-quick-count role="status">Lecture des avis enregistrés…</p><details class="quick-name"><summary>Ajouter un prénom (facultatif)</summary><label class="field-label" for="quick-first-name">Prénom</label><input id="quick-first-name" data-feedback-first-name class="text-input" maxlength="80" autocomplete="given-name"></details><div class="actions"><button type="button" class="btn primary" data-quick-send disabled>Envoyer mes avis</button><button type="button" class="btn ghost" data-action="avis">Mes avis et sauvegarde</button></div><p class="help-text">Envoi groupé sans compte Google, seulement pour les avis courants non reçus.</p><p class="save-status" data-quick-send-status role="status" aria-live="polite"></p></section>';
+    return '<section class="quick-group" aria-label="Envoyer les avis sur les QCM"><h2>Mes avis sur les questions</h2><p class="help-text" data-quick-count role="status">Lecture des avis enregistrés…</p><details class="quick-name"><summary>Ajouter un prénom (facultatif)</summary><label class="field-label" for="quick-first-name">Prénom</label><input id="quick-first-name" data-feedback-first-name class="text-input" maxlength="80" autocomplete="given-name"></details><div class="actions"><button type="button" class="btn primary" data-quick-send disabled>Envoyer mes avis</button><button type="button" class="btn ghost" data-action="avis">Mes avis et sauvegarde</button></div><p class="help-text">Les avis partent automatiquement à Maxim, sans compte Google. Ce bouton permet de reprendre les avis non reçus.</p><p class="save-status" data-quick-send-status role="status" aria-live="polite"></p></section>';
   }
   function archive() {
     return '<h1>Mes avis sur les QCM · ' + S.subject + '</h1>' + group() + '<section class="settings-card"><h2>Sauvegarder mes avis</h2><p>Ces avis, leurs intentions d’envoi et leurs reçus sont sur cet appareil. Cette sauvegarde dédiée permet de les reprendre après un changement de navigateur. Ils ne sont pas inclus dans la sauvegarde Drive.</p><div class="actions"><button type="button" class="btn secondary" data-quick-export>Télécharger mes avis</button><button type="button" class="btn secondary" data-quick-import>Reprendre mes avis</button><input type="file" id="quick-backup-file" accept=".json,application/json" hidden></div><p class="help-text" data-quick-archive-status role="status"></p></section><section data-quick-list aria-label="Avis conservés"></section><p class="help-text"><button type="button" class="btn ghost" data-action="feedback">Mes autres retours</button></p>';
@@ -36,7 +36,7 @@
         if (voteBox) {
           otherMode = !!thread && snapshotMode(thread.current.snapshot) !== mode;
           voteBox.querySelectorAll('[data-quick-value]').forEach(button => button.setAttribute('aria-pressed', String(!otherMode && thread?.current.value === button.dataset.quickValue)));
-          message('[data-quick-vote-status]', voteError || (otherMode ? 'Un avis est conservé en mode ' + (mode === 'qcm' ? 'Sans les choix' : 'QCM') + '. Un clic sur un pouce le remplace pour ce mode-ci, sans reprendre son commentaire. Les intentions déjà préparées restent conservées.' : thread ? (thread.current.value === 'up' ? '👍 Utile et claire. ' : '👎 À revoir. ') + (S.currentReceived(state, thread) ? 'Avis reçu.' : 'Avis enregistré sur cet appareil, à envoyer en groupe.') : 'Un clic conserve ton avis ici ; l’envoi se fait en groupe.'));
+          message('[data-quick-vote-status]', voteError || (otherMode ? 'Un avis est conservé en mode ' + (mode === 'qcm' ? 'Sans les choix' : 'QCM') + '. Un clic sur un pouce le remplace pour ce mode-ci, sans reprendre son commentaire. Les intentions déjà préparées restent conservées.' : thread ? (thread.current.value === 'up' ? '👍 Utile et claire. ' : '👎 À revoir. ') + (S.currentReceived(state, thread) ? 'Avis reçu.' : 'Avis enregistré ici ; il part automatiquement à Maxim.') : 'Ton avis part automatiquement à Maxim. En cas d’échec, il reste sur cet appareil.'));
           commentWrap.hidden = otherMode || !thread || (thread.current.value !== 'down' && !thread.current.comment);
           comment.disabled = otherMode;
           if (thread && document.activeElement !== comment && !ownWrite) { comment.value = thread.current.comment; editorVersion = thread.version; }
@@ -101,13 +101,17 @@
       try {
         if (file.size > 25 * 1024 * 1024) throw Error('Cette sauvegarde est trop volumineuse.');
         await S.restore(JSON.parse(await file.text()));
-        message('[data-quick-archive-status]', 'Avis et reçus repris. Aucun envoi automatique.'); refresh();
+        message('[data-quick-archive-status]', 'Avis et reçus repris. Les avis courants non reçus repartiront automatiquement.'); refresh();
       } catch (error) { message('[data-quick-archive-status]', error.message); }
       finally { event.target.value = ''; }
     });
     refresh();
   }
-  // Refresh on focus without starting any sender or requiring cross-tab locks.
+  // Automatic transport reports only server-confirmed receipts to this UI.
+  HEPQuickSend.subscribe(result => {
+    groupMessage = result.stopped || (result.counts.pending ? 'Les avis restants partent automatiquement, par petits groupes.' : 'Tous tes avis courants ont été reçus.');
+    activeRefresh();
+  });
   window.addEventListener('focus', () => activeRefresh());
   window.HEPQuickUI = { thumbs, group, archive, bind };
 }());

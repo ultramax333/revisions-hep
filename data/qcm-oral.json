@@ -495,17 +495,17 @@
     },
     {
       "id": "ORAL-P-F55",
-      "title": "Progression souple de Boisseau et option didactique Pn GV",
+      "title": "Progression souple de Boisseau : repères et opérations",
       "course": "S02"
     },
     {
       "id": "ORAL-P-F56",
-      "title": "Discussion à visée philosophique (DVP) et DVDP de Tozzi",
+      "title": "Discussion à visée philosophique (DVP) et débat",
       "course": "C03"
     },
     {
       "id": "ORAL-P-F57",
-      "title": "Support inducteur, question philosophique, oral réflexif et impartialité",
+      "title": "Support inducteur, question philosophique et oral réflexif",
       "course": "S03"
     },
     {
@@ -624,11 +624,6 @@
       "course": "S01"
     },
     {
-      "id": "ORAL-P-F81",
-      "title": "Phases d'un atelier de philosophie : le constat",
-      "course": "S03"
-    },
-    {
       "id": "ORAL-P-F82",
       "title": "Trois rôles de la langue de scolarisation",
       "course": "C01"
@@ -687,11 +682,6 @@
       "id": "ORAL-P-F93",
       "title": "Les capacités révélées par la parodie (jeu de rôles)",
       "course": "C04"
-    },
-    {
-      "id": "ORAL-P-F94",
-      "title": "Les aires de Broca et de Wernicke et le LAD : deux positions",
-      "course": "C01"
     },
     {
       "id": "ORAL-P-F95",
@@ -807,6 +797,36 @@
       "contentRevision": "3e0a5a0966de",
       "steps": [
         {
+          "id": "Q10",
+          "prompt": "Que représente le triangle didactique ?",
+          "correctId": "c",
+          "choices": [
+            {
+              "id": "a",
+              "text": "Une organisation des trois voyelles extrêmes [i], [a] et [u], point d’appui des voyelles plus fines.",
+              "explanation": "C’est le triangle vocalique, qui sert à l’articulation. Le triangle didactique ne concerne pas les sons : il relie les pôles d’une situation d’enseignement."
+            },
+            {
+              "id": "b",
+              "text": "Une répartition des trois rôles de la langue de scolarisation : objet, outil et condition de réussite.",
+              "explanation": "Ces trois rôles décrivent la langue de scolarisation, ici le français. Ils ne forment pas le triangle didactique, qui relie les savoirs, l’enseignant et les élèves."
+            },
+            {
+              "id": "c",
+              "text": "Un modèle à trois pôles, les savoirs, l’enseignant et les élèves, avec les relations entre eux.",
+              "explanation": "Le triangle didactique (d’après Chevallard) est un modèle à trois pôles : les savoirs, l’enseignant et les élèves. L’enseignant sélectionne, transpose, planifie et transmet le savoir ; l’élève construit ses connaissances et ses savoir-faire ; l’enseignant accompagne l’élève, l’observe et l’évalue. Il sert à repérer quelle relation est en jeu dans une situation de classe."
+            },
+            {
+              "id": "d",
+              "text": "Un classement en trois niveaux de l’écoute des élèves : en écho, marquée et travail collaboratif.",
+              "explanation": "Ces niveaux décrivent la manière dont les élèves s’écoutent entre eux. Le triangle didactique décrit plutôt les relations entre le savoir, l’enseignant et les élèves."
+            }
+          ],
+          "requiresContext": false,
+          "level": "essentiel",
+          "sansChoix": true
+        },
+        {
           "id": "Q2",
           "prompt": "Dans le triangle didactique, que décrit la relation enseignant–savoirs ?",
           "correctId": "a",
@@ -814,7 +834,7 @@
             {
               "id": "a",
               "text": "Le travail de sélection et de transposition des contenus à enseigner.",
-              "explanation": "L’enseignant choisit, transpose, planifie et transmet le savoir : ces actions décrivent sa relation aux savoirs dans le triangle."
+              "explanation": "Le triangle didactique est un modèle à trois pôles (les savoirs, l’enseignant et les élèves) et à trois relations. L’enseignant choisit, transpose, planifie et transmet le savoir : ces actions décrivent sa relation aux savoirs."
             },
             {
               "id": "b",
@@ -854,7 +874,7 @@
             {
               "id": "c",
               "text": "Les savoirs que les élèves doivent acquérir.",
-              "explanation": "La didactique place les savoirs à acquérir au centre de ses préoccupations. Elle ne se réduit ni à la matière du cours ni à la relation seule."
+              "explanation": "Simard distingue la didactique, qui place au centre de ses préoccupations les savoirs à acquérir, théoriques comme pratiques, et la pédagogie, centrée d’abord sur la relation enseignant–élève. La didactique ne se réduit ni à la matière du cours ni à la relation seule."
             },
             {
               "id": "d",
@@ -879,7 +899,7 @@
             {
               "id": "b",
               "text": "La relation entre l’enseignant et l’élève, quelle que soit la matière.",
-              "explanation": "Simard centre la pédagogie sur la relation enseignant–élève. Cette relation se travaille aussi pendant l’étude d’un savoir disciplinaire."
+              "explanation": "Simard distingue la didactique, centrée sur les savoirs à acquérir, et la pédagogie, centrée d’abord sur la relation enseignant–élève, quelle que soit la matière. Cette relation se travaille aussi pendant l’étude d’un savoir disciplinaire."
             },
             {
               "id": "c",
@@ -897,7 +917,7 @@
           "sansChoix": true
         }
       ],
-      "qcmRevision": "e9a89d100cbd",
+      "qcmRevision": "1d086d4f44cd",
       "courseGroupKey": "2",
       "hasWrittenExercise": true
     },
@@ -1146,8 +1166,8 @@
       "context": "Une discussion part d’un jeu où un enfant a changé une règle pour aider un débutant. A dit : « Une règle, ça ne se change jamais. » B répond : « Si on est tous d’accord, on peut. » L’enseignant veut faire réfléchir à ce qui rend une règle juste, sans organiser un vote immédiat sur le jeu.",
       "prompt": "Propose une question à visée philosophique et justifie sa portée. Formule trois relances distinctes mobilisant problématisation, conceptualisation et argumentation ; explique leur fonction sans décider toi-même quelle thèse doit l’emporter.",
       "hints": [
-        "• Discussion à visée philosophique : Échange réglé autour d’une question fondamentale de l’existence humaine, dans lequel on construit une réflexion commune en problématisant, conceptualisant et argumentant.\nUne question philosophique peut recevoir plusieurs réponses, interroge une notion ou un concept et dépasse un fait particulier par sa portée sur l’existence humaine. Une recherche commune demande d’examiner les idées, pas seulement de les recueillir.",
-        "• Problématisation : Travail qui précise le problème contenu dans une question, ses enjeux et les difficultés qu’il pose.\n• Conceptualisation : Travail qui précise une notion, notamment son sens, ses caractéristiques et ses limites.\n• Argumentation : Travail qui soutient ou examine une idée à l’aide de raisons.\nUne relance peut faire apparaitre une difficulté, demander de préciser un mot ou faire examiner une raison. Les opérations peuvent se croiser ; explique celle que ta relance vise en premier. L’adulte soutient cette recherche de manière impartiale : il aide à préciser et à examiner, sans imposer sa thèse."
+        "• Discussion à visée philosophique : Échange réglé autour d’une question fondamentale de l’existence humaine, dans lequel on construit une réflexion commune en problématisant, conceptualisant et argumentant.\n• Capacité langagière argumentative : Moyen de construire et discuter une pensée à l’oral : problématiser, recentrer, interpréter, conceptualiser et argumenter.\nCes cinq capacités se travaillent dans la discussion à visée philosophique.\nUne question philosophique peut recevoir plusieurs réponses, interroge une notion ou un concept et dépasse un fait particulier par sa portée sur l’existence humaine. Une recherche commune demande d’examiner les idées, pas seulement de les recueillir.",
+        "• Problématisation : Travail qui précise le problème contenu dans une question, ses enjeux et les difficultés qu’il pose.\n• Conceptualisation : Travail qui précise une notion, notamment son sens, ses caractéristiques et ses limites.\n• Argumentation : Travail qui soutient ou examine une idée à l’aide de raisons.\n• Recentrer : Revenir au thème, à ce que les autres ont dit ou à sa propre idée, pour maintenir le cap.\n• Interpréter : Relier un concept aux expériences et représentations pour se l’approprier et le comprendre.\nUne relance peut faire apparaitre une difficulté, demander de préciser un mot ou faire examiner une raison. Les opérations peuvent se croiser ; explique celle que ta relance vise en premier. L’adulte soutient cette recherche de manière impartiale : il aide à préciser et à examiner, sans imposer sa thèse."
       ],
       "criteria": [
         {
@@ -1207,6 +1227,66 @@
       "contentRevision": "c6bd50266bf3",
       "steps": [
         {
+          "id": "Q10",
+          "prompt": "Qu’est-ce qu’une discussion à visée philosophique ?",
+          "correctId": "b",
+          "choices": [
+            {
+              "id": "a",
+              "text": "Un échange moins formel, moins contraint et plus ouvert aux imprévus qu’un dialogue guidé par un but.",
+              "explanation": "C’est la conversation. La discussion à visée philosophique est un dispositif réglé : on y définit, on y questionne et on y justifie."
+            },
+            {
+              "id": "b",
+              "text": "Un dispositif où les élèves pensent par et pour eux-mêmes autour d’une question, dans des échanges réglés.",
+              "explanation": "La discussion à visée philosophique (atelier de philosophie, DVP) est un dispositif où les élèves cherchent à penser par et pour eux-mêmes autour d’une question, dans des échanges réglés qui font définir, questionner et justifier. Ils discutent pour rendre raison de leurs propos plutôt que pour avoir raison."
+            },
+            {
+              "id": "c",
+              "text": "Une interaction guidée par un but, structurée par l’enseignant, ses objectifs et la validation des réponses.",
+              "explanation": "C’est le dialogue scolaire habituel, structuré par l’enseignant. Dans la discussion à visée philosophique, les élèves cherchent à penser par eux-mêmes autour d’une question, dans des échanges réglés."
+            },
+            {
+              "id": "d",
+              "text": "Une situation jouée dans laquelle on parle à la manière d’une personne ou depuis un rôle.",
+              "explanation": "C’est la parodie, où l’élève parle comme un personnage. La discussion à visée philosophique travaille la pensée et la formulation autour d’une question."
+            }
+          ],
+          "requiresContext": false,
+          "level": "essentiel",
+          "sansChoix": true
+        },
+        {
+          "id": "Q11",
+          "prompt": "Que désigne la capacité langagière argumentative ?",
+          "correctId": "a",
+          "choices": [
+            {
+              "id": "a",
+              "text": "Un moyen de construire et de discuter une pensée à l’oral, comme problématiser ou conceptualiser.",
+              "explanation": "La capacité langagière argumentative est un moyen de construire et de discuter une pensée à l’oral. Elle réunit cinq capacités : problématiser, recentrer, interpréter, conceptualiser et argumenter."
+            },
+            {
+              "id": "b",
+              "text": "Une responsabilité définie dans l’échange, comme animer, présider ou reformuler.",
+              "explanation": "C’est un rôle langagier : ce que l’élève est chargé de faire dans l’échange. La capacité est ce que l’élève apprend à faire, et elle peut se travailler dans plusieurs rôles."
+            },
+            {
+              "id": "c",
+              "text": "Une capacité à communiquer efficacement en tenant compte de la situation, des partenaires et du but.",
+              "explanation": "C’est la compétence pragmatique, l’une des quatre compétences qui se développent ensemble (syntaxique, lexico-sémantique, pragmatique, phonologique). La capacité argumentative porte sur la pensée construite et discutée à l’oral."
+            },
+            {
+              "id": "d",
+              "text": "Une capacité à organiser les mots selon les règles grammaticales pour énoncer un message.",
+              "explanation": "C’est la compétence syntaxique, qui concerne l’ordre et les liens des mots dans la phrase. La capacité argumentative porte sur la pensée construite et discutée à l’oral."
+            }
+          ],
+          "requiresContext": false,
+          "level": "essentiel",
+          "sansChoix": true
+        },
+        {
           "id": "Q5",
           "prompt": "Dans la situation, quelle question engagerait une discussion à visée philosophique sur la justice de cette règle ?",
           "correctId": "c",
@@ -1224,7 +1304,7 @@
             {
               "id": "c",
               "text": "Une règle peut-elle être juste si elle traite différemment celui qui débute ?",
-              "explanation": "Le traitement différent du débutant fait discuter ce qu’est une règle juste. La question dépasse la partie et ouvre plusieurs réponses à examiner."
+              "explanation": "La discussion à visée philosophique est un dispositif où les élèves cherchent à penser par et pour eux-mêmes autour d’une question. Le traitement différent du débutant fait discuter ce qu’est une règle juste : la question dépasse la partie et ouvre plusieurs réponses à examiner."
             },
             {
               "id": "d",
@@ -1254,7 +1334,7 @@
             {
               "id": "c",
               "text": "Si on remet le repas à quelqu’un en attendant qu’il le rende, est-ce encore un don ?",
-              "explanation": "Comparer donner et remettre avec retour attendu fait chercher les limites du don. C’est un travail sur ce qui entre dans le sens de la notion."
+              "explanation": "Conceptualiser, c’est définir un concept et ses attributs. Comparer donner et remettre avec retour attendu fait chercher les limites du don : c’est un travail sur ce qui entre dans le sens de la notion."
             },
             {
               "id": "d",
@@ -1274,7 +1354,7 @@
             {
               "id": "a",
               "text": "Si donner son repas aide l’autre mais nous laisse sans manger, qu’est-ce qui rend la décision difficile ?",
-              "explanation": "La relance met en tension aider l’autre et garder de quoi manger. Elle fait chercher ce qui pose problème dans l’affirmation « toujours donner »."
+              "explanation": "Problématiser, c’est soulever la complexité d’une question et examiner les implicites et les conséquences d’une affirmation. La relance met en tension aider l’autre et garder de quoi manger : elle fait chercher ce qui pose problème dans l’affirmation « toujours donner »."
             },
             {
               "id": "b",
@@ -1297,7 +1377,7 @@
           "sansChoix": false
         }
       ],
-      "qcmRevision": "446848253e2d",
+      "qcmRevision": "e55f729df8cb",
       "courseGroupKey": "3",
       "hasWrittenExercise": true
     },
@@ -1381,6 +1461,36 @@
       "contentRevision": "e7024d7dec53",
       "steps": [
         {
+          "id": "Q10",
+          "prompt": "Que décrit le schéma narratif ?",
+          "correctId": "a",
+          "choices": [
+            {
+              "id": "a",
+              "text": "La transformation entre l’avant et l’après d’une histoire, repérée en cinq moments successifs.",
+              "explanation": "Le schéma narratif est un outil d’analyse en cinq moments : situation initiale, complication, actions, résolution et situation finale. Il repère la transformation entre l’avant et l’après d’une histoire et aide à cibler l’aide pour rendre son déroulement compréhensible."
+            },
+            {
+              "id": "b",
+              "text": "Les caractéristiques enseignables d’un genre de texte : visée, structure, textualisation, langue.",
+              "explanation": "C’est le modèle didactique d’un genre textuel, qui décrit ce qu’on peut enseigner dans un genre. Le schéma narratif suit seulement la transformation d’une histoire."
+            },
+            {
+              "id": "c",
+              "text": "Les six aspects selon lesquels on décrit un genre de texte oral, comme l’oralité et les supports.",
+              "explanation": "Ce sont les composantes d’un genre de texte oral. Le schéma narratif ne décrit que la structuration du récit, une seule de ces composantes."
+            },
+            {
+              "id": "d",
+              "text": "Les repères d’âge de la construction du récit chez l’enfant, de la petite enfance à 8 ans.",
+              "explanation": "Ce sont les repères du développement du récit. Un début de schéma narratif apparaît vers 4–5 ans, mais le schéma narratif est l’outil qui décrit une histoire, non l’âge où l’enfant la construit."
+            }
+          ],
+          "requiresContext": false,
+          "level": "essentiel",
+          "sansChoix": true
+        },
+        {
           "id": "Q4",
           "prompt": "Avec des cartes, un enfant raconte : « Le bateau est pris dans la tempête. Après ils sont sur l’île. Après ils font un feu. » Quel élément du schéma narratif faut-il surtout développer entre la tempête et l’arrivée sur l’île ?",
           "correctId": "b",
@@ -1393,7 +1503,7 @@
             {
               "id": "b",
               "text": "Les actions : les tentatives des passagers pour atteindre l’abri.",
-              "explanation": "L’arrivée sur l’île donne une issue, mais le récit saute les moyens d’y parvenir. Développer les actions permet de relier le danger à cette issue."
+              "explanation": "Le schéma narratif décrit un récit en cinq moments : situation initiale, complication, actions, résolution et situation finale. L’arrivée sur l’île donne une issue, mais le récit saute les moyens d’y parvenir. Développer les actions permet de relier le danger à cette issue."
             },
             {
               "id": "c",
@@ -1411,7 +1521,7 @@
           "sansChoix": true
         }
       ],
-      "qcmRevision": "aba0c2115015",
+      "qcmRevision": "4695d1be2a6f",
       "courseGroupKey": "4",
       "hasWrittenExercise": true
     },
@@ -1486,7 +1596,7 @@
             {
               "id": "a",
               "text": "Le développement cognitif détermine le développement verbal.",
-              "explanation": "Chez Piaget tel que présenté ici, le langage dépend des possibilités d’abstraction et de décentration liées au développement cognitif."
+              "explanation": "L’approche constructiviste (Piaget) explique le développement du langage à partir des stades de développement cognitif. Chez Piaget tel que présenté ici, le langage dépend des possibilités d’abstraction et de décentration liées au développement cognitif."
             },
             {
               "id": "b",
@@ -1526,7 +1636,7 @@
             {
               "id": "c",
               "text": "Il contribue à construire la pensée et à résoudre des problèmes.",
-              "explanation": "Le langage est constitutif de la pensée : dans la médiation sociale, chercher à dire peut aider à penser et à résoudre un problème."
+              "explanation": "Dans l’approche historico-culturelle (Vygotski), l’adulte intervient comme médiateur dans la zone proximale de développement. Le langage est constitutif de la pensée : dans la médiation sociale, chercher à dire peut aider à penser et à résoudre un problème."
             },
             {
               "id": "d",
@@ -1539,7 +1649,7 @@
           "sansChoix": true
         }
       ],
-      "qcmRevision": "8d2c432bc05f",
+      "qcmRevision": "59d050883943",
       "courseGroupKey": "1",
       "hasWrittenExercise": true
     },
@@ -1633,7 +1743,7 @@
             {
               "id": "d",
               "text": "Une conséquence renforce la réponse produite après un stimulus.",
-              "explanation": "Le schéma stimulus–réponse–renforcement relie la réponse à ses conséquences, qui peuvent favoriser sa répétition."
+              "explanation": "Dans l’approche behavioriste (Skinner), le langage est une réponse à des stimuli externes, apprise par imitation puis renforcée. Le schéma stimulus–réponse–renforcement relie la réponse à ses conséquences, qui peuvent favoriser sa répétition."
             }
           ],
           "requiresContext": false,
@@ -1653,7 +1763,7 @@
             {
               "id": "b",
               "text": "Un scénario prévisible d’échanges dans lequel l’adulte soutient l’enfant.",
-              "explanation": "Le format donne des rôles et un déroulement prévisibles, avec un étayage qui aide l’enfant à participer."
+              "explanation": "Bruner relève de l’approche interactionniste, qui explique le développement du langage dans la relation avec l’adulte. Le format donne des rôles et un déroulement prévisibles, avec un étayage qui aide l’enfant à participer."
             },
             {
               "id": "c",
@@ -1678,7 +1788,7 @@
             {
               "id": "a",
               "text": "L’enfant dispose de capacités universelles et d’un dispositif inné d’acquisition du langage.",
-              "explanation": "Le dispositif inné d’acquisition du langage (LAD) et les dispositions innées caractérisent cette approche. Ils se distinguent d’une récompense ou d’un scénario social."
+              "explanation": "L’approche innéiste (Chomsky) explique l’acquisition du langage par des dispositions innées et des capacités universelles. Le dispositif inné d’acquisition du langage (LAD) et ces dispositions se distinguent d’une récompense ou d’un scénario social."
             },
             {
               "id": "b",
@@ -1701,7 +1811,7 @@
           "sansChoix": true
         }
       ],
-      "qcmRevision": "9fbe7e4e79a8",
+      "qcmRevision": "3b06b4966d1a",
       "courseGroupKey": "1",
       "hasWrittenExercise": true
     },
@@ -1776,17 +1886,17 @@
             {
               "id": "a",
               "text": "Les interventions par lesquelles l’adulte prend en charge la part difficile de la tâche.",
-              "explanation": "Ces interventions constituent l’étayage. La ZPD désigne l’écart entre les réalisations sans aide et avec aide."
+              "explanation": "Ces interventions constituent l’étayage. La zone proximale de développement (ZPD) désigne l’écart entre les réalisations sans aide et avec aide."
             },
             {
               "id": "b",
               "text": "Le niveau que l’enfant atteint avec l’aide d’un partenaire plus avancé.",
-              "explanation": "Le niveau avec assistance est le développement potentiel. Il est l’un des deux termes nécessaires pour décrire la ZPD."
+              "explanation": "Le niveau avec assistance est le développement potentiel. Il est l’un des deux termes nécessaires pour décrire la zone proximale de développement."
             },
             {
               "id": "c",
               "text": "La distance entre ce que l’enfant réussit seul et ce qu’il réussit avec une aide.",
-              "explanation": "La ZPD compare le niveau actuel, observé seul, et le niveau potentiel, observé avec un adulte ou un enfant plus avancé."
+              "explanation": "Chez Vygotski, la zone proximale de développement compare le niveau actuel, observé seul, et le niveau potentiel, observé avec un adulte ou un enfant plus avancé."
             },
             {
               "id": "d",
@@ -1799,7 +1909,7 @@
           "sansChoix": true
         }
       ],
-      "qcmRevision": "a9ec1fab1c3c",
+      "qcmRevision": "1a44d714f57c",
       "courseGroupKey": "1",
       "hasWrittenExercise": true
     },
@@ -1909,7 +2019,7 @@
             {
               "id": "d",
               "text": "Elle apporte une information nouvelle au message.",
-              "explanation": "L’extension enrichit le contenu du message ; une reformulation sans extension change sa forme en gardant ses informations."
+              "explanation": "Les reprises de l’énoncé de l’enfant par l’adulte sont de quatre types : les répétitions totale ou partielle, qui l’attestent, et les reformulations avec ou sans extension, qui l’enrichissent. L’extension enrichit le contenu du message ; une reformulation sans extension change sa forme en gardant ses informations."
             }
           ],
           "requiresContext": false,
@@ -1947,7 +2057,7 @@
           "sansChoix": true
         }
       ],
-      "qcmRevision": "e17e1e11be31",
+      "qcmRevision": "569375c46c3e",
       "courseGroupKey": "1",
       "hasWrittenExercise": true
     },
@@ -2061,7 +2171,7 @@
             }
           ],
           "requiresContext": false,
-          "level": "essentiel",
+          "level": "approfondissement",
           "sansChoix": true
         },
         {
@@ -2121,7 +2231,7 @@
             }
           ],
           "requiresContext": false,
-          "level": "essentiel",
+          "level": "approfondissement",
           "sansChoix": true
         }
       ],
@@ -2332,7 +2442,7 @@
       "context": "Des relevés d’un même enfant montrent « papa parti » vers 20 mois, puis, vers 30 mois, « moi je veux le camion parce que il est grand ». Plus tard, en racontant une sortie, il dit « elle a mis le sac derrière la porte ». Les interlocuteurs connaissent les personnes et les objets évoqués. L’enseignante souhaite choisir une aide pour enrichir ses prochaines explications.",
       "prompt": "Analyse les changements syntaxiques en les reliant au développement présenté au cours. Distingue allongement, dislocation et indice d’une phrase complexe ; relève le rôle des pronoms, de la préposition et du lien entre actions. Propose une aide ciblée et un signe de réinvestissement.",
       "hints": [
-        "• Syntaxe : Ensemble des règles par lesquelles on combine les mots en phrases.\n• Explosion syntaxique : Développement rapide des constructions de phrases vers 2 ans et demi : allongement, dislocation à gauche et émergence de phrases complexes.\nCompare les constructions, pas seulement la longueur. Les pronoms désignent les personnes ou reprennent un référent ; les prépositions établissent des relations, notamment de lieu ou d’accompagnement. Les âges restent des repères de progression.",
+        "• Syntaxe : Ensemble des règles par lesquelles on combine les mots en phrases.\n• Explosion syntaxique : Développement rapide des constructions de phrases vers 2 ans et demi : allongement, dislocation à gauche et émergence de phrases complexes.\nLa progression de Boisseau décrit le développement de la syntaxe orale selon quatre axes : les pronoms, les temps, les complexités (phrases complexes) et les prépositions. Elle sert à choisir les constructions à faire travailler.\nCompare les constructions, pas seulement la longueur. Les pronoms désignent les personnes ou reprennent un référent ; les prépositions établissent des relations, notamment de lieu ou d’accompagnement. Les âges restent des repères de progression.",
         "• Dislocation : Construction du français parlé qui répète le sujet : un groupe nominal est repris par un pronom (dislocation à gauche : le groupe précède le pronom) ou annoncé par lui (dislocation à droite : il le suit).\n• Phrase complexe : Dans la progression de Boisseau, phrase construite avec parce que, un que complétif, une infinitive, pour + infinitif, un qui relatif, pour que, en + participe présent, quand, si, comme, ou une relative en que ou en où.\n• Étayage : Aide de l’adulte qui, par ses interventions verbales et non verbales, assume dans l’interaction la part encore difficile pour l’enfant et met en évidence les caractéristiques cognitives, langagières et interactionnelles de la tâche, avant de lui en laisser progressivement la responsabilité.\n• Reformulation : Reprise qui vise à enrichir le langage de l’enfant : correction implicite, avec ou sans extension (ajout d’informations), pour se mettre d’accord sur l’intelligibilité du message.\nLe sens de phrase complexe est celui de la progression de Boisseau retenue par le cours. Examine le rapport entre les actions et les ressources qui précisent personnes, lieux et accompagnement. Pour examiner le réemploi d’une aide, observe une autre production en précisant les conditions.\nComplément des notes originales S02 (repère d12) : elles relèvent aussi une double thématisation du sujet dans la reprise d’un pronom tonique par un pronom sujet, comme moi/je. Ce complément précise une reprise pronominale ; il ne remplace pas la définition commune ci-dessus et n’est pas attribué comme exemple exact à Surcouf et Gagnon."
       ],
       "criteria": [
@@ -2413,6 +2523,36 @@
       "contentRevision": "bbf1c5c1c512",
       "steps": [
         {
+          "id": "Q10",
+          "prompt": "Dans le cours, que décrit principalement la progression de Boisseau ?",
+          "correctId": "b",
+          "choices": [
+            {
+              "id": "a",
+              "text": "Le développement de l’articulation, avec ses voyelles de base, ses nasales, ses consonnes d’appui et ses paires minimales.",
+              "explanation": "L’articulation suit les voyelles [a], [i], [u], puis les nasales et les consonnes d’appui [p], [t], [m], [f]. La progression de Boisseau ne décrit pas la prononciation, mais la construction des phrases."
+            },
+            {
+              "id": "b",
+              "text": "Le développement de la syntaxe, avec ses pronoms, ses temps, ses phrases complexes et ses prépositions.",
+              "explanation": "La progression de Boisseau décrit le développement de la syntaxe orale selon quatre axes : les pronoms, les temps, les complexités et les prépositions. Elle donne des repères d’âge et sert à choisir ce que l’enseignant fait travailler : diversifier les pronoms, différencier les temps, puis complexifier les phrases."
+            },
+            {
+              "id": "c",
+              "text": "Le développement du lexique, avec la compréhension, la production, la sous-extension et la sur-extension.",
+              "explanation": "Le lexique concerne les mots et leur sens : explosion lexicale, effet Matthieu, compréhension et production, sous-extension et sur-extension. La progression de Boisseau porte sur la construction des phrases."
+            },
+            {
+              "id": "d",
+              "text": "Le développement du récit, avec ses repères d’âge, sa cohérence et sa cohésion.",
+              "explanation": "Le développement du récit suit des repères d’âge, du récit construit avec l’adulte avant 2 ans à la résolution d’ensemble vers 6–7 ans, et demande cohérence et cohésion. La progression de Boisseau décrit la construction des phrases, non l’organisation d’une histoire."
+            }
+          ],
+          "requiresContext": false,
+          "level": "essentiel",
+          "sansChoix": true
+        },
+        {
           "id": "Q1",
           "prompt": "Dans « moi je veux le camion parce que il est grand », quel élément marque une phrase complexe dans la progression de Boisseau ?",
           "correctId": "d",
@@ -2435,7 +2575,7 @@
             {
               "id": "d",
               "text": "Le lien causal introduit par « parce que ».",
-              "explanation": "« Parce que » relie la demande à sa raison. Cette construction figure parmi les phrases complexes de la progression."
+              "explanation": "« Parce que » relie la demande à sa raison. La progression de Boisseau, qui décrit le développement de la syntaxe orale, range cette construction parmi les phrases complexes, dès 2–3 ans."
             }
           ],
           "requiresContext": false,
@@ -2455,7 +2595,7 @@
             {
               "id": "b",
               "text": "Faire décrire la même action par l’enfant qui agit, puis par un témoin.",
-              "explanation": "L’enfant qui agit parle de lui-même avec « je » ; le témoin parle de cet enfant avec « il » ou « elle ». Changer de locuteur fait ainsi varier la personne grammaticale."
+              "explanation": "L’enfant qui agit parle de lui-même avec « je » ; le témoin parle de cet enfant avec « il » ou « elle ». Changer de locuteur fait ainsi varier la personne grammaticale, ce que vise le premier axe de la progression de Boisseau, les pronoms."
             },
             {
               "id": "c",
@@ -2473,7 +2613,7 @@
           "sansChoix": false
         }
       ],
-      "qcmRevision": "1da7dd57b256",
+      "qcmRevision": "89cfc0e9e70c",
       "courseGroupKey": "2",
       "hasWrittenExercise": true
     },
@@ -2562,7 +2702,7 @@
             {
               "id": "c",
               "text": "Le repère est présent : l’accompli et le projet s’organisent autour de l’activité actuelle.",
-              "explanation": "La progression de Boisseau organise les temps verbaux en systèmes centrés sur un repère. « A fabriqué » situe un avant et « va cuire » un après par rapport à « découpe », au présent : c’est le premier système."
+              "explanation": "La progression de Boisseau décrit le développement de la syntaxe orale ; pour les temps, elle propose trois systèmes de trois temps, chacun centré sur un repère. « A fabriqué » situe un avant et « va cuire » un après par rapport à « découpe », au présent : c’est le premier système."
             },
             {
               "id": "d",
@@ -2582,7 +2722,7 @@
             {
               "id": "a",
               "text": "Une action envisagée après ce moment passé.",
-              "explanation": "Les systèmes à trois temps de Boisseau organisent un avant et un après autour d’un repère présent, passé ou futur. Ici, « allait découper » envisage une suite à partir de « était prêts » : cette suite est future par rapport à ce moment passé."
+              "explanation": "Dans la progression de Boisseau, qui décrit le développement de la syntaxe orale, chaque système à trois temps organise un avant et un après autour d’un repère présent, passé ou futur. Ici, « allait découper » envisage une suite à partir de « était prêts » : cette suite est future par rapport à ce moment passé."
             },
             {
               "id": "b",
@@ -2617,7 +2757,7 @@
             {
               "id": "b",
               "text": "aller au futur suivi d’un infinitif",
-              "explanation": "Boisseau décrit trois systèmes de temps verbaux, chacun organisé autour d’un repère. Le troisième se centre sur un repère futur : futur simple, futur antérieur et aller au futur suivi d’un infinitif, qui envisage une suite depuis ce repère."
+              "explanation": "La progression de Boisseau, qui décrit le développement de la syntaxe orale, compte trois systèmes de temps verbaux, chacun organisé autour d’un repère. Le troisième se centre sur un repère futur : futur simple, futur antérieur et aller au futur suivi d’un infinitif, qui envisage une suite depuis ce repère."
             },
             {
               "id": "c",
@@ -2635,7 +2775,7 @@
           "sansChoix": true
         }
       ],
-      "qcmRevision": "0a2a012bfcb7",
+      "qcmRevision": "3cfece260af1",
       "courseGroupKey": "2",
       "hasWrittenExercise": true
     },
@@ -2714,7 +2854,7 @@
             {
               "id": "a",
               "text": "Elle complexifie la construction en reliant l’action à son but par « pour aller ».",
-              "explanation": "La progression classe « pour + infinitif » parmi les constructions complexes. La reprise exprime le lien de but entre prendre les bottes et aller dans les flaques."
+              "explanation": "La progression de Boisseau décrit le développement de la syntaxe orale : elle classe « pour + infinitif » parmi les constructions complexes, dès 4–5 ans. La reprise exprime le lien de but entre prendre les bottes et aller dans les flaques."
             },
             {
               "id": "b",
@@ -2737,7 +2877,7 @@
           "sansChoix": true
         }
       ],
-      "qcmRevision": "83f85dd1d0d8",
+      "qcmRevision": "7e863b51261e",
       "courseGroupKey": "2",
       "hasWrittenExercise": true
     },
@@ -2748,7 +2888,7 @@
       "context": "Deux enfants inventent chacun une histoire. A raconte : « La fille a perdu son sac. Elle l’a trouvé. Elle est rentrée. » B raconte : « Le garçon a perdu son bateau. Il a regardé près du pont, mais il n’était pas là. Il a suivi la rivière et il l’a vu coincé dans les branches. Alors il a demandé une perche pour le récupérer. » Aucun adulte n’a complété ces récits.",
       "prompt": "Compare la façon dont les deux récits organisent complication et résolution. Situe leurs organisations par rapport aux récits du quotidien et d’imagination du cours. Relie la différence aux repères de développement sans attribuer un âge aux enfants. Propose une aide au récit A et indique comment observer son réinvestissement.",
       "hints": [
-        "• Récit du quotidien : Récit d’actions familières, sous forme de script sans complication ou avec une complication aussitôt résolue.\n• Récit d’imagination : Récit qui installe une complication et suspend sa résolution, créant une attente chez le destinataire.\n• Cohérence : Organisation logique des évènements et des informations qui rend l’histoire compréhensible.\n• Cohésion : Ensemble des moyens linguistiques qui relient les éléments du récit, notamment les connecteurs et les pronoms de reprise.\nCes catégories décrivent ici l’organisation des récits dans le cadre du cours : une histoire inventée peut présenter la forme d’un script ou d’une complication vite résolue. On ne les classe donc pas uniquement selon vécu ou inventé.",
+        "Terwagne et Vanesse (2008) distinguent deux organisations du récit à l’école maternelle selon la présence d’une complication et le moment de sa résolution.\n• Récit du quotidien : Récit d’actions familières, sous forme de script sans complication ou avec une complication aussitôt résolue.\n• Récit d’imagination : Récit qui installe une complication et suspend sa résolution, créant une attente chez le destinataire.\n• Cohérence : Organisation logique des évènements et des informations qui rend l’histoire compréhensible.\n• Cohésion : Ensemble des moyens linguistiques qui relient les éléments du récit, notamment les connecteurs et les pronoms de reprise.\nCes catégories décrivent ici l’organisation des récits dans le cadre du cours : une histoire inventée peut présenter la forme d’un script ou d’une complication vite résolue. On ne les classe donc pas uniquement selon vécu ou inventé.",
         "La complication introduit une difficulté ; les actions ou tentatives lui répondent ; la résolution en donne l’issue. Préparer une solution ne signifie pas encore l’accomplir.\n• Étayage : Aide de l’adulte qui, par ses interventions verbales et non verbales, assume dans l’interaction la part encore difficile pour l’enfant et met en évidence les caractéristiques cognitives, langagières et interactionnelles de la tâche, avant de lui en laisser progressivement la responsabilité.\nLes notes originales C02 (repère d52) et Frossard, Panchout-Dubois et Gagnon (p.1) donnent des repères pour observer l’organisation : évènement isolé ou énoncés juxtaposés, construction de liens entre les actions, représentation d’ensemble du récit. Les marques temporelles et les liens de causalité contribuent à articuler les actions et le plan global. Une suite brève peut déjà être cohérente ; une histoire plus longue ne démontre pas à elle seule une organisation d’ensemble. Ces repères sont des horizons d’attente, pas un barème permettant d’attribuer un âge à un enfant à partir d’un court extrait. Distingue aussi ce que l’enfant construit spontanément de ce qui apparaît après les relances."
       ],
       "criteria": [
@@ -2813,6 +2953,36 @@
       "contentRevision": "691f575f9de1",
       "steps": [
         {
+          "id": "Q10",
+          "prompt": "Que distinguent Terwagne et Vanesse (2008) ?",
+          "correctId": "b",
+          "choices": [
+            {
+              "id": "a",
+              "text": "Raconter crée un univers fictionnel pour divertir un destinataire ; relater rapporte des faits en visant la réalité.",
+              "explanation": "Cette distinction oppose deux visées du récit oral (raconter et relater), sans porter sur le traitement de la complication et de sa résolution."
+            },
+            {
+              "id": "b",
+              "text": "Le récit du quotidien suit un script ou résout vite sa difficulté ; le récit d’imagination en suspend la résolution.",
+              "explanation": "Terwagne et Vanesse (2008) distinguent le récit du quotidien (un script, ou une complication aussitôt résolue) du récit d’imagination (une complication dont la résolution est suspendue, ce qui crée une attente). Le critère est l’organisation de la difficulté et de son dénouement, pas seulement le fait que le récit soit réel ou inventé."
+            },
+            {
+              "id": "c",
+              "text": "La cohérence organise logiquement l’histoire ; la cohésion relie ses éléments par des marques linguistiques.",
+              "explanation": "Cette distinction concerne l’histoire et sa langue (événements, connecteurs, pronoms de reprise), pas la sorte de récit."
+            },
+            {
+              "id": "d",
+              "text": "Le genre social est la pratique de la vie sociale ; le genre didactisé est un genre choisi pour enseigner.",
+              "explanation": "Cette distinction concerne la transposition d’un genre en objet d’enseignement, pas la manière dont un récit traite sa complication."
+            }
+          ],
+          "requiresContext": false,
+          "level": "essentiel",
+          "sansChoix": true
+        },
+        {
           "id": "Q1",
           "prompt": "Dans la situation, le récit B raconte le garçon qui a perdu son bateau. Quel critère le rapproche du récit d’imagination dans la distinction de Terwagne et Vanesse ?",
           "correctId": "d",
@@ -2835,7 +3005,7 @@
             {
               "id": "d",
               "text": "La perte du bateau lance une recherche, mais le récit s’arrête avant sa récupération.",
-              "explanation": "La perte pose une complication. Le récit développe des tentatives puis s’arrête avant de montrer comment le problème se règle : la résolution est suspendue. Ce critère caractérise ici le récit d’imagination chez Terwagne et Vanesse."
+              "explanation": "Terwagne et Vanesse (2008) distinguent le récit du quotidien, un script sans complication ou avec une complication aussitôt résolue, et le récit d’imagination, qui installe une complication et suspend sa résolution. Ici, la perte pose une complication ; le récit développe des tentatives puis s’arrête avant de montrer comment le problème se règle : la résolution est suspendue."
             }
           ],
           "requiresContext": true,
@@ -2843,7 +3013,7 @@
           "sansChoix": false
         }
       ],
-      "qcmRevision": "27bc01326436",
+      "qcmRevision": "3418995fda7b",
       "courseGroupKey": "2",
       "hasWrittenExercise": true
     },
@@ -3011,39 +3181,9 @@
           "requiresContext": false,
           "level": "essentiel",
           "sansChoix": true
-        },
-        {
-          "id": "Q5",
-          "prompt": "Quel rôle peuvent jouer les connaissances qu’un élève a construites dans sa langue familiale lorsqu’il apprend le français de scolarisation ?",
-          "correctId": "b",
-          "choices": [
-            {
-              "id": "a",
-              "text": "Montrer les formes grammaticales que l’élève sait déjà utiliser pour s’exprimer dans la langue de scolarisation.",
-              "explanation": "Connaître un contenu dans une langue ne renseigne pas directement sur les formes que l’élève peut produire en français. Les connaissances disponibles et leur formulation dans une autre langue sont deux choses à examiner."
-            },
-            {
-              "id": "b",
-              "text": "Servir d’appui pour comprendre un contenu et apprendre à l’exprimer dans la langue de scolarisation.",
-              "explanation": "La langue de scolarisation sert à apprendre dans toutes les disciplines. Les connaissances construites dans une autre langue sont des ressources sur lesquelles s’appuyer ; apprendre à les exprimer en français reste un travail à accompagner."
-            },
-            {
-              "id": "c",
-              "text": "Situer le début des acquisitions pour distinguer les bilinguismes précoce simultané, précoce consécutif et tardif.",
-              "explanation": "Les catégories simultané, consécutif et tardif se déterminent à partir du début de l’exposition aux langues. La présence de connaissances dans une langue ne donne pas, à elle seule, cette chronologie."
-            },
-            {
-              "id": "d",
-              "text": "Établir le temps d’exposition au français pour estimer le lexique que l’élève a pu y construire.",
-              "explanation": "Le temps d’exposition peut éclairer le lexique disponible en français. Des connaissances construites dans une autre langue ne mesurent pas ce temps : elles sont ici envisagées comme un appui pour apprendre."
-            }
-          ],
-          "requiresContext": false,
-          "level": "essentiel",
-          "sansChoix": true
         }
       ],
-      "qcmRevision": "fd08f2277719",
+      "qcmRevision": "a200ad3284c8",
       "courseGroupKey": "2",
       "hasWrittenExercise": true
     },
@@ -3342,7 +3482,7 @@
             {
               "id": "a",
               "text": "Un geste qui accompagne la parole et participe au sens du message.",
-              "explanation": "Le geste coverbal est un moyen corporel associé à la parole ; il peut la compléter ou même la contredire."
+              "explanation": "Dans le classement de l’oralité du cours, le verbal relève des mots, le paraverbal de la voix et le non-verbal du corps. Le geste coverbal est un moyen corporel associé à la parole ; il peut la compléter ou même la contredire."
             },
             {
               "id": "b",
@@ -3382,7 +3522,7 @@
             {
               "id": "c",
               "text": "L’articulation, le rythme et le volume de la voix.",
-              "explanation": "Articulation, rythme et volume sont des moyens vocaux. Le classement demandé distingue ainsi le paraverbal du corps et des mots."
+              "explanation": "Le classement du cours distingue le verbal (les mots), le paraverbal (les moyens vocaux) et le non-verbal (les moyens corporels). L’articulation, le rythme et le volume sont des moyens vocaux, donc paraverbaux."
             },
             {
               "id": "d",
@@ -3395,7 +3535,7 @@
           "sansChoix": true
         }
       ],
-      "qcmRevision": "4cf3ade5fe6d",
+      "qcmRevision": "19792266d934",
       "courseGroupKey": "4",
       "hasWrittenExercise": true
     },
@@ -3694,7 +3834,7 @@
             {
               "id": "a",
               "text": "Le pronom « il » ne permet pas d’identifier clairement celui qui veut entrer.",
-              "explanation": "Les reprises pronominales sont des unités linguistiques de textualisation. Ici, aucun personnage masculin n’a été introduit avant « il »."
+              "explanation": "La textualisation est la mise en mots d’un texte : choix du lexique, des pronoms, des temps verbaux et des organisateurs. Les reprises pronominales sont des unités linguistiques de textualisation. Ici, aucun personnage masculin n’a été introduit avant « il »."
             },
             {
               "id": "b",
@@ -3717,7 +3857,7 @@
           "sansChoix": true
         }
       ],
-      "qcmRevision": "efa211f98ffc",
+      "qcmRevision": "57b4dd2c890f",
       "courseGroupKey": "4",
       "hasWrittenExercise": true
     },
@@ -3801,29 +3941,29 @@
       "contentRevision": "5ce131b1ade7",
       "steps": [
         {
-          "id": "Q1",
-          "prompt": "Dans une discussion à visée démocratique et philosophique (DVDP) de Tozzi, que fait la présidence de séance ?",
-          "correctId": "a",
+          "id": "Q10",
+          "prompt": "Dans les échanges en classe, qu’est-ce qu’un rôle langagier ?",
+          "correctId": "b",
           "choices": [
             {
               "id": "a",
-              "text": "Elle distribue les tours de parole et règle leur organisation.",
-              "explanation": "La DVDP répartit les rôles pour articuler un échange démocratique et un travail philosophique. La présidence organise les tours de parole ; l’animation travaille le contenu en faisant préciser et relier les idées."
+              "text": "Une capacité de pensée que l’élève travaille, comme problématiser ou conceptualiser.",
+              "explanation": "C’est une capacité langagière argumentative : ce que l’élève apprend à faire. Un rôle est une responsabilité dans l’échange ; une capacité est ce qui se travaille, et plusieurs rôles peuvent la faire exercer."
             },
             {
               "id": "b",
-              "text": "Elle fait préciser les idées et relie les arguments.",
-              "explanation": "Faire préciser et relier les idées relève de l’animation du contenu. Cette responsabilité se distingue de l’organisation des tours confiée à la présidence."
+              "text": "Une responsabilité définie dans l’échange, comme animer, présider ou reformuler.",
+              "explanation": "Un rôle langagier est une responsabilité définie dans les échanges : animer, présider, reformuler, synthétiser, rendre compte, discuter ou observer (Tozzi). Il sert à répartir les responsabilités et à donner des occasions de travailler des capacités distinctes."
             },
             {
               "id": "c",
-              "text": "Elle redit fidèlement une intervention d’un autre élève.",
-              "explanation": "Restituer fidèlement une intervention est la tâche de reformulation. Elle fait reprendre le sens du propos d’un camarade, plutôt que distribuer la parole."
+              "text": "La place que prend celui qui parle quand il s’exprime comme un personnage.",
+              "explanation": "C’est le rôle énonciatif, travaillé par exemple dans la parodie : l’élève parle comme un personnage. Le rôle langagier est une responsabilité tenue dans une discussion."
             },
             {
               "id": "d",
-              "text": "Elle rassemble les idées de la discussion pour les restituer.",
-              "explanation": "Rassembler les idées de la discussion relève de la synthèse. Celle-ci restitue le travail collectif, tandis que la présidence organise les prises de parole."
+              "text": "Le cadre qui organise les interlocuteurs, les règles et le déroulement d’un échange.",
+              "explanation": "C’est la situation de communication. Un rôle langagier est tenu par un élève dans cet échange ; il ne décrit pas le cadre."
             }
           ],
           "requiresContext": false,
@@ -3831,7 +3971,7 @@
           "sansChoix": true
         }
       ],
-      "qcmRevision": "37431db24916",
+      "qcmRevision": "6cd664ee8adc",
       "courseGroupKey": "3",
       "hasWrittenExercise": true
     },
@@ -4035,6 +4175,36 @@
           "sansChoix": true
         },
         {
+          "id": "Q10",
+          "prompt": "Dans le cours, quelles deux notions la distinction de Saussure oppose-t-elle ?",
+          "correctId": "b",
+          "choices": [
+            {
+              "id": "a",
+              "text": "Le langage et la langue.",
+              "explanation": "Le langage, activité psychologique par laquelle un sujet produit du sens, est défini à part dans le cours (Brigaudiot). La distinction de Saussure porte sur la langue et la parole."
+            },
+            {
+              "id": "b",
+              "text": "La langue et la parole.",
+              "explanation": "Saussure oppose la langue, système de signes partagé par une communauté, et la parole, utilisation concrète de ces signes dans un contexte. Le langage, activité psychologique du sujet, est la troisième notion du cours, définie par Brigaudiot."
+            },
+            {
+              "id": "c",
+              "text": "Le langage et la parole.",
+              "explanation": "Le langage est l’activité psychologique du sujet (Brigaudiot). Saussure oppose le système de signes, la langue, à son utilisation concrète, la parole."
+            },
+            {
+              "id": "d",
+              "text": "L’oral et l’écrit.",
+              "explanation": "L’oral et l’écrit sont deux modes de communication (écouter et parler, lire et écrire). La distinction de Saussure porte sur la langue et la parole."
+            }
+          ],
+          "requiresContext": false,
+          "level": "essentiel",
+          "sansChoix": true
+        },
+        {
           "id": "Q4",
           "prompt": "Qu’est-ce qui définit la parole dans la distinction de Saussure ?",
           "correctId": "d",
@@ -4095,7 +4265,7 @@
           "sansChoix": true
         }
       ],
-      "qcmRevision": "a54d64eea25a",
+      "qcmRevision": "90ea21f0fced",
       "courseGroupKey": "1",
       "hasWrittenExercise": true
     },
@@ -4189,7 +4359,7 @@
             {
               "id": "d",
               "text": "Le français utilisé pour communiquer et apprendre dans toutes les disciplines.",
-              "explanation": "Le français assure la médiation des apprentissages dans les différentes disciplines ; il est alors outil d’apprentissage."
+              "explanation": "La langue de scolarisation joue trois rôles : objet d’apprentissage (la discipline français), outil d’apprentissage dans toutes les disciplines (le français transversal) et condition de la réussite scolaire par son poids dans l’évaluation. Le français transversal assure la médiation des apprentissages dans les différentes disciplines."
             }
           ],
           "requiresContext": false,
@@ -4197,7 +4367,7 @@
           "sansChoix": true
         }
       ],
-      "qcmRevision": "45c2b3547e76",
+      "qcmRevision": "f8f3e45b435a",
       "courseGroupKey": "1",
       "hasWrittenExercise": true
     },
@@ -4397,7 +4567,7 @@
             {
               "id": "d",
               "text": "Un genre dont des caractéristiques sont retenues comme objets d’apprentissage.",
-              "explanation": "La didactisation retient les caractéristiques que les élèves doivent apprendre à comprendre ou à produire, dans des textes entiers ou partiels."
+              "explanation": "La transposition didactique transforme un genre de référence en objet d’enseignement. Dans cette approche, un genre didactisé est un genre dont des caractéristiques sont retenues comme objets d’apprentissage : la didactisation retient celles que les élèves doivent apprendre à comprendre ou à produire, dans des textes entiers ou partiels."
             }
           ],
           "requiresContext": false,
@@ -4405,7 +4575,7 @@
           "sansChoix": true
         }
       ],
-      "qcmRevision": "c6b1033de9b6",
+      "qcmRevision": "9f5e01df6ca4",
       "courseGroupKey": "4",
       "hasWrittenExercise": true
     },
@@ -4478,7 +4648,7 @@
       "steps": [
         {
           "id": "Q3",
-          "prompt": "Après le récit d’un incident, l’auditeur sait quel était le problème mais hésite sur l’identité de celui qui a aidé. Pour le critère « rendre les personnages identifiables », quel indicateur recueillir au prochain essai ?",
+          "prompt": "Après le récit d’un incident, l’auditeur sait quel était le problème mais hésite sur l’identité de celui qui a aidé. Pour le critère « rendre les personnages identifiables », quel indice observable recueillir au prochain essai ?",
           "correctId": "b",
           "choices": [
             {
@@ -4489,7 +4659,7 @@
             {
               "id": "b",
               "text": "L’identité de celui qui aide et de celui qui est aidé, restituée par l’auditeur.",
-              "explanation": "La restitution des rôles par l’auditeur permet d’examiner directement si les personnages sont identifiables dans ce récit."
+              "explanation": "Un indice observable est un fait que l’on peut relever pour examiner si un critère est atteint. La restitution des rôles par l’auditeur permet d’examiner directement si les personnages sont identifiables dans ce récit."
             },
             {
               "id": "c",
@@ -4499,7 +4669,7 @@
             {
               "id": "d",
               "text": "La présence d’un nom de personnage avant chaque nouvelle action.",
-              "explanation": "Répéter les noms est un moyen possible, pas une condition de chaque action. L’indicateur doit examiner l’identification, sans imposer ce procédé unique."
+              "explanation": "Répéter les noms est un moyen possible, pas une condition de chaque action. L’indice observable doit permettre d’examiner l’identification, sans imposer ce procédé unique."
             }
           ],
           "requiresContext": false,
@@ -4507,7 +4677,7 @@
           "sansChoix": false
         }
       ],
-      "qcmRevision": "4e8ecff3f0cd",
+      "qcmRevision": "01a9d96c9d9d",
       "courseGroupKey": "4",
       "hasWrittenExercise": true
     },
@@ -4617,7 +4787,7 @@
             {
               "id": "d",
               "text": "C’est une écoute marquée : Malik utilise l’idée d’Inès pour construire son hypothèse.",
-              "explanation": "Malik prend le propos d’Inès comme point de départ de son hypothèse. Ce lien de contenu, plutôt que le simple fait de parler après elle, montre l’écoute marquée."
+              "explanation": "Le cours distingue trois niveaux d’écoute : en écho (centrée sur les questions de l’enseignant), marquée (qui prend en compte la parole des autres élèves) et travail collaboratif. Malik prend le propos d’Inès comme point de départ de son hypothèse : ce lien de contenu, plutôt que le simple fait de parler après elle, montre l’écoute marquée."
             }
           ],
           "requiresContext": false,
@@ -4685,7 +4855,7 @@
           "sansChoix": false
         }
       ],
-      "qcmRevision": "02fa6fb19baa",
+      "qcmRevision": "da76f950cd87",
       "courseGroupKey": "2",
       "hasWrittenExercise": true
     },
@@ -4761,6 +4931,36 @@
       "contentRevision": "c13e16749fee",
       "steps": [
         {
+          "id": "Q10",
+          "prompt": "Que décrit le rapport à l’oral dans le schéma de Colognesi ?",
+          "correctId": "d",
+          "choices": [
+            {
+              "id": "a",
+              "text": "Les moyens de la voix et du corps qu’une personne utilise pour communiquer à l’oral.",
+              "explanation": "C’est l’oralité : diction, prosodie, débit, intonation, gestes, regards, posture et espace. Le rapport à l’oral porte sur ce que la personne croit de la parole et de l’écoute, non sur les moyens qu’elle emploie."
+            },
+            {
+              "id": "b",
+              "text": "Les moyens par lesquels une personne agit sur les émotions qu’elle ressent en parlant.",
+              "explanation": "C’est la régulation émotionnelle, processus par lequel on agit sur ses émotions. Les émotions ne forment qu’une dimension du rapport à l’oral, la dimension affective."
+            },
+            {
+              "id": "c",
+              "text": "Les objectifs de compréhension et de production de l’oral que l’école fixe aux élèves.",
+              "explanation": "Ce sont des objectifs d’apprentissage de l’oral. Le rapport à l’oral ne fixe pas d’objectifs : il décrit ce que la personne croit de la parole et de l’écoute."
+            },
+            {
+              "id": "d",
+              "text": "Les croyances qu’une personne se construit à propos de la parole et de l’écoute.",
+              "explanation": "Le rapport à l’oral réunit les croyances qu’une personne se construit au fil de sa vie à propos de la parole et de l’écoute. Le schéma de Colognesi et ses collègues (2023) l’examine selon huit dimensions : affective, conceptuelle, métadiscursive, praxéologique, relationnelle, interactionnelle, axiologique et identitaire. Il sert à repérer ce qui influence la manière d’oser parler, d’écouter et d’enseigner l’oral."
+            }
+          ],
+          "requiresContext": false,
+          "level": "essentiel",
+          "sansChoix": true
+        },
+        {
           "id": "Q2",
           "prompt": "Dans le schéma du rapport à l’oral de Colognesi, que recouvre la dimension métadiscursive ?",
           "correctId": "b",
@@ -4773,7 +4973,7 @@
             {
               "id": "b",
               "text": "La verbalisation et la prise de recul sur les activités de parole et d’écoute.",
-              "explanation": "Le schéma de Colognesi et ses collègues (2023) examine le rapport à la parole et à l’écoute selon huit dimensions. Le métadiscursif concerne la verbalisation et la prise de recul sur une activité orale ; les pratiques elles-mêmes relèvent du praxéologique."
+              "explanation": "Le schéma de Colognesi et ses collègues (2023) décrit le rapport à l’oral, c’est-à-dire les croyances d’une personne sur la parole et l’écoute, selon huit dimensions. Le métadiscursif concerne la verbalisation et la prise de recul sur une activité orale ; les pratiques elles-mêmes relèvent du praxéologique."
             },
             {
               "id": "c",
@@ -4813,7 +5013,7 @@
             {
               "id": "d",
               "text": "La façon d’envisager les échanges selon les contextes.",
-              "explanation": "Le schéma de Colognesi et ses collègues (2023) examine le rapport à la parole et à l’écoute selon huit dimensions. L’interactionnel concerne la manière d’envisager les échanges selon les contextes ; le relationnel décrit l’entrée en relation."
+              "explanation": "Le schéma de Colognesi et ses collègues (2023) décrit le rapport à l’oral, c’est-à-dire les croyances d’une personne sur la parole et l’écoute, selon huit dimensions. L’interactionnel concerne la manière d’envisager les échanges selon les contextes ; le relationnel décrit l’entrée en relation."
             }
           ],
           "requiresContext": false,
@@ -4821,7 +5021,7 @@
           "sansChoix": true
         }
       ],
-      "qcmRevision": "967adf2a4a7b",
+      "qcmRevision": "0fba544c9594",
       "courseGroupKey": "3",
       "hasWrittenExercise": true
     },
@@ -6404,6 +6604,99 @@
       ],
       "steps": [
         {
+          "id": "Q4",
+          "prompt": "Qu'est-ce que le bilinguisme précoce simultané ?",
+          "requiresContext": false,
+          "correctId": "c",
+          "choices": [
+            {
+              "id": "a",
+              "text": "L'acquisition d'une seconde langue entre 3 et 6 ans, après une première langue déjà acquise.",
+              "explanation": "C'est le bilinguisme précoce consécutif : la seconde langue arrive entre 3 et 6 ans, après une première langue déjà acquise. Dans le simultané, les deux langues se développent dès la petite enfance."
+            },
+            {
+              "id": "b",
+              "text": "La maîtrise identique de deux langues acquises en même temps.",
+              "explanation": "Le cours ne définit pas le bilinguisme par une maîtrise égale : chez un enfant bilingue, on compte les mots des deux langues réunies, et la quantité de lexique dans chaque langue est liée au temps d'exposition."
+            },
+            {
+              "id": "c",
+              "text": "Le développement de deux langues dès la petite enfance.",
+              "explanation": "Le bilinguisme précoce simultané est le développement de deux langues dès la petite enfance : le cours donne le repère de 0 à 3 ans, et Abdelilah-Bauer le réserve aux deux langues présentes dès la naissance. L'enfant a une perception élargie des sons et une conscience métalinguistique dès 1 an."
+            },
+            {
+              "id": "d",
+              "text": "L'acquisition d'une seconde langue après 6 ans, quand l'écrit entre déjà en jeu.",
+              "explanation": "C'est le bilinguisme tardif : la seconde langue arrive après 6 ans, avec un bagage linguistique et cognitif déjà important. Dans le simultané, les deux langues se développent dès la petite enfance."
+            }
+          ],
+          "level": "essentiel",
+          "sansChoix": true,
+          "notionId": "N102"
+        },
+        {
+          "id": "Q5",
+          "prompt": "Qu'est-ce que le bilinguisme précoce consécutif ?",
+          "requiresContext": false,
+          "correctId": "a",
+          "choices": [
+            {
+              "id": "a",
+              "text": "L'acquisition d'une seconde langue entre 3 et 6 ans, après une première langue déjà acquise.",
+              "explanation": "Le bilinguisme précoce consécutif est l'acquisition d'une seconde langue entre 3 et 6 ans, après une première langue déjà acquise. L'enfant allophone passe souvent par quatre étapes : sa langue 1, une phase muette, un langage télégraphique, puis des phrases dans la langue de scolarisation."
+            },
+            {
+              "id": "b",
+              "text": "Le développement de deux langues dès la petite enfance.",
+              "explanation": "C'est le bilinguisme précoce simultané : les deux langues se développent ensemble dès la petite enfance, alors que dans le consécutif la seconde langue vient après une première déjà acquise."
+            },
+            {
+              "id": "c",
+              "text": "L'acquisition d'une seconde langue après 6 ans, quand l'écrit entre déjà en jeu.",
+              "explanation": "C'est le bilinguisme tardif : la seconde langue arrive après 6 ans, alors que dans le consécutif elle arrive entre 3 et 6 ans."
+            },
+            {
+              "id": "d",
+              "text": "L'usage de deux langues avec des compétences qui peuvent différer selon les domaines, les situations et les périodes de la vie.",
+              "explanation": "C'est le bilinguisme en général (Abdelilah-Bauer), sans précision sur l'âge ni sur l'ordre d'acquisition. Le précoce consécutif est une situation précise : une seconde langue entre 3 et 6 ans, après une première déjà acquise."
+            }
+          ],
+          "level": "essentiel",
+          "sansChoix": true,
+          "notionId": "N102"
+        },
+        {
+          "id": "Q6",
+          "prompt": "Qu'est-ce que le bilinguisme tardif ?",
+          "requiresContext": false,
+          "correctId": "d",
+          "choices": [
+            {
+              "id": "a",
+              "text": "L'acquisition d'une seconde langue entre 3 et 6 ans, après une première langue déjà acquise.",
+              "explanation": "C'est le bilinguisme précoce consécutif : la seconde langue arrive entre 3 et 6 ans, alors que dans le tardif elle arrive après 6 ans."
+            },
+            {
+              "id": "b",
+              "text": "Le développement de deux langues dès la petite enfance.",
+              "explanation": "C'est le bilinguisme précoce simultané : les deux langues se développent dès la petite enfance, alors que dans le tardif la seconde langue arrive après 6 ans."
+            },
+            {
+              "id": "c",
+              "text": "L'acquisition d'une seconde langue après 6 ans, par un enfant dont le bagage linguistique est encore faible.",
+              "explanation": "Le cours dit le contraire : l'enfant du bilinguisme tardif dispose déjà d'un bagage linguistique et cognitif important, et l'écrit entre en jeu."
+            },
+            {
+              "id": "d",
+              "text": "L'acquisition d'une seconde langue après 6 ans, quand l'écrit entre déjà en jeu.",
+              "explanation": "Le bilinguisme tardif est l'acquisition d'une seconde langue après 6 ans. L'enfant dispose déjà d'un bagage linguistique et cognitif important, l'écrit entre en jeu, et il doit développer les compétences académiques dans la langue de scolarisation."
+            }
+          ],
+          "level": "essentiel",
+          "sansChoix": true,
+          "notionId": "N102"
+        },
+        {
           "id": "Q1",
           "prompt": "Lequel de ces élèves est en situation de bilinguisme précoce simultané ?",
           "requiresContext": false,
@@ -6494,7 +6787,7 @@
           "sansChoix": false
         }
       ],
-      "qcmRevision": "b63c9e45420b7016"
+      "qcmRevision": "56f7d4d47cd57f1d"
     },
     {
       "id": "ORAL-P-F12",
@@ -7070,36 +7363,37 @@
         },
         {
           "id": "Q3",
-          "prompt": "Nina hésite entre « maison » et « château » pour que son camarade comprenne son dessin.\nQuelle différence entre langage et parole permet d'analyser cette activité ?",
+          "prompt": "Qu'est-ce qui distingue le langage (Brigaudiot) de la parole (Saussure) ?",
           "requiresContext": false,
           "correctId": "a",
           "choices": [
             {
               "id": "a",
-              "text": "Le langage désigne la construction du sens ; la parole, sa réalisation concrète en contexte.",
-              "explanation": "Le langage est l'activité psychologique par laquelle un sujet produit du sens au moyen d'une langue ; la parole est l'utilisation concrète des signes dans un contexte précis. Nina cherche du sens (langage) et ce qu'elle dira sera de la parole : les deux notions sont présentes, la question vise leur différence."
+              "text": "Le langage est l'activité d'un sujet qui produit du sens ; la parole, l'utilisation concrète des signes dans un contexte précis.",
+              "explanation": "Le langage est l'activité psychologique par laquelle un sujet produit du sens au moyen d'une langue (Brigaudiot) ; la parole est l'utilisation concrète des signes linguistiques dans un contexte précis (Saussure). L'un est l'activité qui construit le sens, l'autre sa réalisation concrète, dite à un moment et à quelqu'un."
             },
             {
               "id": "b",
-              "text": "Le langage désigne le système de signes d'une communauté ; la parole, l'usage individuel.",
-              "explanation": "Le système de signes partagé par une communauté est la langue (Saussure), pas le langage."
+              "text": "Le langage est l'ensemble des signes d'une communauté ; la parole, leur usage individuel.",
+              "explanation": "L'ensemble des signes utilisés par une communauté est la langue (Saussure), pas le langage. Le langage est l'activité d'un sujet qui produit du sens au moyen d'une langue."
             },
             {
               "id": "c",
-              "text": "Le langage désigne les actes comme demander ou nommer ; la parole, la manière de les exprimer dans une langue.",
-              "explanation": "Les actes de communication relèvent du savoir langagier, et leur expression dans une langue du savoir linguistique : ce sont des notions voisines d'Abdelilah-Bauer."
+              "text": "Le langage est la maîtrise des actes de communication, comme demander ou nommer ; la parole, la manière de les exprimer dans une langue définie.",
+              "explanation": "Les actes de communication relèvent du savoir langagier, et leur expression dans une langue du savoir linguistique : ce sont deux notions voisines (Abdelilah-Bauer), qui ne définissent ni le langage ni la parole."
             },
             {
               "id": "d",
-              "text": "Le langage désigne la réalisation concrète en contexte ; la parole, la construction du sens.",
-              "explanation": "Les deux notions sont inversées : la parole est l'emploi concret des signes, le langage l'activité qui construit le sens."
+              "text": "Le langage est l'utilisation concrète des signes dans un contexte précis ; la parole, l'activité d'un sujet qui produit du sens.",
+              "explanation": "Les deux notions sont inversées : la parole est l'emploi concret des signes dans un contexte précis, le langage l'activité qui construit le sens."
             }
           ],
           "level": "essentiel",
-          "sansChoix": true
+          "sansChoix": true,
+          "notionId": "N113"
         }
       ],
-      "qcmRevision": "2587b1181d1f3650"
+      "qcmRevision": "098c5fd3ccbfa383"
     },
     {
       "id": "ORAL-P-F17",
@@ -7618,6 +7912,68 @@
       ],
       "steps": [
         {
+          "id": "Q5",
+          "prompt": "Qu'est-ce que le paraverbal ?",
+          "requiresContext": false,
+          "correctId": "b",
+          "choices": [
+            {
+              "id": "a",
+              "text": "Ce qui relève de la parole, des mots et de leur organisation.",
+              "explanation": "C'est le verbal : les mots et leur organisation, sans la voix ni le corps. Le paraverbal relève de la voix."
+            },
+            {
+              "id": "b",
+              "text": "Les moyens vocaux de la communication : diction, accentuation, rythme, volume, débit et intonation.",
+              "explanation": "Le paraverbal relève de la voix : diction (prononciation et articulation), faits prosodiques (accentuation, rythme, volume), débit et intonation. Il se distingue du verbal (les mots) et du non-verbal (le corps) : un élève peut dire les mêmes mots lentement ou avec force sans changer le verbal. Le cours 03 range ici débit et accentuation."
+            },
+            {
+              "id": "c",
+              "text": "Les moyens corporels de communication : expressions du visage, regards, distance entre les personnes, posture et gestes.",
+              "explanation": "C'est le non-verbal : les moyens corporels. Le paraverbal relève de la voix, pas du corps."
+            },
+            {
+              "id": "d",
+              "text": "Les gestes qui accompagnent la parole et contribuent avec elle au sens du message.",
+              "explanation": "C'est le co-verbal : des gestes liés à la parole, qui font partie du non-verbal. Le paraverbal relève de la voix."
+            }
+          ],
+          "level": "essentiel",
+          "sansChoix": true,
+          "notionId": "N103"
+        },
+        {
+          "id": "Q6",
+          "prompt": "Qu'est-ce que le co-verbal, parmi les moyens de communication du cours 03 ?",
+          "requiresContext": false,
+          "correctId": "d",
+          "choices": [
+            {
+              "id": "a",
+              "text": "Les moyens vocaux de la communication : diction, accentuation, rythme, volume, débit et intonation.",
+              "explanation": "C'est le paraverbal : les moyens vocaux. Le co-verbal concerne des gestes, pas la voix."
+            },
+            {
+              "id": "b",
+              "text": "Ce qui relève de la parole, des mots et de leur organisation.",
+              "explanation": "C'est le verbal : les mots et leur organisation. Le co-verbal concerne des gestes qui accompagnent les mots."
+            },
+            {
+              "id": "c",
+              "text": "Les moyens corporels de communication : expressions du visage, regards, distance entre les personnes, posture et gestes.",
+              "explanation": "C'est le non-verbal entier, qui contient le co-verbal. Le co-verbal n'en est que la partie liée à la parole : les gestes qui l'accompagnent et contribuent avec elle au sens."
+            },
+            {
+              "id": "d",
+              "text": "Les gestes qui accompagnent la parole et contribuent avec elle au sens du message.",
+              "explanation": "Le co-verbal désigne les gestes qui accompagnent la parole et contribuent avec elle au sens du message. Il appartient au non-verbal, plus large ; le paraverbal relève de la voix."
+            }
+          ],
+          "level": "essentiel",
+          "sansChoix": true,
+          "notionId": "N103"
+        },
+        {
           "id": "Q1",
           "prompt": "Dans le classement des moyens de communication du cours (verbal, paraverbal, non-verbal, co-verbal), quelle catégorie désigne le plus précisément ce comportement ?\nUn élève choisit le mot « minuscule » plutôt que « petit » pour décrire un insecte.",
           "requiresContext": false,
@@ -7738,7 +8094,7 @@
           "sansChoix": true
         }
       ],
-      "qcmRevision": "3c8e19aa7ad13486"
+      "qcmRevision": "4297db48bec8e574"
     },
     {
       "id": "ORAL-P-F22",
@@ -7826,7 +8182,7 @@
             {
               "id": "d",
               "text": "Le paraverbal",
-              "explanation": "Le paraverbal relève de la voix : diction, accentuation, rythme, débit. Ici, l'élève règle son débit. Le cours 03 range le débit et l'accentuation dans le paraverbal ; le PER range volume, débit et intonation sous le non-verbal."
+              "explanation": "Le paraverbal relève de la voix : diction, accentuation, rythme, débit. Ici, l'élève règle son débit. Le cours 03 range le débit et l'accentuation dans le paraverbal ; le Plan d'études romand (PER) range volume, débit et intonation sous le non-verbal."
             }
           ],
           "level": "essentiel",
@@ -7893,7 +8249,7 @@
           "sansChoix": true
         }
       ],
-      "qcmRevision": "daa162fd0b235585"
+      "qcmRevision": "080fd323e864fa49"
     },
     {
       "id": "ORAL-P-F23",
@@ -7971,7 +8327,7 @@
             {
               "id": "b",
               "text": "Le paraverbal",
-              "explanation": "Le paraverbal relève de la voix : diction, accentuation, rythme, débit. Ici, l'élève marque l'accentuation d'un mot. Le cours 03 range le débit et l'accentuation dans le paraverbal ; le PER range volume, débit et intonation sous le non-verbal."
+              "explanation": "Le paraverbal relève de la voix : diction, accentuation, rythme, débit. Ici, l'élève marque l'accentuation d'un mot. Le cours 03 range le débit et l'accentuation dans le paraverbal ; le Plan d'études romand (PER) range volume, débit et intonation sous le non-verbal."
             },
             {
               "id": "c",
@@ -8048,7 +8404,7 @@
           "sansChoix": true
         }
       ],
-      "qcmRevision": "6881a6f5c0ebed6d"
+      "qcmRevision": "84783c0c03b5e383"
     },
     {
       "id": "ORAL-P-F24",
@@ -8078,6 +8434,37 @@
         }
       ],
       "steps": [
+        {
+          "id": "Q5",
+          "prompt": "Qu'est-ce que le langage d'évocation ?",
+          "requiresContext": false,
+          "correctId": "b",
+          "choices": [
+            {
+              "id": "a",
+              "text": "Parler de ce que l'on voit, ressent ou fait dans l'instant présent, avec des énoncés ancrés dans le vécu.",
+              "explanation": "C'est le langage en situation : les énoncés ne prennent sens que parce qu'ils sont ancrés dans le vécu immédiat. Le langage d'évocation parle de ce qui est absent."
+            },
+            {
+              "id": "b",
+              "text": "Parler de situations que l'on n'est pas en train de vivre : des évènements passés, imaginaires ou à venir.",
+              "explanation": "Le langage d'évocation est le fait de parler de situations que l'on n'est pas en train de vivre : l'enfant évoque des évènements passés, imaginaires ou à venir, en leur absence. Il demande de rendre compréhensible ce qui est absent, avec des ressources syntaxiques et temporelles."
+            },
+            {
+              "id": "c",
+              "text": "Des photographies de l'enfant en activité associées à des textes oraux qui reprennent ses paroles en les améliorant.",
+              "explanation": "C'est l'album écho, un dispositif qui aide l'élève à mettre en mots une expérience terminée. Il fait travailler l'évocation, mais n'est pas le langage d'évocation."
+            },
+            {
+              "id": "d",
+              "text": "Une parole formulée dans l'immédiateté de l'échange, avec une relative liberté thématique et un ajustement à la situation.",
+              "explanation": "C'est l'oral spontané, un type d'oral qui décrit comment la parole est préparée. Le langage d'évocation, lui, se définit par l'absence de ce dont on parle."
+            }
+          ],
+          "level": "essentiel",
+          "sansChoix": true,
+          "notionId": "N104"
+        },
         {
           "id": "Q1",
           "prompt": "Laquelle de ces phrases d'enfant relève du langage d'évocation ?",
@@ -8199,7 +8586,7 @@
           "sansChoix": false
         }
       ],
-      "qcmRevision": "1431b2706c4ed820"
+      "qcmRevision": "c8d7bbf5c422d2c9"
     },
     {
       "id": "ORAL-P-F25",
@@ -8381,6 +8768,37 @@
       ],
       "steps": [
         {
+          "id": "Q5",
+          "prompt": "Qu'est-ce que l'oral comme objet d'enseignement ?",
+          "requiresContext": false,
+          "correctId": "c",
+          "choices": [
+            {
+              "id": "a",
+              "text": "L'usage de la parole et de l'écoute pour apprendre : reformuler, verbaliser, échanger pour coopérer.",
+              "explanation": "C'est l'oral comme outil pour apprendre : la parole sert à apprendre un contenu. L'oral comme objet est enseigné pour lui-même."
+            },
+            {
+              "id": "b",
+              "text": "La mise en voix d'un texte écrit mémorisé, dont la langue suit les normes de l'écrit.",
+              "explanation": "C'est l'oral récité (écrit oralisé) : un type d'oral qui décrit comment la parole est préparée, et non sa fonction dans l'apprentissage."
+            },
+            {
+              "id": "c",
+              "text": "L'enseignement de la parole elle-même, pour développer les capacités à comprendre et à produire.",
+              "explanation": "L'oral comme objet d'enseignement est l'enseignement de la parole (la langue parlée), qui développe les capacités à comprendre et à produire de l'oral. Outil et objet décrivent la fonction de l'oral dans l'apprentissage, un axe différent du type d'oral."
+            },
+            {
+              "id": "d",
+              "text": "Une parole formulée dans l'immédiateté de l'échange, avec une relative liberté thématique.",
+              "explanation": "C'est l'oral spontané : un type d'oral, qui décrit comment la parole est préparée, non la fonction qu'on lui donne dans l'apprentissage."
+            }
+          ],
+          "level": "essentiel",
+          "sansChoix": true,
+          "notionId": "N105"
+        },
+        {
           "id": "Q1",
           "prompt": "Dans laquelle de ces activités l'oral est-il un objet d'enseignement ?",
           "requiresContext": false,
@@ -8501,7 +8919,7 @@
           "sansChoix": true
         }
       ],
-      "qcmRevision": "8640daa095d33dac"
+      "qcmRevision": "5c23123d5d5d59d3"
     },
     {
       "id": "ORAL-P-F27",
@@ -8679,6 +9097,37 @@
       ],
       "steps": [
         {
+          "id": "Q4",
+          "prompt": "Qu'est-ce que l'oral planifié ?",
+          "requiresContext": false,
+          "correctId": "d",
+          "choices": [
+            {
+              "id": "a",
+              "text": "Une parole formulée dans l'immédiateté de l'échange, avec une relative liberté thématique.",
+              "explanation": "C'est l'oral spontané : la parole se formule sur le moment, sans préparation. Dans l'oral planifié, elle est anticipée."
+            },
+            {
+              "id": "b",
+              "text": "La mise en voix d'un texte écrit mémorisé, dont la langue suit les normes de l'écrit.",
+              "explanation": "C'est l'oral récité (écrit oralisé) : le texte est écrit puis mémorisé. Dans l'oral planifié, on prépare sa parole avec un support, sans la réciter."
+            },
+            {
+              "id": "c",
+              "text": "Une parole produite pour apprendre un contenu, en reformulant, en verbalisant ou en échangeant.",
+              "explanation": "C'est l'oral comme outil pour apprendre : une fonction dans l'apprentissage, pas un type d'oral. Le type d'oral décrit la préparation de la parole."
+            },
+            {
+              "id": "d",
+              "text": "Une parole anticipée et préparée à l'aide d'un support préalablement travaillé.",
+              "explanation": "L'oral planifié est une parole anticipée et préparée à l'aide d'un support préalablement travaillé, comme une carte personnelle ou des vignettes pour un audioguide."
+            }
+          ],
+          "level": "essentiel",
+          "sansChoix": true,
+          "notionId": "N106"
+        },
+        {
           "id": "Q1",
           "prompt": "Laquelle de ces activités relève de l'oral spontané ?",
           "requiresContext": false,
@@ -8769,7 +9218,7 @@
           "sansChoix": false
         }
       ],
-      "qcmRevision": "b15514fa62c41307"
+      "qcmRevision": "cba4292b9f331c0d"
     },
     {
       "id": "ORAL-P-F29",
@@ -8917,6 +9366,37 @@
       ],
       "steps": [
         {
+          "id": "Q5",
+          "prompt": "Qu'est-ce que la capacité langagière argumentative ?",
+          "requiresContext": false,
+          "correctId": "b",
+          "choices": [
+            {
+              "id": "a",
+              "text": "Une responsabilité définie dans les échanges du groupe : animer, présider, reformuler, synthétiser, rendre compte, discuter ou observer.",
+              "explanation": "Ce sont les sept rôles langagiers : ils répartissent les responsabilités. Un rôle peut exercer plusieurs capacités argumentatives, mais n'en est pas une."
+            },
+            {
+              "id": "b",
+              "text": "Un moyen de construire et discuter une pensée à l'oral : problématiser, recentrer, interpréter, conceptualiser et argumenter.",
+              "explanation": "La capacité langagière argumentative est le moyen de construire et discuter une pensée à l'oral. Elle comprend cinq capacités : problématiser, recentrer, interpréter, conceptualiser et argumenter. Chaque relance de l'enseignant fait travailler d'abord l'une d'elles."
+            },
+            {
+              "id": "c",
+              "text": "Un plan d'apprentissage de l'atelier de philosophie : linguistique, communicationnel ou comportemental, par exemple.",
+              "explanation": "Ce sont les trois plans d'apprentissage de l'atelier de philosophie. Ils décrivent ce que l'atelier fait apprendre, pas les capacités de pensée sollicitées par une relance."
+            },
+            {
+              "id": "d",
+              "text": "Une dimension du rapport à l'oral, comme l'affective, la conceptuelle, la praxéologique, la relationnelle ou l'identitaire.",
+              "explanation": "Ce sont des dimensions du rapport à l'oral (Colognesi), qui portent sur les croyances d'une personne à propos de la parole. « Conceptuelle » ne se confond pas avec « conceptualiser » (définir un concept)."
+            }
+          ],
+          "level": "essentiel",
+          "sansChoix": true,
+          "notionId": "N107"
+        },
+        {
           "id": "Q1",
           "prompt": "Quelle capacité langagière argumentative cette relance de l'enseignant fait-elle travailler d'abord ?\n« Qu'est-ce qui rend difficile de répondre à la question « Peut-on changer ? » »",
           "requiresContext": false,
@@ -9037,7 +9517,7 @@
           "sansChoix": true
         }
       ],
-      "qcmRevision": "ed3ab51d0193b1e0"
+      "qcmRevision": "0a4834f8d76e6413"
     },
     {
       "id": "ORAL-P-F31",
@@ -9310,6 +9790,37 @@
       ],
       "steps": [
         {
+          "id": "Q5",
+          "prompt": "Qu'est-ce qu'un rôle langagier ?",
+          "requiresContext": false,
+          "correctId": "c",
+          "choices": [
+            {
+              "id": "a",
+              "text": "Un moyen de construire et discuter une pensée à l'oral : problématiser, recentrer, interpréter, conceptualiser, argumenter.",
+              "explanation": "Ce sont les cinq capacités langagières argumentatives. Un rôle langagier est une responsabilité dans les échanges ; un rôle peut exercer plusieurs capacités, et une capacité se travaille dans plusieurs rôles."
+            },
+            {
+              "id": "b",
+              "text": "Une règle de vie de la discussion, comme ne pas couper la parole.",
+              "explanation": "C'est une règle de vie, qui organise l'échange. Un rôle langagier est une responsabilité que prend un élève, comme animer ou observer."
+            },
+            {
+              "id": "c",
+              "text": "Une responsabilité définie dans les échanges, comme animer, présider ou reformuler.",
+              "explanation": "Un rôle langagier est une responsabilité définie dans les échanges : animer, présider, reformuler, synthétiser, rendre compte, discuter ou observer. Il répartit les responsabilités et donne des occasions de travailler des capacités distinctes."
+            },
+            {
+              "id": "d",
+              "text": "La place que prend celui qui parle dans une situation jouée, en s'exprimant comme un personnage.",
+              "explanation": "C'est le rôle énonciatif, observé dans la parodie : l'élève parle comme un personnage. Le rôle langagier est une responsabilité dans l'échange."
+            }
+          ],
+          "level": "essentiel",
+          "sansChoix": true,
+          "notionId": "N108"
+        },
+        {
           "id": "Q1",
           "prompt": "Quel rôle langagier cet élève tient-il dans la discussion ?\nElle demande à Malik de définir le mot « courage », puis relie son idée à celle d'Inès.",
           "requiresContext": false,
@@ -9430,7 +9941,7 @@
           "sansChoix": true
         }
       ],
-      "qcmRevision": "99194a223c24050c"
+      "qcmRevision": "38e3fce8ad328e61"
     },
     {
       "id": "ORAL-P-F34",
@@ -10719,7 +11230,7 @@
         },
         {
           "id": "Q2",
-          "prompt": "Dans la progression souple de Boisseau, sur quel axe porte la mise en relation des moments dans cette phrase d'enfant ?\nUn enfant dit : « J'ai préparé la pâte ; je coupe les biscuits ; je vais les cuire. »",
+          "prompt": "Dans la progression souple de Boisseau (repères pour développer la syntaxe parlée), sur quel axe porte la mise en relation des moments dans cette phrase d'enfant ?\nUn enfant dit : « J'ai préparé la pâte ; je coupe les biscuits ; je vais les cuire. »",
           "requiresContext": false,
           "correctId": "c",
           "choices": [
@@ -10736,7 +11247,7 @@
             {
               "id": "c",
               "text": "Les temps",
-              "explanation": "Boisseau organise les repères de développement syntaxique selon les pronoms, les temps, les complexités et les prépositions. L'axe des temps porte sur les formes verbales qui situent les événements, comme les systèmes à trois temps. Ici, les formes verbales situent les moments les uns par rapport aux autres. La phrase contient aussi d'autres éléments (pronoms, temps), mais la question désigne la construction observée."
+              "explanation": "Boisseau organise les repères de développement syntaxique selon les pronoms, les temps, les complexités et les prépositions. L'axe des temps porte sur les formes verbales qui situent les événements, comme les systèmes à trois temps. Ici, les formes verbales situent les moments les uns par rapport aux autres. La phrase contient aussi d'autres éléments (pronoms), mais la question désigne la construction observée."
             },
             {
               "id": "d",
@@ -10749,7 +11260,7 @@
         },
         {
           "id": "Q3",
-          "prompt": "Dans la progression souple de Boisseau, sur quel axe porte la construction « je pense que… » dans cette phrase d'enfant ?\n« Je pense que le chien a faim. »",
+          "prompt": "Dans la progression souple de Boisseau (repères pour développer la syntaxe parlée), sur quel axe porte la construction « je pense que… » dans cette phrase d'enfant ?\n« Je pense que le chien a faim. »",
           "requiresContext": false,
           "correctId": "a",
           "choices": [
@@ -10779,7 +11290,7 @@
         },
         {
           "id": "Q4",
-          "prompt": "Dans la progression souple de Boisseau, sur quel axe portent « chez mamie » et « avec papa » dans cette phrase d'enfant ?\n« Je vais chez mamie avec papa. »",
+          "prompt": "Dans la progression souple de Boisseau (repères pour développer la syntaxe parlée), sur quel axe portent « chez mamie » et « avec papa » dans cette phrase d'enfant ?\n« Je vais chez mamie avec papa. »",
           "requiresContext": false,
           "correctId": "d",
           "choices": [
@@ -10808,7 +11319,7 @@
           "sansChoix": true
         }
       ],
-      "qcmRevision": "76c9514c6fc284f4"
+      "qcmRevision": "64a068afb96d0d92"
     },
     {
       "id": "ORAL-P-F44",
@@ -10870,7 +11381,7 @@
         },
         {
           "id": "Q2",
-          "prompt": "Dans la progression souple de Boisseau, sur quel axe porte l'emploi de « avait mangé », « dormait » et « suis arrivé » dans cette phrase d'enfant ?\nUn enfant dit : « Le chien avait mangé et il dormait quand je suis arrivé. »",
+          "prompt": "Dans la progression souple de Boisseau (repères pour développer la syntaxe parlée), sur quel axe porte l'emploi de « avait mangé », « dormait » et « suis arrivé » dans cette phrase d'enfant ?\nUn enfant dit : « Le chien avait mangé et il dormait quand je suis arrivé. »",
           "requiresContext": false,
           "correctId": "c",
           "choices": [
@@ -10959,7 +11470,7 @@
           "sansChoix": true
         }
       ],
-      "qcmRevision": "8eeb761d956fd292"
+      "qcmRevision": "7f6c14c683eba273"
     },
     {
       "id": "ORAL-P-F45",
@@ -12169,7 +12680,7 @@
       "steps": [
         {
           "id": "Q1",
-          "prompt": "Que distingue Saussure ?",
+          "prompt": "Quelle est la distinction de Saussure ?",
           "requiresContext": false,
           "correctId": "d",
           "choices": [
@@ -12191,11 +12702,42 @@
             {
               "id": "d",
               "text": "La langue, ensemble de signes partagés par une communauté, et la parole, utilisation concrète de ces signes.",
-              "explanation": "C'est la distinction de Saussure entre le système social et son emploi."
+              "explanation": "Saussure distingue la langue, ensemble de signes utilisés par une communauté et de nature sociale, et la parole, utilisation concrète de ces signes dans un contexte précis : le système partagé et son emploi."
             }
           ],
           "level": "essentiel",
           "sansChoix": true
+        },
+        {
+          "id": "Q4",
+          "prompt": "Qu'est-ce que le langage (Brigaudiot) ?",
+          "requiresContext": false,
+          "correctId": "b",
+          "choices": [
+            {
+              "id": "a",
+              "text": "L'ensemble des signes utilisés par une communauté pour communiquer, de nature sociale.",
+              "explanation": "C'est la langue (Saussure), système de signes partagé par une communauté. Le langage est l'activité par laquelle un sujet produit du sens au moyen d'une langue."
+            },
+            {
+              "id": "b",
+              "text": "L'activité psychologique par laquelle un sujet produit du sens au moyen d'une langue.",
+              "explanation": "Le langage est l'activité psychologique par laquelle un sujet produit du sens au moyen d'une langue (Brigaudiot). Il ne se réduit pas à prononcer des sons : l'enfant exprime une intention, construit une signification et s'adresse à quelqu'un."
+            },
+            {
+              "id": "c",
+              "text": "L'utilisation concrète des signes linguistiques d'une langue dans un contexte précis.",
+              "explanation": "C'est la parole (Saussure) : l'emploi concret des signes, dit à un moment précis. Le langage est l'activité qui construit le sens."
+            },
+            {
+              "id": "d",
+              "text": "La maîtrise des actes fondamentaux de la communication, comme demander, nommer ou convaincre.",
+              "explanation": "C'est le savoir langagier (Abdelilah-Bauer), maîtrise des actes de communication, acquise grâce aux interactions avec l'entourage. Le langage est l'activité de production de sens en général."
+            }
+          ],
+          "level": "essentiel",
+          "sansChoix": true,
+          "notionId": "N101"
         },
         {
           "id": "Q2",
@@ -12224,7 +12766,7 @@
               "explanation": "Elle désigne l'utilisation concrète des signes dans un contexte précis, pas la maîtrise d'actes de communication."
             }
           ],
-          "level": "essentiel",
+          "level": "approfondissement",
           "sansChoix": true
         },
         {
@@ -12254,11 +12796,11 @@
               "explanation": "Le langage est l'activité de production du sens au moyen d'une langue. Ici on demande les ressources d'une langue qui expriment les actes de communication : les savoirs linguistiques."
             }
           ],
-          "level": "essentiel",
+          "level": "approfondissement",
           "sansChoix": true
         }
       ],
-      "qcmRevision": "23fd0b99dc3fb962"
+      "qcmRevision": "296413d70481d94a"
     },
     {
       "id": "ORAL-P-F53",
@@ -12316,7 +12858,7 @@
         },
         {
           "id": "Q2",
-          "prompt": "Que recouvre la dimension affective dans le schéma du rapport à l'oral de Colognesi ?",
+          "prompt": "Que recouvre la dimension affective dans le schéma de Colognesi sur le rapport à l'oral (huit dimensions) ?",
           "requiresContext": false,
           "correctId": "a",
           "choices": [
@@ -12346,7 +12888,7 @@
         },
         {
           "id": "Q3",
-          "prompt": "Que recouvre la dimension conceptuelle dans le schéma du rapport à l'oral de Colognesi ?",
+          "prompt": "Que recouvre la dimension conceptuelle dans le schéma de Colognesi sur le rapport à l'oral (huit dimensions) ?",
           "requiresContext": false,
           "correctId": "d",
           "choices": [
@@ -12376,7 +12918,7 @@
         },
         {
           "id": "Q4",
-          "prompt": "Que recouvre la dimension praxéologique dans le schéma du rapport à l'oral de Colognesi ?",
+          "prompt": "Que recouvre la dimension praxéologique dans le schéma de Colognesi sur le rapport à l'oral (huit dimensions) ?",
           "requiresContext": false,
           "correctId": "c",
           "choices": [
@@ -12405,7 +12947,7 @@
           "sansChoix": true
         }
       ],
-      "qcmRevision": "4a0b2bee86c9764c"
+      "qcmRevision": "4f0339bb68b01eae"
     },
     {
       "id": "ORAL-P-F54",
@@ -12433,7 +12975,7 @@
       "steps": [
         {
           "id": "Q1",
-          "prompt": "Que recouvre la dimension relationnelle dans le schéma du rapport à l'oral de Colognesi ?",
+          "prompt": "Que recouvre la dimension relationnelle dans le schéma de Colognesi sur le rapport à l'oral (huit dimensions) ?",
           "requiresContext": false,
           "correctId": "b",
           "choices": [
@@ -12463,7 +13005,7 @@
         },
         {
           "id": "Q2",
-          "prompt": "Que recouvre la dimension axiologique dans le schéma du rapport à l'oral de Colognesi ?",
+          "prompt": "Que recouvre la dimension axiologique dans le schéma de Colognesi sur le rapport à l'oral (huit dimensions) ?",
           "requiresContext": false,
           "correctId": "d",
           "choices": [
@@ -12493,7 +13035,7 @@
         },
         {
           "id": "Q3",
-          "prompt": "Que recouvre la dimension identitaire dans le schéma du rapport à l'oral de Colognesi ?",
+          "prompt": "Que recouvre la dimension identitaire dans le schéma de Colognesi sur le rapport à l'oral (huit dimensions) ?",
           "requiresContext": false,
           "correctId": "a",
           "choices": [
@@ -12552,7 +13094,7 @@
           "sansChoix": true
         }
       ],
-      "qcmRevision": "0c698e105a6dda76"
+      "qcmRevision": "6fc91d74d49b503d"
     },
     {
       "id": "ORAL-P-F55",
@@ -12568,8 +13110,8 @@
       "context": "",
       "prompt": "",
       "hints": [
-        "Boisseau propose des repères pour développer la syntaxe de l'enfant à partir de ce qu'il dit déjà : cherche ce que le nom de Boisseau organise (quatre axes, structures Pn GV, trois opérations).",
-        "Boisseau (2005, 2020) : la progression souple est un ensemble de repères pour la syntaxe selon quatre axes (pronoms, temps, complexités syntaxiques, prépositions), des petits aux grands. Son option didactique prend appui sur la construction pronom + groupe verbal (Pn GV). Trois opérations se succèdent en se chevauchant : différencier les pronoms, différencier les temps, complexifier les énoncés."
+        "Boisseau propose des repères pour développer la syntaxe de l'enfant à partir de ce qu'il dit déjà : cherche ce que le nom de Boisseau organise (quatre axes, trois opérations).",
+        "Boisseau (2005, 2020) : la progression souple est un ensemble de repères pour la syntaxe selon quatre axes (pronoms, temps, complexités syntaxiques, prépositions), des petits aux grands. Trois opérations se succèdent en se chevauchant : différencier les pronoms, différencier les temps, complexifier les énoncés."
       ],
       "sources": [
         {
@@ -12617,36 +13159,6 @@
           "sansChoix": true
         },
         {
-          "id": "Q2",
-          "prompt": "Dans l'option didactique de Boisseau, que désigne la construction Pn GV ?",
-          "requiresContext": false,
-          "correctId": "d",
-          "choices": [
-            {
-              "id": "a",
-              "text": "Un pronom suivi d'un groupe nominal.",
-              "explanation": "GV signifie groupe verbal, pas groupe nominal."
-            },
-            {
-              "id": "b",
-              "text": "Un groupe nominal suivi d'une proposition subordonnée.",
-              "explanation": "Le groupe nominal peut se rattacher à Pn GV dans les dislocations, mais il n'est pas la construction Pn GV."
-            },
-            {
-              "id": "c",
-              "text": "Une préposition suivie d'un groupe nominal.",
-              "explanation": "Cette construction est une autre structure ; Pn désigne un pronom et GV un groupe verbal."
-            },
-            {
-              "id": "d",
-              "text": "Un pronom suivi d'un groupe verbal.",
-              "explanation": "Boisseau propose des repères pour développer la syntaxe parlée à partir des constructions déjà disponibles chez l'enfant. Pn signifie pronom et GV groupe verbal : c'est la construction sur laquelle Boisseau s'appuie."
-            }
-          ],
-          "level": "essentiel",
-          "sansChoix": true
-        },
-        {
           "id": "Q3",
           "prompt": "Selon Boisseau, quelle suite d'opérations fait progresser la langue parlée ?",
           "requiresContext": false,
@@ -12677,7 +13189,7 @@
           "sansChoix": true
         }
       ],
-      "qcmRevision": "d1a7824d8a40ed20"
+      "qcmRevision": "abe61cc949d73b4a"
     },
     {
       "id": "ORAL-P-F56",
@@ -12693,8 +13205,8 @@
       "context": "",
       "prompt": "",
       "hints": [
-        "DVP et DVDP sont deux sigles de dispositifs de discussion en classe ; lis ce que chaque lettre ajoute (visée philosophique, visée démocratique).",
-        "Atelier de philosophie ; discussion à visée philosophique ; DVP (cours ; Tozzi) : Dispositif où les élèves cherchent à penser par et pour eux-mêmes autour d’une question, dans des échanges réglés qui font définir, questionner et justifier. DVDP (Delsol, Connac, Tozzi) : discussion à visée démocratique et philosophique, qui articule le partage coopératif des responsabilités et le questionnement rationnel. La DVP vise la recherche commune : il s’agit de discuter et non de débattre, l’enjeu n’est pas d’avoir raison mais de chercher à rendre raison de ce que l’on avance ; le débat cherche à avoir raison."
+        "La DVP est la discussion à visée philosophique : compare ce que cherche une discussion et ce que cherche un débat.",
+        "Atelier de philosophie ; discussion à visée philosophique ; DVP (cours ; Tozzi) : Dispositif où les élèves cherchent à penser par et pour eux-mêmes autour d’une question, dans des échanges réglés qui font définir, questionner et justifier. La DVP vise la recherche commune : il s’agit de discuter et non de débattre, l’enjeu n’est pas d’avoir raison mais de chercher à rendre raison de ce que l’on avance ; le débat cherche à avoir raison."
       ],
       "sources": [
         {
@@ -12708,66 +13220,6 @@
       ],
       "steps": [
         {
-          "id": "Q1",
-          "prompt": "Que signifie le sigle DVDP ?",
-          "requiresContext": false,
-          "correctId": "c",
-          "choices": [
-            {
-              "id": "a",
-              "text": "Débat à visée démocratique et persuasive",
-              "explanation": "Le dispositif est une discussion et non un débat : il vise la recherche commune, pas à convaincre."
-            },
-            {
-              "id": "b",
-              "text": "Discussion à visée dialogique et philosophique",
-              "explanation": "La première visée de la DVDP est démocratique (partage coopératif des responsabilités), pas dialogique."
-            },
-            {
-              "id": "c",
-              "text": "Discussion à visée démocratique et philosophique",
-              "explanation": "La discussion philosophique est une recherche commune où les idées et leurs raisons sont examinées ; sa forme démocratique partage les responsabilités. C'est le dispositif de Delsol, Connac et Tozzi, qui ajoute une visée démocratique à la visée philosophique."
-            },
-            {
-              "id": "d",
-              "text": "Discussion à visée didactique et pédagogique",
-              "explanation": "Didactique et pédagogique sont les deux approches de Simard, pas les visées de ce dispositif."
-            }
-          ],
-          "level": "approfondissement",
-          "sansChoix": true
-        },
-        {
-          "id": "Q2",
-          "prompt": "Que cherche à articuler la discussion à visée démocratique et philosophique (DVDP) de Delsol, Connac et Tozzi ?",
-          "requiresContext": false,
-          "correctId": "b",
-          "choices": [
-            {
-              "id": "a",
-              "text": "Le partage des responsabilités et le choix de l'avis majoritaire.",
-              "explanation": "Le vote n'est pas ce que la DVDP articule : la visée est la recherche commune, pas le ralliement à l'avis le plus répandu."
-            },
-            {
-              "id": "b",
-              "text": "Le partage des responsabilités entre élèves et l'examen rationnel des idées.",
-              "explanation": "La discussion philosophique est une recherche commune où les idées et leurs raisons sont examinées ; sa forme démocratique partage les responsabilités. La visée démocratique partage coopérativement les responsabilités (rôles langagiers) ; la visée philosophique demande de questionner et d'examiner les raisons."
-            },
-            {
-              "id": "c",
-              "text": "La confrontation pour convaincre et la validation finale par l'adulte.",
-              "explanation": "Convaincre est la finalité du débat ; la DVDP vise une recherche commune et l'adulte n'impose pas la réponse."
-            },
-            {
-              "id": "d",
-              "text": "La libre expression et l'acceptation des opinions comme également fondées.",
-              "explanation": "Le droit égal à la parole ne rend pas les propos philosophiques : le travail de questionnement et de justification reste nécessaire, et toutes les affirmations ne se valent pas."
-            }
-          ],
-          "level": "essentiel",
-          "sansChoix": true
-        },
-        {
           "id": "Q3",
           "prompt": "Qu'est-ce que la discussion à visée philosophique (DVP) ?",
           "requiresContext": false,
@@ -12776,7 +13228,7 @@
             {
               "id": "a",
               "text": "Un échange réglé autour d'une question, où les élèves cherchent à penser par eux-mêmes.",
-              "explanation": "La discussion philosophique est une recherche commune où les idées et leurs raisons sont examinées ; sa forme démocratique partage les responsabilités. C'est un dispositif de recherche collective, avec des règles et des rôles."
+              "explanation": "La discussion philosophique est une recherche commune où les idées et leurs raisons sont examinées. C'est un dispositif de recherche collective, avec des règles et des rôles."
             },
             {
               "id": "b",
@@ -12816,7 +13268,7 @@
             {
               "id": "c",
               "text": "La finalité : la DVP cherche à rendre raison de ce que l'on avance, le débat à avoir raison.",
-              "explanation": "La discussion philosophique est une recherche commune où les idées et leurs raisons sont examinées ; sa forme démocratique partage les responsabilités. La finalité de l'échange distingue les deux : discuter, c'est chercher à rendre raison de ce que l'on avance ; débattre, chercher à avoir raison. Ce n'est pas l'absence de désaccord."
+              "explanation": "La discussion philosophique est une recherche commune où les idées et leurs raisons sont examinées. La finalité de l'échange distingue les deux : discuter, c'est chercher à rendre raison de ce que l'on avance ; débattre, chercher à avoir raison. Ce n'est pas l'absence de désaccord."
             },
             {
               "id": "d",
@@ -12828,7 +13280,7 @@
           "sansChoix": true
         }
       ],
-      "qcmRevision": "8ce138040ec5c281"
+      "qcmRevision": "1269095914803f71"
     },
     {
       "id": "ORAL-P-F57",
@@ -12844,13 +13296,13 @@
       "context": "",
       "prompt": "",
       "hints": [
-        "Ces quatre notions décrivent les conditions d'une DVP : le point de départ, la question, l'usage de la parole et la posture de l'enseignant.",
-        "Support inducteur : document ou œuvre qui suscite une question et apporte des mots. Question philosophique : question générale et abstraite sur l'existence humaine, ouverte à plusieurs réponses. Oral réflexif (Tozzi) : la pensée et la formulation se travaillent l'une par l'autre. Impartialité : ne favoriser personne ni exprimer de parti pris, sans être neutre."
+        "Ces trois notions décrivent les conditions d'une DVP : le point de départ, la question et l'usage de la parole.",
+        "Support inducteur : document ou œuvre qui suscite une question et apporte des mots. Question philosophique : question générale et abstraite sur l'existence humaine, ouverte à plusieurs réponses. Oral réflexif (Tozzi) : la pensée et la formulation se travaillent l'une par l'autre."
       ],
       "sources": [
         {
           "file": "SYNTHESE_BP1-18FRA_S1_SEMINAIRE_03.docx",
-          "location": "Notions : support inducteur, question philosophique, impartialité"
+          "location": "Notions : support inducteur, question philosophique"
         },
         {
           "file": "SYNTHESE_BP1-18FRA_S1_COURS_03.docx",
@@ -12915,38 +13367,8 @@
               "explanation": "Elle permet de passer du support particulier à un problème que le groupe peut examiner."
             }
           ],
-          "level": "essentiel",
+          "level": "approfondissement",
           "sansChoix": true
-        },
-        {
-          "id": "Q3",
-          "prompt": "Deux élèves défendent des avis contraires dans une discussion à visée philosophique. Quelle intervention de l'enseignant·e exprime l'impartialité ?",
-          "requiresContext": false,
-          "correctId": "d",
-          "choices": [
-            {
-              "id": "a",
-              "text": "Donner le même crédit aux deux avis, car chacun a droit à la parole.",
-              "explanation": "L'égalité de parole n'est pas l'égalité de valeur des affirmations : c'est le relativisme, que l'impartialité écarte."
-            },
-            {
-              "id": "b",
-              "text": "Laisser les deux avis côte à côte, sans examiner leurs raisons.",
-              "explanation": "Sans examen des raisons, la recherche s'arrête : la DVP demande de justifier et d'examiner les idées."
-            },
-            {
-              "id": "c",
-              "text": "Indiquer l'avis à retenir en s'appuyant sur son autorité d'enseignant·e.",
-              "explanation": "Imposer une réponse est le dogmatisme, que l'impartialité écarte."
-            },
-            {
-              "id": "d",
-              "text": "Examiner les raisons des deux avis avec les mêmes exigences.",
-              "explanation": "Être impartial, c'est ne favoriser personne et ne pas prendre parti, sans être neutre : l'enseignant·e fait examiner les raisons de chaque avis avec la même exigence."
-            }
-          ],
-          "level": "essentiel",
-          "sansChoix": false
         },
         {
           "id": "Q4",
@@ -12957,7 +13379,7 @@
             {
               "id": "a",
               "text": "Une parole où la pensée et la formulation se travaillent l'une par l'autre.",
-              "explanation": "Chercher les mots précise l'idée, qui conduit à revoir les mots."
+              "explanation": "L'oral réflexif (Tozzi) est une parole où la pensée et la formulation se travaillent l'une par l'autre : chercher les mots précise l'idée, qui conduit à revoir les mots."
             },
             {
               "id": "b",
@@ -12975,11 +13397,11 @@
               "explanation": "C'est l'oral récité."
             }
           ],
-          "level": "essentiel",
+          "level": "approfondissement",
           "sansChoix": true
         }
       ],
-      "qcmRevision": "49f0754e196065b3"
+      "qcmRevision": "218b9d8831a83107"
     },
     {
       "id": "ORAL-P-F58",
@@ -13089,7 +13511,7 @@
             {
               "id": "d",
               "text": "Une réaction de l'adulte qui reprend tout ou partie d'un énoncé de l'enfant.",
-              "explanation": "La reprise comprend les répétitions et les reformulations."
+              "explanation": "Chez de Weck, une reprise est une réaction de l'adulte qui reprend tout ou partie d'un énoncé de l'enfant. Elle comprend les répétitions, qui attestent l'énoncé, et les reformulations, qui l'enrichissent."
             }
           ],
           "level": "essentiel",
@@ -13104,7 +13526,7 @@
             {
               "id": "a",
               "text": "La répétition reprend les mots sans les modifier ; la reformulation modifie la forme.",
-              "explanation": "Dans la répétition la forme est conservée, dans la reformulation elle est modifiée."
+              "explanation": "Chez de Weck, la répétition reprend les mots de l'enfant sans les modifier (elle atteste l'énoncé) ; la reformulation modifie la forme (elle enrichit le message)."
             },
             {
               "id": "b",
@@ -13126,7 +13548,7 @@
           "sansChoix": true
         }
       ],
-      "qcmRevision": "420fc0691bf019b1"
+      "qcmRevision": "7c63ab42863785fb"
     },
     {
       "id": "ORAL-P-F59",
@@ -13184,7 +13606,7 @@
         },
         {
           "id": "Q2",
-          "prompt": "Selon l'analyse du cours, à quel objectif d'apprentissage du PER rattache-t-on la dictée à l'adulte ?",
+          "prompt": "Selon l'analyse du cours, à quel objectif d'apprentissage du Plan d'études romand (PER) rattache-t-on la dictée à l'adulte ?",
           "requiresContext": false,
           "correctId": "c",
           "choices": [
@@ -13239,7 +13661,7 @@
               "explanation": "C'est la visée prioritaire, plus générale que l'acquis d'un cycle."
             }
           ],
-          "level": "essentiel",
+          "level": "approfondissement",
           "sansChoix": true
         },
         {
@@ -13269,11 +13691,11 @@
               "explanation": "Dans le PER (Plan d'études romand), objectifs, progression et attentes articulent apprentissages visés, travail au fil du cycle et acquis recherchés. La progression organise le travail au fil du cycle et des degrés ; l'attente exprime l'acquis visé à la fin."
             }
           ],
-          "level": "essentiel",
+          "level": "approfondissement",
           "sansChoix": true
         }
       ],
-      "qcmRevision": "bc509c47b1bacb48"
+      "qcmRevision": "69eebfdf1ecb6bf5"
     },
     {
       "id": "ORAL-P-F60",
@@ -13305,7 +13727,7 @@
       "steps": [
         {
           "id": "Q1",
-          "prompt": "Dans les repères d'organisation du récit du séminaire 04, quelle organisation caractérise l'anecdote ?",
+          "prompt": "Selon le séminaire 04 (organisation du récit selon son genre), quelle organisation caractérise l'anecdote ?",
           "requiresContext": false,
           "correctId": "a",
           "choices": [
@@ -13330,12 +13752,12 @@
               "explanation": "C'est l'organisation du conte merveilleux. Le conte merveilleux montre ce qui change dans la situation du personnage au fil des actions."
             }
           ],
-          "level": "essentiel",
+          "level": "approfondissement",
           "sansChoix": true
         },
         {
           "id": "Q2",
-          "prompt": "Dans les repères d'organisation du récit du séminaire 04, quelle organisation caractérise le conte de randonnée ?",
+          "prompt": "Selon le séminaire 04 (organisation du récit selon son genre), quelle organisation caractérise le conte de randonnée ?",
           "requiresContext": false,
           "correctId": "b",
           "choices": [
@@ -13360,12 +13782,12 @@
               "explanation": "C'est l'organisation du conte merveilleux. Le conte merveilleux montre ce qui change dans la situation du personnage au fil des actions."
             }
           ],
-          "level": "essentiel",
+          "level": "approfondissement",
           "sansChoix": true
         },
         {
           "id": "Q3",
-          "prompt": "Dans les repères d'organisation du récit du séminaire 04, quelle organisation caractérise le conte merveilleux ?",
+          "prompt": "Selon le séminaire 04 (organisation du récit selon son genre), quelle organisation caractérise le conte merveilleux ?",
           "requiresContext": false,
           "correctId": "a",
           "choices": [
@@ -13390,7 +13812,7 @@
               "explanation": "C'est l'organisation de l'anecdote. L'anecdote installe une situation (exposition), un événement qui fait problème (nœud), puis son issue (dénouement)."
             }
           ],
-          "level": "essentiel",
+          "level": "approfondissement",
           "sansChoix": true
         },
         {
@@ -13402,12 +13824,12 @@
             {
               "id": "a",
               "text": "Raconter crée un univers fictionnel pour divertir un destinataire ; relater rapporte des faits en visant la réalité.",
-              "explanation": "Cette distinction oppose deux visées du récit (C04), sans porter sur le traitement de la complication et de sa résolution."
+              "explanation": "Cette distinction oppose deux visées du récit (cours 04), sans porter sur le traitement de la complication et de sa résolution."
             },
             {
               "id": "b",
               "text": "Le récit du quotidien suit un script ou résout vite sa difficulté ; le récit d'imagination en suspend la résolution.",
-              "explanation": "Le critère est l'organisation de la difficulté et de son dénouement, pas seulement le fait que le récit soit réel ou inventé."
+              "explanation": "Terwagne et Vanesse (2008) distinguent le récit du quotidien (un script, ou une difficulté aussitôt résolue) du récit d'imagination (une complication dont la résolution est suspendue). Le critère est l'organisation de la difficulté et de son dénouement, pas seulement le fait que le récit soit réel ou inventé."
             },
             {
               "id": "c",
@@ -13424,7 +13846,7 @@
           "sansChoix": true
         }
       ],
-      "qcmRevision": "f61485ce70faca7b"
+      "qcmRevision": "246c97f43ba623fa"
     },
     {
       "id": "ORAL-P-F61",
@@ -13783,7 +14205,7 @@
       "prompt": "",
       "hints": [
         "Pour chaque nom, relie-le à ce qu'il organise ou à ce qu'il propose : une grille d'observation, des pistes pour faire parler, un jeu de cartes, un dispositif photographique.",
-        "Non verbal : Le regard, la posture, les gestes et la proxémie, c’est-à-dire la distance entre les interlocuteurs. Matériel : Les appuis textuels, visuels ou autres qui soutiennent l’échange. Communicationnel : La prise en compte des partenaires, le registre de langue, le but, les conditions matérielles (salle, bruit…), l’écoute et la capacité à commencer ou à clore une conversation. Discursif : La conduite adoptée : raconter, expliquer, décrire, argumenter ou dialoguer ; la cohérence et la cohésion du discours. Contenu : Les informations données, le message transmis et les connaissances nécessaires pour le comprendre. Émotionnel : L’attitude, notamment l’aisance, l’enthousiasme ou le trac, et la manifestation des émotions : soupirs, rires ou mise en mots de l’émotion. Album écho (Boisseau, 2008 ; cours) : Dispositif associant des photographies de l’enfant en activité à des textes oraux qui reprennent ses paroles en les améliorant légèrement. L’enfant raconte plusieurs fois son album avec l’aide de l’adulte. Cartes à raconter ; 125 Cartes à raconter (Frossard et al., 2017) : Jeu de cartes illustrées à interprétation ouverte (personnages, objets, lieux), créé à partir du schéma actantiel : aide matérielle qui structure le récit que l’élève invente et stimule son imaginaire. Pistes du cours 02 pour favoriser la prise de parole : temps de réflexion, questions ouvertes, répétition de la question, reprises des propos des camarades, échanges en demi-classes."
+        "Dimensions pragmatiques de Dumais (2016) : six dimensions pour observer la compétence pragmatique, c'est-à-dire la capacité de communiquer en tenant compte de la situation, des partenaires et du but. Non verbal : Le regard, la posture, les gestes et la proxémie, c’est-à-dire la distance entre les interlocuteurs. Matériel : Les appuis textuels, visuels ou autres qui soutiennent l’échange. Communicationnel : La prise en compte des partenaires, le registre de langue, le but, les conditions matérielles (salle, bruit…), l’écoute et la capacité à commencer ou à clore une conversation. Discursif : La conduite adoptée : raconter, expliquer, décrire, argumenter ou dialoguer ; la cohérence et la cohésion du discours. Contenu : Les informations données, le message transmis et les connaissances nécessaires pour le comprendre. Émotionnel : L’attitude, notamment l’aisance, l’enthousiasme ou le trac, et la manifestation des émotions : soupirs, rires ou mise en mots de l’émotion. Album écho (Boisseau, 2008 ; cours) : Dispositif associant des photographies de l’enfant en activité à des textes oraux qui reprennent ses paroles en les améliorant légèrement. L’enfant raconte plusieurs fois son album avec l’aide de l’adulte. Cartes à raconter ; 125 Cartes à raconter (Frossard et al., 2017) : Jeu de cartes illustrées à interprétation ouverte (personnages, objets, lieux), créé à partir du schéma actantiel : aide matérielle qui structure le récit que l’élève invente et stimule son imaginaire. Pistes du cours 02 pour favoriser la prise de parole : temps de réflexion, questions ouvertes, répétition de la question, reprises des propos des camarades, échanges en demi-classes."
       ],
       "sources": [
         {
@@ -13800,6 +14222,37 @@
         }
       ],
       "steps": [
+        {
+          "id": "Q5",
+          "prompt": "Que sont les dimensions pragmatiques de Dumais (2016) ?",
+          "requiresContext": false,
+          "correctId": "d",
+          "choices": [
+            {
+              "id": "a",
+              "text": "Six composantes pour décrire un genre de texte oral : situation de communication, contenus thématiques, structuration, unités linguistiques, oralité et supports.",
+              "explanation": "Ce sont les six composantes d'un genre de texte oral, qui servent à analyser une production ou à préparer l'enseignement d'un genre. Les dimensions de Dumais observent la compétence pragmatique de l'élève dans l'échange."
+            },
+            {
+              "id": "b",
+              "text": "Huit dimensions pour examiner le rapport à l'oral : affective, conceptuelle, métadiscursive, praxéologique, relationnelle, interactionnelle, axiologique et identitaire.",
+              "explanation": "Ce sont les huit dimensions du rapport à l'oral (Colognesi), qui portent sur les croyances d'une personne à propos de la parole et de l'écoute, et non sur l'observation de l'échange."
+            },
+            {
+              "id": "c",
+              "text": "Quatre compétences de l'enfant qui se développent ensemble : phonologique, lexico-sémantique, syntaxique et pragmatique.",
+              "explanation": "Ce sont les quatre compétences langagières (cours 01). Les dimensions de Dumais organisent seulement l'observation de la quatrième, la compétence pragmatique."
+            },
+            {
+              "id": "d",
+              "text": "Six dimensions pour observer la compétence pragmatique : non verbal, matériel, communicationnel, discursif, contenu et émotionnel.",
+              "explanation": "Dumais (2016) organise l'observation de la compétence pragmatique, c'est-à-dire de la capacité de communiquer en tenant compte de la situation, des partenaires et du but, en six dimensions : non verbal, matériel, communicationnel, discursif, contenu et émotionnel. Une aide de l'enseignante se situe d'abord dans l'une d'elles."
+            }
+          ],
+          "level": "approfondissement",
+          "sansChoix": true,
+          "notionId": "N112"
+        },
         {
           "id": "Q1",
           "prompt": "Dans les dimensions pragmatiques de Dumais (2016), quel aspect observe-t-on quand un élève commence l'échange, tient compte de son partenaire et le clôt ?",
@@ -13884,7 +14337,7 @@
             {
               "id": "d",
               "text": "Un jeu de cartes illustrées à interprétation ouverte pour inventer une histoire.",
-              "explanation": "Elles aident l'élève à relier les éléments choisis pour produire une histoire."
+              "explanation": "Les 125 Cartes à raconter sont un jeu de cartes illustrées à interprétation ouverte (personnages, objets, lieux), créé à partir du schéma actantiel : elles aident l'élève à relier les éléments choisis pour inventer une histoire."
             }
           ],
           "level": "essentiel",
@@ -13921,7 +14374,7 @@
           "sansChoix": true
         }
       ],
-      "qcmRevision": "3060793b90523611"
+      "qcmRevision": "dac272d0c0e25961"
     },
     {
       "id": "ORAL-P-F64",
@@ -14013,7 +14466,7 @@
         },
         {
           "id": "Q3",
-          "prompt": "Dans les activités de parole des MER, qu'est-ce qui caractérise une activité ritualisée ?",
+          "prompt": "Dans les activités de parole des moyens d'enseignement romands (MER), qu'est-ce qui caractérise une activité ritualisée ?",
           "requiresContext": false,
           "correctId": "b",
           "choices": [
@@ -14043,7 +14496,7 @@
         },
         {
           "id": "Q4",
-          "prompt": "Dans Faire la causette, deux élèves ont parlé en binôme de leur plat préféré. Lors de la mise en commun, Mila rapporte les propos de son partenaire. Laquelle de ses phrases montre qu'elle l'a écouté pour pouvoir les transmettre ?",
+          "prompt": "Deux élèves ont parlé en binôme de leur plat préféré. Lors de la mise en commun, Mila rapporte les propos de son partenaire. Laquelle de ses phrases montre qu'elle l'a écouté pour pouvoir les transmettre ?",
           "requiresContext": false,
           "correctId": "c",
           "choices": [
@@ -14060,7 +14513,7 @@
             {
               "id": "c",
               "text": "« Il a dit que ses pâtes préférées sont celles de sa grand-mère. »",
-              "explanation": "Dans Faire la causette, l'écoute a une fonction précise : comprendre ce que le camarade a dit pour pouvoir le transmettre. En redisant le contenu de son propos, Mila montre qu'elle l'a compris et qu'elle peut le restituer au groupe."
+              "explanation": "Ici, l'écoute a une fonction précise : comprendre ce que le camarade a dit pour pouvoir le transmettre. En redisant le contenu de son propos, Mila montre qu'elle l'a compris et qu'elle peut le restituer au groupe."
             },
             {
               "id": "d",
@@ -14072,7 +14525,7 @@
           "sansChoix": false
         }
       ],
-      "qcmRevision": "169769353cc27016"
+      "qcmRevision": "1084455f29feb0ec"
     },
     {
       "id": "ORAL-P-F65",
@@ -14125,7 +14578,7 @@
               "explanation": "Le babil est une succession de sons proches de syllabes ; il apparaît vers 7 mois. Ici, l'enfant produit une suite de sons proches de syllabes."
             }
           ],
-          "level": "essentiel",
+          "level": "approfondissement",
           "sansChoix": true
         },
         {
@@ -14155,7 +14608,7 @@
               "explanation": "L'explosion syntaxique est le développement rapide des constructions de phrases à partir d'environ 2 ans et demi : phrases plus longues, phrases complexes, dislocation à gauche. Or, ici, l'enfant emploie des mots qui répondent à des situations d'échange : ce n'est pas ce que cette catégorie décrit d'abord."
             }
           ],
-          "level": "essentiel",
+          "level": "approfondissement",
           "sansChoix": true
         },
         {
@@ -14272,7 +14725,7 @@
               "explanation": "L'explosion syntaxique est le développement rapide des constructions de phrases à partir d'environ 2 ans et demi : phrases plus longues, phrases complexes, dislocation à gauche. Or, ici, l'enfant répète des suites de sons proches de syllabes avant les premiers mots : ce n'est pas ce que cette catégorie décrit d'abord."
             }
           ],
-          "level": "essentiel",
+          "level": "approfondissement",
           "sansChoix": true
         },
         {
@@ -14302,7 +14755,7 @@
               "explanation": "L'explosion lexicale est l'accélération rapide de l'acquisition des mots, surtout entre 18 et 36 mois, avec huit à dix mots assimilés par jour. Or, ici, l'enfant emploie des mots isolés adaptés à des situations d'échange : ce n'est pas ce que cette catégorie décrit d'abord."
             }
           ],
-          "level": "essentiel",
+          "level": "approfondissement",
           "sansChoix": true
         },
         {
@@ -14544,6 +14997,37 @@
       ],
       "steps": [
         {
+          "id": "Q5",
+          "prompt": "Qu'est-ce qu'une conversation ?",
+          "requiresContext": false,
+          "correctId": "b",
+          "choices": [
+            {
+              "id": "a",
+              "text": "Un échange qui examine une question par la confrontation d'idées et d'arguments.",
+              "explanation": "C'est la discussion : on y examine une question en confrontant des idées et des arguments. La conversation est moins formelle et plus ouverte aux imprévus."
+            },
+            {
+              "id": "b",
+              "text": "Un échange moins formel et plus ouvert aux imprévus qu'un dialogue guidé par un but.",
+              "explanation": "La conversation est un échange moins formel, moins contraint et plus ouvert aux imprévus qu'un dialogue guidé par un but. Elle se distingue du dialogue scolaire (structuré par l'enseignant), de la discussion (qui examine une question) et du débat (qui cherche à convaincre) par ce degré moindre de formalité et de contrainte."
+            },
+            {
+              "id": "c",
+              "text": "Une confrontation de points de vue autour d'une controverse, avec l'intention de convaincre l'autre.",
+              "explanation": "C'est le débat : on y cherche à avoir raison et à convaincre. La conversation n'a pas de tel enjeu."
+            },
+            {
+              "id": "d",
+              "text": "Un échange structuré par l'enseignant, ses objectifs, le temps et la validation des réponses.",
+              "explanation": "C'est le dialogue scolaire habituel, dirigé par l'enseignant. La conversation est moins contrainte."
+            }
+          ],
+          "level": "essentiel",
+          "sansChoix": true,
+          "notionId": "N109"
+        },
+        {
           "id": "Q1",
           "prompt": "De quelle forme d'échange s'agit-il ?\nL'enseignante interroge les élèves un à un sur l'histoire lue, valide chaque réponse puis passe à la question suivante.",
           "requiresContext": false,
@@ -14664,7 +15148,7 @@
           "sansChoix": true
         }
       ],
-      "qcmRevision": "5475c430e53f96ed"
+      "qcmRevision": "b99135afeb31cf18"
     },
     {
       "id": "ORAL-P-F69",
@@ -14842,6 +15326,37 @@
       ],
       "steps": [
         {
+          "id": "Q5",
+          "prompt": "Qu'est-ce que l'écoute marquée ?",
+          "requiresContext": false,
+          "correctId": "d",
+          "choices": [
+            {
+              "id": "a",
+              "text": "Une écoute centrée sur les questions de l'enseignant et les réponses qui leur font suite, sans appui sur les propos des camarades.",
+              "explanation": "C'est l'écoute en écho : elle s'appuie sur l'enseignant, pas sur les camarades."
+            },
+            {
+              "id": "b",
+              "text": "Des échanges dans le groupe et entre les élèves.",
+              "explanation": "C'est le travail collaboratif : les élèves échangent entre eux. L'écoute marquée désigne la façon d'écouter, en prenant en compte la parole des autres."
+            },
+            {
+              "id": "c",
+              "text": "Une écoute silencieuse, sans intervenir pendant que le camarade parle.",
+              "explanation": "Se taire ne suffit pas à marquer l'écoute : elle se repère à ce que l'élève reprend, complète ou conteste des propos d'un camarade."
+            },
+            {
+              "id": "d",
+              "text": "Une écoute qui prend en compte la parole des autres élèves.",
+              "explanation": "L'écoute marquée prend en compte la parole des autres élèves. Une reprise d'information, un complément ou un désaccord en sont des indices."
+            }
+          ],
+          "level": "essentiel",
+          "sansChoix": true,
+          "notionId": "N110"
+        },
+        {
           "id": "Q1",
           "prompt": "Laquelle de ces interventions d'élève manifeste une écoute marquée ?",
           "requiresContext": false,
@@ -14962,7 +15477,7 @@
           "sansChoix": false
         }
       ],
-      "qcmRevision": "c011dc47efdcecfb"
+      "qcmRevision": "72d5c5d9800442bd"
     },
     {
       "id": "ORAL-P-F71",
@@ -15149,7 +15664,7 @@
             {
               "id": "b",
               "text": "Le non verbal",
-              "explanation": "La dimension non verbale porte sur le regard, la posture, les gestes et la distance entre les interlocuteurs. Ici, l'aide porte sur le regard et la posture de l'élève. Une même aide peut toucher plusieurs dimensions ; la question vise celle que l'aide cible d'abord."
+              "explanation": "La dimension non verbale porte sur le regard, la posture, les gestes et la distance entre les interlocuteurs. Ici, l'aide porte sur le regard et la posture de l'élève. Une même aide peut toucher plusieurs dimensions ; la question vise celle que l'aide cible d'abord. Dumais (2016) observe la compétence pragmatique en six dimensions : non verbal, matériel, communicationnel, discursif, contenu et émotionnel."
             },
             {
               "id": "c",
@@ -15174,7 +15689,7 @@
             {
               "id": "a",
               "text": "Le matériel",
-              "explanation": "La dimension matérielle porte sur les appuis textuels, visuels ou autres qui soutiennent l'échange. Ici, les cartes illustrées sont un appui visuel fourni à l'élève. Les cartes peuvent aussi faire travailler la conduite du récit ou son contenu : les dimensions sont liées, mais la question porte sur la nature de l'appui."
+              "explanation": "La dimension matérielle porte sur les appuis textuels, visuels ou autres qui soutiennent l'échange. Ici, les cartes illustrées sont un appui visuel fourni à l'élève. Les cartes peuvent aussi faire travailler la conduite du récit ou son contenu : les dimensions sont liées, mais la question porte sur la nature de l'appui. Dumais (2016) observe la compétence pragmatique en six dimensions : non verbal, matériel, communicationnel, discursif, contenu et émotionnel."
             },
             {
               "id": "b",
@@ -15214,7 +15729,7 @@
             {
               "id": "c",
               "text": "Le discursif",
-              "explanation": "La dimension discursive porte sur la conduite adoptée (raconter, expliquer, décrire…), la cohérence et la cohésion du discours. Ici, l'aide porte sur la conduite du récit et son ordre. Une même aide peut toucher plusieurs dimensions ; la question vise celle que l'aide cible d'abord."
+              "explanation": "La dimension discursive porte sur la conduite adoptée (raconter, expliquer, décrire…), la cohérence et la cohésion du discours. Ici, l'aide porte sur la conduite du récit et son ordre. Une même aide peut toucher plusieurs dimensions ; la question vise celle que l'aide cible d'abord. Dumais (2016) observe la compétence pragmatique en six dimensions : non verbal, matériel, communicationnel, discursif, contenu et émotionnel."
             },
             {
               "id": "d",
@@ -15234,7 +15749,7 @@
             {
               "id": "a",
               "text": "Le contenu",
-              "explanation": "La dimension du contenu porte sur les informations données, le message transmis et les connaissances nécessaires pour le comprendre. Ici, l'aide porte sur une information manquante au message. Une même aide peut toucher plusieurs dimensions ; la question vise celle que l'aide cible d'abord."
+              "explanation": "La dimension du contenu porte sur les informations données, le message transmis et les connaissances nécessaires pour le comprendre. Ici, l'aide porte sur une information manquante au message. Une même aide peut toucher plusieurs dimensions ; la question vise celle que l'aide cible d'abord. Dumais (2016) observe la compétence pragmatique en six dimensions : non verbal, matériel, communicationnel, discursif, contenu et émotionnel."
             },
             {
               "id": "b",
@@ -15256,7 +15771,7 @@
           "sansChoix": true
         }
       ],
-      "qcmRevision": "9e1513db8348f765"
+      "qcmRevision": "e2487a8eb54079bc"
     },
     {
       "id": "ORAL-P-F73",
@@ -15306,7 +15821,7 @@
             {
               "id": "d",
               "text": "L'émotionnel",
-              "explanation": "La dimension émotionnelle porte sur l'attitude (aisance, enthousiasme, trac) et la manifestation des émotions. Ici, l'aide porte sur l'accueil de l'hésitation et sur l'aisance de l'élève. Une même aide peut toucher plusieurs dimensions ; la question vise celle que l'aide cible d'abord."
+              "explanation": "La dimension émotionnelle porte sur l'attitude (aisance, enthousiasme, trac) et la manifestation des émotions. Ici, l'aide porte sur l'accueil de l'hésitation et sur l'aisance de l'élève. Une même aide peut toucher plusieurs dimensions ; la question vise celle que l'aide cible d'abord. Dumais (2016) observe la compétence pragmatique en six dimensions : non verbal, matériel, communicationnel, discursif, contenu et émotionnel."
             }
           ],
           "level": "approfondissement",
@@ -15326,7 +15841,7 @@
             {
               "id": "b",
               "text": "Le communicationnel",
-              "explanation": "La dimension communicationnelle porte sur la prise en compte des partenaires, le registre, le but, les conditions matérielles, l'écoute et la capacité à commencer ou à clore une conversation. Ici, l'aide porte sur la prise en compte du partenaire et la manière de lui demander. Une même aide peut toucher plusieurs dimensions ; la question vise celle que l'aide cible d'abord."
+              "explanation": "La dimension communicationnelle porte sur la prise en compte des partenaires, le registre, le but, les conditions matérielles, l'écoute et la capacité à commencer ou à clore une conversation. Ici, l'aide porte sur la prise en compte du partenaire et la manière de lui demander. Une même aide peut toucher plusieurs dimensions ; la question vise celle que l'aide cible d'abord. Dumais (2016) observe la compétence pragmatique en six dimensions : non verbal, matériel, communicationnel, discursif, contenu et émotionnel."
             },
             {
               "id": "c",
@@ -15343,7 +15858,7 @@
           "sansChoix": true
         }
       ],
-      "qcmRevision": "245a909a7cffde51"
+      "qcmRevision": "b490980eeb1e3b09"
     },
     {
       "id": "ORAL-P-F74",
@@ -15571,7 +16086,7 @@
               "explanation": "C'est l'album écho : un dispositif qui associe des photographies de l'enfant en activité à des textes oraux. Il aide à remettre en mots une expérience terminée, ce n'est pas l'album comme objet d'entrée dans l'écrit."
             }
           ],
-          "level": "essentiel",
+          "level": "approfondissement",
           "sansChoix": true
         }
       ],
@@ -15717,7 +16232,7 @@
       "steps": [
         {
           "id": "Q1",
-          "prompt": "Une enseignante fait raconter la sortie de la veille et demande à l'élève de dire ce qui s'est passé d'abord, puis ensuite, puis à la fin. Quelle composante de l'objectif L1 13-14 du PER travaille-t-elle directement ?",
+          "prompt": "Une enseignante fait raconter la sortie de la veille et demande à l'élève de dire ce qui s'est passé d'abord, puis ensuite, puis à la fin. Quelle composante de l'objectif L1 13-14 du Plan d'études romand (PER) travaille-t-elle directement ?",
           "requiresContext": false,
           "correctId": "c",
           "choices": [
@@ -15742,68 +16257,11 @@
               "explanation": "Cette composante porte sur la manière de dire (prononciation, volume, débit, gestes). Ici, la consigne porte sur l'ordre des événements, pas sur la voix ni sur le corps."
             }
           ],
-          "level": "essentiel",
+          "level": "approfondissement",
           "sansChoix": false
         }
       ],
-      "qcmRevision": "2c6fe2821ce4f7bb"
-    },
-    {
-      "id": "ORAL-P-F81",
-      "familyId": "ORAL-P-F81",
-      "module": "BP1-18FRA",
-      "collection": "fra-qcm-oral",
-      "sourceBankId": "QCM_BP1-18FRA_S1_ORAL_PILIERS",
-      "course": "S03",
-      "referenceId": "S03",
-      "courseGroupKey": "3",
-      "hasWrittenExercise": false,
-      "title": "Cours 3 · QCM",
-      "context": "",
-      "prompt": "",
-      "hints": [
-        "Replace chaque phrase dans le déroulement de l'atelier : ce qui précède la discussion, la discussion elle-même, la fin de l'atelier, puis ce qui vient après.",
-        "Déroulement d'un atelier de philosophie : un support inducteur ; le choix d'un thème et l'élaboration d'une question et de sous-questions ; la discussion ; une clôture avec les salutations finales ; ensuite, un constat."
-      ],
-      "sources": [
-        {
-          "file": "SYNTHESE_BP1-18FRA_S1_SEMINAIRE_03.docx",
-          "location": "2 Installer et animer l'atelier de philosophie : déroulement"
-        }
-      ],
-      "steps": [
-        {
-          "id": "Q1",
-          "prompt": "Dans le déroulement d'un atelier de philosophie, que fait-on lors du constat ?",
-          "requiresContext": false,
-          "correctId": "a",
-          "choices": [
-            {
-              "id": "a",
-              "text": "On reprend les thèmes des échanges et on ouvre un retour réflexif.",
-              "explanation": "Dans l'atelier, le constat suit la clôture : il reprend les thèmes des échanges et ouvre un retour réflexif sur ce qui s'est passé."
-            },
-            {
-              "id": "b",
-              "text": "On choisit un thème et on élabore une question et des sous-questions.",
-              "explanation": "C'est l'étape qui suit le support inducteur et précède la discussion, pas le constat."
-            },
-            {
-              "id": "c",
-              "text": "On échange sur la question en s'appuyant sur le support de départ.",
-              "explanation": "C'est la discussion elle-même, qui précède la clôture et le constat."
-            },
-            {
-              "id": "d",
-              "text": "On salue les participants et on termine officiellement l'atelier.",
-              "explanation": "Ce sont les salutations finales de la clôture, qui précède le constat."
-            }
-          ],
-          "level": "essentiel",
-          "sansChoix": true
-        }
-      ],
-      "qcmRevision": "1a76d0ee58486c03"
+      "qcmRevision": "e9cf0d17bfc8595a"
     },
     {
       "id": "ORAL-P-F82",
@@ -16129,12 +16587,16 @@
         {
           "file": "SYNTHESE_BP1-18FRA_S1_COURS_02.docx",
           "location": "6 Comprendre les situations de bilinguisme : tableau des trois situations (diapositives 59–62)"
+        },
+        {
+          "file": "1-18FRA_A26_cours 2_étu.pdf",
+          "location": "Seances/2026-09-24_COURS_02/ ; diapositive 61 (PDF p. 23) : « Tabors 2008 », quatre étapes de l'enfant allophone ; original du cours 02, nom absent des synthèses installées"
         }
       ],
       "steps": [
         {
           "id": "Q1",
-          "prompt": "Dans la suite d'étapes de Tabors, où se situe la phase muette ?",
+          "prompt": "Dans les étapes de l'apprentissage de la langue de scolarisation chez l'enfant allophone (Tabors, cours 02), où se situe la phase muette ?",
           "requiresContext": false,
           "correctId": "b",
           "choices": [
@@ -16177,7 +16639,7 @@
             {
               "id": "b",
               "text": "La phase muette",
-              "explanation": "La phase muette est une période où l'enfant parle peu dans la nouvelle langue, tout en comprenant ce qu'on lui dit. Ici, il parle très peu mais comprend les consignes."
+              "explanation": "La phase muette est une période où l'enfant parle peu dans la nouvelle langue, tout en comprenant ce qu'on lui dit. Ici, il parle très peu mais comprend les consignes. La suite de Tabors décrit les quatre étapes de l'élève allophone : sa langue 1, la phase muette, le langage télégraphique, puis les phrases dans la langue de scolarisation."
             },
             {
               "id": "c",
@@ -16213,7 +16675,7 @@
             {
               "id": "c",
               "text": "Le langage télégraphique",
-              "explanation": "Le langage télégraphique est fait d'énoncés de quelques mots. Ici, Dana combine deux ou trois mots, sans encore construire de phrases complètes."
+              "explanation": "Le langage télégraphique est fait d'énoncés de quelques mots. Ici, Dana combine deux ou trois mots, sans encore construire de phrases complètes. La suite de Tabors décrit les quatre étapes de l'élève allophone : sa langue 1, la phase muette, le langage télégraphique, puis les phrases dans la langue de scolarisation."
             },
             {
               "id": "d",
@@ -16234,7 +16696,7 @@
             {
               "id": "a",
               "text": "L'utilisation de sa langue 1",
-              "explanation": "Utiliser sa langue 1 est la première étape : l'enfant s'exprime dans sa langue première, même si personne ne la comprend autour de lui. C'est ce que fait Ilir."
+              "explanation": "Utiliser sa langue 1 est la première étape : l'enfant s'exprime dans sa langue première, même si personne ne la comprend autour de lui. C'est ce que fait Ilir. La suite de Tabors décrit les quatre étapes de l'élève allophone : sa langue 1, la phase muette, le langage télégraphique, puis les phrases dans la langue de scolarisation."
             },
             {
               "id": "b",
@@ -16280,7 +16742,7 @@
             {
               "id": "d",
               "text": "Les phrases dans la langue de scolarisation",
-              "explanation": "La dernière étape de la suite est la production de phrases dans la langue de scolarisation. Sana raconte son week-end en phrases complètes."
+              "explanation": "La dernière étape de la suite est la production de phrases dans la langue de scolarisation. Sana raconte son week-end en phrases complètes. La suite de Tabors décrit les quatre étapes de l'élève allophone : sa langue 1, la phase muette, le langage télégraphique, puis les phrases dans la langue de scolarisation."
             }
           ],
           "level": "approfondissement",
@@ -16288,7 +16750,7 @@
           "notionId": "N84"
         }
       ],
-      "qcmRevision": "3897e99e23843cfa"
+      "qcmRevision": "24d4a53c4e04f24b"
     },
     {
       "id": "ORAL-P-F85",
@@ -16311,6 +16773,10 @@
         {
           "file": "SYNTHESE_BP1-18FRA_S1_COURS_02.docx",
           "location": "6 Comprendre les situations de bilinguisme : Accompagner les trois situations (Cummins, diapositive 62)"
+        },
+        {
+          "file": "1-18FRA_A26_cours 2_étu.pdf",
+          "location": "Seances/2026-09-24_COURS_02/ ; diapositive 62 (PDF p. 24) : « Cummins, 2001 », compétences conversationnelles et académiques"
         }
       ],
       "steps": [
@@ -16323,7 +16789,7 @@
             {
               "id": "a",
               "text": "Les compétences qui permettent d'utiliser la langue de scolarisation pour apprendre : comprendre une consigne, expliquer une relation, organiser un raisonnement.",
-              "explanation": "Les compétences académiques sont celles que demandent les usages scolaires de la langue de scolarisation. Elles se distinguent des compétences conversationnelles de la vie quotidienne."
+              "explanation": "Cummins distingue deux types de compétences : les compétences conversationnelles, de la communication quotidienne soutenue par le contexte, et les compétences académiques, que demandent les usages scolaires de la langue de scolarisation."
             },
             {
               "id": "b",
@@ -16408,7 +16874,7 @@
           "notionId": "N85"
         }
       ],
-      "qcmRevision": "410d354f52d5e09b"
+      "qcmRevision": "7a46b16cbb1ea7b3"
     },
     {
       "id": "ORAL-P-F86",
@@ -16666,7 +17132,7 @@
             {
               "id": "c",
               "text": "La fin du cycle 1, l'apprentissage de l'écrit au primaire, la fin de l'école primaire et le passage au secondaire.",
-              "explanation": "La fin du cycle 1 est le moment des objectifs de compréhension et de production du PER, pas une étape du tableau, dont la première est l'entrée à l'école."
+              "explanation": "La fin du cycle 1 est le moment des objectifs de compréhension et de production du Plan d'études romand (PER), pas une étape du tableau, dont la première est l'entrée à l'école."
             },
             {
               "id": "d",
@@ -16702,7 +17168,7 @@
             {
               "id": "d",
               "text": "Le passage au secondaire",
-              "explanation": "Au passage au secondaire, la division disciplinaire apporte un nouveau regard et de nouvelles perspectives sur les manières de communiquer."
+              "explanation": "Au passage au secondaire, la division disciplinaire apporte un nouveau regard et de nouvelles perspectives sur les manières de communiquer. Dolz et de Pietro (1997) décrivent quatre étapes de la scolarité qui changent le rapport à l'oral : l'entrée à l'école, l'apprentissage de l'écrit au primaire, la fin de l'école primaire et le passage au secondaire."
             }
           ],
           "level": "essentiel",
@@ -16728,7 +17194,7 @@
             {
               "id": "c",
               "text": "La fin de l'école primaire",
-              "explanation": "C'est à la fin de l'école primaire que les lectures et l'écriture de textes suscitent de nouvelles formes d'interactions entre l'oral et l'écrit."
+              "explanation": "C'est à la fin de l'école primaire que les lectures et l'écriture de textes suscitent de nouvelles formes d'interactions entre l'oral et l'écrit. Dolz et de Pietro (1997) décrivent quatre étapes de la scolarité qui changent le rapport à l'oral : l'entrée à l'école, l'apprentissage de l'écrit au primaire, la fin de l'école primaire et le passage au secondaire."
             },
             {
               "id": "d",
@@ -16749,7 +17215,7 @@
             {
               "id": "a",
               "text": "L'entrée à l'école",
-              "explanation": "À l'entrée à l'école, l'élève passe des oraux familiers aux oraux de l'école : c'est la première étape du tableau."
+              "explanation": "À l'entrée à l'école, l'élève passe des oraux familiers aux oraux de l'école : c'est la première étape du tableau. Dolz et de Pietro (1997) décrivent quatre étapes de la scolarité qui changent le rapport à l'oral : l'entrée à l'école, l'apprentissage de l'écrit au primaire, la fin de l'école primaire et le passage au secondaire."
             },
             {
               "id": "b",
@@ -16772,7 +17238,7 @@
           "notionId": "N88"
         }
       ],
-      "qcmRevision": "3a29c56cab6b8b52"
+      "qcmRevision": "019a39959963564f"
     },
     {
       "id": "ORAL-P-F89",
@@ -17207,7 +17673,7 @@
             {
               "id": "b",
               "text": "La visée, la communication, les contenus, la structure, la textualisation et la langue.",
-              "explanation": "Ce sont des dimensions du modèle didactique d'un genre textuel (CIIP), qui en compte davantage ; les composantes d'un genre de texte oral sont une autre liste."
+              "explanation": "Ce sont des dimensions du modèle didactique d'un genre textuel, qui en compte davantage ; les composantes d'un genre de texte oral sont une autre liste."
             },
             {
               "id": "c",
@@ -17318,7 +17784,7 @@
           "notionId": "N92"
         }
       ],
-      "qcmRevision": "78fcc2b223d117ae"
+      "qcmRevision": "1530ff3e6cab350d"
     },
     {
       "id": "ORAL-P-F93",
@@ -17503,126 +17969,6 @@
       "qcmRevision": "8729020e2cba1968"
     },
     {
-      "id": "ORAL-P-F94",
-      "familyId": "ORAL-P-F94",
-      "module": "BP1-18FRA",
-      "collection": "fra-qcm-oral",
-      "sourceBankId": "QCM_BP1-18FRA_S1_ORAL_PILIERS",
-      "course": "C01",
-      "referenceId": "C01",
-      "courseGroupKey": "1",
-      "hasWrittenExercise": false,
-      "title": "Cours 1 · QCM",
-      "context": "",
-      "prompt": "",
-      "hints": [
-        "Deux sources donnent des indications différentes sur les aires du cerveau et le LAD : retiens qui dit quoi, sans les fusionner.",
-        "LAD (Chomsky, cours) : Dispositif inné d’acquisition du langage proposé pour expliquer les capacités de l’enfant à acquérir une langue. D’après les notes du cours, les aires de Broca et de Wernicke ont été présentées comme une validation ultérieure de l’approche innéiste ; Abdelilah-Bauer (2015, p. 26) indique toutefois que le LAD n’a jamais (ou pas encore) été trouvé dans le cerveau. Ce désaccord n’est pas résolu : les aires cérébrales ne sont pas assimilées au LAD."
-      ],
-      "sources": [
-        {
-          "file": "SYNTHESE_BP1-18FRA_S1_COURS_01.docx",
-          "location": "3 Cinq approches pour comprendre le développement du langage : Le milieu, les dispositions innées et la construction cognitive (diapositives 47–48 ; Abdelilah-Bauer, 2015, p. 26)"
-        }
-      ],
-      "steps": [
-        {
-          "id": "Q1",
-          "prompt": "Comment les notes du cours présentent-elles les aires de Broca et de Wernicke par rapport à l'approche innéiste ?",
-          "requiresContext": false,
-          "correctId": "b",
-          "choices": [
-            {
-              "id": "a",
-              "text": "Comme la localisation exacte du LAD dans le cerveau.",
-              "explanation": "Les notes parlent d'une validation de l'approche, non d'une localisation du LAD. Abdelilah-Bauer écrit de son côté que le LAD n'a jamais (ou pas encore) été trouvé dans le cerveau."
-            },
-            {
-              "id": "b",
-              "text": "Comme une validation ultérieure de l'approche innéiste.",
-              "explanation": "Les notes du cours présentent les aires de Broca et de Wernicke comme une validation ultérieure de l'approche innéiste (dispositions innées, capacités universelles). La synthèse garde ce point à côté de l'indication d'Abdelilah-Bauer, sans les opposer ni trancher."
-            },
-            {
-              "id": "c",
-              "text": "Comme une objection à cette approche, puisque le langage dépendrait du milieu.",
-              "explanation": "Faire dépendre le langage du milieu est le propre de l'approche behavioriste ; les notes y voient au contraire une validation de l'approche innéiste."
-            },
-            {
-              "id": "d",
-              "text": "Comme la preuve du rôle des formats d'interaction dans le développement du cerveau.",
-              "explanation": "Les formats d'interaction sont une notion de Bruner (approche interactionniste) ; ils ne figurent pas dans la présentation des aires de Broca et de Wernicke."
-            }
-          ],
-          "level": "approfondissement",
-          "sansChoix": true,
-          "notionId": "N94"
-        },
-        {
-          "id": "Q2",
-          "prompt": "Que dit Abdelilah-Bauer (2015, p. 26) à propos du LAD ?",
-          "requiresContext": false,
-          "correctId": "d",
-          "choices": [
-            {
-              "id": "a",
-              "text": "Qu'il correspond aux aires de Broca et de Wernicke.",
-              "explanation": "Cette identité n'est établie par aucune des deux indications : les notes invoquent une validation ultérieure de l'approche innéiste par ces aires, et Abdelilah-Bauer écrit que le LAD n'a jamais (ou pas encore) été trouvé dans le cerveau."
-            },
-            {
-              "id": "b",
-              "text": "Qu'il se construit grâce aux formats d'interaction entre l'adulte et l'enfant.",
-              "explanation": "Les formats d'interaction sont une notion de Bruner (approche interactionniste) ; ils ne définissent pas le LAD, dispositif inné de Chomsky."
-            },
-            {
-              "id": "c",
-              "text": "Qu'il se forme par les stimuli du milieu, qui renforcent les réponses de l'enfant.",
-              "explanation": "Un dispositif formé par le milieu relèverait de l'approche behavioriste (stimulus, réponse, renforcement) ; le LAD est présenté comme inné."
-            },
-            {
-              "id": "d",
-              "text": "Qu'il n'a jamais (ou pas encore) été trouvé dans le cerveau.",
-              "explanation": "Abdelilah-Bauer note que ce dispositif proposé par Chomsky n'a jamais été trouvé dans le cerveau, ou pas encore."
-            }
-          ],
-          "level": "approfondissement",
-          "sansChoix": true,
-          "notionId": "N94"
-        },
-        {
-          "id": "Q3",
-          "prompt": "Quelle formulation respecte les deux indications du cours sur les aires de Broca et de Wernicke et sur le LAD ?",
-          "requiresContext": false,
-          "correctId": "c",
-          "choices": [
-            {
-              "id": "a",
-              "text": "Broca et Wernicke sont le LAD : les notes et Abdelilah-Bauer sont d'accord sur ce point.",
-              "explanation": "Les notes invoquent une validation de l'approche innéiste, pas une identité entre les aires et le LAD ; Abdelilah-Bauer écrit que le LAD n'a jamais (ou pas encore) été trouvé. Rien n'établit que Broca et Wernicke soient le LAD."
-            },
-            {
-              "id": "b",
-              "text": "Le LAD n'existe pas : Abdelilah-Bauer l'a démontré, les notes se sont donc trompées sur les aires cérébrales.",
-              "explanation": "Abdelilah-Bauer écrit que le LAD n'a jamais (ou pas encore) été trouvé ; cela ne démontre pas son inexistence, et les notes ne sont pas posées comme une erreur à son égard."
-            },
-            {
-              "id": "c",
-              "text": "Les notes y voient une validation de l'innéisme ; pour Abdelilah-Bauer, le LAD n'a jamais (ou pas encore) été trouvé.",
-              "explanation": "Cette formulation rapporte les deux positions avec leur source, sans trancher entre elles ni assimiler les aires cérébrales au LAD, comme le fait la synthèse."
-            },
-            {
-              "id": "d",
-              "text": "Pour les notes comme pour Abdelilah-Bauer, les aires de Broca et de Wernicke sont la preuve du LAD chez l'enfant.",
-              "explanation": "Seules les notes voient dans ces aires une validation de l'innéisme ; Abdelilah-Bauer ne les présente pas comme la preuve du LAD."
-            }
-          ],
-          "level": "approfondissement",
-          "sansChoix": false,
-          "notionId": "N94"
-        }
-      ],
-      "qcmRevision": "dd016da83a5a7e64"
-    },
-    {
       "id": "ORAL-P-F95",
       "familyId": "ORAL-P-F95",
       "module": "BP1-18FRA",
@@ -17771,6 +18117,37 @@
       ],
       "steps": [
         {
+          "id": "Q5",
+          "prompt": "Quelles sont les trois compétences à développer chez les élèves, selon Péroz (2018) ?",
+          "requiresContext": false,
+          "correctId": "c",
+          "choices": [
+            {
+              "id": "a",
+              "text": "Écoute en écho, écoute marquée et travail collaboratif.",
+              "explanation": "Ce sont les trois niveaux d'écoute du cours 02, qui décrivent comment les élèves s'écoutent. Les trois compétences de Péroz portent sur la prise de parole."
+            },
+            {
+              "id": "b",
+              "text": "Oral spontané, oral planifié et oral récité.",
+              "explanation": "Ce sont les trois types d'oral du cours 04, selon la préparation de la parole. Les trois compétences de Péroz sont des compétences à développer chez l'élève."
+            },
+            {
+              "id": "c",
+              "text": "Parler, parler dans le thème et parler longtemps.",
+              "explanation": "Péroz (2018) distingue trois compétences à développer chez les élèves : parler (oser intervenir), parler dans le thème (rester dans le sujet proposé) et parler longtemps (développer son propos). Elles permettent de choisir l'aide qui convient quand un élève se tait, s'écarte du sujet ou répond trop brièvement."
+            },
+            {
+              "id": "d",
+              "text": "Prise de parole, activités et étayage.",
+              "explanation": "Ce sont trois des quatre principes pour aider les élèves à parler, avec l'évaluation. Les compétences de Péroz sont autre chose : ce qu'on cherche à faire développer chez l'élève."
+            }
+          ],
+          "level": "essentiel",
+          "sansChoix": true,
+          "notionId": "N111"
+        },
+        {
           "id": "Q1",
           "prompt": "Pour un élève qui n'ose pas intervenir, une enseignante lui dit : « Tu veux nous dire ce que tu as pensé de l'histoire ? Je ne note rien, je t'écoute. » Quelle compétence cherche-t-elle surtout à développer ?",
           "requiresContext": false,
@@ -17895,7 +18272,7 @@
           "notionId": "N96"
         }
       ],
-      "qcmRevision": "252ab81f3cf59dbf"
+      "qcmRevision": "44237f8f49fb1269"
     },
     {
       "id": "ORAL-P-F97",
@@ -18170,7 +18547,7 @@
             {
               "id": "a",
               "text": "La provocation, c'est-à-dire le déclencheur",
-              "explanation": "Dans la terminologie de Larivaille, la provocation est le déclencheur : elle correspond à la complication, qui introduit ce qui déclenche le changement ou le problème."
+              "explanation": "Dans la terminologie de Larivaille, la provocation est le déclencheur : elle correspond à la complication, qui introduit ce qui déclenche le changement ou le problème. Larivaille (d'après Propp) nomme les cinq moments du schéma narratif : état initial, provocation, action, sanction, état final."
             },
             {
               "id": "b",
@@ -18211,7 +18588,7 @@
             {
               "id": "c",
               "text": "La résolution",
-              "explanation": "Dans la transformation, ce qui dénoue le problème et montre la conséquence des actions est la sanction : elle correspond à la résolution."
+              "explanation": "Dans la transformation, ce qui dénoue le problème et montre la conséquence des actions est la sanction : elle correspond à la résolution. Larivaille (d'après Propp) nomme les cinq moments du schéma narratif : état initial, provocation, action, sanction, état final."
             },
             {
               "id": "d",
@@ -18237,7 +18614,7 @@
             {
               "id": "b",
               "text": "La situation initiale et la situation finale.",
-              "explanation": "L'équilibre initial correspond à la situation initiale (avant) et le nouvel équilibre à la situation finale (après) : entre les deux se situe la transformation."
+              "explanation": "L'équilibre initial correspond à la situation initiale (avant) et le nouvel équilibre à la situation finale (après) : entre les deux se situe la transformation. Larivaille (d'après Propp) nomme les cinq moments du schéma narratif : état initial, provocation, action, sanction, état final."
             },
             {
               "id": "c",
@@ -18263,7 +18640,7 @@
             {
               "id": "a",
               "text": "La transformation, agie ou subie, d'un équilibre initial à un nouvel équilibre final.",
-              "explanation": "Le schéma narratif suit la transformation de l'histoire, des personnages qui agissent ou subissent, d'un équilibre de départ à un nouvel équilibre."
+              "explanation": "Le schéma narratif est un outil d'analyse en cinq moments (situation initiale, complication, actions, résolution, situation finale) : il suit la transformation de l'histoire, des personnages qui agissent ou subissent, d'un équilibre de départ à un nouvel équilibre."
             },
             {
               "id": "b",
@@ -18286,7 +18663,7 @@
           "notionId": "N99"
         }
       ],
-      "qcmRevision": "cdcdbff32fd27a30"
+      "qcmRevision": "cc53c84ab1407455"
     },
     {
       "id": "ORAL-P-F100",
@@ -18352,7 +18729,7 @@
             {
               "id": "a",
               "text": "Développer la compréhension et la production orales",
-              "explanation": "L'oral est un objet d'enseignement quand on l'enseigne lui-même, pour développer les capacités à le comprendre et à le produire. La mission « développer des capacités langagières en compréhension (CO) et en production (PO) de l'oral », objectifs L1 13-14 du PER, vise ces capacités ; le cours conclut que les dispositifs qui enseignent l'oral comme objet poursuivent ces objectifs."
+              "explanation": "L'oral est un objet d'enseignement quand on l'enseigne lui-même, pour développer les capacités à le comprendre et à le produire. La mission « développer des capacités langagières en compréhension (CO) et en production (PO) de l'oral », objectifs L1 13-14 du Plan d'études romand (PER), vise ces capacités ; le cours conclut que les dispositifs qui enseignent l'oral comme objet poursuivent ces objectifs."
             },
             {
               "id": "b",
@@ -18406,7 +18783,7 @@
           "notionId": "N100"
         }
       ],
-      "qcmRevision": "60d261d9a223ed5e"
+      "qcmRevision": "ccc27842a106469c"
     }
   ],
   "courseGroups": [
@@ -18614,6 +18991,18 @@
     },
     {
       "exerciseId": "ORAL-P-F11",
+      "stepId": "Q4"
+    },
+    {
+      "exerciseId": "ORAL-P-F11",
+      "stepId": "Q5"
+    },
+    {
+      "exerciseId": "ORAL-P-F11",
+      "stepId": "Q6"
+    },
+    {
+      "exerciseId": "ORAL-P-F11",
       "stepId": "Q1"
     },
     {
@@ -18727,6 +19116,10 @@
     {
       "exerciseId": "ORAL-P-F52",
       "stepId": "Q1"
+    },
+    {
+      "exerciseId": "ORAL-P-F52",
+      "stepId": "Q4"
     },
     {
       "exerciseId": "ORAL-P-F52",
@@ -18854,6 +19247,14 @@
     },
     {
       "exerciseId": "ORAL-P-F21",
+      "stepId": "Q5"
+    },
+    {
+      "exerciseId": "ORAL-P-F21",
+      "stepId": "Q6"
+    },
+    {
+      "exerciseId": "ORAL-P-F21",
       "stepId": "Q1"
     },
     {
@@ -18902,6 +19303,10 @@
     },
     {
       "exerciseId": "ORAL-P-F24",
+      "stepId": "Q5"
+    },
+    {
+      "exerciseId": "ORAL-P-F24",
       "stepId": "Q1"
     },
     {
@@ -18947,6 +19352,10 @@
     {
       "exerciseId": "ORAL-P-F88",
       "stepId": "Q4"
+    },
+    {
+      "exerciseId": "ORAL-P-F26",
+      "stepId": "Q5"
     },
     {
       "exerciseId": "ORAL-P-F26",
@@ -19006,6 +19415,10 @@
     },
     {
       "exerciseId": "ORAL-P-F28",
+      "stepId": "Q4"
+    },
+    {
+      "exerciseId": "ORAL-P-F28",
       "stepId": "Q1"
     },
     {
@@ -19030,6 +19443,10 @@
     },
     {
       "exerciseId": "ORAL-P-F68",
+      "stepId": "Q5"
+    },
+    {
+      "exerciseId": "ORAL-P-F68",
       "stepId": "Q1"
     },
     {
@@ -19062,6 +19479,10 @@
     },
     {
       "exerciseId": "ORAL-P-F70",
+      "stepId": "Q5"
+    },
+    {
+      "exerciseId": "ORAL-P-F70",
       "stepId": "Q1"
     },
     {
@@ -19075,6 +19496,10 @@
     {
       "exerciseId": "ORAL-P-F70",
       "stepId": "Q4"
+    },
+    {
+      "exerciseId": "ORAL-P-F96",
+      "stepId": "Q5"
     },
     {
       "exerciseId": "ORAL-P-F96",
@@ -19122,14 +19547,6 @@
     },
     {
       "exerciseId": "ORAL-P-F56",
-      "stepId": "Q1"
-    },
-    {
-      "exerciseId": "ORAL-P-F56",
-      "stepId": "Q2"
-    },
-    {
-      "exerciseId": "ORAL-P-F56",
       "stepId": "Q3"
     },
     {
@@ -19151,6 +19568,10 @@
     {
       "exerciseId": "ORAL-P-F97",
       "stepId": "Q4"
+    },
+    {
+      "exerciseId": "ORAL-P-F30",
+      "stepId": "Q5"
     },
     {
       "exerciseId": "ORAL-P-F30",
@@ -19191,6 +19612,10 @@
     {
       "exerciseId": "ORAL-P-F32",
       "stepId": "Q3"
+    },
+    {
+      "exerciseId": "ORAL-P-F33",
+      "stepId": "Q5"
     },
     {
       "exerciseId": "ORAL-P-F33",
@@ -19321,18 +19746,6 @@
       "stepId": "Q4"
     },
     {
-      "exerciseId": "ORAL-P-F94",
-      "stepId": "Q1"
-    },
-    {
-      "exerciseId": "ORAL-P-F94",
-      "stepId": "Q2"
-    },
-    {
-      "exerciseId": "ORAL-P-F94",
-      "stepId": "Q3"
-    },
-    {
       "exerciseId": "ORAL-P-F47",
       "stepId": "Q1"
     },
@@ -19415,6 +19828,10 @@
     {
       "exerciseId": "ORAL-P-F71",
       "stepId": "Q4"
+    },
+    {
+      "exerciseId": "ORAL-P-F63",
+      "stepId": "Q5"
     },
     {
       "exerciseId": "ORAL-P-F63",
@@ -19518,10 +19935,6 @@
     },
     {
       "exerciseId": "ORAL-P-F55",
-      "stepId": "Q2"
-    },
-    {
-      "exerciseId": "ORAL-P-F55",
       "stepId": "Q3"
     },
     {
@@ -19586,15 +19999,7 @@
     },
     {
       "exerciseId": "ORAL-P-F57",
-      "stepId": "Q3"
-    },
-    {
-      "exerciseId": "ORAL-P-F57",
       "stepId": "Q4"
-    },
-    {
-      "exerciseId": "ORAL-P-F81",
-      "stepId": "Q1"
     },
     {
       "exerciseId": "ORAL-P-F59",
@@ -19822,6 +20227,10 @@
     },
     {
       "exerciseId": "FRA-ORAL-F02-V1",
+      "stepId": "Q10"
+    },
+    {
+      "exerciseId": "FRA-ORAL-F02-V1",
       "stepId": "Q2"
     },
     {
@@ -19906,6 +20315,10 @@
     },
     {
       "exerciseId": "FRA-ORAL-F12-V1",
+      "stepId": "Q10"
+    },
+    {
+      "exerciseId": "FRA-ORAL-F12-V1",
       "stepId": "Q1"
     },
     {
@@ -19927,6 +20340,10 @@
     {
       "exerciseId": "FRA-ORAL-F14-V1",
       "stepId": "Q1"
+    },
+    {
+      "exerciseId": "FRA-ORAL-F15-V2",
+      "stepId": "Q10"
     },
     {
       "exerciseId": "FRA-ORAL-F15-V2",
@@ -19953,10 +20370,6 @@
       "stepId": "Q4"
     },
     {
-      "exerciseId": "FRA-ORAL-F17-V2",
-      "stepId": "Q5"
-    },
-    {
       "exerciseId": "FRA-ORAL-F18-V1",
       "stepId": "Q3"
     },
@@ -19967,6 +20380,10 @@
     {
       "exerciseId": "FRA-ORAL-F18-V1",
       "stepId": "Q5"
+    },
+    {
+      "exerciseId": "FRA-ORAL-F19-V2",
+      "stepId": "Q10"
     },
     {
       "exerciseId": "FRA-ORAL-F19-V2",
@@ -20006,6 +20423,14 @@
     },
     {
       "exerciseId": "FRA-ORAL-F29-V2",
+      "stepId": "Q10"
+    },
+    {
+      "exerciseId": "FRA-ORAL-F29-V2",
+      "stepId": "Q11"
+    },
+    {
+      "exerciseId": "FRA-ORAL-F29-V2",
       "stepId": "Q5"
     },
     {
@@ -20018,11 +20443,15 @@
     },
     {
       "exerciseId": "FRA-ORAL-F30-V1",
-      "stepId": "Q1"
+      "stepId": "Q10"
     },
     {
       "exerciseId": "FRA-ORAL-F33-V1",
       "stepId": "Q1"
+    },
+    {
+      "exerciseId": "FRA-ORAL-F34-V2",
+      "stepId": "Q10"
     },
     {
       "exerciseId": "FRA-ORAL-F34-V2",
@@ -20038,6 +20467,10 @@
     },
     {
       "exerciseId": "FRA-ORAL-F37-V1",
+      "stepId": "Q10"
+    },
+    {
+      "exerciseId": "FRA-ORAL-F37-V1",
       "stepId": "Q4"
     },
     {
@@ -20049,5 +20482,5 @@
       "stepId": "Q1"
     }
   ],
-  "bankRevision": "7849932c8ee4"
+  "bankRevision": "fc93ff250ac1"
 }
