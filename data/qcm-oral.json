@@ -11834,9 +11834,117 @@
           ],
           "level": "essentiel",
           "sansChoix": true
+        },
+        {
+          "id": "Q4",
+          "prompt": "Production d’un texte bref par des élèves de début de 3H en lien avec les illustrations d’un album lu par l’enseignant·e.\n\nQuel pôle du triangle didactique est prioritairement impliqué dans cet énoncé ?",
+          "requiresContext": false,
+          "correctId": "a",
+          "choices": [
+            {
+              "id": "a",
+              "text": "Les élèves",
+              "explanation": "Le triangle didactique relie savoirs, enseignant et élèves. Le pôle élève concerne celui qui construit ses connaissances et développe ses savoir-faire : produire le texte est ici l’activité des élèves."
+            },
+            {
+              "id": "b",
+              "text": "L’enseignant·e",
+              "explanation": "L’enseignant sélectionne, transpose, planifie et transmet les savoirs. Sa lecture de l’album fournit ici un appui, mais l’énoncé porte sur la production des élèves."
+            },
+            {
+              "id": "c",
+              "text": "Les savoirs",
+              "explanation": "Les savoirs sont les contenus théoriques ou pratiques à apprendre. Le texte à produire les mobilise ; l’énoncé met cependant en avant les élèves qui le produisent."
+            },
+            {
+              "id": "d",
+              "text": "La relation enseignant·e–élève",
+              "explanation": "La relation enseignant–élève concerne les interactions, l’accompagnement, l’observation et l’évaluation. C’est un côté du triangle, alors que la question demande un pôle ; ici les élèves produisent."
+            }
+          ],
+          "level": "essentiel",
+          "sansChoix": true,
+          "ancienExamen": {
+            "examen": "BP13FRA — examen du 24 juin 2021",
+            "annee": 2021,
+            "question": "1.2 A",
+            "page": 3
+          }
+        },
+        {
+          "id": "Q5",
+          "prompt": "Choix d’un dispositif didactique pour faire travailler une classe du cycle 2 sur les processus d’élaboration en compréhension de texte.\n\nQuel pôle du triangle didactique est prioritairement impliqué dans cet énoncé ?",
+          "requiresContext": false,
+          "correctId": "b",
+          "choices": [
+            {
+              "id": "a",
+              "text": "Les élèves",
+              "explanation": "Le pôle élève concerne la construction des connaissances et des savoir-faire. Choisir le dispositif de la classe est une action de planification de l’enseignement."
+            },
+            {
+              "id": "b",
+              "text": "L’enseignant·e",
+              "explanation": "Le triangle didactique relie savoirs, enseignant et élèves. L’enseignant sélectionne, transpose, planifie et transmet les savoirs : choisir le dispositif qui les fait travailler relève ici de ce pôle."
+            },
+            {
+              "id": "c",
+              "text": "Les savoirs",
+              "explanation": "Les savoirs désignent les contenus à enseigner ou à apprendre ; les processus de compréhension en sont ici un exemple. La question porte sur le choix du dispositif destiné à les faire travailler."
+            },
+            {
+              "id": "d",
+              "text": "La relation enseignant·e–élève",
+              "explanation": "La relation enseignant–élève concerne les interactions, l’accompagnement, l’observation et l’évaluation. C’est une relation entre deux pôles ; choisir un dispositif relève ici de la planification par l’enseignant."
+            }
+          ],
+          "level": "essentiel",
+          "sansChoix": true,
+          "ancienExamen": {
+            "examen": "BP13FRA — examen du 24 juin 2021",
+            "annee": 2021,
+            "question": "1.2 B",
+            "page": 3
+          }
+        },
+        {
+          "id": "Q6",
+          "prompt": "Théorie des genres, qui permet d’analyser un genre de texte grâce à ses trois dimensions.\n\nQuel pôle du triangle didactique est prioritairement impliqué dans cet énoncé ?",
+          "requiresContext": false,
+          "correctId": "c",
+          "choices": [
+            {
+              "id": "a",
+              "text": "Les élèves",
+              "explanation": "Le pôle élève désigne celui qui construit des connaissances et développe des savoir-faire. La théorie des genres est ici un contenu théorique, et non l’activité d’un élève."
+            },
+            {
+              "id": "b",
+              "text": "L’enseignant·e",
+              "explanation": "Le pôle enseignant désigne celui qui sélectionne, transpose, planifie et transmet. L’énoncé décrit la théorie utilisée pour analyser, plutôt qu’un choix ou une action d’enseignement."
+            },
+            {
+              "id": "c",
+              "text": "Les savoirs",
+              "explanation": "Le triangle didactique relie savoirs, enseignant et élèves. Le pôle savoirs comprend les contenus théoriques et pratiques à acquérir : la théorie des genres et ses dimensions en font partie."
+            },
+            {
+              "id": "d",
+              "text": "La relation enseignant·e–élève",
+              "explanation": "La relation enseignant–élève concerne l’interaction et l’accompagnement. Elle relie deux pôles et ne désigne pas le contenu théorique de l’analyse des genres."
+            }
+          ],
+          "level": "essentiel",
+          "sansChoix": true,
+          "ancienExamen": {
+            "examen": "BP13FRA — examen du 24 juin 2021",
+            "annee": 2021,
+            "question": "1.2 C",
+            "page": 3
+          }
         }
       ],
-      "qcmRevision": "693be975d990c8e6"
+      "qcmRevision": "e88a4a36c3214555"
     },
     {
       "id": "ORAL-P-F51",
@@ -11853,7 +11961,7 @@
       "prompt": "",
       "hints": [
         "Pense à ce qui est au centre du regard : les savoirs d'une matière, ou la relation entre l'enseignant et l'élève.",
-        "Simard et al. (2010) distinguent la didactique et la pédagogie. La didactique place au cœur les savoirs à acquérir, théoriques et pratiques. La pédagogie s'intéresse d'abord à la relation entre l'enseignant et l'élève, quelle que soit la matière."
+        "Didactique (Simard et al., 2010) : Approche qui place au cœur de ses préoccupations les savoirs à acquérir, aussi bien théoriques que pratiques. Pédagogie (Simard et al., 2010) : Approche centrée d’abord sur la relation entre l’enseignant et l’élève, quelle que soit la matière étudiée. Ces deux regards portent sur l’enseignement. La linguistique est la science qui étudie la langue et le langage ; elle décrit l’objet, plutôt que son enseignement. La psychologie de l’acquisition s’intéresse notamment à la trajectoire par laquelle l’enfant apprend les divers aspects de sa langue. Pour les distinguer, demande-toi ce que l’on étudie : les savoirs à faire acquérir, la relation enseignant–élève, la langue elle-même ou le développement de l’enfant."
       ],
       "sources": [
         {
@@ -11863,6 +11971,10 @@
         {
           "file": "SYNTHESE_BP1-18FRA_S1_COURS_02.docx",
           "location": "Notions à savoir : Pédagogie"
+        },
+        {
+          "file": "SYNTHESE_BP1-18FRA_S1_COURS_01.docx",
+          "location": "1, Des apprentissages conjoints et des savoirs à acquérir : linguistique (OQLF, GDT, fiche 17015300) ; psychologie de l’acquisition (support d40, PDF p. 12) ; distinction Simard : C02 d8, PDF p. 3"
         }
       ],
       "steps": [
@@ -11955,9 +12067,81 @@
           ],
           "level": "essentiel",
           "sansChoix": false
+        },
+        {
+          "id": "Q4",
+          "prompt": "Dans son introduction, Simard (2010) différencie les concepts de pédagogie et de didactique. Quel est l’objet d’étude de la pédagogie ?",
+          "requiresContext": false,
+          "correctId": "b",
+          "choices": [
+            {
+              "id": "a",
+              "text": "Les savoirs à acquérir, aussi bien théoriques que pratiques.",
+              "explanation": "Dans la distinction de Simard, la didactique place les savoirs à acquérir au centre de ses préoccupations. Elle examine ce qui est à faire apprendre, tandis que la pédagogie regarde d’abord la relation enseignant–élève."
+            },
+            {
+              "id": "b",
+              "text": "La relation entre l’enseignant et l’élève, quelle que soit la matière.",
+              "explanation": "Simard distingue deux regards sur l’enseignement : la pédagogie est centrée d’abord sur la relation entre l’enseignant et l’élève, quelle que soit la matière ; la didactique place les savoirs à acquérir au centre."
+            },
+            {
+              "id": "c",
+              "text": "La langue et le langage, leur organisation et leur fonctionnement.",
+              "explanation": "C’est l’objet de la linguistique, science qui étudie la langue et le langage. La pédagogie porte sur la relation enseignant–élève, au-delà d’une matière particulière."
+            },
+            {
+              "id": "d",
+              "text": "La trajectoire par laquelle l’enfant acquiert les aspects de sa langue.",
+              "explanation": "Il s’agit du regard de la psychologie sur l’acquisition du langage. La distinction de Simard porte sur l’enseignement : la pédagogie regarde la relation enseignant–élève, plutôt que la trajectoire d’acquisition."
+            }
+          ],
+          "level": "essentiel",
+          "sansChoix": true,
+          "ancienExamen": {
+            "examen": "BP13FRA — examen du 24 juin 2021",
+            "annee": 2021,
+            "question": "1.1 (pédagogie)",
+            "page": 3
+          }
+        },
+        {
+          "id": "Q5",
+          "prompt": "Dans son introduction, Simard (2010) différencie les concepts de pédagogie et de didactique. Quel est l’objet d’étude de la didactique ?",
+          "requiresContext": false,
+          "correctId": "c",
+          "choices": [
+            {
+              "id": "a",
+              "text": "La trajectoire par laquelle l’enfant acquiert les aspects de sa langue.",
+              "explanation": "C’est le regard de la psychologie sur l’acquisition du langage. La didactique pose la question des savoirs à acquérir et des conditions de leur enseignement."
+            },
+            {
+              "id": "b",
+              "text": "La relation entre l’enseignant et l’élève, quelle que soit la matière.",
+              "explanation": "Dans la distinction de Simard, c’est la pédagogie qui s’intéresse d’abord à cette relation. La didactique place les savoirs visés au centre de l’analyse."
+            },
+            {
+              "id": "c",
+              "text": "Les savoirs à acquérir, aussi bien théoriques que pratiques.",
+              "explanation": "Simard distingue pédagogie et didactique : la didactique place au cœur de ses préoccupations les savoirs à acquérir, théoriques et pratiques. Ce regard permet d’examiner ce qu’une situation fait apprendre et comment elle rend ces savoirs accessibles."
+            },
+            {
+              "id": "d",
+              "text": "La langue et le langage, leur organisation et leur fonctionnement.",
+              "explanation": "C’est l’objet de la linguistique. La didactique du français s’appuie sur des savoirs concernant la langue, mais son regard porte sur les savoirs à faire acquérir et sur leur enseignement."
+            }
+          ],
+          "level": "essentiel",
+          "sansChoix": true,
+          "ancienExamen": {
+            "examen": "BP13FRA — examen du 24 juin 2021",
+            "annee": 2021,
+            "question": "1.1 (didactique)",
+            "page": 3
+          }
         }
       ],
-      "qcmRevision": "9a2f10c47fa2a171"
+      "qcmRevision": "929fec9494820b95"
     },
     {
       "id": "ORAL-P-F52",
@@ -13257,7 +13441,7 @@
       "prompt": "",
       "hints": [
         "Ces notions servent à analyser un récit à des niveaux différents : les moments de l'histoire, les caractéristiques enseignables du genre, la logique et la langue qui relient le récit.",
-        "Transposition didactique (cours, première approche par les genres) : Transformation d’un genre de référence en objet d’enseignement, par le choix des caractéristiques que les élèves vont apprendre à comprendre ou à produire. Schéma narratif (Larivaille d’après Propp, cours) : Outil d’analyse en cinq moments : situation initiale, complication, actions, résolution, situation finale. Il repère la transformation entre l’avant et l’après, agie ou subie : elle fait passer d’un équilibre initial à un nouvel équilibre final. Modèle didactique d’un genre textuel (CIIP, cours) : Outil décrivant les caractéristiques enseignables d’un genre : visée, communication, réalisation, contenus, structure, textualisation, langue et principes communicatifs. Cohérence (cours) : Organisation logique des évènements et des informations qui rend l’histoire compréhensible. Cohésion (cours) : Ensemble des moyens linguistiques qui relient les éléments du récit, notamment les connecteurs et les pronoms de reprise."
+        "Transposition didactique (cours, première approche par les genres) : Transformation d’un genre de référence en objet d’enseignement, par le choix des caractéristiques que les élèves vont apprendre à comprendre ou à produire. Schéma narratif (Larivaille d’après Propp, cours) : Outil d’analyse en cinq moments : situation initiale, complication, actions, résolution, situation finale. Il repère la transformation entre l’avant et l’après, agie ou subie : elle fait passer d’un équilibre initial à un nouvel équilibre final. Modèle didactique d’un genre textuel (CIIP, cours) : Outil décrivant les caractéristiques enseignables d’un genre : visée, communication, réalisation, contenus, structure, textualisation, langue et principes communicatifs. Cohérence (cours) : Organisation logique des évènements et des informations qui rend l’histoire compréhensible. Cohésion (cours) : Ensemble des moyens linguistiques qui relient les éléments du récit, notamment les connecteurs et les pronoms de reprise. Genre textuel (cours 04) : Forme de texte reconnue socialement et culturellement, caractérisée par des contenus, une structure et des configurations d’unités langagières. Les contenus sont ce dont on parle ; la structure en organise les éléments. Textualisation (support du séminaire 04) : Unités linguistiques du genre (la langue) : temps du verbe, usage des pronoms (reprises) et d’organisateurs textuels, logiques et spatio-temporels. La situation de communication situe le locuteur, le destinataire et le but ; elle appartient au cadre plus large d’analyse des genres oraux et se distingue de ce découpage en trois dimensions."
       ],
       "sources": [
         {
@@ -13267,6 +13451,14 @@
         {
           "file": "SYNTHESE_BP1-18FRA_S1_COURS_02.docx",
           "location": "5 Construire un récit compréhensible"
+        },
+        {
+          "file": "SYNTHESE_BP1-18FRA_S1_COURS_04.docx",
+          "location": "3 Organiser les apprentissages par les genres : trois dimensions du genre textuel"
+        },
+        {
+          "file": "SYNTHESE_BP1-18FRA_S1_SEMINAIRE_04.docx",
+          "location": "1 Analyser des textes oraux : textualisation (support d9)"
         }
       ],
       "steps": [
@@ -13389,9 +13581,45 @@
           ],
           "level": "essentiel",
           "sansChoix": true
+        },
+        {
+          "id": "Q5",
+          "prompt": "À quelle dimension du genre textuel (contenus, structure, textualisation) appartient le système des temps verbaux ?",
+          "requiresContext": false,
+          "correctId": "b",
+          "choices": [
+            {
+              "id": "a",
+              "text": "Les contenus",
+              "explanation": "Les trois dimensions distinguent ce dont on parle, l’organisation et la mise en mots. Les contenus désignent les thèmes, personnages ou évènements ; le système des temps verbaux concerne les unités linguistiques utilisées pour les présenter."
+            },
+            {
+              "id": "b",
+              "text": "La textualisation",
+              "explanation": "Les trois dimensions du genre sont les contenus, la structure et la textualisation. La textualisation réunit les unités linguistiques du genre : temps des verbes, pronoms de reprise et organisateurs textuels, logiques ou spatio-temporels. Le système des temps verbaux appartient donc à cette mise en mots."
+            },
+            {
+              "id": "c",
+              "text": "La structure",
+              "explanation": "La structure organise les contenus et les moments du texte, par exemple les étapes d’un récit. Les temps verbaux contribuent à exprimer leurs relations, mais le système de formes verbales est une ressource linguistique de la textualisation."
+            },
+            {
+              "id": "d",
+              "text": "La situation de communication",
+              "explanation": "La situation de communication concerne notamment la posture du locuteur, le destinataire et le but. Elle intervient dans le cadre plus large d’analyse du genre oral ; elle ne désigne pas le système des temps et ne constitue pas une quatrième dimension dans le découpage demandé."
+            }
+          ],
+          "level": "essentiel",
+          "sansChoix": true,
+          "ancienExamen": {
+            "examen": "BP13FRA — examen de janvier 2019",
+            "annee": 2019,
+            "question": "5.6",
+            "page": "DOCX sans pagination, question 5"
+          }
         }
       ],
-      "qcmRevision": "77319bc9f9515ce8"
+      "qcmRevision": "c4180f55339db346"
     },
     {
       "id": "ORAL-P-F62",
@@ -15592,7 +15820,7 @@
       "prompt": "",
       "hints": [
         "Une même langue peut jouer plusieurs rôles à l'école : cherche celui que la situation décrite met en jeu.",
-        "Langue de scolarisation (Verdelhan-Bourgade, 2002 ; cours, PER) : Langue dans laquelle on enseigne et apprend. Elle est à la fois objet d’apprentissage (la discipline français), outil d’apprentissage dans toutes les disciplines (français transversal) et condition de la réussite scolaire et sociale, par son poids dans l’évaluation. Ici, il s’agit du français ; pour certains élèves, c’est aussi la langue familiale ; pour d’autres, elle s’ajoute à une ou plusieurs langues déjà présentes."
+        "Langue de scolarisation (Verdelhan-Bourgade, 2002 ; cours, PER) : Langue dans laquelle on enseigne et apprend. Elle est à la fois objet d’apprentissage (la discipline français), outil d’apprentissage dans toutes les disciplines (français transversal) et condition de la réussite scolaire et sociale, par son poids dans l’évaluation. Ici, il s’agit du français ; pour certains élèves, c’est aussi la langue familiale ; pour d’autres, elle s’ajoute à une ou plusieurs langues déjà présentes. La langue familiale est celle utilisée dans la famille ; elle peut être la langue de scolarisation ou une autre langue. Dans les situations de bilinguisme consécutif étudiées, la langue première est déjà présente lorsque la seconde langue est introduite plus tard dans l’environnement de l’enfant. « Première » et « seconde » situent ici le parcours d’acquisition ; ces termes ne disent pas si la langue sert à apprendre les autres matières. Distingue donc la fonction de la langue à l’école, ses usages dans la famille et sa place dans le parcours linguistique de l’élève."
       ],
       "sources": [
         {
@@ -15602,6 +15830,14 @@
         {
           "file": "SYNTHESE_BP1-18FRA_S1_SEMINAIRE_04.docx",
           "location": "Important : triangle didactique et langue de scolarisation"
+        },
+        {
+          "file": "SYNTHESE_BP1-18FRA_S1_COURS_02.docx",
+          "location": "6, Bilinguisme précoce consécutif : langue 1 puis apprentissage de la langue de scolarisation (support d61, PDF p. 23)"
+        },
+        {
+          "file": "02_Abdelilah-Bauer_2015_Developpement_langage_pp019-037__SYNTHESE.docx",
+          "location": "Bilinguisme précoce consécutif ; original prescrit, p. 34–35 (PDF p. 10), Les différents types de bilinguisme selon l’âge et l’environnement"
         }
       ],
       "steps": [
@@ -15634,9 +15870,53 @@
           ],
           "level": "essentiel",
           "sansChoix": true
+        },
+        {
+          "id": "Q2",
+          "prompt": "Complétez : la langue de scolarisation intervient dans l’enseignement de diverses matières scolaires. On parle alors de français…",
+          "requiresContext": false,
+          "correctId": "d",
+          "choices": [
+            {
+              "id": "a",
+              "text": "familial",
+              "explanation": "La langue familiale se définit par les usages dans la famille. Le français peut avoir cette place pour certains élèves, mais l’énoncé porte sur son rôle pour apprendre les différentes matières scolaires."
+            },
+            {
+              "id": "b",
+              "text": "langue première",
+              "explanation": "Dans les situations de bilinguisme consécutif étudiées, la langue première est déjà présente quand une autre langue est introduite dans l’environnement de l’enfant. Ce repère concerne son parcours d’acquisition ; il ne nomme pas le rôle du français comme outil d’apprentissage dans les différentes disciplines."
+            },
+            {
+              "id": "c",
+              "text": "langue seconde",
+              "explanation": "Dans le bilinguisme consécutif étudié, Abdelilah-Bauer décrit une seconde langue introduite plus tard dans l’environnement de l’enfant. Ce statut d’acquisition peut concerner le français de certains élèves ; il ne nomme pas sa fonction transversale pour apprendre les différentes matières scolaires."
+            },
+            {
+              "id": "d",
+              "text": "transversal",
+              "explanation": "La langue de scolarisation est la langue dans laquelle on enseigne et apprend. Elle est objet d’apprentissage dans la discipline français, outil dans toutes les disciplines et condition de la réussite par son poids dans l’évaluation. « Français transversal » nomme ici le deuxième rôle : comprendre et construire les savoirs des différentes matières."
+            }
+          ],
+          "level": "essentiel",
+          "sansChoix": true,
+          "ancienExamen": {
+            "examen": "BP13FRA — examen du 24 juin 2021",
+            "annee": 2021,
+            "question": "1.3",
+            "page": 3,
+            "autresReferences": [
+              {
+                "examen": "BP13FRA — examen de janvier 2019",
+                "annee": 2019,
+                "question": "1.7",
+                "page": "DOCX sans pagination, question 1"
+              }
+            ]
+          }
         }
       ],
-      "qcmRevision": "163cce17c9aa0c13"
+      "qcmRevision": "87e327cccac08a7f"
     },
     {
       "id": "ORAL-P-F83",
@@ -19193,6 +19473,18 @@
       "stepId": "Q3"
     },
     {
+      "exerciseId": "ORAL-P-F50",
+      "stepId": "Q4"
+    },
+    {
+      "exerciseId": "ORAL-P-F50",
+      "stepId": "Q5"
+    },
+    {
+      "exerciseId": "ORAL-P-F50",
+      "stepId": "Q6"
+    },
+    {
       "exerciseId": "ORAL-P-F51",
       "stepId": "Q1"
     },
@@ -19205,8 +19497,20 @@
       "stepId": "Q3"
     },
     {
+      "exerciseId": "ORAL-P-F51",
+      "stepId": "Q4"
+    },
+    {
+      "exerciseId": "ORAL-P-F51",
+      "stepId": "Q5"
+    },
+    {
       "exerciseId": "ORAL-P-F82",
       "stepId": "Q1"
+    },
+    {
+      "exerciseId": "ORAL-P-F82",
+      "stepId": "Q2"
     },
     {
       "exerciseId": "ORAL-P-F55",
@@ -19343,6 +19647,10 @@
     {
       "exerciseId": "ORAL-P-F61",
       "stepId": "Q4"
+    },
+    {
+      "exerciseId": "ORAL-P-F61",
+      "stepId": "Q5"
     },
     {
       "exerciseId": "ORAL-P-F91",
@@ -19741,5 +20049,5 @@
       "stepId": "Q1"
     }
   ],
-  "bankRevision": "2d965aa9eb70"
+  "bankRevision": "7849932c8ee4"
 }

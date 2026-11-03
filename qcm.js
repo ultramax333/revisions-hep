@@ -23,7 +23,7 @@
     if (!GROUPED_COURSES) return '';
     return `<div class="qcm-mode-switch" role="group" aria-label="Mode de révision"><button class="btn ${withoutChoices ? 'secondary' : 'primary'}" data-action="mode-qcm" aria-pressed="${!withoutChoices}">QCM</button><button class="btn ${withoutChoices ? 'primary' : 'secondary'}" data-action="mode-sc" aria-pressed="${withoutChoices}">Sans les choix</button></div>`;
   }
-  let levelsEnabled = false, levelFilter = 'essentiel', emptyPathMessage = '';
+  let levelsEnabled = false, levelFilter = 'essentiel', ancientOnly = false, emptyPathMessage = '';
   const runCache = new Map(), mixExpansionCache = new Map();
   const mixKey = 'hep-revisions-qcm-mixed-position-v1::' + SCOPE;
   const courseCursorKey = 'hep-revisions-qcm-course-position-v1::' + SCOPE;
@@ -83,8 +83,15 @@
     nameField?.addEventListener('input', () => binding.refresh());
     stepFeedback = binding; binding.refresh(); return binding;
   }
-  const levelStorageKey = name => (withoutChoices ? 'sc-level-' : 'qcm-level-') + name + '::' + SCOPE + '::' + levelFilter;
+  const levelStorageKey = name => (withoutChoices ? 'sc-level-' : 'qcm-level-') + name + '::' + SCOPE + '::' + levelFilter + (ancientOnly ? '::anciens' : '');
   const selectedLevelKey = () => (withoutChoices ? 'sc-selected-level::' : 'qcm-selected-level::') + SCOPE;
+  const selectedAncientKey = () => (withoutChoices ? 'sc-selected-ancient::' : 'qcm-selected-ancient::') + SCOPE;
+  function restoreAncientChoice() {
+    try { ancientOnly = JSON.parse(repo.state.drafts[selectedAncientKey()]?.text || 'false') === true; } catch (_) { ancientOnly = false; }
+  }
+  const ancientBadge = step => step.ancienExamen ? '<span class="pill">Ancien examen</span>' : '';
+  const snapshotPrompt = step => (step.ancienExamen ? 'Ancien examen\n\n' : '') + step.prompt;
+  const emptySelection = () => ancientOnly ? 'Aucune question d’ancien examen ne correspond à ce cours ou mélange, au niveau et au mode choisis. Désactive Anciens examens, choisis Tout ou le mode QCM.' : 'Aucune question disponible pour ce parcours. Choisis Tout ou le mode QCM.';
   function writeNavigation(key, value) {
     ingestLocal();
     const previous = repo.state.drafts[key];
@@ -95,11 +102,11 @@
     let saved; try { saved = JSON.parse(repo.state.drafts[selectedLevelKey()]?.text || 'null'); } catch (_) { saved = null; }
     levelFilter = saved === 'tout' ? 'tout' : 'essentiel';
   }
-  const stepEligible = step => (!withoutChoices || step.sansChoix === true) && (!levelsEnabled || levelFilter === 'tout' || step.level === 'essentiel');
+  const stepEligible = step => (!ancientOnly || !!step.ancienExamen) && (!withoutChoices || step.sansChoix === true) && (!levelsEnabled || levelFilter === 'tout' || step.level === 'essentiel');
   const exerciseEntries = q => q.steps.map((step, index) => ({ q, step, index })).filter(item => stepEligible(item.step));
   function levelControls() {
-    if (!levelsEnabled) return '';
-    return `<div class="qcm-level-filter" role="group" aria-label="Niveau du parcours"><button type="button" class="btn secondary" data-level-filter="essentiel" aria-pressed="${levelFilter === 'essentiel'}">Essentiel</button><button type="button" class="btn secondary" data-level-filter="tout" aria-pressed="${levelFilter === 'tout'}">Tout</button></div>`;
+    if (!GROUPED_COURSES) return '';
+    return `<div class="qcm-mode-switch" role="group" aria-label="Filtres du parcours">${levelsEnabled ? `<button type="button" class="btn secondary" data-level-filter="essentiel" aria-pressed="${levelFilter === 'essentiel'}">Essentiel</button><button type="button" class="btn secondary" data-level-filter="tout" aria-pressed="${levelFilter === 'tout'}">Tout</button>` : ''}<button type="button" class="btn ${ancientOnly ? 'primary' : 'secondary'}" data-action="ancient-filter" aria-pressed="${ancientOnly}">Anciens examens</button></div>`;
   }
   function writeRun(q, run) {
     const key = runKey(q), previous = repo.state.drafts[key];
@@ -195,7 +202,7 @@
       const choice = step.choices.find(c => c.id === id);
       return String.fromCharCode(65 + ids.indexOf(id)) + '. ' + (id === step.correctId ? 'Bonne réponse. ' : '') + choice.explanation;
     }).join('\n\n') : '';
-    return { question: step.prompt + '\n\n' + ids.map((id, i) => String.fromCharCode(65 + i) + '. ' + step.choices.find(c => c.id === id).text).join('\n'),
+    return { question: snapshotPrompt(step) + '\n\n' + ids.map((id, i) => String.fromCharCode(65 + i) + '. ' + step.choices.find(c => c.id === id).text).join('\n'),
       answer: 'Mon choix : ' + (selected ? String.fromCharCode(65 + ids.indexOf(selected)) + '. ' + step.choices.find(c => c.id === selected).text : 'aucun') + '\n\n' + (revealed ? explanations : 'Correction non affichée.'),
       hint: (seen.context ? 'Situation consultée :\n' + q.context : '') + (seen.hints ? '\n\nRappel consulté :\n' + hintText(q) : ''), module: q.module, course: q.course };
   }
@@ -243,7 +250,13 @@
     return activeMix ? repo.state.drafts[levelStorageKey('mixed-position-v2')]?.text || '' : S.stable(readCourseCursors()[activeCourse] || null);
   }
   function readCourseCursors() {
-    try { const source = withoutChoices ? repo.state.drafts[levelStorageKey('course-position')]?.text : levelsEnabled ? repo.state.drafts[levelStorageKey('course-position')]?.text || (levelFilter === 'tout' ? localStorage.getItem(courseCursorKey) : '{}') : localStorage.getItem(courseCursorKey); const value = JSON.parse(source || '{}'); return value && typeof value === 'object' && !Array.isArray(value) ? value : {}; } catch (_) { return {}; }
+    try {
+      const scoped = withoutChoices || levelsEnabled || ancientOnly;
+      const fallback = !withoutChoices && !ancientOnly && levelFilter === 'tout' ? localStorage.getItem(courseCursorKey) : null;
+      const source = scoped ? repo.state.drafts[levelStorageKey('course-position')]?.text || fallback : localStorage.getItem(courseCursorKey);
+      const value = JSON.parse(source || '{}');
+      return value && typeof value === 'object' && !Array.isArray(value) ? value : {};
+    } catch (_) { return {}; }
   }
   function selectCourseEntry(item) {
     active = item.q;
@@ -254,11 +267,11 @@
     }
     const cursors = readCourseCursors();
     cursors[activeCourse] = { exerciseId: active.id, stepId: item.step.id, qcmRevision: active.qcmRevision };
-    try { if (withoutChoices || levelsEnabled) writeNavigation(levelStorageKey('course-position'), cursors); else localStorage.setItem(courseCursorKey, JSON.stringify(cursors)); } catch (_) { toast('La position du cours ne peut pas être enregistrée sur cet appareil.'); }
+    try { if (withoutChoices || levelsEnabled || ancientOnly) writeNavigation(levelStorageKey('course-position'), cursors); else localStorage.setItem(courseCursorKey, JSON.stringify(cursors)); } catch (_) { toast('La position du cours ne peut pas être enregistrée sur cet appareil.'); }
   }
   function openCourse(key) {
     const queue = courseQueue(key);
-    if (!queue.length) { showEmptyPath('Aucune question pour ' + courseLabel(key) + (levelsEnabled && levelFilter === 'essentiel' ? ' dans Essentiel. Choisis Tout pour ouvrir ce cours.' : '. Reviens aux cours disponibles.')); return false; }
+    if (!queue.length) { showEmptyPath(emptySelection()); return false; }
     activeCourse = key;
     const cursor = readCourseCursors()[key];
     const saved = queue.find(item => item.q.id === cursor?.exerciseId && item.step.id === cursor?.stepId && item.q.qcmRevision === cursor?.qcmRevision);
@@ -304,7 +317,13 @@
     return mix.order.map(ref => entries.get(entryKey(ref)));
   }
   function readMix() {
-    let value; try { const source = withoutChoices ? repo.state.drafts[levelStorageKey('mixed-position-v2')]?.text : levelsEnabled ? repo.state.drafts[levelStorageKey('mixed-position-v2')]?.text || repo.state.drafts[levelStorageKey('mixed-position')]?.text || (levelFilter === 'tout' ? localStorage.getItem(mixKey) : 'null') : localStorage.getItem(mixKey); value = expandedMix(JSON.parse(source || 'null')); } catch (_) { return null; }
+    let value;
+    try {
+      const scoped = withoutChoices || levelsEnabled || ancientOnly;
+      const fallback = !withoutChoices && !ancientOnly && levelFilter === 'tout' ? localStorage.getItem(mixKey) : null;
+      const source = scoped ? repo.state.drafts[levelStorageKey('mixed-position-v2')]?.text || repo.state.drafts[levelStorageKey('mixed-position')]?.text || fallback : localStorage.getItem(mixKey);
+      value = expandedMix(JSON.parse(source || 'null'));
+    } catch (_) { return null; }
     const entries = allEntries().map(item => entryKey(entryRef(item)));
     if (!entries.length) return null;
     if (value?.version !== 1 || typeof value.id !== 'string' || !Array.isArray(value.order) || value.order.length > entries.length || !value.order.length) return null;
@@ -321,7 +340,7 @@
   }
   function saveMix() {
     try {
-      if (withoutChoices || levelsEnabled) {
+      if (withoutChoices || levelsEnabled || ancientOnly) {
         const compact = compactMix(activeMix);
         if (JSON.stringify(compact).length > 12000) throw Error('Mélange trop volumineux.');
         // Separate key prevents an older client overwriting the extended mixture.
@@ -331,7 +350,7 @@
   }
   function openMix(fresh = false) {
     const entries = allEntries();
-    if (!entries.length) { showEmptyPath('Aucune question disponible pour ce mélange. Choisis Tout ou le mode QCM.'); return false; }
+    if (!entries.length) { showEmptyPath(emptySelection()); return false; }
     activeCourse = null;
     activeMix = !fresh && readMix() || { version: 1, id: S.uuid(), order: shuffled(entries.map(entryRef)) };
     const queue = mixedQueue(activeMix);
@@ -358,10 +377,10 @@
       return { key, label, queue, date: dates[0] || '99999999', match: !query || oralNavigation.normalize(haystack).includes(query) };
     }).filter(course => course.match);
     const total = allEntries().length, mix = readMix();
-    return `${modeControls()}${levelControls()}${emptyPathMessage ? `<p class="notice" role="status">${esc(emptyPathMessage)}</p>` : ''}<section class="qcm-mix-start" aria-label="Toutes les questions"><div><button class="btn primary" data-action="mix" ${total ? '' : 'disabled'}>Tout mélanger</button><p class="help-text">${total ? total + ' ' + questionLabel() + ' en ordre aléatoire. Réponses conservées.' : 'Aucune question disponible dans ce niveau. Choisis Tout ou QCM.'}</p></div>${mix ? '<button class="btn ghost" data-action="new-mix">Nouveau mélange</button>' : ''}</section>
+    return `${modeControls()}${levelControls()}${emptyPathMessage ? `<p class="notice" role="status">${esc(emptyPathMessage)}</p>` : ''}<section class="qcm-mix-start" aria-label="Toutes les questions"><div><button class="btn primary" data-action="mix" ${total ? '' : 'disabled'}>Tout mélanger</button><p class="help-text">${total ? total + ' ' + questionLabel() + ' en ordre aléatoire. Réponses conservées.' : esc(emptySelection())}</p></div>${mix ? '<button class="btn ghost" data-action="new-mix">Nouveau mélange</button>' : ''}</section>
       ${window.HEPQuickUI?.group() || ''}<section class="qcm-subject" aria-labelledby="qcm-subject-title"><h1 id="qcm-subject-title">${esc(collection.subject || 'Français')}</h1><section class="qcm-block" aria-labelledby="qcm-block-title"><h2 id="qcm-block-title">${esc(collection.block || 'Bloc oral')}</h2><p class="hero-description">${withoutChoices ? 'Écris ou pense ta réponse, puis affiche la réponse attendue et déclare « Je savais » ou « À revoir ». Les résultats QCM restent séparés.' : 'Des QCM avec une correction expliquée, à ton rythme.'}${writingHome && !withoutChoices ? ' Les exercices rédigés du bloc oral ont aussi leur <a href="oral.html">accès direct à la rédaction</a>.' : ''}</p>
       <form class="oral-tools qcm-home-filters" id="qcm-home-filters"><label class="oral-field" for="qcm-search">Rechercher un cours ou une notion<input class="text-input" id="qcm-search" type="search" value="${esc(search)}" placeholder="${esc(collection.searchPlaceholder || 'Ex. : Cours 1, étayage, récit…')}"></label><button class="btn secondary" type="submit">Rechercher</button>${search ? '<button class="btn ghost" type="button" data-action="clear-search">Tout afficher</button>' : ''}</form>
-      <p class="help-text oral-result-count" id="qcm-home-results" role="status" tabindex="-1">${courses.length} cours · ${courses.reduce((n, course) => n + course.queue.length, 0)} ${questionLabel()}</p><div class="exercise-grid qcm-courses" role="group" aria-label="Parcours par cours">${courses.map(course => { const stats = courseStats(course.queue); return `<article class="course-card exercise-tile"><h3>${esc(course.label)}</h3><p class="help-text">${course.queue.length} ${questionLabel()}${stats.answered ? ` · ${stats.answered} ${withoutChoices ? 'autoévaluation' : 'réponse'}${stats.answered > 1 ? 's' : ''} enregistrée${stats.answered > 1 ? 's' : ''}` : ''}</p><button class="btn primary" data-course="${esc(course.key)}" ${course.queue.length ? '' : 'disabled'} aria-label="${esc(course.queue.length ? (stats.answered || readCourseCursors()[course.key] ? 'Reprendre' : 'Commencer') + ' ' + course.label : 'Aucune question Essentiel pour ' + course.label + '. Choisis Tout.')}">${course.queue.length ? (stats.answered || readCourseCursors()[course.key] ? 'Reprendre' : 'Commencer') : 'Aucun Essentiel'}</button></article>`; }).join('') || '<p class="empty-state">Aucun cours ne correspond à cette recherche.</p>'}</div></section></section>
+      <p class="help-text oral-result-count" id="qcm-home-results" role="status" tabindex="-1">${courses.length} cours · ${courses.reduce((n, course) => n + course.queue.length, 0)} ${questionLabel()}</p><div class="exercise-grid qcm-courses" role="group" aria-label="Parcours par cours">${courses.map(course => { const stats = courseStats(course.queue); return `<article class="course-card exercise-tile"><h3>${esc(course.label)}</h3><p class="help-text">${course.queue.length} ${questionLabel()}${stats.answered ? ` · ${stats.answered} ${withoutChoices ? 'autoévaluation' : 'réponse'}${stats.answered > 1 ? 's' : ''} enregistrée${stats.answered > 1 ? 's' : ''}` : ''}</p><button class="btn primary" data-course="${esc(course.key)}" ${course.queue.length ? '' : 'disabled'} aria-label="${esc(course.queue.length ? (stats.answered || readCourseCursors()[course.key] ? 'Reprendre' : 'Commencer') + ' ' + course.label : 'Aucune question disponible pour ' + course.label + '. ' + emptySelection())}">${course.queue.length ? (stats.answered || readCourseCursors()[course.key] ? 'Reprendre' : 'Commencer') : 'Aucune question'}</button></article>`; }).join('') || '<p class="empty-state">Aucun cours ne correspond à cette recherche.</p>'}</div></section></section>
       ${writingHome && !withoutChoices ? '<p class="notice">Le résultat des QCM mesure la reconnaissance d’une réponse. La rédaction et sa justification restent à travailler séparément.</p>' : ''}`;
   }
   function scSnapshot(q, step, run) {
@@ -369,7 +388,7 @@
     const response = document.getElementById('sc-response')?.value ?? record.response;
     const correct = record.revealed ? step.choices.find(choice => choice.id === step.correctId) : null;
     return {
-      question: 'Sans les choix\n\n' + step.prompt,
+      question: 'Sans les choix\n\n' + snapshotPrompt(step),
       answer: 'Ma réponse personnelle :\n' + (response || 'Réponse pensée ou non écrite.') + '\n\n' + (correct ? 'Réponse attendue :\n' + correct.text + '\n\n' + correct.explanation : 'Réponse attendue non affichée.') + (record.selfEvaluation ? '\n\nAutoévaluation déclarée : ' + (record.selfEvaluation === 'known' ? 'Je savais' : 'À revoir') : ''),
       hint: (seen.context ? 'Situation consultée :\n' + q.context : '') + (seen.hints ? '\n\nRappel consulté :\n' + hintText(q) : ''), module: q.module, course: q.course
     };
@@ -380,7 +399,7 @@
     const progress = coursePosition(q, run), stats = courseStats(progress.queue), total = progress.queue.length;
     const correct = record.revealed ? step.choices.find(choice => choice.id === step.correctId) : null;
     const alternatives = scStore.alternatives(q, step);
-    return `<section class="question-shell"><article class="question-card">${levelControls()}<p class="exercise-origin">${esc(referenceLabel(ref))}${ref.date ? ' · ' + esc(ref.date) : ''}</p><fieldset class="qcm-step sc-step" tabindex="-1"><legend>${esc(step.prompt)}</legend>${needsContext(step) ? '<button class="qcm-context-cue" data-action="open-context">Clique sur « Situation » pour lire le contexte.</button>' : ''}<label class="field-label" for="sc-response">Ma réponse (facultative)</label><p class="help-text">Écris ici ou réponds dans ta tête, puis compare avec la réponse attendue.</p><textarea class="feedback-textarea sc-response" id="sc-response" rows="4" maxlength="8000">${esc(record.response)}</textarea><p class="save-status" id="sc-response-status" role="status" aria-live="polite">${repo.warning ? esc(repo.warning) : record.token ? 'Réponse conservée sur cet appareil.' : 'La réponse écrite est facultative.'}</p><button class="btn secondary" data-action="sc-refresh" id="sc-refresh" hidden>Recharger cette question</button>${correct ? `<section class="sc-expected" tabindex="-1" aria-labelledby="sc-expected-title"><h2 id="sc-expected-title">Réponse attendue</h2><p>${text(correct.text)}</p><p>${text(correct.explanation)}</p></section><div class="actions sc-self-evaluation" role="group" aria-label="Mon autoévaluation"><button class="btn ${record.selfEvaluation === 'known' ? 'primary' : 'secondary'}" data-action="sc-known" aria-pressed="${record.selfEvaluation === 'known'}">Je savais</button><button class="btn ${record.selfEvaluation === 'review' ? 'primary' : 'secondary'}" data-action="sc-review" aria-pressed="${record.selfEvaluation === 'review'}">À revoir</button></div><p class="help-text" role="status">${record.selfEvaluation ? 'Autoévaluation déclarée : ' + (record.selfEvaluation === 'known' ? 'Je savais.' : 'À revoir.') : 'Choisis « Je savais » ou « À revoir » pour poursuivre. Aucune note automatique.'}</p>` : '<button class="btn primary" data-action="sc-reveal">Voir la réponse</button>'}</fieldset>${alternatives.length ? `<details class="sc-alternatives"><summary>Autres réponses conservées (${alternatives.length})</summary><p class="help-text">Ces saisies d’autres onglets ou reprises restent disponibles. Tu peux en copier le texte.</p>${alternatives.map(item => `<p>${text(item.response)}</p>`).join('')}</details>` : ''}${window.HEPQuickUI?.thumbs() || ''}<button class="btn secondary qcm-report-button" data-action="report-step">Signaler un problème avec cette question</button>${scReportPanel()}<div class="question-navigation">${progress.index > 0 ? '<button class="btn secondary" data-action="previous">← Question précédente</button>' : ''}${progress.index + 1 < total ? `<button class="btn primary" data-action="next" ${record.selfEvaluation ? '' : 'disabled'}>Question suivante →</button>` : ''}</div>${progress.index === total - 1 && total > 0 && stats.answered === total ? `<section class="qcm-summary"><h2>Parcours Sans les choix terminé</h2><p>Autoévaluations déclarées : ${stats.score} « Je savais » ; ${stats.answered - stats.score} « À revoir ». Elles restent distinctes des résultats QCM.</p>${window.HEPQuickUI?.group() || ''}</section>` : ''}<div class="actions"><button class="btn secondary" data-action="${activeMix ? 'mix-first' : 'course-first'}">Revoir ${activeMix ? 'le mélange' : 'le cours'} depuis le début</button></div></article></section>${supportDialogs(q, step, ref, source)}`;
+    return `<section class="question-shell"><article class="question-card">${levelControls()}<p class="exercise-origin">${esc(referenceLabel(ref))}${ref.date ? ' · ' + esc(ref.date) : ''}</p><fieldset class="qcm-step sc-step" tabindex="-1"><legend>${esc(step.prompt)}</legend>${ancientBadge(step)}${needsContext(step) ? '<button class="qcm-context-cue" data-action="open-context">Clique sur « Situation » pour lire le contexte.</button>' : ''}<label class="field-label" for="sc-response">Ma réponse (facultative)</label><p class="help-text">Écris ici ou réponds dans ta tête, puis compare avec la réponse attendue.</p><textarea class="feedback-textarea sc-response" id="sc-response" rows="4" maxlength="8000">${esc(record.response)}</textarea><p class="save-status" id="sc-response-status" role="status" aria-live="polite">${repo.warning ? esc(repo.warning) : record.token ? 'Réponse conservée sur cet appareil.' : 'La réponse écrite est facultative.'}</p><button class="btn secondary" data-action="sc-refresh" id="sc-refresh" hidden>Recharger cette question</button>${correct ? `<section class="sc-expected" tabindex="-1" aria-labelledby="sc-expected-title"><h2 id="sc-expected-title">Réponse attendue</h2><p>${text(correct.text)}</p><p>${text(correct.explanation)}</p></section><div class="actions sc-self-evaluation" role="group" aria-label="Mon autoévaluation"><button class="btn ${record.selfEvaluation === 'known' ? 'primary' : 'secondary'}" data-action="sc-known" aria-pressed="${record.selfEvaluation === 'known'}">Je savais</button><button class="btn ${record.selfEvaluation === 'review' ? 'primary' : 'secondary'}" data-action="sc-review" aria-pressed="${record.selfEvaluation === 'review'}">À revoir</button></div><p class="help-text" role="status">${record.selfEvaluation ? 'Autoévaluation déclarée : ' + (record.selfEvaluation === 'known' ? 'Je savais.' : 'À revoir.') : 'Choisis « Je savais » ou « À revoir » pour poursuivre. Aucune note automatique.'}</p>` : '<button class="btn primary" data-action="sc-reveal">Voir la réponse</button>'}</fieldset>${alternatives.length ? `<details class="sc-alternatives"><summary>Autres réponses conservées (${alternatives.length})</summary><p class="help-text">Ces saisies d’autres onglets ou reprises restent disponibles. Tu peux en copier le texte.</p>${alternatives.map(item => `<p>${text(item.response)}</p>`).join('')}</details>` : ''}${window.HEPQuickUI?.thumbs() || ''}<button class="btn secondary qcm-report-button" data-action="report-step">Signaler un problème avec cette question</button>${scReportPanel()}<div class="question-navigation">${progress.index > 0 ? '<button class="btn secondary" data-action="previous">← Question précédente</button>' : ''}${progress.index + 1 < total ? `<button class="btn primary" data-action="next" ${record.selfEvaluation ? '' : 'disabled'}>Question suivante →</button>` : ''}</div>${progress.index === total - 1 && total > 0 && stats.answered === total ? `<section class="qcm-summary"><h2>Parcours Sans les choix terminé</h2><p>Autoévaluations déclarées : ${stats.score} « Je savais » ; ${stats.answered - stats.score} « À revoir ». Elles restent distinctes des résultats QCM.</p>${window.HEPQuickUI?.group() || ''}</section>` : ''}<div class="actions"><button class="btn secondary" data-action="${activeMix ? 'mix-first' : 'course-first'}">Revoir ${activeMix ? 'le mélange' : 'le cours'} depuis le début</button></div></article></section>${supportDialogs(q, step, ref, source)}`;
   }
   function scReportPanel() {
     return `<details class="feedback-panel" id="step-feedback" hidden><summary>Mon signalement sur cette question Sans les choix</summary>${HEPFeedback.fields(true)}<label class="field-label" for="step-feedback-category">Catégorie (facultative)</label><select class="select-input" id="step-feedback-category"><option value="">Sans catégorie</option><option>Question</option><option>Réponse attendue</option><option>Aides</option><option>Autre</option></select><label class="field-label" for="step-feedback-comment">Mon commentaire</label><textarea class="feedback-textarea" id="step-feedback-comment" rows="4" maxlength="8000"></textarea><p class="help-text">Le signalement conserve le mode, la question, ta réponse et uniquement les contenus déjà affichés à son ouverture.</p><div class="actions"><button class="btn primary" data-action="send-step" disabled>Envoyer à Maxim</button></div><p class="save-status" data-send-status role="status" aria-live="polite">Brouillon sur cet appareil.</p><p class="help-text">L’envoi à Maxim ne demande pas de compte Google.</p><details><summary>Sauvegarde personnelle avec Drive (facultative)</summary><button class="btn secondary" data-action="panel-drive">${HEPDrive.connected() ? 'Synchroniser Drive ici' : 'Connecter Drive ici'}</button><p class="save-status" data-save-status></p></details></details>`;
@@ -413,7 +432,7 @@
   }
   function stepView(q, step, index, run) {
     const selected = step.choices.find(c => c.id === run.answers[step.id]), correct = step.choices.find(c => c.id === step.correctId), revealed = !!run.revealed[step.id];
-    return `<fieldset class="qcm-step" data-step="${step.id}"><legend>${esc(step.prompt)}</legend>${needsContext(step) ? '<button class="qcm-context-cue" data-action="open-context">Clique sur « Situation » pour lire le contexte.</button>' : ''}<div class="qcm-choices">${run.order[step.id].map((id, i) => { const c = step.choices.find(c => c.id === id); return `<button class="qcm-choice ${selected?.id === id ? 'qcm-selected' : ''} ${revealed && id === step.correctId ? 'qcm-correct' : revealed && id === selected?.id ? 'qcm-incorrect' : ''}" data-choice="${id}" data-step="${step.id}" aria-label="${revealed && id === step.correctId ? 'Bonne réponse : ' : ''}${String.fromCharCode(65 + i)}. ${esc(c.text)}" aria-pressed="${selected?.id === id}" ${revealed ? 'disabled' : ''}><span><strong>${String.fromCharCode(65 + i)}.</strong> ${esc(c.text)}</span></button>`; }).join('')}</div>${revealed ? `<div class="qcm-verdict" role="status" tabindex="-1"><strong>${selected.id === step.correctId ? 'Bonne réponse.' : 'À reprendre.'}</strong><p>${text(correct.explanation)}</p>${selected.id !== step.correctId ? `<p><strong>Ton choix :</strong> ${text(selected.explanation)}</p>` : ''}<details><summary>Comprendre les autres propositions</summary>${run.order[step.id].filter(id => id !== step.correctId && id !== selected.id).map(id => { const c = step.choices.find(c => c.id === id), letter = String.fromCharCode(65 + run.order[step.id].indexOf(id)); return `<p><strong>${letter}.</strong> ${text(c.explanation)}</p>`; }).join('')}</details></div>` : ''}</fieldset>`;
+    return `<fieldset class="qcm-step" data-step="${step.id}"><legend>${esc(step.prompt)}</legend>${ancientBadge(step)}${needsContext(step) ? '<button class="qcm-context-cue" data-action="open-context">Clique sur « Situation » pour lire le contexte.</button>' : ''}<div class="qcm-choices">${run.order[step.id].map((id, i) => { const c = step.choices.find(c => c.id === id); return `<button class="qcm-choice ${selected?.id === id ? 'qcm-selected' : ''} ${revealed && id === step.correctId ? 'qcm-correct' : revealed && id === selected?.id ? 'qcm-incorrect' : ''}" data-choice="${id}" data-step="${step.id}" aria-label="${revealed && id === step.correctId ? 'Bonne réponse : ' : ''}${String.fromCharCode(65 + i)}. ${esc(c.text)}" aria-pressed="${selected?.id === id}" ${revealed ? 'disabled' : ''}><span><strong>${String.fromCharCode(65 + i)}.</strong> ${esc(c.text)}</span></button>`; }).join('')}</div>${revealed ? `<div class="qcm-verdict" role="status" tabindex="-1"><strong>${selected.id === step.correctId ? 'Bonne réponse.' : 'À reprendre.'}</strong><p>${text(correct.explanation)}</p>${selected.id !== step.correctId ? `<p><strong>Ton choix :</strong> ${text(selected.explanation)}</p>` : ''}<details><summary>Comprendre les autres propositions</summary>${run.order[step.id].filter(id => id !== step.correctId && id !== selected.id).map(id => { const c = step.choices.find(c => c.id === id), letter = String.fromCharCode(65 + run.order[step.id].indexOf(id)); return `<p><strong>${letter}.</strong> ${text(c.explanation)}</p>`; }).join('')}</details></div>` : ''}</fieldset>`;
   }
   function supportDialogs(q, step, ref, source) {
     const head = title => `<div class="qcm-dialog-head"><h2>${title}</h2><button class="icon-button" data-action="close-dialog" aria-label="Fermer">×</button></div>`;
@@ -468,7 +487,7 @@
         if (file.size > 25 * 1024 * 1024) throw new Error('Ce fichier est trop volumineux.');
         const raw = JSON.parse(await file.text());
         if (raw.scope !== SCOPE) throw new Error('Choisis une sauvegarde de cette collection de QCM.');
-        repo.import(raw); if (levelsEnabled) restoreLevelChoice(); changed(); render(); toast('Sauvegarde QCM réunie avec tes données.');
+        repo.import(raw); changed(); route(); toast('Sauvegarde QCM réunie avec tes données.');
       } catch (error) { toast(error.message); }
     });
   }
@@ -480,14 +499,16 @@
       hash = hash.slice('sans-choix'.length).replace(/^\//, '');
     }
     if (levelsEnabled) restoreLevelChoice();
+    restoreAncientChoice();
     activeCourse = null; activeMix = null; active = null; scIndex = 0; emptyPathMessage = '';
     const course = GROUPED_COURSES && /^cours-([0-9]+(?:-[0-9]+)?)$/.exec(hash);
     if (GROUPED_COURSES && hash === 'tout-melanger') openMix();
     else if (course) openCourse(IS_ORAL ? String(Number(course[1])) : course[1]);
     else active = byId.get(hash) || null;
-    if (active && (levelsEnabled || withoutChoices) && !activeCourse && !activeMix) {
+    if (active && (levelsEnabled || withoutChoices || ancientOnly) && !activeCourse && !activeMix) {
       const target = active, entries = withoutChoices ? courseQueue(courseKey(target)).filter(item => item.q.id === target.id) : exerciseEntries(target), run = visibleRun(target);
       if (entries.length) { activeCourse = courseKey(target); selectCourseEntry(entries.find(item => item.index === run.index) || entries[0]); }
+      else if (ancientOnly) showEmptyPath(emptySelection());
       else openCourse(courseKey(target));
     }
     if (active && !withoutChoices) openRun(active);
@@ -509,6 +530,9 @@
       const destination = button.dataset.action === 'mode-sc' ? 'sans-choix' : '';
       if (location.hash.slice(1) === destination) route(); else location.hash = destination;
       return;
+    }
+    if (button.dataset.action === 'ancient-filter' && GROUPED_COURSES) {
+      ancientOnly = !ancientOnly; writeNavigation(selectedAncientKey(), ancientOnly); route(); return;
     }
     if (button.dataset.levelFilter && levelsEnabled) {
       const next = button.dataset.levelFilter;

@@ -97,7 +97,7 @@
     },
     {
       "id": "DEV-A-F12",
-      "title": "Approche comportementaliste et conditionnement opérant",
+      "title": "Béhaviorisme et conditionnement opérant",
       "course": "UF1_01-02"
     },
     {
@@ -2095,7 +2095,7 @@
       "prompt": "",
       "hints": [
         "L'approche comportementaliste s'appuie sur ce qui s'observe ; le conditionnement opérant relie un comportement à ses conséquences.",
-        "Pour décider : selon l'Office québécois de la langue française, le behaviourisme est une théorie qui fonde l'étude scientifique du fonctionnement psychologique sur les seules données observables du comportement. Le conditionnement opérant, aussi appelé instrumental, est un apprentissage qui explique les comportements volontaires : les conséquences d'un comportement (récompense, punition) modifient la probabilité de sa répétition ; les renforcements l'augmentent, les punitions la diminuent, par ajout ou retrait d'un élément. L'analyse fonctionnelle examine les antécédents (ce qui précède), le comportement observable et les conséquences (ce qui suit)."
+        "Pour décider : le béhaviorisme, aussi appelé approche comportementaliste ou behaviourisme, est une approche qui étudie le seul comportement observable et définit l'apprentissage comme une modification durable de ce comportement. Un apprentissage complexe peut se décomposer en apprentissages élémentaires ; l'enseignement repose sur la stimulation (entraînement, renforcement, motivation, répétition, drill) et vise un apprentissage sans erreur, adapté à chaque élève. La définition de l'Office québécois de la langue française insiste sur le fondement de l'étude scientifique du fonctionnement psychologique : les seules données observables du comportement. Le conditionnement opérant, aussi appelé instrumental, est un apprentissage qui explique les comportements volontaires : les conséquences d'un comportement (récompense, punition) modifient la probabilité de sa répétition ; les renforcements l'augmentent, les punitions la diminuent, par ajout ou retrait d'un élément. L'analyse fonctionnelle examine les antécédents (ce qui précède), le comportement observable et les conséquences (ce qui suit). La maturation est le processus par lequel un organisme ou une fonction atteint la maturité ; ce processus implique toujours, sinon exclusivement, une évolution interne correspondant à un programme de développement caractéristique de l'espèce. Le QI standard est un score qui situe des performances à des tests par rapport à une population de référence. L'approche écosystémique comprend le développement par les relations entre l'enfant et ses contextes : microsystèmes proches, mésosystème de leurs relations, exosystème, macrosystème culturel et chronosystème temporel."
       ],
       "sources": [
         {
@@ -2289,9 +2289,46 @@
           "level": "essentiel",
           "sansChoix": true,
           "notionId": "N21"
+        },
+        {
+          "id": "Q7",
+          "prompt": "Selon le béhaviorisme, apprendre c’est :",
+          "requiresContext": false,
+          "correctId": "c",
+          "choices": [
+            {
+              "id": "a",
+              "text": "Atteindre la maturité selon un programme de développement.",
+              "explanation": "C'est la maturation : une évolution interne correspondant à un programme de développement. L'apprentissage, lui, résulte d'une interaction avec le milieu ; le béhaviorisme le définit par une modification durable du comportement."
+            },
+            {
+              "id": "b",
+              "text": "Situer ses performances dans une population de référence.",
+              "explanation": "C'est le principe du QI standard : situer des performances à des tests par rapport à une population de référence. Cette mesure ne définit pas le changement de comportement qui constitue l'apprentissage dans le béhaviorisme."
+            },
+            {
+              "id": "c",
+              "text": "Modifier durablement un comportement.",
+              "explanation": "Le béhaviorisme étudie le comportement observable et définit l'apprentissage comme une modification durable de ce comportement. Il s'intéresse ainsi à ce qui change dans la conduite, notamment sous l'effet de ses conséquences."
+            },
+            {
+              "id": "d",
+              "text": "Expliquer ses conduites par ses différents milieux de vie.",
+              "explanation": "C'est une lecture écosystémique : elle comprend le développement par les relations entre l'enfant et ses contextes. Elle décrit un cadre d'explication du développement, tandis que la question demande la définition de l'apprentissage dans le béhaviorisme."
+            }
+          ],
+          "level": "essentiel",
+          "sansChoix": true,
+          "notionId": "N20",
+          "ancienExamen": {
+            "examen": "BP13ENS — Examen d’entraînement ENS",
+            "annee": null,
+            "question": "7",
+            "page": 1
+          }
         }
       ],
-      "qcmRevision": "de0e1f54039ece47"
+      "qcmRevision": "3af8df583d0e2e90"
     },
     {
       "id": "DEV-A-F13",
@@ -4992,9 +5029,46 @@
           "level": "approfondissement",
           "sansChoix": true,
           "notionId": "N45"
+        },
+        {
+          "id": "Q3",
+          "prompt": "La zone proximale de développement (ZPD) correspond :",
+          "requiresContext": false,
+          "correctId": "c",
+          "choices": [
+            {
+              "id": "a",
+              "text": "À ce que l’enfant sait faire seul.",
+              "explanation": "C'est le niveau actuel sans aide, l'une des deux bornes de la comparaison. La zone proximale de développement met ce niveau en relation avec ce que l'enfant atteint avec une aide appropriée : la réduire au niveau actuel fait disparaître cet écart."
+            },
+            {
+              "id": "b",
+              "text": "À l’appui apporté à l’apprenant dans une interaction.",
+              "explanation": "C'est l'échafaudage social : l'appui apporté dans l'interaction. Chez Vygotski, l'aide permet à l'apprenant d'atteindre ce qu'il ne réussit pas encore seul ; la zone proximale désigne l'écart entre les deux niveaux, plutôt que l'appui lui-même."
+            },
+            {
+              "id": "c",
+              "text": "À l’écart entre faire seul et faire avec aide.",
+              "explanation": "Dans les repères de Vygotski, la zone proximale de développement relie ce que l'apprenant peut faire actuellement sans aide et ce qu'il peut atteindre avec une aide appropriée. Elle correspond à l'écart entre ces deux niveaux ; les interactions et les outils culturels soutiennent ce développement."
+            },
+            {
+              "id": "d",
+              "text": "Au niveau scolaire.",
+              "explanation": "Ce choix confond un niveau dans le parcours scolaire avec la comparaison des réussites sans aide et avec aide. Le schéma de Vygotski situe la zone par cette différence, sans l'identifier à une classe ou à un degré scolaire."
+            }
+          ],
+          "level": "approfondissement",
+          "sansChoix": true,
+          "notionId": "N45",
+          "ancienExamen": {
+            "examen": "BP13ENS — Examen d’entraînement ENS",
+            "annee": null,
+            "question": "12",
+            "page": 2
+          }
         }
       ],
-      "qcmRevision": "1986900d31930578"
+      "qcmRevision": "daf9c29e9f603b61"
     },
     {
       "id": "DEV-A-F27",
@@ -5956,12 +6030,16 @@
       "prompt": "",
       "hints": [
         "Spitz compare deux institutions où les soins matériels sont présentés comme identiques. Demande-toi ce qui les différencie, et ce que Spitz met en cause dans la dégradation du développement.",
-        "Hospitalisme : ensemble de troubles physiques et psychiques dus à une carence affective par privation d'échanges (retards du développement, émotions appauvries, apathie, voire mort). Apathie : perte de motivation, de désirs et d'émotions, avec indifférence émotionnelle. L'hospitalisme survient chez de jeunes enfants placés en institution dans les dix-huit premiers mois."
+        "Hospitalisme : ensemble de troubles physiques et psychiques dus à une carence affective par privation d'échanges (retards du développement, émotions appauvries, apathie, voire mort). Apathie : perte de motivation, de désirs et d'émotions, avec indifférence émotionnelle. L'hospitalisme survient chez de jeunes enfants placés en institution dans les dix-huit premiers mois. Harlow compare deux substituts de mère chez le singe : la sécurité du contact prime l’apport alimentaire. Profil sécurisé (Ainsworth) : exploration libre, recherche de réconfort, reprise de l’exploration. Modèle opérationnel interne (MOI) : Modèle mental cognitif et affectif construit progressivement à partir d’expériences relationnelles répétées, qui représente soi, autrui et les attentes d’interaction et guide l’anticipation, l’interprétation et le comportement."
       ],
       "sources": [
         {
           "file": "SYNTHESE_BP1-18DEV_S1_COURS_UF1_05.docx",
           "location": "1 Les relations affectives soutiennent le développement ; Spitz"
+        },
+        {
+          "file": "SYNTHESE_BP1-18DEV_S1_COURS_UF1_05.docx",
+          "location": "Repères complémentaires des nouvelles étapes : Harlow ; profils ; MOI"
         }
       ],
       "steps": [
@@ -6057,9 +6135,54 @@
           "level": "approfondissement",
           "sansChoix": true,
           "notionId": "N01"
+        },
+        {
+          "id": "Q4",
+          "prompt": "Selon Spitz, la privation d’échanges émotionnels peut avoir des effets dévastateurs sur le développement de l’enfant. Quel constat étaye cet énoncé ?",
+          "requiresContext": false,
+          "correctId": "a",
+          "choices": [
+            {
+              "id": "a",
+              "text": "Dans l’orphelinat, les enfants privés d’échanges subissent un déclin physique et psychique.",
+              "explanation": "L’affirmation est vraie. Spitz compare une nurserie et un orphelinat aux soins matériels présentés comme identiques : la privation d’échanges émotionnels à l’orphelinat s’accompagne d’une dégradation physique et psychologique, jusqu’à l’hospitalisme et la mort."
+            },
+            {
+              "id": "b",
+              "text": "Le bébé singe rejoint le substitut réconfortant lorsqu’un élément stressant apparaît.",
+              "explanation": "C’est l’expérience de Harlow : la recherche de sécurité prime l’apport alimentaire. Elle souligne aussi l’importance des liens, mais n’est pas le constat de Spitz sur la privation d’échanges chez les enfants en institution."
+            },
+            {
+              "id": "c",
+              "text": "L’enfant retrouve sa figure d’attachement, se réconforte puis reprend son exploration.",
+              "explanation": "C’est une conduite du profil sécurisé observée dans la situation étrange d’Ainsworth. Elle décrit la sécurité du lien aux retrouvailles, pas la dégradation liée à la privation d’échanges mise en évidence par Spitz."
+            },
+            {
+              "id": "d",
+              "text": "Des attentes relationnelles conduisent deux enfants à interpréter différemment la même phrase.",
+              "explanation": "C’est l’effet des modèles opérationnels internes : construits par les expériences répétées, ils orientent l’interprétation des interactions. Ce n’est pas le constat institutionnel de Spitz."
+            }
+          ],
+          "level": "essentiel",
+          "sansChoix": true,
+          "notionId": "N01",
+          "ancienExamen": {
+            "examen": "Examen blanc BP13DEV",
+            "annee": null,
+            "question": "44",
+            "page": 7,
+            "autresReferences": [
+              {
+                "examen": "BP13DEV — Questions et réponses proposées (QRP)",
+                "annee": null,
+                "question": "44",
+                "page": 14
+              }
+            ]
+          }
         }
       ],
-      "qcmRevision": "c63cb65ca3272331"
+      "qcmRevision": "e821346568cec9f9"
     },
     {
       "id": "DEV-B-F02",
@@ -6359,9 +6482,54 @@
           "level": "essentiel",
           "sansChoix": true,
           "notionId": "N04"
+        },
+        {
+          "id": "Q6",
+          "prompt": "L’attachement correspond… :",
+          "requiresContext": false,
+          "correctId": "d",
+          "choices": [
+            {
+              "id": "a",
+              "text": "À la figure qui sert de base de sécurité pour explorer son environnement.",
+              "explanation": "La figure principale d’attachement peut devenir une base de sécurité grâce à des réponses sensibles et cohérentes. Elle est la personne avec qui le lien se construit ; elle ne définit pas le lien lui-même."
+            },
+            {
+              "id": "b",
+              "text": "Aux comportements de l’enfant pour chercher la proximité de sa figure principale.",
+              "explanation": "Ce sont les conduites d’attachement : comportements observables qui recherchent ou maintiennent la proximité, surtout sous stress ou inconfort. Le lien est relativement stable ; ses manifestations varient."
+            },
+            {
+              "id": "c",
+              "text": "À la façon dont l’enfant se lie à sa figure principale, repérée par ses comportements.",
+              "explanation": "C’est le profil d’attachement : façon dont l’enfant se lie à sa figure principale, repérée par ses comportements. Les profils sécurisé, évitant, ambivalent et désorganisé décrivent des différences de relation."
+            },
+            {
+              "id": "d",
+              "text": "Au lien émotionnel fort, spécifique et durable avec une figure principale d’attachement.",
+              "explanation": "Dans la théorie de Bowlby, l’attachement est un lien émotionnel fort, spécifique et durable avec une figure principale d’attachement ; il reste relativement stable. La recherche de proximité vise protection, réconfort et sécurité ; des réponses sensibles et cohérentes de cette figure favorisent la sécurité intérieure, base de l’exploration. Les conduites d’attachement en sont les manifestations observables, variables selon le contexte."
+            }
+          ],
+          "level": "essentiel",
+          "sansChoix": true,
+          "notionId": "N04",
+          "ancienExamen": {
+            "examen": "Examen blanc BP13DEV",
+            "annee": null,
+            "question": "41",
+            "page": 7,
+            "autresReferences": [
+              {
+                "examen": "BP13DEV — Questions et réponses proposées (QRP)",
+                "annee": null,
+                "question": "41",
+                "page": 13
+              }
+            ]
+          }
         }
       ],
-      "qcmRevision": "fc845b03da78961f"
+      "qcmRevision": "696dd6391b333267"
     },
     {
       "id": "DEV-B-F04",
@@ -6510,9 +6678,54 @@
           "level": "essentiel",
           "sansChoix": true,
           "notionId": "N07"
+        },
+        {
+          "id": "Q5",
+          "prompt": "Dans la Situation étrange, l’évaluation de la relation d’attachement se fait en observant la fréquence et la durée de quels comportements, au moment le plus informatif ?",
+          "requiresContext": false,
+          "correctId": "b",
+          "choices": [
+            {
+              "id": "a",
+              "text": "Des comportements de l’enfant envers l’adulte inconnu lors des séparations.",
+              "explanation": "La personne inconnue et la séparation contribuent à activer le besoin de sécurité. Dans le dispositif d’Ainsworth, le moment le plus informatif sur la qualité du lien est la réunion avec la figure principale."
+            },
+            {
+              "id": "b",
+              "text": "Des comportements de l’enfant envers sa figure d’attachement lors des réunions.",
+              "explanation": "Dans la situation étrange d’Ainsworth, l’alternance exploration/séparation/retrouvailles active les conduites d’attachement. Les retrouvailles sont les plus informatives : on observe les comportements de l’enfant, notamment la fréquence et la durée des interactions avec sa figure."
+            },
+            {
+              "id": "c",
+              "text": "Des comportements de l’enfant pendant les épisodes de séparation.",
+              "explanation": "La séparation active les conduites d’attachement et fait partie du dispositif. Pour évaluer la qualité du lien, les retrouvailles avec la figure principale apportent l’information la plus utile ; ce choix se limite à la séparation."
+            },
+            {
+              "id": "d",
+              "text": "Des interactions entre l’enfant et l’adulte inconnu lors des réunions.",
+              "explanation": "La personne inconnue contribue au caractère inhabituel de la situation. Le lien évalué par Ainsworth est celui avec la figure principale : les retrouvailles avec elle sont les plus informatives."
+            }
+          ],
+          "level": "essentiel",
+          "sansChoix": true,
+          "notionId": "N07",
+          "ancienExamen": {
+            "examen": "Examen blanc BP13DEV",
+            "annee": null,
+            "question": "43",
+            "page": 7,
+            "autresReferences": [
+              {
+                "examen": "BP13DEV — Questions et réponses proposées (QRP)",
+                "annee": null,
+                "question": "43",
+                "page": 13
+              }
+            ]
+          }
         }
       ],
-      "qcmRevision": "8550f020a432db8a"
+      "qcmRevision": "67ae4d33f2698608"
     },
     {
       "id": "DEV-B-F05",
@@ -6529,7 +6742,7 @@
       "prompt": "",
       "hints": [
         "Pour chaque enfant, compare quatre indices : l'exploration, la recherche de réconfort aux retrouvailles, la détresse visible et la stabilité des réponses.",
-        "Profil d'attachement : façon dont l'enfant se lie à sa figure principale d'attachement, repérée à partir de ses comportements. Sécurisé (B) : explore librement, recherche le réconfort, reprend l'exploration. Évitant (A) : explore seul, évite le contact, montre peu de détresse visible. Ambivalent (C) : explore peu, recherche le contact puis résiste, manifeste une forte détresse. Désorganisé (Main et Solomon, 1990) : comportements contradictoires, pas de réponse stable."
+        "Profil d'attachement : façon dont l'enfant se lie à sa figure principale d'attachement, repérée à partir de ses comportements. Sécurisé (B) : explore librement, recherche le réconfort, reprend l'exploration. Évitant (A) : explore seul, évite le contact, montre peu de détresse visible. Ambivalent (C) : explore peu, recherche le contact puis résiste, manifeste une forte détresse. Désorganisé (Main et Solomon, 1990) : comportements contradictoires, pas de réponse stable. Attachement (Bowlby) : Lien émotionnel fort, spécifique et durable avec une figure principale d’attachement ; il reste relativement stable. La recherche de proximité vise protection, réconfort et sécurité ; des réponses sensibles et cohérentes de cette figure favorisent la sécurité intérieure, base de l’exploration. Conduite d’attachement : Comportement observable visant à rechercher ou maintenir la proximité avec la figure principale d’attachement, surtout sous stress ou inconfort, et variable selon l’enfant, les interactions et le contexte. Modèle opérationnel interne (MOI) : Modèle mental cognitif et affectif construit progressivement à partir d’expériences relationnelles répétées, qui représente soi, autrui et les attentes d’interaction et guide l’anticipation, l’interprétation et le comportement."
       ],
       "sources": [
         {
@@ -6847,9 +7060,54 @@
           "level": "approfondissement",
           "sansChoix": true,
           "notionId": "N09"
+        },
+        {
+          "id": "Q11",
+          "prompt": "Le concept de profil d’attachement définit tous les comportements visant à chercher ou maintenir la proximité à une figure principale d’attachement. À quelle notion correspond cette définition ?",
+          "requiresContext": false,
+          "correctId": "a",
+          "choices": [
+            {
+              "id": "a",
+              "text": "À la conduite d’attachement.",
+              "explanation": "L’affirmation est fausse : dans la théorie de Bowlby, une conduite d’attachement est un comportement observable qui recherche ou maintient la proximité avec la figure principale, surtout sous stress ou inconfort. Le profil désigne la façon dont l’enfant se lie à cette figure."
+            },
+            {
+              "id": "b",
+              "text": "Au lien d’attachement.",
+              "explanation": "L’attachement est le lien émotionnel fort, spécifique et durable avec la figure principale. Les comportements observables qui cherchent la proximité sont les conduites par lesquelles ce lien se manifeste."
+            },
+            {
+              "id": "c",
+              "text": "Au profil d’attachement.",
+              "explanation": "Le profil est la façon dont l’enfant se lie à sa figure principale, repérée par ses comportements : sécurisé, évitant, ambivalent ou désorganisé. Il ne définit pas l’ensemble des comportements de recherche de proximité."
+            },
+            {
+              "id": "d",
+              "text": "Au modèle opérationnel interne.",
+              "explanation": "Le modèle opérationnel interne est un modèle mental cognitif et affectif, construit par des expériences relationnelles répétées, qui sert à anticiper et interpréter les interactions. Il ne désigne pas les comportements eux-mêmes."
+            }
+          ],
+          "level": "essentiel",
+          "sansChoix": true,
+          "notionId": "N08",
+          "ancienExamen": {
+            "examen": "Examen blanc BP13DEV",
+            "annee": null,
+            "question": "42",
+            "page": 7,
+            "autresReferences": [
+              {
+                "examen": "BP13DEV — Questions et réponses proposées (QRP)",
+                "annee": null,
+                "question": "42",
+                "page": 13
+              }
+            ]
+          }
         }
       ],
-      "qcmRevision": "4d1916865e4af45e"
+      "qcmRevision": "78c38578ab874bdd"
     },
     {
       "id": "DEV-B-F06",
@@ -6866,12 +7124,16 @@
       "prompt": "",
       "hints": [
         "Un modèle opérationnel interne (MOI) n'est ni un comportement ni un lien : c'est ce que l'enfant s'attend à trouver chez les autres, à force d'expériences. Demande-toi ce qui change entre deux enfants dans la même situation.",
-        "Modèle opérationnel interne (MOI) : modèle mental cognitif et affectif, construit progressivement à partir d'expériences relationnelles répétées, qui représente soi, autrui (d'abord les figures d'attachement) et les attentes d'une relation. Il sert à anticiper et à interpréter les interactions et guide le comportement."
+        "Modèle opérationnel interne (MOI) : modèle mental cognitif et affectif, construit progressivement à partir d'expériences relationnelles répétées, qui représente soi, autrui (d'abord les figures d'attachement) et les attentes d'une relation. Il sert à anticiper et à interpréter les interactions et guide le comportement. Le profil d’attachement est la façon dont l’enfant se lie à sa figure principale, repérée par ses comportements : sécurisé, évitant, ambivalent ou désorganisé. Émotion primaire : Une des premières émotions, universelles et largement fondées biologiquement : joie, surprise, peur, colère, dégoût ou tristesse. Elles ont des fonctions adaptatives, jouent un rôle dans le lien avec autrui et sont liées au développement cognitif. Les émotions secondaires sont liées à la conscience de soi et comprennent les émotions auto-conscientes et auto-évaluatives."
       ],
       "sources": [
         {
           "file": "SYNTHESE_BP1-18DEV_S1_COURS_UF1_05.docx",
           "location": "2 La sécurité se construit dans les relations et les attentes ; Les expériences deviennent des attentes : les MOIs"
+        },
+        {
+          "file": "SYNTHESE_BP1-18DEV_S1_COURS_UF1_05.docx",
+          "location": "Repères complémentaires des nouvelles étapes : émotions primaires et secondaires"
         }
       ],
       "steps": [
@@ -6998,9 +7260,54 @@
           "level": "essentiel",
           "sansChoix": true,
           "notionId": "N10"
+        },
+        {
+          "id": "Q5",
+          "prompt": "Les modèles opérationnels internes (ou MOIs) peuvent être définis comme…",
+          "requiresContext": false,
+          "correctId": "b",
+          "choices": [
+            {
+              "id": "a",
+              "text": "Des premières émotions universelles et largement biologiques, dont les fonctions adaptatives participent au lien avec autrui et au développement cognitif.",
+              "explanation": "Les émotions primaires sont universelles et largement fondées biologiquement. Elles ne sont pas les modèles mentaux construits à partir d’expériences relationnelles répétées."
+            },
+            {
+              "id": "b",
+              "text": "Des modèles mentaux cognitifs et affectifs, construits par des expériences relationnelles répétées, qui servent à anticiper et interpréter les interactions.",
+              "explanation": "Un modèle opérationnel interne est un modèle mental cognitif et affectif construit progressivement à partir d’expériences relationnelles répétées, qui représente soi, autrui et les attentes d’interaction et guide l’anticipation, l’interprétation et le comportement. Il organise des prédictions et des attentes, plutôt que des vérités sur ce que les autres feront."
+            },
+            {
+              "id": "c",
+              "text": "Des façons dont l’enfant se lie à sa figure principale, repérées par ses comportements d’exploration, de recherche de contact et de réconfort.",
+              "explanation": "Le profil décrit la façon dont l’enfant se lie à sa figure principale d’attachement, repérée par ses comportements. Le MOI est le modèle mental de soi, d’autrui et des attentes relationnelles qui guide l’anticipation."
+            },
+            {
+              "id": "d",
+              "text": "Des émotions liées à la conscience de soi, comme l’empathie, l’embarras ou la jalousie, puis au jugement de ses actions selon des normes.",
+              "explanation": "Les émotions secondaires se développent avec la conscience de soi et comprennent les émotions auto-conscientes et auto-évaluatives. Ce ne sont pas des modèles mentaux relationnels."
+            }
+          ],
+          "level": "essentiel",
+          "sansChoix": true,
+          "notionId": "N10",
+          "ancienExamen": {
+            "examen": "Examen blanc BP13DEV",
+            "annee": null,
+            "question": "40",
+            "page": 7,
+            "autresReferences": [
+              {
+                "examen": "BP13DEV — Questions et réponses proposées (QRP)",
+                "annee": null,
+                "question": "40",
+                "page": 13
+              }
+            ]
+          }
         }
       ],
-      "qcmRevision": "61c989a12ed52f61"
+      "qcmRevision": "c7620dabfcbc8b32"
     },
     {
       "id": "DEV-B-F07",
@@ -7118,9 +7425,54 @@
           "level": "essentiel",
           "sansChoix": true,
           "notionId": "N11"
+        },
+        {
+          "id": "Q4",
+          "prompt": "Il existe une interdépendance entre le développement cognitif et le développement émotionnel. Quel exemple illustre les deux sens de cette relation ?",
+          "requiresContext": false,
+          "correctId": "d",
+          "choices": [
+            {
+              "id": "a",
+              "text": "Un enfant reçoit du réconfort d’un adulte ; sa sécurité intérieure lui permet de reprendre son exploration et de s’engager dans l’activité.",
+              "explanation": "Cela applique le rôle d’une relation sécurisante : elle réduit le stress et favorise l’exploration puis l’engagement. Cet enchaînement n’explicite pas comment une acquisition cognitive transforme les émotions possibles."
+            },
+            {
+              "id": "b",
+              "text": "Un enfant pleure ; avec la conscience de soi, il devient capable d’identifier subjectivement l’émotion dont il éprouve déjà les manifestations physiques.",
+              "explanation": "Cela distingue l’état émotionnel, réaction biologique et comportementale, de l’expérience émotionnelle, prise de conscience subjective qui suppose la conscience de soi. L’exemple suit ce passage à la conscience, plutôt que les deux sens du lien entre développements."
+            },
+            {
+              "id": "c",
+              "text": "Un enfant se représente comme distinct d’autrui ; cette acquisition rend possibles des émotions auto-conscientes et l’évaluation de ses propres comportements.",
+              "explanation": "Cela applique le rôle de la conscience de soi : elle permet la différenciation soi/autrui, des émotions auto-conscientes et l’évaluation de ses comportements. L’exemple montre l’effet de cette acquisition cognitive, sans illustrer le retour des informations émotionnelles vers la compréhension."
+            },
+            {
+              "id": "d",
+              "text": "Un bébé distingue les visages, ce qui rend possible la peur de l’étranger ; ses informations émotionnelles l’aident aussi à comprendre les événements.",
+              "explanation": "Les deux sens de l’interdépendance sont illustrés. Distinguer un visage familier d’un inconnu est une acquisition cognitive qui transforme les émotions possibles. Inversement, les informations émotionnelles aident à comprendre les événements et à inférer les connaissances ou attentes d’autrui."
+            }
+          ],
+          "level": "essentiel",
+          "sansChoix": true,
+          "notionId": "N11",
+          "ancienExamen": {
+            "examen": "Examen blanc BP13DEV",
+            "annee": null,
+            "question": "39",
+            "page": 6,
+            "autresReferences": [
+              {
+                "examen": "BP13DEV — Questions et réponses proposées (QRP)",
+                "annee": null,
+                "question": "39",
+                "page": 12
+              }
+            ]
+          }
         }
       ],
-      "qcmRevision": "65cc25a267dae62a"
+      "qcmRevision": "ea653e050d599a02"
     },
     {
       "id": "DEV-B-F08",
@@ -7137,12 +7489,16 @@
       "prompt": "",
       "hints": [
         "Pense à ce qui rend une émotion primaire : elle est présente très tôt, largement biologique et universelle, avant que l'enfant se représente comme une personne distincte. Pour chaque situation, cherche la fonction de l'émotion : se protéger d'un danger, réagir à un obstacle, signaler l'inattendu.",
-        "Émotions primaires : les premières émotions, largement fondées biologiquement et universelles (joie, surprise, peur, colère, dégoût, tristesse), aux fonctions adaptatives, qui jouent un rôle important dans l'établissement du lien avec autrui et sont liées au développement cognitif. La peur sert à se protéger d'un danger, la colère à faire face à un obstacle, la surprise à détecter l'inattendu."
+        "Émotions primaires : les premières émotions, largement fondées biologiquement et universelles (joie, surprise, peur, colère, dégoût, tristesse), aux fonctions adaptatives, qui jouent un rôle important dans l'établissement du lien avec autrui et sont liées au développement cognitif. La peur sert à se protéger d'un danger, la colère à faire face à un obstacle, la surprise à détecter l'inattendu. Émotion auto-consciente : émotion secondaire liée à la conscience de soi : empathie, embarras ou jalousie. Émotion auto-évaluative (Lewis) : Émotion secondaire issue de l’évaluation de ses actions selon des normes, règles et objectifs intériorisés et d’une attribution causale interne. Une attribution globale conduit à la honte pour l’échec et à l’orgueil pour la réussite ; une attribution spécifique conduit à la culpabilité pour l’échec et à la fierté pour la réussite. Expérience émotionnelle : prise de conscience subjective de l’émotion ressentie ; elle se distingue de la réaction biologique et comportementale observable."
       ],
       "sources": [
         {
           "file": "SYNTHESE_BP1-18DEV_S1_COURS_UF1_05.docx",
           "location": "3 Le développement cognitif transforme les émotions ; Des réactions précoces à des émotions différenciées"
+        },
+        {
+          "file": "SYNTHESE_BP1-18DEV_S1_COURS_UF1_05.docx",
+          "location": "Repères complémentaires des nouvelles étapes : conscience de soi ; expérience émotionnelle ; émotions auto-évaluatives"
         }
       ],
       "steps": [
@@ -7300,9 +7656,54 @@
           "level": "essentiel",
           "sansChoix": true,
           "notionId": "N12"
+        },
+        {
+          "id": "Q6",
+          "prompt": "Au début du développement, les émotions de base également appelées émotions primaires (peur, tristesse, colère…) sont acquises par imitation de l’entourage direct. Quel énoncé permet d’évaluer cette affirmation ?",
+          "requiresContext": false,
+          "correctId": "b",
+          "choices": [
+            {
+              "id": "a",
+              "text": "Ces émotions sont secondaires et liées à la conscience de soi.",
+              "explanation": "Les émotions auto-conscientes sont secondaires et liées à la conscience de soi : empathie, embarras et jalousie. Ce n’est pas la famille des émotions primaires."
+            },
+            {
+              "id": "b",
+              "text": "Ces émotions sont universelles et largement fondées biologiquement.",
+              "explanation": "Les émotions primaires sont les premières émotions, universelles et largement fondées biologiquement, avec des fonctions adaptatives. L’affirmation ancienne est fausse. L’imitation n’est pas traitée par le cours : aucun mécanisme supplémentaire ne lui est attribué."
+            },
+            {
+              "id": "c",
+              "text": "Ces émotions résultent du jugement de ses actions selon des normes.",
+              "explanation": "Cela décrit les émotions auto-évaluatives : jugement de ses actions selon des normes, règles et objectifs intériorisés et attribution causale interne. Ce n’est pas la nature des émotions primaires."
+            },
+            {
+              "id": "d",
+              "text": "Ces émotions consistent à prendre conscience de ce que l’on ressent.",
+              "explanation": "Cela décrit l’expérience émotionnelle : prise de conscience subjective de l’émotion ressentie. Les émotions primaires existent avant que l’enfant puisse identifier consciemment ce qu’il ressent."
+            }
+          ],
+          "level": "essentiel",
+          "sansChoix": true,
+          "notionId": "N12",
+          "ancienExamen": {
+            "examen": "Examen blanc BP13DEV",
+            "annee": null,
+            "question": "33",
+            "page": 5,
+            "autresReferences": [
+              {
+                "examen": "BP13DEV — Questions et réponses proposées (QRP)",
+                "annee": null,
+                "question": "33",
+                "page": 11
+              }
+            ]
+          }
         }
       ],
-      "qcmRevision": "704a1ff401c84f29"
+      "qcmRevision": "e2b9943f55020e6e"
     },
     {
       "id": "DEV-B-F09",
@@ -7602,9 +8003,54 @@
           "level": "approfondissement",
           "sansChoix": true,
           "notionId": "N15b"
+        },
+        {
+          "id": "Q4",
+          "prompt": "Chez l’enfant, la conscience de soi peut se définir comme… :",
+          "requiresContext": false,
+          "correctId": "c",
+          "choices": [
+            {
+              "id": "a",
+              "text": "La compréhension qu’il peut agir sur son environnement.",
+              "explanation": "Pouvoir agir sur l’environnement ne définit pas la conscience de soi selon Lewis : il faut se représenter comme une personne distincte et unique, et exprimer cette identité."
+            },
+            {
+              "id": "b",
+              "text": "Sa prise de conscience de l’existence d’autrui.",
+              "explanation": "Reconnaître l’existence d’autrui ne définit pas la conscience de soi. Lewis vise la représentation de sa propre identité comme distincte et unique."
+            },
+            {
+              "id": "c",
+              "text": "Sa capacité à se représenter comme distinct et unique, et à exprimer cette identité.",
+              "explanation": "Pour Lewis, la conscience de soi est la capacité à se représenter mentalement comme une personne distincte et unique, et à exprimer cette identité. Elle rend possibles des émotions secondaires et l’évaluation de ses comportements."
+            },
+            {
+              "id": "d",
+              "text": "La compréhension qu’il a des caractéristiques identiques aux autres personnes.",
+              "explanation": "Repérer des caractéristiques communes ne définit pas sa propre identité. Le critère de Lewis est une représentation de soi comme personne distincte et unique, que l’enfant peut exprimer."
+            }
+          ],
+          "level": "essentiel",
+          "sansChoix": true,
+          "notionId": "N15",
+          "ancienExamen": {
+            "examen": "Examen blanc BP13DEV",
+            "annee": null,
+            "question": "36",
+            "page": 6,
+            "autresReferences": [
+              {
+                "examen": "BP13DEV — Questions et réponses proposées (QRP)",
+                "annee": null,
+                "question": "36",
+                "page": 11
+              }
+            ]
+          }
         }
       ],
-      "qcmRevision": "7f30acf7f80d13e2"
+      "qcmRevision": "18336c9a018ede35"
     },
     {
       "id": "DEV-B-F11",
@@ -7621,12 +8067,16 @@
       "prompt": "",
       "hints": [
         "Ces émotions secondaires demandent de se représenter soi et autrui, mais pas encore de juger ses actes selon des normes.",
-        "Émotion auto-consciente : émotion secondaire liée à la conscience de soi. Empathie : identification et compréhension de l'émotion d'autrui. Embarras : lié à l'exposition ; l'enfant comprend qu'il est l'objet de l'attention d'autrui. Jalousie : vouloir pour soi ce que l'autre détient ou reçoit."
+        "Émotion auto-consciente : émotion secondaire liée à la conscience de soi. Empathie : identification et compréhension de l'émotion d'autrui. Embarras : lié à l'exposition ; l'enfant comprend qu'il est l'objet de l'attention d'autrui. Jalousie : vouloir pour soi ce que l'autre détient ou reçoit. Lewis distingue ces émotions des émotions auto-évaluatives : Émotion secondaire issue de l’évaluation de ses actions selon des normes, règles et objectifs intériorisés et d’une attribution causale interne. Une attribution globale conduit à la honte pour l’échec et à l’orgueil pour la réussite ; une attribution spécifique conduit à la culpabilité pour l’échec et à la fierté pour la réussite. Émotion primaire : Une des premières émotions, universelles et largement fondées biologiquement : joie, surprise, peur, colère, dégoût ou tristesse. Elles ont des fonctions adaptatives, jouent un rôle dans le lien avec autrui et sont liées au développement cognitif. La colère aide à faire face à un obstacle ; la culpabilité porte sur l’action jugée mauvaise, la fierté sur l’action réussie."
       ],
       "sources": [
         {
           "file": "SYNTHESE_BP1-18DEV_S1_COURS_UF1_05.docx",
           "location": "3 Le développement cognitif transforme les émotions ; La conscience de soi et les émotions secondaires"
+        },
+        {
+          "file": "SYNTHESE_BP1-18DEV_S1_COURS_UF1_05.docx",
+          "location": "Repères complémentaires des nouvelles étapes : Lewis et émotions auto-évaluatives ; émotions primaires"
         }
       ],
       "steps": [
@@ -7939,9 +8389,54 @@
           "level": "essentiel",
           "sansChoix": true,
           "notionId": "N16"
+        },
+        {
+          "id": "Q11",
+          "prompt": "Laquelle de ces émotions est une émotion dite auto-consciente par Lewis :",
+          "requiresContext": false,
+          "correctId": "a",
+          "choices": [
+            {
+              "id": "a",
+              "text": "La jalousie.",
+              "explanation": "Dans la distinction des émotions secondaires présentée avec Lewis, les émotions auto-conscientes sont liées à la conscience de soi : empathie, embarras et jalousie. La jalousie consiste à vouloir pour soi ce que l’autre détient ou reçoit."
+            },
+            {
+              "id": "b",
+              "text": "La colère.",
+              "explanation": "La colère est une émotion primaire, largement fondée biologiquement ; elle aide à faire face à un obstacle. Elle n’appartient pas à la famille auto-consciente."
+            },
+            {
+              "id": "c",
+              "text": "La culpabilité.",
+              "explanation": "La culpabilité est auto-évaluative : dans le modèle de Lewis, elle associe un échec selon les normes, règles et objectifs intériorisés à une attribution spécifique portant sur l’action (« j’ai mal agi »)."
+            },
+            {
+              "id": "d",
+              "text": "La fierté.",
+              "explanation": "La fierté est auto-évaluative : dans le modèle de Lewis, elle associe une réussite selon les normes, règles et objectifs intériorisés à une attribution spécifique portant sur l’action (« j’ai bien travaillé »)."
+            }
+          ],
+          "level": "essentiel",
+          "sansChoix": false,
+          "notionId": "N16",
+          "ancienExamen": {
+            "examen": "Examen blanc BP13DEV",
+            "annee": null,
+            "question": "37",
+            "page": 6,
+            "autresReferences": [
+              {
+                "examen": "BP13DEV — Questions et réponses proposées (QRP)",
+                "annee": null,
+                "question": "37",
+                "page": 12
+              }
+            ]
+          }
         }
       ],
-      "qcmRevision": "f41ccf174fa7bff0"
+      "qcmRevision": "7e26a170b200b468"
     },
     {
       "id": "DEV-B-F12",
@@ -7958,12 +8453,16 @@
       "prompt": "",
       "hints": [
         "Une émotion auto-évaluative ajoute un jugement sur ses propres actions. Cherche ce que l'enfant doit avoir pour juger : des repères, une capacité de jugement, une explication de la cause.",
-        "Émotion auto-évaluative : émotion secondaire issue de l'évaluation de ses actions selon des normes, règles et objectifs (NRO) intériorisés et d'une attribution causale interne ; elle apparaît après la deuxième année. NRO : repères que l'enfant a faits siens et auxquels il compare son comportement. Attribution causale interne : explication qui situe en soi la cause d'un événement ; globale lorsqu'elle vise l'ensemble de la personne (« je suis »), spécifique lorsqu'elle vise ce que la personne a fait (« j'ai fait »). L'enfant cherche d'abord l'origine de l'événement, puis évalue le résultat (échec ou réussite selon les NRO), puis explique celui-ci par sa personne ou son action."
+        "Émotion auto-évaluative : émotion secondaire issue de l'évaluation de ses actions selon des normes, règles et objectifs (NRO) intériorisés et d'une attribution causale interne ; elle apparaît après la deuxième année. NRO : repères que l'enfant a faits siens et auxquels il compare son comportement. Attribution causale interne : explication qui situe en soi la cause d'un événement ; globale lorsqu'elle vise l'ensemble de la personne (« je suis »), spécifique lorsqu'elle vise ce que la personne a fait (« j'ai fait »). L'enfant cherche d'abord l'origine de l'événement, puis évalue le résultat (échec ou réussite selon les NRO), puis explique celui-ci par sa personne ou son action. Lewis articule résultat et attribution : honte = échec avec attribution globale à la personne ; culpabilité = échec avec attribution spécifique à l’action ; orgueil = réussite avec attribution globale ; fierté = réussite avec attribution spécifique. Les émotions auto-conscientes, liées à la conscience de soi, comprennent l’empathie (identifier et comprendre l’émotion d’autrui), l’embarras (être l’objet de l’attention d’autrui) et la jalousie (vouloir pour soi ce que l’autre détient ou reçoit). La peur est une émotion primaire, universelle et largement fondée biologiquement, qui aide à se protéger d’un danger."
       ],
       "sources": [
         {
           "file": "SYNTHESE_BP1-18DEV_S1_COURS_UF1_05.docx",
           "location": "3 Le développement cognitif transforme les émotions ; La conscience de soi et les émotions secondaires ; Lewis"
+        },
+        {
+          "file": "SYNTHESE_BP1-18DEV_S1_COURS_UF1_05.docx",
+          "location": "Repères complémentaires des nouvelles étapes : émotions primaires ; émotions auto-conscientes"
         }
       ],
       "steps": [
@@ -8090,9 +8589,54 @@
           "level": "essentiel",
           "sansChoix": true,
           "notionId": "N17"
+        },
+        {
+          "id": "Q5",
+          "prompt": "Laquelle de ces émotions est une émotion dite auto-évaluative par Lewis :",
+          "requiresContext": false,
+          "correctId": "a",
+          "choices": [
+            {
+              "id": "a",
+              "text": "La honte.",
+              "explanation": "Dans le modèle de Lewis, les émotions auto-évaluatives sont issues du jugement de ses actions selon des normes, règles et objectifs intériorisés et d’une attribution causale interne. La honte associe un échec à une attribution globale à la personne (« je suis nul·le »)."
+            },
+            {
+              "id": "b",
+              "text": "La jalousie.",
+              "explanation": "La jalousie est auto-consciente : vouloir pour soi ce que l’autre détient ou reçoit. Elle est liée à la conscience de soi, sans constituer le jugement de son action qui définit l’émotion auto-évaluative."
+            },
+            {
+              "id": "c",
+              "text": "L’empathie.",
+              "explanation": "L’empathie est auto-consciente : identifier et comprendre l’émotion d’autrui. Elle porte sur ce que ressent l’autre, plutôt que sur l’évaluation de sa propre action selon des normes."
+            },
+            {
+              "id": "d",
+              "text": "La peur.",
+              "explanation": "La peur est une émotion primaire, largement fondée biologiquement et dotée d’une fonction adaptative : se protéger d’un danger. Elle ne résulte pas de l’auto-évaluation."
+            }
+          ],
+          "level": "essentiel",
+          "sansChoix": false,
+          "notionId": "N17",
+          "ancienExamen": {
+            "examen": "Examen blanc BP13DEV",
+            "annee": null,
+            "question": "38",
+            "page": 6,
+            "autresReferences": [
+              {
+                "examen": "BP13DEV — Questions et réponses proposées (QRP)",
+                "annee": null,
+                "question": "38",
+                "page": 12
+              }
+            ]
+          }
         }
       ],
-      "qcmRevision": "900dec307534cfba"
+      "qcmRevision": "6135f77240b3e09c"
     },
     {
       "id": "DEV-B-F13",
@@ -8930,12 +9474,16 @@
       "prompt": "",
       "hints": [
         "On ne voit pas les pensées : on les déduit d'indices. Distingue la capacité (théorie de l'esprit), l'ensemble plus large (cognition sociale) et le mécanisme (décentration).",
-        "Théorie de l'esprit (ToM) : capacité d'attribuer à autrui des états mentaux non directement observables, inférés à partir d'indices et du contexte. Cognition sociale : ensemble plus large de processus de compréhension des situations sociales. Décentration : capacité d'adopter la perspective d'autrui en distinguant son point de vue du sien. Repères d'appui, pas à réciter : l'inhibition permet de mettre de côté son propre savoir lorsqu'on raisonne sur autrui ; la flexibilité, de changer de point de vue ou de manière d'aborder un problème."
+        "Théorie de l'esprit (ToM) : capacité d'attribuer à autrui des états mentaux non directement observables, inférés à partir d'indices et du contexte. Cognition sociale : ensemble plus large de processus de compréhension des situations sociales. Décentration : capacité d'adopter la perspective d'autrui en distinguant son point de vue du sien. Repères d'appui, pas à réciter : l'inhibition permet de mettre de côté son propre savoir lorsqu'on raisonne sur autrui ; la flexibilité, de changer de point de vue ou de manière d'aborder un problème. Représentation : ce que je sais d’une situation, autrement dit l’idée que je m’en fais. La mémoire de travail sert à garder des informations à l’esprit tout en les utilisant. Le langage et les échanges mettent les états mentaux en mots : pensées, croyances, savoirs, intentions et émotions ; ils nourrissent leur compréhension sans définir à eux seuls la théorie de l’esprit."
       ],
       "sources": [
         {
           "file": "SYNTHESE_BP1-18DEV_S1_COURS_UF1_06.docx",
           "location": "1 Comprendre ce qui se passe dans l'esprit d'autrui ; Passer d'indices observables à des états mentaux"
+        },
+        {
+          "file": "SYNTHESE_BP1-18DEV_S1_COURS_UF1_06.docx",
+          "location": "2 Représentation ; 4 Des ressources qui se développent dans les échanges (mémoire de travail, langage)"
         }
       ],
       "steps": [
@@ -9031,9 +9579,54 @@
           "level": "essentiel",
           "sansChoix": true,
           "notionId": "N25"
+        },
+        {
+          "id": "Q4",
+          "prompt": "La théorie de l’esprit correspond… :",
+          "requiresContext": false,
+          "correctId": "a",
+          "choices": [
+            {
+              "id": "a",
+              "text": "À la capacité d’attribuer à autrui des états mentaux inférés à partir d’indices observables.",
+              "explanation": "La théorie de l’esprit est la capacité d’attribuer à autrui des états mentaux non directement observables, en les inférant à partir d’indices observables. Elle se développe progressivement, sans se confondre avec tout le développement cognitif ou langagier."
+            },
+            {
+              "id": "b",
+              "text": "À la capacité de garder et d’utiliser des informations à l’esprit pour résoudre un problème.",
+              "explanation": "Cela décrit la mémoire de travail, une ressource cognitive : garder des informations à l’esprit tout en les utilisant. La théorie de l’esprit vise un objet plus précis, les états mentaux attribués à autrui."
+            },
+            {
+              "id": "c",
+              "text": "À la capacité de mettre les pensées, les croyances et les émotions en mots dans les échanges.",
+              "explanation": "Le langage et les échanges mettent les états mentaux en mots et nourrissent leur compréhension. Cette mise en mots ne définit pas la capacité d’inférer les états mentaux d’autrui à partir d’indices."
+            },
+            {
+              "id": "d",
+              "text": "À la capacité de raisonner sur une situation en utilisant ce que l’on sait de la réalité.",
+              "explanation": "Ce choix reste centré sur sa propre représentation : ce que l’on sait d’une situation, l’idée que l’on s’en fait. La théorie de l’esprit demande d’attribuer à autrui des états mentaux qui ne sont pas directement observables."
+            }
+          ],
+          "level": "essentiel",
+          "sansChoix": true,
+          "notionId": "N23",
+          "ancienExamen": {
+            "examen": "Examen blanc BP13DEV",
+            "annee": null,
+            "question": "51",
+            "page": 8,
+            "autresReferences": [
+              {
+                "examen": "BP13DEV — Questions et réponses proposées (QRP)",
+                "annee": null,
+                "question": "51",
+                "page": 17
+              }
+            ]
+          }
         }
       ],
-      "qcmRevision": "d7131452e61e24de"
+      "qcmRevision": "391e4c42d7ef4eaf"
     },
     {
       "id": "DEV-B-F18",
@@ -9050,7 +9643,7 @@
       "prompt": "",
       "hints": [
         "Une capacité peut exister sans que l'enfant sache l'expliquer. Compare ce que chaque tâche exige : comprendre une intention, attribuer un savoir ou une incertitude, attribuer une fausse croyance, relier croyance et émotion.",
-        "Warneken et Tomasello : compréhension de certaines intentions d'autrui dès environ 18 mois. Les tâches de théorie de l'esprit placent l'enfant dans des situations où son propre savoir peut différer de celui qu'il doit attribuer à autrui. Tâche de la poupée, de premier ordre : l'enfant attribue un savoir ou une incertitude selon l'accès de la poupée à l'information. Sally et Anne : l'enfant attribue une croyance différente de la réalité qu'il connaît (fausse croyance). Incertitude : plusieurs croyances restent possibles faute d'information. Ces capacités émergent progressivement, et les repères d'âge se comprennent avec les exigences de chaque tâche."
+        "Warneken et Tomasello : compréhension de certaines intentions d'autrui dès environ 18 mois. Les tâches de théorie de l'esprit placent l'enfant dans des situations où son propre savoir peut différer de celui qu'il doit attribuer à autrui. Tâche de la poupée, de premier ordre : l'enfant attribue un savoir ou une incertitude selon l'accès de la poupée à l'information. Sally et Anne : l'enfant attribue une croyance différente de la réalité qu'il connaît (fausse croyance). Incertitude : plusieurs croyances restent possibles faute d'information. Ces capacités émergent progressivement, et les repères d'âge se comprennent avec les exigences de chaque tâche. Raisonnement de premier ordre : Attribution d’un état mental à une autre personne : je pense qu’elle pense, croit ou ressent quelque chose. Raisonnement de deuxième ordre : Attribution à une personne d’un état mental concernant celui d’une autre personne : je pense qu’elle pense qu’une autre pense, croit ou ressent quelque chose. Les tâches mixtes articulent une croyance (état mental cognitif) et une émotion (état mental affectif) : ce que l’autre ressent peut dépendre de ce qu’il croit. Distinguer emplacement réel, savoir de l’enfant et croyance du personnage permet de reconnaître la capacité évaluée dans une tâche de fausse croyance."
       ],
       "sources": [
         {
@@ -9151,9 +9744,54 @@
           "level": "essentiel",
           "sansChoix": true,
           "notionId": "N34"
+        },
+        {
+          "id": "Q4",
+          "prompt": "Sally met une bille dans son panier puis sort se promener. Pendant son absence, Anne met la bille dans une boîte. Sally revient ; on demande à l’enfant où elle cherchera sa bille. La tâche représentée permet d’évaluer… :",
+          "requiresContext": false,
+          "correctId": "a",
+          "choices": [
+            {
+              "id": "a",
+              "text": "La capacité à attribuer à autrui une croyance que l’on sait fausse.",
+              "explanation": "La tâche de Sally et Anne évalue l’attribution d’une fausse croyance : l’enfant sait que la bille est dans la boîte, mais Sally n’a pas vu le déplacement et croit qu’elle est dans le panier. Il doit inhiber son propre savoir pour activer la croyance attribuée à Sally."
+            },
+            {
+              "id": "b",
+              "text": "La capacité à attribuer à autrui un savoir selon son accès à l’information.",
+              "explanation": "L’attribution d’un savoir ou d’une incertitude est travaillée par la tâche de la poupée. Dans Sally et Anne, il faut attribuer une croyance dépassée qui diffère de la réalité connue, et pas un savoir du nouvel emplacement."
+            },
+            {
+              "id": "c",
+              "text": "La capacité à comprendre l’intention d’une personne dans une action.",
+              "explanation": "La compréhension de certaines intentions est mise en évidence par les tâches de Warneken et Tomasello. Sally et Anne demande plutôt de prévoir une recherche à partir d’une croyance erronée sur l’emplacement."
+            },
+            {
+              "id": "d",
+              "text": "La capacité à relier une croyance attribuée à autrui à son émotion.",
+              "explanation": "Les tâches mixtes articulent un état mental cognitif et un état mental affectif : ce que l’autre ressent dépend de ce qu’il croit. Sally et Anne porte ici sur l’emplacement où Sally cherchera, sans question sur son émotion."
+            }
+          ],
+          "level": "essentiel",
+          "sansChoix": true,
+          "notionId": "N34",
+          "ancienExamen": {
+            "examen": "Examen blanc BP13DEV",
+            "annee": null,
+            "question": "50",
+            "page": 8,
+            "autresReferences": [
+              {
+                "examen": "BP13DEV — Questions et réponses proposées (QRP)",
+                "annee": null,
+                "question": "50",
+                "page": 16
+              }
+            ]
+          }
         }
       ],
-      "qcmRevision": "19ac7b457c1dcdda"
+      "qcmRevision": "9185a7f54a98cf5c"
     },
     {
       "id": "DEV-B-F19",
@@ -9383,7 +10021,7 @@
       "prompt": "",
       "hints": [
         "Compte les points de vue emboîtés : une personne qui pense à l'état mental d'une autre, ou une personne qui pense à ce qu'une autre pense d'une troisième.",
-        "Ordre zéro : une situation, sans attribuer de pensée à quelqu'un. Premier ordre : j'attribue un état mental à une autre personne. Deuxième ordre : j'attribue à une personne un état mental concernant celui d'une autre personne. Le deuxième ordre ajoute un emboîtement de perspectives."
+        "Ordre zéro : une situation, sans attribuer ici de pensée à quelqu’un d’autre. Raisonnement de premier ordre : Attribution d’un état mental à une autre personne : je pense qu’elle pense, croit ou ressent quelque chose. Raisonnement de deuxième ordre : Attribution à une personne d’un état mental concernant celui d’une autre personne : je pense qu’elle pense qu’une autre pense, croit ou ressent quelque chose. Le deuxième ordre ajoute un emboîtement de perspectives. Fausse croyance : Croyance attribuée à autrui qui diffère de la réalité que l’on connaît soi-même. Le nombre de perspectives emboîtées et l’accord d’une croyance avec la réalité sont deux distinctions différentes."
       ],
       "sources": [
         {
@@ -9401,7 +10039,7 @@
             {
               "id": "a",
               "text": "Attribuer à quelqu'un un état mental concernant celui d'un autre.",
-              "explanation": "Cette proposition décrit un cas particulier, le deuxième ordre, qui emboîte un point de vue dans un autre ; ce n'est pas la définition générale de la méta-représentation."
+              "explanation": "Cette proposition décrit le raisonnement de deuxième ordre : il attribue à quelqu’un un état mental concernant celui d’une autre personne. Cet emboîtement supplémentaire caractérise le deuxième ordre, et non le premier."
             },
             {
               "id": "b",
@@ -9577,9 +10215,54 @@
           "level": "essentiel",
           "sansChoix": true,
           "notionId": "N30"
+        },
+        {
+          "id": "Q7",
+          "prompt": "« Capacité à évaluer les états mentaux d’une autre personne. » Cette définition correspond… :",
+          "requiresContext": false,
+          "correctId": "d",
+          "choices": [
+            {
+              "id": "a",
+              "text": "À l’attribution d’une fausse croyance.",
+              "explanation": "Une fausse croyance est une croyance attribuée à autrui qui diffère de la réalité que l’on connaît. La définition ne précise pas un tel décalage : elle décrit le niveau général d’une attribution directe d’état mental."
+            },
+            {
+              "id": "b",
+              "text": "Au raisonnement de deuxième ordre.",
+              "explanation": "Les niveaux de raisonnement distinguent les points de vue emboîtés. Le deuxième ordre attribue à une personne un état mental concernant celui d’une autre personne : un emboîtement supplémentaire que la définition ne donne pas."
+            },
+            {
+              "id": "c",
+              "text": "À une représentation d’ordre zéro.",
+              "explanation": "Dans la comparaison des niveaux de raisonnement, l’ordre zéro représente une situation sans attribuer de pensée à une autre personne. La définition propose au contraire une attribution à autrui."
+            },
+            {
+              "id": "d",
+              "text": "Au raisonnement de premier ordre.",
+              "explanation": "Les niveaux de raisonnement distinguent les points de vue emboîtés. Le premier ordre attribue un état mental à une autre personne : je pense qu’elle pense, croit ou ressent quelque chose. Le deuxième ordre ajoute un emboîtement de perspectives."
+            }
+          ],
+          "level": "essentiel",
+          "sansChoix": true,
+          "notionId": "N29",
+          "ancienExamen": {
+            "examen": "Examen blanc BP13DEV",
+            "annee": null,
+            "question": "48",
+            "page": 8,
+            "autresReferences": [
+              {
+                "examen": "BP13DEV — Questions et réponses proposées (QRP)",
+                "annee": null,
+                "question": "48",
+                "page": 15
+              }
+            ]
+          }
         }
       ],
-      "qcmRevision": "ee4700222101d323"
+      "qcmRevision": "e208a7bc73b958cd"
     },
     {
       "id": "DEV-B-F21",
@@ -10736,5 +11419,5 @@
       "qcmRevision": "b1e7ac31240f94ad"
     }
   ],
-  "bankRevision": "493a2e3a41098ee7"
+  "bankRevision": "f52ac1f0bdc00886"
 }
