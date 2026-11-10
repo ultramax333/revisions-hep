@@ -1,21 +1,22 @@
-.quick-vote { margin: .7rem 0; padding: .6rem 0; border-block: 1px solid var(--border, #cad2de); }
-.quick-vote-label { font-weight: 600; font-size: .88rem; }
-.quick-vote-buttons { display: flex; flex-wrap: wrap; gap: .5rem; margin-top: .35rem; }
-.quick-thumb { display: inline-flex; align-items: center; justify-content: center; gap: .35rem; min-height: 44px; padding: .45rem .65rem; border: 2px solid; border-radius: .65rem; background: var(--bg, #101624); font: inherit; font-size: .88rem; font-weight: 650; cursor: pointer; }
-.quick-up { color: #82d5a6; border-color: #609776; }
-.quick-down { color: #ffabb6; border-color: #bd7c87; }
-.quick-up[aria-pressed="true"] { background: #19372e; border-color: #82d5a6; }
-.quick-down[aria-pressed="true"] { background: #3b2530; border-color: #ffabb6; }
-.quick-thumb[aria-pressed="true"] { box-shadow: inset 0 0 0 1px currentColor; }
-.quick-thumb:focus-visible, .quick-vote summary:focus-visible, .quick-group button:focus-visible { outline: 3px solid var(--accent, #a2b7ff); outline-offset: 3px; }
-.quick-vote .help-text { margin: .3rem 0 0; font-size: .8rem; }
-.quick-vote details { margin-top: .4rem; }
-.quick-group { padding: 1rem; margin: 1rem 0; border: 1px solid var(--border, #344259); border-radius: .8rem; background: var(--bg-card, #171f2f); color: var(--text, #f0f3fa); }
-.quick-group h2 { margin: 0 0 .35rem; font-size: 1.08rem; }
+/* Avis rapides (pouces) et envoi groupé — v22, couleurs du thème (style.css). */
+.quick-vote { margin: 16px 0 6px; padding: 14px 0 4px; border-top: 1px solid var(--border, #d5dbe3); }
+.quick-vote-label { display: block; font-weight: 750; font-size: 1rem; }
+.quick-vote-buttons { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; margin-top: 8px; }
+.quick-thumb { display: inline-flex; align-items: center; justify-content: center; gap: 8px; min-height: 48px; padding: 8px 10px; border: 2px solid transparent; border-radius: 14px; background: var(--bg-card-2, #e9edf2); color: var(--text, #111827); font: inherit; font-size: .9375rem; font-weight: 700; line-height: 1.25; cursor: pointer; transition: transform 80ms ease, background-color 120ms ease; }
+.quick-thumb:active { transform: scale(.97); background: var(--bg-press, #dde3ea); }
+.quick-up[aria-pressed="true"] { background: var(--bg-good, #e3f8ea); border-color: var(--good-line, #15803d); color: var(--good, #11652f); }
+.quick-down[aria-pressed="true"] { background: var(--bg-bad, #fde7e7); border-color: var(--bad-line, #c62828); color: var(--bad, #a51f1f); }
+.quick-thumb[aria-pressed="true"]::after { content: "✓"; content: "✓" / ""; font-weight: 900; }
+.quick-thumb:focus-visible, .quick-vote summary:focus-visible, .quick-group button:focus-visible { outline: 3px solid var(--focus, #1f55d6); outline-offset: 3px; }
+.quick-vote .help-text { margin: 8px 0 0; font-size: .875rem; }
+.quick-vote details { margin-top: 6px; }
+.quick-group { padding: 16px; margin: 20px 0; color: var(--text, #111827); }
+.quick-group h2 { margin: 0 0 4px; font-size: 1.125rem; font-weight: 800; }
 .quick-group .text-input { max-width: 22rem; }
+.quick-group details > summary { padding-left: 0; padding-right: 0; }
 [data-quick-list] .exercise-text { overflow-wrap: anywhere; }
-@media (max-width: 390px) { .quick-thumb { font-size: .8rem; padding-inline: .5rem; } .quick-group { padding: .65rem; } }
+@media (max-width: 389px) { .quick-thumb { font-size: .875rem; padding-inline: 6px; } .quick-group { padding: 14px; } }
 
 .qcm-level-filter { display: flex; gap: .45rem; margin: .45rem 0 .7rem; }
 .qcm-level-filter .btn { padding: .35rem .7rem; min-height: 44px; }
-.qcm-level-filter [aria-pressed="true"] { border-color: var(--accent); background: var(--bg-info); box-shadow: inset 0 0 0 1px var(--accent); }
+.qcm-level-filter [aria-pressed="true"] { background: var(--selected, #ffc83d); color: var(--text-on-selected, #3a2a00); }

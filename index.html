@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-  <meta name="theme-color" content="#101624">
+  <meta name="theme-color" content="#f2f4f7" media="(prefers-color-scheme: light)"><meta name="theme-color" content="#0f1319" media="(prefers-color-scheme: dark)"><meta name="color-scheme" content="light dark">
   <meta name="description" content="Choisir une matière et un bloc pour les révisions HEP.">
   <title>Révisions HEP</title>
   <link rel="icon" href="icon.svg" type="image/svg+xml">
@@ -14,14 +14,16 @@
   <main class="page">
     <header class="site-header"><a class="brand" href="index.html"><img class="brand-mark" src="icon.svg" alt=""><span class="brand-title">Révisions HEP</span></a></header>
     <div class="quiz-help-entry"><button type="button" class="btn quiz-help-button" data-quiz-help>Comment utiliser ce quiz ?</button></div>
-    <section class="home-hero oral-home-hero"><h1 class="hero-title">Choisir une matière</h1></section>
+    <section class="home-hero oral-home-hero"><h1 class="hero-title">Choisir une matière</h1><p class="help-text" data-collections-note>Version de test : seul le bloc oral de français est ouvert pour le moment.</p></section>
     <section class="exercise-grid" aria-label="Matières et blocs">
-      <article class="course-card exercise-tile"><h2>Français</h2><h3>Bloc oral</h3><div class="actions"><a class="btn primary" href="qcm-oral.html">Ouvrir les QCM</a><a class="btn secondary" href="qcm-oral.html#sans-choix">Sans les choix</a><a class="btn secondary" href="oral.html">Exercices rédigés du bloc oral</a></div></article>
-      <article class="course-card exercise-tile"><h2>Organisation de la classe</h2><h3>Semestre 1</h3><a class="btn primary" href="qcm-cla.html">Ouvrir les QCM</a><a class="btn secondary" href="qcm-cla.html#sans-choix">Sans les choix</a></article>
-      <article class="course-card exercise-tile"><h2>Développement</h2><h3>UF1</h3><a class="btn primary" href="qcm-dev.html">Ouvrir les QCM</a><a class="btn secondary" href="qcm-dev.html#sans-choix">Sans les choix</a></article>
-      <article class="course-card exercise-tile"><h2>Sciences humaines et sociales</h2><h3>Introduction, Histoire, Géographie, ECR</h3><a class="btn primary" href="qcm-shs.html">Ouvrir les QCM</a><a class="btn secondary" href="qcm-shs.html#sans-choix">Sans les choix</a></article>
+      <article class="course-card exercise-tile" data-collection="fra-oral"><h2>Français</h2><h3>Bloc oral</h3><div class="actions"><a class="btn primary" href="qcm-oral.html">Ouvrir les QCM</a><a class="btn secondary" href="qcm-oral.html#sans-choix">Sans les choix</a><a class="btn secondary" href="oral.html">Exercices rédigés du bloc oral</a></div></article>
+      <article class="course-card exercise-tile" data-collection="cla" hidden><h2>Organisation de la classe</h2><h3>Semestre 1</h3><a class="btn primary" href="qcm-cla.html">Ouvrir les QCM</a><a class="btn secondary" href="qcm-cla.html#sans-choix">Sans les choix</a></article>
+      <article class="course-card exercise-tile" data-collection="dev" hidden><h2>Développement</h2><h3>UF1</h3><a class="btn primary" href="qcm-dev.html">Ouvrir les QCM</a><a class="btn secondary" href="qcm-dev.html#sans-choix">Sans les choix</a></article>
+      <article class="course-card exercise-tile" data-collection="shs" hidden><h2>Sciences humaines et sociales</h2><h3>Introduction, Histoire, Géographie, ECR</h3><a class="btn primary" href="qcm-shs.html">Ouvrir les QCM</a><a class="btn secondary" href="qcm-shs.html#sans-choix">Sans les choix</a></article>
     </section>
   </main>
+  <script src="config.js"></script>
+  <script src="collections-visibles.js"></script>
   <script src="quiz-help.js"></script>
 </body>
 </html>

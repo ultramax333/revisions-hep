@@ -13,6 +13,7 @@
         <p>Le filtre « Anciens examens » ne garde que les questions reprises d'examens des années précédentes.</p>
         <p><strong>Vos retours m'aident beaucoup :</strong></p>
         <ul><li>👍 / 👎 sous une question : elle est utile, ou pas claire. Votre avis m'arrive tout seul, rien d'autre à faire.</li>
+        <li>L'étiquette « 1 · À maîtriser », « 2 · À connaître » ou « 3 · À rencontrer » dit le poids du savoir pour l'examen. Les boutons 1 à 4 sous la question disent si ce classement vous paraît juste (4 : inutile pour l'examen). Votre avis ne change pas l'étiquette.</li>
         <li>« Signaler un problème avec cette question » : une erreur, une question ambiguë… vous pouvez écrire un petit texte, puis cliquer sur « Envoyer à Maxim ».</li></ul>
         <p>Grâce à vos retours, je corrige les questions et j'améliore le site au fur et à mesure. Merci !</p>
         <div class="actions"><button type="button" class="btn secondary" data-close-quiz-help>Fermer</button></div>`;
