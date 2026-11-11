@@ -180,12 +180,6 @@
       "operation": "Repérer rôle des cartes et proposer une aide cohérente"
     },
     {
-      "id": "ORAL-F36",
-      "title": "Construire une observation et réguler un dispositif oral",
-      "theme": "Évaluer et réguler",
-      "operation": "Sélectionner critères, traces et intervention puis prévoir un suivi"
-    },
-    {
       "id": "ORAL-F37",
       "title": "Distinguer langage, langue et parole dans une situation",
       "theme": "Fondements",
@@ -324,11 +318,6 @@
     {
       "id": "ORAL-P-F33",
       "title": "Rôles langagiers dans la discussion à visée philosophique, série 1",
-      "course": "S03"
-    },
-    {
-      "id": "ORAL-P-F34",
-      "title": "Rôles langagiers dans la discussion à visée philosophique, série 2",
       "course": "S03"
     },
     {
@@ -973,28 +962,28 @@
         },
         {
           "id": "Q2",
-          "prompt": "Après une sortie, un enfant prépare un album écho avec des photos. Il raconte « Là je fais ça et après là » en montrant les photos du doigt. Une autre classe écoutera sans voir ses gestes : quel objectif travailler ?",
+          "prompt": "Après une sortie, Noé raconte son album écho à une autre classe qui ne voit pas ses gestes : « Là je fais ça et après là. » Que doit-il travailler d'abord ?",
           "correctId": "b",
           "choices": [
             {
               "id": "a",
-              "text": "Raconter au passé, en reliant les photographies par « avant », « après » et « enfin ».",
-              "explanation": "Les temps et les organisateurs peuvent aider le récit. Ici, « après » marque déjà la succession ; « là » et « ça » laissent surtout les objets et les actions dépendre des gestes."
+              "text": "Mettre ses phrases au passé pour mieux raconter.",
+              "explanation": "Les temps aident le récit, mais « après » marque déjà la succession. Le manque de Noé est ailleurs : « là » et « ça » ne renvoient à rien pour qui ne voit pas ses gestes."
             },
             {
               "id": "b",
-              "text": "Raconter les actions de la sortie en nommant ce que l’enfant montre du doigt.",
-              "explanation": "L’album écho associe des photos à des paroles reprises avec l’aide de l’adulte pour faire raconter l’expérience. Ici, les auditeurs ne verront pas les gestes : nommer les objets et les actions aide à comprendre ce que « là » et « ça » désignent."
+              "text": "Nommer avec des mots ce qu'il montre du doigt.",
+              "explanation": "L'album écho (cours 02) aide à remettre en mots une expérience terminée : c'est du langage d'évocation. L'indice du cas : « là » et « ça » désignent ce que Noé montre ; une classe qui ne voit pas ses gestes ne peut comprendre que si les objets et les actions sont nommés."
             },
             {
               "id": "c",
-              "text": "Décrire chaque photographie, en situant les objets par rapport à l’enfant.",
-              "explanation": "Décrire l’image peut fournir des mots, mais ne fait pas encore raconter ce que l’enfant a fait pendant la sortie."
+              "text": "Décrire les photos en situant les objets dans l'espace.",
+              "explanation": "Décrire l'image peut fournir des mots, mais ne fait pas encore raconter ce que Noé a fait pendant la sortie."
             },
             {
               "id": "d",
-              "text": "Expliquer pourquoi chaque photographie a été choisie pour l’album.",
-              "explanation": "Expliquer le choix des photos fait parler du support. L’obstacle du récit porte ici sur les objets et actions que les auditeurs ne peuvent pas identifier."
+              "text": "Expliquer pourquoi il a choisi ces photos pour l'album.",
+              "explanation": "Expliquer le choix des photos fait parler du support. Le manque porte sur les objets et les actions que les auditeurs ne peuvent pas identifier."
             }
           ],
           "requiresContext": false,
@@ -1003,7 +992,7 @@
           "attenteId": "L9"
         }
       ],
-      "qcmRevision": "0e8cb2a3343a",
+      "qcmRevision": "3b2c2e6349a9",
       "courseGroupKey": "2",
       "hasWrittenExercise": true
     },
@@ -1075,37 +1064,6 @@
       "contentRevision": "c6bd50266bf3",
       "steps": [
         {
-          "id": "Q5",
-          "prompt": "Dans la situation, quelle question engagerait une discussion à visée philosophique sur la justice de cette règle ?",
-          "correctId": "c",
-          "choices": [
-            {
-              "id": "a",
-              "text": "Qu’est-ce qui a fait juger cette règle juste par les joueurs de la partie ?",
-              "explanation": "Cette question fait expliquer le jugement de joueurs particuliers. Elle peut préparer la réflexion, mais ne pose pas encore le problème général de la justice d’une règle."
-            },
-            {
-              "id": "b",
-              "text": "Quelle règle juste pour les débutants allons-nous retenir pour la prochaine partie ?",
-              "explanation": "Cette question demande de décider de la prochaine partie. Une décision pratique peut s’appuyer sur une réflexion, mais ne constitue pas ici la question philosophique à ouvrir."
-            },
-            {
-              "id": "c",
-              "text": "Une règle peut-elle être juste si elle traite différemment celui qui débute ?",
-              "explanation": "La discussion à visée philosophique est un dispositif où les élèves cherchent à penser par et pour eux-mêmes autour d’une question. Le traitement différent du débutant fait discuter ce qu’est une règle juste : la question dépasse la partie et ouvre plusieurs réponses à examiner."
-            },
-            {
-              "id": "d",
-              "text": "Quelles adaptations pour les débutants sont prévues par les règles des jeux que nous connaissons ?",
-              "explanation": "Cette question fait recenser des règles existantes. Elle ne fait pas encore examiner les raisons qui les rendent justes ou injustes."
-            }
-          ],
-          "requiresContext": true,
-          "level": "essentiel",
-          "sansChoix": false,
-          "attenteId": "A2"
-        },
-        {
           "id": "Q3",
           "prompt": "Après une histoire où un personnage donne son repas, les élèves disent : « Il est gentil », « Il voulait peut-être qu’on l’aime » et « On doit toujours donner ». Quelle relance vise d’abord la conceptualisation du don ?",
           "correctId": "c",
@@ -1123,7 +1081,7 @@
             {
               "id": "c",
               "text": "Si on remet le repas à quelqu’un en attendant qu’il le rende, est-ce encore un don ?",
-              "explanation": "Conceptualiser, c’est définir un concept et ses attributs. Comparer donner et remettre avec retour attendu fait chercher les limites du don : c’est un travail sur ce qui entre dans le sens de la notion."
+              "explanation": "Capacités langagières argumentatives (cours 03, discussion à visée philosophique). Conceptualiser, c’est définir un concept et ses attributs. Comparer donner et remettre avec retour attendu fait chercher les limites du don : c’est un travail sur ce qui entre dans le sens de la notion."
             },
             {
               "id": "d",
@@ -1132,7 +1090,7 @@
             }
           ],
           "requiresContext": false,
-          "level": "essentiel",
+          "level": "approfondissement",
           "sansChoix": false,
           "attenteId": "A2"
         },
@@ -1144,7 +1102,7 @@
             {
               "id": "a",
               "text": "Si donner son repas aide l’autre mais nous laisse sans manger, qu’est-ce qui rend la décision difficile ?",
-              "explanation": "Problématiser, c’est soulever la complexité d’une question et examiner les implicites et les conséquences d’une affirmation. La relance met en tension aider l’autre et garder de quoi manger : elle fait chercher ce qui pose problème dans l’affirmation « toujours donner »."
+              "explanation": "Capacités langagières argumentatives (cours 03, discussion à visée philosophique). Problématiser, c’est soulever la complexité d’une question et examiner les implicites et les conséquences d’une affirmation. La relance met en tension aider l’autre et garder de quoi manger : elle fait chercher ce qui pose problème dans l’affirmation « toujours donner »."
             },
             {
               "id": "b",
@@ -1163,12 +1121,12 @@
             }
           ],
           "requiresContext": false,
-          "level": "essentiel",
+          "level": "approfondissement",
           "sansChoix": false,
           "attenteId": "A2"
         }
       ],
-      "qcmRevision": "b57e64cf14f0",
+      "qcmRevision": "97874499877d",
       "courseGroupKey": "3",
       "hasWrittenExercise": true
     },
@@ -1284,7 +1242,7 @@
         },
         {
           "id": "Q4",
-          "prompt": "Avec des cartes, un enfant raconte : « Le bateau est pris dans la tempête. Après ils sont sur l’île. Après ils font un feu. » Quel élément du schéma narratif faut-il surtout développer entre la tempête et l’arrivée sur l’île ?",
+          "prompt": "Pendant un jeu de cartes à raconter, Noa raconte : « Le bateau est pris dans la tempête. Après les passagers sont à l'abri sur l'île. Après ils font un feu. » Quel moment du schéma narratif manque entre la tempête et la mise à l'abri ?",
           "correctId": "b",
           "choices": [
             {
@@ -1295,12 +1253,12 @@
             {
               "id": "b",
               "text": "Les actions : les tentatives des passagers pour atteindre l’abri.",
-              "explanation": "Le schéma narratif décrit un récit en cinq moments : situation initiale, complication, actions, résolution et situation finale. L’arrivée sur l’île donne une issue, mais le récit saute les moyens d’y parvenir. Développer les actions permet de relier le danger à cette issue."
+              "explanation": "Cet exemple illustre le schéma narratif (cours 04), qui décrit un récit en cinq moments : situation initiale, complication, actions, résolution et situation finale. L'indice du cas : la tempête pose le danger et la mise à l'abri en donne l'issue, mais ce que font les passagers pour y arriver n'est pas raconté. Ce sont les actions."
             },
             {
               "id": "c",
               "text": "La résolution : l’issue du danger rencontré par les passagers.",
-              "explanation": "L’arrivée à l’abri est déjà annoncée. Les tentatives qui y conduisent relèvent des actions ; la résolution correspond au dépassement de la difficulté."
+              "explanation": "La mise à l’abri est déjà racontée : c’est l’issue du danger. Les tentatives qui y conduisent relèvent des actions ; la résolution correspond au dépassement de la difficulté."
             },
             {
               "id": "d",
@@ -1314,7 +1272,7 @@
           "attenteId": "A5"
         }
       ],
-      "qcmRevision": "4695d1be2a6f",
+      "qcmRevision": "89540cc29df4",
       "courseGroupKey": "4",
       "hasWrittenExercise": true
     },
@@ -1786,7 +1744,7 @@
       "steps": [
         {
           "id": "Q1",
-          "prompt": "Une élève reconnaît « fil » et « ville » quand on les nomme, mais prononce [fil] pour les deux. Quel contraste articulatoire doit-elle réaliser pour produire [v] à partir de [f] ?",
+          "prompt": "Lina dit [fil] pour « fil » comme pour « ville ». Que doit-elle ajouter à l'articulation de [f] pour produire [v] ?",
           "correctId": "b",
           "choices": [
             {
@@ -1797,7 +1755,7 @@
             {
               "id": "b",
               "text": "Faire vibrer les cordes vocales pendant la consonne.",
-              "explanation": "[f] est sourd et [v] sonore. Ces consonnes partagent le lieu et le mode d’articulation ; la vibration réalise le contraste visé."
+              "explanation": "Cours 02, développement de l'articulation. [f] est sourd et [v] sonore. Ces consonnes partagent le lieu et le mode d’articulation ; la vibration réalise le contraste visé."
             },
             {
               "id": "c",
@@ -1814,40 +1772,9 @@
           "level": "approfondissement",
           "sansChoix": true,
           "attenteId": "L5"
-        },
-        {
-          "id": "Q3",
-          "prompt": "Un élève reconnaît la cour et la tour quand on les nomme, mais dit [tuʁ] pour les deux. Après le modèle [kuʁ], il nomme de nouveau les images. Quel résultat montre qu’il réalise le contraste dans les mots ?",
-          "correctId": "d",
-          "choices": [
-            {
-              "id": "a",
-              "text": "Il produit [kuʁ] pour la cour et [kuʁ] pour la tour.",
-              "explanation": "[k] apparaît, mais sert maintenant aux deux mots. Produire la consonne cible ne suffit pas : il faut conserver deux formes distinctes."
-            },
-            {
-              "id": "b",
-              "text": "Il signale que les enregistrements [tuʁ] et [kuʁ] sont différents.",
-              "explanation": "Ce résultat renseigne la perception de la différence sonore, sans montrer sa réalisation dans la parole de l’élève."
-            },
-            {
-              "id": "c",
-              "text": "Il répète correctement [t] et [k] isolés après les modèles.",
-              "explanation": "Cette imitation montre une possibilité articulatoire pour les sons isolés. Elle ne montre pas encore leur emploi distinct dans les deux mots."
-            },
-            {
-              "id": "d",
-              "text": "Il produit [kuʁ] pour la cour et [tuʁ] pour la tour.",
-              "explanation": "Les deux formes produites correspondent aux deux mots. Ce nouvel essai montre un contraste réalisé ; d’autres observations en examineront la stabilité."
-            }
-          ],
-          "requiresContext": false,
-          "level": "essentiel",
-          "sansChoix": false,
-          "attenteId": "L5"
         }
       ],
-      "qcmRevision": "7f13ecd51224",
+      "qcmRevision": "605dbef0a80c",
       "courseGroupKey": "2",
       "hasWrittenExercise": true
     },
@@ -1954,37 +1881,6 @@
           "attenteId": "L6"
         },
         {
-          "id": "Q3",
-          "prompt": "Une enfant ne prononce pas encore « roue ». Dans les essais proposés, l’adulte ne pointe aucun objet. Quel essai permet d’observer si elle comprend ce mot, sans lui demander de le produire ?",
-          "correctId": "d",
-          "choices": [
-            {
-              "id": "a",
-              "text": "Présenter une roue et demander son nom, avec le début du mot si elle hésite.",
-              "explanation": "Cet essai demande de produire le nom, même avec une aide. Une absence de réponse ne permettrait pas de distinguer production et compréhension."
-            },
-            {
-              "id": "b",
-              "text": "Demander de regrouper une roue, une orange et une balle parmi des objets.",
-              "explanation": "Le regroupement renseigne une catégorisation. Il peut être réussi sans avoir compris le mot « roue »."
-            },
-            {
-              "id": "c",
-              "text": "Dire « roue » devant son image et demander de le répéter.",
-              "explanation": "La répétition peut reproduire la forme sonore sans l’associer au bon objet. Elle ne suffit pas à montrer la compréhension."
-            },
-            {
-              "id": "d",
-              "text": "Disposer plusieurs objets et lui demander « Montre la roue ».",
-              "explanation": "Le pointage relie le mot entendu à son référent sans exiger sa production. L’adulte doit éviter un geste qui donnerait la réponse."
-            }
-          ],
-          "requiresContext": false,
-          "level": "essentiel",
-          "sansChoix": false,
-          "attenteId": "L6"
-        },
-        {
           "id": "Q4",
           "prompt": "Une enfant appelle « balle » sa balle rouge, mais refuse ce mot pour une balle bleue et une balle jaune. Que montre sa façon d’utiliser le mot « balle » ?",
           "correctId": "c",
@@ -2047,7 +1943,7 @@
           "attenteId": "L6"
         }
       ],
-      "qcmRevision": "914a17200ac1",
+      "qcmRevision": "0baa393daea8",
       "courseGroupKey": "2",
       "hasWrittenExercise": true
     },
@@ -2199,40 +2095,9 @@
           "level": "essentiel",
           "sansChoix": true,
           "attenteId": "L7"
-        },
-        {
-          "id": "Q3",
-          "prompt": "Dans un jeu de construction, les enfants disent surtout : « Il pose le cube. Il prend le toit. » Quel aménagement vise la diversification des pronoms personnels ?",
-          "correctId": "b",
-          "choices": [
-            {
-              "id": "a",
-              "text": "Faire préciser la position des pièces par rapport à la boîte et au pont.",
-              "explanation": "Ce travail peut enrichir les prépositions et les relations spatiales. Il ne change pas directement les personnes grammaticales mobilisées."
-            },
-            {
-              "id": "b",
-              "text": "Faire décrire la même action par l’enfant qui agit, puis par un témoin.",
-              "explanation": "L’enfant qui agit parle de lui-même avec « je » ; le témoin parle de cet enfant avec « il » ou « elle ». Changer de locuteur fait ainsi varier la personne grammaticale, ce que vise le premier axe de la progression de Boisseau, les pronoms."
-            },
-            {
-              "id": "c",
-              "text": "Faire expliquer le choix d’une pièce à un camarade qui ne l’a pas vu.",
-              "explanation": "Justifier le choix peut faire construire un lien causal. Cet objectif diffère de la diversification des pronoms personnels."
-            },
-            {
-              "id": "d",
-              "text": "Faire décrire les différentes actions d’un même garçon par l’enfant qui les a observées.",
-              "explanation": "Les actions changent, mais le témoin parle du même garçon à la troisième personne du singulier. Il peut conserver « il » ; cet aménagement ne fait pas varier les pronoms personnels."
-            }
-          ],
-          "requiresContext": false,
-          "level": "essentiel",
-          "sansChoix": false,
-          "attenteId": "L7"
         }
       ],
-      "qcmRevision": "89cfc0e9e70c",
+      "qcmRevision": "d94bc170ee3f",
       "courseGroupKey": "2",
       "hasWrittenExercise": true
     },
@@ -2332,7 +2197,7 @@
           "requiresContext": false,
           "level": "essentiel",
           "sansChoix": true,
-          "attenteId": "L7"
+          "attenteId": "L7.1"
         },
         {
           "id": "Q2",
@@ -2361,43 +2226,12 @@
             }
           ],
           "requiresContext": false,
-          "level": "essentiel",
+          "level": "approfondissement",
           "sansChoix": true,
-          "attenteId": "L7"
-        },
-        {
-          "id": "Q3",
-          "prompt": "Dans le troisième système à trois temps de Boisseau, quelle forme complète la série : futur simple / futur antérieur / … ?",
-          "correctId": "b",
-          "choices": [
-            {
-              "id": "a",
-              "text": "aller à l’imparfait suivi d’un infinitif",
-              "explanation": "Aller à l’imparfait exprime une projection depuis un repère passé : c’est le troisième membre du deuxième système."
-            },
-            {
-              "id": "b",
-              "text": "aller au futur suivi d’un infinitif",
-              "explanation": "La progression de Boisseau, qui décrit le développement de la syntaxe orale, compte trois systèmes de temps verbaux, chacun organisé autour d’un repère. Le troisième se centre sur un repère futur : futur simple, futur antérieur et aller au futur suivi d’un infinitif, qui envisage une suite depuis ce repère."
-            },
-            {
-              "id": "c",
-              "text": "aller au présent suivi d’un infinitif",
-              "explanation": "Aller au présent appartient au premier système, avec présent et passé composé."
-            },
-            {
-              "id": "d",
-              "text": "aller au passé composé suivi d’un infinitif",
-              "explanation": "« Aller » au passé composé présente un déplacement passé. La série demandée utilise « aller » au futur pour envisager une suite depuis un repère futur."
-            }
-          ],
-          "requiresContext": false,
-          "level": "essentiel",
-          "sansChoix": true,
-          "attenteId": "L7"
+          "attenteId": "L7.2"
         }
       ],
-      "qcmRevision": "3cfece260af1",
+      "qcmRevision": "25373a5e1539",
       "courseGroupKey": "2",
       "hasWrittenExercise": true
     },
@@ -2742,7 +2576,7 @@
           "requiresContext": false,
           "level": "essentiel",
           "sansChoix": true,
-          "attenteId": "A1"
+          "attenteId": "A1.1"
         }
       ],
       "qcmRevision": "91942eb54392",
@@ -3285,7 +3119,7 @@
           "requiresContext": false,
           "level": "essentiel",
           "sansChoix": true,
-          "attenteId": "A3"
+          "attenteId": "A3.1"
         }
       ],
       "qcmRevision": "02b8af6083ed",
@@ -3705,109 +3539,6 @@
       "hasWrittenExercise": true
     },
     {
-      "id": "FRA-ORAL-F36-V1",
-      "title": "Un progrès réel, mais obtenu avec quelle aide ?",
-      "kind": "Analyser une situation",
-      "context": "Objectif : raconter un incident de façon compréhensible. Premier essai : l’élève nomme les personnages mais ne dit pas ce qui s’est passé ; l’adulte pose cinq questions et construit avec lui la suite. Second essai sur un incident comparable : l’élève situe l’événement, raconte le problème et son issue ; l’adulte demande seulement « Et ensuite ? ». L’auditeur restitue correctement le problème mais hésite sur qui a aidé le personnage.",
-      "prompt": "Analyse les progrès et les limites à partir de ces traces et des aides. Propose deux critères avec leurs indicateurs, une régulation prioritaire et un nouvel essai pour en examiner l’effet. Précise ce que ces données ne permettent pas d’attester.",
-      "hints": [
-        "• Points d’observation : Outil qui distingue les capacités et les caractéristiques de l’oral : prise en compte d’autrui et du sujet, appui sur le support, participation, respect, voix, articulation, lexique et syntaxe, avec ou sans aide.\nPour construire une grille d’entraînement, un critère décrit une dimension de réussite liée à l’objectif ; un indicateur est un fait observable permettant de l’examiner. Une trace conserve une production ou une observation. Ces termes sont ici des outils pour analyser les points de S03/S04, pas un barème officiel fourni avec les cas.",
-        "S04d11 demande de situer l’élève par rapport à lui-même et de préparer la suite de l’enseignement. Compare des productions proches en notant les aides. Relie les traces du locuteur et la compréhension des auditeurs.\nUne transcription orthographique conserve des mots ; les conventions de S04d14 peuvent noter pauses, intonation ou faible volume lorsqu’ils ont été observés. Elle ne restitue pas automatiquement gestes et voix ; audio et vidéo conservent d’autres indices, avec leurs limites. Réguler ajuste l’enseignement ou l’aide depuis ces informations. Un plan écrit ne prouve aucune expérimentation ni capacité non observée."
-      ],
-      "criteria": [
-        {
-          "id": "c1",
-          "text": "J’analyse progrès et limites en tenant compte des aides."
-        },
-        {
-          "id": "c2",
-          "text": "Je propose deux critères et des indicateurs distincts."
-        },
-        {
-          "id": "c3",
-          "text": "Je choisis une régulation et un nouvel essai liés aux traces."
-        },
-        {
-          "id": "c4",
-          "text": "J’explicite les limites de ce que les données attestent."
-        }
-      ],
-      "answer": {
-        "summary": "L’organisation du récit progresse avec moins d’aide, mais l’identité du personnage qui aide reste incertaine pour l’auditeur ; les traces permettent une régulation ciblée sans conclure à une maîtrise totale.",
-        "steps": [
-          {
-            "title": "Lire les évolutions",
-            "text": "Le second essai comporte davantage d’éléments organisés et nécessite moins de questions. Le propos de l’auditeur atteste une compréhension du problème, tout en localisant une incertitude sur un acteur. On ne peut donc pas résumer le résultat par réussi ou raté."
-          },
-          {
-            "title": "Choisir les repères",
-            "text": "Un critère de cohérence peut être observé par la présence d’un problème et d’une issue reliés. Un critère d’identification des personnages peut être observé par la restitution correcte de qui aide qui. Le nombre et la nature des relances doivent accompagner ces traces."
-          },
-          {
-            "title": "Réguler et suivre",
-            "text": "L’adulte peut faire préciser puis reprendre le personnage aidant, et observer un nouveau récit comparable avec une aide limitée. La restitution d’un autre auditeur permettra d’examiner l’effet. Ces données ne renseignent pas sur des gestes ou une voix non décrits et ne prouvent pas un usage autonome dans toutes les situations."
-          }
-        ],
-        "pitfalls": [
-          "Ignorer l’aide dans la comparaison des essais.",
-          "Conclure à une maîtrise générale après un seul progrès."
-        ]
-      },
-      "sources": [
-        {
-          "file": "2026-10-08_BP1-18FRA-2_SUPPORT_SEMINAIRE_04_ORAL.pdf",
-          "location": "Diapositives10–14, PDF p.5–6."
-        },
-        {
-          "file": "2026-10-01_BP1-18FRA_SUPPORT_SEMINAIRE_03_ORAL_DVP_COMPLET.pdf",
-          "location": "Diapositive27, PDF p.13 : grille d’observation."
-        }
-      ],
-      "module": "BP1-18FRA",
-      "course": "S04",
-      "collection": "fra-qcm-oral",
-      "familyId": "ORAL-F36",
-      "referenceId": "S04",
-      "variant": 1,
-      "contentRevision": "0e33a51e6e18",
-      "steps": [
-        {
-          "id": "Q3",
-          "prompt": "Après le récit d’un incident, l’auditeur sait quel était le problème mais hésite sur l’identité de celui qui a aidé. Pour le critère « rendre les personnages identifiables », quel indice observable recueillir au prochain essai ?",
-          "correctId": "b",
-          "choices": [
-            {
-              "id": "a",
-              "text": "Le nombre de personnages mentionnés par le narrateur.",
-              "explanation": "Le nombre d’acteurs ne dit pas si leurs désignations permettent de comprendre qui fait quoi."
-            },
-            {
-              "id": "b",
-              "text": "L’identité de celui qui aide et de celui qui est aidé, restituée par l’auditeur.",
-              "explanation": "Un indice observable est un fait que l’on peut relever pour examiner si un critère est atteint. La restitution des rôles par l’auditeur permet d’examiner directement si les personnages sont identifiables dans ce récit."
-            },
-            {
-              "id": "c",
-              "text": "Le nombre de relances apportées par l’adulte pendant le récit.",
-              "explanation": "Noter les aides est utile pour interpréter le progrès, mais leur nombre ne renseigne pas directement sur l’identité comprise par l’auditeur."
-            },
-            {
-              "id": "d",
-              "text": "La présence d’un nom de personnage avant chaque nouvelle action.",
-              "explanation": "Répéter les noms est un moyen possible, pas une condition de chaque action. L’indice observable doit permettre d’examiner l’identification, sans imposer ce procédé unique."
-            }
-          ],
-          "requiresContext": false,
-          "level": "essentiel",
-          "sansChoix": false,
-          "attenteId": "A4"
-        }
-      ],
-      "qcmRevision": "01a9d96c9d9d",
-      "courseGroupKey": "4",
-      "hasWrittenExercise": true
-    },
-    {
       "id": "FRA-ORAL-F18-V1",
       "title": "Sortir de la suite question–réponse",
       "kind": "Construire une réponse",
@@ -3892,7 +3623,7 @@
       "steps": [
         {
           "id": "Q3",
-          "prompt": "En réponse à l’enseignante, Inès dit que le garçon retourne à la cabane « pour chercher sa sœur ». Malik ajoute : « Si c’est pour sa sœur, comme dit Inès, c’est qu’il ne l’a pas retrouvée avec les autres. » Quel type d’écoute Malik manifeste-t-il et qu’est-ce qui le montre ?",
+          "prompt": "Pendant une discussion sur une histoire, l'enseignante demande pourquoi le garçon retourne à la cabane. Inès répond : « Pour chercher sa sœur. » Malik ajoute : « Si c'est pour sa sœur, comme dit Inès, c'est qu'il ne l'a pas retrouvée avec les autres. » Comment décrire l'intervention de Malik ?",
           "correctId": "d",
           "choices": [
             {
@@ -3907,8 +3638,8 @@
             },
             {
               "id": "c",
-              "text": "C’est une écoute marquée : l’intervention de Malik est plus longue que celle d’Inès.",
-              "explanation": "La longueur ne démontre pas la prise en compte d’autrui. Une réponse longue pourrait rester centrée sur la seule question adulte."
+              "text": "C’est une reformulation : Malik redit avec ses mots ce qu’Inès vient de dire.",
+              "explanation": "La reformulation par l’élève consiste à redire avec ses propres mots ce qu’un camarade vient de dire, après l’avoir compris (cours 03). Malik ne redit pas le propos d’Inès : il le prend comme point de départ pour avancer sa propre hypothèse, ce qui relève de l’écoute marquée."
             },
             {
               "id": "d",
@@ -3984,7 +3715,7 @@
           "attenteId": "O6"
         }
       ],
-      "qcmRevision": "da76f950cd87",
+      "qcmRevision": "a22fd4209fbb",
       "courseGroupKey": "2",
       "hasWrittenExercise": true
     },
@@ -4562,7 +4293,7 @@
           ],
           "level": "essentiel",
           "sansChoix": true,
-          "attenteId": "L4"
+          "attenteId": "L4.1"
         }
       ],
       "qcmRevision": "f080b196aa6e9e24"
@@ -5605,7 +5336,7 @@
           ],
           "level": "essentiel",
           "sansChoix": true,
-          "attenteId": "O5"
+          "attenteId": "O5.1"
         },
         {
           "id": "Q4",
@@ -5892,7 +5623,7 @@
           ],
           "level": "approfondissement",
           "sansChoix": true,
-          "attenteId": "O5"
+          "attenteId": "O5.1"
         }
       ],
       "qcmRevision": "bf3c868a9a141466"
@@ -6880,7 +6611,7 @@
           ],
           "level": "essentiel",
           "sansChoix": true,
-          "attenteId": "O6"
+          "attenteId": "O6.1"
         },
         {
           "id": "Q4",
@@ -7129,11 +6860,43 @@
           "level": "essentiel",
           "sansChoix": true,
           "notionId": "N108",
-          "attenteId": "A3"
+          "attenteId": "A3.2"
+        },
+        {
+          "id": "Q6",
+          "prompt": "À quoi sert la répartition des rôles langagiers dans une discussion à visée philosophique ?",
+          "requiresContext": false,
+          "correctId": "c",
+          "choices": [
+            {
+              "id": "a",
+              "text": "À évaluer chaque élève sur la façon dont il tient le rôle qui lui est confié.",
+              "explanation": "Les rôles organisent le travail commun ; ils ne servent pas d'abord à noter les élèves. Observer est un rôle parmi d'autres, tenu par un élève pour examiner le travail de pensée du groupe."
+            },
+            {
+              "id": "b",
+              "text": "À réserver les rôles à l'enseignant·e, qui garde ainsi la conduite de la discussion.",
+              "explanation": "Au démarrage, l'enseignant·e assume la plupart des rôles, mais le but est de partager les responsabilités : ce partage conduit ensuite à la coanimation."
+            },
+            {
+              "id": "c",
+              "text": "À faire porter l'échange par plusieurs élèves, qui travaillent chacun des capacités différentes.",
+              "explanation": "Les rôles langagiers (animer, présider, reformuler, synthétiser, rendre compte, discuter, observer) répartissent les responsabilités dans l'échange. Chaque rôle donne l'occasion de travailler des capacités distinctes ; on retient d'abord cette idée de partage, plutôt que la liste des rôles un par un."
+            },
+            {
+              "id": "d",
+              "text": "À faire tourner les rôles entre les élèves selon un ordre fixé à l'avance.",
+              "explanation": "Le cours ne décrit pas de rotation obligatoire. L'intérêt du partage tient aux occasions de travailler des capacités différentes, pas à un ordre de passage."
+            }
+          ],
+          "level": "essentiel",
+          "sansChoix": true,
+          "notionId": "N151",
+          "attenteId": "A3.2"
         },
         {
           "id": "Q1",
-          "prompt": "Quel rôle langagier cet élève tient-il dans la discussion ?\nElle demande à Malik de définir le mot « courage », puis relie son idée à celle d'Inès.",
+          "prompt": "Pendant une discussion à visée philosophique, Nina demande à Malik de définir le mot « courage », puis relie l'idée de Malik à celle d'Inès. Quel rôle langagier tient Nina ?",
           "requiresContext": false,
           "correctId": "b",
           "choices": [
@@ -7158,44 +6921,13 @@
               "explanation": "Observer, c'est examiner la tenue des rôles ou le travail de pensée : questions, définitions, positions, arguments. Or, ici, l'élève demande une définition et relie des interventions : ce n'est pas ce que cette catégorie décrit d'abord."
             }
           ],
-          "level": "essentiel",
+          "level": "approfondissement",
           "sansChoix": true,
-          "attenteId": "A3"
-        },
-        {
-          "id": "Q2",
-          "prompt": "Quel rôle langagier cet élève tient-il dans la discussion ?\nIl redit avec ses mots ce que Lina vient d'expliquer, en gardant son idée.",
-          "requiresContext": false,
-          "correctId": "a",
-          "choices": [
-            {
-              "id": "a",
-              "text": "Reformuler",
-              "explanation": "Un rôle langagier est une responsabilité dans les échanges ; il se distingue des capacités que cette responsabilité fait travailler. Reformuler, c'est écouter, comprendre et redire fidèlement le propos d'un camarade. Ici, l'élève redit fidèlement le propos d'une camarade."
-            },
-            {
-              "id": "b",
-              "text": "Synthétiser",
-              "explanation": "Synthétiser, c'est réunir les idées importantes des échanges et les restituer. Or, ici, l'élève redit fidèlement le propos d'une camarade : ce n'est pas ce que cette catégorie décrit d'abord."
-            },
-            {
-              "id": "c",
-              "text": "Animer",
-              "explanation": "Animer, c'est faire progresser la recherche : demander une précision, une définition ou une raison, relier les interventions et la question. Or, ici, l'élève redit fidèlement le propos d'une camarade : ce n'est pas ce que cette catégorie décrit d'abord."
-            },
-            {
-              "id": "d",
-              "text": "Discuter",
-              "explanation": "Discuter, c'est proposer un point de vue argumenté, réagir aux autres et apporter des idées. Or, ici, l'élève redit fidèlement le propos d'une camarade : ce n'est pas ce que cette catégorie décrit d'abord."
-            }
-          ],
-          "level": "essentiel",
-          "sansChoix": true,
-          "attenteId": "A3"
+          "attenteId": "A3.4"
         },
         {
           "id": "Q3",
-          "prompt": "Quel rôle langagier cet élève tient-il dans la discussion ?\nÀ la fin, elle réunit les idées importantes de la discussion et les redit au groupe.",
+          "prompt": "Pendant une discussion à visée philosophique, Sofia réunit à la fin les idées importantes de la discussion et les redit au groupe. Quel rôle langagier tient Sofia ?",
           "requiresContext": false,
           "correctId": "b",
           "choices": [
@@ -7220,136 +6952,12 @@
               "explanation": "Reformuler, c'est écouter, comprendre et redire fidèlement le propos d'un camarade. Or, ici, l'élève réunit les idées importantes et les restitue : ce n'est pas ce que cette catégorie décrit d'abord."
             }
           ],
-          "level": "essentiel",
+          "level": "approfondissement",
           "sansChoix": true,
-          "attenteId": "A3"
-        },
-        {
-          "id": "Q4",
-          "prompt": "Quel rôle langagier cet élève tient-il dans la discussion ?\nElle note qui définit les mots, qui donne des arguments et si chacun tient son rôle.",
-          "requiresContext": false,
-          "correctId": "d",
-          "choices": [
-            {
-              "id": "a",
-              "text": "Synthétiser",
-              "explanation": "Synthétiser, c'est réunir les idées importantes des échanges et les restituer. Or, ici, l'élève examine le travail de pensée et la tenue des rôles : ce n'est pas ce que cette catégorie décrit d'abord."
-            },
-            {
-              "id": "b",
-              "text": "Discuter",
-              "explanation": "Discuter, c'est proposer un point de vue argumenté, réagir aux autres et apporter des idées. Or, ici, l'élève examine le travail de pensée et la tenue des rôles : ce n'est pas ce que cette catégorie décrit d'abord."
-            },
-            {
-              "id": "c",
-              "text": "Animer",
-              "explanation": "Animer, c'est faire progresser la recherche : demander une précision, une définition ou une raison, relier les interventions et la question. Or, ici, l'élève examine le travail de pensée et la tenue des rôles : ce n'est pas ce que cette catégorie décrit d'abord."
-            },
-            {
-              "id": "d",
-              "text": "Observer",
-              "explanation": "Un rôle langagier est une responsabilité dans les échanges ; il se distingue des capacités que cette responsabilité fait travailler. Observer, c'est examiner la tenue des rôles ou le travail de pensée : questions, définitions, positions, arguments. Ici, l'élève examine le travail de pensée et la tenue des rôles."
-            }
-          ],
-          "level": "essentiel",
-          "sansChoix": true,
-          "attenteId": "A3"
+          "attenteId": "A3.4"
         }
       ],
-      "qcmRevision": "38e3fce8ad328e61"
-    },
-    {
-      "id": "ORAL-P-F34",
-      "familyId": "ORAL-P-F34",
-      "module": "BP1-18FRA",
-      "collection": "fra-qcm-oral",
-      "sourceBankId": "QCM_BP1-18FRA_S1_ORAL_PILIERS",
-      "course": "S03",
-      "referenceId": "S03",
-      "courseGroupKey": "3",
-      "hasWrittenExercise": false,
-      "title": "Cours 3 · QCM",
-      "context": "",
-      "prompt": "",
-      "hints": [
-        "Repère la responsabilité que l'élève prend dans l'échange : faire avancer la recherche, organiser la parole, redire, réunir les idées, donner son avis ou observer. Un élève peut animer ; au début, c'est souvent l'enseignant·e qui tient ce rôle.",
-        "Animer : Faire progresser la recherche : demander une précision, une définition ou une raison, relier les interventions et la question. Présider la séance : Organiser les tours de parole et le temps selon des règles communes ; donner une place à ceux qui parlent peu tout en respectant le droit de se taire. Reformuler : Écouter, comprendre et redire fidèlement le propos d’un camarade. Synthétiser : Réunir les idées importantes des échanges et les restituer. Rendre compte : Rapporter le contenu ou le déroulement du travail à partir de ce qui a été retenu (fonction déduite de l’intitulé). Discuter : Proposer un point de vue argumenté, réagir aux autres et apporter des idées. Observer : Examiner la tenue des rôles ou le travail de pensée : questions, définitions, positions et arguments."
-      ],
-      "sources": [
-        {
-          "file": "SYNTHESE_BP1-18FRA_S1_SEMINAIRE_03.docx",
-          "location": "2 Installer et animer l'atelier de philosophie : tableau 1"
-        },
-        {
-          "file": "SYNTHESE_BP1-18FRA_S1_COURS_03.docx",
-          "location": "5 Développer l'argumentation par l'atelier de philosophie : tableau 5"
-        }
-      ],
-      "steps": [
-        {
-          "id": "Q1",
-          "prompt": "Quel rôle langagier cet élève tient-il dans la discussion ?\nIl donne la parole à chacun dans l'ordre et laisse Anna passer son tour si elle préfère.",
-          "requiresContext": false,
-          "correctId": "c",
-          "choices": [
-            {
-              "id": "a",
-              "text": "Reformuler",
-              "explanation": "Reformuler, c'est écouter, comprendre et redire fidèlement le propos d'un camarade. Or, ici, l'élève organise les tours de parole et respecte le droit de se taire : ce n'est pas ce que cette catégorie décrit d'abord."
-            },
-            {
-              "id": "b",
-              "text": "Observer",
-              "explanation": "Observer, c'est examiner la tenue des rôles ou le travail de pensée : questions, définitions, positions, arguments. Or, ici, l'élève organise les tours de parole et respecte le droit de se taire : ce n'est pas ce que cette catégorie décrit d'abord."
-            },
-            {
-              "id": "c",
-              "text": "Présider la séance",
-              "explanation": "Un rôle langagier est une responsabilité dans les échanges ; il se distingue des capacités que cette responsabilité fait travailler. Présider, c'est organiser les tours de parole et le temps selon des règles communes, en donnant une place à ceux qui parlent peu. Ici, l'élève organise les tours de parole et respecte le droit de se taire."
-            },
-            {
-              "id": "d",
-              "text": "Animer",
-              "explanation": "Animer, c'est faire progresser la recherche : demander une précision, une définition ou une raison, relier les interventions et la question. Or, ici, l'élève organise les tours de parole et respecte le droit de se taire : ce n'est pas ce que cette catégorie décrit d'abord."
-            }
-          ],
-          "level": "essentiel",
-          "sansChoix": true,
-          "attenteId": "A3"
-        },
-        {
-          "id": "Q2",
-          "prompt": "Quel rôle langagier cet élève tient-il dans la discussion ?\nIl propose son avis, le justifie et réagit à ce qu'a dit Jules.",
-          "requiresContext": false,
-          "correctId": "a",
-          "choices": [
-            {
-              "id": "a",
-              "text": "Discuter",
-              "explanation": "Un rôle langagier est une responsabilité dans les échanges ; il se distingue des capacités que cette responsabilité fait travailler. Discuter, c'est proposer un point de vue argumenté, réagir aux autres et apporter des idées. Ici, l'élève défend un point de vue et réagit aux autres."
-            },
-            {
-              "id": "b",
-              "text": "Reformuler",
-              "explanation": "Reformuler, c'est écouter, comprendre et redire fidèlement le propos d'un camarade. Or, ici, l'élève défend un point de vue et réagit aux autres : ce n'est pas ce que cette catégorie décrit d'abord."
-            },
-            {
-              "id": "c",
-              "text": "Observer",
-              "explanation": "Observer, c'est examiner la tenue des rôles ou le travail de pensée : questions, définitions, positions, arguments. Or, ici, l'élève défend un point de vue et réagit aux autres : ce n'est pas ce que cette catégorie décrit d'abord."
-            },
-            {
-              "id": "d",
-              "text": "Animer",
-              "explanation": "Animer, c'est faire progresser la recherche : demander une précision, une définition ou une raison, relier les interventions et la question. Or, ici, l'élève défend un point de vue et réagit aux autres : ce n'est pas ce que cette catégorie décrit d'abord."
-            }
-          ],
-          "level": "essentiel",
-          "sansChoix": true,
-          "attenteId": "A3"
-        }
-      ],
-      "qcmRevision": "e798d194e76154db"
+      "qcmRevision": "3dd1e3eeaee3ca56"
     },
     {
       "id": "ORAL-P-F36",
@@ -7586,7 +7194,7 @@
       "steps": [
         {
           "id": "Q1",
-          "prompt": "Un genre de texte oral se décrit selon six composantes : la situation de communication, les contenus thématiques, la structuration, les unités linguistiques, l'oralité et les supports. À quelle composante se rapporte cette observation sur le récit d'un élève ?\nL'élève raconte à un camarade comme s'il parlait à l'enseignante, qui connait déjà l'histoire : il ne se demande pas ce que son destinataire ignore.",
+          "prompt": "Un genre de texte oral se décrit selon six composantes : la situation de communication, les contenus thématiques, la structuration, les unités linguistiques, l'oralité et les supports. À quelle composante se rapporte cette observation sur le récit d'un élève ?\nL'élève raconte à un camarade comme s'il parlait à l'enseignante, qui connait déjà l'histoire : l'élève ne se demande pas ce que son destinataire ignore.",
           "requiresContext": false,
           "correctId": "c",
           "choices": [
@@ -7713,7 +7321,7 @@
           "attenteId": "A5"
         }
       ],
-      "qcmRevision": "01b732c48c361634"
+      "qcmRevision": "acac5746a4e497f6"
     },
     {
       "id": "ORAL-P-F40",
@@ -7741,7 +7349,7 @@
       "steps": [
         {
           "id": "Q1",
-          "prompt": "Un genre de texte oral se décrit selon six composantes : la situation de communication, les contenus thématiques, la structuration, les unités linguistiques, l'oralité et les supports. À quelle composante se rapporte cette observation sur le récit d'un élève ?\nL'histoire de l'élève ne comporte aucun personnage : il décrit seulement la pluie, la rivière qui monte et la route coupée.",
+          "prompt": "Un genre de texte oral se décrit selon six composantes : la situation de communication, les contenus thématiques, la structuration, les unités linguistiques, l'oralité et les supports. À quelle composante se rapporte cette observation sur le récit d'un élève ?\nL'histoire de l'élève ne comporte aucun personnage : l'élève décrit seulement la pluie, la rivière qui monte et la route coupée.",
           "requiresContext": false,
           "correctId": "b",
           "choices": [
@@ -7836,7 +7444,7 @@
           "attenteId": "A5"
         }
       ],
-      "qcmRevision": "4f3a55f49fbf3d9f"
+      "qcmRevision": "fe1eb435f01b6e4e"
     },
     {
       "id": "ORAL-P-F41",
@@ -8053,7 +7661,7 @@
         },
         {
           "id": "Q3",
-          "prompt": "Dans la progression souple de Boisseau (repères pour développer la syntaxe parlée), sur quel axe porte cette observation ?\nUn enfant relie deux idées avec « parce que » : « Je prends mon manteau parce que j'ai froid. »",
+          "prompt": "Un enfant dit : « Je prends mon manteau parce que j'ai froid. » Dans la progression souple de Boisseau (repères pour développer la syntaxe parlée), sur quel axe se situe « parce que j'ai froid » ?",
           "requiresContext": false,
           "correctId": "a",
           "choices": [
@@ -8114,7 +7722,7 @@
           "attenteId": "L7"
         }
       ],
-      "qcmRevision": "8ff95c02c99d0006"
+      "qcmRevision": "37b4005c00de6956"
     },
     {
       "id": "ORAL-P-F43",
@@ -8425,7 +8033,7 @@
         },
         {
           "id": "Q2",
-          "prompt": "Quelle approche de l'acquisition du langage cette explication ou cette situation met-elle au premier plan ?\nChaque fois que Tom dit « eau » pour demander à boire, sa mère sourit et lui donne un verre ; il redit « eau » de plus en plus souvent.",
+          "prompt": "Quelle approche de l'acquisition du langage cette explication ou cette situation met-elle au premier plan ?\nChaque fois que Tom dit « eau » pour demander à boire, sa mère sourit et lui donne un verre ; Tom redit « eau » de plus en plus souvent.",
           "requiresContext": false,
           "correctId": "c",
           "choices": [
@@ -8486,7 +8094,7 @@
           "attenteId": "L2"
         }
       ],
-      "qcmRevision": "b38993400a4c810e"
+      "qcmRevision": "c1b7233803cf03a3"
     },
     {
       "id": "ORAL-P-F46",
@@ -8767,7 +8375,7 @@
         },
         {
           "id": "Q2",
-          "prompt": "Quelle approche de l'acquisition du langage cette explication ou cette situation met-elle au premier plan ?\nJo n'arrive pas à finir un puzzle seul ; en en parlant avec sa grande sœur, qui le guide, il y parvient. On explique que ce dialogue construit sa pensée.",
+          "prompt": "Quelle approche de l'acquisition du langage cette explication ou cette situation met-elle au premier plan ?\nJo n'arrive pas à finir un puzzle seul ; en en parlant avec sa grande sœur, qui le guide, Jo y parvient. On explique que ce dialogue construit sa pensée.",
           "requiresContext": false,
           "correctId": "c",
           "choices": [
@@ -8797,7 +8405,7 @@
           "attenteId": "L2"
         }
       ],
-      "qcmRevision": "c7b7f4cccf1f4204"
+      "qcmRevision": "63dcf16c8576f5cb"
     },
     {
       "id": "ORAL-P-F49",
@@ -9569,6 +9177,38 @@
           "attenteId": "L7"
         },
         {
+          "id": "Q4",
+          "prompt": "À quoi servent les systèmes à trois temps de la progression de Boisseau ?",
+          "requiresContext": false,
+          "correctId": "c",
+          "choices": [
+            {
+              "id": "a",
+              "text": "À fixer l'âge auquel l'enfant doit maitriser chaque temps verbal de son répertoire.",
+              "explanation": "Les âges sont des repères d'une progression souple, pas des seuils à atteindre. Les systèmes décrivent comment l'enfant situe les évènements."
+            },
+            {
+              "id": "b",
+              "text": "À corriger les erreurs de conjugaison dans les phrases de l'enfant au fil des échanges.",
+              "explanation": "Les systèmes servent à lire comment l'enfant organise le temps de ses énoncés et à choisir une aide, pas à corriger chaque forme."
+            },
+            {
+              "id": "c",
+              "text": "À situer les évènements les uns par rapport aux autres autour d'un temps de référence.",
+              "explanation": "Chaque système part d'un temps de référence (présent, imparfait, futur simple) et de ce qui le précède et le suit. Les trois formes situent ainsi les évènements les uns par rapport aux autres. Le détail des trois systèmes peut être reporté sur la feuille manuscrite autorisée : on retient surtout leur idée."
+            },
+            {
+              "id": "d",
+              "text": "À compter les phrases complexes que l'enfant produit dans ses récits.",
+              "explanation": "Les phrases complexes relèvent d'un autre axe de la progression de Boisseau, celui des complexités."
+            }
+          ],
+          "level": "essentiel",
+          "sansChoix": true,
+          "notionId": "N152",
+          "attenteId": "L7.1"
+        },
+        {
           "id": "Q3",
           "prompt": "Selon Boisseau, quelle suite d'opérations fait progresser la langue parlée ?",
           "requiresContext": false,
@@ -9600,7 +9240,7 @@
           "attenteId": "L7"
         }
       ],
-      "qcmRevision": "abe61cc949d73b4a"
+      "qcmRevision": "371469297905b36c"
     },
     {
       "id": "ORAL-P-F56",
@@ -9845,29 +9485,29 @@
       "steps": [
         {
           "id": "Q1",
-          "prompt": "Quelle phrase distingue correctement l'approche innéiste et l'approche behavioriste ?",
+          "prompt": "Quelle phrase attribue correctement à chacune des deux approches son point de départ ?",
           "requiresContext": false,
-          "correctId": "b",
+          "correctId": "c",
           "choices": [
             {
               "id": "a",
-              "text": "L'innéisme part des réactions du milieu aux réponses de l'enfant ; le behaviorisme part de dispositions présentes dès la naissance.",
-              "explanation": "Les deux approches sont inversées : ce sont les behavioristes qui partent des réactions du milieu (imitation, renforcement) ; l'innéisme part de dispositions présentes dès la naissance, dont le LAD."
+              "text": "L'innéisme part de l'imitation des modèles fournis par l'adulte ; le behaviorisme part du renforcement des réponses de l'enfant par le milieu.",
+              "explanation": "La moitié consacrée au behaviorisme est juste : l'enfant répond aux stimuli de son milieu, qui renforce ses réponses. Mais l'imitation des modèles est un trait du behaviorisme, pas de l'innéisme, qui part de dispositions présentes dès la naissance."
             },
             {
               "id": "b",
-              "text": "L'innéisme part de dispositions présentes dès la naissance ; le behaviorisme part des réactions du milieu aux réponses de l'enfant.",
-              "explanation": "L'approche innéiste explique le langage par des dispositions innées et des capacités universelles ; l'approche behavioriste, par le milieu, l'imitation et le renforcement."
+              "text": "L'innéisme part de dispositions présentes dès la naissance ; le behaviorisme part de capacités universelles, dont un dispositif d'acquisition du langage.",
+              "explanation": "La moitié consacrée à l'innéisme est juste. Mais les capacités universelles et le dispositif d'acquisition du langage (LAD) sont des traits de l'innéisme : le behaviorisme part du milieu, de l'imitation et du renforcement."
             },
             {
               "id": "c",
-              "text": "L'innéisme part des stades de développement cognitif ; le behaviorisme part de la relation avec l'adulte.",
-              "explanation": "Les stades cognitifs sont ceux de Piaget (constructivisme) et la relation avec l'adulte celle de Bruner (interactionnisme)."
+              "text": "L'innéisme part de dispositions présentes dès la naissance ; le behaviorisme part du renforcement des réponses de l'enfant par le milieu.",
+              "explanation": "L'approche innéiste (Chomsky) explique le langage par des dispositions innées et des capacités universelles ; l'approche behavioriste (Skinner), par le milieu, l'imitation et le renforcement. Les deux moitiés sont justes."
             },
             {
               "id": "d",
-              "text": "L'innéisme fait de l'adulte un médiateur dans la zone proximale ; le behaviorisme fait du langage un outil de pensée.",
-              "explanation": "Ces deux traits appartiennent à l'approche historico-culturelle de Vygotski."
+              "text": "L'innéisme part de l'imitation des modèles fournis par l'adulte ; le behaviorisme part de capacités universelles, dont un dispositif d'acquisition du langage.",
+              "explanation": "Les deux approches sont inversées : l'imitation des modèles est un trait du behaviorisme, et les capacités universelles avec le dispositif d'acquisition du langage (LAD) sont des traits de l'innéisme."
             }
           ],
           "level": "essentiel",
@@ -9903,7 +9543,7 @@
           ],
           "level": "essentiel",
           "sansChoix": false,
-          "attenteId": "L2"
+          "attenteId": "L3"
         },
         {
           "id": "Q5",
@@ -9966,7 +9606,7 @@
           ],
           "level": "essentiel",
           "sansChoix": true,
-          "attenteId": "L2"
+          "attenteId": "L4"
         },
         {
           "id": "Q4",
@@ -9997,10 +9637,10 @@
           ],
           "level": "essentiel",
           "sansChoix": true,
-          "attenteId": "L2"
+          "attenteId": "L4.1"
         }
       ],
-      "qcmRevision": "32116fa13640fa09"
+      "qcmRevision": "3bdc88526e6ee996"
     },
     {
       "id": "ORAL-P-F59",
@@ -10290,8 +9930,8 @@
           "choices": [
             {
               "id": "a",
-              "text": "Le fait de parler d'évènements absents, passés, imaginaires ou à venir, en les rendant compréhensibles.",
-              "explanation": "C'est le langage d'évocation. Il demande des ressources pour rendre un évènement absent compréhensible, mais il ne définit pas la cohérence d'un récit."
+              "text": "Une fin qui ferme l'histoire et la rend complète, sans rien laisser en suspens.",
+              "explanation": "C'est la clôture et la complétude, une autre caractéristique des récits oraux. La cohérence concerne la logique qui relie les évènements, pas leur fin."
             },
             {
               "id": "b",
@@ -10305,8 +9945,8 @@
             },
             {
               "id": "d",
-              "text": "Les cinq moments qui organisent une histoire, de la situation initiale à la situation finale.",
-              "explanation": "C'est le schéma narratif, un outil qui repère la transformation en cinq moments. La cohérence ne se réduit pas à ce découpage : elle tient à la logique des évènements et des informations."
+              "text": "Le rapport du récit au réel : il construit un univers fictionnel ou rapporte des faits vécus.",
+              "explanation": "C'est le critère qui distingue les textes qui racontent des textes qui relatent. La cohérence ne dépend pas de la fiction ou du vécu : elle tient à la logique des évènements."
             }
           ],
           "level": "essentiel",
@@ -10354,23 +9994,23 @@
           "choices": [
             {
               "id": "a",
-              "text": "La transformation d'un genre de référence en objet d'enseignement.",
-              "explanation": "Enseigner un genre suppose de choisir ce qu'on en retient."
+              "text": "La transformation d'un genre de référence en objet d'enseignement, par le choix de ce que les élèves vont apprendre.",
+              "explanation": "La transposition didactique est un concept général de didactique, que le cours 04 applique aux genres : on part d'un genre de référence (social ou littéraire) et on choisit ce qui en deviendra objet d'apprentissage. Elle sert à passer d'une pratique de référence à des objectifs et des tâches accessibles aux élèves."
             },
             {
               "id": "b",
-              "text": "La reproduction à l'identique d'une pratique sociale de référence en classe.",
-              "explanation": "La transposition suppose des choix et ne reproduit pas la pratique à l'identique."
+              "text": "La reproduction à l'identique, en classe, d'une pratique sociale de référence, sans choix de ce que les élèves apprennent.",
+              "explanation": "La transposition suppose des choix : on ne reproduit pas la pratique à l'identique."
             },
             {
               "id": "c",
-              "text": "Le passage d'un genre oral à un genre écrit du même thème, pour les élèves.",
-              "explanation": "La progression spiralaire associe des genres oraux et écrits apparentés, ce qui est autre chose."
+              "text": "Le passage d'un genre oral à un genre écrit apparenté, du même thème, pour reprendre le genre à un autre degré.",
+              "explanation": "La progression spiralaire associe des genres oraux et écrits apparentés et les reprend à des degrés croissants : c'est autre chose."
             },
             {
               "id": "d",
-              "text": "Le passage d'un texte écrit à une version dite de mémoire devant la classe.",
-              "explanation": "C'est la mise en voix d'un texte, c'est-à-dire l'oral récité."
+              "text": "Le passage d'un texte écrit à une version dite de mémoire devant la classe, avec les normes de l'écrit.",
+              "explanation": "C'est la mise en voix d'un texte mémorisé, c'est-à-dire l'oral récité."
             }
           ],
           "level": "essentiel",
@@ -10415,7 +10055,7 @@
           "attenteId": "A5"
         }
       ],
-      "qcmRevision": "833cec6d351e087f"
+      "qcmRevision": "eaa7f858705f7f20"
     },
     {
       "id": "ORAL-P-F62",
@@ -11337,6 +10977,38 @@
           "attenteId": "O6"
         },
         {
+          "id": "Q8",
+          "prompt": "Qu'est-ce qui caractérise le dialogue scolaire habituel ?",
+          "requiresContext": false,
+          "correctId": "c",
+          "choices": [
+            {
+              "id": "a",
+              "text": "Il se déroule librement, sans but fixé, et chacun peut amener des sujets nouveaux.",
+              "explanation": "C'est la conversation : moins formelle, moins contrainte, ouverte aux imprévus. Le dialogue scolaire est au contraire structuré par l'enseignant·e."
+            },
+            {
+              "id": "b",
+              "text": "Il organise une recherche commune où les élèves confrontent leurs raisons autour d'une question.",
+              "explanation": "C'est la discussion. Le dialogue scolaire habituel ne se réduit pas à une recherche commune : l'enseignant·e le dirige."
+            },
+            {
+              "id": "c",
+              "text": "Il est dirigé par l'enseignant·e, qui pose les questions et valide les bonnes réponses.",
+              "explanation": "Le dialogue scolaire habituel est dirigé par l'enseignant·e, orienté par des objectifs, limité dans le temps ; il repose sur le questionnement et la validation des bonnes réponses, et il est évaluatif. Le cours le distingue de la conversation et de la discussion pour repérer comment le questionnement et la place de l'enseignant·e orientent un échange."
+            },
+            {
+              "id": "d",
+              "text": "Il oppose deux positions dont chacune cherche à convaincre l'autre camp.",
+              "explanation": "C'est le débat, confrontation de points de vue pour convaincre. Dans le dialogue scolaire, c'est l'enseignant·e qui conduit l'échange."
+            }
+          ],
+          "level": "essentiel",
+          "sansChoix": true,
+          "notionId": "N153",
+          "attenteId": "O6"
+        },
+        {
           "id": "Q1",
           "prompt": "De quelle forme d'échange s'agit-il ?\nL'enseignante interroge les élèves un à un sur l'histoire lue, valide chaque réponse puis passe à la question suivante.",
           "requiresContext": false,
@@ -11461,7 +11133,7 @@
           "attenteId": "O6"
         }
       ],
-      "qcmRevision": "f6c08d2a0d72b226"
+      "qcmRevision": "ac9e9e502513df5e"
     },
     {
       "id": "ORAL-P-F70",
@@ -11641,7 +11313,7 @@
       "steps": [
         {
           "id": "Q2",
-          "prompt": "Léo ne réussit pas seul à ranger les cubes par taille. Sa grande sœur lui montre le premier cube, puis le laisse continuer, et il y parvient.\nDans cette scène, quelle notion situe ce que Léo réussit avec sa sœur par rapport à ce qu'il réussit seul ?",
+          "prompt": "Léo ne réussit pas seul à ranger les cubes par taille. Sa grande sœur lui montre le premier cube, puis le laisse continuer, et Léo y parvient.\nDans cette scène, quelle notion situe ce que Léo réussit avec sa sœur par rapport à ce qu'il réussit seul ?",
           "requiresContext": false,
           "correctId": "d",
           "choices": [
@@ -11733,7 +11405,7 @@
           "attenteId": "L3"
         }
       ],
-      "qcmRevision": "c2f27e1814ddc233"
+      "qcmRevision": "eb7199b2190fc2e5"
     },
     {
       "id": "ORAL-P-F74",
@@ -11846,7 +11518,7 @@
           ],
           "level": "essentiel",
           "sansChoix": true,
-          "attenteId": "O3"
+          "attenteId": "O3.1"
         }
       ],
       "qcmRevision": "0894aa27f709967f"
@@ -11905,11 +11577,11 @@
           "level": "essentiel",
           "sansChoix": true,
           "notionId": "N138",
-          "attenteId": "A1"
+          "attenteId": "A1.1"
         },
         {
           "id": "Q1",
-          "prompt": "Dans le lien entre compréhension et production de l'oral, que sont les modèles de la situation ?",
+          "prompt": "Selon le cours, un auditeur construit des « modèles de situation » en écoutant un locuteur. Que sont ces modèles ?",
           "requiresContext": false,
           "correctId": "c",
           "choices": [
@@ -11925,7 +11597,7 @@
             },
             {
               "id": "c",
-              "text": "Des représentations de ce que l'auditeur pourrait dire, qui lui servent à anticiper les propos du locuteur.",
+              "text": "Des représentations de ce que l'auditeur pourrait dire, qui l'aident à prévoir la suite des propos.",
               "explanation": "Compréhension et production de l'oral sont interdépendantes : l'auditeur imite discrètement le locuteur et s'appuie sur des modèles de la situation, fondés sur ce qu'il pourrait lui-même dire, pour anticiper ses propos. Ces modèles soutiennent aussi sa propre parole."
             },
             {
@@ -11934,12 +11606,12 @@
               "explanation": "C'est le schéma narratif, qui organise un récit. Il ne décrit pas ce que fait l'auditeur pour anticiper les propos d'un locuteur."
             }
           ],
-          "level": "essentiel",
+          "level": "approfondissement",
           "sansChoix": true,
           "attenteId": "A1"
         }
       ],
-      "qcmRevision": "2a438d2333cda016"
+      "qcmRevision": "64ccda6ad0a88c61"
     },
     {
       "id": "ORAL-P-F78",
@@ -12298,7 +11970,7 @@
       "steps": [
         {
           "id": "Q1",
-          "prompt": "Parmi ces caractéristiques, laquelle le tableau du cours rattache-t-il au bilinguisme précoce simultané ?",
+          "prompt": "Parmi ces repères, lequel le cours associe-t-il au bilinguisme précoce simultané ?",
           "requiresContext": false,
           "correctId": "a",
           "choices": [
@@ -12330,7 +12002,7 @@
         },
         {
           "id": "Q2",
-          "prompt": "Parmi ces caractéristiques, laquelle le tableau du cours rattache-t-il au bilinguisme précoce consécutif ?",
+          "prompt": "Parmi ces repères, lequel le cours associe-t-il au bilinguisme précoce consécutif ?",
           "requiresContext": false,
           "correctId": "c",
           "choices": [
@@ -12362,7 +12034,7 @@
         },
         {
           "id": "Q3",
-          "prompt": "Parmi ces caractéristiques, laquelle le tableau du cours rattache-t-il au bilinguisme tardif ?",
+          "prompt": "Parmi ces repères, lequel le cours associe-t-il au bilinguisme tardif ?",
           "requiresContext": false,
           "correctId": "b",
           "choices": [
@@ -12457,7 +12129,7 @@
           "attenteId": "L10"
         }
       ],
-      "qcmRevision": "85c1cbbf572eed3b"
+      "qcmRevision": "65b691c2ca2a4ea1"
     },
     {
       "id": "ORAL-P-F84",
@@ -12521,7 +12193,7 @@
           "level": "approfondissement",
           "sansChoix": true,
           "notionId": "N84",
-          "attenteId": "L10"
+          "attenteId": "L10.1"
         },
         {
           "id": "Q2",
@@ -12553,7 +12225,7 @@
           "level": "essentiel",
           "sansChoix": true,
           "notionId": "N84",
-          "attenteId": "L10"
+          "attenteId": "L10.1"
         },
         {
           "id": "Q3",
@@ -12585,7 +12257,7 @@
           "level": "essentiel",
           "sansChoix": true,
           "notionId": "N84",
-          "attenteId": "L10"
+          "attenteId": "L10.1"
         },
         {
           "id": "Q4",
@@ -12617,7 +12289,7 @@
           "level": "essentiel",
           "sansChoix": true,
           "notionId": "N84",
-          "attenteId": "L10"
+          "attenteId": "L10.3"
         },
         {
           "id": "Q5",
@@ -12646,10 +12318,10 @@
               "explanation": "La dernière étape de la suite est la production de phrases dans la langue de scolarisation. Sana raconte son week-end en phrases complètes. La suite de Tabors décrit les quatre étapes de l'élève allophone : sa langue 1, la phase muette, le langage télégraphique, puis les phrases dans la langue de scolarisation."
             }
           ],
-          "level": "essentiel",
+          "level": "approfondissement",
           "sansChoix": true,
           "notionId": "N84",
-          "attenteId": "L10"
+          "attenteId": "L10.1"
         }
       ],
       "qcmRevision": "a08d5966ade30b9c"
@@ -12838,38 +12510,6 @@
           "attenteId": "T4"
         },
         {
-          "id": "Q2",
-          "prompt": "Une enseignante propose un album écho pour faire raconter une sortie terminée, puis une comptine pour travailler un son. Quel principe pour aider les élèves à parler met-elle en œuvre ?",
-          "requiresContext": false,
-          "correctId": "b",
-          "choices": [
-            {
-              "id": "a",
-              "text": "La prise de parole",
-              "explanation": "La prise de parole demande du temps, une place dans le groupe et une raison de communiquer. Ici, l'enseignante choisit des supports de langage."
-            },
-            {
-              "id": "b",
-              "text": "Les activités proposées",
-              "explanation": "Pour les activités, on propose des situations de langage d'évocation, comme l'album écho, et des comptines pour travailler la prononciation des sons. C'est exactement le choix de l'enseignante."
-            },
-            {
-              "id": "c",
-              "text": "Un étayage ajusté",
-              "explanation": "L'étayage répond à ce que l'enfant essaie d'exprimer dans l'échange. Ici, il s'agit de choisir des activités, pas de répondre à une parole en train de se construire."
-            },
-            {
-              "id": "d",
-              "text": "Une évaluation attentive",
-              "explanation": "L'évaluation demande de ne pas sous-estimer ce que savent les élèves allophones. Ici, l'enseignante ne mesure rien : elle propose des activités."
-            }
-          ],
-          "level": "essentiel",
-          "sansChoix": true,
-          "notionId": "N86",
-          "attenteId": "T4"
-        },
-        {
           "id": "Q3",
           "prompt": "Léa dit : « Il a prendu mon crayon ! » L'enseignante répond d'abord à ce que Léa veut dire, puis redit : « Il a pris ton crayon ? » Quel principe pour aider les élèves à parler met-elle en œuvre ?",
           "requiresContext": false,
@@ -12934,7 +12574,7 @@
           "attenteId": "T4"
         }
       ],
-      "qcmRevision": "d58b1a51711ebbee"
+      "qcmRevision": "9cfbef4e48a8b449"
     },
     {
       "id": "ORAL-P-F87",
@@ -13243,7 +12883,7 @@
       "steps": [
         {
           "id": "Q1",
-          "prompt": "Qu'est-ce qui caractérise, selon le cours, la parole qui s'élabore pendant l'échange dans la langue parlée ?",
+          "prompt": "Qu'est-ce qui caractérise la langue parlée, selon le cours ?",
           "requiresContext": false,
           "correctId": "c",
           "choices": [
@@ -13306,7 +12946,7 @@
           "attenteId": "O2"
         }
       ],
-      "qcmRevision": "65c365267f94fccc"
+      "qcmRevision": "d7ea1c831c50a940"
     },
     {
       "id": "ORAL-P-F91",
@@ -13366,7 +13006,7 @@
         },
         {
           "id": "Q2",
-          "prompt": "L'élève raconte l'histoire d'un chien perdu dans la forêt et s'arrête au moment où il entend un bruit, sans dire ce qui arrive ensuite. Laquelle des quatre caractéristiques des récits fait défaut ?",
+          "prompt": "L'élève raconte l'histoire d'un chien perdu dans la forêt et s'arrête au moment où le chien entend un bruit, sans dire ce qui arrive ensuite. Laquelle des quatre caractéristiques des récits fait défaut ?",
           "requiresContext": false,
           "correctId": "c",
           "choices": [
@@ -13430,7 +13070,7 @@
         },
         {
           "id": "Q4",
-          "prompt": "Dans l'histoire de Tom, les évènements s'enchainent logiquement, mais il ne reprend jamais ses personnages par des pronoms, change de temps verbal sans raison et n'emploie aucun mot pour relier les évènements : l'auditeur ne suit plus qui fait quoi. Laquelle des quatre caractéristiques des récits est en cause ?",
+          "prompt": "Pendant une histoire racontée à la classe, Tom enchaine les évènements dans un ordre logique, mais ne reprend jamais ses personnages par des pronoms, change de temps verbal sans raison et ne relie pas les évènements par des mots : ses camarades ne suivent plus qui fait quoi. Laquelle des quatre caractéristiques des récits est en cause ?",
           "requiresContext": false,
           "correctId": "d",
           "choices": [
@@ -13493,7 +13133,7 @@
           "attenteId": "A5"
         }
       ],
-      "qcmRevision": "ce225836d1bb68ec"
+      "qcmRevision": "2f443a3525a988be"
     },
     {
       "id": "ORAL-P-F92",
@@ -13704,18 +13344,18 @@
           "level": "essentiel",
           "sansChoix": true,
           "notionId": "N93",
-          "attenteId": "A3"
+          "attenteId": "A3.1"
         },
         {
           "id": "Q2",
-          "prompt": "Dans le jeu du marché, Léa, qui parle peu en classe, interpelle les clients d'une voix forte et dit : « Approchez, approchez, belles pommes ! » comme le ferait une vraie marchande. Quelle capacité le jeu de rôles révèle-t-il surtout ici ?",
+          "prompt": "Pendant le jeu du marché, Léa joue la marchande et interpelle les clients d'une voix forte : « Approchez, approchez, belles pommes ! » Quelle capacité le jeu de rôles fait-il apparaître ?",
           "requiresContext": false,
           "correctId": "a",
           "choices": [
             {
               "id": "a",
               "text": "Assumer des rôles énonciatifs dans la situation jouée",
-              "explanation": "Assumer des rôles énonciatifs, c'est s'exprimer comme un personnage dans la situation jouée. Ici, Léa parle comme le ferait ce personnage. Le jeu de rôles peut révéler plusieurs de ces capacités à la fois ; la question vise celle que l'observation met au premier plan."
+              "explanation": "La parodie (cours 04) révèle des capacités que la parole habituelle cache. Assumer des rôles énonciatifs, c'est s'exprimer comme un personnage dans la situation jouée. Ici, Léa parle comme le ferait ce personnage. Le jeu de rôles peut révéler plusieurs de ces capacités à la fois ; la question vise celle que l'observation met au premier plan."
             },
             {
               "id": "b",
@@ -13733,14 +13373,14 @@
               "explanation": "Le décalage apparait quand une grammaire sophistiquée accompagne un contenu encore naïf. Ici, aucun contraste entre grammaire et contenu n'est observé."
             }
           ],
-          "level": "essentiel",
+          "level": "approfondissement",
           "sansChoix": true,
           "notionId": "N93",
-          "attenteId": "A3"
+          "attenteId": "A3.3"
         },
         {
           "id": "Q3",
-          "prompt": "Pour parodier une présentatrice télé, Lou construit « Il faut que vous regardiez cette émission », une formulation soignée, alors que d'ordinaire elle dit « faut que tu regardes cette émission ». Quelle capacité le jeu de rôles révèle-t-il surtout ici ?",
+          "prompt": "Pendant un jeu de rôles, Lou joue une présentatrice télé et dit : « Il faut que vous regardiez cette émission. » D'habitude, Lou dit : « Faut que tu regardes cette émission. » Que révèle la différence entre ces deux phrases ?",
           "requiresContext": false,
           "correctId": "b",
           "choices": [
@@ -13752,7 +13392,7 @@
             {
               "id": "b",
               "text": "Jouer avec la norme grammaticale d'un personnage",
-              "explanation": "Jouer avec la norme grammaticale, c'est ajuster ses constructions à celles d'un personnage soigné ou d'une situation donnée. Ici, Lou ajuste sa construction à celle d'un personnage soigné : « Il faut que vous regardiez » est plus soigné que « faut que tu regardes ». Le jeu de rôles peut révéler plusieurs de ces capacités à la fois ; la question vise celle que l'observation met au premier plan."
+              "explanation": "La parodie (cours 04) révèle des capacités que la parole habituelle cache. Jouer avec la norme grammaticale, c'est ajuster ses constructions à celles d'un personnage soigné ou d'une situation donnée. Ici, Lou ajuste sa construction à celle d'un personnage soigné : « Il faut que vous regardiez » est plus soigné que « faut que tu regardes ». Le jeu de rôles peut révéler plusieurs de ces capacités à la fois ; la question vise celle que l'observation met au premier plan."
             },
             {
               "id": "c",
@@ -13765,46 +13405,14 @@
               "explanation": "Le décalage apparait quand une grammaire sophistiquée accompagne un contenu encore naïf. Ici, aucun contraste entre grammaire et contenu n'est observé : c'est la construction de la phrase qui est comparée."
             }
           ],
-          "level": "essentiel",
+          "level": "approfondissement",
           "sansChoix": true,
           "notionId": "N93",
-          "attenteId": "A3"
-        },
-        {
-          "id": "Q4",
-          "prompt": "Dans le jeu du marché, Ali nomme précisément « les abricots », « les courgettes » et « le kilo », alors qu'en classe il dit surtout « le truc » et « ça ». Quelle capacité le jeu de rôles révèle-t-il surtout ici ?",
-          "requiresContext": false,
-          "correctId": "c",
-          "choices": [
-            {
-              "id": "a",
-              "text": "Assumer des rôles énonciatifs dans la situation jouée",
-              "explanation": "Assumer des rôles énonciatifs, c'est s'exprimer comme un personnage dans la situation jouée. Ici, l'observation ne porte pas sur la manière de tenir un rôle, mais sur les mots employés."
-            },
-            {
-              "id": "b",
-              "text": "Jouer avec la norme grammaticale d'un personnage",
-              "explanation": "Jouer avec la norme grammaticale, c'est ajuster ses constructions à celles d'un personnage soigné ou d'une situation donnée. Ici, ses constructions de phrases ne sont pas ce qui est observé : ce sont ses mots."
-            },
-            {
-              "id": "c",
-              "text": "Employer un vocabulaire plus riche que d'ordinaire",
-              "explanation": "Employer un vocabulaire plus riche, c'est utiliser des mots plus précis que dans ses prises de parole habituelles. Ici, Ali emploie des mots plus précis que d'ordinaire. Le jeu de rôles peut révéler plusieurs de ces capacités à la fois ; la question vise celle que l'observation met au premier plan."
-            },
-            {
-              "id": "d",
-              "text": "Faire voir un décalage entre grammaire et contenu",
-              "explanation": "Le décalage apparait quand une grammaire sophistiquée accompagne un contenu encore naïf. Ici, aucun contraste entre une grammaire sophistiquée et un contenu naïf n'est observé : l'observation porte sur la précision des mots."
-            }
-          ],
-          "level": "essentiel",
-          "sansChoix": true,
-          "notionId": "N93",
-          "attenteId": "A3"
+          "attenteId": "A3.3"
         },
         {
           "id": "Q5",
-          "prompt": "Dans le rôle d'un juge, Nora dit : « Il faudrait que l'accusé se tienne tranquille », une phrase grammaticalement soignée, puis elle ajoute pour toute raison : « parce que les voleurs c'est méchant ». Quelle capacité le jeu de rôles révèle-t-il surtout ici ?",
+          "prompt": "Pendant un jeu de rôles, Nora joue un juge et dit : « Il faudrait que l'accusé se tienne tranquille », puis ajoute pour toute raison : « parce que les voleurs c'est méchant ». Que révèle sa réplique, la phrase et la raison prises ensemble ?",
           "requiresContext": false,
           "correctId": "d",
           "choices": [
@@ -13826,16 +13434,16 @@
             {
               "id": "d",
               "text": "Faire voir un décalage entre grammaire et contenu",
-              "explanation": "Le décalage apparait quand une grammaire sophistiquée accompagne un contenu encore naïf. Ici, une grammaire sophistiquée accompagne un contenu encore naïf : c'est le décalage décrit par le cours. Le jeu de rôles peut révéler plusieurs de ces capacités à la fois ; la question vise celle que l'observation met au premier plan."
+              "explanation": "La parodie (cours 04) révèle des capacités que la parole habituelle cache. Le décalage apparait quand une grammaire sophistiquée accompagne un contenu encore naïf. Ici, une grammaire sophistiquée accompagne un contenu encore naïf : c'est le décalage décrit par le cours. Le jeu de rôles peut révéler plusieurs de ces capacités à la fois ; la question vise celle que l'observation met au premier plan."
             }
           ],
-          "level": "essentiel",
+          "level": "approfondissement",
           "sansChoix": true,
           "notionId": "N93",
-          "attenteId": "A3"
+          "attenteId": "A3.3"
         }
       ],
-      "qcmRevision": "8729020e2cba1968"
+      "qcmRevision": "26bc65d1c8223b6b"
     },
     {
       "id": "ORAL-P-F95",
@@ -14332,14 +13940,14 @@
       "steps": [
         {
           "id": "Q2",
-          "prompt": "Devant le groupe voisin, Zoé raconte comment l'atelier s'est déroulé : le thème choisi, la question posée, puis les étapes de la discussion. Quel rôle langagier tient-elle ?",
+          "prompt": "Après un atelier de philosophie, Zoé rapporte au groupe voisin le déroulement de l'atelier : le thème choisi, la question posée, puis l'ordre des étapes, sans résumer les idées échangées. Quel rôle langagier tient Zoé ?",
           "requiresContext": false,
           "correctId": "c",
           "choices": [
             {
               "id": "a",
               "text": "Synthétiser",
-              "explanation": "Synthétiser, c'est réunir les idées importantes des échanges et les restituer. Le support ne fixe pas de frontière nette avec « rendre compte » ; ici, Zoé rapporte comment le travail s'est déroulé (thème, question, étapes), ce que la fonction de rendre compte nomme."
+              "explanation": "Synthétiser, c'est réunir les idées importantes des échanges et les restituer. Ici, Zoé ne résume pas les idées échangées : elle rapporte le déroulement du travail (thème, question, étapes), ce que la fonction de rendre compte nomme."
             },
             {
               "id": "b",
@@ -14357,13 +13965,13 @@
               "explanation": "Le président de séance organise les tours de parole et le temps selon des règles communes. Zoé n'organise rien : elle rapporte après coup."
             }
           ],
-          "level": "essentiel",
+          "level": "approfondissement",
           "sansChoix": true,
           "notionId": "N98",
-          "attenteId": "A3"
+          "attenteId": "A3.4"
         }
       ],
-      "qcmRevision": "9c0f63852f34fa93"
+      "qcmRevision": "46b077169010a385"
     },
     {
       "id": "ORAL-P-F99",
@@ -14539,7 +14147,7 @@
               "explanation": "Se raconter à tour de rôle peut créer du lien, mais la cohésion sociale n'est pas l'objectif annoncé : on vise ici à mieux mémoriser une leçon."
             }
           ],
-          "level": "essentiel",
+          "level": "approfondissement",
           "sansChoix": true,
           "notionId": "N100",
           "attenteId": "O1"
@@ -14704,28 +14312,28 @@
         },
         {
           "id": "Q2",
-          "prompt": "Qu'est-ce que la reformulation par l'élève ?",
+          "prompt": "Dans une discussion de classe, qu'est-ce que la reformulation par un élève ?",
           "requiresContext": false,
           "correctId": "d",
           "choices": [
             {
               "id": "a",
-              "text": "La reprise par l'adulte de l'énoncé de l'enfant, modifié dans sa forme, pour enrichir son langage.",
+              "text": "Une enseignante qui reprend l'énoncé d'un enfant en modifiant sa forme, pour enrichir son langage.",
               "explanation": "C'est une reformulation de l'adulte, l'une des reprises vues au cours 01 : l'adulte modifie l'énoncé de l'enfant pour enrichir son langage. La reformulation par l'élève porte sur le propos d'un camarade."
             },
             {
               "id": "b",
-              "text": "Le fait de réunir les idées importantes d'une discussion et de les restituer au groupe.",
+              "text": "Un élève qui réunit les idées importantes de la discussion et les redit ensuite au groupe.",
               "explanation": "C'est le rôle de synthétiser, qui rassemble plusieurs idées. La reformulation porte sur le propos d'un camarade, redit avec ses mots."
             },
             {
               "id": "c",
-              "text": "Le fait de prendre en compte la parole des autres élèves dans sa propre intervention.",
+              "text": "Un élève qui prend en compte la parole des autres élèves dans sa propre intervention orale.",
               "explanation": "C'est l'écoute marquée : prendre en compte le propos d'autrui dans sa propre intervention. La reformulation par l'élève désigne une opération précise : redire avec ses mots le propos d'un camarade."
             },
             {
               "id": "d",
-              "text": "Le fait de redire avec ses propres mots ce qu'un camarade vient de dire, après l'avoir écouté et compris.",
+              "text": "Un élève qui redit avec ses propres mots ce qu'un camarade vient de dire, après l'avoir compris.",
               "explanation": "La reformulation par l'élève consiste à redire avec ses propres mots ce qu'un camarade vient de dire, après l'avoir écouté et compris. Elle montre la compréhension et rend le propos réutilisable par le groupe."
             }
           ],
@@ -14765,9 +14373,41 @@
           "sansChoix": true,
           "notionId": "N123",
           "attenteId": "O6"
+        },
+        {
+          "id": "Q5",
+          "prompt": "Qu'est-ce qu'une paire adjacente ?",
+          "requiresContext": false,
+          "correctId": "c",
+          "choices": [
+            {
+              "id": "a",
+              "text": "Une interaction guidée par un but, dans laquelle l'enseignant·e valide les réponses.",
+              "explanation": "C'est le dialogue scolaire, dirigé par l'enseignant·e. Une paire adjacente est plus petite : deux tours liés, dont le premier appelle la réponse du second."
+            },
+            {
+              "id": "b",
+              "text": "Un élève qui redit avec ses propres mots le propos d'un camarade, après l'avoir compris.",
+              "explanation": "C'est la reformulation par l'élève. Une paire adjacente décrit le lien entre deux tours de parole, pas une manière de redire."
+            },
+            {
+              "id": "c",
+              "text": "Deux tours de parole liés : le premier oriente la réponse attendue dans le second.",
+              "explanation": "Une paire adjacente réunit deux tours de parole liés, le premier orientant ce qui est attendu dans le second, comme une question et sa réponse (cours 03). Elle sert à repérer comment une question ou une intervention appelle une réponse dans l'échange."
+            },
+            {
+              "id": "d",
+              "text": "Deux interventions d'élèves dont la seconde s'appuie sur l'idée de la première.",
+              "explanation": "C'est ce que montre l'écoute marquée : un élève prend en compte le propos d'un pair. Une paire adjacente tient à la réponse que le premier tour attend, pas à la reprise d'une idée."
+            }
+          ],
+          "level": "essentiel",
+          "sansChoix": true,
+          "notionId": "N155",
+          "attenteId": "O6"
         }
       ],
-      "qcmRevision": "607c89082cf66fbd"
+      "qcmRevision": "187a0cb7e27c5ea5"
     },
     {
       "id": "ORAL-P-F101",
@@ -14830,38 +14470,6 @@
           "attenteId": "T5"
         },
         {
-          "id": "Q2",
-          "prompt": "Dans l'exemple de répartition des tâches que donne le support principal du cours 04 pour jouer un album, quelle tâche est associée à la lecture ?",
-          "requiresContext": false,
-          "correctId": "d",
-          "choices": [
-            {
-              "id": "a",
-              "text": "Préparer les décors",
-              "explanation": "Dans l'exemple, préparer les décors sollicite une autre contribution que la parole ou la lecture ; c'est la narration qui est associée à la lecture."
-            },
-            {
-              "id": "b",
-              "text": "Faire parler une marionnette",
-              "explanation": "Dans le dispositif décrit au cours 04, le jeu de marionnettes donne lieu à des dialogues spontanés et sécurise l'engagement. Dans l'exemple de répartition, c'est la narration qui est associée à la lecture."
-            },
-            {
-              "id": "c",
-              "text": "Jouer un personnage",
-              "explanation": "Dans l'exemple, jouer un personnage est associé à la mémorisation de son texte, non à la lecture ; c'est la narration qui est associée à la lecture."
-            },
-            {
-              "id": "d",
-              "text": "Assurer la narration",
-              "explanation": "Dans l'exemple du support principal du cours 04, jouer un personnage demande de mémoriser son texte, assurer la narration est associé à la lecture, et préparer les décors sollicite une autre contribution. Cette répartition illustre une différenciation par les tâches."
-            }
-          ],
-          "level": "essentiel",
-          "sansChoix": true,
-          "notionId": "N131",
-          "attenteId": "T5"
-        },
-        {
           "id": "Q3",
           "prompt": "Pourquoi utiliser des marionnettes avec des élèves allophones ou timides ?",
           "requiresContext": false,
@@ -14891,10 +14499,42 @@
           "level": "essentiel",
           "sansChoix": true,
           "notionId": "N132",
+          "attenteId": "T5.1"
+        },
+        {
+          "id": "Q4",
+          "prompt": "Pourquoi répartir des tâches différentes (jouer un personnage, assurer la narration, préparer les décors) quand une classe joue un album ?",
+          "requiresContext": false,
+          "correctId": "b",
+          "choices": [
+            {
+              "id": "a",
+              "text": "Pour réserver la parole devant la classe aux élèves les plus à l'aise.",
+              "explanation": "La répartition vise l'inverse : donner une place à chacun, y compris à ceux qui parlent peu."
+            },
+            {
+              "id": "b",
+              "text": "Pour permettre à chaque élève de participer à partir de ce qu'il sait déjà faire.",
+              "explanation": "C'est la différenciation par les tâches : jouer un personnage demande de mémoriser, assurer la narration peut demander de lire, préparer les décors sollicite une autre contribution. Chacun participe sans faire la même chose."
+            },
+            {
+              "id": "c",
+              "text": "Pour pouvoir évaluer les élèves sur une compétence commune, avec une même consigne pour la classe.",
+              "explanation": "Répartir les tâches fait au contraire varier ce que chacun fait : la différenciation donne des contributions différentes, pas une compétence commune à évaluer."
+            },
+            {
+              "id": "d",
+              "text": "Pour gagner du temps, puisque les élèves ont moins de choses à préparer pour la séance.",
+              "explanation": "Le but n'est pas de réduire le travail : c'est de faire contribuer chacun d'une manière adaptée. Une marionnette peut sécuriser un élève timide, mais ce n'est pas la raison de répartir les tâches."
+            }
+          ],
+          "level": "essentiel",
+          "sansChoix": true,
+          "notionId": "N154",
           "attenteId": "T5"
         }
       ],
-      "qcmRevision": "8135a30383d10502"
+      "qcmRevision": "514d2b049fb99b97"
     },
     {
       "id": "ORAL-P-F104",
@@ -15393,7 +15033,7 @@
           "level": "essentiel",
           "sansChoix": false,
           "notionId": "N144",
-          "attenteId": "A3"
+          "attenteId": "A3.2"
         }
       ],
       "qcmRevision": "5cb7b9d34f6d298b"
@@ -15539,10 +15179,10 @@
       "courseGroupKey": "1",
       "hasWrittenExercise": false,
       "title": "Cours 1 · QCM",
-      "context": "Récit d'un élève en classe de langue seconde (échange étudié au cours 01) :\nTour 1 — Élève : « et alors il dit je j'apporte au le mouton non non »\nTour 2 — Enseignante : « non »\nTour 3 — Élève : « à le bambi »\nTour 4 — Enseignante : « au chevreuil ouais »\nTour 5 — Élève : « le chevreuil »\nTour 6 — Enseignante : « mhm »\nTour 7 — Élève : « et alors l'apporte au chevreuil »",
+      "context": "",
       "prompt": "",
       "hints": [
-        "Demande-toi qui agit au tour 7 et avec quel savoir : l'enseignante, l'élève, le mot et sa construction.",
+        "Demande-toi qui agit quand l'élève réemploie le mot : l'enseignante, l'élève, et quel savoir (le mot et sa construction).",
         "Triangle didactique : Modèle à trois pôles (savoirs, enseignant·e, élève·s) : l'enseignant·e sélectionne, transpose, planifie, transmet le savoir ; l'élève construit ses connaissances et développe ses savoir-faire ; l'enseignant·e interagit, accompagne, enseigne, observe, évalue. Pédagogie : Approche centrée d'abord sur la relation entre l'enseignant et l'élève, quelle que soit la matière étudiée. Étayage : Aide de l'adulte qui, par ses interventions verbales et non verbales, assume dans l'interaction la part encore difficile pour l'enfant et met en évidence les caractéristiques cognitives, langagières et interactionnelles de la tâche, avant de lui en laisser progressivement la responsabilité."
       ],
       "sources": [
@@ -15570,24 +15210,24 @@
       "steps": [
         {
           "id": "Q1",
-          "prompt": "Dans la situation, l'élève emploie « au chevreuil » au tour 7, après l'aide du tour 4. Dans le triangle didactique, sur quelle relation cet emploi renseigne-t-il ?",
-          "requiresContext": true,
+          "prompt": "Dans une classe de langue seconde, un élève dit : « à le bambi ». L'enseignante répond : « au chevreuil ouais ». Plus tard, l'élève dit : « et alors l'apporte au chevreuil ». Dans le triangle didactique, sur quelle relation ce réemploi de « au chevreuil » renseigne-t-il ?",
+          "requiresContext": false,
           "correctId": "c",
           "choices": [
             {
               "id": "a",
               "text": "La relation entre l'enseignante et l'élève",
-              "explanation": "La relation enseignant·e–élèves concerne les interactions : accompagner, enseigner, observer, évaluer. L'aide du tour 4 en relève ; le réemploi du tour 7 montre ce que l'élève fait lui-même du savoir."
+              "explanation": "La relation enseignant·e–élèves concerne les interactions : accompagner, enseigner, observer, évaluer. L'aide de l'enseignante en relève ; le réemploi montre ce que l'élève fait lui-même du savoir."
             },
             {
               "id": "b",
               "text": "La relation entre l'enseignante et les savoirs",
-              "explanation": "La relation enseignant·e–savoirs concerne ce que l'enseignant sélectionne, transpose, planifie et transmet. Au tour 7, c'est l'élève qui agit : il réutilise le mot et la construction dans la suite de son récit."
+              "explanation": "La relation enseignant·e–savoirs concerne ce que l'enseignant sélectionne, transpose, planifie et transmet. Dans le réemploi, c'est l'élève qui agit : il réutilise le mot et la construction dans la suite de son récit."
             },
             {
               "id": "c",
               "text": "La relation entre l'élève et les savoirs",
-              "explanation": "Le triangle didactique sert à repérer quelle relation est en jeu dans un échange. Entre l'élève et les savoirs, on examine ce qu'il construit : en réemployant « au chevreuil », il montre qu'il s'est saisi du mot et de la construction fournis au tour 4. L'aide relevait de la relation enseignant-élève ; son réemploi renseigne sur la relation de l'élève aux savoirs."
+              "explanation": "Selon le triangle didactique (cours 01), on repère quelle relation est en jeu : il sert à repérer quelle relation est en jeu dans un échange. Entre l'élève et les savoirs, on examine ce qu'il construit : en réemployant « au chevreuil », il montre qu'il s'est saisi du mot et de la construction fournis par l'enseignante. L'aide relevait de la relation enseignant-élève ; son réemploi renseigne sur la relation de l'élève aux savoirs."
             },
             {
               "id": "d",
@@ -15601,7 +15241,7 @@
           "attenteId": "T2"
         }
       ],
-      "qcmRevision": "5be0c55e8026b706"
+      "qcmRevision": "4f8e46063b645cd9"
     },
     {
       "id": "ORAL-L-F01",
@@ -15911,7 +15551,7 @@
               "explanation": "Cette reprise utilise une dislocation à droite, mais garde le pronom masculin « ils » : elle ne fait pas entendre le féminin. L'appui tient au pronom « elles », pas à la seule dislocation."
             }
           ],
-          "level": "essentiel",
+          "level": "approfondissement",
           "sansChoix": true,
           "notionId": "L07"
         }
@@ -15929,7 +15569,7 @@
       "courseGroupKey": "5",
       "hasWrittenExercise": false,
       "title": "Liens entre les cours · QCM",
-      "context": "Échange d'Édouard et Nounours (cours 03, analyse proposée par la synthèse) : l'élève reprend le nom « Édouard » par le pronom « il ». L'enseignante exige la phrase sans ce pronom, la fait répéter et valide la disparition du pronom. Dès l'énoncé suivant, l'enfant reprend à nouveau le nom par « il ».",
+      "context": "",
       "prompt": "",
       "hints": [
         "Demande-toi d'abord si la construction de l'élève est une erreur de la langue parlée ou un fonctionnement normal de l'oral. Ensuite, regarde ce que l'élève fait juste après : une réussite obtenue sur demande dure-t-elle ?",
@@ -15960,8 +15600,8 @@
       "steps": [
         {
           "id": "Q1",
-          "prompt": "Dans la situation, comment lire l'intervention de l'enseignante au regard de la langue parlée ?",
-          "requiresContext": true,
+          "prompt": "Dans un échange du cours 03 (exemple de Canut et al., 2012), l'élève dit : « Édouard il couche Nounours. » L'enseignante répond : « Édouard couche Nounours », fait répéter la phrase sans « il », puis dit : « voilà ». Comment lire cette intervention au regard de la langue parlée ?",
+          "requiresContext": false,
           "correctId": "b",
           "choices": [
             {
@@ -15991,8 +15631,8 @@
         },
         {
           "id": "Q2",
-          "prompt": "Dans la situation, l'enfant reprend « il » dès l'énoncé suivant. Que peut-on en conclure ?",
-          "requiresContext": true,
+          "prompt": "Dans un échange du cours 03 (exemple de Canut et al., 2012), l'enseignante vient de valider la phrase « Édouard couche Nounours » par « voilà ». L'élève dit ensuite : « Édouard il baille. » Que peut-on en conclure ?",
+          "requiresContext": false,
           "correctId": "d",
           "choices": [
             {
@@ -16021,7 +15661,7 @@
           "notionId": "L08"
         }
       ],
-      "qcmRevision": "2d2abde344857aab"
+      "qcmRevision": "fbb3aaa235de4292"
     },
     {
       "id": "ORAL-L-F09",
@@ -16419,7 +16059,7 @@
       "steps": [
         {
           "id": "Q1",
-          "prompt": "Sans enregistrement, on analyse la transcription orthographique du récit d'un élève, sans notation phonétique ni prosodique. Quel plan d'analyse ne peut-on pas juger de façon fiable ?",
+          "prompt": "L'enseignante n'a que la transcription écrite du récit d'un élève, sans enregistrement audio. Quel aspect de la parole de l'élève ne peut-elle pas analyser de façon fiable ?",
           "requiresContext": false,
           "correctId": "c",
           "choices": [
@@ -16446,10 +16086,11 @@
           ],
           "level": "essentiel",
           "sansChoix": true,
-          "notionId": "L16"
+          "notionId": "L16",
+          "attenteId": "A4"
         }
       ],
-      "qcmRevision": "cb19045b30d6e51a"
+      "qcmRevision": "24e0e44c46356df2"
     },
     {
       "id": "ORAL-L-F17",
@@ -16493,7 +16134,7 @@
       "steps": [
         {
           "id": "Q1",
-          "prompt": "Avant son exposé, Lina tremble et parle de plus en plus vite. L'enseignante ne cherche pas à supprimer son trac : elle l'invite à ralentir son débit et à garder une posture stable. Quel processus ce conseil soutient-il d'abord ?",
+          "prompt": "Avant son exposé, Lina tremble et parle de plus en plus vite. L'enseignante invite Lina à ralentir son débit et à garder une posture stable. Quel processus ce conseil soutient-il d'abord ?",
           "requiresContext": false,
           "correctId": "b",
           "choices": [
@@ -16523,7 +16164,7 @@
           "notionId": "L17"
         }
       ],
-      "qcmRevision": "31f041d6e495c2f3"
+      "qcmRevision": "f721e3d8db274420"
     },
     {
       "id": "ORAL-L-F18",
@@ -16598,7 +16239,7 @@
         },
         {
           "id": "Q3",
-          "prompt": "Pour mieux retenir les étapes de la germination, des élèves préparent avec des vignettes ce qu'ils vont expliquer à la classe : c'est un oral planifié. L'enseignante vérifie ensuite que les étapes citées sont justes. Quelle fonction l'oral remplit-il dans ce dispositif ?",
+          "prompt": "En sciences, Mme Roy fait préparer avec des vignettes un exposé oral sur les étapes de la germination, pour que les élèves les retiennent. Elle vérifie ensuite que les étapes citées sont justes. Cet oral est planifié : quelle fonction remplit-il dans ce dispositif ?",
           "requiresContext": false,
           "correctId": "b",
           "choices": [
@@ -16628,7 +16269,7 @@
           "notionId": "L18"
         }
       ],
-      "qcmRevision": "3b6a5392e1e99684"
+      "qcmRevision": "d18624e24215e7f9"
     },
     {
       "id": "ORAL-L-F19",
@@ -17287,6 +16928,10 @@
       "stepId": "Q4"
     },
     {
+      "exerciseId": "ORAL-P-F103",
+      "stepId": "Q5"
+    },
+    {
       "exerciseId": "ORAL-P-F68",
       "stepId": "Q5"
     },
@@ -17300,6 +16945,10 @@
     },
     {
       "exerciseId": "ORAL-P-F68",
+      "stepId": "Q8"
+    },
+    {
+      "exerciseId": "ORAL-P-F68",
       "stepId": "Q1"
     },
     {
@@ -17353,10 +17002,6 @@
     {
       "exerciseId": "ORAL-P-F86",
       "stepId": "Q1"
-    },
-    {
-      "exerciseId": "ORAL-P-F86",
-      "stepId": "Q2"
     },
     {
       "exerciseId": "ORAL-P-F86",
@@ -17444,27 +17089,15 @@
     },
     {
       "exerciseId": "ORAL-P-F33",
-      "stepId": "Q1"
+      "stepId": "Q6"
     },
     {
       "exerciseId": "ORAL-P-F33",
-      "stepId": "Q2"
+      "stepId": "Q1"
     },
     {
       "exerciseId": "ORAL-P-F33",
       "stepId": "Q3"
-    },
-    {
-      "exerciseId": "ORAL-P-F33",
-      "stepId": "Q4"
-    },
-    {
-      "exerciseId": "ORAL-P-F34",
-      "stepId": "Q1"
-    },
-    {
-      "exerciseId": "ORAL-P-F34",
-      "stepId": "Q2"
     },
     {
       "exerciseId": "ORAL-P-F98",
@@ -17673,6 +17306,10 @@
     {
       "exerciseId": "ORAL-P-F55",
       "stepId": "Q1"
+    },
+    {
+      "exerciseId": "ORAL-P-F55",
+      "stepId": "Q4"
     },
     {
       "exerciseId": "ORAL-P-F55",
@@ -17900,10 +17537,6 @@
     },
     {
       "exerciseId": "ORAL-P-F93",
-      "stepId": "Q4"
-    },
-    {
-      "exerciseId": "ORAL-P-F93",
       "stepId": "Q5"
     },
     {
@@ -17924,11 +17557,11 @@
     },
     {
       "exerciseId": "ORAL-P-F101",
-      "stepId": "Q2"
+      "stepId": "Q3"
     },
     {
       "exerciseId": "ORAL-P-F101",
-      "stepId": "Q3"
+      "stepId": "Q4"
     },
     {
       "exerciseId": "ORAL-P-F64",
@@ -17975,16 +17608,8 @@
       "stepId": "Q1"
     },
     {
-      "exerciseId": "FRA-ORAL-F09-V2",
-      "stepId": "Q3"
-    },
-    {
       "exerciseId": "FRA-ORAL-F10-V1",
       "stepId": "Q1"
-    },
-    {
-      "exerciseId": "FRA-ORAL-F10-V1",
-      "stepId": "Q3"
     },
     {
       "exerciseId": "FRA-ORAL-F10-V1",
@@ -18007,20 +17632,12 @@
       "stepId": "Q1"
     },
     {
-      "exerciseId": "FRA-ORAL-F12-V1",
-      "stepId": "Q3"
-    },
-    {
       "exerciseId": "FRA-ORAL-F13-V1",
       "stepId": "Q1"
     },
     {
       "exerciseId": "FRA-ORAL-F13-V1",
       "stepId": "Q2"
-    },
-    {
-      "exerciseId": "FRA-ORAL-F13-V1",
-      "stepId": "Q3"
     },
     {
       "exerciseId": "FRA-ORAL-F14-V1",
@@ -18076,10 +17693,6 @@
     },
     {
       "exerciseId": "FRA-ORAL-F29-V2",
-      "stepId": "Q5"
-    },
-    {
-      "exerciseId": "FRA-ORAL-F29-V2",
       "stepId": "Q3"
     },
     {
@@ -18097,10 +17710,6 @@
     {
       "exerciseId": "FRA-ORAL-F34-V2",
       "stepId": "Q4"
-    },
-    {
-      "exerciseId": "FRA-ORAL-F36-V1",
-      "stepId": "Q3"
     },
     {
       "exerciseId": "FRA-ORAL-F37-V1",
@@ -18219,6 +17828,12 @@
       "weight": 2
     },
     {
+      "id": "T5.1",
+      "label": "Marionnettes pour les élèves allophones ou timides",
+      "operation": "dire pourquoi faire parler une marionnette aide",
+      "weight": 1
+    },
+    {
       "id": "L1",
       "label": "Langage, langue, parole",
       "operation": "définir chacun, distinguer deux voisines, reconnaître dans un énoncé court",
@@ -18241,6 +17856,12 @@
       "label": "Reprises des énoncés de l'élève",
       "operation": "définir, classer une reprise en comparant les énoncés, distinguer répétition et reformulation",
       "weight": 1
+    },
+    {
+      "id": "L4.1",
+      "label": "Reprises : distinction générale et cas de reformulation avec extension",
+      "operation": "distinguer répétition et reformulation, reconnaître une reformulation avec extension",
+      "weight": 2
     },
     {
       "id": "L5",
@@ -18267,6 +17888,18 @@
       "weight": 1
     },
     {
+      "id": "L7.1",
+      "label": "Systèmes temporels de Boisseau : idée et lecture d'un énoncé",
+      "operation": "dire à quoi servent les systèmes, repérer le repère temporel d'un énoncé",
+      "weight": 1
+    },
+    {
+      "id": "L7.2",
+      "label": "Relations temporelles fines à l'intérieur d'un système",
+      "operation": "situer une forme verbale par rapport au repère d'un système",
+      "weight": 2
+    },
+    {
       "id": "L8",
       "label": "Développement du récit",
       "operation": "distinguer les deux récits, définir cohérence et cohésion, situer une production sans attribuer un âge",
@@ -18282,6 +17915,18 @@
       "id": "L10",
       "label": "Bilinguisme",
       "operation": "définir les trois situations, classer un élève, rattacher une caractéristique, tirer la conséquence scolaire",
+      "weight": 1
+    },
+    {
+      "id": "L10.1",
+      "label": "Les quatre étapes de l'enfant allophone",
+      "operation": "situer un élève dans les étapes",
+      "weight": 2
+    },
+    {
+      "id": "L10.3",
+      "label": "Première étape de l'allophone : la langue 1",
+      "operation": "reconnaître l'étape « langue 1 »",
       "weight": 1
     },
     {
@@ -18303,6 +17948,12 @@
       "weight": 2
     },
     {
+      "id": "O3.1",
+      "label": "Régulation émotionnelle",
+      "operation": "définir la régulation émotionnelle",
+      "weight": 1
+    },
+    {
       "id": "O4",
       "label": "Parler et dire",
       "operation": "observer qui parle à qui — distinction non développée au cours",
@@ -18315,10 +17966,22 @@
       "weight": 1
     },
     {
+      "id": "O5.1",
+      "label": "Cas simples de classement du non-verbal",
+      "operation": "classer un comportement évident",
+      "weight": 2
+    },
+    {
       "id": "O6",
       "label": "Échanges et capacités langagières",
       "operation": "définir, classer une forme d'échange, reconnaître la capacité visée par une relance",
       "weight": 1
+    },
+    {
+      "id": "O6.1",
+      "label": "Reconnaître « argumenter » dans une relance",
+      "operation": "rattacher une relance à la capacité argumenter",
+      "weight": 2
     },
     {
       "id": "A1",
@@ -18327,9 +17990,15 @@
       "weight": 2
     },
     {
+      "id": "A1.1",
+      "label": "Définir compréhension et production de l'oral",
+      "operation": "définir CO et PO",
+      "weight": 1
+    },
+    {
       "id": "A1b",
       "label": "Structure du PER",
-      "operation": "non demandé par le cadre du bloc oral",
+      "operation": "aucune opération d'examen formulée pour ce savoir dans les sources du bloc",
       "weight": null
     },
     {
@@ -18343,6 +18012,30 @@
       "label": "Parodie et rôles langagiers",
       "operation": "définir, reconnaître le rôle tenu, dire ce que la parodie révèle",
       "weight": 1
+    },
+    {
+      "id": "A3.1",
+      "label": "Parodie : idée et ce qu'elle révèle",
+      "operation": "dire ce que la parodie révèle par rapport à la parole habituelle",
+      "weight": 1
+    },
+    {
+      "id": "A3.2",
+      "label": "Rôle langagier : notion et utilité du partage",
+      "operation": "définir le rôle langagier, dire à quoi sert le partage, dire le rapport rôles-capacités",
+      "weight": 1
+    },
+    {
+      "id": "A3.3",
+      "label": "Parodie : repérer la capacité révélée dans un cas",
+      "operation": "rattacher un cas à la capacité révélée",
+      "weight": 2
+    },
+    {
+      "id": "A3.4",
+      "label": "Les sept rôles langagiers, un par un",
+      "operation": "reconnaître le rôle tenu dans un extrait",
+      "weight": 3
     },
     {
       "id": "A4",
@@ -18383,7 +18076,7 @@
   ],
   "attentesSource": {
     "id": "GRILLE_BP1-18FRA_S1_ORAL",
-    "version": "v01"
+    "version": "v05"
   },
-  "bankRevision": "d691e6b6ef00"
+  "bankRevision": "1a366ad8f0f6"
 }
