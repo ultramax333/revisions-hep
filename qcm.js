@@ -25,7 +25,24 @@
   }
   // v25 : chaque option porte une légende courte, toujours visible (AGENTS §2, postulat iPhone).
   const segmentText = (title, help) => `<span class="segment-text"><span class="segment-title">${esc(title)}</span><span class="segment-help">${esc(help)}</span></span>`;
-  let levelsEnabled = false, levelFilter = 'essentiel', ancientOnly = false, unseenOnly = false, emptyPathMessage = '';
+  let levelsEnabled = false, threeTiers = false, levelFilter = 'essentiel', ancientOnly = false, unseenOnly = false, emptyPathMessage = '';
+  // v26 : trois étages emboîtés (REGLES §5.10, AGENTS §2). Niveau des données : essentiel (étage 1),
+  // essentiel-approfondi (étage 2), approfondissement (étage 3). Choix enregistré : « essentiel » (étage 1),
+  // « approfondi » (étages 1 et 2, interrupteur « + Approfondir »), « tout » (Tout le bloc).
+  // Une banque sans essentiel-approfondi garde ses deux niveaux (Essentiel / Tout), comme en v25.
+  const TWO_LEVELS = ['essentiel', 'approfondissement'], THREE_LEVELS = ['essentiel', 'essentiel-approfondi', 'approfondissement'];
+  const LEVEL_NAMES = { essentiel: 'Essentiel', 'essentiel-approfondi': 'Essentiel approfondi', approfondissement: 'Approfondissement' };
+  const inLevel = (step, filter = levelFilter) => !levelsEnabled || filter === 'tout' || step.level === 'essentiel' || (threeTiers && filter === 'approfondi' && step.level === 'essentiel-approfondi');
+  // « Anciens examens » ignore l'étage choisi quand la banque a trois étages (AGENTS §2).
+  const ancientAllTiers = () => threeTiers && ancientOnly;
+  const levelChoiceLabel = () => ancientAllTiers() ? 'Anciens examens · tous les étages' : threeTiers ? ({ essentiel: 'Essentiel', approfondi: 'Essentiel + approfondi', tout: 'Tout le bloc' })[levelFilter] : levelFilter === 'tout' ? 'Tout' : 'Essentiel';
+  // « Approfondir ce savoir » : parcours propre à cet onglet (sessionStorage), qui ramène ensuite au parcours quitté.
+  const DEEPEN_KEY = 'approfondir', DEEPEN_LABEL = 'Approfondir ce savoir', DEEPEN_STORE = 'hep-revisions-qcm-deepen-v1::' + SCOPE;
+  let deepen = (() => { try { const v = JSON.parse(sessionStorage.getItem(DEEPEN_STORE) || 'null'); return v && typeof v.attenteId === 'string' && typeof v.returnHash === 'string' ? v : null; } catch (_) { return null; } })();
+  function setDeepen(value) {
+    deepen = value;
+    try { if (value) sessionStorage.setItem(DEEPEN_STORE, JSON.stringify(value)); else sessionStorage.removeItem(DEEPEN_STORE); } catch (_) { /* Le parcours reste en mémoire. */ }
+  }
   // v25 : « Revoir, ne pas revoir, refaire » (AGENTS §2).
   const ERRORS_KEY = 'erreurs', ERRORS_LABEL = 'Mes erreurs et difficiles';
   const PRESENTED_KEY = 'hep-revisions-qcm-presented-v1::' + SCOPE;
@@ -40,7 +57,11 @@
   }
   const presentedKey = (q, step) => (withoutChoices ? 'sc::' : 'qcm::') + q.id + '::' + q.qcmRevision + '::' + step.id + (withoutChoices ? '' : '::' + readRun(q).id);
   // Nouvelles tentatives : une entrée par tentative, clé unique, jamais réécrite (l'historique n'est pas effacé).
-  const practicePrefix = (kind, q, step) => (kind === 'sc' ? 'sc-practice::' : 'qcm-practice::') + q.id + '::' + q.qcmRevision + '::' + step.id + '::';
+  const practicePrefix = (kind, q, step, rev = q.qcmRevision) => (kind === 'sc' ? 'sc-practice::' : 'qcm-practice::') + q.id + '::' + rev + '::' + step.id + '::';
+  // v26 : une famille change de révision dès qu'une de ses questions est ajoutée, retirée ou modifiée. Pour chaque question
+  // inchangée, l'exporteur liste les révisions antérieures où elle était identique (compatibleRevisions) : ses réponses,
+  // tentatives et autoévaluations faites sous ces révisions restent les siennes. Rien n'est copié ni effacé dans le stockage.
+  const compatRevs = (q, step) => Array.isArray(step?.compatibleRevisions) ? step.compatibleRevisions.filter(rev => typeof rev === 'string' && /^[0-9a-f]{1,64}$/.test(rev) && rev !== q.qcmRevision) : [];
   // Correction après contrôle Codex : la réponse libre d'une tentative Sans les choix est stockée en texte brut
   // (`sc-practice-text::…`, comme `sc-text::`), à côté de ses métadonnées JSON courtes (`sc-practice::…`) :
   // 8 000 caractères, guillemets compris, tiennent dans la limite de 12 000 d'un brouillon sans échappement.
@@ -65,7 +86,8 @@
       index.forEach(list => list.sort((a, b) => a.at.localeCompare(b.at)));
       practiceCache = { drafts: repo.state.drafts, index };
     }
-    return practiceCache.index.get(practicePrefix(kind, q, step)) || [];
+    const lists = [q.qcmRevision, ...compatRevs(q, step)].map(rev => practiceCache.index.get(practicePrefix(kind, q, step, rev)) || []);
+    return lists.length === 1 ? lists[0] : lists.flat().sort((a, b) => a.at.localeCompare(b.at));
   }
   // Écritures de la v25 sous le même verrou que les essais et Sans les choix (« <collection>-edit ») :
   // deux onglets ne peuvent plus lire puis réécrire l'état en même temps.
@@ -128,7 +150,13 @@
     const frozenOne = frozenFirst(q, step);
     if (frozenOne) return frozenOne;
     const record = scStore?.read(q, step);
-    return record?.selfEvaluation ? record : null;
+    if (record?.selfEvaluation) return record;
+    for (const rev of compatRevs(q, step)) {
+      const old = { ...q, qcmRevision: rev }, before = scStore?.read(old, step);
+      const inherited = frozenFirst(old, step) || (before?.selfEvaluation ? before : null);
+      if (inherited) return { ...inherited, inherited: rev };
+    }
+    return null;
   }
   function freezeFirsts() {
     if (!scStore || !GROUPED_COURSES || !bank) return Promise.resolve(0);
@@ -136,7 +164,7 @@
       ingestLocal();
       let added = 0;
       const at = new Date().toISOString(), frozenKeys = [];
-      for (const q of bank.exercises) for (const step of q.steps) {
+      for (const exercise of bank.exercises) for (const step of exercise.steps) for (const q of [exercise, ...compatRevs(exercise, step).map(rev => ({ ...exercise, qcmRevision: rev }))]) {
         if (step.sansChoix !== true || frozenFirst(q, step)) continue;
         const record = scStore.read(q, step);
         if (!record.selfEvaluation) continue;
@@ -154,7 +182,8 @@
   function qcmStatus(q, step) {
     const run = readRun(q);
     if (!run.revealed[step.id]) return { seen: false, wrong: false };
-    const tries = practiceList('qcm', q, step).filter(p => p.runId === run.id && step.choices.some(c => c.id === p.choice));
+    const runIds = new Set([run.id, ...(compatRevs(q, step).length ? compatRuns(q).map(c => c.raw.id) : [])]);
+    const tries = practiceList('qcm', q, step).filter(p => runIds.has(p.runId) && step.choices.some(c => c.id === p.choice));
     const last = tries.length ? tries[tries.length - 1].choice : run.answers[step.id];
     return { seen: true, wrong: last !== step.correctId };
   }
@@ -179,6 +208,10 @@
   const seenBadge = () => '<span class="seen-badge">Déjà vue</span>';
   const runCache = new Map(), mixExpansionCache = new Map();
   const mixKey = 'hep-revisions-qcm-mixed-position-v1::' + SCOPE;
+  // v26, après contrôle Codex : la v26 écrit son mélange sous sa propre clé ; celle de la v25 (« -v2 ») n'est plus que lue,
+  // en repli. Une v25 restée ouverte garde ainsi son mélange (ordre, curseur, identifiant).
+  const MIX_V26 = 'mixed-position-v26';
+  const storedMix = () => repo.state.drafts[levelStorageKey(MIX_V26)]?.text || repo.state.drafts[levelStorageKey('mixed-position-v2')]?.text || repo.state.drafts[levelStorageKey('mixed-position')]?.text;
   const courseCursorKey = 'hep-revisions-qcm-course-position-v1::' + SCOPE;
   const esc = value => String(value ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
   // v25 : mise en évidence écrite dans les données, « **mot** ». Le texte est d'abord échappé ;
@@ -241,7 +274,7 @@
     nameField?.addEventListener('input', () => binding.refresh());
     stepFeedback = binding; binding.refresh(); return binding;
   }
-  const levelStorageKey = name => (withoutChoices ? 'sc-level-' : 'qcm-level-') + name + '::' + SCOPE + '::' + levelFilter + (ancientOnly ? '::anciens' : '');
+  const levelStorageKey = name => (withoutChoices ? 'sc-level-' : 'qcm-level-') + name + '::' + SCOPE + '::' + (ancientAllTiers() ? 'tout' : levelFilter) + (ancientOnly ? '::anciens' : '');
   const selectedLevelKey = () => (withoutChoices ? 'sc-selected-level::' : 'qcm-selected-level::') + SCOPE;
   const selectedAncientKey = () => (withoutChoices ? 'sc-selected-ancient::' : 'qcm-selected-ancient::') + SCOPE;
   const selectedUnseenKey = () => (withoutChoices ? 'sc-selected-unseen::' : 'qcm-selected-unseen::') + SCOPE;
@@ -261,7 +294,7 @@
   // Sur une question : poids de l'attente, puis niveau de la question (le poids seul distingue peu,
   // presque tout le bloc oral étant central). Poids 3 = « Savoir secondaire » (REGLES §5.10).
   const weightBadge = step => { const w = stepWeight(step); return w ? `<span class="weight-badge weight-${w}"><span class="visually-hidden">Poids du savoir pour l’examen : </span>${w} · ${WEIGHT_LABELS[w]}${w === 3 ? ' · Savoir secondaire' : ''}</span>` : ''; };
-  const levelBadge = step => ['essentiel', 'approfondissement'].includes(step?.level) ? `<span class="level-badge level-${step.level}"><span class="visually-hidden">Niveau de la question : </span>${step.level === 'essentiel' ? 'Essentiel' : 'Approfondissement'}</span>` : '';
+  const levelBadge = step => THREE_LEVELS.includes(step?.level) ? `<span class="level-badge level-${step.level}"><span class="visually-hidden">Niveau de la question : </span>${LEVEL_NAMES[step.level]}</span>` : '';
   const questionMeta = (ref, step, seen = false) => `<div class="question-meta"><p class="exercise-origin">${esc(referenceLabel(ref))}${ref.date ? ' · ' + esc(ref.date) : ''}</p><span class="question-tags">${weightBadge(step)}${levelBadge(step)}${seen ? seenBadge() : ''}</span></div>`;
   function knowBox(course) {
     if (!attenteById.size || course.kind === 'liens') return '';
@@ -270,8 +303,8 @@
     for (const item of items) {
       const a = attenteById.get(item.step.attenteId);
       if (!a || ![1, 2, 3].includes(a.weight)) { unweighted++; continue; }
-      const entry = per.get(a.id) || { a, ess: 0, all: 0 };
-      entry.all++; if (!levelsEnabled || item.step.level === 'essentiel') entry.ess++;
+      const entry = per.get(a.id) || { a, ess: 0, deep: 0, all: 0 };
+      entry.all++; if (!levelsEnabled || item.step.level === 'essentiel') entry.ess++; else if (threeTiers && item.step.level === 'essentiel-approfondi') entry.deep++;
       per.set(a.id, entry);
     }
     if (!per.size) return '';
@@ -279,10 +312,10 @@
     const ess = list.reduce((n, e) => n + e.ess, 0), noun = n => withoutChoices ? (n > 1 ? 'questions essentielles' : 'question essentielle') : (n > 1 ? 'QCM essentiels' : 'QCM essentiel');
     const scope = [withoutChoices ? 'mode Sans les choix' : 'mode QCM', ancientOnly ? 'anciens examens seulement' : ''].filter(Boolean).join(', ');
     const groups = [1, 2, 3].map(w => [w, list.filter(e => e.a.weight === w)]).filter(([, entries]) => entries.length);
-    return `<details class="know-box"><summary><span class="know-title">Ce qu’il faut savoir</span><span class="know-summary">${list.length} savoir${list.length > 1 ? 's' : ''} · ${ess} ${noun(ess)}</span></summary>${groups.map(([w, entries]) => `<div class="know-group">${weightLabel(w)}<ul class="know-list">${entries.map(e => `<li><span class="know-label">${esc(e.a.label)}</span><span class="know-count">${e.ess} ${noun(e.ess)}${e.all > e.ess ? ` · +${e.all - e.ess} avec « Tout »` : ''}</span><span class="know-op">${esc(e.a.operation)}</span></li>`).join('')}</ul></div>`).join('')}<p class="help-text know-scope">Comptes de ce parcours, ${esc(scope)}.${unweighted ? ` ${unweighted} question${unweighted > 1 ? 's' : ''} sans poids.` : ''} Les poids viennent du cadre et de la synthèse de révision ; tes avis sous chaque question aident à les vérifier.</p></details>`;
+    return `<details class="know-box"><summary><span class="know-title">Ce qu’il faut savoir</span><span class="know-summary">${list.length} savoir${list.length > 1 ? 's' : ''} · ${ess} ${noun(ess)}</span></summary>${groups.map(([w, entries]) => `<div class="know-group">${weightLabel(w)}<ul class="know-list">${entries.map(e => `<li><span class="know-label">${esc(e.a.label)}</span><span class="know-count">${e.ess} ${noun(e.ess)}${threeTiers ? `${e.deep ? ` · +${e.deep} avec « + Approfondir »` : ''}${e.all - e.ess - e.deep ? ` · +${e.all - e.ess - e.deep} avec « Tout le bloc »` : ''}` : e.all > e.ess ? ` · +${e.all - e.ess} avec « Tout »` : ''}</span><span class="know-op">${esc(e.a.operation)}</span></li>`).join('')}</ul></div>`).join('')}<p class="help-text know-scope">Comptes de ce parcours, ${esc(scope)}.${unweighted ? ` ${unweighted} question${unweighted > 1 ? 's' : ''} sans poids.` : ''} Les poids viennent du cadre et de la synthèse de révision ; tes avis sous chaque question aident à les vérifier.</p></details>`;
   }
   const snapshotPrompt = step => (step.ancienExamen ? 'Ancien examen\n\n' : '') + step.prompt;
-  const emptySelection = () => unseenOnly ? 'Tu as déjà répondu à toutes les questions de ce choix. Désactive « Seulement les questions pas encore vues » pour les revoir.' : ancientOnly ? 'Aucune question d’ancien examen ne correspond à ce cours ou mélange, au niveau et au mode choisis. Désactive Anciens examens, choisis Tout ou le mode QCM.' : 'Aucune question disponible pour ce parcours. Choisis Tout ou le mode QCM.';
+  const emptySelection = () => unseenOnly ? 'Tu as déjà répondu à toutes les questions de ce choix. Désactive « Seulement les questions pas encore vues » pour les revoir.' : ancientOnly ? 'Aucune question d’ancien examen ne correspond à ce cours ou mélange, au niveau et au mode choisis. Désactive Anciens examens, choisis ' + (threeTiers ? '« Tout le bloc »' : 'Tout') + ' ou le mode QCM.' : 'Aucune question disponible pour ce parcours. Choisis ' + (threeTiers ? '« Tout le bloc »' : 'Tout') + ' ou le mode QCM.';
   function writeNavigation(key, value) {
     ingestLocal();
     const previous = repo.state.drafts[key];
@@ -291,49 +324,121 @@
   }
   function restoreLevelChoice() {
     let saved; try { saved = JSON.parse(repo.state.drafts[selectedLevelKey()]?.text || 'null'); } catch (_) { saved = null; }
-    levelFilter = saved === 'tout' ? 'tout' : 'essentiel';
+    levelFilter = saved === 'tout' ? 'tout' : saved === 'approfondi' && threeTiers ? 'approfondi' : 'essentiel';
   }
-  const stepEligible = step => (!ancientOnly || !!step.ancienExamen) && (!withoutChoices || step.sansChoix === true) && (!levelsEnabled || levelFilter === 'tout' || step.level === 'essentiel');
+  const stepEligible = step => (!ancientOnly || !!step.ancienExamen) && (!withoutChoices || step.sansChoix === true) && (ancientAllTiers() || inLevel(step));
   const exerciseEntries = q => q.steps.map((step, index) => ({ q, step, index })).filter(item => stepEligible(item.step));
-  function levelCount(level) {
-    return bank.exercises.reduce((n, q) => n + q.steps.filter(step => (!ancientOnly || !!step.ancienExamen) && (!withoutChoices || step.sansChoix === true) && (level === 'tout' || step.level === 'essentiel') && (!unseenOnly || !stepDone({ q, step }))).length, 0);
+  // v26 : avec trois étages, les comptes des étages décrivent les étages (sans le filtre Anciens examens, qui les ignore) ;
+  // levelCount('anciens', true) compte les anciens examens de tous les étages. Deux niveaux : comme en v25.
+  function levelCount(level, ancient = ancientOnly && !threeTiers) {
+    return bank.exercises.reduce((n, q) => n + q.steps.filter(step => (!ancient || !!step.ancienExamen) && (!withoutChoices || step.sansChoix === true) && (level === 'anciens' || inLevel(step, level)) && (!unseenOnly || !stepDone({ q, step }))).length, 0);
   }
   function levelControls() {
     if (!GROUPED_COURSES) return '';
     const plural = n => n + ' question' + (n > 1 ? 's' : '');
-    return `<div class="qcm-filters" role="group" aria-label="Filtres du parcours">${levelsEnabled ? `<div class="segment-row"><span class="segment-label" id="qcm-level-label">Niveau</span><div class="qcm-mode-switch segmented" role="group" aria-labelledby="qcm-level-label"><button type="button" class="segment" data-level-filter="essentiel" aria-pressed="${levelFilter === 'essentiel'}">${segmentText('Essentiel', 'La base · ' + plural(levelCount('essentiel')))}</button><button type="button" class="segment" data-level-filter="tout" aria-pressed="${levelFilter === 'tout'}">${segmentText('Tout', 'Avec l’approfondissement · ' + plural(levelCount('tout')))}</button></div></div>` : ''}<button type="button" class="switch-row" role="switch" aria-checked="${ancientOnly}" data-action="ancient-filter"><span class="switch-text"><span class="switch-title">Anciens examens</span><span class="switch-help">Seulement les questions reprises d’anciens examens</span></span><span class="switch-track" aria-hidden="true"><span class="switch-knob"></span></span></button><button type="button" class="switch-row" role="switch" aria-checked="${unseenOnly}" data-action="unseen-filter"><span class="switch-text"><span class="switch-title">Seulement les questions pas encore vues</span><span class="switch-help">Cache celles auxquelles tu as déjà répondu</span></span><span class="switch-track" aria-hidden="true"><span class="switch-knob"></span></span></button></div>`;
+    const ancientHelp = threeTiers ? 'Seulement les questions reprises d’anciens examens, tous les étages · ' + plural(levelCount('anciens', true)) : 'Seulement les questions reprises d’anciens examens';
+    return `<div class="qcm-filters" role="group" aria-label="Filtres du parcours">${threeTiers ? tierControls(plural) : levelsEnabled ? `<div class="segment-row"><span class="segment-label" id="qcm-level-label">Niveau</span><div class="qcm-mode-switch segmented" role="group" aria-labelledby="qcm-level-label"><button type="button" class="segment" data-level-filter="essentiel" aria-pressed="${levelFilter === 'essentiel'}">${segmentText('Essentiel', 'La base · ' + plural(levelCount('essentiel')))}</button><button type="button" class="segment" data-level-filter="tout" aria-pressed="${levelFilter === 'tout'}">${segmentText('Tout', 'Avec l’approfondissement · ' + plural(levelCount('tout')))}</button></div></div>` : ''}<button type="button" class="switch-row" role="switch" aria-checked="${ancientOnly}" data-action="ancient-filter"><span class="switch-text"><span class="switch-title">Anciens examens</span><span class="switch-help">${esc(ancientHelp)}</span></span><span class="switch-track" aria-hidden="true"><span class="switch-knob"></span></span></button><button type="button" class="switch-row" role="switch" aria-checked="${unseenOnly}" data-action="unseen-filter"><span class="switch-text"><span class="switch-title">Seulement les questions pas encore vues</span><span class="switch-help">Cache celles auxquelles tu as déjà répondu</span></span><span class="switch-track" aria-hidden="true"><span class="switch-knob"></span></span></button></div>`;
+  }
+  // v26 : maquette A. Un cadre « Tout le bloc » contient le cadre « Essentiel » (choix par défaut), qui contient
+  // l'interrupteur « + Approfondir ». Chaque choix a sa légende et son nombre de questions, toujours visibles.
+  function tierControls(plural) {
+    const all = levelFilter === 'tout', base = !all, deep = levelFilter === 'approfondi', muted = ancientAllTiers();
+    return `<div class="tier-row${muted ? ' tier-row-muted' : ''}"><span class="segment-label" id="qcm-level-label">Niveau</span><div class="tier-nest tier-outer${all ? ' is-chosen' : ''}" role="group" aria-labelledby="qcm-level-label"><button type="button" class="tier-pick" data-level-filter="tout" aria-pressed="${all}"><span class="tier-dot" aria-hidden="true"></span><span class="tier-name">Tout le bloc</span><span class="tier-legend">tout, avec « pour aller plus loin » · <b>${plural(levelCount('tout'))}</b></span></button><div class="tier-nest tier-inner${base ? ' is-chosen' : ''}"><button type="button" class="tier-pick" data-level-filter="essentiel" aria-pressed="${base}"><span class="tier-dot" aria-hidden="true"></span><span class="tier-name">Essentiel</span><span class="tier-legend">la base : une question par savoir · <b>${plural(levelCount('essentiel'))}</b></span></button><button type="button" class="switch-row tier-addon" role="switch" aria-checked="${deep}" data-action="tier-deepen"><span class="switch-text"><span class="tier-name">+ Approfondir</span><span class="tier-legend">le détail des savoirs centraux · <b>${plural(levelCount('approfondi'))}</b></span></span><span class="switch-track" aria-hidden="true"><span class="switch-knob"></span></span></button></div></div>${muted ? '<p class="help-text tier-note">« Anciens examens » est activé : il montre ses questions de tous les étages.</p>' : ''}</div>`;
   }
   // Sur l'écran d'une question : les réglages restent accessibles, repliés derrière un résumé lisible ;
   // ouverts, chaque option garde sa légende.
   function focusSettings() {
-    if (!GROUPED_COURSES) return '';
-    const parts = [levelsEnabled ? (levelFilter === 'tout' ? 'Tout' : 'Essentiel') : '', ancientOnly ? 'Anciens examens' : '', unseenOnly ? 'Pas encore vues' : ''].filter(Boolean);
+    if (!GROUPED_COURSES || activeCourse === DEEPEN_KEY) return '';
+    const parts = [levelsEnabled ? levelChoiceLabel() : '', ancientOnly && !ancientAllTiers() ? 'Anciens examens' : '', unseenOnly ? 'Pas encore vues' : ''].filter(Boolean);
     return `<details class="focus-settings"><summary><span class="focus-settings-title">Réglages</span><span class="focus-settings-state">${esc(parts.join(' · ') || 'Toutes les questions')}</span><span class="focus-settings-open" aria-hidden="true">Modifier</span></summary>${levelControls()}</details>`;
   }
+  // Ce qui s'écrit d'un essai : sans les réponses empruntées à un autre essai (run.borrowed).
+  function persistable(run) {
+    if (!run.borrowed) return run;
+    const out = { ...run, answers: { ...run.answers }, revealed: { ...run.revealed }, checked: false };
+    for (const id of Object.keys(run.borrowed)) { delete out.answers[id]; delete out.revealed[id]; }
+    delete out.borrowed;
+    return out;
+  }
   function writeRun(q, run) {
-    const key = runKey(q), previous = repo.state.drafts[key];
-    repo.state.drafts[key] = { text: JSON.stringify(run), updatedAt: new Date(Math.max(Date.now(), previous ? Date.parse(previous.updatedAt) + 1 : 0)).toISOString() };
+    const key = runKey(q), previous = repo.state.drafts[key], own = persistable(run);
+    repo.state.drafts[key] = { text: JSON.stringify(own), updatedAt: new Date(Math.max(Date.now(), previous ? Date.parse(previous.updatedAt) + 1 : 0)).toISOString() };
+    mirrorCompat(q, own);
     repo.save(); changed();
+  }
+  // v26, après contrôle Codex : une première réponse donnée ici est aussi ajoutée à l'essai de chaque révision compatible
+  // de la question (même contenu), sans jamais remplacer une réponse qui s'y trouve déjà. Un onglet v25 resté ouvert voit
+  // alors la question comme répondue : son contrôle « l'essai a changé ailleurs » refuse une seconde note.
+  const rawRevealed = (raw, stepId) => raw?.revealed?.[stepId] === true || (!raw?.revealed && raw?.checked === true && raw?.answers?.[stepId] !== undefined);
+  function mirrorCompat(q, run) {
+    for (const step of q.steps) {
+      if (!run.revealed[step.id]) continue;
+      for (const rev of compatRevs(q, step)) {
+        const key = 'qcm2::' + q.id + '::' + rev, previous = repo.state.drafts[key] || repo.state.drafts['qcm::' + q.id + '::' + rev];
+        let old = null;
+        if (previous) { try { old = JSON.parse(previous.text); } catch (_) { continue; } if (!old || typeof old !== 'object') continue; }
+        // Filiation (2e contrôle Codex) : seulement l'essai compatible du même essai (même identifiant). Un essai distinct,
+        // venu d'un autre appareil ou d'une sauvegarde, n'est jamais complété ; sa progression reste lue à l'affichage.
+        if (old && (old.id !== run.id || rawRevealed(old, step.id))) continue;
+        const revealed = old?.revealed ? { ...old.revealed } : Object.fromEntries(Object.keys(old?.answers || {}).filter(id => old.checked === true).map(id => [id, true]));
+        const next = old ? { ...old, answers: { ...(old.answers || {}) }, order: { ...(old.order || {}) }, revealed } : { id: run.id, answers: {}, order: {}, revealed, index: 0, checked: false, hintUsed: false };
+        next.answers[step.id] = run.answers[step.id]; next.order[step.id] = run.order[step.id]; next.revealed[step.id] = true;
+        const stored = repo.state.drafts[key];
+        repo.state.drafts[key] = { text: JSON.stringify(next), updatedAt: new Date(Math.max(Date.now(), stored ? Date.parse(stored.updatedAt) + 1 : 0)).toISOString() };
+      }
+    }
   }
   function shuffled(ids) {
     const result = [...ids];
     for (let i = result.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [result[i], result[j]] = [result[j], result[i]]; }
     return result;
   }
+  // v26, après contrôle Codex : les essais des révisions compatibles sont relus à chaque lecture, question par question
+  // (et non plus seulement en l'absence d'essai v26). Une réponse écrite plus tard par un onglet v25 ou apportée par une
+  // sauvegarde importée apparaît donc aussitôt ; une réponse déjà présente dans l'essai v26 n'est jamais remplacée.
+  function compatDrafts(q) {
+    const out = [];
+    for (const rev of [...new Set(q.steps.flatMap(step => compatRevs(q, step)))]) for (const key of ['qcm2::' + q.id + '::' + rev, 'qcm::' + q.id + '::' + rev]) {
+      const draft = repo.state.drafts[key];
+      if (draft) { out.push({ rev, draft }); break; }
+    }
+    return out.sort((a, b) => b.draft.updatedAt.localeCompare(a.draft.updatedAt));
+  }
+  const validRunId = id => typeof id === 'string' && /^[A-Za-z0-9-]{1,100}$/.test(id);
+  function compatRuns(q) {
+    return compatDrafts(q).map(c => { let raw; try { raw = JSON.parse(c.draft.text); } catch (_) { raw = null; } return raw && typeof raw === 'object' ? { rev: c.rev, raw } : null; }).filter(Boolean);
+  }
   function readRun(q) {
-    const key = runKey(q), source = repo.state.drafts[key]?.text || repo.state.drafts[legacyRunKey(q)]?.text || 'null';
+    const key = runKey(q), own = repo.state.drafts[key]?.text || repo.state.drafts[legacyRunKey(q)]?.text || null;
+    const compatList = compatDrafts(q), source = compatList.length ? JSON.stringify([own, compatList.map(c => c.draft.text)]) : own || 'null';
     const cached = runCache.get(key);
     if (cached?.source === source) return JSON.parse(JSON.stringify(cached.run));
-    let raw; try { raw = JSON.parse(source); } catch (_) { raw = null; }
-    const run = { id: typeof raw?.id === 'string' && /^[A-Za-z0-9-]{1,100}$/.test(raw.id) ? raw.id : S.uuid(), answers: {}, order: {}, revealed: {}, index: 0, checked: false, hintUsed: !!raw?.hintUsed, contextUsed: !!raw?.contextUsed };
+    let raw; try { raw = JSON.parse(own || 'null'); } catch (_) { raw = null; }
+    const compat = compatList.length ? compatRuns(q) : [];
+    // Un essai v26 vide (simple ouverture, sans redémarrage) reprend l'identifiant de l'essai compatible le plus récent.
+    const ownEmpty = !raw || (!q.steps.some(step => rawRevealed(raw, step.id)) && !raw.restartOf);
+    const base = ownEmpty ? compat.find(c => validRunId(c.raw.id)) : null;
+    const run = { id: base ? base.raw.id : validRunId(raw?.id) ? raw.id : S.uuid(), answers: {}, order: {}, revealed: {}, index: 0, checked: false, hintUsed: !!(raw?.hintUsed || base?.raw.hintUsed), contextUsed: !!(raw?.contextUsed || base?.raw.contextUsed) };
+    if (base) run.inheritedFrom = base.rev;
     if (typeof raw?.restartOf === 'string' && /^[A-Za-z0-9-]{1,100}$/.test(raw.restartOf) && raw.restartOf !== run.id) run.restartOf = raw.restartOf;
+    if (typeof raw?.inheritedFrom === 'string' && /^[0-9a-f]{1,64}$/.test(raw.inheritedFrom)) run.inheritedFrom = raw.inheritedFrom;
+    const validOrder = (order, ids) => Array.isArray(order) && order.length === 4 && new Set(order).size === 4 && order.every(id => ids.includes(id));
     for (const step of q.steps) {
       const ids = step.choices.map(c => c.id), order = raw?.order?.[step.id];
-      run.order[step.id] = Array.isArray(order) && order.length === 4 && new Set(order).size === 4 && order.every(id => ids.includes(id)) ? order : shuffled(ids);
+      run.order[step.id] = validOrder(order, ids) ? order : shuffled(ids);
       if (ids.includes(raw?.answers?.[step.id])) {
         run.answers[step.id] = raw.answers[step.id];
         if (raw?.revealed?.[step.id] === true || (!raw?.revealed && raw?.checked === true)) run.revealed[step.id] = true;
       }
+      if (run.revealed[step.id] || !compat.length) continue;
+      // Première réponse donnée sous une révision compatible (la plus récente). Après un redémarrage explicite,
+      // seules les réponses du même essai sont reprises : la filiation du redémarrage est respectée.
+      const from = compat.find(c => compatRevs(q, step).includes(c.rev) && rawRevealed(c.raw, step.id) && ids.includes(c.raw.answers?.[step.id]) && (!run.restartOf || c.raw.id === run.id));
+      if (!from) continue;
+      run.answers[step.id] = from.raw.answers[step.id]; run.revealed[step.id] = true;
+      if (validOrder(from.raw.order?.[step.id], ids)) run.order[step.id] = from.raw.order[step.id];
+      run.inheritedFrom = run.inheritedFrom || from.rev;
+      if (from.raw.id !== run.id) { run.borrowed = run.borrowed || {}; run.borrowed[step.id] = from.raw.id; }
     }
     run.checked = q.steps.every(step => run.revealed[step.id]);
     const firstPending = q.steps.findIndex(step => !run.revealed[step.id]);
@@ -344,7 +449,7 @@
   }
   function openRun(q) {
     const run = readRun(q);
-    if (repo.state.drafts[runKey(q)]?.text !== JSON.stringify(run)) writeRun(q, run);
+    if (repo.state.drafts[runKey(q)]?.text !== JSON.stringify(persistable(run))) writeRun(q, run);
     return run;
   }
   const sameRun = (left, right) => left && right && left.id === right.id && left.index === right.index && S.stable(left.answers) === S.stable(right.answers) && S.stable(left.revealed) === S.stable(right.revealed) && S.stable(left.order) === S.stable(right.order);
@@ -424,7 +529,7 @@
     if (view === 'exercise' && active) {
       const run = visibleRun(active);
       const progress = coursePosition(active, run), counter = activeMix ? `Tout mélanger · QCM ${progress.index + 1} / ${progress.queue.length}` : activeCourse ? `${esc(courseLabel(activeCourse))} · QCM ${progress.index + 1} / ${progress.queue.length}` : `QCM ${run.index + 1} / ${active.steps.length}`;
-      return `<header class="qcm-focus-header"><button class="btn ghost focus-back" data-action="home" aria-label="Retour à l’accueil des QCM"><span aria-hidden="true">‹</span> Accueil</button><span class="question-counter">${withoutChoices ? 'Sans les choix · ' + counter.replace(/QCM/g, 'Question') : counter}</span>${needsContext(active.steps[run.index]) ? '<button class="btn secondary" data-action="open-context" aria-label="Voir la situation">Situation</button>' : ''}<button class="btn secondary focus-hint" data-action="open-hints" aria-label="Un rappel des concepts"><span aria-hidden="true">?</span> Rappel</button><span class="focus-progress" aria-hidden="true"><span style="width:${Math.round(100 * (activeMix || activeCourse ? (progress.index + 1) / Math.max(1, progress.queue.length) : (run.index + 1) / Math.max(1, active.steps.length)))}%"></span></span></header>`;
+      return `<header class="qcm-focus-header">${activeCourse === DEEPEN_KEY ? '<button class="btn ghost focus-back" data-action="deepen-return" aria-label="Retour au parcours, là où tu l’avais laissé"><span aria-hidden="true">‹</span> Parcours</button>' : '<button class="btn ghost focus-back" data-action="home" aria-label="Retour à l’accueil des QCM"><span aria-hidden="true">‹</span> Accueil</button>'}<span class="question-counter">${withoutChoices ? 'Sans les choix · ' + counter.replace(/QCM/g, 'Question') : counter}</span>${needsContext(active.steps[run.index]) ? '<button class="btn secondary" data-action="open-context" aria-label="Voir la situation">Situation</button>' : ''}<button class="btn secondary focus-hint" data-action="open-hints" aria-label="Un rappel des concepts"><span aria-hidden="true">?</span> Rappel</button><span class="focus-progress" aria-hidden="true"><span style="width:${Math.round(100 * (activeMix || activeCourse ? (progress.index + 1) / Math.max(1, progress.queue.length) : (run.index + 1) / Math.max(1, active.steps.length)))}%"></span></span></header>`;
     }
     return `<header class="site-header"><button class="brand" data-action="home"><img class="brand-mark" src="icon.svg" alt=""><span><span class="brand-title">${esc(withoutChoices ? (collection.subject || '') + ' · Sans les choix' : collection.label || 'Essai · QCM guidés')}</span><span class="brand-subtitle">${esc(collection.subtitle || 'Français · Bloc oral')}</span></span></button><nav class="header-actions" aria-label="Navigation des QCM"><button class="btn ghost" data-action="home">Exercices</button><button class="btn ghost" data-action="avis">Mes avis</button><button class="btn ghost" data-action="feedback">Mes retours <span class="badge" data-feedback-count>${comments().length}</span></button><button class="btn ghost" data-action="settings" aria-label="Sauvegardes des QCM"><span aria-hidden="true">↗</span> Sauvegardes</button></nav></header>`;
   }
@@ -438,7 +543,7 @@
   // Parcours dérivés : chaque question conserve son exercice, sa révision et son essai.
   const courseKey = q => { if (typeof q.courseGroupKey === 'string') return q.courseGroupKey; const match = /^[CS](\d+)$/.exec(q.referenceId || q.course || ''); return match ? String(Number(match[1])) : null; };
   const groupDefinitions = () => bank.courseGroups || [...new Set(bank.exercises.map(courseKey).filter(Boolean))].map(key => ({ key, label: 'Cours ' + key }));
-  const courseLabel = key => key === ERRORS_KEY ? ERRORS_LABEL : groupDefinitions().find(group => group.key === key)?.label || 'Cours ' + key;
+  const courseLabel = key => key === ERRORS_KEY ? ERRORS_LABEL : key === DEEPEN_KEY ? DEEPEN_LABEL : groupDefinitions().find(group => group.key === key)?.label || 'Cours ' + key;
   function orderedCourseEntries() {
     if (!bank.navigationOrder) return bank.families.flatMap(family => bank.exercises.filter(q => q.familyId === family.id).flatMap(q => q.steps.map((step, index) => ({ q, step, index }))));
     const entries = new Map(bank.exercises.flatMap(q => q.steps.map((step, index) => [JSON.stringify([q.id, step.id]), { q, step, index }])));
@@ -452,7 +557,10 @@
   // un rechargement ne fait pas avancer le parcours.
   const isPresentedItem = item => !!presented && presented.key === presentedKey(item.q, item.step);
   function errorsQueue(keepPresented = false) { return orderedCourseEntries().filter(item => item && stepEligible(item.step) && (inErrors(item) || keepPresented && isPresentedItem(item))); }
+  // Étage 2 du même savoir (grille, attenteId), dans le mode choisi ; sans les autres filtres.
+  const deepenItems = attenteId => orderedCourseEntries().filter(item => item && item.step.level === 'essentiel-approfondi' && item.step.attenteId === attenteId && (!withoutChoices || item.step.sansChoix === true));
   function liveCourseQueue(key, keepPresented = false) {
+    if (key === DEEPEN_KEY) return deepen ? deepenItems(deepen.attenteId) : [];
     if (key === ERRORS_KEY) return errorsQueue(keepPresented);
     return orderedCourseEntries().filter(item => courseKey(item.q) === key && stepEligible(item.step) && (!unseenOnly || !stepDone(item) || keepPresented && isPresentedItem(item)));
   }
@@ -465,7 +573,7 @@
     return { queue, index: queue.findIndex(item => item.q.id === q.id && item.step.id === q.steps[run.index].id) };
   }
   function scNavigationVersion() {
-    return activeMix ? repo.state.drafts[levelStorageKey('mixed-position-v2')]?.text || '' : S.stable(readCourseCursors()[activeCourse] || null);
+    return activeMix ? storedMix() || '' : S.stable((activeCourse === DEEPEN_KEY ? deepen?.cursor : readCourseCursors()[activeCourse]) || null);
   }
   function readCourseCursors() {
     try {
@@ -481,22 +589,45 @@
     if (withoutChoices) scIndex = item.index;
     else {
       const run = readRun(active); run.index = item.index;
-      if (repo.state.drafts[runKey(active)]?.text !== JSON.stringify(run)) writeRun(active, run);
+      if (repo.state.drafts[runKey(active)]?.text !== JSON.stringify(persistable(run))) writeRun(active, run);
     }
+    const cursor = { exerciseId: active.id, stepId: item.step.id, qcmRevision: active.qcmRevision };
+    // Le parcours « Approfondir » garde sa position dans l'onglet : la position du parcours quitté ne bouge pas.
+    if (activeCourse === DEEPEN_KEY) { if (deepen) setDeepen({ ...deepen, cursor }); return; }
     const cursors = readCourseCursors();
-    cursors[activeCourse] = { exerciseId: active.id, stepId: item.step.id, qcmRevision: active.qcmRevision };
+    cursors[activeCourse] = cursor;
     try { if (withoutChoices || levelsEnabled || ancientOnly) writeNavigation(levelStorageKey('course-position'), cursors); else localStorage.setItem(courseCursorKey, JSON.stringify(cursors)); } catch (_) { toast('La position du cours ne peut pas être enregistrée sur cet appareil.'); }
   }
   function openCourse(key) {
     frozen = null;
     const queue = liveCourseQueue(key, true);
-    if (!queue.length) { showEmptyPath(key === ERRORS_KEY ? 'Aucune question à revoir pour l’instant : pas de réponse fausse, d’« À revoir » ni de question marquée « Difficile » dans ce choix.' : emptySelection()); return false; }
+    if (!queue.length) { showEmptyPath(key === DEEPEN_KEY ? 'Aucune question pour approfondir ce savoir dans ce mode.' : key === ERRORS_KEY ? 'Aucune question à revoir pour l’instant : pas de réponse fausse, d’« À revoir » ni de question marquée « Difficile » dans ce choix.' : emptySelection()); return false; }
     if (unseenOnly || key === ERRORS_KEY) frozen = { sig: frozenSig(key), items: queue };
     activeCourse = key;
-    const cursor = readCourseCursors()[key];
-    const saved = queue.find(item => item.q.id === cursor?.exerciseId && item.step.id === cursor?.stepId && item.q.qcmRevision === cursor?.qcmRevision);
-    const pending = saved || (key === ERRORS_KEY ? queue[0] : queue.find(item => !stepDone(item)) || queue[queue.length - 1]);
+    const cursor = key === DEEPEN_KEY ? deepen?.cursor : readCourseCursors()[key];
+    const saved = queue.find(item => item.q.id === cursor?.exerciseId && item.step.id === cursor?.stepId && (item.q.qcmRevision === cursor?.qcmRevision || compatRevs(item.q, item.step).includes(cursor?.qcmRevision)));
+    const pending = saved || (key === ERRORS_KEY ? queue[0] : queue.find(item => !stepDone(item)) || (key === DEEPEN_KEY ? queue[0] : queue[queue.length - 1]));
     selectCourseEntry(pending); return true;
+  }
+  function deepenBanner() {
+    if (activeCourse !== DEEPEN_KEY || !deepen) return '';
+    return `<section class="deepen-banner" aria-label="${DEEPEN_LABEL}"><p><strong>${DEEPEN_LABEL}</strong>${deepen.label ? ' · ' + esc(deepen.label) : ''}</p><p class="help-text">Les questions de détail de ce savoir. « Retour au parcours » te ramène là où tu étais.</p></section>`;
+  }
+  // Après la correction d'une question de l'étage 1 : le bouton n'apparaît que s'il existe des questions rattachées.
+  function deepenOffer(q, step, shown) {
+    if (!threeTiers || !shown || step.level !== 'essentiel' || !step.attenteId || activeCourse === DEEPEN_KEY) return '';
+    const n = deepenItems(step.attenteId).length;
+    if (!n) return '';
+    const label = attenteById.get(step.attenteId)?.label;
+    return `<div class="deepen-row"><button type="button" class="btn deepen-button" data-action="deepen-open" data-attente="${esc(step.attenteId)}"><span aria-hidden="true">↳</span> Approfondir ce savoir · ${n} question${n > 1 ? 's' : ''}</button><p class="help-text">Le détail ${label ? 'de « ' + esc(label) + ' »' : 'de ce savoir'}, puis retour ici.</p></div>`;
+  }
+  const deepenReturnButton = (index, total) => activeCourse === DEEPEN_KEY && index + 1 >= total ? '<button class="btn primary" data-action="deepen-return">Retour au parcours →</button>' : '';
+  function returnFromDeepen() {
+    const back = deepen; setDeepen(null);
+    if (!back || back.returnHash === DEEPEN_KEY) { setPresented(null); return navigate(''); }
+    // La question quittée se rouvre comme on l'avait laissée (correction, revue ou tentative).
+    setPresented(back.presented && typeof back.presented.key === 'string' ? back.presented : null);
+    navigate(back.returnHash);
   }
   function showEmptyPath(message) {
     active = null; activeCourse = null; activeMix = null; view = 'home'; emptyPathMessage = message;
@@ -542,22 +673,35 @@
     try {
       const scoped = withoutChoices || levelsEnabled || ancientOnly;
       const fallback = !withoutChoices && !ancientOnly && levelFilter === 'tout' ? localStorage.getItem(mixKey) : null;
-      const source = scoped ? repo.state.drafts[levelStorageKey('mixed-position-v2')]?.text || repo.state.drafts[levelStorageKey('mixed-position')]?.text || fallback : localStorage.getItem(mixKey);
+      const source = scoped ? storedMix() || fallback : localStorage.getItem(mixKey);
       value = expandedMix(JSON.parse(source || 'null'));
     } catch (_) { return null; }
     const entries = allEntries().map(item => entryKey(entryRef(item)));
     if (!entries.length) return null;
-    if (value?.version !== 1 || typeof value.id !== 'string' || !Array.isArray(value.order) || value.order.length > entries.length || !value.order.length) return null;
-    const keys = value.order.map(ref => entryKey(ref || {}));
-    if (new Set(keys).size !== keys.length || !keys.every(key => entries.includes(key))) return null;
-    let order = value.order;
+    if (value?.version !== 1 || typeof value.id !== 'string' || !Array.isArray(value.order) || !value.order.length) return null;
+    const currentItems = new Map(allEntries().map(item => [item.q.id + '::' + item.step.id, item]));
+    const normalize = ref => { const item = ref && currentItems.get(ref.exerciseId + '::' + ref.stepId); return item && ref.qcmRevision !== item.q.qcmRevision && compatRevs(item.q, item.step).includes(ref.qcmRevision) ? entryRef(item) : ref; };
+    value = { ...value, order: value.order.map(normalize), cursor: value.cursor && normalize(value.cursor) };
+    const allKeys = value.order.map(ref => entryKey(ref || {}));
+    if (new Set(allKeys).size !== allKeys.length) return null;
+    // v26 : une question retirée, de révision changée ou sortie du niveau choisi est seulement écartée du mélange ;
+    // l'ordre des autres et la position sont gardés (avant, tout le mélange était recréé). Rien n'est effacé du stockage.
+    const present = new Set(entries);
+    const kept = value.order.filter((ref, i) => present.has(allKeys[i])), keys = kept.map(ref => entryKey(ref));
+    if (!kept.length) return null;
+    let order = kept;
     if (keys.length < entries.length) {
       // Append newly exported compatible questions; keep the previous order/cursor.
       const signature = JSON.stringify([value, entries]);
       if (!mixExpansionCache.has(signature)) mixExpansionCache.set(signature, [...order, ...shuffled(allEntries().map(entryRef).filter(ref => !keys.includes(entryKey(ref))))]);
       order = mixExpansionCache.get(signature);
     }
-    return { version: 1, id: value.id, order, cursor: keys.includes(entryKey(value.cursor || {})) ? value.cursor : order[0] };
+    let cursor = value.cursor;
+    if (!keys.includes(entryKey(cursor || {}))) {
+      const at = allKeys.indexOf(entryKey(cursor || {}));
+      cursor = (at < 0 ? null : value.order.slice(at + 1).find((ref, i) => present.has(allKeys[at + 1 + i]))) || order[0];
+    }
+    return { version: 1, id: value.id, order, cursor };
   }
   function saveMix() {
     try {
@@ -565,7 +709,7 @@
         const compact = compactMix(activeMix);
         if (JSON.stringify(compact).length > 12000) throw Error('Mélange trop volumineux.');
         // Separate key prevents an older client overwriting the extended mixture.
-        writeNavigation(levelStorageKey('mixed-position-v2'), compact);
+        writeNavigation(levelStorageKey(MIX_V26), compact);
       } else localStorage.setItem(mixKey, JSON.stringify(activeMix));
     } catch (_) { toast('Le mélange ne peut pas être enregistré sur cet appareil.'); }
   }
@@ -585,7 +729,7 @@
     if (withoutChoices) scIndex = item.index;
     else {
       const run = readRun(active); run.index = item.index;
-      if (repo.state.drafts[runKey(active)]?.text !== JSON.stringify(run)) writeRun(active, run);
+      if (repo.state.drafts[runKey(active)]?.text !== JSON.stringify(persistable(run))) writeRun(active, run);
     }
     activeMix.cursor = entryRef(item); saveMix();
   }
@@ -633,8 +777,10 @@
     const ref = bank.courseReference || bank.courseReferences[q.referenceId], source = q.sources.find(s => s.file.includes('SYNTHESE')) || q.sources[0];
     const progress = coursePosition(q, run), stats = courseStats(progress.queue), total = progress.queue.length;
     const correct = record.revealed ? step.choices.find(choice => choice.id === step.correctId) : null;
-    const alternatives = scStore.alternatives(q, step), display = scDisplay(q, step, record), first = firstRecord(q, step);
-    return `<section class="question-shell"><article class="question-card">${focusSettings()}${questionMeta(ref, step, display.seen)}${display.mode !== 'first' ? scAlternateView(q, step, record, display) : `<fieldset class="qcm-step sc-step" tabindex="-1"><legend>${rich(step.prompt)}</legend>${ancientBadge(step)}${needsContext(step) ? '<button class="qcm-context-cue" data-action="open-context">Clique sur « Situation » pour lire le contexte.</button>' : ''}<label class="field-label" for="sc-response">Ma réponse (facultative)</label><p class="help-text">Écris ici ou réponds dans ta tête, puis compare avec la réponse attendue.</p><textarea class="feedback-textarea sc-response" id="sc-response" rows="4" maxlength="8000" ${first ? 'readonly' : ''}>${esc(first ? first.response : record.response)}</textarea><p class="save-status" id="sc-response-status" role="status" aria-live="polite">${repo.warning ? esc(repo.warning) : record.token ? 'Réponse conservée sur cet appareil.' : 'La réponse écrite est facultative.'}</p><button class="btn secondary" data-action="sc-refresh" id="sc-refresh" hidden>Recharger cette question</button>${correct ? `<section class="sc-expected" tabindex="-1" aria-labelledby="sc-expected-title"><h2 id="sc-expected-title">Réponse attendue</h2><p>${text(correct.text)}</p><p>${text(correct.explanation)}</p></section><div class="actions sc-self-evaluation" role="group" aria-label="Mon autoévaluation"><button class="btn secondary self-eval" data-action="sc-known" aria-pressed="${first?.selfEvaluation === 'known'}" ${first ? 'disabled' : ''}>Je savais</button><button class="btn secondary self-eval" data-action="sc-review" aria-pressed="${first?.selfEvaluation === 'review'}" ${first ? 'disabled' : ''}>À revoir</button></div><p class="help-text" role="status">${first ? 'Autoévaluation déclarée : ' + (first.selfEvaluation === 'known' ? 'Je savais.' : 'À revoir.') + ' C’est ta première réponse : elle reste telle quelle. Tu pourras t’entraîner de nouveau plus tard.' : 'Choisis « Je savais » ou « À revoir » pour poursuivre. Aucune note automatique.'}</p>` : '<button class="btn primary" data-action="sc-reveal">Voir la réponse</button>'}</fieldset>`}${reviewControls(display, true)}${difficultButton(q, step)}${alternatives.length ? `<details class="sc-alternatives"><summary>Autres réponses conservées (${alternatives.length})</summary><p class="help-text">Ces saisies d’autres onglets ou reprises restent disponibles. Tu peux en copier le texte.</p>${alternatives.map(item => `<p>${text(item.response)}</p>`).join('')}</details>` : ''}${window.HEPQuickUI?.thumbs() || ''}${window.HEPQuickLevel?.buttons() || ''}<button class="btn secondary qcm-report-button" data-action="report-step">Signaler un problème avec cette question</button>${scReportPanel()}<div class="question-navigation">${progress.index > 0 ? '<button class="btn secondary" data-action="previous">← Question précédente</button>' : ''}${progress.index + 1 < total ? `<button class="btn primary" data-action="next" ${first ? '' : 'disabled'}>Question suivante →</button>` : ''}</div>${progress.index === total - 1 && total > 0 && stats.answered === total ? `<section class="qcm-summary"><h2>Parcours Sans les choix terminé</h2><p>Autoévaluations déclarées : ${stats.score} « Je savais » ; ${stats.answered - stats.score} « À revoir ». Elles restent distinctes des résultats QCM.</p>${window.HEPQuickUI?.group() || ''}</section>` : ''}<div class="actions"><button class="btn secondary" data-action="${activeMix ? 'mix-first' : 'course-first'}">Revoir ${activeMix ? 'le mélange' : 'le cours'} depuis le début</button></div></article></section>${supportDialogs(q, step, ref, source)}`;
+    const alternatives = [...scStore.alternatives(q, step), ...compatRevs(q, step).flatMap(rev => { const old = scStore.read({ ...q, qcmRevision: rev }, step); return old.response && !old.selfEvaluation ? [old] : []; })];
+    const display = scDisplay(q, step, record), first = firstRecord(q, step);
+    const shown = display.mode === 'first' ? !!record.revealed : display.mode === 'review' || (display.mode === 'practice' && !!display.practice?.revealed);
+    return `<section class="question-shell"><article class="question-card">${focusSettings()}${deepenBanner()}${questionMeta(ref, step, display.seen)}${display.mode !== 'first' ? scAlternateView(q, step, record, display) : `<fieldset class="qcm-step sc-step" tabindex="-1"><legend>${rich(step.prompt)}</legend>${ancientBadge(step)}${needsContext(step) ? '<button class="qcm-context-cue" data-action="open-context">Clique sur « Situation » pour lire le contexte.</button>' : ''}<label class="field-label" for="sc-response">Ma réponse (facultative)</label><p class="help-text">Écris ici ou réponds dans ta tête, puis compare avec la réponse attendue.</p><textarea class="feedback-textarea sc-response" id="sc-response" rows="4" maxlength="8000" ${first ? 'readonly' : ''}>${esc(first ? first.response : record.response)}</textarea><p class="save-status" id="sc-response-status" role="status" aria-live="polite">${repo.warning ? esc(repo.warning) : record.token ? 'Réponse conservée sur cet appareil.' : 'La réponse écrite est facultative.'}</p><button class="btn secondary" data-action="sc-refresh" id="sc-refresh" hidden>Recharger cette question</button>${correct ? `<section class="sc-expected" tabindex="-1" aria-labelledby="sc-expected-title"><h2 id="sc-expected-title">Réponse attendue</h2><p>${text(correct.text)}</p><p>${text(correct.explanation)}</p></section><div class="actions sc-self-evaluation" role="group" aria-label="Mon autoévaluation"><button class="btn secondary self-eval" data-action="sc-known" aria-pressed="${first?.selfEvaluation === 'known'}" ${first ? 'disabled' : ''}>Je savais</button><button class="btn secondary self-eval" data-action="sc-review" aria-pressed="${first?.selfEvaluation === 'review'}" ${first ? 'disabled' : ''}>À revoir</button></div><p class="help-text" role="status">${first ? 'Autoévaluation déclarée : ' + (first.selfEvaluation === 'known' ? 'Je savais.' : 'À revoir.') + ' C’est ta première réponse : elle reste telle quelle. Tu pourras t’entraîner de nouveau plus tard.' : 'Choisis « Je savais » ou « À revoir » pour poursuivre. Aucune note automatique.'}</p>` : '<button class="btn primary" data-action="sc-reveal">Voir la réponse</button>'}</fieldset>`}${reviewControls(display, true)}${deepenOffer(q, step, shown)}${difficultButton(q, step)}${alternatives.length ? `<details class="sc-alternatives"><summary>Autres réponses conservées (${alternatives.length})</summary><p class="help-text">Ces saisies d’autres onglets ou reprises restent disponibles. Tu peux en copier le texte.</p>${alternatives.map(item => `<p>${text(item.response)}</p>`).join('')}</details>` : ''}${window.HEPQuickUI?.thumbs() || ''}${window.HEPQuickLevel?.buttons() || ''}<button class="btn secondary qcm-report-button" data-action="report-step">Signaler un problème avec cette question</button>${scReportPanel()}<div class="question-navigation">${progress.index > 0 ? '<button class="btn secondary" data-action="previous">← Question précédente</button>' : ''}${progress.index + 1 < total ? `<button class="btn primary" data-action="next" ${first ? '' : 'disabled'}>Question suivante →</button>` : ''}${deepenReturnButton(progress.index, total)}</div>${progress.index === total - 1 && total > 0 && stats.answered === total ? `<section class="qcm-summary"><h2>Parcours Sans les choix terminé</h2><p>Autoévaluations déclarées : ${stats.score} « Je savais » ; ${stats.answered - stats.score} « À revoir ». Elles restent distinctes des résultats QCM.</p>${window.HEPQuickUI?.group() || ''}</section>` : ''}<div class="actions"><button class="btn secondary" data-action="${activeMix ? 'mix-first' : 'course-first'}">Revoir ${activeMix ? 'le mélange' : activeCourse === DEEPEN_KEY ? 'ce savoir' : 'le cours'} depuis le début</button></div></article></section>${supportDialogs(q, step, ref, source)}`;
   }
   // v25 : Sans les choix, question déjà autoévaluée : masquée (nouvelle tentative) ou revue.
   function scDisplay(q, step) {
@@ -711,9 +857,9 @@
     const progress = coursePosition(q, run), index = activeCourse || activeMix ? progress.index : run.index, total = activeCourse || activeMix ? progress.queue.length : q.steps.length;
     const stats = activeCourse || activeMix ? courseStats(progress.queue) : { answered: Object.keys(run.revealed).length, score };
     const finished = stats.answered === total;
-    const summary = activeMix ? 'Tous les QCM du mélange sont terminés' : activeCourse ? `Les QCM de ${esc(courseLabel(activeCourse))} sont terminés` : 'Les QCM de cet exercice sont terminés';
+    const summary = activeMix ? 'Tous les QCM du mélange sont terminés' : activeCourse === DEEPEN_KEY ? 'Les QCM pour approfondir ce savoir sont terminés' : activeCourse ? `Les QCM de ${esc(courseLabel(activeCourse))} sont terminés` : 'Les QCM de cet exercice sont terminés';
     const display = qcmDisplay(q, step, run);
-    return `<section class="question-shell"><article class="question-card">${focusSettings()}${questionMeta(ref, step, display.seen)}${stepView(q, step, run.index, run, display)}${reviewControls(display)}${difficultButton(q, step)}${window.HEPQuickUI?.thumbs() || ''}${window.HEPQuickLevel?.buttons() || ''}<button class="btn secondary qcm-report-button" data-action="report-step">Signaler un problème avec cette question</button><details class="feedback-panel" id="step-feedback" hidden><summary>Mon signalement sur cette question</summary>${HEPFeedback.fields(true)}<label class="field-label" for="step-feedback-category">Catégorie (facultative)</label><select class="select-input" id="step-feedback-category"><option value="">Sans catégorie</option><option>Question</option><option>Propositions</option><option>Correction</option><option>Autre</option></select><label class="field-label" for="step-feedback-comment">Mon commentaire</label><textarea class="feedback-textarea" id="step-feedback-comment" rows="4" maxlength="8000"></textarea><p class="help-text">Le brouillon conserve la question et les contenus consultés au moment de l’ouverture du signalement.</p><div class="actions"><button class="btn primary" data-action="send-step" disabled>Envoyer à Maxim</button></div><p class="save-status" data-send-status role="status" aria-live="polite">Brouillon sur cet appareil.</p><p class="help-text">L’envoi à Maxim ne demande pas de compte Google.</p><details><summary>Sauvegarde personnelle avec Drive (facultative)</summary><p class="help-text">Connecte Drive ici pour sauvegarder depuis cet onglet. La connexion ne se transmet pas aux autres onglets et se termine au rechargement. Elle est indépendante de l’envoi à Maxim.</p><button class="btn secondary" data-action="panel-drive">${HEPDrive.connected() ? 'Synchroniser Drive ici' : 'Connecter Drive ici'}</button><p class="save-status" data-save-status></p></details></details><div class="question-navigation">${index > 0 ? '<button class="btn secondary" data-action="previous">← QCM précédent</button>' : ''}${index + 1 < total ? `<button class="btn primary" data-action="next" ${run.revealed[step.id] ? '' : 'disabled'}>QCM suivant →</button>` : ''}</div>${index === total - 1 && finished ? `<section class="qcm-summary"><h2>${summary}</h2><p>${stats.score} réponse${stats.score > 1 ? 's' : ''} correcte${stats.score > 1 ? 's' : ''} sur ${total}. Tu peux revoir les questions et leurs explications.</p>${window.HEPQuickUI?.group() || ''}</section>` : ''}<div class="actions">${activeMix ? (finished ? '<button class="btn secondary" data-action="mix-first">Revoir le mélange depuis le début</button>' : '') : activeCourse ? `<button class="btn secondary" data-action="course-first">Revoir ${activeCourse === ERRORS_KEY ? 'le parcours' : 'le cours'} depuis le début</button>` : run.checked ? '<button class="btn secondary" data-action="restart">Recommencer les QCM</button>' : ''}${canWrite(q) ? `<a class="btn ${run.checked ? 'primary' : 'secondary'}" href="oral.html#${q.id}">Rédiger cet exercice sans QCM →</a>` : ''}</div></article><details class="feedback-panel" ${saved?.comment ? 'open' : ''}><summary>Mon retour sur cet essai</summary><label class="field-label" for="feedback-category">Cela concerne…</label><select class="select-input" id="feedback-category">${categories.map(c => `<option ${(saved?.category || 'QCM ' + (run.index + 1)) === c ? 'selected' : ''}>${esc(c)}</option>`).join('')}</select><label class="field-label" for="feedback-comment">Mon commentaire</label><textarea class="feedback-textarea" id="feedback-comment" rows="4" maxlength="8000" placeholder="Ex. : deux propositions me semblent justes ; la correction n’explique pas leur différence…">${esc(saved?.comment || '')}</textarea><p class="help-text">Ton retour conserve les propositions dans l’ordre affiché et leurs explications.</p><p class="save-status" data-save-status></p></details></section>${supportDialogs(q, step, ref, source)}`;
+    return `<section class="question-shell"><article class="question-card">${focusSettings()}${deepenBanner()}${questionMeta(ref, step, display.seen)}${stepView(q, step, run.index, run, display)}${reviewControls(display)}${deepenOffer(q, step, display.revealed)}${difficultButton(q, step)}${window.HEPQuickUI?.thumbs() || ''}${window.HEPQuickLevel?.buttons() || ''}<button class="btn secondary qcm-report-button" data-action="report-step">Signaler un problème avec cette question</button><details class="feedback-panel" id="step-feedback" hidden><summary>Mon signalement sur cette question</summary>${HEPFeedback.fields(true)}<label class="field-label" for="step-feedback-category">Catégorie (facultative)</label><select class="select-input" id="step-feedback-category"><option value="">Sans catégorie</option><option>Question</option><option>Propositions</option><option>Correction</option><option>Autre</option></select><label class="field-label" for="step-feedback-comment">Mon commentaire</label><textarea class="feedback-textarea" id="step-feedback-comment" rows="4" maxlength="8000"></textarea><p class="help-text">Le brouillon conserve la question et les contenus consultés au moment de l’ouverture du signalement.</p><div class="actions"><button class="btn primary" data-action="send-step" disabled>Envoyer à Maxim</button></div><p class="save-status" data-send-status role="status" aria-live="polite">Brouillon sur cet appareil.</p><p class="help-text">L’envoi à Maxim ne demande pas de compte Google.</p><details><summary>Sauvegarde personnelle avec Drive (facultative)</summary><p class="help-text">Connecte Drive ici pour sauvegarder depuis cet onglet. La connexion ne se transmet pas aux autres onglets et se termine au rechargement. Elle est indépendante de l’envoi à Maxim.</p><button class="btn secondary" data-action="panel-drive">${HEPDrive.connected() ? 'Synchroniser Drive ici' : 'Connecter Drive ici'}</button><p class="save-status" data-save-status></p></details></details><div class="question-navigation">${index > 0 ? '<button class="btn secondary" data-action="previous">← QCM précédent</button>' : ''}${index + 1 < total ? `<button class="btn primary" data-action="next" ${run.revealed[step.id] ? '' : 'disabled'}>QCM suivant →</button>` : ''}${deepenReturnButton(index, total)}</div>${index === total - 1 && finished ? `<section class="qcm-summary"><h2>${summary}</h2><p>${stats.score} réponse${stats.score > 1 ? 's' : ''} correcte${stats.score > 1 ? 's' : ''} sur ${total}. Tu peux revoir les questions et leurs explications.</p>${window.HEPQuickUI?.group() || ''}</section>` : ''}<div class="actions">${activeMix ? (finished ? '<button class="btn secondary" data-action="mix-first">Revoir le mélange depuis le début</button>' : '') : activeCourse ? `<button class="btn secondary" data-action="course-first">Revoir ${activeCourse === ERRORS_KEY ? 'le parcours' : activeCourse === DEEPEN_KEY ? 'ce savoir' : 'le cours'} depuis le début</button>` : run.checked ? '<button class="btn secondary" data-action="restart">Recommencer les QCM</button>' : ''}${canWrite(q) ? `<a class="btn ${run.checked ? 'primary' : 'secondary'}" href="oral.html#${q.id}">Rédiger cet exercice sans QCM →</a>` : ''}</div></article><details class="feedback-panel" ${saved?.comment ? 'open' : ''}><summary>Mon retour sur cet essai</summary><label class="field-label" for="feedback-category">Cela concerne…</label><select class="select-input" id="feedback-category">${categories.map(c => `<option ${(saved?.category || 'QCM ' + (run.index + 1)) === c ? 'selected' : ''}>${esc(c)}</option>`).join('')}</select><label class="field-label" for="feedback-comment">Mon commentaire</label><textarea class="feedback-textarea" id="feedback-comment" rows="4" maxlength="8000" placeholder="Ex. : deux propositions me semblent justes ; la correction n’explique pas leur différence…">${esc(saved?.comment || '')}</textarea><p class="help-text">Ton retour conserve les propositions dans l’ordre affiché et leurs explications.</p><p class="save-status" data-save-status></p></details></section>${supportDialogs(q, step, ref, source)}`;
   }
   function feedback() {
     return `<h1>Mes retours sur les QCM</h1>${HEPFeedback.fields()}${HEPFeedback.archiveLink}<div class="actions"><button class="btn primary" data-action="copy" ${comments().length ? '' : 'disabled'}>Copier les retours</button><button class="btn secondary" data-action="export" ${comments().length ? '' : 'disabled'}>Télécharger les retours</button></div><div class="feedback-list">${comments().sort((a,b) => b.updatedAt.localeCompare(a.updatedAt)).map(item => `<article class="feedback-item"><span class="pill">${esc(item.category)}</span><h2>${esc(item.snapshot.question.split('\n')[0])}</h2><p class="exercise-text">${esc(item.comment)}</p><button class="btn ghost" data-exercise="${esc(item.questionId.split('::')[0])}">Revoir les QCM →</button></article>`).join('') || '<p class="empty-state">Tu peux laisser un retour dans chaque exercice.</p>'}</div><p class="help-text">Copie tes retours, puis envoie-les à Maxim par message. Aucun envoi automatique.</p>`;
@@ -779,7 +925,12 @@
     restoreAncientChoice(); if (GROUPED_COURSES) restoreUnseenChoice();
     activeCourse = null; activeMix = null; active = null; scIndex = 0; emptyPathMessage = ''; frozen = null;
     const course = GROUPED_COURSES && /^cours-([0-9]+(?:-[0-9]+)?)$/.exec(hash);
-    if (GROUPED_COURSES && hash === 'tout-melanger') openMix();
+    if (hash !== DEEPEN_KEY && deepen) setDeepen(null);
+    if (GROUPED_COURSES && hash === DEEPEN_KEY) {
+      // Sans parcours à approfondir dans cet onglet (nouvel onglet, autre mode), l'accueil s'affiche.
+      if (deepen && threeTiers && deepen.mode === (withoutChoices ? 'sc' : 'qcm')) openCourse(DEEPEN_KEY); else setDeepen(null);
+    }
+    else if (GROUPED_COURSES && hash === 'tout-melanger') openMix();
     else if (GROUPED_COURSES && hash === ERRORS_KEY) openCourse(ERRORS_KEY);
     else if (course) openCourse(IS_ORAL ? String(Number(course[1])) : course[1]);
     else active = byId.get(hash) || null;
@@ -853,9 +1004,25 @@
     if (button.dataset.action === 'ancient-filter' && GROUPED_COURSES) {
       ancientOnly = !ancientOnly; writeNavigation(selectedAncientKey(), ancientOnly); route(); return;
     }
+    if (button.dataset.action === 'tier-deepen' && threeTiers) {
+      // « + Approfondir » : interrupteur dans le cadre Essentiel ; depuis « Tout le bloc », il choisit Essentiel + approfondi.
+      const next = levelFilter === 'approfondi' ? 'essentiel' : 'approfondi';
+      levelFilter = next; writeNavigation(selectedLevelKey(), next); route(); return;
+    }
+    if (button.dataset.action === 'deepen-open' && active && threeTiers) {
+      const step = active.steps[withoutChoices ? scIndex : displayedRun.index];
+      if (step.level !== 'essentiel' || step.attenteId !== button.dataset.attente || !deepenItems(step.attenteId).length) return;
+      let hash; try { hash = decodeURIComponent(location.hash.slice(1)); } catch (_) { hash = ''; }
+      if (withoutChoices) hash = hash.slice('sans-choix'.length).replace(/^\//, '');
+      setDeepen({ attenteId: step.attenteId, label: attenteById.get(step.attenteId)?.label || '', mode: withoutChoices ? 'sc' : 'qcm', returnHash: hash, presented, cursor: null });
+      setPresented(null); return navigate(DEEPEN_KEY);
+    }
+    if (button.dataset.action === 'deepen-return' && GROUPED_COURSES) return returnFromDeepen();
     if (button.dataset.levelFilter && levelsEnabled) {
       const next = button.dataset.levelFilter;
-      if (!['essentiel', 'tout'].includes(next) || next === levelFilter) return;
+      if (!(threeTiers ? ['essentiel', 'approfondi', 'tout'] : ['essentiel', 'tout']).includes(next) || next === levelFilter) return;
+      // Le cadre Essentiel est déjà choisi quand « + Approfondir » est activé : le toucher ne change rien.
+      if (next === 'essentiel' && levelFilter === 'approfondi') return;
       // Read the other filter's independent cursor/mixture without changing an answer.
       levelFilter = next; writeNavigation(selectedLevelKey(), next); route(); return;
     }
@@ -895,6 +1062,7 @@
       const progress = coursePosition(q, displayedRun), target = progress.queue[progress.index + (action === 'previous' ? -1 : 1)];
       if (['next', 'previous'].includes(action) && (!target || (action === 'next' && !expected.selfEvaluation))) return;
       if (['sc-known', 'sc-review'].includes(action) && (!expected.revealed || firstRecord(q, step))) return;
+      if (['sc-known', 'sc-review'].includes(action)) { ingestLocal(); if (firstRecord(q, step)) { render(); toast('Une première autoévaluation existe déjà pour cette question. Elle reste celle qui compte.'); return; } }
       const patch = action === 'sc-reveal' ? { revealed: true } : action === 'sc-known' ? { selfEvaluation: 'known' } : action === 'sc-review' ? { selfEvaluation: 'review' } : null;
       if (patch) setPresented({ key: presentedKey(q, step), mode: 'first' }); else setPresented(null);
       try {
@@ -1010,7 +1178,9 @@
       }
       byId = new Map(bank.exercises.map(q => [q.id, q]));
       attenteById = new Map(Array.isArray(bank.attentes) ? bank.attentes.filter(a => a && typeof a.id === 'string' && typeof a.label === 'string' && typeof a.operation === 'string' && (a.weight === null || [1, 2, 3].includes(a.weight))).map(a => [a.id, a]) : []);
-      levelsEnabled = GROUPED_COURSES && bank.exercises.every(q => q.steps.every(step => ['essentiel', 'approfondissement'].includes(step.level)));
+      const allLevels = bank.exercises.flatMap(q => q.steps.map(step => step.level));
+      threeTiers = GROUPED_COURSES && allLevels.every(level => THREE_LEVELS.includes(level)) && allLevels.includes('essentiel-approfondi');
+      levelsEnabled = threeTiers || (GROUPED_COURSES && allLevels.every(level => TWO_LEVELS.includes(level)));
       if (levelsEnabled) restoreLevelChoice();
       HEPDrive.init(repo, status, () => { freezeFirsts(); if (view !== 'exercise') render(); else refreshRunControls(); }); repo.save();
       await freezeFirsts(); route();

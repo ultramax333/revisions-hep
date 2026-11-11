@@ -797,3 +797,37 @@ body:has(.qcm-oral-home, .qcm-focus) .app-version-bar { max-width: 800px; }
 /* v25, après contrôle Codex : la première autoévaluation, figée, reste bien lisible. */
 .sc-self-evaluation .self-eval[aria-pressed="true"]:disabled { opacity: 1; box-shadow: 0 2px 0 var(--selected-shadow); }
 .sc-response[readonly] { background: var(--bg-card-2); }
+/* ---------- v26 : trois étages en cadres imbriqués (maquette A), « Approfondir ce savoir » ---------- */
+:root { --tier-soft: #fff4d1; --tier-line: #9a6f00; }
+@media (prefers-color-scheme: dark) { :root { --tier-soft: #3a2f10; --tier-line: #ffc83d; } }
+.tier-row { display: grid; gap: 6px; min-width: 0; }
+.tier-nest { border-radius: 16px; }
+.tier-outer { padding: 0 8px 8px; border: 2px solid var(--border-strong); background: var(--bg-card-2); }
+.tier-inner { padding: 0 10px 8px; border: 2px solid var(--border-strong); background: var(--bg-card); }
+.tier-nest.is-chosen { border-color: var(--tier-line); background: var(--tier-soft); }
+.tier-pick { display: grid; grid-template-columns: 30px minmax(0, 1fr); align-items: center; gap: 2px 10px; width: 100%; min-height: 52px; padding: 8px 2px; border: 0; border-radius: 12px; background: transparent; color: var(--text); text-align: left; }
+.tier-pick > .tier-name, .tier-pick > .tier-legend { grid-column: 2; }
+.tier-pick:active { background: var(--bg-press); }
+.tier-dot { grid-row: 1 / 3; grid-column: 1; display: grid; place-items: center; width: 28px; height: 28px; border-radius: 50%; border: 2px solid var(--text-dim); background: var(--bg-card); font-size: 15px; font-weight: 900; }
+.tier-pick[aria-pressed="true"] .tier-dot { border-color: var(--selected-shadow); background: var(--selected); color: var(--text-on-selected); }
+.tier-pick[aria-pressed="true"] .tier-dot::before { content: "✓"; content: "✓" / ""; }
+.tier-name { font-size: 1.0625rem; font-weight: 800; line-height: 1.2; }
+.tier-legend { color: var(--text-dim); font-size: 0.875rem; line-height: 1.3; }
+.tier-legend b { color: var(--text); white-space: nowrap; }
+.tier-nest.is-chosen > .tier-pick .tier-legend, .tier-inner.is-chosen .tier-legend { color: var(--text); }
+.qcm-settings .switch-row.tier-addon, .switch-row.tier-addon { width: 100%; min-height: 52px; padding: 8px 10px; border: 1.5px dashed var(--control-border); border-radius: 12px; background: var(--bg-card); }
+.tier-inner.is-chosen .switch-row.tier-addon { border-color: var(--tier-line); }
+.tier-addon .switch-text { gap: 2px; }
+.tier-note { margin: 2px 2px 0; font-size: 0.875rem; }
+.qcm-focus .qcm-filters .tier-row { flex: 1 1 100%; }
+.qcm-focus .switch-row.tier-addon { width: 100%; justify-content: space-between; padding: 8px 10px; }
+.qcm-focus .tier-addon .switch-track { flex-basis: 56px; width: 56px; height: 34px; }
+.qcm-focus .tier-addon .switch-knob { width: 28px; height: 28px; }
+.qcm-focus .tier-addon[aria-checked="true"] .switch-knob { transform: translateX(22px); }
+.level-essentiel-approfondi { border-color: var(--tier-line); background: var(--tier-soft); }
+.deepen-row { margin: 12px 0 4px; }
+.btn.deepen-button { width: 100%; min-height: 52px; gap: 8px; border: 2px solid var(--action); background: var(--tint); color: var(--tint-text); font-weight: 800; }
+.btn.deepen-button:not(:disabled):active { background: var(--bg-press); transform: scale(0.98); }
+.deepen-row .help-text { margin-top: 6px; font-size: 0.875rem; }
+.deepen-banner { margin: 0 0 10px; padding: 10px 12px; border-left: 6px solid var(--action); border-radius: 12px; background: var(--tint); color: var(--text); }
+.deepen-banner .help-text { margin-top: 2px; font-size: 0.875rem; }

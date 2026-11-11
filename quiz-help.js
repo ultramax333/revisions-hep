@@ -8,9 +8,10 @@
       dialog.setAttribute('aria-labelledby', 'quiz-help-title');
       dialog.innerHTML = `<h2 id="quiz-help-title" tabindex="-1">Comment utiliser ce quiz ?</h2>
         <p>L'idée, en deux temps :</p>
-        <ol><li><strong>D'abord les QCM</strong>, pour apprendre les notions et les distinguer. Commencez par « Essentiel » ; « Tout » ajoute les questions d'approfondissement.</li>
+        <ol><li><strong>D'abord les QCM</strong>, pour apprendre les notions et les distinguer. Commencez par « Essentiel », la base : une question par savoir. « + Approfondir » ajoute le détail des savoirs centraux ; « Tout le bloc » ajoute aussi « pour aller plus loin ».</li>
         <li><strong>Ensuite « Sans les choix »</strong> : les mêmes questions, sans les propositions. Cherchez la réponse vous-même, puis affichez la réponse attendue et évaluez-vous. C'est plus proche de l'examen.</li></ol>
-        <p>Le filtre « Anciens examens » ne garde que les questions reprises d'examens des années précédentes.</p>
+        <p>Après la correction d'une question de l'essentiel, le bouton « Approfondir ce savoir » ouvre ses questions de détail, puis « Retour au parcours » vous ramène là où vous étiez.</p>
+        <p>Le filtre « Anciens examens » ne garde que les questions reprises d'examens des années précédentes, de tous les niveaux.</p>
         <p>« Seulement les questions pas encore vues » cache celles auxquelles vous avez déjà répondu. Une question déjà faite porte l'étiquette « Déjà vue » et s'affiche sans la réponse : répondez de nouveau pour vous entraîner, ou touchez « Revoir ma réponse ». Seule la première réponse compte dans vos résultats.</p>
         <p>Le bouton « Difficile » (drapeau) garde une question dans « Mes erreurs et difficiles », avec vos réponses fausses. Touchez-le encore pour retirer la marque. Elle reste sur votre appareil et n'est pas envoyée.</p>
         <p><strong>Vos retours m'aident beaucoup :</strong></p>
