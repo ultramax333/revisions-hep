@@ -11,6 +11,8 @@
         <ol><li><strong>D'abord les QCM</strong>, pour apprendre les notions et les distinguer. Commencez par « Essentiel » ; « Tout » ajoute les questions d'approfondissement.</li>
         <li><strong>Ensuite « Sans les choix »</strong> : les mêmes questions, sans les propositions. Cherchez la réponse vous-même, puis affichez la réponse attendue et évaluez-vous. C'est plus proche de l'examen.</li></ol>
         <p>Le filtre « Anciens examens » ne garde que les questions reprises d'examens des années précédentes.</p>
+        <p>« Seulement les questions pas encore vues » cache celles auxquelles vous avez déjà répondu. Une question déjà faite porte l'étiquette « Déjà vue » et s'affiche sans la réponse : répondez de nouveau pour vous entraîner, ou touchez « Revoir ma réponse ». Seule la première réponse compte dans vos résultats.</p>
+        <p>Le bouton « Difficile » (drapeau) garde une question dans « Mes erreurs et difficiles », avec vos réponses fausses. Touchez-le encore pour retirer la marque. Elle reste sur votre appareil et n'est pas envoyée.</p>
         <p><strong>Vos retours m'aident beaucoup :</strong></p>
         <ul><li>👍 / 👎 sous une question : elle est utile, ou pas claire. Votre avis m'arrive tout seul, rien d'autre à faire.</li>
         <li>L'étiquette « 1 · À maîtriser », « 2 · À connaître » ou « 3 · À rencontrer » dit le poids du savoir pour l'examen. Les boutons 1 à 4 sous la question disent si ce classement vous paraît juste (4 : inutile pour l'examen). Votre avis ne change pas l'étiquette.</li>

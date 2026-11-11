@@ -17,18 +17,176 @@
   let withoutChoices = false, scIndex = 0, displayedSC = null, displayedSCNavigation = '', scPending = Promise.resolve();
   const scStore = window.HEPSansChoixStore?.create({ repo, scope: SCOPE, ingest: ingestLocal, changed, store: S });
   const visibleRun = q => withoutChoices ? { index: scIndex, id: 'sans-choix::' + q.id + '::' + q.qcmRevision + '::' + q.steps[scIndex].id } : readRun(q);
-  const stepDone = item => withoutChoices ? !!scStore.read(item.q, item.step).selfEvaluation : !!readRun(item.q).revealed[item.step.id];
+  const stepDone = item => withoutChoices ? !!firstRecord(item.q, item.step) : !!readRun(item.q).revealed[item.step.id];
   const questionLabel = () => withoutChoices ? 'questions sans les choix' : 'QCM';
   function modeControls() {
     if (!GROUPED_COURSES) return '';
-    return `<div class="segment-row"><span class="segment-label" id="qcm-mode-label">Mode</span><div class="qcm-mode-switch segmented" role="group" aria-labelledby="qcm-mode-label"><button type="button" class="segment" data-action="mode-qcm" aria-pressed="${!withoutChoices}">QCM</button><button type="button" class="segment" data-action="mode-sc" aria-pressed="${withoutChoices}">Sans les choix</button></div></div>`;
+    return `<div class="segment-row"><span class="segment-label" id="qcm-mode-label">Mode</span><div class="qcm-mode-switch segmented" role="group" aria-labelledby="qcm-mode-label"><button type="button" class="segment" data-action="mode-qcm" aria-pressed="${!withoutChoices}">${segmentText('QCM', 'Choisir parmi 4 réponses')}</button><button type="button" class="segment" data-action="mode-sc" aria-pressed="${withoutChoices}">${segmentText('Sans les choix', 'Répondre seul, puis comparer')}</button></div></div>`;
   }
-  let levelsEnabled = false, levelFilter = 'essentiel', ancientOnly = false, emptyPathMessage = '';
+  // v25 : chaque option porte une légende courte, toujours visible (AGENTS §2, postulat iPhone).
+  const segmentText = (title, help) => `<span class="segment-text"><span class="segment-title">${esc(title)}</span><span class="segment-help">${esc(help)}</span></span>`;
+  let levelsEnabled = false, levelFilter = 'essentiel', ancientOnly = false, unseenOnly = false, emptyPathMessage = '';
+  // v25 : « Revoir, ne pas revoir, refaire » (AGENTS §2).
+  const ERRORS_KEY = 'erreurs', ERRORS_LABEL = 'Mes erreurs et difficiles';
+  const PRESENTED_KEY = 'hep-revisions-qcm-presented-v1::' + SCOPE;
+  let frozen = null, practiceCache = null;
+  // Présentation d'une question déjà faite, propre à cet onglet (sessionStorage) : « first » juste après
+  // la première réponse (gardée au rechargement), « review » (Revoir ma réponse), « practice » (nouvelle
+  // tentative), sinon « hidden » : la question se rouvre sans réponse ni correction.
+  let presented = (() => { try { const v = JSON.parse(sessionStorage.getItem(PRESENTED_KEY) || 'null'); return v && typeof v.key === 'string' ? v : null; } catch (_) { return null; } })();
+  function setPresented(value) {
+    presented = value;
+    try { if (value) sessionStorage.setItem(PRESENTED_KEY, JSON.stringify(value)); else sessionStorage.removeItem(PRESENTED_KEY); } catch (_) { /* La présentation reste en mémoire. */ }
+  }
+  const presentedKey = (q, step) => (withoutChoices ? 'sc::' : 'qcm::') + q.id + '::' + q.qcmRevision + '::' + step.id + (withoutChoices ? '' : '::' + readRun(q).id);
+  // Nouvelles tentatives : une entrée par tentative, clé unique, jamais réécrite (l'historique n'est pas effacé).
+  const practicePrefix = (kind, q, step) => (kind === 'sc' ? 'sc-practice::' : 'qcm-practice::') + q.id + '::' + q.qcmRevision + '::' + step.id + '::';
+  // Correction après contrôle Codex : la réponse libre d'une tentative Sans les choix est stockée en texte brut
+  // (`sc-practice-text::…`, comme `sc-text::`), à côté de ses métadonnées JSON courtes (`sc-practice::…`) :
+  // 8 000 caractères, guillemets compris, tiennent dans la limite de 12 000 d'un brouillon sans échappement.
+  const MAX_DRAFT = 12000, MAX_RESPONSE = 8000;
+  const practiceTextKey = key => 'sc-practice-text::' + key.slice('sc-practice::'.length);
+  function practiceList(kind, q, step) {
+    if (!practiceCache || practiceCache.drafts !== repo.state.drafts) {
+      const index = new Map();
+      for (const [key, draft] of Object.entries(repo.state.drafts)) {
+        if (!key.startsWith('qcm-practice::') && !key.startsWith('sc-practice::')) continue;
+        let value; try { value = JSON.parse(draft.text); } catch (_) { continue; }
+        if (!value || value.v !== 1 || typeof value.at !== 'string' || !Number.isFinite(Date.parse(value.at))) continue;
+        if (key.startsWith('sc-practice::') && typeof value.response !== 'string') {
+          const raw = repo.state.drafts[practiceTextKey(key)]?.text;
+          if (typeof raw !== 'string' || value.responseHash !== S.fingerprint(raw)) continue;
+          value = { ...value, response: raw };
+        }
+        const base = key.slice(0, key.lastIndexOf('::') + 2);
+        if (!index.has(base)) index.set(base, []);
+        index.get(base).push(value);
+      }
+      index.forEach(list => list.sort((a, b) => a.at.localeCompare(b.at)));
+      practiceCache = { drafts: repo.state.drafts, index };
+    }
+    return practiceCache.index.get(practicePrefix(kind, q, step)) || [];
+  }
+  // Écritures de la v25 sous le même verrou que les essais et Sans les choix (« <collection>-edit ») :
+  // deux onglets ne peuvent plus lire puis réécrire l'état en même temps.
+  const exclusive = perform => scStore ? scStore.exclusive(perform) : navigator.locks ? navigator.locks.request(SCOPE + '-edit', perform) : Promise.resolve().then(perform);
+  // Écritures propres à cet onglet, vérifiées après coup : un autre onglet qui a écrit à partir d'une copie
+  // périmée de localStorage (propagation asynchrone entre processus) ne peut pas les effacer durablement.
+  const ownWrites = new Map();
+  let verifyTimer = null;
+  function rememberOwn(...keys) {
+    keys.forEach(key => { const draft = repo.state.drafts[key]; if (draft) ownWrites.set(key, { ...draft }); });
+    scheduleVerify();
+  }
+  function scheduleVerify(delay = 1200) { clearTimeout(verifyTimer); verifyTimer = setTimeout(() => verifyOwn(), delay); }
+  function missingOwn(drafts) {
+    for (const [key, draft] of ownWrites) { const stored = drafts?.[key]; if (!stored || stored.updatedAt < draft.updatedAt) return true; }
+    return false;
+  }
+  function verifyOwn(storedRaw) {
+    if (!ownWrites.size) return Promise.resolve(false);
+    let stored; try { stored = JSON.parse(storedRaw ?? localStorage.getItem(KEY) ?? 'null'); } catch (_) { stored = null; }
+    if (!missingOwn(stored?.drafts)) return Promise.resolve(false);
+    return exclusive(() => {
+      ingestLocal();
+      for (const [key, draft] of ownWrites) { const current = repo.state.drafts[key]; if (!current || current.updatedAt < draft.updatedAt) repo.state.drafts[key] = { ...draft }; }
+      repo.save(); changed(); return true;
+    }).then(repaired => { scheduleVerify(); return repaired; }).catch(() => false);
+  }
+  function addPractice(kind, q, step, value, response) {
+    // Limite explicite, jamais de troncature : au-delà, rien n'est écrit et un message le dit.
+    if (response !== undefined && (typeof response !== 'string' || response.length > MAX_RESPONSE)) return Promise.reject(Error('Ta réponse dépasse 8 000 caractères. Elle n’a pas été enregistrée ni tronquée ; raccourcis-la ou copie-la ailleurs.'));
+    return exclusive(() => {
+      ingestLocal();
+      const key = practicePrefix(kind, q, step) + S.uuid(), at = new Date().toISOString();
+      const meta = JSON.stringify({ v: 1, at, ...value, ...(response !== undefined ? { responseHash: S.fingerprint(response) } : {}) });
+      if (meta.length > MAX_DRAFT || key.length > 200) throw Error('Cette tentative ne peut pas être enregistrée dans ce format. Rien n’a été tronqué.');
+      if (response !== undefined) repo.state.drafts[practiceTextKey(key)] = { text: response, updatedAt: at };
+      repo.state.drafts[key] = { text: meta, updatedAt: at };
+      const saved = repo.save(); changed();
+      rememberOwn(key, ...(response !== undefined ? [practiceTextKey(key)] : []));
+      if (!saved) throw Error(repo.warning || 'Enregistrement local indisponible : télécharge une sauvegarde.');
+    });
+  }
+  // ---------- 3 : première autoévaluation Sans les choix figée ----------
+  // La v24 réécrit son enregistrement `sc-meta` (même clé, génération suivante) quand on retouche « Je savais » /
+  // « À revoir ». Dès qu'elle voit une première autoévaluation (chargement, autre onglet, import, Drive, sa propre
+  // action), la v25 en fait une copie immuable `sc-first::…` + `sc-first-text::…`, que la v24 ignore et ne réécrit
+  // jamais. Toute lecture du « premier résultat » passe par cette copie.
+  const scIdentity = (q, step) => q.id + '::' + step.id + '::' + q.qcmRevision;
+  function frozenFirst(q, step) {
+    const id = scIdentity(q, step), meta = repo.state.drafts['sc-first::' + id], raw = repo.state.drafts['sc-first-text::' + id];
+    if (!meta || !raw) return null;
+    try {
+      const v = JSON.parse(meta.text);
+      if (v?.v !== 1 || !['known', 'review'].includes(v.selfEvaluation) || v.responseHash !== S.fingerprint(raw.text)) return null;
+      return { selfEvaluation: v.selfEvaluation, response: raw.text, revealed: true, updatedAt: stampOf(v.at), frozen: true };
+    } catch (_) { return null; }
+  }
+  const stampOf = value => typeof value === 'string' && Number.isFinite(Date.parse(value)) ? value : '1970-01-01T00:00:00.000Z';
+  function firstRecord(q, step) {
+    const frozenOne = frozenFirst(q, step);
+    if (frozenOne) return frozenOne;
+    const record = scStore?.read(q, step);
+    return record?.selfEvaluation ? record : null;
+  }
+  function freezeFirsts() {
+    if (!scStore || !GROUPED_COURSES || !bank) return Promise.resolve(0);
+    return exclusive(() => {
+      ingestLocal();
+      let added = 0;
+      const at = new Date().toISOString(), frozenKeys = [];
+      for (const q of bank.exercises) for (const step of q.steps) {
+        if (step.sansChoix !== true || frozenFirst(q, step)) continue;
+        const record = scStore.read(q, step);
+        if (!record.selfEvaluation) continue;
+        const id = scIdentity(q, step);
+        repo.state.drafts['sc-first-text::' + id] = { text: record.response, updatedAt: at };
+        repo.state.drafts['sc-first::' + id] = { text: JSON.stringify({ v: 1, selfEvaluation: record.selfEvaluation, at: record.updatedAt, responseHash: S.fingerprint(record.response), token: record.token }), updatedAt: at };
+        frozenKeys.push('sc-first-text::' + id, 'sc-first::' + id);
+        added++;
+      }
+      if (added) { repo.save(); changed(); rememberOwn(...frozenKeys); }
+      return added;
+    }).catch(() => 0);
+  }
+  // Statut d'une question : vue (première réponse donnée) et à revoir (dernier résultat faux / « À revoir »).
+  function qcmStatus(q, step) {
+    const run = readRun(q);
+    if (!run.revealed[step.id]) return { seen: false, wrong: false };
+    const tries = practiceList('qcm', q, step).filter(p => p.runId === run.id && step.choices.some(c => c.id === p.choice));
+    const last = tries.length ? tries[tries.length - 1].choice : run.answers[step.id];
+    return { seen: true, wrong: last !== step.correctId };
+  }
+  function scStatus(q, step) {
+    const record = firstRecord(q, step);
+    if (!record) return { seen: false, wrong: false };
+    const tries = practiceList('sc', q, step).filter(p => ['known', 'review'].includes(p.selfEvaluation) && p.at > record.updatedAt);
+    return { seen: true, wrong: (tries.length ? tries[tries.length - 1].selfEvaluation : record.selfEvaluation) === 'review' };
+  }
+  const itemStatus = item => withoutChoices ? scStatus(item.q, item.step) : qcmStatus(item.q, item.step);
+  // Marque « Difficile » : sur l'appareil, dans l'état de la collection (donc dans les sauvegardes), jamais envoyée.
+  const difficultKey = (q, step) => 'difficile::' + q.id + '::' + step.id;
+  const isDifficult = (q, step) => repo.state.drafts[difficultKey(q, step)]?.text === 'true';
+  const inErrors = item => isDifficult(item.q, item.step) || itemStatus(item).wrong;
+  function difficultInner(on) { return `<span class="difficult-flag" aria-hidden="true">⚑</span><span>${on ? 'Marquée « Difficile »' : 'Difficile'}</span>`; }
+  function difficultHelp(on) { return on ? 'Elle reste dans « Mes erreurs et difficiles ». Touche encore pour retirer la marque.' : 'Touche pour la garder dans « Mes erreurs et difficiles ».'; }
+  function difficultButton(q, step) {
+    if (!GROUPED_COURSES) return '';
+    const on = isDifficult(q, step);
+    return `<div class="difficult-row"><button type="button" class="btn difficult-toggle" data-action="toggle-difficult" aria-pressed="${on}" aria-describedby="difficult-help">${difficultInner(on)}</button><p class="help-text difficult-help" id="difficult-help">${difficultHelp(on)}</p></div>`;
+  }
+  const seenBadge = () => '<span class="seen-badge">Déjà vue</span>';
   const runCache = new Map(), mixExpansionCache = new Map();
   const mixKey = 'hep-revisions-qcm-mixed-position-v1::' + SCOPE;
   const courseCursorKey = 'hep-revisions-qcm-course-position-v1::' + SCOPE;
   const esc = value => String(value ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
-  const text = value => `<span class="exercise-text">${esc(value)}</span>`;
+  // v25 : mise en évidence écrite dans les données, « **mot** ». Le texte est d'abord échappé ;
+  // seule la paire ** ... ** (sur une même ligne, non vide) devient <strong>. Aucun autre HTML n'est accepté.
+  const BOLD = /\*\*([^*\n](?:[^\n]*?[^*\n])?)\*\*/g;
+  const rich = value => esc(value).replace(BOLD, '<strong>$1</strong>');
+  const plain = value => String(value ?? '').replace(BOLD, '$1');
+  const text = value => `<span class="exercise-text">${rich(value)}</span>`;
   const needsContext = step => step?.requiresContext === true;
   const comments = () => S.feedbackThreads(repo.state).filter(item => !item.deleted && item.comment.trim());
   const runKey = q => 'qcm2::' + q.id + '::' + q.qcmRevision;
@@ -86,6 +244,10 @@
   const levelStorageKey = name => (withoutChoices ? 'sc-level-' : 'qcm-level-') + name + '::' + SCOPE + '::' + levelFilter + (ancientOnly ? '::anciens' : '');
   const selectedLevelKey = () => (withoutChoices ? 'sc-selected-level::' : 'qcm-selected-level::') + SCOPE;
   const selectedAncientKey = () => (withoutChoices ? 'sc-selected-ancient::' : 'qcm-selected-ancient::') + SCOPE;
+  const selectedUnseenKey = () => (withoutChoices ? 'sc-selected-unseen::' : 'qcm-selected-unseen::') + SCOPE;
+  function restoreUnseenChoice() {
+    try { unseenOnly = JSON.parse(repo.state.drafts[selectedUnseenKey()]?.text || 'false') === true; } catch (_) { unseenOnly = false; }
+  }
   function restoreAncientChoice() {
     try { ancientOnly = JSON.parse(repo.state.drafts[selectedAncientKey()]?.text || 'false') === true; } catch (_) { ancientOnly = false; }
   }
@@ -100,7 +262,7 @@
   // presque tout le bloc oral étant central). Poids 3 = « Savoir secondaire » (REGLES §5.10).
   const weightBadge = step => { const w = stepWeight(step); return w ? `<span class="weight-badge weight-${w}"><span class="visually-hidden">Poids du savoir pour l’examen : </span>${w} · ${WEIGHT_LABELS[w]}${w === 3 ? ' · Savoir secondaire' : ''}</span>` : ''; };
   const levelBadge = step => ['essentiel', 'approfondissement'].includes(step?.level) ? `<span class="level-badge level-${step.level}"><span class="visually-hidden">Niveau de la question : </span>${step.level === 'essentiel' ? 'Essentiel' : 'Approfondissement'}</span>` : '';
-  const questionMeta = (ref, step) => `<div class="question-meta"><p class="exercise-origin">${esc(referenceLabel(ref))}${ref.date ? ' · ' + esc(ref.date) : ''}</p><span class="question-tags">${weightBadge(step)}${levelBadge(step)}</span></div>`;
+  const questionMeta = (ref, step, seen = false) => `<div class="question-meta"><p class="exercise-origin">${esc(referenceLabel(ref))}${ref.date ? ' · ' + esc(ref.date) : ''}</p><span class="question-tags">${weightBadge(step)}${levelBadge(step)}${seen ? seenBadge() : ''}</span></div>`;
   function knowBox(course) {
     if (!attenteById.size || course.kind === 'liens') return '';
     const items = orderedCourseEntries().filter(item => courseKey(item.q) === course.key && (!ancientOnly || !!item.step.ancienExamen) && (!withoutChoices || item.step.sansChoix === true));
@@ -120,7 +282,7 @@
     return `<details class="know-box"><summary><span class="know-title">Ce qu’il faut savoir</span><span class="know-summary">${list.length} savoir${list.length > 1 ? 's' : ''} · ${ess} ${noun(ess)}</span></summary>${groups.map(([w, entries]) => `<div class="know-group">${weightLabel(w)}<ul class="know-list">${entries.map(e => `<li><span class="know-label">${esc(e.a.label)}</span><span class="know-count">${e.ess} ${noun(e.ess)}${e.all > e.ess ? ` · +${e.all - e.ess} avec « Tout »` : ''}</span><span class="know-op">${esc(e.a.operation)}</span></li>`).join('')}</ul></div>`).join('')}<p class="help-text know-scope">Comptes de ce parcours, ${esc(scope)}.${unweighted ? ` ${unweighted} question${unweighted > 1 ? 's' : ''} sans poids.` : ''} Les poids viennent du cadre et de la synthèse de révision ; tes avis sous chaque question aident à les vérifier.</p></details>`;
   }
   const snapshotPrompt = step => (step.ancienExamen ? 'Ancien examen\n\n' : '') + step.prompt;
-  const emptySelection = () => ancientOnly ? 'Aucune question d’ancien examen ne correspond à ce cours ou mélange, au niveau et au mode choisis. Désactive Anciens examens, choisis Tout ou le mode QCM.' : 'Aucune question disponible pour ce parcours. Choisis Tout ou le mode QCM.';
+  const emptySelection = () => unseenOnly ? 'Tu as déjà répondu à toutes les questions de ce choix. Désactive « Seulement les questions pas encore vues » pour les revoir.' : ancientOnly ? 'Aucune question d’ancien examen ne correspond à ce cours ou mélange, au niveau et au mode choisis. Désactive Anciens examens, choisis Tout ou le mode QCM.' : 'Aucune question disponible pour ce parcours. Choisis Tout ou le mode QCM.';
   function writeNavigation(key, value) {
     ingestLocal();
     const previous = repo.state.drafts[key];
@@ -133,9 +295,20 @@
   }
   const stepEligible = step => (!ancientOnly || !!step.ancienExamen) && (!withoutChoices || step.sansChoix === true) && (!levelsEnabled || levelFilter === 'tout' || step.level === 'essentiel');
   const exerciseEntries = q => q.steps.map((step, index) => ({ q, step, index })).filter(item => stepEligible(item.step));
+  function levelCount(level) {
+    return bank.exercises.reduce((n, q) => n + q.steps.filter(step => (!ancientOnly || !!step.ancienExamen) && (!withoutChoices || step.sansChoix === true) && (level === 'tout' || step.level === 'essentiel') && (!unseenOnly || !stepDone({ q, step }))).length, 0);
+  }
   function levelControls() {
     if (!GROUPED_COURSES) return '';
-    return `<div class="qcm-filters" role="group" aria-label="Filtres du parcours">${levelsEnabled ? `<div class="segment-row"><span class="segment-label" id="qcm-level-label">Niveau</span><div class="qcm-mode-switch segmented" role="group" aria-labelledby="qcm-level-label"><button type="button" class="segment" data-level-filter="essentiel" aria-pressed="${levelFilter === 'essentiel'}">Essentiel</button><button type="button" class="segment" data-level-filter="tout" aria-pressed="${levelFilter === 'tout'}">Tout</button></div></div>` : ''}<button type="button" class="switch-row" role="switch" aria-checked="${ancientOnly}" data-action="ancient-filter"><span class="switch-text"><span class="switch-title">Anciens examens</span><span class="switch-help">Seulement les questions reprises d’anciens examens</span></span><span class="switch-track" aria-hidden="true"><span class="switch-knob"></span></span></button></div>`;
+    const plural = n => n + ' question' + (n > 1 ? 's' : '');
+    return `<div class="qcm-filters" role="group" aria-label="Filtres du parcours">${levelsEnabled ? `<div class="segment-row"><span class="segment-label" id="qcm-level-label">Niveau</span><div class="qcm-mode-switch segmented" role="group" aria-labelledby="qcm-level-label"><button type="button" class="segment" data-level-filter="essentiel" aria-pressed="${levelFilter === 'essentiel'}">${segmentText('Essentiel', 'La base · ' + plural(levelCount('essentiel')))}</button><button type="button" class="segment" data-level-filter="tout" aria-pressed="${levelFilter === 'tout'}">${segmentText('Tout', 'Avec l’approfondissement · ' + plural(levelCount('tout')))}</button></div></div>` : ''}<button type="button" class="switch-row" role="switch" aria-checked="${ancientOnly}" data-action="ancient-filter"><span class="switch-text"><span class="switch-title">Anciens examens</span><span class="switch-help">Seulement les questions reprises d’anciens examens</span></span><span class="switch-track" aria-hidden="true"><span class="switch-knob"></span></span></button><button type="button" class="switch-row" role="switch" aria-checked="${unseenOnly}" data-action="unseen-filter"><span class="switch-text"><span class="switch-title">Seulement les questions pas encore vues</span><span class="switch-help">Cache celles auxquelles tu as déjà répondu</span></span><span class="switch-track" aria-hidden="true"><span class="switch-knob"></span></span></button></div>`;
+  }
+  // Sur l'écran d'une question : les réglages restent accessibles, repliés derrière un résumé lisible ;
+  // ouverts, chaque option garde sa légende.
+  function focusSettings() {
+    if (!GROUPED_COURSES) return '';
+    const parts = [levelsEnabled ? (levelFilter === 'tout' ? 'Tout' : 'Essentiel') : '', ancientOnly ? 'Anciens examens' : '', unseenOnly ? 'Pas encore vues' : ''].filter(Boolean);
+    return `<details class="focus-settings"><summary><span class="focus-settings-title">Réglages</span><span class="focus-settings-state">${esc(parts.join(' · ') || 'Toutes les questions')}</span><span class="focus-settings-open" aria-hidden="true">Modifier</span></summary>${levelControls()}</details>`;
   }
   function writeRun(q, run) {
     const key = runKey(q), previous = repo.state.drafts[key];
@@ -186,7 +359,8 @@
     }
     const current = readRun(active);
     if (!sameRun(current, displayedRun)) { toast('Cet essai a changé ailleurs. Une nouvelle action l’actualisera ; tes retours précédents restent conservés.'); return; }
-    document.querySelectorAll('[data-choice]').forEach(button => { button.setAttribute('aria-pressed', String(current.answers[button.dataset.step] === button.dataset.choice)); });
+    const shown = qcmDisplay(active, active.steps[current.index], current);
+    document.querySelectorAll('[data-choice]').forEach(button => { button.setAttribute('aria-pressed', String(shown.selectedId === button.dataset.choice)); });
   }
   async function mutateRun(q, expected, change, after) {
     const perform = () => {
@@ -226,13 +400,15 @@
     // Track panels actually opened in this tab, separately from attempt/hint flags.
     // No hidden correct answer is serialized before correction is displayed.
     const seen = quickSeen.get(run.id) || { context: false, hints: false, explanations: new Set() };
-    const ids = run.order[step.id], selected = run.answers[step.id], revealed = !!run.revealed[step.id];
+    const display = GROUPED_COURSES ? qcmDisplay(q, step, run) : { mode: 'first', selectedId: run.answers[step.id], revealed: !!run.revealed[step.id] };
+    const ids = run.order[step.id], selected = display.selectedId, revealed = display.revealed;
+    const context = display.mode === 'hidden' ? 'Question déjà vue : première réponse masquée.\n' : display.mode === 'practice' ? 'Nouvelle tentative (entraînement).\n' : display.mode === 'review' ? 'Première réponse revue.\n' : '';
     const explanations = revealed ? ids.filter(id => id === step.correctId || id === selected || seen.explanations.has(step.id) || document.querySelector('.qcm-verdict details')?.open).map(id => {
       const choice = step.choices.find(c => c.id === id);
       return String.fromCharCode(65 + ids.indexOf(id)) + '. ' + (id === step.correctId ? 'Bonne réponse. ' : '') + choice.explanation;
     }).join('\n\n') : '';
     return { question: snapshotPrompt(step) + '\n\n' + ids.map((id, i) => String.fromCharCode(65 + i) + '. ' + step.choices.find(c => c.id === id).text).join('\n'),
-      answer: 'Mon choix : ' + (selected ? String.fromCharCode(65 + ids.indexOf(selected)) + '. ' + step.choices.find(c => c.id === selected).text : 'aucun') + '\n\n' + (revealed ? explanations : 'Correction non affichée.'),
+      answer: context + 'Mon choix : ' + (selected ? String.fromCharCode(65 + ids.indexOf(selected)) + '. ' + step.choices.find(c => c.id === selected).text : 'aucun') + '\n\n' + (revealed ? explanations : 'Correction non affichée.'),
       hint: (seen.context ? 'Situation consultée :\n' + q.context : '') + (seen.hints ? '\n\nRappel consulté :\n' + hintText(q) : ''), module: q.module, course: q.course };
   }
   function markQuickSeen(run, kind, step) {
@@ -262,14 +438,27 @@
   // Parcours dérivés : chaque question conserve son exercice, sa révision et son essai.
   const courseKey = q => { if (typeof q.courseGroupKey === 'string') return q.courseGroupKey; const match = /^[CS](\d+)$/.exec(q.referenceId || q.course || ''); return match ? String(Number(match[1])) : null; };
   const groupDefinitions = () => bank.courseGroups || [...new Set(bank.exercises.map(courseKey).filter(Boolean))].map(key => ({ key, label: 'Cours ' + key }));
-  const courseLabel = key => groupDefinitions().find(group => group.key === key)?.label || 'Cours ' + key;
+  const courseLabel = key => key === ERRORS_KEY ? ERRORS_LABEL : groupDefinitions().find(group => group.key === key)?.label || 'Cours ' + key;
   function orderedCourseEntries() {
     if (!bank.navigationOrder) return bank.families.flatMap(family => bank.exercises.filter(q => q.familyId === family.id).flatMap(q => q.steps.map((step, index) => ({ q, step, index }))));
     const entries = new Map(bank.exercises.flatMap(q => q.steps.map((step, index) => [JSON.stringify([q.id, step.id]), { q, step, index }])));
     return bank.navigationOrder.map(ref => entries.get(JSON.stringify([ref.exerciseId, ref.stepId])));
   }
+  // v25 : file vivante (accueil, compteurs) ; une file « figée » à l'ouverture d'un parcours dont le contenu
+  // dépend des réponses (pas encore vues, erreurs), pour que la question en cours et le compteur restent stables.
+  const frozenSig = key => JSON.stringify([key, withoutChoices, levelFilter, ancientOnly, unseenOnly]);
+  // La question affichée dans cet onglet (réponse ou tentative qu'on vient de donner, mémorisée dans sessionStorage)
+  // reste dans la file d'un parcours rouvert, même si elle n'est plus « pas encore vue » ou plus une erreur :
+  // un rechargement ne fait pas avancer le parcours.
+  const isPresentedItem = item => !!presented && presented.key === presentedKey(item.q, item.step);
+  function errorsQueue(keepPresented = false) { return orderedCourseEntries().filter(item => item && stepEligible(item.step) && (inErrors(item) || keepPresented && isPresentedItem(item))); }
+  function liveCourseQueue(key, keepPresented = false) {
+    if (key === ERRORS_KEY) return errorsQueue(keepPresented);
+    return orderedCourseEntries().filter(item => courseKey(item.q) === key && stepEligible(item.step) && (!unseenOnly || !stepDone(item) || keepPresented && isPresentedItem(item)));
+  }
   function courseQueue(key) {
-    return orderedCourseEntries().filter(item => courseKey(item.q) === key && stepEligible(item.step));
+    if (frozen && frozen.sig === frozenSig(key)) return frozen.items;
+    return liveCourseQueue(key);
   }
   function coursePosition(q, run) {
     const queue = activeMix ? mixedQueue(activeMix) : activeCourse ? courseQueue(activeCourse) : [];
@@ -299,12 +488,14 @@
     try { if (withoutChoices || levelsEnabled || ancientOnly) writeNavigation(levelStorageKey('course-position'), cursors); else localStorage.setItem(courseCursorKey, JSON.stringify(cursors)); } catch (_) { toast('La position du cours ne peut pas être enregistrée sur cet appareil.'); }
   }
   function openCourse(key) {
-    const queue = courseQueue(key);
-    if (!queue.length) { showEmptyPath(emptySelection()); return false; }
+    frozen = null;
+    const queue = liveCourseQueue(key, true);
+    if (!queue.length) { showEmptyPath(key === ERRORS_KEY ? 'Aucune question à revoir pour l’instant : pas de réponse fausse, d’« À revoir » ni de question marquée « Difficile » dans ce choix.' : emptySelection()); return false; }
+    if (unseenOnly || key === ERRORS_KEY) frozen = { sig: frozenSig(key), items: queue };
     activeCourse = key;
     const cursor = readCourseCursors()[key];
     const saved = queue.find(item => item.q.id === cursor?.exerciseId && item.step.id === cursor?.stepId && item.q.qcmRevision === cursor?.qcmRevision);
-    const pending = saved || queue.find(item => !stepDone(item)) || queue[queue.length - 1];
+    const pending = saved || (key === ERRORS_KEY ? queue[0] : queue.find(item => !stepDone(item)) || queue[queue.length - 1]);
     selectCourseEntry(pending); return true;
   }
   function showEmptyPath(message) {
@@ -312,8 +503,8 @@
   }
   function courseStats(queue) {
     if (withoutChoices) return queue.reduce((stats, item) => {
-      const record = scStore.read(item.q, item.step);
-      if (record.selfEvaluation) { stats.answered++; if (record.selfEvaluation === 'known') stats.score++; }
+      const record = firstRecord(item.q, item.step);
+      if (record) { stats.answered++; if (record.selfEvaluation === 'known') stats.score++; }
       return stats;
     }, { answered: 0, score: 0 });
     return queue.reduce((stats, item) => { const run = readRun(item.q); if (run.revealed[item.step.id]) { stats.answered++; if (run.answers[item.step.id] === item.step.correctId) stats.score++; } return stats; }, { answered: 0, score: 0 });
@@ -342,8 +533,9 @@
   }
   function allEntries() { return bank.exercises.flatMap(exerciseEntries); }
   function mixedQueue(mix) {
+    if (frozen && frozen.sig === frozenSig('mix::' + mix.id)) return frozen.items;
     const entries = new Map(allEntries().map(item => [entryKey(entryRef(item)), item]));
-    return mix.order.map(ref => entries.get(entryKey(ref)));
+    return mix.order.map(ref => entries.get(entryKey(ref))).filter(item => item && (!unseenOnly || !stepDone(item) || isPresentedItem(item)));
   }
   function readMix() {
     let value;
@@ -380,9 +572,11 @@
   function openMix(fresh = false) {
     const entries = allEntries();
     if (!entries.length) { showEmptyPath(emptySelection()); return false; }
-    activeCourse = null;
+    activeCourse = null; frozen = null;
     activeMix = !fresh && readMix() || { version: 1, id: S.uuid(), order: shuffled(entries.map(entryRef)) };
     const queue = mixedQueue(activeMix);
+    if (!queue.length) { showEmptyPath(emptySelection()); return false; }
+    if (unseenOnly) frozen = { sig: frozenSig('mix::' + activeMix.id), items: queue };
     const target = queue.find(item => entryKey(entryRef(item)) === entryKey(activeMix.cursor || {})) || queue[0];
     selectMixedEntry(target);
   }
@@ -406,11 +600,13 @@
       const haystack = [bank.blocks?.find(block => block.key === group.block)?.label, label, courseAlias, ...exercises.map(q => { const family = bank.families.find(f => f.id === q.familyId), ref = bank.courseReferences[q.referenceId || q.course]; return [family?.title, family?.theme, q.title, q.prompt, ...q.hints, ...q.steps.map(s => s.prompt), ref?.date].join(' '); })].join(' ');
       return { key, label, block: group.block, kind: group.kind, queue, date: dates[0] || '99999999', match: !query || oralNavigation.normalize(haystack).includes(query) };
     }).filter(course => course.match);
-    const total = allEntries().length, mix = readMix();
-    return `<div class="quiz-help-entry"><button type="button" class="btn quiz-help-button" data-quiz-help>Comment utiliser ce quiz ?</button></div><section class="qcm-settings" aria-label="Réglages">${modeControls()}${levelControls()}</section>${emptyPathMessage ? `<p class="notice" role="status">${esc(emptyPathMessage)}</p>` : ''}<section class="qcm-mix-start" aria-label="Toutes les questions"><div><button class="btn primary btn-large" data-action="mix" ${total ? '' : 'disabled'}><span aria-hidden="true">▶</span> Tout mélanger</button><p class="help-text">${total ? total + ' ' + questionLabel() + ' en ordre aléatoire. Réponses conservées.' : esc(emptySelection())}</p></div>${mix ? '<button class="btn ghost" data-action="new-mix">Nouveau mélange</button>' : ''}</section>
+    const total = allEntries().filter(item => !unseenOnly || !stepDone(item)).length, mix = readMix();
+    const errors = errorsQueue().length, unseenSuffix = n => !unseenOnly ? '' : ' pas encore vu' + (withoutChoices ? 'e' : '') + (n > 1 ? 's' : '');
+    const errorsCard = `<section class="qcm-errors-start" aria-label="${ERRORS_LABEL}"><article class="course-card exercise-tile course-card-errors"><h2><span class="difficult-flag" aria-hidden="true">⚑</span> ${ERRORS_LABEL}</h2><p class="help-text">${withoutChoices ? 'Tes « À revoir » et tes questions marquées « Difficile ».' : 'Tes réponses fausses et tes questions marquées « Difficile ».'} Une erreur sort de la liste quand tu la réussis.</p><p class="errors-count"><strong data-errors-count>${errors}</strong> question${errors > 1 ? 's' : ''} à revoir</p><button class="btn primary" data-action="errors" ${errors ? '' : 'disabled'} aria-label="${errors ? 'Revoir ' + errors + ' question' + (errors > 1 ? 's' : '') + ' : ' + ERRORS_LABEL : 'Rien à revoir pour l’instant dans ' + ERRORS_LABEL}">${errors ? 'Revoir' : 'Rien pour l’instant'}</button></article></section>`;
+    return `<div class="quiz-help-entry"><button type="button" class="btn quiz-help-button" data-quiz-help>Comment utiliser ce quiz ?</button></div><section class="qcm-settings" aria-label="Réglages">${modeControls()}${levelControls()}</section>${emptyPathMessage ? `<p class="notice" role="status">${esc(emptyPathMessage)}</p>` : ''}<section class="qcm-mix-start" aria-label="Toutes les questions"><div><button class="btn primary btn-large" data-action="mix" ${total ? '' : 'disabled'}><span aria-hidden="true">▶</span> Tout mélanger</button><p class="help-text">${total ? total + ' ' + questionLabel() + unseenSuffix(total) + ' en ordre aléatoire. Réponses conservées.' : esc(emptySelection())}</p></div>${mix ? '<button class="btn ghost" data-action="new-mix">Nouveau mélange</button>' : ''}</section>${GROUPED_COURSES ? errorsCard : ''}
       <section class="qcm-subject" aria-labelledby="qcm-subject-title"><h1 id="qcm-subject-title">${esc(collection.subject || 'Français')}</h1><section class="qcm-block" aria-labelledby="qcm-block-title"><h2 id="qcm-block-title">${esc(collection.block || 'Bloc oral')}</h2><p class="hero-description">${withoutChoices ? 'Écris ou pense ta réponse, puis affiche la réponse attendue et déclare « Je savais » ou « À revoir ». Les résultats QCM restent séparés.' : 'Des QCM avec une correction expliquée, à ton rythme.'}${writingHome && !withoutChoices ? ' Les exercices rédigés du bloc oral ont aussi leur <a href="oral.html">accès direct à la rédaction</a>.' : ''}</p>
       <form class="oral-tools qcm-home-filters" id="qcm-home-filters"><label class="oral-field" for="qcm-search">Rechercher un cours ou une notion<input class="text-input" id="qcm-search" type="search" value="${esc(search)}" placeholder="${esc(collection.searchPlaceholder || 'Ex. : Cours 1, étayage, récit…')}"></label><button class="btn secondary" type="submit">Rechercher</button>${search ? '<button class="btn ghost" type="button" data-action="clear-search">Tout afficher</button>' : ''}</form>
-      <p class="help-text oral-result-count" id="qcm-home-results" role="status" tabindex="-1">${courses.length} ${groupDefinitions().some(g => g.kind === 'liens') ? 'parcours' : 'cours'} · ${courses.reduce((n, course) => n + course.queue.length, 0)} ${questionLabel()}</p><div class="exercise-grid qcm-courses" role="group" aria-label="Parcours par cours">${renderCourseBlocks(courses, course => { const stats = courseStats(course.queue); return `<article class="course-card exercise-tile${course.kind === 'liens' ? ' course-card-liens' : ''}"><h3>${esc(course.label)}</h3>${course.kind === 'liens' ? '<p class="help-text">Des questions qui relient deux cours du bloc, comme à l’examen.</p>' : ''}<p class="help-text">${course.queue.length} ${questionLabel()}${stats.answered ? ` · ${stats.answered} ${withoutChoices ? 'autoévaluation' : 'réponse'}${stats.answered > 1 ? 's' : ''} enregistrée${stats.answered > 1 ? 's' : ''}` : ''}</p><span class="course-progress" aria-hidden="true"><span style="width:${course.queue.length ? Math.round(100 * stats.answered / course.queue.length) : 0}%"></span></span><button class="btn primary" data-course="${esc(course.key)}" ${course.queue.length ? '' : 'disabled'} aria-label="${esc(course.queue.length ? (stats.answered || readCourseCursors()[course.key] ? 'Reprendre' : 'Commencer') + ' ' + course.label : 'Aucune question disponible pour ' + course.label + '. ' + emptySelection())}">${course.queue.length ? (stats.answered || readCourseCursors()[course.key] ? 'Reprendre' : 'Commencer') : 'Aucune question'}</button>${knowBox(course)}</article>`; }) || '<p class="empty-state">Aucun cours ne correspond à cette recherche.</p>'}</div></section></section>
+      <p class="help-text oral-result-count" id="qcm-home-results" role="status" tabindex="-1">${courses.length} ${groupDefinitions().some(g => g.kind === 'liens') ? 'parcours' : 'cours'} · ${courses.reduce((n, course) => n + course.queue.length, 0)} ${questionLabel()}${unseenSuffix(2)}</p><div class="exercise-grid qcm-courses" role="group" aria-label="Parcours par cours">${renderCourseBlocks(courses, course => { const stats = courseStats(course.queue); return `<article class="course-card exercise-tile${course.kind === 'liens' ? ' course-card-liens' : ''}"><h3>${esc(course.label)}</h3>${course.kind === 'liens' ? '<p class="help-text">Des questions qui relient deux cours du bloc, comme à l’examen.</p>' : ''}<p class="help-text">${course.queue.length} ${questionLabel()}${unseenSuffix(course.queue.length)}${stats.answered ? ` · ${stats.answered} ${withoutChoices ? 'autoévaluation' : 'réponse'}${stats.answered > 1 ? 's' : ''} enregistrée${stats.answered > 1 ? 's' : ''}` : ''}</p><span class="course-progress" aria-hidden="true"><span style="width:${course.queue.length ? Math.round(100 * stats.answered / course.queue.length) : 0}%"></span></span><button class="btn primary" data-course="${esc(course.key)}" ${course.queue.length ? '' : 'disabled'} aria-label="${esc(course.queue.length ? (stats.answered || readCourseCursors()[course.key] ? 'Reprendre' : 'Commencer') + ' ' + course.label : 'Aucune question disponible pour ' + course.label + '. ' + emptySelection())}">${course.queue.length ? (stats.answered || readCourseCursors()[course.key] ? 'Reprendre' : 'Commencer') : 'Aucune question'}</button>${knowBox(course)}</article>`; }) || '<p class="empty-state">Aucun cours ne correspond à cette recherche.</p>'}</div></section></section>
       ${window.HEPQuickUI?.group() || ''}
       ${writingHome && !withoutChoices ? '<p class="notice">Le résultat des QCM mesure la reconnaissance d’une réponse. La rédaction et sa justification restent à travailler séparément.</p>' : ''}`;
   }
@@ -422,12 +618,13 @@
     }).join('');
   }
   function scSnapshot(q, step, run) {
-    const record = displayedSC, seen = quickSeen.get(run.id) || {};
-    const response = document.getElementById('sc-response')?.value ?? record.response;
+    const stored = firstRecord(q, step) || displayedSC, seen = quickSeen.get(run.id) || {}, display = scDisplay(q, step);
+    const record = display.mode === 'hidden' ? { response: '', revealed: false, selfEvaluation: null } : display.mode === 'practice' ? { response: display.practice.response || '', revealed: !!display.practice.revealed, selfEvaluation: display.practice.selfEvaluation || null } : stored;
+    const response = display.mode === 'practice' ? document.getElementById('sc-practice-response')?.value ?? record.response : display.mode === 'first' ? document.getElementById('sc-response')?.value ?? record.response : record.response;
     const correct = record.revealed ? step.choices.find(choice => choice.id === step.correctId) : null;
     return {
       question: 'Sans les choix\n\n' + snapshotPrompt(step),
-      answer: 'Ma réponse personnelle :\n' + (response || 'Réponse pensée ou non écrite.') + '\n\n' + (correct ? 'Réponse attendue :\n' + correct.text + '\n\n' + correct.explanation : 'Réponse attendue non affichée.') + (record.selfEvaluation ? '\n\nAutoévaluation déclarée : ' + (record.selfEvaluation === 'known' ? 'Je savais' : 'À revoir') : ''),
+      answer: (display.mode === 'hidden' ? 'Question déjà vue : première réponse masquée.\n' : display.mode === 'practice' ? 'Nouvelle tentative (entraînement).\n' : display.mode === 'review' ? 'Première réponse revue.\n' : '') + 'Ma réponse personnelle :\n' + (response || 'Réponse pensée ou non écrite.') + '\n\n' + (correct ? 'Réponse attendue :\n' + correct.text + '\n\n' + correct.explanation : 'Réponse attendue non affichée.') + (record.selfEvaluation ? '\n\nAutoévaluation déclarée : ' + (record.selfEvaluation === 'known' ? 'Je savais' : 'À revoir') : ''),
       hint: (seen.context ? 'Situation consultée :\n' + q.context : '') + (seen.hints ? '\n\nRappel consulté :\n' + hintText(q) : ''), module: q.module, course: q.course
     };
   }
@@ -436,8 +633,25 @@
     const ref = bank.courseReference || bank.courseReferences[q.referenceId], source = q.sources.find(s => s.file.includes('SYNTHESE')) || q.sources[0];
     const progress = coursePosition(q, run), stats = courseStats(progress.queue), total = progress.queue.length;
     const correct = record.revealed ? step.choices.find(choice => choice.id === step.correctId) : null;
-    const alternatives = scStore.alternatives(q, step);
-    return `<section class="question-shell"><article class="question-card">${levelControls()}${questionMeta(ref, step)}<fieldset class="qcm-step sc-step" tabindex="-1"><legend>${esc(step.prompt)}</legend>${ancientBadge(step)}${needsContext(step) ? '<button class="qcm-context-cue" data-action="open-context">Clique sur « Situation » pour lire le contexte.</button>' : ''}<label class="field-label" for="sc-response">Ma réponse (facultative)</label><p class="help-text">Écris ici ou réponds dans ta tête, puis compare avec la réponse attendue.</p><textarea class="feedback-textarea sc-response" id="sc-response" rows="4" maxlength="8000">${esc(record.response)}</textarea><p class="save-status" id="sc-response-status" role="status" aria-live="polite">${repo.warning ? esc(repo.warning) : record.token ? 'Réponse conservée sur cet appareil.' : 'La réponse écrite est facultative.'}</p><button class="btn secondary" data-action="sc-refresh" id="sc-refresh" hidden>Recharger cette question</button>${correct ? `<section class="sc-expected" tabindex="-1" aria-labelledby="sc-expected-title"><h2 id="sc-expected-title">Réponse attendue</h2><p>${text(correct.text)}</p><p>${text(correct.explanation)}</p></section><div class="actions sc-self-evaluation" role="group" aria-label="Mon autoévaluation"><button class="btn secondary self-eval" data-action="sc-known" aria-pressed="${record.selfEvaluation === 'known'}">Je savais</button><button class="btn secondary self-eval" data-action="sc-review" aria-pressed="${record.selfEvaluation === 'review'}">À revoir</button></div><p class="help-text" role="status">${record.selfEvaluation ? 'Autoévaluation déclarée : ' + (record.selfEvaluation === 'known' ? 'Je savais.' : 'À revoir.') : 'Choisis « Je savais » ou « À revoir » pour poursuivre. Aucune note automatique.'}</p>` : '<button class="btn primary" data-action="sc-reveal">Voir la réponse</button>'}</fieldset>${alternatives.length ? `<details class="sc-alternatives"><summary>Autres réponses conservées (${alternatives.length})</summary><p class="help-text">Ces saisies d’autres onglets ou reprises restent disponibles. Tu peux en copier le texte.</p>${alternatives.map(item => `<p>${text(item.response)}</p>`).join('')}</details>` : ''}${window.HEPQuickUI?.thumbs() || ''}${window.HEPQuickLevel?.buttons() || ''}<button class="btn secondary qcm-report-button" data-action="report-step">Signaler un problème avec cette question</button>${scReportPanel()}<div class="question-navigation">${progress.index > 0 ? '<button class="btn secondary" data-action="previous">← Question précédente</button>' : ''}${progress.index + 1 < total ? `<button class="btn primary" data-action="next" ${record.selfEvaluation ? '' : 'disabled'}>Question suivante →</button>` : ''}</div>${progress.index === total - 1 && total > 0 && stats.answered === total ? `<section class="qcm-summary"><h2>Parcours Sans les choix terminé</h2><p>Autoévaluations déclarées : ${stats.score} « Je savais » ; ${stats.answered - stats.score} « À revoir ». Elles restent distinctes des résultats QCM.</p>${window.HEPQuickUI?.group() || ''}</section>` : ''}<div class="actions"><button class="btn secondary" data-action="${activeMix ? 'mix-first' : 'course-first'}">Revoir ${activeMix ? 'le mélange' : 'le cours'} depuis le début</button></div></article></section>${supportDialogs(q, step, ref, source)}`;
+    const alternatives = scStore.alternatives(q, step), display = scDisplay(q, step, record), first = firstRecord(q, step);
+    return `<section class="question-shell"><article class="question-card">${focusSettings()}${questionMeta(ref, step, display.seen)}${display.mode !== 'first' ? scAlternateView(q, step, record, display) : `<fieldset class="qcm-step sc-step" tabindex="-1"><legend>${rich(step.prompt)}</legend>${ancientBadge(step)}${needsContext(step) ? '<button class="qcm-context-cue" data-action="open-context">Clique sur « Situation » pour lire le contexte.</button>' : ''}<label class="field-label" for="sc-response">Ma réponse (facultative)</label><p class="help-text">Écris ici ou réponds dans ta tête, puis compare avec la réponse attendue.</p><textarea class="feedback-textarea sc-response" id="sc-response" rows="4" maxlength="8000" ${first ? 'readonly' : ''}>${esc(first ? first.response : record.response)}</textarea><p class="save-status" id="sc-response-status" role="status" aria-live="polite">${repo.warning ? esc(repo.warning) : record.token ? 'Réponse conservée sur cet appareil.' : 'La réponse écrite est facultative.'}</p><button class="btn secondary" data-action="sc-refresh" id="sc-refresh" hidden>Recharger cette question</button>${correct ? `<section class="sc-expected" tabindex="-1" aria-labelledby="sc-expected-title"><h2 id="sc-expected-title">Réponse attendue</h2><p>${text(correct.text)}</p><p>${text(correct.explanation)}</p></section><div class="actions sc-self-evaluation" role="group" aria-label="Mon autoévaluation"><button class="btn secondary self-eval" data-action="sc-known" aria-pressed="${first?.selfEvaluation === 'known'}" ${first ? 'disabled' : ''}>Je savais</button><button class="btn secondary self-eval" data-action="sc-review" aria-pressed="${first?.selfEvaluation === 'review'}" ${first ? 'disabled' : ''}>À revoir</button></div><p class="help-text" role="status">${first ? 'Autoévaluation déclarée : ' + (first.selfEvaluation === 'known' ? 'Je savais.' : 'À revoir.') + ' C’est ta première réponse : elle reste telle quelle. Tu pourras t’entraîner de nouveau plus tard.' : 'Choisis « Je savais » ou « À revoir » pour poursuivre. Aucune note automatique.'}</p>` : '<button class="btn primary" data-action="sc-reveal">Voir la réponse</button>'}</fieldset>`}${reviewControls(display, true)}${difficultButton(q, step)}${alternatives.length ? `<details class="sc-alternatives"><summary>Autres réponses conservées (${alternatives.length})</summary><p class="help-text">Ces saisies d’autres onglets ou reprises restent disponibles. Tu peux en copier le texte.</p>${alternatives.map(item => `<p>${text(item.response)}</p>`).join('')}</details>` : ''}${window.HEPQuickUI?.thumbs() || ''}${window.HEPQuickLevel?.buttons() || ''}<button class="btn secondary qcm-report-button" data-action="report-step">Signaler un problème avec cette question</button>${scReportPanel()}<div class="question-navigation">${progress.index > 0 ? '<button class="btn secondary" data-action="previous">← Question précédente</button>' : ''}${progress.index + 1 < total ? `<button class="btn primary" data-action="next" ${first ? '' : 'disabled'}>Question suivante →</button>` : ''}</div>${progress.index === total - 1 && total > 0 && stats.answered === total ? `<section class="qcm-summary"><h2>Parcours Sans les choix terminé</h2><p>Autoévaluations déclarées : ${stats.score} « Je savais » ; ${stats.answered - stats.score} « À revoir ». Elles restent distinctes des résultats QCM.</p>${window.HEPQuickUI?.group() || ''}</section>` : ''}<div class="actions"><button class="btn secondary" data-action="${activeMix ? 'mix-first' : 'course-first'}">Revoir ${activeMix ? 'le mélange' : 'le cours'} depuis le début</button></div></article></section>${supportDialogs(q, step, ref, source)}`;
+  }
+  // v25 : Sans les choix, question déjà autoévaluée : masquée (nouvelle tentative) ou revue.
+  function scDisplay(q, step) {
+    if (!firstRecord(q, step)) return { mode: 'first', seen: false };
+    const mine = presented?.key === presentedKey(q, step) ? presented : null;
+    if (mine?.mode === 'first') return { mode: 'first', seen: false };
+    if (mine?.mode === 'review') return { mode: 'review', seen: true };
+    if (mine?.mode === 'practice') return { mode: 'practice', seen: true, practice: mine };
+    return { mode: 'hidden', seen: true, practice: null };
+  }
+  function scAlternateView(q, step, record, display) {
+    const correct = step.choices.find(choice => choice.id === step.correctId), head = `<legend>${rich(step.prompt)}</legend>${ancientBadge(step)}${needsContext(step) ? '<button class="qcm-context-cue" data-action="open-context">Clique sur « Situation » pour lire le contexte.</button>' : ''}`;
+    const evalLabel = value => value === 'known' ? 'Je savais' : 'À revoir';
+    const first = firstRecord(q, step) || record;
+    if (display.mode === 'review') return `<fieldset class="qcm-step sc-step" tabindex="-1">${head}<section class="sc-review qcm-verdict" tabindex="-1"><p class="verdict-context">Ta première réponse, celle qui compte dans tes résultats.</p><h2>Ma réponse</h2><p>${text(first.response || 'Réponse pensée ou non écrite.')}</p><h2>Réponse attendue</h2><p>${text(correct.text)}</p><p>${text(correct.explanation)}</p><p><strong>Autoévaluation déclarée :</strong> ${evalLabel(first.selfEvaluation)}.</p></section></fieldset>`;
+    const p = display.practice || {};
+    return `<fieldset class="qcm-step sc-step" tabindex="-1">${head}<label class="field-label" for="sc-practice-response">Ma nouvelle réponse (facultative)</label><p class="help-text">Pour t’entraîner. Ta première réponse et ton autoévaluation restent conservées.</p><textarea class="feedback-textarea sc-response" id="sc-practice-response" rows="4" maxlength="8000">${esc(p.response || '')}</textarea>${p.revealed ? `<section class="sc-expected" tabindex="-1" aria-labelledby="sc-expected-title"><h2 id="sc-expected-title">Réponse attendue</h2><p>${text(correct.text)}</p><p>${text(correct.explanation)}</p></section><div class="actions sc-self-evaluation" role="group" aria-label="Mon autoévaluation de cette nouvelle tentative"><button class="btn secondary self-eval" data-action="sc-practice-known" aria-pressed="${p.selfEvaluation === 'known'}">Je savais</button><button class="btn secondary self-eval" data-action="sc-practice-review" aria-pressed="${p.selfEvaluation === 'review'}">À revoir</button></div><p class="help-text" role="status">${p.selfEvaluation ? 'Nouvelle tentative enregistrée : ' + evalLabel(p.selfEvaluation) + '. Ta première autoévaluation ne change pas.' : 'Choisis « Je savais » ou « À revoir ». Cette tentative sert d’entraînement.'}</p>` : '<button class="btn primary" data-action="sc-practice-reveal">Voir la réponse</button>'}</fieldset>`;
   }
   function scReportPanel() {
     return `<details class="feedback-panel" id="step-feedback" hidden><summary>Mon signalement sur cette question Sans les choix</summary>${HEPFeedback.fields(true)}<label class="field-label" for="step-feedback-category">Catégorie (facultative)</label><select class="select-input" id="step-feedback-category"><option value="">Sans catégorie</option><option>Question</option><option>Réponse attendue</option><option>Aides</option><option>Autre</option></select><label class="field-label" for="step-feedback-comment">Mon commentaire</label><textarea class="feedback-textarea" id="step-feedback-comment" rows="4" maxlength="8000"></textarea><p class="help-text">Le signalement conserve le mode, la question, ta réponse et uniquement les contenus déjà affichés à son ouverture.</p><div class="actions"><button class="btn primary" data-action="send-step" disabled>Envoyer à Maxim</button></div><p class="save-status" data-send-status role="status" aria-live="polite">Brouillon sur cet appareil.</p><p class="help-text">L’envoi à Maxim ne demande pas de compte Google.</p><details><summary>Sauvegarde personnelle avec Drive (facultative)</summary><button class="btn secondary" data-action="panel-drive">${HEPDrive.connected() ? 'Synchroniser Drive ici' : 'Connecter Drive ici'}</button><p class="save-status" data-save-status></p></details></details>`;
@@ -468,9 +682,22 @@
       });
     });
   }
-  function stepView(q, step, index, run) {
-    const selected = step.choices.find(c => c.id === run.answers[step.id]), correct = step.choices.find(c => c.id === step.correctId), revealed = !!run.revealed[step.id];
-    return `<fieldset class="qcm-step" data-step="${step.id}"><legend>${esc(step.prompt)}</legend>${ancientBadge(step)}${needsContext(step) ? '<button class="qcm-context-cue" data-action="open-context">Clique sur « Situation » pour lire le contexte.</button>' : ''}<div class="qcm-choices">${run.order[step.id].map((id, i) => { const c = step.choices.find(c => c.id === id); return `<button class="qcm-choice ${selected?.id === id ? 'qcm-selected' : ''} ${revealed && id === step.correctId ? 'qcm-correct' : revealed && id === selected?.id ? 'qcm-incorrect' : ''}" data-choice="${id}" data-step="${step.id}" aria-label="${revealed && id === step.correctId ? 'Bonne réponse : ' : revealed && id === selected?.id ? 'Ton choix, faux : ' : ''}${String.fromCharCode(65 + i)}. ${esc(c.text)}" aria-pressed="${selected?.id === id}" ${revealed ? 'disabled' : ''}><span class="choice-letter" aria-hidden="true">${String.fromCharCode(65 + i)}</span><span class="choice-body">${revealed && id === step.correctId ? `<span class="choice-tag good"><span aria-hidden="true">✓</span> ${selected?.id === id ? 'Ta réponse · Juste' : 'Bonne réponse'}</span>` : revealed && id === selected?.id ? '<span class="choice-tag bad"><span aria-hidden="true">✗</span> Ta réponse · Fausse</span>' : ''}<span class="choice-text">${esc(c.text)}</span></span></button>`; }).join('')}</div>${revealed ? `<div class="qcm-verdict ${selected.id === step.correctId ? 'is-good' : 'is-bad'}" role="status" tabindex="-1"><strong class="verdict-title"><span class="verdict-icon" aria-hidden="true">${selected.id === step.correctId ? '✓' : '✗'}</span> ${selected.id === step.correctId ? 'Bonne réponse.' : 'À reprendre.'}</strong><p>${text(correct.explanation)}</p>${selected.id !== step.correctId ? `<p><strong>Ton choix :</strong> ${text(selected.explanation)}</p>` : ''}<details><summary>Comprendre les autres propositions</summary>${run.order[step.id].filter(id => id !== step.correctId && id !== selected.id).map(id => { const c = step.choices.find(c => c.id === id), letter = String.fromCharCode(65 + run.order[step.id].indexOf(id)); return `<p><strong>${letter}.</strong> ${text(c.explanation)}</p>`; }).join('')}</details></div>` : ''}</fieldset>`;
+  // v25 : ce que l'écran montre d'une question QCM selon sa présentation (première réponse, masquée, revue, tentative).
+  function qcmDisplay(q, step, run) {
+    if (!GROUPED_COURSES || !run.revealed[step.id]) return { mode: 'first', selectedId: run.answers[step.id], revealed: !!run.revealed[step.id], seen: false };
+    const mode = presented?.key === presentedKey(q, step) ? presented.mode : 'hidden';
+    if (mode === 'first' || mode === 'review') return { mode, selectedId: run.answers[step.id], revealed: true, seen: mode === 'review' };
+    if (mode === 'practice' && step.choices.some(c => c.id === presented.choice)) return { mode, selectedId: presented.choice, revealed: true, seen: true };
+    return { mode: 'hidden', selectedId: null, revealed: false, seen: true };
+  }
+  function stepView(q, step, index, run, display = qcmDisplay(q, step, run)) {
+    const selected = step.choices.find(c => c.id === display.selectedId), correct = step.choices.find(c => c.id === step.correctId), revealed = display.revealed;
+    return `<fieldset class="qcm-step" data-step="${step.id}"><legend>${rich(step.prompt)}</legend>${ancientBadge(step)}${needsContext(step) ? '<button class="qcm-context-cue" data-action="open-context">Clique sur « Situation » pour lire le contexte.</button>' : ''}<div class="qcm-choices">${run.order[step.id].map((id, i) => { const c = step.choices.find(c => c.id === id); return `<button class="qcm-choice ${selected?.id === id ? 'qcm-selected' : ''} ${revealed && id === step.correctId ? 'qcm-correct' : revealed && id === selected?.id ? 'qcm-incorrect' : ''}" data-choice="${id}" data-step="${step.id}" aria-label="${revealed && id === step.correctId ? 'Bonne réponse : ' : revealed && id === selected?.id ? 'Ton choix, faux : ' : ''}${String.fromCharCode(65 + i)}. ${esc(plain(c.text))}" aria-pressed="${selected?.id === id}" ${revealed ? 'disabled' : ''}><span class="choice-letter" aria-hidden="true">${String.fromCharCode(65 + i)}</span><span class="choice-body">${revealed && id === step.correctId ? `<span class="choice-tag good"><span aria-hidden="true">✓</span> ${selected?.id === id ? 'Ta réponse · Juste' : 'Bonne réponse'}</span>` : revealed && id === selected?.id ? '<span class="choice-tag bad"><span aria-hidden="true">✗</span> Ta réponse · Fausse</span>' : ''}<span class="choice-text">${rich(c.text)}</span></span></button>`; }).join('')}</div>${revealed ? `<div class="qcm-verdict ${selected.id === step.correctId ? 'is-good' : 'is-bad'}" role="status" tabindex="-1">${display.mode === 'review' ? '<p class="verdict-context">Ta première réponse, celle qui compte dans tes résultats.</p>' : display.mode === 'practice' ? '<p class="verdict-context">Nouvelle tentative, pour t’entraîner. Ta première réponse reste celle qui compte.</p>' : ''}<strong class="verdict-title"><span class="verdict-icon" aria-hidden="true">${selected.id === step.correctId ? '✓' : '✗'}</span> ${selected.id === step.correctId ? 'Bonne réponse.' : 'À reprendre.'}</strong><p>${text(correct.explanation)}</p>${selected.id !== step.correctId ? `<p><strong>Ton choix :</strong> ${text(selected.explanation)}</p>` : ''}<details><summary>Comprendre les autres propositions</summary>${run.order[step.id].filter(id => id !== step.correctId && id !== selected.id).map(id => { const c = step.choices.find(c => c.id === id), letter = String.fromCharCode(65 + run.order[step.id].indexOf(id)); return `<p><strong>${letter}.</strong> ${text(c.explanation)}</p>`; }).join('')}</details></div>` : ''}</fieldset>`;
+  }
+  function reviewControls(display, sc = false) {
+    if (display.mode === 'hidden') return `<div class="review-row"><button type="button" class="btn secondary review-answer" data-action="${sc ? 'sc-review-answer' : 'review-answer'}"><span aria-hidden="true">↺</span> Revoir ma réponse</button><p class="help-text">Tu as déjà répondu à cette question. Réponds de nouveau pour t’entraîner, ou revois ta première réponse et sa correction.</p></div>`;
+    if (display.mode === 'review' || display.mode === 'practice') return `<div class="review-row"><div class="actions">${display.mode === 'practice' ? `<button type="button" class="btn secondary" data-action="${sc ? 'sc-review-answer' : 'review-answer'}"><span aria-hidden="true">↺</span> Revoir ma première réponse</button>` : ''}<button type="button" class="btn secondary" data-action="${sc ? 'sc-retry' : 'retry'}">Répondre de nouveau</button></div><p class="help-text">${display.mode === 'review' ? 'Une nouvelle tentative sert d’entraînement ; elle ne change pas ce résultat.' : 'Chaque tentative est conservée sur cet appareil, sans changer ta première note.'}</p></div>`;
+    return '';
   }
   function supportDialogs(q, step, ref, source) {
     const head = title => `<div class="qcm-dialog-head"><h2>${title}</h2><button class="icon-button" data-action="close-dialog"><span aria-hidden="true">×</span> Fermer</button></div>`;
@@ -485,7 +712,8 @@
     const stats = activeCourse || activeMix ? courseStats(progress.queue) : { answered: Object.keys(run.revealed).length, score };
     const finished = stats.answered === total;
     const summary = activeMix ? 'Tous les QCM du mélange sont terminés' : activeCourse ? `Les QCM de ${esc(courseLabel(activeCourse))} sont terminés` : 'Les QCM de cet exercice sont terminés';
-    return `<section class="question-shell"><article class="question-card">${levelControls()}${questionMeta(ref, step)}${stepView(q, step, run.index, run)}${window.HEPQuickUI?.thumbs() || ''}${window.HEPQuickLevel?.buttons() || ''}<button class="btn secondary qcm-report-button" data-action="report-step">Signaler un problème avec cette question</button><details class="feedback-panel" id="step-feedback" hidden><summary>Mon signalement sur cette question</summary>${HEPFeedback.fields(true)}<label class="field-label" for="step-feedback-category">Catégorie (facultative)</label><select class="select-input" id="step-feedback-category"><option value="">Sans catégorie</option><option>Question</option><option>Propositions</option><option>Correction</option><option>Autre</option></select><label class="field-label" for="step-feedback-comment">Mon commentaire</label><textarea class="feedback-textarea" id="step-feedback-comment" rows="4" maxlength="8000"></textarea><p class="help-text">Le brouillon conserve la question et les contenus consultés au moment de l’ouverture du signalement.</p><div class="actions"><button class="btn primary" data-action="send-step" disabled>Envoyer à Maxim</button></div><p class="save-status" data-send-status role="status" aria-live="polite">Brouillon sur cet appareil.</p><p class="help-text">L’envoi à Maxim ne demande pas de compte Google.</p><details><summary>Sauvegarde personnelle avec Drive (facultative)</summary><p class="help-text">Connecte Drive ici pour sauvegarder depuis cet onglet. La connexion ne se transmet pas aux autres onglets et se termine au rechargement. Elle est indépendante de l’envoi à Maxim.</p><button class="btn secondary" data-action="panel-drive">${HEPDrive.connected() ? 'Synchroniser Drive ici' : 'Connecter Drive ici'}</button><p class="save-status" data-save-status></p></details></details><div class="question-navigation">${index > 0 ? '<button class="btn secondary" data-action="previous">← QCM précédent</button>' : ''}${index + 1 < total ? `<button class="btn primary" data-action="next" ${run.revealed[step.id] ? '' : 'disabled'}>QCM suivant →</button>` : ''}</div>${index === total - 1 && finished ? `<section class="qcm-summary"><h2>${summary}</h2><p>${stats.score} réponse${stats.score > 1 ? 's' : ''} correcte${stats.score > 1 ? 's' : ''} sur ${total}. Tu peux revoir les questions et leurs explications.</p>${window.HEPQuickUI?.group() || ''}</section>` : ''}<div class="actions">${activeMix ? (finished ? '<button class="btn secondary" data-action="mix-first">Revoir le mélange depuis le début</button>' : '') : activeCourse ? '<button class="btn secondary" data-action="course-first">Revoir le cours depuis le début</button>' : run.checked ? '<button class="btn secondary" data-action="restart">Recommencer les QCM</button>' : ''}${canWrite(q) ? `<a class="btn ${run.checked ? 'primary' : 'secondary'}" href="oral.html#${q.id}">Rédiger cet exercice sans QCM →</a>` : ''}</div></article><details class="feedback-panel" ${saved?.comment ? 'open' : ''}><summary>Mon retour sur cet essai</summary><label class="field-label" for="feedback-category">Cela concerne…</label><select class="select-input" id="feedback-category">${categories.map(c => `<option ${(saved?.category || 'QCM ' + (run.index + 1)) === c ? 'selected' : ''}>${esc(c)}</option>`).join('')}</select><label class="field-label" for="feedback-comment">Mon commentaire</label><textarea class="feedback-textarea" id="feedback-comment" rows="4" maxlength="8000" placeholder="Ex. : deux propositions me semblent justes ; la correction n’explique pas leur différence…">${esc(saved?.comment || '')}</textarea><p class="help-text">Ton retour conserve les propositions dans l’ordre affiché et leurs explications.</p><p class="save-status" data-save-status></p></details></section>${supportDialogs(q, step, ref, source)}`;
+    const display = qcmDisplay(q, step, run);
+    return `<section class="question-shell"><article class="question-card">${focusSettings()}${questionMeta(ref, step, display.seen)}${stepView(q, step, run.index, run, display)}${reviewControls(display)}${difficultButton(q, step)}${window.HEPQuickUI?.thumbs() || ''}${window.HEPQuickLevel?.buttons() || ''}<button class="btn secondary qcm-report-button" data-action="report-step">Signaler un problème avec cette question</button><details class="feedback-panel" id="step-feedback" hidden><summary>Mon signalement sur cette question</summary>${HEPFeedback.fields(true)}<label class="field-label" for="step-feedback-category">Catégorie (facultative)</label><select class="select-input" id="step-feedback-category"><option value="">Sans catégorie</option><option>Question</option><option>Propositions</option><option>Correction</option><option>Autre</option></select><label class="field-label" for="step-feedback-comment">Mon commentaire</label><textarea class="feedback-textarea" id="step-feedback-comment" rows="4" maxlength="8000"></textarea><p class="help-text">Le brouillon conserve la question et les contenus consultés au moment de l’ouverture du signalement.</p><div class="actions"><button class="btn primary" data-action="send-step" disabled>Envoyer à Maxim</button></div><p class="save-status" data-send-status role="status" aria-live="polite">Brouillon sur cet appareil.</p><p class="help-text">L’envoi à Maxim ne demande pas de compte Google.</p><details><summary>Sauvegarde personnelle avec Drive (facultative)</summary><p class="help-text">Connecte Drive ici pour sauvegarder depuis cet onglet. La connexion ne se transmet pas aux autres onglets et se termine au rechargement. Elle est indépendante de l’envoi à Maxim.</p><button class="btn secondary" data-action="panel-drive">${HEPDrive.connected() ? 'Synchroniser Drive ici' : 'Connecter Drive ici'}</button><p class="save-status" data-save-status></p></details></details><div class="question-navigation">${index > 0 ? '<button class="btn secondary" data-action="previous">← QCM précédent</button>' : ''}${index + 1 < total ? `<button class="btn primary" data-action="next" ${run.revealed[step.id] ? '' : 'disabled'}>QCM suivant →</button>` : ''}</div>${index === total - 1 && finished ? `<section class="qcm-summary"><h2>${summary}</h2><p>${stats.score} réponse${stats.score > 1 ? 's' : ''} correcte${stats.score > 1 ? 's' : ''} sur ${total}. Tu peux revoir les questions et leurs explications.</p>${window.HEPQuickUI?.group() || ''}</section>` : ''}<div class="actions">${activeMix ? (finished ? '<button class="btn secondary" data-action="mix-first">Revoir le mélange depuis le début</button>' : '') : activeCourse ? `<button class="btn secondary" data-action="course-first">Revoir ${activeCourse === ERRORS_KEY ? 'le parcours' : 'le cours'} depuis le début</button>` : run.checked ? '<button class="btn secondary" data-action="restart">Recommencer les QCM</button>' : ''}${canWrite(q) ? `<a class="btn ${run.checked ? 'primary' : 'secondary'}" href="oral.html#${q.id}">Rédiger cet exercice sans QCM →</a>` : ''}</div></article><details class="feedback-panel" ${saved?.comment ? 'open' : ''}><summary>Mon retour sur cet essai</summary><label class="field-label" for="feedback-category">Cela concerne…</label><select class="select-input" id="feedback-category">${categories.map(c => `<option ${(saved?.category || 'QCM ' + (run.index + 1)) === c ? 'selected' : ''}>${esc(c)}</option>`).join('')}</select><label class="field-label" for="feedback-comment">Mon commentaire</label><textarea class="feedback-textarea" id="feedback-comment" rows="4" maxlength="8000" placeholder="Ex. : deux propositions me semblent justes ; la correction n’explique pas leur différence…">${esc(saved?.comment || '')}</textarea><p class="help-text">Ton retour conserve les propositions dans l’ordre affiché et leurs explications.</p><p class="save-status" data-save-status></p></details></section>${supportDialogs(q, step, ref, source)}`;
   }
   function feedback() {
     return `<h1>Mes retours sur les QCM</h1>${HEPFeedback.fields()}${HEPFeedback.archiveLink}<div class="actions"><button class="btn primary" data-action="copy" ${comments().length ? '' : 'disabled'}>Copier les retours</button><button class="btn secondary" data-action="export" ${comments().length ? '' : 'disabled'}>Télécharger les retours</button></div><div class="feedback-list">${comments().sort((a,b) => b.updatedAt.localeCompare(a.updatedAt)).map(item => `<article class="feedback-item"><span class="pill">${esc(item.category)}</span><h2>${esc(item.snapshot.question.split('\n')[0])}</h2><p class="exercise-text">${esc(item.comment)}</p><button class="btn ghost" data-exercise="${esc(item.questionId.split('::')[0])}">Revoir les QCM →</button></article>`).join('') || '<p class="empty-state">Tu peux laisser un retour dans chaque exercice.</p>'}</div><p class="help-text">Copie tes retours, puis envoie-les à Maxim par message. Aucun envoi automatique.</p>`;
@@ -513,7 +741,12 @@
       event.preventDefault(); search = document.getElementById('qcm-search').value.trim(); render();
       document.getElementById('qcm-home-results').focus({ preventScroll: true });
     });
-    if (view === 'exercise' && withoutChoices) bindSCResponse();
+    if (view === 'exercise' && withoutChoices && document.getElementById('sc-response') && !document.getElementById('sc-response').readOnly) bindSCResponse();
+    if (view === 'exercise' && withoutChoices) document.getElementById('sc-practice-response')?.addEventListener('input', event => {
+      // Brouillon de la nouvelle tentative : gardé dans cet onglet ; il entre dans l'état à l'autoévaluation.
+      if (presented?.key === presentedKey(active, active.steps[scIndex])) setPresented({ ...presented, mode: 'practice', response: event.target.value });
+      else setPresented({ key: presentedKey(active, active.steps[scIndex]), mode: 'practice', response: event.target.value });
+    });
     if (view === 'exercise' && !withoutChoices) {
       const q = active, run = readRun(q), snap = snapshot(q, run);
       displayedRun = run;
@@ -531,7 +764,7 @@
         if (file.size > 25 * 1024 * 1024) throw new Error('Ce fichier est trop volumineux.');
         const raw = JSON.parse(await file.text());
         if (raw.scope !== SCOPE) throw new Error('Choisis une sauvegarde de cette collection de QCM.');
-        repo.import(raw); changed(); route(); toast('Sauvegarde QCM réunie avec tes données.');
+        repo.import(raw); changed(); await freezeFirsts(); route(); toast('Sauvegarde QCM réunie avec tes données.');
       } catch (error) { toast(error.message); }
     });
   }
@@ -543,10 +776,11 @@
       hash = hash.slice('sans-choix'.length).replace(/^\//, '');
     }
     if (levelsEnabled) restoreLevelChoice();
-    restoreAncientChoice();
-    activeCourse = null; activeMix = null; active = null; scIndex = 0; emptyPathMessage = '';
+    restoreAncientChoice(); if (GROUPED_COURSES) restoreUnseenChoice();
+    activeCourse = null; activeMix = null; active = null; scIndex = 0; emptyPathMessage = ''; frozen = null;
     const course = GROUPED_COURSES && /^cours-([0-9]+(?:-[0-9]+)?)$/.exec(hash);
     if (GROUPED_COURSES && hash === 'tout-melanger') openMix();
+    else if (GROUPED_COURSES && hash === ERRORS_KEY) openCourse(ERRORS_KEY);
     else if (course) openCourse(IS_ORAL ? String(Number(course[1])) : course[1]);
     else active = byId.get(hash) || null;
     if (active && (levelsEnabled || withoutChoices || ancientOnly) && !activeCourse && !activeMix) {
@@ -575,6 +809,47 @@
       if (location.hash.slice(1) === destination) route(); else location.hash = destination;
       return;
     }
+    if (button.dataset.action === 'unseen-filter' && GROUPED_COURSES) {
+      unseenOnly = !unseenOnly; writeNavigation(selectedUnseenKey(), unseenOnly); route(); return;
+    }
+    if (button.dataset.action === 'errors' && GROUPED_COURSES) { setPresented(null); return navigate(ERRORS_KEY); }
+    if (button.dataset.action === 'toggle-difficult' && active && GROUPED_COURSES) {
+      const q = active, step = q.steps[withoutChoices ? scIndex : displayedRun.index];
+      let on;
+      try { await exclusive(() => { ingestLocal(); on = !isDifficult(q, step); writeNavigation(difficultKey(q, step), on); rememberOwn(difficultKey(q, step)); }); }
+      catch (error) { toast(error.message); return; }
+      if (!button.isConnected) return;
+      button.setAttribute('aria-pressed', String(on)); button.innerHTML = difficultInner(on);
+      const help = document.getElementById('difficult-help'); if (help) help.textContent = difficultHelp(on);
+      toast(on ? 'Question marquée « Difficile ».' : 'Marque « Difficile » retirée.');
+      return;
+    }
+    if (['review-answer', 'retry', 'sc-review-answer', 'sc-retry'].includes(button.dataset.action) && active) {
+      const step = active.steps[withoutChoices ? scIndex : displayedRun.index];
+      setPresented({ key: presentedKey(active, step), mode: button.dataset.action.endsWith('retry') ? 'hidden' : 'review' });
+      render();
+      const focus = document.querySelector(button.dataset.action.endsWith('retry') ? '.qcm-step' : '.qcm-verdict');
+      focus?.setAttribute('tabindex', '-1'); focus?.focus({ preventScroll: true }); focus?.scrollIntoView({ block: 'nearest' });
+      return;
+    }
+    if (['sc-practice-reveal', 'sc-practice-known', 'sc-practice-review'].includes(button.dataset.action) && active && withoutChoices) {
+      const step = active.steps[scIndex], key = presentedKey(active, step), field = document.getElementById('sc-practice-response');
+      const current = presented?.key === key && presented.mode === 'practice' ? presented : { key, mode: 'practice' };
+      const next = { ...current, response: field ? field.value : current.response || '' };
+      if (button.dataset.action === 'sc-practice-reveal') next.revealed = true;
+      else {
+        if (!next.revealed) return;
+        const selfEvaluation = button.dataset.action === 'sc-practice-known' ? 'known' : 'review';
+        // Une entrée par autoévaluation ; la première autoévaluation de la question n'est pas touchée.
+        try { await addPractice('sc', active, step, { selfEvaluation }, String(next.response || '')); }
+        catch (error) { setPresented(next); toast(error.message); return; }
+        next.selfEvaluation = selfEvaluation;
+      }
+      setPresented(next); render();
+      const focus = document.querySelector(button.dataset.action === 'sc-practice-reveal' ? '.sc-expected' : '.sc-self-evaluation');
+      focus?.focus({ preventScroll: true }); focus?.scrollIntoView({ block: 'nearest' });
+      return;
+    }
     if (button.dataset.action === 'ancient-filter' && GROUPED_COURSES) {
       ancientOnly = !ancientOnly; writeNavigation(selectedAncientKey(), ancientOnly); route(); return;
     }
@@ -592,7 +867,7 @@
     if (button.dataset.exercise) return navigate(button.dataset.exercise);
     const action = button.dataset.action;
     if (action === 'clear-search') { search = ''; render(); document.getElementById('qcm-search').focus({ preventScroll: true }); return; }
-    if (['home', 'feedback', 'settings', 'avis'].includes(action)) return navigate(action === 'home' ? '' : action);
+    if (['home', 'feedback', 'settings', 'avis'].includes(action)) { if (action === 'home') setPresented(null); return navigate(action === 'home' ? '' : action); }
 
     if (action === 'report-step' && active) {
       const q = active, run = displayedRun, step = q.steps[run.index], panel = document.getElementById('step-feedback');
@@ -619,8 +894,9 @@
       const q = active, step = q.steps[scIndex], expected = displayedSC;
       const progress = coursePosition(q, displayedRun), target = progress.queue[progress.index + (action === 'previous' ? -1 : 1)];
       if (['next', 'previous'].includes(action) && (!target || (action === 'next' && !expected.selfEvaluation))) return;
-      if (['sc-known', 'sc-review'].includes(action) && !expected.revealed) return;
+      if (['sc-known', 'sc-review'].includes(action) && (!expected.revealed || firstRecord(q, step))) return;
       const patch = action === 'sc-reveal' ? { revealed: true } : action === 'sc-known' ? { selfEvaluation: 'known' } : action === 'sc-review' ? { selfEvaluation: 'review' } : null;
+      if (patch) setPresented({ key: presentedKey(q, step), mode: 'first' }); else setPresented(null);
       try {
         // Navigation also checks the displayed version, but creates no answer.
         ingestLocal();
@@ -633,6 +909,7 @@
           return { ok: true };
         });
         if (result.departed || !button.isConnected) return;
+        if (result.ok && patch?.selfEvaluation) await freezeFirsts();
         if (!result.ok) {
           if (activeMix) openMix(); else if (activeCourse) openCourse(activeCourse);
           render(); toast('Le parcours ou la réponse a changé ailleurs. Il a été actualisé sans accepter cette action périmée.'); return;
@@ -657,16 +934,30 @@
     }
     if (button.dataset.choice && active) {
       const q = active, expected = displayedRun, step = q.steps[expected.index], choice = button.dataset.choice;
-      if (expected.revealed[step.id] || button.dataset.step !== step.id || !step.choices.some(c => c.id === choice)) return;
+      if (button.dataset.step !== step.id || !step.choices.some(c => c.id === choice)) return;
+      if (expected.revealed[step.id]) {
+        // v25 : question déjà répondue et rouverte masquée : nouvelle tentative d'entraînement.
+        // Ni la réponse, ni la note (attempts), ni la filiation de l'essai ne sont réécrites.
+        if (!GROUPED_COURSES || qcmDisplay(q, step, expected).mode !== 'hidden') return;
+        ingestLocal();
+        if (!sameRun(readRun(q), expected)) { render(); toast('L’essai a changé ailleurs. Il a été actualisé.'); return; }
+        try { await addPractice('qcm', q, step, { runId: expected.id, choice, correct: choice === step.correctId }); }
+        catch (error) { toast(error.message); return; }
+        if (!button.isConnected) return;
+        setPresented({ key: presentedKey(q, step), mode: 'practice', choice });
+        render(); const verdict = document.querySelector('.qcm-verdict'); verdict?.focus({ preventScroll: true }); verdict?.scrollIntoView({ block: 'nearest' });
+        return;
+      }
       return mutateRun(q, expected, run => {
         run.answers[step.id] = choice; run.revealed[step.id] = true;
         run.checked = q.steps.every(s => run.revealed[s.id]); return run;
       }, run => {
         repo.grade({ id: q.id + '::' + step.id, contentRevision: q.qcmRevision }, choice === step.correctId ? 2 : 0, run.id, run.hintUsed);
-        changed();
+        changed(); setPresented({ key: presentedKey(q, step), mode: 'first' });
         if (view === 'exercise' && active?.id === q.id) { render(); const verdict = document.querySelector('.qcm-verdict'); verdict.focus({ preventScroll: true }); verdict.scrollIntoView({ block: 'nearest' }); }
       });
     }
+    if (['mix-first', 'course-first', 'next', 'previous', 'restart'].includes(action)) setPresented(null);
     if (action === 'mix-first' && activeMix) { selectMixedEntry(mixedQueue(activeMix)[0]); render(); document.getElementById('qcm-main').focus(); return; }
     if (action === 'course-first' && activeCourse) { selectCourseEntry(courseQueue(activeCourse)[0]); render(); document.getElementById('qcm-main').focus(); return; }
     if (['next', 'previous'].includes(action) && active) {
@@ -705,7 +996,7 @@
       try { scStore.retain(active, step, displayedSC, field.value); } catch (_) { /* Quota warnings already request an export. */ }
     }
   });
-  window.addEventListener('storage', event => { if (event.key === KEY && event.newValue) { try { repo.ingest(JSON.parse(event.newValue)); status(); refreshRunControls(); } catch (_) { toast('La sauvegarde d’un autre onglet est illisible.'); } } });
+  window.addEventListener('storage', event => { if (event.key === KEY && event.newValue) { try { repo.ingest(JSON.parse(event.newValue)); status(); refreshRunControls(); verifyOwn(event.newValue); freezeFirsts(); } catch (_) { toast('La sauvegarde d’un autre onglet est illisible.'); } } });
   (async () => {
     try {
       if (IS_ORAL && !oralNavigation) throw new Error('Les thèmes du bloc oral sont indisponibles. Recharge la page en ligne.');
@@ -721,7 +1012,8 @@
       attenteById = new Map(Array.isArray(bank.attentes) ? bank.attentes.filter(a => a && typeof a.id === 'string' && typeof a.label === 'string' && typeof a.operation === 'string' && (a.weight === null || [1, 2, 3].includes(a.weight))).map(a => [a.id, a]) : []);
       levelsEnabled = GROUPED_COURSES && bank.exercises.every(q => q.steps.every(step => ['essentiel', 'approfondissement'].includes(step.level)));
       if (levelsEnabled) restoreLevelChoice();
-      HEPDrive.init(repo, status, () => { if (view !== 'exercise') render(); else refreshRunControls(); }); repo.save(); route();
+      HEPDrive.init(repo, status, () => { freezeFirsts(); if (view !== 'exercise') render(); else refreshRunControls(); }); repo.save();
+      await freezeFirsts(); route();
       if ('serviceWorker' in navigator) navigator.serviceWorker.register('./sw.js', { scope: './' }).catch(() => {});
     } catch (error) { bank = null; app.innerHTML = `<section class="empty-state"><h1>Les QCM n’ont pas pu s’ouvrir.</h1><p>${esc(error.message)}</p><p>Reconnecte-toi puis recharge la page. Tes données restent dans ce navigateur.</p><a href="index.html">Retour aux matières</a></section>`; }
   })();

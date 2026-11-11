@@ -15,7 +15,8 @@
 
   const categories = ['Consigne', 'Indice', 'Correction', 'Critères de réussite', 'Difficulté', 'Autre'];
   const esc = value => String(value ?? '').replace(/[&<>"']/g, char => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[char]));
-  const text = value => `<span class="exercise-text">${esc(value)}</span>`;
+  // v25 : « **mot** » dans les données s'affiche en gras ; le texte reste échappé, seul ce marquage est converti.
+  const text = value => `<span class="exercise-text">${esc(value).replace(/\*\*([^*\n](?:[^\n]*?[^*\n])?)\*\*/g, '<strong>$1</strong>')}</span>`;
   const comments = () => S.feedbackThreads(repo.state).filter(item => !item.deleted && item.comment.trim());
   const keyFor = (q, part) => q.id + '::' + q.contentRevision + '::' + part;
   const draft = key => repo.state.drafts[key]?.text || '';
