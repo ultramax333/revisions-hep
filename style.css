@@ -831,3 +831,51 @@ body:has(.qcm-oral-home, .qcm-focus) .app-version-bar { max-width: 800px; }
 .deepen-row .help-text { margin-top: 6px; font-size: 0.875rem; }
 .deepen-banner { margin: 0 0 10px; padding: 10px 12px; border-left: 6px solid var(--action); border-radius: 12px; background: var(--tint); color: var(--text); }
 .deepen-banner .help-text { margin-top: 2px; font-size: 0.875rem; }
+
+/* ---------- v27 : guide en images (aide.html) et lien du dialogue d'aide ---------- */
+.quiz-help-guide { margin: 10px 0 4px; }
+.quiz-help-guide .btn { width: 100%; min-height: 52px; font-size: 1.0625rem; }
+.aide-page { max-width: 600px; margin: 0 auto; padding: 0 max(16px, env(safe-area-inset-left, 0px)) 40px; }
+.aide-page > h1 { margin: 4px 0 14px; font-size: 1.75rem; font-weight: 800; }
+.aide-back { margin: 4px 0 0; }
+.aide-back .btn.ghost { padding-left: 0; }
+.aide-back-end { margin: 28px 0 0; }
+.aide-back-end .btn { width: 100%; }
+.aide-quick { padding: 16px; border: 1px solid var(--border); border-radius: var(--radius); background: var(--bg-card); box-shadow: var(--shadow); }
+.aide-quick h2, .aide-scene-head h2, .aide-faq h2 { margin: 0 0 8px; font-size: 1.375rem; font-weight: 800; }
+.aide-quick ol, .aide-legend { margin: 0; padding: 0; list-style: none; counter-reset: aide; display: grid; gap: 8px; }
+.aide-quick li, .aide-legend li { position: relative; min-height: 44px; padding: 8px 0 8px 40px; counter-increment: aide; line-height: 1.45; overflow-wrap: anywhere; }
+.aide-quick li::before, .aide-legend li::before {
+  content: counter(aide); position: absolute; left: 0; top: 8px; display: grid; place-items: center; width: 28px; height: 28px;
+  border: 2px solid #fff; border-radius: 50%; background: var(--action); color: #fff; box-shadow: 0 1px 3px rgb(0 0 0 / 35%);
+  font-size: 0.875rem; font-weight: 800; line-height: 1; font-variant-numeric: tabular-nums;
+}
+.aide-legend { margin-top: 14px; padding: 8px 14px; border: 1px solid var(--border); border-radius: var(--radius-sm); background: var(--bg-card); gap: 0; }
+.aide-legend li + li { border-top: 1px solid var(--border); }
+.aide-nav { display: flex; flex-wrap: wrap; gap: 8px; margin: 16px 0 4px; }
+.aide-nav a { display: inline-flex; align-items: center; min-height: 44px; padding: 6px 14px; border-radius: 12px; background: var(--tint); color: var(--tint-text); font-weight: 750; text-decoration: none; }
+.aide-scene { margin-top: 32px; scroll-margin-top: 12px; }
+.aide-scene-head p { color: var(--text-dim); }
+.aide-figs { display: grid; gap: 14px; margin-top: 12px; }
+.aide-fig { width: 100%; max-width: 390px; margin: 0 auto; }
+.aide-shot { position: relative; overflow: hidden; border: 1px solid var(--border-strong); border-radius: 14px; background: #f2f4f7; box-shadow: var(--shadow); }
+.aide-shot img { display: block; width: 100%; height: auto; }
+.aide-pin {
+  position: absolute; display: grid; place-items: center; width: 28px; height: 28px; transform: translate(-50%, -50%);
+  border: 2px solid #fff; border-radius: 50%; background: var(--action); color: #fff; box-shadow: 0 1px 3px rgb(0 0 0 / 40%);
+  font-size: 0.875rem; font-weight: 800; line-height: 1; font-variant-numeric: tabular-nums; pointer-events: none;
+}
+.aide-fig figcaption { margin-top: 6px; color: var(--text-dim); font-size: 0.875rem; }
+.aide-faq { margin-top: 36px; }
+.aide-faq-item { margin-top: 8px; border: 1px solid var(--border); border-radius: var(--radius-sm); background: var(--bg-card); }
+.aide-faq-item summary { display: flex; align-items: center; min-height: 48px; padding: 8px 14px; font-weight: 750; cursor: pointer; overflow-wrap: anywhere; }
+.aide-faq-item p { padding: 0 14px 14px; line-height: 1.5; overflow-wrap: anywhere; }
+.aide-page :focus-visible { outline: 3px solid var(--focus); outline-offset: 3px; }
+@media (min-width: 860px) {
+  .aide-page { max-width: 940px; }
+  .aide-scene { display: grid; grid-template-columns: 390px minmax(0, 1fr); gap: 0 28px; align-items: start; }
+  .aide-scene-head { grid-column: 1 / -1; }
+  .aide-figs { grid-column: 1; grid-row: 2; }
+  .aide-fig { margin: 0; }
+  .aide-legend { grid-column: 2; grid-row: 2; margin-top: 12px; }
+}

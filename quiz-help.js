@@ -7,6 +7,7 @@
       dialog.className = 'quiz-help-dialog';
       dialog.setAttribute('aria-labelledby', 'quiz-help-title');
       dialog.innerHTML = `<h2 id="quiz-help-title" tabindex="-1">Comment utiliser ce quiz ?</h2>
+        <p class="quiz-help-guide"><a class="btn primary" href="aide.html">Voir le guide en images →</a></p>
         <p>L'idée, en deux temps :</p>
         <ol><li><strong>D'abord les QCM</strong>, pour apprendre les notions et les distinguer. Commencez par « Essentiel », la base : une question par savoir. « + Approfondir » ajoute le détail des savoirs centraux ; « Tout le bloc » ajoute aussi « pour aller plus loin ».</li>
         <li><strong>Ensuite « Sans les choix »</strong> : les mêmes questions, sans les propositions. Cherchez la réponse vous-même, puis affichez la réponse attendue et évaluez-vous. C'est plus proche de l'examen.</li></ol>
@@ -23,9 +24,13 @@
       document.body.append(dialog);
       dialog.querySelector('[data-close-quiz-help]').addEventListener('click', () => dialog.close());
       dialog.addEventListener('keydown', event => {
-        // The short dialogue has a single control. Keep Tab in the modal,
+        // The dialogue has two controls (guide link, Close). Keep Tab in the modal,
         // including browsers that otherwise move focus to their address bar.
-        if (event.key === 'Tab') { event.preventDefault(); dialog.querySelector('[data-close-quiz-help]').focus(); }
+        if (event.key === 'Tab') {
+          event.preventDefault();
+          const items = [dialog.querySelector('.quiz-help-guide a'), dialog.querySelector('[data-close-quiz-help]')], i = items.indexOf(document.activeElement);
+          items[event.shiftKey ? (i <= 0 ? items.length : i) - 1 : (i + 1) % items.length].focus();
+        }
       });
       dialog.addEventListener('click', event => {
         const r = dialog.getBoundingClientRect();
