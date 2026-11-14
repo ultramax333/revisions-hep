@@ -9480,7 +9480,8 @@
       "prompt": "",
       "hints": [
         "La DVP est la discussion à visée philosophique : compare ce que cherche une discussion et ce que cherche un débat.",
-        "Atelier de philosophie ; discussion à visée philosophique ; DVP (cours ; Tozzi) : Dispositif où les élèves cherchent à penser par et pour eux-mêmes autour d’une question, dans des échanges réglés qui font définir, questionner et justifier. La DVP vise la recherche commune : il s’agit de discuter et non de débattre, l’enjeu n’est pas d’avoir raison mais de chercher à rendre raison de ce que l’on avance ; le débat cherche à avoir raison."
+        "Atelier de philosophie ; discussion à visée philosophique ; DVP (cours ; Tozzi) : Dispositif où les élèves cherchent à penser par et pour eux-mêmes autour d’une question, dans des échanges réglés qui font définir, questionner et justifier. La DVP vise la recherche commune : il s’agit de discuter et non de débattre, l’enjeu n’est pas d’avoir raison mais de chercher à rendre raison de ce que l’on avance ; le débat cherche à avoir raison.",
+        "Impartialité (séminaire ; Chirouter ; Larousse) : Posture de l’enseignant·e qui ne favorise personne et n’exprime aucun parti pris, sans être neutre : elle évite le dogmatisme, qui imposerait une doctrine, et le relativisme, qui traiterait toutes les affirmations comme également fondées. L’enseignant aiguille, étaye, précise, structure et recentre ; penser n’est pas parler (il valorise l’écoute) ; il met l’intimité à distance : la question reste générale."
       ],
       "sources": [
         {
@@ -9490,6 +9491,10 @@
         {
           "file": "SYNTHESE_BP1-18FRA_S1_SEMINAIRE_03.docx",
           "location": "1 Chercher ensemble à partir d'une question"
+        },
+        {
+          "file": "SYNTHESE_BP1-18FRA_S1_SEMINAIRE_03.docx",
+          "location": "2 Installer et animer l'atelier de philosophie : Guider sans imposer sa réponse (diapositives 29–31)"
         }
       ],
       "steps": [
@@ -9522,7 +9527,10 @@
           ],
           "level": "essentiel",
           "sansChoix": true,
-          "attenteId": "A2"
+          "attenteId": "A2",
+          "compatibleRevisions": [
+            "1269095914803f71"
+          ]
         },
         {
           "id": "Q4",
@@ -9553,10 +9561,75 @@
           ],
           "level": "essentiel",
           "sansChoix": true,
+          "attenteId": "A2",
+          "compatibleRevisions": [
+            "1269095914803f71"
+          ]
+        },
+        {
+          "id": "Q6",
+          "prompt": "Que signifie l'impartialité de l'enseignant dans une discussion à visée philosophique ?",
+          "requiresContext": false,
+          "correctId": "d",
+          "choices": [
+            {
+              "id": "a",
+              "text": "Rester neutre : il n'intervient pas sur les idées et laisse le groupe chercher seul, sans le guider.",
+              "explanation": "Le cours précise que l'enseignant n'est pas neutre : il intervient pour aiguiller, étayer, préciser, structurer et recentrer. Ne pas intervenir, c'est la neutralité, pas l'impartialité."
+            },
+            {
+              "id": "b",
+              "text": "Défendre la réponse qu'il juge la meilleure et la faire adopter par le groupe, pour clore la question.",
+              "explanation": "C'est le dogmatisme : il imposerait une doctrine ou une réponse. L'impartialité l'évite, comme elle évite le relativisme."
+            },
+            {
+              "id": "c",
+              "text": "Accepter toutes les affirmations comme également fondées, sans demander de raisons ni d'exemples.",
+              "explanation": "C'est le relativisme : il traiterait toutes les affirmations comme également fondées, alors que l'enseignant fait travailler les raisons. L'impartialité l'évite, comme elle évite le dogmatisme."
+            },
+            {
+              "id": "d",
+              "text": "Ne favoriser personne ni prendre parti, sans être neutre : il guide sans imposer de réponse.",
+              "explanation": "L'impartialité est la posture de l'enseignant qui ne favorise personne et n'exprime aucun parti pris, sans être neutre : elle évite à la fois le dogmatisme, qui imposerait une doctrine, et le relativisme, qui traiterait toutes les affirmations comme également fondées. Il guide la recherche des élèves sans leur imposer sa réponse."
+            }
+          ],
+          "level": "essentiel",
+          "sansChoix": true,
+          "attenteId": "A2"
+        },
+        {
+          "id": "Q7",
+          "prompt": "Quelle posture l'enseignant adopte-t-il pendant une discussion à visée philosophique ?",
+          "requiresContext": false,
+          "correctId": "b",
+          "choices": [
+            {
+              "id": "a",
+              "text": "Il arbitre comme dans un débat : il départage les points de vue et désigne le plus convaincant.",
+              "explanation": "Départager pour désigner le plus convaincant relève du débat, qui vise à convaincre. Dans la DVP, l'enseignant aiguille une recherche commune : on cherche à rendre raison de ce que l'on avance, non à avoir raison."
+            },
+            {
+              "id": "b",
+              "text": "Il aiguille la recherche : il étaye, précise, structure et recentre les idées sans imposer sa réponse.",
+              "explanation": "Le cours décrit ainsi la posture de l'enseignant en DVP : il intervient pour aiguiller, étayer, préciser, structurer et recentrer les idées des élèves, et leur laisse la recherche. Il le fait en restant impartial, sans être neutre."
+            },
+            {
+              "id": "c",
+              "text": "Il fait parler chaque élève à tour de rôle, car la quantité de paroles montre la qualité de la pensée.",
+              "explanation": "Penser n'est pas parler : un élève silencieux peut écouter et réfléchir, et l'enseignant valorise l'écoute. La quantité de paroles ne mesure pas la pensée."
+            },
+            {
+              "id": "d",
+              "text": "Il demande à chacun de raconter une expérience personnelle pour nourrir la question commune.",
+              "explanation": "L'enseignant met l'intimité à distance : la question reste générale, et l'on n'oblige pas les élèves à raconter leur vie privée ou une expérience personnelle."
+            }
+          ],
+          "level": "essentiel-approfondi",
+          "sansChoix": true,
           "attenteId": "A2"
         }
       ],
-      "qcmRevision": "1269095914803f71"
+      "qcmRevision": "69f917ea0d282e21"
     },
     {
       "id": "ORAL-P-F57",
@@ -10325,12 +10398,17 @@
       "prompt": "",
       "hints": [
         "Ces quatre compétences correspondent aux quatre plans d'analyse d'un énoncé d'enfant ou d'une aide de l'adulte : les sons, les mots, la construction de la phrase, l'adaptation à l'échange.",
-        "Compétence phonologique : Capacité à distinguer et à produire les sons de la langue, notamment les phonèmes. Compétence lexico-sémantique : Capacité à choisir des mots pour désigner quelque chose et construire une signification. Compétence syntaxique : Capacité à organiser les mots selon les règles grammaticales pour énoncer un message. Compétence pragmatique : Capacité à communiquer efficacement en tenant compte de la situation, des partenaires et du but. Son observation s’organise en six dimensions : non verbal, matériel, communicationnel, discursif, contenu et émotionnel. Au cours 01, Bruner est cité pour les compétences syntaxique, lexico-sémantique et pragmatique ; cette attribution ne s’étend ni à la compétence phonologique ni aux six dimensions, présentées d’après Dumais."
+        "Compétence phonologique : Capacité à distinguer et à produire les sons de la langue, notamment les phonèmes. Compétence lexico-sémantique : Capacité à choisir des mots pour désigner quelque chose et construire une signification. Compétence syntaxique : Capacité à organiser les mots selon les règles grammaticales pour énoncer un message. Compétence pragmatique : Capacité à communiquer efficacement en tenant compte de la situation, des partenaires et du but. Son observation s’organise en six dimensions : non verbal, matériel, communicationnel, discursif, contenu et émotionnel. Au cours 01, Bruner est cité pour les compétences syntaxique, lexico-sémantique et pragmatique ; cette attribution ne s’étend ni à la compétence phonologique ni aux six dimensions, présentées d’après Dumais.",
+        "Grille de la formatrice pour analyser une production d’élève (trois axes) : lexico-sémantique (étendue du vocabulaire, choix des mots) ; syntaxe (pronoms, temps verbaux, prépositions, phrases simples ou complexes) ; pragmatique (type de récit, cohérence — sens, chronologie —, cohésion — connecteurs, reprises). Pour l’articulation, on repère les sons produits et les contrastes confondus."
       ],
       "sources": [
         {
           "file": "SYNTHESE_BP1-18FRA_S1_COURS_01.docx",
           "location": "Notions à savoir : compétences syntaxique, lexico-sémantique, pragmatique, phonologique"
+        },
+        {
+          "file": "REVISION_BP1-18FRA_S1_Oral.docx",
+          "location": "3.2.4 Savoirs procéduraux : Analyser des productions d'élèves (grille à trois axes)"
         }
       ],
       "steps": [
@@ -10365,7 +10443,8 @@
           "sansChoix": true,
           "attenteId": "P2",
           "compatibleRevisions": [
-            "9737dbd42859f990"
+            "9737dbd42859f990",
+            "2d9b12c7eb868501"
           ]
         },
         {
@@ -10399,7 +10478,8 @@
           "sansChoix": true,
           "attenteId": "P2",
           "compatibleRevisions": [
-            "9737dbd42859f990"
+            "9737dbd42859f990",
+            "2d9b12c7eb868501"
           ]
         },
         {
@@ -10433,7 +10513,8 @@
           "sansChoix": true,
           "attenteId": "P2",
           "compatibleRevisions": [
-            "9737dbd42859f990"
+            "9737dbd42859f990",
+            "2d9b12c7eb868501"
           ]
         },
         {
@@ -10467,7 +10548,8 @@
           "sansChoix": true,
           "attenteId": "P2",
           "compatibleRevisions": [
-            "9737dbd42859f990"
+            "9737dbd42859f990",
+            "2d9b12c7eb868501"
           ]
         },
         {
@@ -10500,10 +10582,44 @@
           "level": "essentiel",
           "sansChoix": true,
           "notionId": "N168",
-          "attenteId": "P2"
+          "attenteId": "P2",
+          "compatibleRevisions": [
+            "2d9b12c7eb868501"
+          ]
+        },
+        {
+          "id": "Q6",
+          "prompt": "Avec la grille de la formatrice, on analyse le récit d'un élève de 6 ans sur la sortie à la piscine : « On a nagé. Après, on a mis le maillot. Puis on est montés dans le bus. » Sur quel axe place-t-on la remarque « l'ordre des évènements n'a pas de sens » ?",
+          "requiresContext": false,
+          "correctId": "c",
+          "choices": [
+            {
+              "id": "a",
+              "text": "L'axe lexico-sémantique",
+              "explanation": "Cet axe regarde l'étendue du vocabulaire et le choix des mots. Ici, les mots conviennent : c'est l'ordre des actions qui n'a pas de sens."
+            },
+            {
+              "id": "b",
+              "text": "L'axe syntaxique",
+              "explanation": "Cet axe regarde les pronoms, les temps verbaux, les prépositions et le caractère simple ou complexe des phrases. Les phrases sont ici bien construites et au passé composé : le problème est l'organisation de l'histoire."
+            },
+            {
+              "id": "c",
+              "text": "L'axe pragmatique",
+              "explanation": "Cet axe regarde le type de récit, sa cohérence (sens, chronologie) et sa cohésion (connecteurs, reprises). Des évènements dans un ordre qui n'a pas de sens relèvent de la cohérence."
+            },
+            {
+              "id": "d",
+              "text": "La ligne d'articulation",
+              "explanation": "Cette ligne repère les sons produits et les contrastes confondus ; il faut entendre la production. Elle ne dit rien de l'ordre des évènements."
+            }
+          ],
+          "level": "essentiel",
+          "sansChoix": true,
+          "attenteId": "P1"
         }
       ],
-      "qcmRevision": "2d9b12c7eb868501"
+      "qcmRevision": "9c06a63c3bd0c88c"
     },
     {
       "id": "ORAL-P-F63",
@@ -13426,33 +13542,36 @@
           "level": "essentiel",
           "sansChoix": true,
           "notionId": "N90",
-          "attenteId": "O2"
+          "attenteId": "O2",
+          "compatibleRevisions": [
+            "d7ea1c831c50a940"
+          ]
         },
         {
           "id": "Q3",
-          "prompt": "On associe parfois l'écrit à la langue « correcte » et l'oral à la langue familière « fautive ». Que répond le cours ?",
+          "prompt": "Un élève emploie « on » pour « nous » et une négation sans « ne ». Ce sont des formes de l'oral standard qui diffèrent de l'écrit normé. Que retient le cours à leur sujet ?",
           "requiresContext": false,
           "correctId": "b",
           "choices": [
             {
               "id": "a",
-              "text": "L'oral relève du registre familier, ce qui en fait une langue fautive que l'école doit corriger.",
-              "explanation": "C'est la confusion que le cours dénonce : l'oral peut être standard, avec des usages acceptables différents de ceux de l'écrit normé, et sa norme n'est pas à corriger systématiquement."
+              "text": "Ce sont des erreurs, au même titre qu'une erreur de genre ou de prononciation : on les corrige.",
+              "explanation": "Le cours distingue ces formes d'une erreur de genre ou de prononciation : ce sont des usages acceptables en oral standard. La dislocation (« La fille, elle… ») a le même statut : la supprimer automatiquement impose un modèle écrit à la parole."
             },
             {
               "id": "b",
-              "text": "La langue parlée ne se confond pas avec un registre familier fautif : oral-écrit et registres sont deux distinctions.",
-              "explanation": "Oral et écrit d'une part, registres de langue d'autre part, sont deux distinctions différentes ; des usages acceptables à l'oral standard diffèrent de ceux de l'écrit normé."
+              "text": "Ce sont des formes acceptables à l'oral standard ; on les apprécie selon la situation et le but.",
+              "explanation": "Des formes comme « on » pour « nous » ou la négation absente ou incomplète sont acceptables en oral standard, même si l'écrit normé les écarte. Leur appréciation dépend de la situation et du but, ce qui évite d'imposer un modèle écrit à la parole, comme pour la dislocation."
             },
             {
               "id": "c",
-              "text": "La langue parlée est un écrit appauvri : on la travaille en faisant parler les élèves comme dans un livre.",
-              "explanation": "Le cours écarte cette idée : la langue parlée a ses propres fonctionnements, comme la dislocation ; elle n'est pas un écrit appauvri."
+              "text": "Elles appauvrissent la langue parlée : mieux vaut faire parler les élèves comme on écrit.",
+              "explanation": "La langue parlée a ses propres fonctionnements (reprises, dislocation, mots supprimés par souci de rapidité). Faire parler comme on écrit lui impose un modèle écrit, au lieu d'apprécier ces formes selon la situation."
             },
             {
               "id": "d",
-              "text": "L'oral standard et l'écrit normé utilisent les mêmes constructions ; ils diffèrent surtout par la prononciation.",
-              "explanation": "Le cours cite des usages acceptables à l'oral standard qui diffèrent de ceux de l'écrit normé : « on » pour « nous », reprise d'un groupe nominal par un pronom, négation absente ou incomplète."
+              "text": "Ce sont des formes acceptables dans toute situation : le but de la parole n'entre pas en compte.",
+              "explanation": "Ces formes sont acceptables en oral standard, mais le cours ajoute que leur appréciation dépend de la situation et du but : elles ne sont pas valables dans toute situation."
             }
           ],
           "level": "essentiel",
@@ -13461,7 +13580,7 @@
           "attenteId": "O2"
         }
       ],
-      "qcmRevision": "d7ea1c831c50a940"
+      "qcmRevision": "df93305f2c201b5e"
     },
     {
       "id": "ORAL-P-F91",
@@ -15344,38 +15463,35 @@
       "steps": [
         {
           "id": "Q1",
-          "prompt": "Un élève dit « pomme » en montrant une gomme. L'enseignante choisit la paire minimale pomme / gomme et vérifie que l'élève associe chaque image au bon mot. Quelle étape vient ensuite dans la méthode pour choisir une aide à la prononciation ?",
+          "prompt": "Un élève dit « pomme » en montrant une gomme. L'enseignante choisit la paire minimale pomme / gomme. Elle dit un des deux mots et lui fait d'abord montrer la bonne image, avant de lui faire dire les mots. Pourquoi procède-t-elle dans cet ordre ?",
           "requiresContext": false,
           "correctId": "b",
           "choices": [
             {
               "id": "a",
-              "text": "Lui faire nommer chaque image, puis redonner le mot en cas d'erreur",
-              "explanation": "C'est la troisième étape de la méthode : faire produire et reprendre. Elle vient après la vérification à l'écoute, car entendre et distinguer les sons précède leur production précise."
+              "text": "Pour le récompenser à chaque bonne réponse : la répétition renforcée fixe ensuite sa prononciation des sons.",
+              "explanation": "Récompenser chaque réponse relève d'une logique behavioriste de renforcement. Cet ordre s'explique autrement : entendre et distinguer les sons précède leur production précise."
             },
             {
               "id": "b",
-              "text": "Dire un des deux mots et lui faire montrer la bonne image",
-              "explanation": "Après le choix de la paire minimale, la méthode fait distinguer les mots à l'écoute : l'adulte prononce un mot, l'élève montre l'image. On vérifie ainsi la perception du contraste avant de demander la production, comme le développement de l'articulation le justifie. Cette démarche en trois étapes est proposée par la synthèse du cours 02 à partir du loto des paires minimales ; le support montre les paires et la planche."
+              "text": "Parce qu'entendre et distinguer les sons précède leur production précise : elle contrôle d'abord l'écoute.",
+              "explanation": "Le développement de l'articulation (cours 2) : l'appareil auditif est développé avant l'appareil phonatoire, donc entendre et distinguer les sons précède leur production précise. En faisant montrer l'image du mot dit, l'enseignante contrôle que l'élève perçoit le contraste entre pomme et gomme avant de lui demander de le produire ; le loto des paires minimales suit le même ordre : faire entendre, puis produire."
             },
             {
               "id": "c",
-              "text": "Lui faire répéter « gomme » en le félicitant à chaque réussite",
-              "explanation": "Répéter et féliciter chaque réussite relève d'une logique behavioriste de renforcement. La méthode du cours vérifie d'abord la distinction des mots à l'écoute."
+              "text": "Pour lui montrer comment s'écrivent les deux mots, avant de lui demander de prononcer chaque son.",
+              "explanation": "Un phonème est une unité sonore, pas une lettre. La paire minimale sert à travailler l'écoute et la production des sons, pas l'orthographe."
             },
             {
               "id": "d",
-              "text": "Lui faire dire une comptine où le son [g] revient souvent",
-              "explanation": "Les comptines sont une autre piste pour faire réentendre et prononcer des sons. Dans la méthode fondée sur la paire minimale, l'étape suivante est de faire distinguer les deux mots à l'écoute."
+              "text": "Pour contrôler qu'il connait le sens de pomme et de gomme, avant de travailler la prononciation.",
+              "explanation": "Connaitre le sens des deux mots est un préalable, mais ce n'est pas ce que vise cet ordre : montrer la bonne image au mot entendu contrôle surtout que la différence de sons est perçue, avant d'en demander la production."
             }
           ],
           "level": "essentiel-approfondi",
           "sansChoix": true,
           "notionId": "N142",
-          "attenteId": "L5",
-          "compatibleRevisions": [
-            "007becc51dc71263"
-          ]
+          "attenteId": "L5"
         },
         {
           "id": "Q3",
@@ -15407,10 +15523,13 @@
           "level": "essentiel",
           "sansChoix": true,
           "notionId": "N160",
-          "attenteId": "L5"
+          "attenteId": "L5",
+          "compatibleRevisions": [
+            "4aa6f61e14728ee0"
+          ]
         }
       ],
-      "qcmRevision": "4aa6f61e14728ee0"
+      "qcmRevision": "becaf14b5acd5984"
     },
     {
       "id": "ORAL-P-F108",
@@ -17272,6 +17391,10 @@
       "stepId": "Q4"
     },
     {
+      "exerciseId": "ORAL-P-F62",
+      "stepId": "Q6"
+    },
+    {
       "exerciseId": "ORAL-P-F96",
       "stepId": "Q6"
     },
@@ -17438,6 +17561,10 @@
     {
       "exerciseId": "ORAL-P-F56",
       "stepId": "Q4"
+    },
+    {
+      "exerciseId": "ORAL-P-F56",
+      "stepId": "Q6"
     },
     {
       "exerciseId": "ORAL-P-F97",
@@ -18098,6 +18225,10 @@
     {
       "exerciseId": "ORAL-P-F97",
       "stepId": "Q4"
+    },
+    {
+      "exerciseId": "ORAL-P-F56",
+      "stepId": "Q7"
     },
     {
       "exerciseId": "ORAL-P-F30",
@@ -18830,6 +18961,12 @@
       "weight": 1
     },
     {
+      "id": "P1",
+      "label": "Analyser des productions d'élèves",
+      "operation": "ranger une observation sur l'axe de la grille qui l'examine ; repérer capacités et difficultés pour penser la suite de l'enseignement",
+      "weight": 1
+    },
+    {
       "id": "P2",
       "label": "Analyser l'étayage (plans)",
       "operation": "identifier le plan d'une intervention, définir les quatre compétences",
@@ -18856,7 +18993,7 @@
   ],
   "attentesSource": {
     "id": "GRILLE_BP1-18FRA_S1_ORAL",
-    "version": "v07"
+    "version": "v08"
   },
-  "bankRevision": "7cb09d6c24b1"
+  "bankRevision": "69ebe2d2e005"
 }
