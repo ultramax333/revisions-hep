@@ -11968,6 +11968,10 @@
         {
           "file": "SYNTHESE_BP1-18FRA_S1_COURS_02.docx",
           "location": "2 Développer l'articulation : les consonnes et les paires minimales"
+        },
+        {
+          "file": "REVISION_BP1-18FRA_S1_Oral.docx",
+          "location": "Le développement de l'articulation et des pistes didactiques pour améliorer la prononciation des phonèmes par les élèves : figure 4, Repères du développement consonantique (séries en rouge : 1, 4 et 5)"
         }
       ],
       "steps": [
@@ -12000,10 +12004,75 @@
           ],
           "level": "essentiel",
           "sansChoix": true,
+          "attenteId": "L5",
+          "compatibleRevisions": [
+            "5538ce0e9b06f93f"
+          ]
+        },
+        {
+          "id": "Q2",
+          "prompt": "Alice dit « un sat » pour un chat et « zoue » pour joue. Dans la progression des consonnes du cours, quelle série doit-elle acquérir ?",
+          "requiresContext": false,
+          "correctId": "c",
+          "choices": [
+            {
+              "id": "a",
+              "text": "Les quatre consonnes de base [p], [t], [m], [f], à l'avant de la bouche",
+              "explanation": "Ce sont les premières consonnes acquises, produites à l'avant de la bouche ; l'enfant s'appuie sur elles pour acquérir les autres. Ici, les sons qu'Alice ne produit pas encore sont ceux du début de chat et de joue, [ch] et [j] : ils ne font pas partie de la base."
+            },
+            {
+              "id": "b",
+              "text": "Les contrastes [t]/[k], [m]/[n] et [f]/[s], acquis après la base",
+              "explanation": "Ces contrastes (tour/cour, main/nain, fil/cil) s'acquièrent juste après les consonnes de base. Alice dit [s] là où l'on attend [ch] et [z] là où l'on attend [j] : ce n'est pas le contraste [f]/[s] ni l'un des deux autres."
+            },
+            {
+              "id": "c",
+              "text": "[ch] et [j], que l'enfant acquiert sur la base de [s] et [z]",
+              "explanation": "Dans l'ordre d'apparition des consonnes, la série suivante s'appuie sur [s] et [z] pour acquérir [ch] et [j], les sons du début de chat et de joue, que l'on travaille avec des paires minimales. C'est ce qu'Alice n'a pas encore : elle les remplace par [s] et [z]."
+            },
+            {
+              "id": "d",
+              "text": "[l] et [r], qui complètent la progression après les autres séries",
+              "explanation": "[l] et [r] forment la dernière série de l'ordre d'apparition : ils viennent après [ch] et [j]. Les sons qui manquent à Alice sont [ch] et [j], qui s'acquièrent avant eux."
+            }
+          ],
+          "level": "essentiel-approfondi",
+          "sansChoix": true,
+          "attenteId": "L5"
+        },
+        {
+          "id": "Q3",
+          "prompt": "Quatre élèves se trompent chacun sur un seul son. Chacun a déjà acquis toutes les consonnes qui précèdent, dans la progression du cours, celle qu'il confond encore.\n\nLequel est le plus avancé dans cette progression ?",
+          "requiresContext": false,
+          "correctId": "b",
+          "choices": [
+            {
+              "id": "a",
+              "text": "Noé dit « seval » pour cheval.",
+              "explanation": "Noé remplace [ch] par [s] : il est à la série où l'on acquiert [ch] et [j] sur la base de [s] et [z]. Cette série précède celle de [l] et [r]."
+            },
+            {
+              "id": "b",
+              "text": "Mina dit « lit » pour riz.",
+              "explanation": "Mina confond [l] et [r] : c'est la dernière série de l'ordre d'apparition, après [ch] et [j]. Une élève qui n'a plus que ces deux sons à acquérir a déjà franchi toutes les séries précédentes, donc elle est la plus avancée."
+            },
+            {
+              "id": "c",
+              "text": "Théo dit « mez » pour nez.",
+              "explanation": "Théo confond [m] et [n] : c'est le contraste [m]/[n] (main/nain), acquis juste après les consonnes de base. C'est une série bien plus précoce que celle de [l] et [r]."
+            },
+            {
+              "id": "d",
+              "text": "Inès dit « un pébé » pour un bébé.",
+              "explanation": "Inès confond [b] et [p] : elle n'ajoute pas la vibration des cordes vocales qui distingue la sonore [b] de la sourde [p]. Cette série (pépé/bébé) vient avant celle de [ch] et [j], donc avant celle de [l] et [r]."
+            }
+          ],
+          "level": "essentiel-approfondi",
+          "sansChoix": true,
           "attenteId": "L5"
         }
       ],
-      "qcmRevision": "5538ce0e9b06f93f"
+      "qcmRevision": "8b21a05409325ea6"
     },
     {
       "id": "ORAL-P-F75",
@@ -17883,6 +17952,14 @@
       "stepId": "Q2"
     },
     {
+      "exerciseId": "ORAL-P-F74",
+      "stepId": "Q2"
+    },
+    {
+      "exerciseId": "ORAL-P-F74",
+      "stepId": "Q3"
+    },
+    {
       "exerciseId": "ORAL-P-F11",
       "stepId": "Q4"
     },
@@ -18993,7 +19070,7 @@
   ],
   "attentesSource": {
     "id": "GRILLE_BP1-18FRA_S1_ORAL",
-    "version": "v08"
+    "version": "v09"
   },
-  "bankRevision": "69ebe2d2e005"
+  "bankRevision": "b5252e9ce774"
 }
