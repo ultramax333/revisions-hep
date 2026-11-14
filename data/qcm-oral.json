@@ -4312,7 +4312,7 @@
           ],
           "level": "essentiel-approfondi",
           "sansChoix": true,
-          "attenteId": "L4.1",
+          "attenteId": "L4",
           "compatibleRevisions": [
             "f080b196aa6e9e24"
           ]
@@ -7090,7 +7090,7 @@
               "explanation": "C'est le rôle énonciatif, observé dans la parodie : l'élève parle comme un personnage. Le rôle langagier est une responsabilité dans l'échange."
             }
           ],
-          "level": "essentiel-approfondi",
+          "level": "essentiel",
           "sansChoix": true,
           "notionId": "N108",
           "attenteId": "A3.2",
@@ -7125,7 +7125,7 @@
               "explanation": "Le cours ne décrit pas de rotation obligatoire. L'intérêt du partage tient aux occasions de travailler des capacités différentes, pas à un ordre de passage."
             }
           ],
-          "level": "essentiel",
+          "level": "essentiel-approfondi",
           "sansChoix": true,
           "notionId": "N151",
           "attenteId": "A3.2",
@@ -9331,7 +9331,7 @@
           ],
           "level": "essentiel",
           "sansChoix": true,
-          "attenteId": "O3"
+          "attenteId": "O3.2"
         }
       ],
       "qcmRevision": "98bd48a3ac434087"
@@ -16671,29 +16671,29 @@
       "steps": [
         {
           "id": "Q1",
-          "prompt": "Dans la méthode pour analyser un récit, on a observé les ressources linguistiques et l'oralité. Quelle étape vient ensuite ?",
+          "prompt": "Pour analyser le récit d'un élève, on a observé la construction de l'histoire, les ressources linguistiques et l'oralité. À quoi sert de relier ces constats à l'aide que l'élève a déjà reçue ?",
           "requiresContext": false,
           "correctId": "d",
           "choices": [
             {
               "id": "a",
-              "text": "Situer la production : genre, destinataire, but et supports",
-              "explanation": "C'est la première étape de la méthode, qui précède l'examen des contenus et des ressources. Après l'observation des ressources linguistiques et de l'oralité, on relie les constats à l'aide."
+              "text": "À juger l'élève sur ce qu'il fait seul, en écartant l'aide reçue",
+              "explanation": "Ce qui a été réussi avec une aide renseigne justement l'analyse : on distingue la réussite soutenue de ce que l'élève fait seul pour choisir la prochaine aide, au lieu d'écarter l'aide reçue."
             },
             {
               "id": "b",
-              "text": "Conclure si l'oral y est un outil ou un objet d'enseignement",
-              "explanation": "Cette conclusion termine la méthode d'analyse de l'objectif d'un dispositif (cours 03). La méthode d'analyse d'un récit se termine en reliant les constats à l'étayage et à la progression."
+              "text": "À conclure si l'oral y est un outil ou un objet d'enseignement",
+              "explanation": "Cette conclusion termine la méthode d'analyse de l'objectif d'un dispositif (cours 03). La méthode d'analyse d'un récit se termine en reliant les constats à l'étayage et à la progression, pour choisir la prochaine aide."
             },
             {
               "id": "c",
-              "text": "Attribuer à l'élève un niveau global d'après les repères d'âge",
+              "text": "À attribuer à l'élève un niveau global d'après les repères d'âge",
               "explanation": "Les repères d'âge donnent un ordre général du développement ; ils n'attribuent pas un niveau global à un enfant. La méthode conduit à une prochaine aide utile, pas à un classement."
             },
             {
               "id": "d",
-              "text": "Relier les constats à l'aide reçue et à la prochaine aide",
-              "explanation": "La quatrième étape relie les constats à l'étayage et à la progression : distinguer ce que l'élève réussit, l'aide déjà reçue et la prochaine aide utile. L'analyse du récit (cours 04) rejoint ainsi l'étayage (cours 01), qui vise une part croissante d'autonomie."
+              "text": "À choisir la prochaine aide utile pour faire progresser l'élève",
+              "explanation": "La méthode d'analyse d'un récit (cours 04) se termine en reliant les constats à l'étayage et à la progression : on distingue ce que l'élève réussit, l'aide déjà reçue et la prochaine aide utile. L'analyse sert donc à choisir l'aide suivante ; elle rejoint ainsi l'étayage (cours 01), qui vise une part croissante d'autonomie."
             }
           ],
           "level": "essentiel-approfondi",
@@ -16729,10 +16729,13 @@
           ],
           "level": "essentiel-approfondi",
           "sansChoix": true,
-          "notionId": "L15"
+          "notionId": "L15",
+          "compatibleRevisions": [
+            "8b8960bc4c7af99e"
+          ]
         }
       ],
-      "qcmRevision": "8b8960bc4c7af99e"
+      "qcmRevision": "793ac001a74222a1"
     },
     {
       "id": "ORAL-L-F16",
@@ -16804,7 +16807,7 @@
           "level": "essentiel",
           "sansChoix": true,
           "notionId": "L16",
-          "attenteId": "A4"
+          "attenteId": "A4.1"
         }
       ],
       "qcmRevision": "24e0e44c46356df2"
@@ -17442,7 +17445,7 @@
     },
     {
       "exerciseId": "ORAL-P-F33",
-      "stepId": "Q6"
+      "stepId": "Q5"
     },
     {
       "exerciseId": "ORAL-P-F61",
@@ -18130,7 +18133,7 @@
     },
     {
       "exerciseId": "ORAL-P-F33",
-      "stepId": "Q5"
+      "stepId": "Q6"
     },
     {
       "exerciseId": "ORAL-P-F109",
@@ -18624,8 +18627,8 @@
     },
     {
       "id": "L4.1",
-      "label": "Reprises : distinction générale et cas de reformulation avec extension",
-      "operation": "distinguer répétition et reformulation, reconnaître une reformulation avec extension",
+      "label": "Reprises : distinction générale répétition / reformulation",
+      "operation": "distinguer répétition et reformulation",
       "weight": 2
     },
     {
@@ -18719,6 +18722,12 @@
       "weight": 1
     },
     {
+      "id": "O3.2",
+      "label": "Rapport à l'oral",
+      "operation": "définir le rapport à l'oral",
+      "weight": 1
+    },
+    {
       "id": "O4",
       "label": "Parler et dire",
       "operation": "observer qui parle à qui — distinction non développée au cours",
@@ -18805,8 +18814,14 @@
     {
       "id": "A4",
       "label": "Défis des genres oraux",
-      "operation": "choisir des indices observables ; dire la limite de la transcription",
+      "operation": "choisir des indices observables",
       "weight": 2
+    },
+    {
+      "id": "A4.1",
+      "label": "Limite de la transcription : l'oral ne laisse pas de traces",
+      "operation": "dire ce qu'une transcription ne permet pas d'analyser de façon fiable",
+      "weight": 1
     },
     {
       "id": "A5",
@@ -18841,7 +18856,7 @@
   ],
   "attentesSource": {
     "id": "GRILLE_BP1-18FRA_S1_ORAL",
-    "version": "v06"
+    "version": "v07"
   },
-  "bankRevision": "cd6308f0e974"
+  "bankRevision": "bad02d5a6d41"
 }
