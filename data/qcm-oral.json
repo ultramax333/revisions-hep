@@ -7090,7 +7090,7 @@
               "explanation": "C'est le rôle énonciatif, observé dans la parodie : l'élève parle comme un personnage. Le rôle langagier est une responsabilité dans l'échange."
             }
           ],
-          "level": "essentiel",
+          "level": "essentiel-approfondi",
           "sansChoix": true,
           "notionId": "N108",
           "attenteId": "A3.2",
@@ -17444,10 +17444,6 @@
       "stepId": "Q1"
     },
     {
-      "exerciseId": "ORAL-P-F33",
-      "stepId": "Q5"
-    },
-    {
       "exerciseId": "ORAL-P-F61",
       "stepId": "Q4"
     },
@@ -18130,6 +18126,10 @@
     {
       "exerciseId": "ORAL-P-F32",
       "stepId": "Q2"
+    },
+    {
+      "exerciseId": "ORAL-P-F33",
+      "stepId": "Q5"
     },
     {
       "exerciseId": "ORAL-P-F33",
@@ -18858,5 +18858,5 @@
     "id": "GRILLE_BP1-18FRA_S1_ORAL",
     "version": "v07"
   },
-  "bankRevision": "bad02d5a6d41"
+  "bankRevision": "7cb09d6c24b1"
 }
