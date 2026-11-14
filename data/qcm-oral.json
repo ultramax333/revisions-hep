@@ -667,7 +667,7 @@
     },
     {
       "id": "ORAL-P-F114",
-      "title": "Système à trois temps de Boisseau : temps de référence, ce qui précède, ce qui suit (question générale)",
+      "title": "Système à trois temps de Boisseau : les trois séries de temps et leurs âges (question générale)",
       "course": "S02"
     },
     {
@@ -9397,7 +9397,10 @@
           ],
           "level": "essentiel",
           "sansChoix": true,
-          "attenteId": "L7"
+          "attenteId": "L7",
+          "compatibleRevisions": [
+            "371469297905b36c"
+          ]
         },
         {
           "id": "Q4",
@@ -9417,8 +9420,8 @@
             },
             {
               "id": "c",
-              "text": "À situer les évènements les uns par rapport aux autres autour d'un temps de référence.",
-              "explanation": "Chaque système part d'un temps de référence (présent, imparfait, futur simple) et de ce qui le précède et le suit. Les trois formes situent ainsi les évènements les uns par rapport aux autres. Le détail des trois systèmes peut être reporté sur la feuille manuscrite autorisée : on retient surtout leur idée."
+              "text": "À situer les évènements les uns par rapport aux autres dans les phrases de l'enfant.",
+              "explanation": "Chaque série réunit trois temps qui situent les évènements les uns par rapport aux autres : par exemple le présent, le passé composé et le futur avec aller. Le détail des trois séries peut être reporté sur la feuille manuscrite autorisée : on retient surtout leur idée."
             },
             {
               "id": "d",
@@ -9460,10 +9463,13 @@
           ],
           "level": "essentiel-approfondi",
           "sansChoix": true,
-          "attenteId": "L7"
+          "attenteId": "L7",
+          "compatibleRevisions": [
+            "371469297905b36c"
+          ]
         }
       ],
-      "qcmRevision": "371469297905b36c"
+      "qcmRevision": "6fbd93c1873ce34e"
     },
     {
       "id": "ORAL-P-F56",
@@ -9481,7 +9487,8 @@
       "hints": [
         "La DVP est la discussion à visée philosophique : compare ce que cherche une discussion et ce que cherche un débat.",
         "Atelier de philosophie ; discussion à visée philosophique ; DVP (cours ; Tozzi) : Dispositif où les élèves cherchent à penser par et pour eux-mêmes autour d’une question, dans des échanges réglés qui font définir, questionner et justifier. La DVP vise la recherche commune : il s’agit de discuter et non de débattre, l’enjeu n’est pas d’avoir raison mais de chercher à rendre raison de ce que l’on avance ; le débat cherche à avoir raison.",
-        "Impartialité (séminaire ; Chirouter ; Larousse) : Posture de l’enseignant·e qui ne favorise personne et n’exprime aucun parti pris, sans être neutre : elle évite le dogmatisme, qui imposerait une doctrine, et le relativisme, qui traiterait toutes les affirmations comme également fondées. L’enseignant aiguille, étaye, précise, structure et recentre ; penser n’est pas parler (il valorise l’écoute) ; il met l’intimité à distance : la question reste générale."
+        "Impartialité (séminaire ; Chirouter ; Larousse) : Posture de l’enseignant·e qui ne favorise personne et n’exprime aucun parti pris, sans être neutre : elle évite le dogmatisme, qui imposerait une doctrine, et le relativisme, qui traiterait toutes les affirmations comme également fondées. L’enseignant aiguille, étaye, précise, structure et recentre ; penser n’est pas parler (il valorise l’écoute) ; il met l’intimité à distance : la question reste générale.",
+        "Déroulement et espace (cours 3 ; document des concepts et objectifs, p. 2) : le déroulement de l'atelier suit cinq temps, du support qui lance la recherche jusqu'à un retour réflexif sur la discussion. L'atelier est un espace structurant : la parole y est régie par des règles démocratiques et l'animation est partagée entre l'enseignant et les élèves."
       ],
       "sources": [
         {
@@ -9495,6 +9502,10 @@
         {
           "file": "SYNTHESE_BP1-18FRA_S1_SEMINAIRE_03.docx",
           "location": "2 Installer et animer l'atelier de philosophie : Guider sans imposer sa réponse (diapositives 29–31)"
+        },
+        {
+          "file": "REVISION_BP1-18FRA_S1_Oral.docx",
+          "location": "3.2.3 Apprentissages liés à la compréhension et à la production de textes oraux : Les textes qui argumentent (déroulement en cinq temps, espace structurant et disposition en cercle)"
         }
       ],
       "steps": [
@@ -9529,7 +9540,8 @@
           "sansChoix": true,
           "attenteId": "A2",
           "compatibleRevisions": [
-            "1269095914803f71"
+            "1269095914803f71",
+            "69f917ea0d282e21"
           ]
         },
         {
@@ -9563,7 +9575,8 @@
           "sansChoix": true,
           "attenteId": "A2",
           "compatibleRevisions": [
-            "1269095914803f71"
+            "1269095914803f71",
+            "69f917ea0d282e21"
           ]
         },
         {
@@ -9595,7 +9608,10 @@
           ],
           "level": "essentiel",
           "sansChoix": true,
-          "attenteId": "A2"
+          "attenteId": "A2",
+          "compatibleRevisions": [
+            "69f917ea0d282e21"
+          ]
         },
         {
           "id": "Q7",
@@ -9626,10 +9642,77 @@
           ],
           "level": "essentiel-approfondi",
           "sansChoix": true,
+          "attenteId": "A2",
+          "compatibleRevisions": [
+            "69f917ea0d282e21"
+          ]
+        },
+        {
+          "id": "Q8",
+          "prompt": "Quel enchaînement décrit le déroulement d'une discussion à visée philosophique ?",
+          "requiresContext": false,
+          "correctId": "a",
+          "choices": [
+            {
+              "id": "a",
+              "text": "Supports inducteurs, choix du thème et questions, discussion, clôture, constat",
+              "explanation": "Le déroulement suit cinq temps : les supports inducteurs ; le choix du thème, puis l'élaboration de questions et de sous-questions ; la discussion ; la clôture, avec les salutations finales ; le constat, moment de retour réflexif."
+            },
+            {
+              "id": "b",
+              "text": "Choix du thème et questions, supports inducteurs, discussion, clôture, constat",
+              "explanation": "Le support inducteur vient d'abord : c'est lui qui suscite une question et engage la parole, et le thème comme les questions en sortent. Le déroulement suit cinq temps : les supports inducteurs ; le choix du thème, puis l'élaboration de questions et de sous-questions ; la discussion ; la clôture, avec les salutations finales ; le constat, moment de retour réflexif."
+            },
+            {
+              "id": "c",
+              "text": "Supports inducteurs, discussion, choix du thème et questions, clôture, constat",
+              "explanation": "Le thème et les questions se choisissent avant la discussion : ils en sont l'objet. Le déroulement suit cinq temps : les supports inducteurs ; le choix du thème, puis l'élaboration de questions et de sous-questions ; la discussion ; la clôture, avec les salutations finales ; le constat, moment de retour réflexif."
+            },
+            {
+              "id": "d",
+              "text": "Supports inducteurs, choix du thème et questions, discussion, clôture avec constat",
+              "explanation": "La clôture, avec les salutations finales, et le constat, moment de retour réflexif, sont deux temps distincts : le déroulement compte cinq temps et non quatre. Le déroulement suit cinq temps : les supports inducteurs ; le choix du thème, puis l'élaboration de questions et de sous-questions ; la discussion ; la clôture, avec les salutations finales ; le constat, moment de retour réflexif."
+            }
+          ],
+          "level": "essentiel-approfondi",
+          "sansChoix": true,
+          "notionId": "N174",
+          "attenteId": "A2"
+        },
+        {
+          "id": "Q9",
+          "prompt": "Comment les élèves sont-ils installés dans l'espace pour une discussion à visée philosophique ?",
+          "requiresContext": false,
+          "correctId": "c",
+          "choices": [
+            {
+              "id": "a",
+              "text": "En rangées face à l'enseignant, qui donne la parole à chacun à son tour",
+              "explanation": "C'est la disposition d'un dialogue dirigé par l'enseignant, qui pose les questions et valide les réponses. Dans la DVP, les élèves sont installés en cercle, dans un espace structurant où la parole est régie par des règles démocratiques."
+            },
+            {
+              "id": "b",
+              "text": "En deux camps face à face, chaque camp défendant sa position",
+              "explanation": "Deux camps qui défendent chacun une position, c'est la disposition d'un débat, qui vise à avoir raison. Dans la DVP, on cherche ensemble à rendre raison de ce que l'on avance : les élèves sont installés en cercle."
+            },
+            {
+              "id": "c",
+              "text": "En cercle, dans un espace où la parole est régie par des règles démocratiques",
+              "explanation": "Le bloc décrit l'atelier comme un espace structurant : la parole y est régie par des règles démocratiques et l'animation est partagée entre l'enseignant et les élèves. Pour la disposition spatiale, les élèves sont installés en cercle."
+            },
+            {
+              "id": "d",
+              "text": "En petits groupes, chaque groupe cherchant sa réponse avant de la présenter",
+              "explanation": "Le travail en petits groupes sépare la recherche en plusieurs réponses à présenter ensuite. Dans la DVP, la recherche est commune : tous les élèves, installés en cercle, échangent à partir de la même question."
+            }
+          ],
+          "level": "essentiel-approfondi",
+          "sansChoix": true,
+          "notionId": "N175",
           "attenteId": "A2"
         }
       ],
-      "qcmRevision": "69f917ea0d282e21"
+      "qcmRevision": "0e66f965945d3408"
     },
     {
       "id": "ORAL-P-F57",
@@ -14014,6 +14097,10 @@
         {
           "file": "SYNTHESE_BP1-18FRA_S1_COURS_04.docx",
           "location": "5 Faire comprendre et produire des récits : Le théâtre et les marionnettes pour faire varier les ressources (diapositives 37–39 ; Blanche-Benveniste, 1998, p. 9)"
+        },
+        {
+          "file": "REVISION_BP1-18FRA_S1_Oral.docx",
+          "location": "3.2.3 Apprentissages liés à la compréhension et à la production de textes oraux : La parodie et les rôles langagiers (trois capacités : rôles énonciatifs, norme grammaticale, vocabulaire plus riche)"
         }
       ],
       "steps": [
@@ -14047,7 +14134,10 @@
           "level": "essentiel",
           "sansChoix": true,
           "notionId": "N93",
-          "attenteId": "A3.1"
+          "attenteId": "A3.1",
+          "compatibleRevisions": [
+            "26bc65d1c8223b6b"
+          ]
         },
         {
           "id": "Q2",
@@ -14079,7 +14169,10 @@
           "level": "approfondissement",
           "sansChoix": true,
           "notionId": "N93",
-          "attenteId": "A3.3"
+          "attenteId": "A3.3",
+          "compatibleRevisions": [
+            "26bc65d1c8223b6b"
+          ]
         },
         {
           "id": "Q3",
@@ -14111,33 +14204,36 @@
           "level": "approfondissement",
           "sansChoix": true,
           "notionId": "N93",
-          "attenteId": "A3.3"
+          "attenteId": "A3.3",
+          "compatibleRevisions": [
+            "26bc65d1c8223b6b"
+          ]
         },
         {
           "id": "Q5",
-          "prompt": "Pendant un jeu de rôles, Nora joue un juge et dit : « Il faudrait que l'accusé se tienne tranquille », puis ajoute pour toute raison : « parce que les voleurs c'est méchant ». Que révèle sa réplique, la phrase et la raison prises ensemble ?",
+          "prompt": "Pendant un jeu de rôles, Nora joue une astronome. D'habitude, elle dit : « Il y a un truc rouge dans le ciel. » Dans le jeu, elle dit : « Il y a une comète rouge dans le ciel. » Que révèle la différence entre ces deux phrases ?",
           "requiresContext": false,
-          "correctId": "d",
+          "correctId": "c",
           "choices": [
             {
               "id": "a",
               "text": "Assumer des rôles énonciatifs dans la situation jouée",
-              "explanation": "Assumer des rôles énonciatifs, c'est s'exprimer comme un personnage dans la situation jouée. Ici, c'est la distance entre sa phrase soignée et sa justification qui est notée, plus que la prise de rôle."
+              "explanation": "Assumer des rôles énonciatifs, c'est s'exprimer comme un personnage dans la situation jouée. Nora joue bien une astronome, mais ce que l'on compare ici, ce sont les mots choisis dans deux phrases de même construction."
             },
             {
               "id": "b",
               "text": "Jouer avec la norme grammaticale d'un personnage",
-              "explanation": "Jouer avec la norme grammaticale, c'est ajuster ses constructions à celles d'un personnage soigné ou d'une situation donnée. Ici, la construction soignée est bien là, mais l'observation porte sur son contraste avec la raison donnée."
+              "explanation": "Jouer avec la norme grammaticale, c'est ajuster ses constructions à celles d'un personnage soigné ou d'une situation donnée. Ici, la construction « Il y a… dans le ciel » est la même dans les deux phrases : seul un mot change."
             },
             {
               "id": "c",
               "text": "Employer un vocabulaire plus riche que d'ordinaire",
-              "explanation": "Employer un vocabulaire plus riche, c'est utiliser des mots plus précis que dans ses prises de parole habituelles. Ici, aucun mot rare n'est relevé : l'observation porte sur un contraste de niveaux."
+              "explanation": "La parodie (cours 04) révèle des capacités que la parole habituelle cache. Employer un vocabulaire plus riche, c'est utiliser des mots plus précis que dans ses prises de parole habituelles. Ici, la phrase garde la même construction et « truc » devient « comète » : c'est le mot qui change. Le jeu de rôles peut révéler plusieurs de ces capacités à la fois ; la question vise celle que l'observation met au premier plan. Le cas est construit pour l'entraînement ; il ne vient pas du cours."
             },
             {
               "id": "d",
-              "text": "Faire voir un décalage entre grammaire et contenu",
-              "explanation": "La parodie (cours 04) révèle des capacités que la parole habituelle cache. Le décalage apparait quand une grammaire sophistiquée accompagne un contenu encore naïf. Ici, une grammaire sophistiquée accompagne un contenu encore naïf : c'est le décalage décrit par le cours. Le jeu de rôles peut révéler plusieurs de ces capacités à la fois ; la question vise celle que l'observation met au premier plan."
+              "text": "Réciter un texte écrit appris par cœur",
+              "explanation": "Réciter un texte écrit mémorisé, c'est l'oral récité ; la parodie est une situation jouée où l'on parle à la manière d'un personnage, sans texte à restituer. Nora choisit ici un mot plus précis : elle ne récite rien."
             }
           ],
           "level": "approfondissement",
@@ -14146,7 +14242,7 @@
           "attenteId": "A3.3"
         }
       ],
-      "qcmRevision": "26bc65d1c8223b6b"
+      "qcmRevision": "5552575eb0bb9aff"
     },
     {
       "id": "ORAL-P-F95",
@@ -15892,7 +15988,7 @@
         },
         {
           "file": "REVISION_BP1-18FRA_S1_Oral.docx",
-          "location": "Pont : 2.1 Concepts généraux de didactique, triangle — « À quoi il sert : repérer quelle relation est en jeu lorsqu'on analyse un choix ou un échange en classe. »"
+          "location": "Pont : 3.1.1 Éléments généraux de didactique : Concepts généraux de didactique, triangle didactique — « À quoi il sert : repérer quelle relation est en jeu lorsqu'on analyse un choix ou un échange en classe. »"
         },
         {
           "file": "SYNTHESE_BP1-18FRA_S1_COURS_01.docx",
@@ -15904,7 +16000,7 @@
         },
         {
           "file": "REVISION_BP1-18FRA_S1_Oral.docx",
-          "location": "2.1 Concepts généraux de didactique : triangle didactique"
+          "location": "3.1.1 Éléments généraux de didactique : Concepts généraux de didactique, triangle didactique"
         }
       ],
       "steps": [
@@ -16020,13 +16116,13 @@
       "context": "",
       "prompt": "",
       "hints": [
-        "Prends le premier système : autour de quel temps s'organise-t-il, et quelles formes situent un évènement avant lui et après lui ? Puis vérifie que les deux autres systèmes suivent le même principe.",
-        "Les trois systèmes temporels de Boisseau (à connaître en entier) : 3–4 ans, temps de référence présent, ce qui précède au passé composé, ce qui suit au futur avec aller au présent ; 4–5 ans, temps de référence imparfait, ce qui précède au plus-que-parfait, ce qui suit au futur avec aller à l'imparfait ; 5–6 ans, temps de référence futur simple, ce qui précède au futur antérieur, ce qui suit au futur avec aller au futur. Le verbe aller est suivi d'un infinitif. Les trois formes d'un système situent les évènements les uns par rapport aux autres. Quatre axes guident la progression de Boisseau : pronoms, temps, complexités, prépositions."
+        "Une série réunit trois temps verbaux. Cherche combien de séries compte le système, dans quel ordre l'enfant les acquiert et vers quel âge, d'après les repères de Boisseau.",
+        "Les trois séries de temps de Boisseau (à connaître en entier) : 3–4 ans, présent, passé composé, futur avec aller ; 4–5 ans, imparfait, plus-que-parfait, futur avec aller à l'imparfait ; 5–6 ans, futur simple, futur antérieur, futur avec aller au futur. Le verbe aller est suivi d'un infinitif. Les séries s'acquièrent l'une après l'autre entre 3 et 6 ans ; chaque série situe les évènements les uns par rapport aux autres. Quatre axes guident la progression de Boisseau : pronoms, temps, complexités, prépositions. Les phrases complexes forment un autre tableau de la progression : leurs constructions sont rangées par âge."
       ],
       "sources": [
         {
           "file": "REVISION_BP1-18FRA_S1_Oral.docx",
-          "location": "2.2.1 Développement de la syntaxe : les trois systèmes temporels de Boisseau"
+          "location": "3.2.1 Concepts liés à l'enseignement et à l'apprentissage du langage : Développement de la syntaxe (système à trois temps, trois séries et leurs âges)"
         },
         {
           "file": "SYNTHESE_BP1-18FRA_S1_SEMINAIRE_02.docx",
@@ -16044,24 +16140,24 @@
       "steps": [
         {
           "id": "Q1",
-          "prompt": "Dans un système à trois temps de Boisseau, comment les trois formes verbales se répartissent-elles ?",
+          "prompt": "Qu'est-ce que le système à trois temps de la progression de Boisseau ?",
           "requiresContext": false,
           "correctId": "c",
           "choices": [
             {
               "id": "a",
-              "text": "Trois temps acquis à trois âges : le présent vers 3–4 ans, l'imparfait vers 4–5 ans, le futur simple vers 5–6 ans.",
-              "explanation": "Ce sont les temps de référence des trois systèmes, un par âge. Chaque système, lui, réunit trois formes autour de son temps de référence : par exemple l'imparfait, le plus-que-parfait pour ce qui précède et « allait » + infinitif pour ce qui suit."
+              "text": "Trois temps verbaux seulement, le présent, l'imparfait et le futur simple, que l'enfant acquiert l'un après l'autre.",
+              "explanation": "Il ne s'agit pas de trois temps seuls mais de trois séries de trois temps : présent, passé composé et futur avec aller ; imparfait, plus-que-parfait et futur avec aller à l'imparfait ; futur simple, futur antérieur et futur avec aller au futur. Le présent, l'imparfait et le futur simple n'ouvrent chacun qu'une série."
             },
             {
               "id": "b",
-              "text": "Un temps pour le passé, un pour le présent, un pour le futur, situés par rapport au moment où l'on parle.",
-              "explanation": "Cela ne vaut que pour le premier système, dont le temps de référence est le présent. Dans le système de l'imparfait, tout se passe dans le passé : le plus-que-parfait marque ce qui précède l'imparfait, et « allait » + infinitif ce qui le suit. Le repère est le temps de référence du système, pas le moment de la parole."
+              "text": "Un tableau de constructions de phrases complexes, comme parce que, que ou si, rangées selon trois repères d'âge.",
+              "explanation": "Les phrases complexes forment un autre tableau de Boisseau, dont les constructions (parce que, que complétif, si…) sont rangées par âge. Le système à trois temps concerne les temps verbaux."
             },
             {
               "id": "c",
-              "text": "Un temps de référence, une forme pour ce qui le précède et une pour ce qui le suit : présent, passé composé, futur avec aller.",
-              "explanation": "Chaque système s'organise autour d'un temps de référence : une forme marque ce qui le précède, une autre ce qui le suit. Présent, passé composé et futur avec aller au présent (3–4 ans) ; imparfait, plus-que-parfait et futur avec aller à l'imparfait (4–5 ans) ; futur simple, futur antérieur et futur avec aller au futur (5–6 ans). Les trois formes situent les évènements les uns par rapport aux autres."
+              "text": "Trois séries de trois temps verbaux, que l'enfant acquiert l'une après l'autre entre 3 et 6 ans.",
+              "explanation": "Un système à trois temps est une organisation en trois séries de trois temps verbaux. Première série (3–4 ans) : présent, passé composé, futur avec aller. Deuxième (4–5 ans) : imparfait, plus-que-parfait, futur avec aller à l'imparfait. Troisième (5–6 ans) : futur simple, futur antérieur, futur avec aller au futur. Les séries s'acquièrent l'une après l'autre."
             },
             {
               "id": "d",
@@ -16071,11 +16167,75 @@
           ],
           "level": "essentiel",
           "sansChoix": true,
-          "notionId": "N170",
-          "attenteId": "L7.2"
+          "notionId": "N173",
+          "attenteId": "L7"
+        },
+        {
+          "id": "Q2",
+          "prompt": "Un enfant dit : « Demain, j'irai au zoo quand j'aurai fini mon dessin. » Dans le système à trois temps de Boisseau, à quelle série appartiennent les temps qu'il emploie ?",
+          "requiresContext": false,
+          "correctId": "c",
+          "choices": [
+            {
+              "id": "a",
+              "text": "Présent, passé composé et futur avec aller",
+              "explanation": "C'est la première série (3–4 ans). L'énoncé n'emploie ni présent, ni passé composé, ni futur avec aller : « j'irai » est un futur simple et « j'aurai fini » un futur antérieur."
+            },
+            {
+              "id": "b",
+              "text": "Imparfait, plus-que-parfait et futur avec aller à l'imparfait",
+              "explanation": "C'est la deuxième série (4–5 ans), qui se place dans le passé. L'énoncé parle de demain : il n'emploie ni imparfait, ni plus-que-parfait."
+            },
+            {
+              "id": "c",
+              "text": "Futur simple, futur antérieur et futur avec aller au futur",
+              "explanation": "« J'irai » est un futur simple et « j'aurai fini » un futur antérieur : ce sont deux des trois temps de la troisième série, que les repères de Boisseau situent vers 5–6 ans. L'énoncé est construit pour l'entraînement ; il ne vient pas du cours."
+            },
+            {
+              "id": "d",
+              "text": "Présent, imparfait et futur simple",
+              "explanation": "Ces trois temps ne forment pas une série : ce sont les premiers temps des trois séries, un par série. Dans l'énoncé, « j'irai » et « j'aurai fini » appartiennent à la même série, la troisième."
+            }
+          ],
+          "level": "essentiel-approfondi",
+          "sansChoix": true,
+          "notionId": "N173",
+          "attenteId": "L7"
+        },
+        {
+          "id": "Q3",
+          "prompt": "Dans la progression de Boisseau, quelle série de temps l'enfant acquiert-il vers 4–5 ans ?",
+          "requiresContext": false,
+          "correctId": "b",
+          "choices": [
+            {
+              "id": "a",
+              "text": "Présent, passé composé et futur avec aller",
+              "explanation": "C'est la première série, que les repères de Boisseau situent vers 3–4 ans, un an plus tôt."
+            },
+            {
+              "id": "b",
+              "text": "Imparfait, plus-que-parfait et futur avec aller à l'imparfait",
+              "explanation": "C'est la deuxième série : les repères de Boisseau la situent vers 4–5 ans, après la série du présent (3–4 ans) et avant celle du futur simple (5–6 ans)."
+            },
+            {
+              "id": "c",
+              "text": "Futur simple, futur antérieur et futur avec aller au futur",
+              "explanation": "C'est la troisième série, que les repères de Boisseau situent vers 5–6 ans, un an plus tard."
+            },
+            {
+              "id": "d",
+              "text": "Passé composé, plus-que-parfait et futur antérieur",
+              "explanation": "Ces trois temps ne forment pas une série : le passé composé appartient à la première série, le plus-que-parfait à la deuxième et le futur antérieur à la troisième. Une série réunit trois temps acquis ensemble, par exemple, vers 4–5 ans, imparfait, plus-que-parfait et futur avec aller à l'imparfait."
+            }
+          ],
+          "level": "essentiel-approfondi",
+          "sansChoix": true,
+          "notionId": "N173",
+          "attenteId": "L7"
         }
       ],
-      "qcmRevision": "1d878709649eb30c"
+      "qcmRevision": "3e14e74a49daecd7"
     },
     {
       "id": "ORAL-P-F115",
@@ -16478,7 +16638,7 @@
       "prompt": "",
       "hints": [
         "Demande-toi d'abord si la construction de l'élève est une erreur de la langue parlée ou un fonctionnement normal de l'oral. Ensuite, regarde ce que l'élève fait juste après : une réussite obtenue sur demande dure-t-elle ?",
-        "Dislocation : Construction du français parlé qui répète le sujet : un groupe nominal est repris par un pronom (dislocation à gauche : le groupe précède le pronom) ou annoncé par lui (dislocation à droite : il le suit). Une dislocation n'a pas le même statut qu'une erreur de genre ou de prononciation. Méthode d'analyse d'un étayage (cours 1), étape 4 : examiner la suite de l'échange ; chercher ce que l'élève répète, modifie ou réemploie, et distinguer cet effet local d'une acquisition durable. Reformulation avec extension : Reprise qui modifie l'énoncé et ajoute des informations pour enrichir le message."
+        "Dislocation : Construction du français parlé qui répète le sujet : un groupe nominal est repris par un pronom (dislocation à gauche : le groupe précède le pronom) ou annoncé par lui (dislocation à droite : il le suit). Une dislocation n'a pas le même statut qu'une erreur de genre ou de prononciation. Grille d'analyse d'un étayage (cours 1), étape 4 : examiner la suite de l'échange ; chercher ce que l'élève répète, modifie ou réemploie, puis nommer l'aide qui peut poursuivre l'apprentissage. Reformulation avec extension : Reprise qui modifie l'énoncé et ajoute des informations pour enrichir le message."
       ],
       "sources": [
         {
@@ -16487,7 +16647,7 @@
         },
         {
           "file": "REVISION_BP1-18FRA_S1_Oral.docx",
-          "location": "Pont : 2.2.4 Méthode : analyser un étayage dans un échange (cours 1), étape 4 — « Cherche ce que l'élève répète, modifie ou réemploie. Distingue cet effet local d'une acquisition durable. »"
+          "location": "Pont : 3.2.4 Savoirs procéduraux : Grille d'analyse d'un étayage ou d'une interaction (ajoutée), étape 4 « Examiner la suite de l'échange » — « Cherche ce que l'élève répète, modifie ou réemploie, puis nomme l'aide qui pourrait poursuivre l'apprentissage. » ; 3.2.2 Concepts liés à l'oral : Les caractéristiques de la langue parlée — « la supprimer automatiquement impose un modèle écrit à la parole »"
         },
         {
           "file": "SYNTHESE_BP1-18FRA_S1_COURS_03.docx",
@@ -16499,7 +16659,7 @@
         },
         {
           "file": "REVISION_BP1-18FRA_S1_Oral.docx",
-          "location": "2.2.4 Méthode : analyser un étayage dans un échange (cours 1)"
+          "location": "3.2.4 Grille d'analyse d'un étayage ou d'une interaction (ajoutée) ; 3.2.2 Les caractéristiques de la langue parlée (dislocation)"
         }
       ],
       "steps": [
@@ -16532,7 +16692,10 @@
           ],
           "level": "essentiel-approfondi",
           "sansChoix": true,
-          "notionId": "L08"
+          "notionId": "L08",
+          "compatibleRevisions": [
+            "fbb3aaa235de4292"
+          ]
         },
         {
           "id": "Q2",
@@ -16543,7 +16706,7 @@
             {
               "id": "a",
               "text": "La phrase sans pronom est acquise, puisqu'il l'a produite une fois",
-              "explanation": "La dernière étape de la méthode d'analyse de l'étayage demande de distinguer un effet local d'une acquisition durable. Une phrase produite une fois sur demande, puis abandonnée à l'énoncé suivant, ne montre pas une acquisition."
+              "explanation": "La dernière étape de la grille d'analyse de l'étayage demande d'examiner ce que l'élève répète, modifie ou réemploie dans la suite de l'échange. Une phrase produite une fois sur demande, puis abandonnée à l'énoncé suivant, ne montre pas une acquisition."
             },
             {
               "id": "b",
@@ -16558,7 +16721,7 @@
             {
               "id": "d",
               "text": "La disparition du pronom n'était qu'un effet momentané de l'intervention",
-              "explanation": "La méthode d'analyse de l'étayage (cours 01) demande d'examiner la suite de l'échange et de distinguer un effet local d'une acquisition durable. Ici, l'enfant revient aussitôt à la dislocation : la disparition momentanée du pronom ne manifeste pas une complexification de son oral (cours 03)."
+              "explanation": "La grille d'analyse de l'étayage (cours 01, étape 4) demande d'examiner la suite de l'échange : ce que l'élève répète, modifie ou réemploie. Ici, l'enfant revient aussitôt à la dislocation : la disparition momentanée du pronom ne manifeste pas une complexification de son oral (cours 03)."
             }
           ],
           "level": "essentiel-approfondi",
@@ -16566,7 +16729,7 @@
           "notionId": "L08"
         }
       ],
-      "qcmRevision": "fbb3aaa235de4292"
+      "qcmRevision": "71806f25b4b37912"
     },
     {
       "id": "ORAL-L-F09",
@@ -16841,7 +17004,7 @@
       "sources": [
         {
           "file": "REVISION_BP1-18FRA_S1_Oral.docx",
-          "location": "Pont (Q1) : 2.2.4 Méthode : analyser un récit et choisir une aide (cours 4), étape 4 — « Relier les constats à l'étayage et à la progression : Distingue les réussites, l'aide reçue et la prochaine aide utile. »"
+          "location": "Pont (Q1) : 3.2.3 Apprentissages liés à la compréhension et à la production de textes oraux : Les défis liés à l'enseignement des genres de textes oraux — « Relie les constats à une prochaine aide. » ; 3.2.4 Grille d'analyse d'un étayage ou d'une interaction (ajoutée), étape 4 — « Cherche ce que l'élève répète, modifie ou réemploie, puis nomme l'aide qui pourrait poursuivre l'apprentissage. »"
         },
         {
           "file": "SYNTHESE_BP1-18FRA_S1_COURS_04.docx",
@@ -16853,7 +17016,7 @@
         },
         {
           "file": "REVISION_BP1-18FRA_S1_Oral.docx",
-          "location": "2.2.4 Méthode : analyser un récit et choisir une aide (cours 4)"
+          "location": "3.2.3 Les défis liés à l'enseignement des genres de textes oraux (relier les constats à une prochaine aide) ; 3.2.4 Analyser des interactions élève·s-enseignant·e… le récit d'un élève (la grille de l'étayage s'y applique)"
         }
       ],
       "steps": [
@@ -16886,7 +17049,10 @@
           ],
           "level": "essentiel-approfondi",
           "sansChoix": true,
-          "notionId": "L15"
+          "notionId": "L15",
+          "compatibleRevisions": [
+            "793ac001a74222a1"
+          ]
         },
         {
           "id": "Q2",
@@ -16897,7 +17063,7 @@
             {
               "id": "a",
               "text": "Une entrée dans le conte soutenue par l'enseignante",
-              "explanation": "L'étape 4 de la méthode distingue les réussites et l'aide reçue. L'enseignante a amorcé « il était une fois », que Myriam reprend : l'entrée dans le conte est soutenue. L'aide suivante peut alors viser ce qui reste à construire, les personnages identifiables, le problème et la fin."
+              "explanation": "L'étape 4 de la grille d'analyse (le bloc) demande ce que l'élève répète, modifie ou réemploie, puis l'aide qui peut poursuivre l'apprentissage. L'enseignante a amorcé « il était une fois », que Myriam répète : l'entrée dans le conte est soutenue. L'aide suivante peut alors viser ce qui reste à construire, les personnages identifiables, le problème et la fin."
             },
             {
               "id": "b",
@@ -16917,13 +17083,10 @@
           ],
           "level": "essentiel-approfondi",
           "sansChoix": true,
-          "notionId": "L15",
-          "compatibleRevisions": [
-            "8b8960bc4c7af99e"
-          ]
+          "notionId": "L15"
         }
       ],
-      "qcmRevision": "793ac001a74222a1"
+      "qcmRevision": "ba90437409004923"
     },
     {
       "id": "ORAL-L-F16",
@@ -16945,7 +17108,7 @@
       "sources": [
         {
           "file": "REVISION_BP1-18FRA_S1_Oral.docx",
-          "location": "Pont : 2.2.3 Les défis… — « La transcription permet d'examiner les mots et la construction, mais n'offre pas à elle seule la voix, les gestes ou le regard. »"
+          "location": "Pont : 3.2.3 Apprentissages liés à la compréhension et à la production de textes oraux : Les défis liés à l'enseignement des genres de textes oraux — « L'oral ne laisse pas de traces : une transcription garde les mots et leur organisation, et une transcription codée note aussi une part de la voix (par exemple intonation, pauses, allongement), tandis que le volume, le débit et les gestes se jugent dans la réalisation orale. »"
         },
         {
           "file": "SYNTHESE_BP1-18FRA_S1_COURS_02.docx",
@@ -16961,7 +17124,7 @@
         },
         {
           "file": "REVISION_BP1-18FRA_S1_Oral.docx",
-          "location": "2.2.3 Les défis liés à l'enseignement des genres de textes oraux"
+          "location": "3.2.3 Les défis liés à l'enseignement des genres de textes oraux"
         }
       ],
       "steps": [
@@ -17960,6 +18123,14 @@
       "stepId": "Q3"
     },
     {
+      "exerciseId": "ORAL-P-F114",
+      "stepId": "Q2"
+    },
+    {
+      "exerciseId": "ORAL-P-F114",
+      "stepId": "Q3"
+    },
+    {
       "exerciseId": "ORAL-P-F11",
       "stepId": "Q4"
     },
@@ -18306,6 +18477,14 @@
     {
       "exerciseId": "ORAL-P-F56",
       "stepId": "Q7"
+    },
+    {
+      "exerciseId": "ORAL-P-F56",
+      "stepId": "Q8"
+    },
+    {
+      "exerciseId": "ORAL-P-F56",
+      "stepId": "Q9"
     },
     {
       "exerciseId": "ORAL-P-F30",
@@ -19070,7 +19249,7 @@
   ],
   "attentesSource": {
     "id": "GRILLE_BP1-18FRA_S1_ORAL",
-    "version": "v09"
+    "version": "v10"
   },
-  "bankRevision": "b5252e9ce774"
+  "bankRevision": "c83fa39f5f59"
 }
