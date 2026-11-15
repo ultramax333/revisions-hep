@@ -412,7 +412,7 @@
     },
     {
       "id": "ORAL-P-F55",
-      "title": "Progression souple de Boisseau : repères et opérations",
+      "title": "Progression de Boisseau : les quatre axes, les trois opérations et le système à trois temps",
       "course": "S02"
     },
     {
@@ -4212,7 +4212,8 @@
           "sansChoix": true,
           "attenteId": "L4",
           "compatibleRevisions": [
-            "f080b196aa6e9e24"
+            "f080b196aa6e9e24",
+            "3c01a11582445577"
           ]
         },
         {
@@ -4246,42 +4247,40 @@
           "sansChoix": true,
           "attenteId": "L4",
           "compatibleRevisions": [
-            "f080b196aa6e9e24"
+            "f080b196aa6e9e24",
+            "3c01a11582445577"
           ]
         },
         {
           "id": "Q3",
-          "prompt": "Enfant : « Le monsieur marche avec un truc pour les yeux. »\nAdulte : « Le monsieur marche avec des lunettes. »\n(Les mots de l'enfant sont notés comme il les prononce.)\n\nDe quel type de reprise s'agit-il ?",
+          "prompt": "Enfant : « Il a prendu le ballon. »\nAdulte : « Il a pris le ballon. »\n\nDe quel type de reprise s'agit-il ?",
           "requiresContext": false,
           "correctId": "a",
           "choices": [
             {
               "id": "a",
               "text": "Une reformulation sans extension",
-              "explanation": "Une reformulation sans extension modifie la forme de l'énoncé sans y ajouter d'information. Ici, « un truc pour les yeux » devient « des lunettes » : le mot change, sans information en plus."
+              "explanation": "Une reformulation sans extension modifie la forme de l'énoncé sans y ajouter d'information. Ici, « prendu » devient « pris » : la forme du verbe est corrigée, sans information en plus."
             },
             {
               "id": "b",
               "text": "Une reformulation avec extension",
-              "explanation": "Une reformulation avec extension modifie l'énoncé et y ajoute des informations. Or, ici l'adulte n'ajoute aucune information (« un truc pour les yeux » devient « des lunettes » : le mot change, sans information en plus)."
+              "explanation": "Une reformulation avec extension modifie l'énoncé et y ajoute des informations. Or, ici l'adulte n'ajoute aucune information (« prendu » devient « pris » : la forme du verbe change, sans information en plus)."
             },
             {
               "id": "c",
               "text": "Une répétition partielle",
-              "explanation": "Une répétition partielle reprend une partie de l'énoncé de l'enfant, sans la modifier. Or, ici ce qui est repris est modifié (« un truc pour les yeux » devient « des lunettes » : le mot change, sans information en plus)."
+              "explanation": "Une répétition partielle reprend une partie de l'énoncé de l'enfant, sans la modifier. Or, ici ce qui est repris est modifié (« prendu » devient « pris » : la forme du verbe change, sans information en plus)."
             },
             {
               "id": "d",
               "text": "Une répétition totale",
-              "explanation": "Une répétition totale reprend tout l'énoncé de l'enfant, sans le modifier. Or, ici la forme de l'énoncé est modifiée (« un truc pour les yeux » devient « des lunettes » : le mot change, sans information en plus)."
+              "explanation": "Une répétition totale reprend tout l'énoncé de l'enfant, sans le modifier. Or, ici la forme de l'énoncé est modifiée (« prendu » devient « pris » : la forme du verbe change, sans information en plus)."
             }
           ],
           "level": "essentiel-approfondi",
           "sansChoix": true,
-          "attenteId": "L4",
-          "compatibleRevisions": [
-            "f080b196aa6e9e24"
-          ]
+          "attenteId": "L4"
         },
         {
           "id": "Q4",
@@ -4314,7 +4313,8 @@
           "sansChoix": true,
           "attenteId": "L4",
           "compatibleRevisions": [
-            "f080b196aa6e9e24"
+            "f080b196aa6e9e24",
+            "3c01a11582445577"
           ]
         },
         {
@@ -4347,10 +4347,13 @@
           "level": "essentiel",
           "sansChoix": true,
           "notionId": "N159",
-          "attenteId": "L4"
+          "attenteId": "L4",
+          "compatibleRevisions": [
+            "3c01a11582445577"
+          ]
         }
       ],
-      "qcmRevision": "3c01a11582445577"
+      "qcmRevision": "899c58dbfc9c8daa"
     },
     {
       "id": "ORAL-P-F07",
@@ -5558,12 +5561,12 @@
             {
               "id": "a",
               "text": "Le co-verbal",
-              "explanation": "Le co-verbal désigne les gestes qui accompagnent la parole et contribuent avec elle au sens du message. Or, ici, l'élève organise ses idées avec des mots de liaison : ce n'est pas ce que cette catégorie décrit d'abord."
+              "explanation": "Le co-verbal désigne les gestes qui accompagnent la parole et contribuent avec elle au sens du message. Or, ici, l'élève organise ses idées avec des mots de liaison : ce sont des mots, pas des gestes."
             },
             {
               "id": "b",
               "text": "Le non-verbal",
-              "explanation": "Le non-verbal relève du corps : expressions du visage, regards, distance entre les personnes, posture, gestes. Or, ici, l'élève organise ses idées avec des mots de liaison : ce n'est pas ce que cette catégorie décrit d'abord."
+              "explanation": "Le non-verbal relève du corps : expressions du visage, regards, distance entre les personnes, posture, gestes. Or, ici, l'élève organise ses idées avec des mots de liaison : ce sont des mots, pas le corps."
             },
             {
               "id": "c",
@@ -5573,7 +5576,7 @@
             {
               "id": "d",
               "text": "Le paraverbal",
-              "explanation": "Le paraverbal relève de la voix : diction, accentuation, rythme, débit. Or, ici, l'élève organise ses idées avec des mots de liaison : ce n'est pas ce que cette catégorie décrit d'abord."
+              "explanation": "Le paraverbal relève de la voix : diction, accentuation, rythme, débit. Or, ici, l'élève organise ses idées avec des mots de liaison : ce sont des mots, pas la voix."
             }
           ],
           "level": "essentiel-approfondi",
@@ -5589,17 +5592,17 @@
             {
               "id": "a",
               "text": "Le non-verbal",
-              "explanation": "Le non-verbal relève du corps : expressions du visage, regards, distance entre les personnes, posture, gestes. Or, ici, l'élève règle son débit : ce n'est pas ce que cette catégorie décrit d'abord."
+              "explanation": "Le non-verbal relève du corps : expressions du visage, regards, distance entre les personnes, posture, gestes. Or, ici, l'élève règle son débit : le débit passe par la voix, pas par le corps."
             },
             {
               "id": "b",
               "text": "Le co-verbal",
-              "explanation": "Le co-verbal désigne les gestes qui accompagnent la parole et contribuent avec elle au sens du message. Or, ici, l'élève règle son débit : ce n'est pas ce que cette catégorie décrit d'abord."
+              "explanation": "Le co-verbal désigne les gestes qui accompagnent la parole et contribuent avec elle au sens du message. Or, ici, l'élève règle son débit : le débit relève de la voix, pas d'un geste."
             },
             {
               "id": "c",
               "text": "Le verbal",
-              "explanation": "Le verbal relève de la parole : les mots et leur organisation. Or, ici, l'élève règle son débit : ce n'est pas ce que cette catégorie décrit d'abord."
+              "explanation": "Le verbal relève de la parole : les mots et leur organisation. Or, ici, l'élève règle son débit : le débit tient à la manière de dire les mots, pas aux mots eux-mêmes."
             },
             {
               "id": "d",
@@ -5620,17 +5623,17 @@
             {
               "id": "a",
               "text": "Le co-verbal",
-              "explanation": "Le co-verbal désigne les gestes qui accompagnent la parole et contribuent avec elle au sens du message. Or, ici, la distance entre interlocuteurs est une conduite proxémique, classée parmi les moyens non verbaux : ce n'est pas ce que cette catégorie décrit d'abord."
+              "explanation": "Le co-verbal désigne les gestes qui accompagnent la parole et contribuent avec elle au sens du message. Or, ici, la distance entre interlocuteurs est une conduite proxémique, classée parmi les moyens non verbaux : ce n'est pas un geste qui accompagne la parole."
             },
             {
               "id": "b",
               "text": "Le verbal",
-              "explanation": "Le verbal relève de la parole : les mots et leur organisation. Or, ici, la distance entre interlocuteurs est une conduite proxémique, classée parmi les moyens non verbaux : ce n'est pas ce que cette catégorie décrit d'abord."
+              "explanation": "Le verbal relève de la parole : les mots et leur organisation. Or, ici, la distance entre interlocuteurs est une conduite proxémique, classée parmi les moyens non verbaux : elle ne passe pas par les mots."
             },
             {
               "id": "c",
               "text": "Le paraverbal",
-              "explanation": "Le paraverbal relève de la voix : diction, accentuation, rythme, débit. Or, ici, la distance entre interlocuteurs est une conduite proxémique, classée parmi les moyens non verbaux : ce n'est pas ce que cette catégorie décrit d'abord."
+              "explanation": "Le paraverbal relève de la voix : diction, accentuation, rythme, débit. Or, ici, la distance entre interlocuteurs est une conduite proxémique, classée parmi les moyens non verbaux : elle ne passe pas par la voix."
             },
             {
               "id": "d",
@@ -5656,12 +5659,12 @@
             {
               "id": "b",
               "text": "Le paraverbal",
-              "explanation": "Le paraverbal relève de la voix : diction, accentuation, rythme, débit. Or, ici, le geste accompagne les mots et précise de quoi elle parle : ce n'est pas ce que cette catégorie décrit d'abord."
+              "explanation": "Le paraverbal relève de la voix : diction, accentuation, rythme, débit. Or, ici, le geste accompagne les mots et précise de quoi elle parle : un geste relève du corps, pas de la voix."
             },
             {
               "id": "c",
               "text": "Le verbal",
-              "explanation": "Le verbal relève de la parole : les mots et leur organisation. Or, ici, le geste accompagne les mots et précise de quoi elle parle : ce n'est pas ce que cette catégorie décrit d'abord."
+              "explanation": "Le verbal relève de la parole : les mots et leur organisation. Or, ici, le geste accompagne les mots et précise de quoi elle parle : un geste ne passe pas par les mots eux-mêmes."
             },
             {
               "id": "d",
@@ -5674,7 +5677,7 @@
           "attenteId": "O5"
         }
       ],
-      "qcmRevision": "080fd323e864fa49"
+      "qcmRevision": "a30dc59094f9a5ee"
     },
     {
       "id": "ORAL-P-F23",
@@ -5717,7 +5720,7 @@
             {
               "id": "a",
               "text": "Le verbal",
-              "explanation": "Le verbal relève de la parole : les mots et leur organisation. Or, ici, l'élève marque l'accentuation d'un mot : ce n'est pas ce que cette catégorie décrit d'abord."
+              "explanation": "Le verbal relève de la parole : les mots et leur organisation. Or, ici, l'élève marque l'accentuation d'un mot : l'accentuation tient à la voix, pas aux mots eux-mêmes."
             },
             {
               "id": "b",
@@ -5727,12 +5730,12 @@
             {
               "id": "c",
               "text": "Le co-verbal",
-              "explanation": "Le co-verbal désigne les gestes qui accompagnent la parole et contribuent avec elle au sens du message. Or, ici, l'élève marque l'accentuation d'un mot : ce n'est pas ce que cette catégorie décrit d'abord."
+              "explanation": "Le co-verbal désigne les gestes qui accompagnent la parole et contribuent avec elle au sens du message. Or, ici, l'élève marque l'accentuation d'un mot : l'accentuation relève de la voix, pas d'un geste."
             },
             {
               "id": "d",
               "text": "Le non-verbal",
-              "explanation": "Le non-verbal relève du corps : expressions du visage, regards, distance entre les personnes, posture, gestes. Or, ici, l'élève marque l'accentuation d'un mot : ce n'est pas ce que cette catégorie décrit d'abord."
+              "explanation": "Le non-verbal relève du corps : expressions du visage, regards, distance entre les personnes, posture, gestes. Or, ici, l'élève marque l'accentuation d'un mot : dans le classement du cours, l'accentuation est un moyen de la voix, pas du corps."
             }
           ],
           "level": "essentiel-approfondi",
@@ -5753,17 +5756,17 @@
             {
               "id": "b",
               "text": "Le verbal",
-              "explanation": "Le verbal relève de la parole : les mots et leur organisation. Or, ici, l'élève utilise son regard : ce n'est pas ce que cette catégorie décrit d'abord."
+              "explanation": "Le verbal relève de la parole : les mots et leur organisation. Or, ici, l'élève utilise son regard : le regard n'est pas un mot."
             },
             {
               "id": "c",
               "text": "Le co-verbal",
-              "explanation": "Le co-verbal désigne les gestes qui accompagnent la parole et contribuent avec elle au sens du message. Or, ici, l'élève utilise son regard : ce n'est pas ce que cette catégorie décrit d'abord."
+              "explanation": "Le co-verbal désigne les gestes qui accompagnent la parole et contribuent avec elle au sens du message. Or, ici, l'élève utilise son regard : ce regard ne va pas avec les paroles de l'élève : il relève du non-verbal, plus large."
             },
             {
               "id": "d",
               "text": "Le paraverbal",
-              "explanation": "Le paraverbal relève de la voix : diction, accentuation, rythme, débit. Or, ici, l'élève utilise son regard : ce n'est pas ce que cette catégorie décrit d'abord."
+              "explanation": "Le paraverbal relève de la voix : diction, accentuation, rythme, débit. Or, ici, l'élève utilise son regard : le regard n'est pas un moyen de la voix."
             }
           ],
           "level": "approfondissement",
@@ -5771,7 +5774,7 @@
           "attenteId": "O5.1"
         }
       ],
-      "qcmRevision": "bf3c868a9a141466"
+      "qcmRevision": "44d842cd79806e5b"
     },
     {
       "id": "ORAL-P-F24",
@@ -5986,7 +5989,10 @@
           ],
           "level": "essentiel-approfondi",
           "sansChoix": false,
-          "attenteId": "L9"
+          "attenteId": "L9",
+          "compatibleRevisions": [
+            "707dd0d1639463ad"
+          ]
         },
         {
           "id": "Q2",
@@ -6017,7 +6023,10 @@
           ],
           "level": "essentiel-approfondi",
           "sansChoix": false,
-          "attenteId": "L9"
+          "attenteId": "L9",
+          "compatibleRevisions": [
+            "707dd0d1639463ad"
+          ]
         },
         {
           "id": "Q3",
@@ -6048,7 +6057,10 @@
           ],
           "level": "essentiel-approfondi",
           "sansChoix": false,
-          "attenteId": "L9"
+          "attenteId": "L9",
+          "compatibleRevisions": [
+            "707dd0d1639463ad"
+          ]
         },
         {
           "id": "Q4",
@@ -6058,8 +6070,8 @@
           "choices": [
             {
               "id": "a",
-              "text": "« Je mets le rouge ici, à côté du bleu. » (dit au coin dessin)",
-              "explanation": "Le langage en situation parle de ce que l'on voit, ressent ou fait dans l'instant présent. Ici, l'enfant parle de l'action qu'il fait en ce moment : ce n'est pas de l'évocation."
+              "text": "« J'ai fini, regarde ! » (dit en montrant son dessin)",
+              "explanation": "Le langage en situation parle de ce que l'on voit, ressent ou fait dans l'instant présent. Ici, le verbe est au passé composé, mais l'enfant parle de ce qu'il vient de faire et qu'il montre : ce n'est pas de l'évocation."
             },
             {
               "id": "b",
@@ -6068,8 +6080,8 @@
             },
             {
               "id": "c",
-              "text": "« Tu vois, je tourne la clé comme ça. » (dit en rangeant les blocs)",
-              "explanation": "Le langage en situation parle de ce que l'on voit, ressent ou fait dans l'instant présent. Ici, l'enfant parle de ce qu'il est en train de faire : ce n'est pas de l'évocation."
+              "text": "« Maintenant, c'est moi qui range les blocs. » (dit en commençant à ranger)",
+              "explanation": "Le langage en situation parle de ce que l'on voit, ressent ou fait dans l'instant présent. Ici, l'enfant annonce ce qu'il fait maintenant : ce n'est pas de l'évocation."
             },
             {
               "id": "d",
@@ -6082,7 +6094,7 @@
           "attenteId": "L9"
         }
       ],
-      "qcmRevision": "707dd0d1639463ad"
+      "qcmRevision": "496219fe8e8ecd07"
     },
     {
       "id": "ORAL-P-F26",
@@ -7095,7 +7107,8 @@
           "notionId": "N108",
           "attenteId": "A3.2",
           "compatibleRevisions": [
-            "3dd1e3eeaee3ca56"
+            "3dd1e3eeaee3ca56",
+            "8628558b35aa25df"
           ]
         },
         {
@@ -7130,7 +7143,8 @@
           "notionId": "N151",
           "attenteId": "A3.2",
           "compatibleRevisions": [
-            "3dd1e3eeaee3ca56"
+            "3dd1e3eeaee3ca56",
+            "8628558b35aa25df"
           ]
         },
         {
@@ -7142,7 +7156,7 @@
             {
               "id": "a",
               "text": "Discuter",
-              "explanation": "Discuter, c'est proposer un point de vue argumenté, réagir aux autres et apporter des idées. Or, ici, l'élève demande une définition et relie des interventions : ce n'est pas ce que cette catégorie décrit d'abord."
+              "explanation": "Discuter est l'un des sept rôles langagiers que le bloc nomme ; sa fonction n'y est pas développée (la synthèse de la séance le décrit comme proposer un point de vue argumenté et réagir aux autres). Or, ici, Nina demande une définition et relie des interventions : elle fait avancer la recherche (animer) plutôt que de défendre son propre point de vue."
             },
             {
               "id": "b",
@@ -7151,24 +7165,21 @@
             },
             {
               "id": "c",
-              "text": "Présider la séance",
-              "explanation": "Présider, c'est organiser les tours de parole et le temps selon des règles communes, en donnant une place à ceux qui parlent peu. Or, ici, l'élève demande une définition et relie des interventions : ce n'est pas ce que cette catégorie décrit d'abord."
+              "text": "Présider",
+              "explanation": "Présider, c'est organiser les tours de parole et le temps selon des règles communes, en donnant une place à ceux qui parlent peu. Or, ici, Nina demande une définition et relie des interventions : elle ne gère ni les tours de parole ni le temps."
             },
             {
               "id": "d",
               "text": "Observer",
-              "explanation": "Observer, c'est examiner la tenue des rôles ou le travail de pensée : questions, définitions, positions, arguments. Or, ici, l'élève demande une définition et relie des interventions : ce n'est pas ce que cette catégorie décrit d'abord."
+              "explanation": "Observer, c'est examiner la tenue des rôles ou le travail de pensée : questions, définitions, positions, arguments. Or, ici, Nina intervient dans la recherche en demandant une définition et en reliant des interventions : elle ne se contente pas de l'observer."
             }
           ],
           "level": "approfondissement",
           "sansChoix": true,
-          "attenteId": "A3.4",
-          "compatibleRevisions": [
-            "3dd1e3eeaee3ca56"
-          ]
+          "attenteId": "A3.4"
         }
       ],
-      "qcmRevision": "8628558b35aa25df"
+      "qcmRevision": "e2bcd9cd7e1b258d"
     },
     {
       "id": "ORAL-P-F36",
@@ -8224,17 +8235,17 @@
             },
             {
               "id": "b",
-              "text": "Le développement verbal découle du développement cognitif : il dépend de l'abstraction et de la décentration de l'enfant.",
+              "text": "L'enfant ne parle d'une chose que lorsque son développement cognitif, par stades, le lui permet.",
               "explanation": "Cette phrase décrit l'approche constructiviste, pas l'approche behavioriste. L'approche constructiviste fait dépendre le développement verbal du développement cognitif (stades, abstraction, décentration)."
             },
             {
               "id": "c",
-              "text": "Le langage s'acquiert grâce à des dispositions innées et des capacités universelles, dont un dispositif d'acquisition du langage.",
-              "explanation": "Cette phrase décrit l'approche innéiste, pas l'approche behavioriste. L'approche innéiste explique l'acquisition du langage par des dispositions innées et des capacités universelles, dont un dispositif inné (le LAD)."
+              "text": "Le langage aide l'enfant à penser et à résoudre des problèmes, avec un adulte qui l'accompagne là où il ne réussit pas encore seul.",
+              "explanation": "Cette phrase décrit l'approche historico-culturelle, pas l'approche behavioriste. L'approche historico-culturelle fait du langage un moyen de construire la pensée, avec l'adulte comme médiateur dans la zone proximale de développement."
             },
             {
               "id": "d",
-              "text": "Le langage se développe dans la relation : l'adulte soutient l'enfant par l'étayage, dans des formats d'interaction prévisibles.",
+              "text": "L'enfant apprend à parler dans la relation avec l'adulte, par des stratégies verbales et non verbales.",
               "explanation": "Cette phrase décrit l'approche interactionniste, pas l'approche behavioriste. L'approche interactionniste explique le langage par la relation : l'adulte étaye l'enfant dans des formats d'interaction prévisibles."
             }
           ],
@@ -8271,7 +8282,10 @@
           ],
           "level": "essentiel-approfondi",
           "sansChoix": true,
-          "attenteId": "L2"
+          "attenteId": "L2",
+          "compatibleRevisions": [
+            "c1b7233803cf03a3"
+          ]
         },
         {
           "id": "Q3",
@@ -8302,10 +8316,13 @@
           ],
           "level": "essentiel-approfondi",
           "sansChoix": true,
-          "attenteId": "L2"
+          "attenteId": "L2",
+          "compatibleRevisions": [
+            "c1b7233803cf03a3"
+          ]
         }
       ],
-      "qcmRevision": "c1b7233803cf03a3"
+      "qcmRevision": "1c0a9c8c4a695d5f"
     },
     {
       "id": "ORAL-P-F46",
@@ -8343,22 +8360,22 @@
           "choices": [
             {
               "id": "a",
-              "text": "Le langage s'apprend par imitation et par renforcement : l'enfant, comme une page blanche, répond aux stimuli de son milieu.",
+              "text": "Le milieu récompense les réponses de l'enfant, qui les reproduit de plus en plus souvent.",
               "explanation": "Cette phrase décrit l'approche behavioriste, pas l'approche innéiste. L'approche behavioriste explique le langage par le milieu : stimulus, réponse, renforcement, imitation."
             },
             {
               "id": "b",
-              "text": "Le développement verbal découle du développement cognitif : il dépend de l'abstraction et de la décentration de l'enfant.",
+              "text": "La capacité de prendre du recul et d'abstraire fait progresser le langage de l'enfant.",
               "explanation": "Cette phrase décrit l'approche constructiviste, pas l'approche innéiste. L'approche constructiviste fait dépendre le développement verbal du développement cognitif (stades, abstraction, décentration)."
             },
             {
               "id": "c",
-              "text": "Le langage contribue à construire la pensée : l'adulte joue le rôle de médiateur dans la zone proximale de développement.",
+              "text": "L'adulte joue un rôle de médiateur : par la parole, il fait avancer la pensée de l'enfant, étape après étape.",
               "explanation": "Cette phrase décrit l'approche historico-culturelle, pas l'approche innéiste. L'approche historico-culturelle fait du langage un moyen de construire la pensée, avec l'adulte comme médiateur dans la zone proximale de développement."
             },
             {
               "id": "d",
-              "text": "Le langage s'acquiert grâce à des dispositions innées et des capacités universelles, dont un dispositif d'acquisition du langage.",
+              "text": "Tout enfant naît avec des capacités universelles, dont un dispositif d'acquisition du langage.",
               "explanation": "L'approche innéiste explique l'acquisition du langage par des dispositions innées et des capacités universelles, dont un dispositif inné (le LAD)."
             }
           ],
@@ -8396,7 +8413,10 @@
           "level": "essentiel-approfondi",
           "sansChoix": true,
           "notionId": "N46",
-          "attenteId": "L2"
+          "attenteId": "L2",
+          "compatibleRevisions": [
+            "11201be0b3e5d49a"
+          ]
         },
         {
           "id": "Q4",
@@ -8427,10 +8447,13 @@
           ],
           "level": "essentiel-approfondi",
           "sansChoix": true,
-          "attenteId": "L2"
+          "attenteId": "L2",
+          "compatibleRevisions": [
+            "11201be0b3e5d49a"
+          ]
         }
       ],
-      "qcmRevision": "11201be0b3e5d49a"
+      "qcmRevision": "e3897d8b48c12840"
     },
     {
       "id": "ORAL-P-F47",
@@ -8468,8 +8491,8 @@
           "choices": [
             {
               "id": "a",
-              "text": "Le langage s'apprend par imitation et par renforcement : l'enfant, comme une page blanche, répond aux stimuli de son milieu.",
-              "explanation": "Cette phrase décrit l'approche behavioriste, pas l'approche constructiviste. L'approche behavioriste explique le langage par le milieu : stimulus, réponse, renforcement, imitation."
+              "text": "Un dispositif présent chez tous les enfants dès la naissance leur permet d'acquérir une langue sans y avoir été entraînés.",
+              "explanation": "Cette phrase décrit l'approche innéiste, pas l'approche constructiviste. L'approche innéiste explique l'acquisition du langage par des dispositions innées et des capacités universelles, dont un dispositif inné (le LAD)."
             },
             {
               "id": "b",
@@ -8478,13 +8501,13 @@
             },
             {
               "id": "c",
-              "text": "Le langage s'acquiert grâce à des dispositions innées et des capacités universelles, dont un dispositif d'acquisition du langage.",
-              "explanation": "Cette phrase décrit l'approche innéiste, pas l'approche constructiviste. L'approche innéiste explique l'acquisition du langage par des dispositions innées et des capacités universelles, dont un dispositif inné (le LAD)."
+              "text": "L'enfant reproduit ce qu'il entend autour de lui, et ses réussites sont encouragées.",
+              "explanation": "Cette phrase décrit l'approche behavioriste, pas l'approche constructiviste. L'approche behavioriste explique le langage par le milieu : stimulus, réponse, renforcement, imitation."
             },
             {
               "id": "d",
-              "text": "Le langage contribue à construire la pensée : l'adulte joue le rôle de médiateur dans la zone proximale de développement.",
-              "explanation": "Cette phrase décrit l'approche historico-culturelle, pas l'approche constructiviste. L'approche historico-culturelle fait du langage un moyen de construire la pensée, avec l'adulte comme médiateur dans la zone proximale de développement."
+              "text": "Le langage se construit dans les échanges, où les regards, les gestes et les mots se répondent.",
+              "explanation": "Cette phrase décrit l'approche interactionniste, pas l'approche constructiviste. L'approche interactionniste explique le langage par la relation : l'adulte étaye l'enfant dans des formats d'interaction prévisibles."
             }
           ],
           "level": "essentiel",
@@ -8520,10 +8543,13 @@
           ],
           "level": "essentiel-approfondi",
           "sansChoix": true,
-          "attenteId": "L2"
+          "attenteId": "L2",
+          "compatibleRevisions": [
+            "8901c883edc688af"
+          ]
         }
       ],
-      "qcmRevision": "8901c883edc688af"
+      "qcmRevision": "d38853635729edb3"
     },
     {
       "id": "ORAL-P-F48",
@@ -8566,17 +8592,17 @@
             },
             {
               "id": "b",
-              "text": "Le langage s'acquiert grâce à des dispositions innées et des capacités universelles, dont un dispositif d'acquisition du langage.",
-              "explanation": "Cette phrase décrit l'approche innéiste, pas l'approche historico-culturelle. L'approche innéiste explique l'acquisition du langage par des dispositions innées et des capacités universelles, dont un dispositif inné (le LAD)."
+              "text": "À la naissance, le cerveau de l'enfant est vide : tout ce qu'il saura dire vient de ce qui l'entoure.",
+              "explanation": "Cette phrase décrit l'approche behavioriste, pas l'approche historico-culturelle. L'approche behavioriste explique le langage par le milieu : stimulus, réponse, renforcement, imitation."
             },
             {
               "id": "c",
-              "text": "Le développement verbal découle du développement cognitif : il dépend de l'abstraction et de la décentration de l'enfant.",
-              "explanation": "Cette phrase décrit l'approche constructiviste, pas l'approche historico-culturelle. L'approche constructiviste fait dépendre le développement verbal du développement cognitif (stades, abstraction, décentration)."
+              "text": "Les capacités qui permettent de parler sont les mêmes chez tous les enfants, quel que soit leur milieu.",
+              "explanation": "Cette phrase décrit l'approche innéiste, pas l'approche historico-culturelle. L'approche innéiste explique l'acquisition du langage par des dispositions innées et des capacités universelles, dont un dispositif inné (le LAD)."
             },
             {
               "id": "d",
-              "text": "Le langage se développe dans la relation : l'adulte soutient l'enfant par l'étayage, dans des formats d'interaction prévisibles.",
+              "text": "Pour apprendre à parler, l'enfant a besoin d'une relation avec l'adulte, où ils s'adressent des regards, des gestes et des mots.",
               "explanation": "Cette phrase décrit l'approche interactionniste, pas l'approche historico-culturelle. L'approche interactionniste explique le langage par la relation : l'adulte étaye l'enfant dans des formats d'interaction prévisibles."
             }
           ],
@@ -8613,10 +8639,13 @@
           ],
           "level": "essentiel-approfondi",
           "sansChoix": true,
-          "attenteId": "L2"
+          "attenteId": "L2",
+          "compatibleRevisions": [
+            "63dcf16c8576f5cb"
+          ]
         }
       ],
-      "qcmRevision": "63dcf16c8576f5cb"
+      "qcmRevision": "7de6337f17b74a5e"
     },
     {
       "id": "ORAL-P-F49",
@@ -8654,23 +8683,23 @@
           "choices": [
             {
               "id": "a",
-              "text": "Le langage contribue à construire la pensée : l'adulte joue le rôle de médiateur dans la zone proximale de développement.",
-              "explanation": "Cette phrase décrit l'approche historico-culturelle, pas l'approche interactionniste. L'approche historico-culturelle fait du langage un moyen de construire la pensée, avec l'adulte comme médiateur dans la zone proximale de développement."
+              "text": "Le LAD, présent dès la naissance, explique que l'enfant puisse acquérir une langue au-delà de ce qu'on lui fait répéter.",
+              "explanation": "Cette phrase décrit l'approche innéiste, pas l'approche interactionniste. L'approche innéiste explique l'acquisition du langage par des dispositions innées et des capacités universelles, dont un dispositif inné (le LAD)."
             },
             {
               "id": "b",
-              "text": "Le langage s'apprend par imitation et par renforcement : l'enfant, comme une page blanche, répond aux stimuli de son milieu.",
-              "explanation": "Cette phrase décrit l'approche behavioriste, pas l'approche interactionniste. L'approche behavioriste explique le langage par le milieu : stimulus, réponse, renforcement, imitation."
+              "text": "Le langage de l'enfant suit le développement de sa pensée, et non l'inverse.",
+              "explanation": "Cette phrase décrit l'approche constructiviste, pas l'approche interactionniste. L'approche constructiviste fait dépendre le développement verbal du développement cognitif (stades, abstraction, décentration)."
             },
             {
               "id": "c",
-              "text": "Le langage se développe dans la relation : l'adulte soutient l'enfant par l'étayage, dans des formats d'interaction prévisibles.",
+              "text": "Le langage se développe dans la relation : l'adulte étaye l'enfant, avec des stratégies verbales et non verbales.",
               "explanation": "L'approche interactionniste explique le langage par la relation : l'adulte étaye l'enfant dans des formats d'interaction prévisibles."
             },
             {
               "id": "d",
-              "text": "Le développement verbal découle du développement cognitif : il dépend de l'abstraction et de la décentration de l'enfant.",
-              "explanation": "Cette phrase décrit l'approche constructiviste, pas l'approche interactionniste. L'approche constructiviste fait dépendre le développement verbal du développement cognitif (stades, abstraction, décentration)."
+              "text": "Le langage n'est pas seulement un moyen de communiquer : il construit la pensée de l'enfant.",
+              "explanation": "Cette phrase décrit l'approche historico-culturelle, pas l'approche interactionniste. L'approche historico-culturelle fait du langage un moyen de construire la pensée, avec l'adulte comme médiateur dans la zone proximale de développement."
             }
           ],
           "level": "essentiel",
@@ -8679,7 +8708,7 @@
         },
         {
           "id": "Q2",
-          "prompt": "Quelle approche de l'acquisition du langage cette explication ou cette situation met-elle au premier plan ?\nChaque soir, au bain, un père refait les mêmes gestes et dit les mêmes phrases ; son bébé reconnaît ce scénario et y répond. On y voit une condition de son apprentissage du langage.",
+          "prompt": "Quelle approche du développement du langage ce scénario illustre-t-il le mieux ?\nChaque soir, au bain, un père refait les mêmes gestes et dit les mêmes phrases ; son bébé reconnaît ce scénario et y répond. On y voit une condition de son apprentissage du langage.",
           "requiresContext": false,
           "correctId": "b",
           "choices": [
@@ -8696,12 +8725,12 @@
             {
               "id": "c",
               "text": "L'approche behavioriste",
-              "explanation": "L'approche behavioriste explique le langage par le milieu : stimulus, réponse, renforcement, imitation. Elle peut éclairer aussi la situation, mais ce qui est mis au premier plan ici est plutôt ceci : un scénario d'échange prévisible, appelé format d'interaction, dans lequel l'adulte soutient l'enfant."
+              "explanation": "L'approche behavioriste explique le langage par le milieu : stimulus, réponse, renforcement, imitation. Ici, le père ne récompense pas une réponse : l'enfant reconnaît un scénario d'échange qui se répète ; ce n'est pas un conditionnement."
             },
             {
               "id": "d",
               "text": "L'approche constructiviste",
-              "explanation": "L'approche constructiviste fait dépendre le développement verbal du développement cognitif (stades, abstraction, décentration). Elle peut éclairer aussi la situation, mais ce qui est mis au premier plan ici est plutôt ceci : un scénario d'échange prévisible, appelé format d'interaction, dans lequel l'adulte soutient l'enfant."
+              "explanation": "L'approche constructiviste fait dépendre le développement verbal du développement cognitif (stades, abstraction, décentration). Ici, rien ne renvoie à un stade ou à un niveau cognitif : l'enfant apprend dans un scénario d'échange prévisible avec son père, que l'on appelle un format d'interaction."
             }
           ],
           "level": "essentiel-approfondi",
@@ -8737,10 +8766,13 @@
           ],
           "level": "essentiel-approfondi",
           "sansChoix": true,
-          "attenteId": "L2"
+          "attenteId": "L2",
+          "compatibleRevisions": [
+            "d59e59bcc82b4384"
+          ]
         }
       ],
-      "qcmRevision": "d59e59bcc82b4384"
+      "qcmRevision": "ec6df0a7b4189dd4"
     },
     {
       "id": "ORAL-P-F50",
@@ -9351,7 +9383,7 @@
       "prompt": "",
       "hints": [
         "Boisseau propose des repères pour développer la syntaxe de l'enfant à partir de ce qu'il dit déjà : cherche ce que le nom de Boisseau organise (quatre axes, trois opérations).",
-        "Boisseau (2005, 2020) : la progression souple est un ensemble de repères pour la syntaxe selon quatre axes (pronoms, temps, complexités syntaxiques, prépositions), des petits aux grands. Trois opérations se succèdent en se chevauchant : différencier les pronoms, différencier les temps, complexifier les énoncés."
+        "Boisseau (2005, 2020) : quatre axes guident la progression de Boisseau (pronoms, temps, complexités, prépositions) ; ce sont les objectifs syntaxiques que l'enseignant a prioritairement en tête quand il interagit avec l'enfant. Trois opérations se succèdent en se chevauchant : différencier les pronoms, différencier les temps, complexifier les énoncés."
       ],
       "sources": [
         {
@@ -9370,37 +9402,35 @@
       "steps": [
         {
           "id": "Q1",
-          "prompt": "Qu'est-ce que la progression souple de Boisseau ?",
+          "prompt": "Quels sont les quatre axes de la progression de Boisseau ?",
           "requiresContext": false,
           "correctId": "c",
           "choices": [
             {
               "id": "a",
-              "text": "Des repères sur l'ordre dans lequel l'enfant acquiert les sons du français, des plus simples aux plus fins.",
-              "explanation": "L'ordre des phonèmes relève du développement de l'articulation, pas de la progression de Boisseau."
+              "text": "Les sons, les mots, les phrases et le récit.",
+              "explanation": "Ce sont les quatre plans sur lesquels le langage de l'enfant se développe, avec leurs repères d'âge. La progression de Boisseau ne porte que sur la syntaxe : ses axes sont les pronoms, les temps, les complexités et les prépositions."
             },
             {
               "id": "b",
-              "text": "Un classement des quatre types de reprises que l'adulte peut utiliser avec l'enfant.",
-              "explanation": "Les types de reprise viennent de de Weck et ne forment pas cette progression."
+              "text": "La répétition totale ou partielle, la reformulation avec ou sans extension.",
+              "explanation": "Ce sont les quatre types de reprises de l'adulte (de Weck), un autre outil d'analyse. Les axes de la progression de Boisseau sont des objectifs de syntaxe : pronoms, temps, complexités et prépositions."
             },
             {
               "id": "c",
-              "text": "Des repères pour la syntaxe selon quatre axes : pronoms, temps, complexités et prépositions.",
-              "explanation": "Boisseau propose des repères pour développer la syntaxe parlée à partir des constructions déjà disponibles chez l'enfant. Ce sont les quatre axes de la progression souple, des petits aux grands."
+              "text": "Les pronoms, les temps, les complexités et les prépositions.",
+              "explanation": "Quatre axes guident la progression de Boisseau : les pronoms, les temps, les complexités et les prépositions. Ce sont les objectifs syntaxiques que l'enseignant doit avoir prioritairement en tête quand il interagit avec l'enfant."
             },
             {
               "id": "d",
-              "text": "Une grille de six dimensions pour observer la compétence pragmatique de l'enfant dans l'échange.",
-              "explanation": "Cette grille est celle de Dumais, qui concerne la pragmatique et non la syntaxe."
+              "text": "La phonologie, le lexique, la syntaxe et la pragmatique.",
+              "explanation": "Ce sont les quatre plans qui servent à analyser ce que travaille une intervention de l'adulte (compétences phonologique, lexico-sémantique, syntaxique et pragmatique). Les axes de Boisseau portent seulement sur la syntaxe : pronoms, temps, complexités et prépositions."
             }
           ],
           "level": "essentiel",
           "sansChoix": true,
-          "attenteId": "L7",
-          "compatibleRevisions": [
-            "371469297905b36c"
-          ]
+          "notionId": "N176",
+          "attenteId": "L7"
         },
         {
           "id": "Q4",
@@ -9429,10 +9459,13 @@
               "explanation": "Les phrases complexes relèvent d'un autre axe de la progression de Boisseau, celui des complexités."
             }
           ],
-          "level": "essentiel",
+          "level": "essentiel-approfondi",
           "sansChoix": true,
           "notionId": "N152",
-          "attenteId": "L7.1"
+          "attenteId": "L7.1",
+          "compatibleRevisions": [
+            "6fbd93c1873ce34e"
+          ]
         },
         {
           "id": "Q3",
@@ -9465,11 +9498,12 @@
           "sansChoix": true,
           "attenteId": "L7",
           "compatibleRevisions": [
-            "371469297905b36c"
+            "371469297905b36c",
+            "6fbd93c1873ce34e"
           ]
         }
       ],
-      "qcmRevision": "6fbd93c1873ce34e"
+      "qcmRevision": "2d5bb43803ed5faf"
     },
     {
       "id": "ORAL-P-F56",
@@ -12189,7 +12223,7 @@
           "choices": [
             {
               "id": "a",
-              "text": "Les croyances qu'une personne se construit à propos de la parole et de l'écoute.",
+              "text": "Les idées qu'une personne se fait de la parole et de l'écoute au fil de sa vie.",
               "explanation": "Ce sont les croyances que le schéma de Colognesi appelle le rapport à l'oral. La régulation émotionnelle ne décrit pas ce que l'on croit, mais ce que l'on fait de ses émotions."
             },
             {
@@ -12213,7 +12247,7 @@
           "attenteId": "O3.1"
         }
       ],
-      "qcmRevision": "0894aa27f709967f"
+      "qcmRevision": "0821175b2a5be0e9"
     },
     {
       "id": "ORAL-P-F76",
@@ -14112,32 +14146,29 @@
           "choices": [
             {
               "id": "a",
-              "text": "Des compétences identiques, qu'il exprime simplement avec plus d'aisance.",
-              "explanation": "Le cours ne décrit pas un simple gain d'aisance : le jeu de rôles révèle des compétences différentes, plus diversifiées et plus normatives."
+              "text": "Des compétences plus diversifiées, mais plus familières que celles qu'il montre d'ordinaire.",
+              "explanation": "Le jeu de rôles fait apparaitre des compétences plus diversifiées, mais aussi plus normatives : l'élève s'approche de la norme (rôles énonciatifs, norme grammaticale, vocabulaire plus riche) ; il ne devient pas plus familier."
             },
             {
               "id": "b",
               "text": "Des compétences plus diversifiées et plus normatives que celles qu'il montre d'ordinaire.",
-              "explanation": "Dans ses prises de parole habituelles, l'élève peut sembler pauvre (brèves, syntaxe réduite, parataxe) ; le jeu de rôles fait apparaitre des compétences plus variées et plus normatives."
+              "explanation": "Dans ses prises de parole habituelles, l'élève peut sembler pauvre (brèves, syntaxe réduite, parataxe). Le jeu de rôles fait apparaitre des compétences plus diversifiées et plus normatives, c'est-à-dire plus proches de la norme : il assume des rôles énonciatifs, joue avec la norme grammaticale et emploie un vocabulaire plus riche (Blanche-Benveniste, 1998)."
             },
             {
               "id": "c",
-              "text": "Un langage encore plus pauvre, parce que l'élève maitrise mal la situation jouée.",
-              "explanation": "C'est le contraire de ce que montre la parodie : l'apparente pauvreté des prises de parole habituelles cache des compétences que le jeu de rôles révèle."
+              "text": "Une seule compétence nouvelle : assumer un rôle, avec les mots d'ordinaire.",
+              "explanation": "La parodie fait apparaitre trois capacités que la parole habituelle ne montre pas : assumer des rôles énonciatifs, jouer avec la norme grammaticale et employer un vocabulaire plus riche. Elle ne se limite pas à un rôle joué avec les mots d'habitude."
             },
             {
               "id": "d",
-              "text": "Des compétences surtout de mémoire, parce qu'il récite un texte appris.",
-              "explanation": "Réciter un texte écrit mémorisé est l'oral récité ; la parodie est une situation jouée où l'on parle à la manière d'une personne, sans texte à restituer."
+              "text": "Une imitation comique d'un personnage, qui amuse la classe sans rien révéler de ses compétences.",
+              "explanation": "Le bloc le dit : la parodie ne désigne pas seulement une imitation comique. C'est une situation jouée où l'on parle à la manière d'une personne, et elle fait apparaitre des capacités que la parole habituelle ne montre pas."
             }
           ],
           "level": "essentiel",
           "sansChoix": true,
           "notionId": "N93",
-          "attenteId": "A3.1",
-          "compatibleRevisions": [
-            "26bc65d1c8223b6b"
-          ]
+          "attenteId": "A3.1"
         },
         {
           "id": "Q2",
@@ -14171,7 +14202,8 @@
           "notionId": "N93",
           "attenteId": "A3.3",
           "compatibleRevisions": [
-            "26bc65d1c8223b6b"
+            "26bc65d1c8223b6b",
+            "5552575eb0bb9aff"
           ]
         },
         {
@@ -14206,7 +14238,8 @@
           "notionId": "N93",
           "attenteId": "A3.3",
           "compatibleRevisions": [
-            "26bc65d1c8223b6b"
+            "26bc65d1c8223b6b",
+            "5552575eb0bb9aff"
           ]
         },
         {
@@ -14239,10 +14272,13 @@
           "level": "approfondissement",
           "sansChoix": true,
           "notionId": "N93",
-          "attenteId": "A3.3"
+          "attenteId": "A3.3",
+          "compatibleRevisions": [
+            "5552575eb0bb9aff"
+          ]
         }
       ],
-      "qcmRevision": "5552575eb0bb9aff"
+      "qcmRevision": "6fa438c1564a55d4"
     },
     {
       "id": "ORAL-P-F95",
@@ -15256,7 +15292,8 @@
           "notionId": "N130",
           "attenteId": "T5",
           "compatibleRevisions": [
-            "514d2b049fb99b97"
+            "514d2b049fb99b97",
+            "48aa8cd38f420129"
           ]
         },
         {
@@ -15291,7 +15328,8 @@
           "notionId": "N132",
           "attenteId": "T5.1",
           "compatibleRevisions": [
-            "514d2b049fb99b97"
+            "514d2b049fb99b97",
+            "48aa8cd38f420129"
           ]
         },
         {
@@ -15312,13 +15350,13 @@
             },
             {
               "id": "c",
-              "text": "Pour pouvoir évaluer les élèves sur une compétence commune, avec une même consigne pour la classe.",
-              "explanation": "Répartir les tâches fait au contraire varier ce que chacun fait : la différenciation donne des contributions différentes, pas une compétence commune à évaluer."
+              "text": "Pour travailler l'oral comme objet d'enseignement chez tous les élèves de la même manière.",
+              "explanation": "Répartir des tâches différentes fait au contraire varier ce que chacun fait : on ne vise pas le même travail de l'oral pour tous, mais une contribution adaptée à ce que chaque élève sait déjà faire."
             },
             {
               "id": "d",
-              "text": "Pour gagner du temps, puisque les élèves ont moins de choses à préparer pour la séance.",
-              "explanation": "Le but n'est pas de réduire le travail : c'est de faire contribuer chacun d'une manière adaptée à ce qu'il sait déjà faire."
+              "text": "Pour faire passer les élèves de l'écoute de l'adulte à celle de leurs camarades.",
+              "explanation": "Passer de l'écoute de l'adulte à l'écoute des camarades relève des niveaux d'écoute de la communication en classe (écoute en écho, écoute marquée). Répartir des tâches quand la classe joue un album vise à faire participer chacun à partir de ce qu'il sait déjà faire."
             }
           ],
           "level": "essentiel",
@@ -15327,7 +15365,7 @@
           "attenteId": "T5"
         }
       ],
-      "qcmRevision": "48aa8cd38f420129"
+      "qcmRevision": "bb6a1983e5a89a26"
     },
     {
       "id": "ORAL-P-F104",
@@ -15937,8 +15975,8 @@
           "choices": [
             {
               "id": "a",
-              "text": "Parce qu'il suffit de faire beaucoup parler les élèves pour qu'ils progressent.",
-              "explanation": "Le seul fait de parler ne suffit pas : enseigner l'oral demande des objectifs explicites et des aides correspondantes."
+              "text": "Parce qu'il suffit de faire parler les élèves en groupe, régulièrement, pour qu'ils apprennent l'oral.",
+              "explanation": "Le seul fait de parler ne suffit pas : enseigner l'oral demande des objectifs explicites de compréhension et de production, et des aides qui les font travailler."
             },
             {
               "id": "b",
@@ -15947,8 +15985,8 @@
             },
             {
               "id": "c",
-              "text": "Parce que la langue parlée en famille est fautive et qu'il faut apprendre à parler comme dans les livres.",
-              "explanation": "La langue parlée a ses propres formes, comme la dislocation ; ce n'est pas un écrit appauvri ni une langue fautive (idée reçue 2 du cours 04)."
+              "text": "Parce que la langue de scolarisation doit prendre la place de la langue parlée en famille, qui ne sert pas à l'école.",
+              "explanation": "Les langues familiales et les connaissances des élèves sont des ressources, pour eux et pour l'enseignant : l'école les mène vers un langage scolaire sans les remplacer."
             },
             {
               "id": "d",
@@ -15956,13 +15994,13 @@
               "explanation": "L'oral est un domaine à part entière, au même niveau que l'écrit ; il contribue aussi à l'entrée dans la lecture et l'écriture, mais ne s'y réduit pas (idée reçue 1 du cours 04)."
             }
           ],
-          "level": "approfondissement",
+          "level": "essentiel",
           "sansChoix": true,
           "notionId": "N148",
-          "attenteId": "O3"
+          "attenteId": "O1"
         }
       ],
-      "qcmRevision": "39c6960472e277d5"
+      "qcmRevision": "df407c0d7dc836bd"
     },
     {
       "id": "ORAL-P-F112",
@@ -16328,7 +16366,7 @@
       "sources": [
         {
           "file": "REVISION_BP1-18FRA_S1_Oral.docx",
-          "location": "Pont : 1 Sommaire — « Fil conducteur : pour analyser une situation d'oral, relie l'objectif et la tâche aux productions observées, puis aux aides et à leurs effets. »"
+          "location": "Pont : 1 Sommaire : Fil conducteur — « Pour analyser une situation d'oral, relie l'objectif et la tâche aux productions observées, puis aux aides de l'enseignant et à leurs effets. »"
         },
         {
           "file": "REVISION_BP1-18FRA_S1_Oral.docx",
@@ -16336,7 +16374,7 @@
         },
         {
           "file": "REVISION_BP1-18FRA_S1_Oral.docx",
-          "location": "2.2.4 Savoirs procéduraux : méthodes des cours 1 à 4"
+          "location": "3.2.4 Savoirs procéduraux : grilles d'analyse d'une production, d'un étayage et d'un dispositif"
         }
       ],
       "steps": [
@@ -16367,7 +16405,7 @@
               "explanation": "Les repères d'âge donnent un ordre général du développement ; ils n'attribuent pas un niveau global à un enfant. Le fil conducteur relie l'objectif et la tâche à ce que l'élève produit réellement dans cette situation."
             }
           ],
-          "level": "essentiel",
+          "level": "essentiel-approfondi",
           "sansChoix": true,
           "notionId": "L01"
         }
@@ -16398,11 +16436,11 @@
         },
         {
           "file": "REVISION_BP1-18FRA_S1_Oral.docx",
-          "location": "Pont : 2.1 Concepts généraux de didactique — « Transposition didactique : Transformation d'un genre de référence en objet d'enseignement… Portée partielle : la transposition est développée ici pour les genres de textes. »"
+          "location": "Pont : 3.1.1 Éléments généraux de didactique : Concepts généraux de didactique — « Transposition didactique : Transformation d'un genre de référence en objet d'enseignement, par le choix des caractéristiques que les élèves vont apprendre à comprendre ou à produire. »"
         },
         {
           "file": "REVISION_BP1-18FRA_S1_Oral.docx",
-          "location": "2.1 Thématiques filées : Concepts généraux de didactique"
+          "location": "3.1.1 Éléments généraux de didactique : Concepts généraux de didactique (transposition didactique, genre didactisé)"
         },
         {
           "file": "SYNTHESE_BP1-18FRA_S1_COURS_04.docx",
@@ -16463,6 +16501,10 @@
       ],
       "sources": [
         {
+          "file": "REVISION_BP1-18FRA_S1_Oral.docx",
+          "location": "Pont : 3.2.3 Apprentissages liés à la compréhension et à la production de textes oraux : La progression pour l'apprentissage de la compréhension et de la production de l'oral au primaire — « Des étapes importantes de développement sont liées à l'expérience de situations de langage variées et à des usages divers de la parole, que l'école doit permettre de faire vivre aux élèves ; par ses interactions avec l'élève, l'enseignant joue un rôle clé dans l'apprentissage de ces usages de la parole scolaire, surtout au cycle 1. » ; 3.2.1 Approches du développement du langage — « Aucune approche ne suffit à tout expliquer ; l'enseignant s'appuie surtout sur les approches historico-culturelle (socioconstructiviste) et interactionniste. »"
+        },
+        {
           "file": "SYNTHESE_BP1-18FRA_S1_COURS_03.docx",
           "location": "Pont : Pont (Q1) : 2 — « Rappel du cours 01 — Dans l'approche interactionniste de Bruner, le développement se fait dans la relation et l'adulte soutient l'enfant par l'étayage. Le cours 03 en tire la conséquence : l'école doit faire vivre aux élèves des situations de langage variées et des usages divers de la langue parlée. »"
         },
@@ -16480,7 +16522,7 @@
         },
         {
           "file": "REVISION_BP1-18FRA_S1_Oral.docx",
-          "location": "2.2.1 Le rôle de l'adulte… dans l'étayage de la parole de l'enfant"
+          "location": "3.2.1 Concepts liés à l'enseignement et à l'apprentissage du langage : Le rôle de l'adulte… dans l'étayage de la parole de l'enfant"
         }
       ],
       "steps": [
@@ -16538,7 +16580,11 @@
       "sources": [
         {
           "file": "REVISION_BP1-18FRA_S1_Oral.docx",
-          "location": "Pont (Q1) : 2.2.2 Les caractéristiques de la langue parlée — « Une dislocation n'a pas le même statut qu'une erreur de genre ou de prononciation. La supprimer automatiquement impose un modèle écrit à la parole. »"
+          "location": "Pont (Q1) : 3.2.2 Concepts liés à l'oral : Les caractéristiques de la langue parlée — « Une dislocation […] n'a pas le même statut qu'une erreur de genre ou de prononciation : la supprimer automatiquement impose un modèle écrit à la parole. »"
+        },
+        {
+          "file": "03_Surcouf_Gagnon_2022_Normes_francais_parle_Dislocation_pp034-039.pdf",
+          "location": "Pont (Q2) : lecture prescrite, p. 39, échange [10] — « l'adulte prive l'enfant d'une information fondamentale, qu'aurait pourtant révélée le recours à la dislocation “les piles, elles ne marchent pas” » ; p. 39 : « la dislocation constitue un atout pour le perfectionnement de sa langue ». Le bloc cite cette lecture pour la dislocation (3.2.2) sans reprendre cet exemple."
         },
         {
           "file": "SYNTHESE_BP1-18FRA_S1_COURS_03.docx",
@@ -16642,12 +16688,12 @@
       ],
       "sources": [
         {
-          "file": "SYNTHESE_BP1-18FRA_S1_COURS_03.docx",
-          "location": "Pont : 4 (échange d'Édouard) — « l'élève produit une dislocation ; l'intervention lui fait répéter une construction proche du modèle écrit. La disparition momentanée du pronom ne manifeste pas, à elle seule, une complexification de son oral. »"
-        },
-        {
           "file": "REVISION_BP1-18FRA_S1_Oral.docx",
           "location": "Pont : 3.2.4 Savoirs procéduraux : Grille d'analyse d'un étayage ou d'une interaction (ajoutée), étape 4 « Examiner la suite de l'échange » — « Cherche ce que l'élève répète, modifie ou réemploie, puis nomme l'aide qui pourrait poursuivre l'apprentissage. » ; 3.2.2 Concepts liés à l'oral : Les caractéristiques de la langue parlée — « la supprimer automatiquement impose un modèle écrit à la parole »"
+        },
+        {
+          "file": "SYNTHESE_BP1-18FRA_S1_COURS_03.docx",
+          "location": "Pont : 4 (échange d'Édouard) — « l'élève produit une dislocation ; l'intervention lui fait répéter une construction proche du modèle écrit. La disparition momentanée du pronom ne manifeste pas, à elle seule, une complexification de son oral. »"
         },
         {
           "file": "SYNTHESE_BP1-18FRA_S1_COURS_03.docx",
@@ -16751,7 +16797,7 @@
       "sources": [
         {
           "file": "REVISION_BP1-18FRA_S1_Oral.docx",
-          "location": "Pont : 2.2.2 Échanges et capacités langagières — « Cette reformulation se distingue des reprises par l'adulte, qui attestent ou enrichissent l'énoncé de l'enfant. »"
+          "location": "Pont : 3.2.2 Concepts liés à l'oral : Échanges et capacités langagières — « Cette reformulation se distingue des reprises par l'adulte, qui attestent ou enrichissent l'énoncé de l'enfant. »"
         },
         {
           "file": "SYNTHESE_BP1-18FRA_S1_COURS_03.docx",
@@ -16763,7 +16809,7 @@
         },
         {
           "file": "REVISION_BP1-18FRA_S1_Oral.docx",
-          "location": "2.2.2 Échanges et capacités langagières : Reformulation (par l'élève)"
+          "location": "3.2.2 Échanges et capacités langagières : Reformulation (par l'élève)"
         }
       ],
       "steps": [
@@ -16820,6 +16866,10 @@
       ],
       "sources": [
         {
+          "file": "REVISION_BP1-18FRA_S1_Oral.docx",
+          "location": "Pont : 3.2.1 Concepts liés à l'enseignement et à l'apprentissage du langage : Le développement de l'articulation (Figure 2, ▲) — « Parmi elles figurent les quatre voyelles nasales [ɛ̃] (pain), [œ̃] (un), [ã] (blanc) et [ɔ̃] (bon) : elles existent peu dans d'autres langues, et beaucoup d'enfants confondent blanc et bon. Les comptines soutiennent ce travail de prononciation. »"
+        },
+        {
           "file": "SYNTHESE_BP1-18FRA_S1_COURS_02.docx",
           "location": "Pont : 7 Des principes pour aider les enfants à parler — « on propose des situations de langage d'évocation, comme l'album écho, et des comptines pour travailler la prononciation des sons : elles ne visent pas le même apprentissage. »"
         },
@@ -16841,7 +16891,7 @@
         },
         {
           "file": "REVISION_BP1-18FRA_S1_Oral.docx",
-          "location": "2.2.1 Le développement de l'articulation (▲)"
+          "location": "3.2.1 Le développement de l'articulation et des pistes didactiques pour améliorer la prononciation des phonèmes par les élèves (voyelles nasales, comptines ; ▲)"
         }
       ],
       "steps": [
@@ -16899,7 +16949,7 @@
       "sources": [
         {
           "file": "REVISION_BP1-18FRA_S1_Oral.docx",
-          "location": "Pont : 2.2.1 Développement du récit — « Un évènement manquant ou un personnage qui change appelle un travail sur le sens ; un pronom dont on ne comprend pas le référent appelle une clarification linguistique. »"
+          "location": "Pont : 3.2.1 Concepts liés à l'enseignement et à l'apprentissage du langage : Développement du récit — « Un évènement manquant ou un personnage qui change appelle un travail sur le sens ; un pronom dont on ne comprend pas le référent appelle une clarification linguistique. »"
         },
         {
           "file": "SYNTHESE_BP1-18FRA_S1_COURS_04.docx",
@@ -16915,7 +16965,7 @@
         },
         {
           "file": "REVISION_BP1-18FRA_S1_Oral.docx",
-          "location": "2.2.1 Développement du récit ; 2.2.4 Méthode : analyser un récit et choisir une aide (cours 4)"
+          "location": "3.2.1 Développement du récit (cohérence, cohésion) ; 3.2.4 Grille d'analyse d'un étayage ou d'une interaction (ajoutée), étape 4 : nommer l'aide qui poursuit l'apprentissage"
         }
       ],
       "steps": [
@@ -17022,37 +17072,34 @@
       "steps": [
         {
           "id": "Q1",
-          "prompt": "Pour analyser le récit d'un élève, on a observé la construction de l'histoire, les ressources linguistiques et l'oralité. À quoi sert de relier ces constats à l'aide que l'élève a déjà reçue ?",
+          "prompt": "Pour analyser le récit d'un élève, on a observé la construction de l'histoire, les ressources linguistiques et l'oralité. À quoi sert de relier ces constats à une prochaine aide ?",
           "requiresContext": false,
           "correctId": "d",
           "choices": [
             {
               "id": "a",
-              "text": "À juger l'élève sur ce qu'il fait seul, en écartant l'aide reçue",
-              "explanation": "Ce qui a été réussi avec une aide renseigne justement l'analyse : on distingue la réussite soutenue de ce que l'élève fait seul pour choisir la prochaine aide, au lieu d'écarter l'aide reçue."
+              "text": "À situer l'élève par rapport aux autres élèves de la classe",
+              "explanation": "Le bloc demande de situer l'élève par rapport à lui-même et non aux autres, pour penser la suite de l'enseignement. Relier les constats à une prochaine aide ne sert pas à comparer les élèves."
             },
             {
               "id": "b",
               "text": "À conclure si l'oral y est un outil ou un objet d'enseignement",
-              "explanation": "Cette conclusion termine la méthode d'analyse de l'objectif d'un dispositif (cours 03). La méthode d'analyse d'un récit se termine en reliant les constats à l'étayage et à la progression, pour choisir la prochaine aide."
+              "explanation": "Cette conclusion termine la grille d'analyse d'un dispositif (cours 03), où l'on relie la fonction de l'oral à l'objectif. Dans l'analyse du récit d'un élève, relier les constats à une prochaine aide sert à choisir la suite de l'enseignement."
             },
             {
               "id": "c",
               "text": "À attribuer à l'élève un niveau global d'après les repères d'âge",
-              "explanation": "Les repères d'âge donnent un ordre général du développement ; ils n'attribuent pas un niveau global à un enfant. La méthode conduit à une prochaine aide utile, pas à un classement."
+              "explanation": "Les repères d'âge donnent un ordre général du développement ; ils n'attribuent pas un niveau global à un enfant. L'analyse conduit à une prochaine aide utile, pas à un classement."
             },
             {
               "id": "d",
-              "text": "À choisir la prochaine aide utile pour faire progresser l'élève",
-              "explanation": "La méthode d'analyse d'un récit (cours 04) se termine en reliant les constats à l'étayage et à la progression : on distingue ce que l'élève réussit, l'aide déjà reçue et la prochaine aide utile. L'analyse sert donc à choisir l'aide suivante ; elle rejoint ainsi l'étayage (cours 01), qui vise une part croissante d'autonomie."
+              "text": "À nommer l'aide qui peut poursuivre l'apprentissage de l'élève",
+              "explanation": "Le bloc demande de relier les constats à une prochaine aide : dans la grille d'analyse de l'étayage, la dernière étape cherche ce que l'élève répète, modifie ou réemploie, puis nomme l'aide qui pourrait poursuivre l'apprentissage. L'analyse sert donc à choisir l'aide suivante ; elle rejoint l'étayage (cours 01), qui vise une part croissante d'autonomie."
             }
           ],
           "level": "essentiel-approfondi",
           "sansChoix": true,
-          "notionId": "L15",
-          "compatibleRevisions": [
-            "793ac001a74222a1"
-          ]
+          "notionId": "L15"
         },
         {
           "id": "Q2",
@@ -17083,10 +17130,13 @@
           ],
           "level": "essentiel-approfondi",
           "sansChoix": true,
-          "notionId": "L15"
+          "notionId": "L15",
+          "compatibleRevisions": [
+            "ba90437409004923"
+          ]
         }
       ],
-      "qcmRevision": "ba90437409004923"
+      "qcmRevision": "b1bd6dbc1ce0f466"
     },
     {
       "id": "ORAL-L-F16",
@@ -17130,7 +17180,7 @@
       "steps": [
         {
           "id": "Q1",
-          "prompt": "L'enseignante n'a que la transcription écrite du récit d'un élève, sans enregistrement audio. Quel aspect de la parole de l'élève ne peut-elle pas analyser de façon fiable ?",
+          "prompt": "L'enseignante n'a que la transcription écrite du récit d'un élève : elle ne peut pas l'écouter. Quel aspect de la parole de l'élève ne peut-elle pas analyser de façon fiable ?",
           "requiresContext": false,
           "correctId": "c",
           "choices": [
@@ -17161,7 +17211,7 @@
           "attenteId": "A4.1"
         }
       ],
-      "qcmRevision": "24e0e44c46356df2"
+      "qcmRevision": "2d9ca6b717672806"
     },
     {
       "id": "ORAL-L-F17",
@@ -17187,7 +17237,7 @@
         },
         {
           "file": "REVISION_BP1-18FRA_S1_Oral.docx",
-          "location": "Pont : 2.2.2 (▲) — « Ajuster volume, débit, intonation, diction, posture et gestes aide aussi à le maitriser. »"
+          "location": "Pont : 3.2.2 Concepts liés à l'oral : L'oral comme domaine disciplinaire du français (Rapport à l'oral, régulation émotionnelle ▲) — « accepter son stress, se préparer, s'exercer et s'exposer à des situations de parole aident à le maitriser, comme ajuster le volume, le débit, l'intonation, la diction, la posture et les gestes. »"
         },
         {
           "file": "SYNTHESE_BP1-18FRA_S1_COURS_03.docx",
@@ -17199,7 +17249,7 @@
         },
         {
           "file": "REVISION_BP1-18FRA_S1_Oral.docx",
-          "location": "2.2.2 L'oral comme domaine disciplinaire du français (régulation émotionnelle, ▲)"
+          "location": "3.2.2 L'oral comme domaine disciplinaire du français (régulation émotionnelle, ▲)"
         }
       ],
       "steps": [
@@ -17257,11 +17307,11 @@
       "sources": [
         {
           "file": "REVISION_BP1-18FRA_S1_Oral.docx",
-          "location": "Pont : 2.2.4 Analyser des activités et dispositifs — « Le type d'oral décrit la préparation de la parole ; outil et objet décrivent sa fonction dans l'apprentissage. Ce sont deux axes différents. »"
+          "location": "Pont : 3.2.4 Savoirs procéduraux : Analyser des activités et dispositifs d'enseignement de l'oral — « Le type d'oral décrit la préparation de la parole ; outil et objet (voir L'oral comme outil pour apprendre et l'oral comme objet d'enseignement) décrivent sa fonction dans l'apprentissage. Ce sont deux axes différents. »"
         },
         {
           "file": "REVISION_BP1-18FRA_S1_Oral.docx",
-          "location": "Pont : 2.2.2 L'oral comme outil… — « L'objectif effectivement travaillé permet de conclure ; le seul fait de parler ne suffit pas. »"
+          "location": "Pont : 3.2.2 Concepts liés à l'oral : L'oral comme outil pour apprendre et l'oral comme objet d'enseignement — « L'objectif effectivement travaillé permet de conclure ; le seul fait de parler ne suffit pas. »"
         },
         {
           "file": "SYNTHESE_BP1-18FRA_S1_COURS_04.docx",
@@ -17273,7 +17323,7 @@
         },
         {
           "file": "REVISION_BP1-18FRA_S1_Oral.docx",
-          "location": "2.2.4 Analyser des activités et dispositifs d'enseignement de l'oral"
+          "location": "3.2.4 Analyser des activités et dispositifs d'enseignement de l'oral"
         }
       ],
       "steps": [
@@ -17362,15 +17412,15 @@
       "sources": [
         {
           "file": "SYNTHESE_BP1-18FRA_S1_COURS_04.docx",
-          "location": "Pont : Pont (Q1) : 5 Le script langagier — « Ces échanges spontanés donnent lieu ensuite à des dialogues plus structurés, travaillés en classe par une dictée à l'adulte. Les élèves font alors des allers-retours entre lecture, compréhension, jeu oral et formulation écrite. »"
+          "location": "Pont (Q1, source du cours) : 5 Le script langagier — « Ces échanges spontanés donnent lieu ensuite à des dialogues plus structurés, travaillés en classe par une dictée à l'adulte. Les élèves font alors des allers-retours entre lecture, compréhension, jeu oral et formulation écrite. »"
         },
         {
           "file": "REVISION_BP1-18FRA_S1_Oral.docx",
-          "location": "Pont : Pont (Q2) : 2.2.2 L'oral comme domaine disciplinaire du français — « Ces apprentissages sont conjoints. Le théâtre fait circuler entre lire, comprendre et mettre en voix ; des dialogues spontanés peuvent ensuite être structurés par la dictée à l'adulte. »"
+          "location": "Pont (Q1, Q2) : 3.2.2 Concepts liés à l'oral : L'oral comme domaine disciplinaire du français — « L'oral, la lecture et l'écriture se travaillent ensemble : le théâtre fait circuler entre lire, comprendre et mettre en voix ; des dialogues spontanés peuvent ensuite être structurés par la dictée à l'adulte, où l'enseignant peut cibler pronoms, prépositions et verbes. »"
         },
         {
           "file": "SYNTHESE_BP1-18FRA_S1_COURS_01.docx",
-          "location": "Pont : Pont (Q2) : 1 Des apprentissages conjoints — « Séparer oral, lecture et écriture pour les étudier ne transforme donc pas leur apprentissage en étapes indépendantes. »"
+          "location": "Pont (Q2, source du cours) : 1 Des apprentissages conjoints — « Séparer oral, lecture et écriture pour les étudier ne transforme donc pas leur apprentissage en étapes indépendantes. »"
         },
         {
           "file": "SYNTHESE_BP1-18FRA_S1_COURS_04.docx",
@@ -17386,7 +17436,7 @@
         },
         {
           "file": "REVISION_BP1-18FRA_S1_Oral.docx",
-          "location": "2.2.2 L'oral comme domaine disciplinaire du français"
+          "location": "3.2.2 L'oral comme domaine disciplinaire du français"
         }
       ],
       "steps": [
@@ -17419,7 +17469,10 @@
           ],
           "level": "essentiel-approfondi",
           "sansChoix": false,
-          "notionId": "L19"
+          "notionId": "L19",
+          "compatibleRevisions": [
+            "7d8ba5ef2e78643a"
+          ]
         },
         {
           "id": "Q2",
@@ -17429,8 +17482,8 @@
           "choices": [
             {
               "id": "a",
-              "text": "L'oral ne sert qu'à préparer le passage vers l'écrit",
-              "explanation": "C'est l'idée reçue que le cours 04 discute en premier : au premier cycle, le travail de l'oral ne servirait qu'à préparer le passage vers l'écrit. L'oral est un domaine à part entière, au même niveau que l'écrit, même s'il contribue aussi à l'entrée dans la lecture et l'écriture ; ici, il revient sans cesse dans la circulation."
+              "text": "L'oral y est un outil pour apprendre à lire, pas un objet d'enseignement",
+              "explanation": "Le même dispositif peut remplir les deux fonctions : l'oral est outil pour apprendre et objet d'enseignement. Ici, jouer les dialogues puis les formuler à l'écrit fait aussi travailler l'oral lui-même, en même temps que la lecture et l'écriture."
             },
             {
               "id": "b",
@@ -17444,8 +17497,8 @@
             },
             {
               "id": "d",
-              "text": "L'oral s'apprend avant l'école ; la classe peut s'en servir sans l'enseigner",
-              "explanation": "Le cours 04 réfute cette idée reçue : parler avant l'école ne donne pas accès à tous les usages scolaires de la parole. Le dispositif fait au contraire travailler l'oral avec la lecture et l'écriture."
+              "text": "Le théâtre y travaille surtout l'oral récité, appris par cœur",
+              "explanation": "Le théâtre et les marionnettes font parler et agir des personnages en variant voix et gestes ; ils ne se réduisent pas à réciter un texte mémorisé, ce qui est l'oral récité. Ici, les dialogues sont joués, puis structurés par la dictée à l'adulte."
             }
           ],
           "level": "essentiel",
@@ -17453,7 +17506,7 @@
           "notionId": "L19"
         }
       ],
-      "qcmRevision": "7d8ba5ef2e78643a"
+      "qcmRevision": "d7a5930cb5101915"
     },
     {
       "id": "ORAL-L-F20",
@@ -17473,6 +17526,10 @@
         "Phrases complexes selon Boisseau : dès 2–3 ans, parce que ; dès 4–5 ans, que complétif, infinitive, pour + infinitif, qui relatif ; dès 5–6 ans, pour que, en + participe présent, quand, si, comme, relatives en que et en où. Capacité langagière argumentative : Moyen de construire et discuter une pensée à l'oral : problématiser, recentrer, interpréter, conceptualiser et argumenter. Argumenter : il justifie, donne des exemples, démontre ou explique ce qui fonde son affirmation. Problématiser : il soulève la complexité d'une question et examine les implicites et conséquences d'une affirmation. Trois plans d'apprentissage de l'atelier : linguistique (lexique et constructions), communicationnel (rebondir sur le thème, questions et réponses), comportemental (règles de vie, politesse)."
       ],
       "sources": [
+        {
+          "file": "REVISION_BP1-18FRA_S1_Oral.docx",
+          "location": "Pont : 3.2.3 Apprentissages liés à la compréhension et à la production de textes oraux : Les textes qui argumentent — « Le plan linguistique enrichit le lexique et les constructions, notamment pour justifier avec parce que. » ; 3.2.1 Développement de la syntaxe — « Pour développer la syntaxe parlée, les opérations se succèdent en se chevauchant : différencier les pronoms, différencier les temps, puis complexifier en reliant des phrases du type pronom + groupe verbal par parce que, pour que ou quand. »"
+        },
         {
           "file": "SYNTHESE_BP1-18FRA_S1_COURS_03.docx",
           "location": "Pont : 4 Développer la syntaxe et réduire les écarts — « L'organisateur parce que, utilisé dans les discussions, donne ainsi un moyen de relier un avis à sa justification. »"
@@ -17495,7 +17552,7 @@
         },
         {
           "file": "REVISION_BP1-18FRA_S1_Oral.docx",
-          "location": "2.2.3 Les textes qui argumentent"
+          "location": "3.2.3 Les textes qui argumentent ; 3.2.1 Développement de la syntaxe (complexifier avec parce que)"
         }
       ],
       "steps": [
@@ -17603,6 +17660,10 @@
       "stepId": "Q1"
     },
     {
+      "exerciseId": "FRA-ORAL-F06-V1",
+      "stepId": "Q2"
+    },
+    {
       "exerciseId": "ORAL-P-F58",
       "stepId": "Q2"
     },
@@ -17616,11 +17677,11 @@
     },
     {
       "exerciseId": "ORAL-P-F62",
-      "stepId": "Q5"
+      "stepId": "Q4"
     },
     {
       "exerciseId": "ORAL-P-F62",
-      "stepId": "Q4"
+      "stepId": "Q5"
     },
     {
       "exerciseId": "ORAL-P-F62",
@@ -17659,6 +17720,14 @@
       "stepId": "Q1"
     },
     {
+      "exerciseId": "FRA-ORAL-F10-V1",
+      "stepId": "Q5"
+    },
+    {
+      "exerciseId": "FRA-ORAL-F11-V1",
+      "stepId": "Q3"
+    },
+    {
       "exerciseId": "ORAL-P-F67",
       "stepId": "Q5"
     },
@@ -17679,12 +17748,16 @@
       "stepId": "Q1"
     },
     {
-      "exerciseId": "ORAL-P-F55",
-      "stepId": "Q4"
-    },
-    {
       "exerciseId": "ORAL-P-F114",
       "stepId": "Q1"
+    },
+    {
+      "exerciseId": "FRA-ORAL-F15-V2",
+      "stepId": "Q10"
+    },
+    {
+      "exerciseId": "FRA-ORAL-F16-V1",
+      "stepId": "Q4"
     },
     {
       "exerciseId": "ORAL-P-F63",
@@ -17779,12 +17852,16 @@
       "stepId": "Q5"
     },
     {
-      "exerciseId": "ORAL-P-F76",
-      "stepId": "Q3"
+      "exerciseId": "FRA-ORAL-F20-V1",
+      "stepId": "Q1"
     },
     {
       "exerciseId": "ORAL-P-F76",
       "stepId": "Q2"
+    },
+    {
+      "exerciseId": "ORAL-P-F76",
+      "stepId": "Q3"
     },
     {
       "exerciseId": "ORAL-P-F56",
@@ -17803,8 +17880,16 @@
       "stepId": "Q1"
     },
     {
+      "exerciseId": "ORAL-P-F111",
+      "stepId": "Q1"
+    },
+    {
       "exerciseId": "ORAL-P-F61",
       "stepId": "Q4"
+    },
+    {
+      "exerciseId": "FRA-ORAL-F03-V1",
+      "stepId": "Q3"
     },
     {
       "exerciseId": "ORAL-P-F101",
@@ -17817,6 +17902,10 @@
     {
       "exerciseId": "ORAL-P-F61",
       "stepId": "Q7"
+    },
+    {
+      "exerciseId": "FRA-ORAL-F33-V1",
+      "stepId": "Q1"
     },
     {
       "exerciseId": "ORAL-P-F93",
@@ -17849,42 +17938,6 @@
     {
       "exerciseId": "ORAL-P-F28",
       "stepId": "Q5"
-    },
-    {
-      "exerciseId": "FRA-ORAL-F03-V1",
-      "stepId": "Q3"
-    },
-    {
-      "exerciseId": "FRA-ORAL-F06-V1",
-      "stepId": "Q2"
-    },
-    {
-      "exerciseId": "FRA-ORAL-F10-V1",
-      "stepId": "Q5"
-    },
-    {
-      "exerciseId": "FRA-ORAL-F11-V1",
-      "stepId": "Q3"
-    },
-    {
-      "exerciseId": "FRA-ORAL-F15-V2",
-      "stepId": "Q10"
-    },
-    {
-      "exerciseId": "FRA-ORAL-F16-V1",
-      "stepId": "Q4"
-    },
-    {
-      "exerciseId": "FRA-ORAL-F20-V1",
-      "stepId": "Q1"
-    },
-    {
-      "exerciseId": "FRA-ORAL-F33-V1",
-      "stepId": "Q1"
-    },
-    {
-      "exerciseId": "ORAL-L-F01",
-      "stepId": "Q1"
     },
     {
       "exerciseId": "ORAL-L-F05",
@@ -18121,6 +18174,10 @@
     {
       "exerciseId": "ORAL-P-F74",
       "stepId": "Q3"
+    },
+    {
+      "exerciseId": "ORAL-P-F55",
+      "stepId": "Q4"
     },
     {
       "exerciseId": "ORAL-P-F114",
@@ -18767,6 +18824,10 @@
       "stepId": "Q5"
     },
     {
+      "exerciseId": "ORAL-L-F01",
+      "stepId": "Q1"
+    },
+    {
       "exerciseId": "ORAL-L-F02",
       "stepId": "Q1"
     },
@@ -18929,10 +18990,6 @@
     {
       "exerciseId": "ORAL-P-F93",
       "stepId": "Q5"
-    },
-    {
-      "exerciseId": "ORAL-P-F111",
-      "stepId": "Q1"
     },
     {
       "exerciseId": "ORAL-P-F101",
@@ -19249,7 +19306,7 @@
   ],
   "attentesSource": {
     "id": "GRILLE_BP1-18FRA_S1_ORAL",
-    "version": "v10"
+    "version": "v11"
   },
-  "bankRevision": "c83fa39f5f59"
+  "bankRevision": "a1cd4ea25831"
 }
