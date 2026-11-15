@@ -542,7 +542,7 @@
     },
     {
       "id": "ORAL-P-F87",
-      "title": "Évaluer les élèves allophones : la compréhension comme point critique",
+      "title": "Évaluer l'oral des élèves : situer chaque élève par rapport à lui-même ; chez l'élève allophone, la compréhension comme point critique",
       "course": "C02"
     },
     {
@@ -10516,7 +10516,8 @@
       "hints": [
         "Ces quatre compétences correspondent aux quatre plans d'analyse d'un énoncé d'enfant ou d'une aide de l'adulte : les sons, les mots, la construction de la phrase, l'adaptation à l'échange.",
         "Compétence phonologique : Capacité à distinguer et à produire les sons de la langue, notamment les phonèmes. Compétence lexico-sémantique : Capacité à choisir des mots pour désigner quelque chose et construire une signification. Compétence syntaxique : Capacité à organiser les mots selon les règles grammaticales pour énoncer un message. Compétence pragmatique : Capacité à communiquer efficacement en tenant compte de la situation, des partenaires et du but. Son observation s’organise en six dimensions : non verbal, matériel, communicationnel, discursif, contenu et émotionnel. Au cours 01, Bruner est cité pour les compétences syntaxique, lexico-sémantique et pragmatique ; cette attribution ne s’étend ni à la compétence phonologique ni aux six dimensions, présentées d’après Dumais.",
-        "Grille de la formatrice pour analyser une production d’élève (trois axes) : lexico-sémantique (étendue du vocabulaire, choix des mots) ; syntaxe (pronoms, temps verbaux, prépositions, phrases simples ou complexes) ; pragmatique (type de récit, cohérence — sens, chronologie —, cohésion — connecteurs, reprises). Pour l’articulation, on repère les sons produits et les contrastes confondus."
+        "Grille de la formatrice pour analyser une production d’élève (trois axes) : lexico-sémantique (étendue du vocabulaire, choix des mots) ; syntaxe (pronoms, temps verbaux, prépositions, phrases simples ou complexes) ; pragmatique (type de récit, cohérence — sens, chronologie —, cohésion — connecteurs, reprises). Pour l’articulation, on repère les sons produits et les contrastes confondus.",
+        "Grille d'analyse d'un étayage ou d'une interaction (ajoutée par le bloc, d'après la méthode du cours 01), quatre étapes : 1. repérer la tâche et l'intention (ce que l'élève cherche à dire ou à faire, ce qui lui pose difficulté) ; 2. comparer les énoncés (mots repris, remplacés ou ajoutés par l'adulte ; type de reprise ou autre réaction) ; 3. nommer et justifier le plan travaillé (phonologie, lexique, syntaxe, pragmatique, dont le récit) ; 4. examiner la suite de l'échange (ce que l'élève répète, modifie ou réemploie, puis l'aide qui pourrait poursuivre l'apprentissage)."
       ],
       "sources": [
         {
@@ -10526,6 +10527,22 @@
         {
           "file": "REVISION_BP1-18FRA_S1_Oral.docx",
           "location": "3.2.4 Savoirs procéduraux : Analyser des productions d'élèves (grille à trois axes)"
+        },
+        {
+          "file": "REVISION_BP1-18FRA_S1_Oral.docx",
+          "location": "3.2.4 Savoirs procéduraux : Grille d'analyse d'un étayage ou d'une interaction (ajoutée), étape 4 « Examiner la suite de l'échange » — « Cherche ce que l'élève répète, modifie ou réemploie, puis nomme l'aide qui pourrait poursuivre l'apprentissage. »"
+        },
+        {
+          "file": "SYNTHESE_BP1-18FRA_S1_COURS_01.docx",
+          "location": "4 Étayer la parole : Méthode : analyser un étayage dans un échange (étape « Examiner la suite de l'échange »)"
+        },
+        {
+          "file": "REVISION_BP1-18FRA_S1_Oral.docx",
+          "location": "3.2.4 Savoirs procéduraux : Analyser des productions d'élèves, grille de l'exercice de révision (axe lexico-sémantique) ; cas d'un récit collectif (2P), « on a fait la douche » repris par « on est passé sous la douche » (lexique)"
+        },
+        {
+          "file": "SYNTHESE_BP1-18FRA_S1_SEMINAIRE_02.docx",
+          "location": "Méthode : analyser l'étayage dans un collectif (récit de la piscine à Pépé, diapositive 17) — « Reprendre on a fait la douche par on est passé sous la douche » : lexique, « La reprise remplace un mot mal employé par une formulation plus précise »"
         }
       ],
       "steps": [
@@ -10561,7 +10578,8 @@
           "attenteId": "P2",
           "compatibleRevisions": [
             "9737dbd42859f990",
-            "2d9b12c7eb868501"
+            "2d9b12c7eb868501",
+            "9c06a63c3bd0c88c"
           ]
         },
         {
@@ -10596,7 +10614,8 @@
           "attenteId": "P2",
           "compatibleRevisions": [
             "9737dbd42859f990",
-            "2d9b12c7eb868501"
+            "2d9b12c7eb868501",
+            "9c06a63c3bd0c88c"
           ]
         },
         {
@@ -10631,7 +10650,8 @@
           "attenteId": "P2",
           "compatibleRevisions": [
             "9737dbd42859f990",
-            "2d9b12c7eb868501"
+            "2d9b12c7eb868501",
+            "9c06a63c3bd0c88c"
           ]
         },
         {
@@ -10666,7 +10686,8 @@
           "attenteId": "P2",
           "compatibleRevisions": [
             "9737dbd42859f990",
-            "2d9b12c7eb868501"
+            "2d9b12c7eb868501",
+            "9c06a63c3bd0c88c"
           ]
         },
         {
@@ -10701,7 +10722,8 @@
           "notionId": "N168",
           "attenteId": "P2",
           "compatibleRevisions": [
-            "2d9b12c7eb868501"
+            "2d9b12c7eb868501",
+            "9c06a63c3bd0c88c"
           ]
         },
         {
@@ -10733,10 +10755,77 @@
           ],
           "level": "essentiel",
           "sansChoix": true,
+          "attenteId": "P1",
+          "compatibleRevisions": [
+            "9c06a63c3bd0c88c"
+          ]
+        },
+        {
+          "id": "Q7",
+          "prompt": "Devant une barque, un élève dit : « Il y a un bateau. » L'enseignante répond : « Oui, une barque. » L'élève reprend : « Une barque… la barque est sur l'eau. » Pour analyser cet étayage, que relève-t-on en examinant la suite de l'échange ?",
+          "requiresContext": false,
+          "correctId": "a",
+          "choices": [
+            {
+              "id": "a",
+              "text": "Il réemploie le mot de l'adulte dans une phrase qu'il construit : l'aide a servi dans l'échange.",
+              "explanation": "La dernière étape de la grille d'analyse d'un étayage, examiner la suite de l'échange, cherche ce que l'élève répète, modifie ou réemploie, puis nomme l'aide qui pourrait poursuivre l'apprentissage. Ici, l'élève redit « barque », puis l'emploie dans une phrase de son cru, avec un article : il réemploie le mot que l'adulte lui a donné. On conclut sur l'aide et sur sa reprise dans cet échange."
+            },
+            {
+              "id": "b",
+              "text": "Il répète seulement le mot de l'adulte, sans l'employer dans une phrase : l'aide n'a pas encore servi.",
+              "explanation": "L'élève ne se contente pas de répéter : il emploie ensuite « barque » dans une phrase qu'il construit lui-même. Examiner la suite de l'échange, c'est relever ce que l'élève répète, mais aussi ce qu'il modifie ou réemploie : ici, l'aide a servi dans l'échange."
+            },
+            {
+              "id": "c",
+              "text": "Il a acquis le mot : l'aide a atteint son but et l'adulte peut cesser de la donner.",
+              "explanation": "C'est conclure au-delà des faits. L'étape 4 conclut sur l'aide apportée et sur sa reprise dans cet échange ; un réemploi immédiat ne prouve pas que le mot est acquis durablement."
+            },
+            {
+              "id": "d",
+              "text": "L'aide de l'enseignante porte sur le choix du mot : elle précise « bateau » par « barque ».",
+              "explanation": "C'est vrai de l'aide : en répondant « une barque », l'enseignante précise le mot (plan lexico-sémantique). Mais nommer le plan travaillé est l'étape 3 de la grille ; la suite de l'échange regarde ce que l'élève fait de l'aide."
+            }
+          ],
+          "level": "essentiel",
+          "sansChoix": true,
+          "notionId": "N177",
+          "attenteId": "P2"
+        },
+        {
+          "id": "Q8",
+          "prompt": "Avec la grille de la formatrice, on analyse le récit d'élèves de 2P qui racontent la sortie à la piscine. Un élève dit : « On a fait la douche. » Sur quel axe place-t-on la remarque : « faire » est employé à la place d'un verbe plus précis ?",
+          "requiresContext": false,
+          "correctId": "b",
+          "choices": [
+            {
+              "id": "a",
+              "text": "L'axe syntaxique",
+              "explanation": "Cet axe regarde les pronoms, les temps verbaux, les prépositions et le caractère simple ou complexe des phrases. Ici, le passé composé convient et la phrase est construite : la remarque porte sur le verbe choisi, pas sur sa forme."
+            },
+            {
+              "id": "b",
+              "text": "L'axe lexico-sémantique",
+              "explanation": "Cet axe regarde l'étendue du vocabulaire et le choix des mots : « Les mots sont-ils bien choisis ? ». La remarque porte sur le choix du verbe. Dans ce récit du séminaire 02, l'enseignante reprend « on a fait la douche » par « on est passé sous la douche » : une aide sur le lexique."
+            },
+            {
+              "id": "c",
+              "text": "La ligne d'articulation",
+              "explanation": "Cette ligne repère les sons produits et les contrastes confondus ; il faut entendre la production. La remarque porte sur le mot choisi, pas sur sa prononciation."
+            },
+            {
+              "id": "d",
+              "text": "L'axe pragmatique",
+              "explanation": "Cet axe regarde le type de récit, sa cohérence (sens, chronologie) et sa cohésion (connecteurs, reprises). La remarque ne porte ni sur l'ordre des évènements ni sur les liens entre les phrases."
+            }
+          ],
+          "level": "essentiel",
+          "sansChoix": true,
+          "notionId": "N178",
           "attenteId": "P1"
         }
       ],
-      "qcmRevision": "9c06a63c3bd0c88c"
+      "qcmRevision": "54910aa9d04749d3"
     },
     {
       "id": "ORAL-P-F63",
@@ -11804,6 +11893,10 @@
         {
           "file": "SYNTHESE_BP1-18FRA_S1_COURS_02.docx",
           "location": "7 Faire parler et écouter les élèves : passer de l'écoute de l'adulte à l'échange entre élèves"
+        },
+        {
+          "file": "REVISION_BP1-18FRA_S1_Oral.docx",
+          "location": "3.1.2 Enseigner en contexte hétérogène : La communication au sein de la classe (trois niveaux d'écoute : écoute en écho, écoute marquée, travail collaboratif) ; 2 L'essentiel du bloc (« fait passer l'écoute de l'adulte à l'écoute des camarades »)"
         }
       ],
       "steps": [
@@ -11834,10 +11927,13 @@
               "explanation": "L'écoute marquée prend en compte la parole des autres élèves. Une reprise d'information, un complément ou un désaccord en sont des indices."
             }
           ],
-          "level": "essentiel",
+          "level": "essentiel-approfondi",
           "sansChoix": true,
           "notionId": "N110",
-          "attenteId": "T4"
+          "attenteId": "T4",
+          "compatibleRevisions": [
+            "e25a4373cf1b5931"
+          ]
         },
         {
           "id": "Q1",
@@ -11870,7 +11966,8 @@
           "sansChoix": false,
           "attenteId": "T4",
           "compatibleRevisions": [
-            "b9de35f7ad955645"
+            "b9de35f7ad955645",
+            "e25a4373cf1b5931"
           ]
         },
         {
@@ -11904,7 +12001,8 @@
           "sansChoix": false,
           "attenteId": "T4",
           "compatibleRevisions": [
-            "b9de35f7ad955645"
+            "b9de35f7ad955645",
+            "e25a4373cf1b5931"
           ]
         },
         {
@@ -11938,11 +12036,44 @@
           "sansChoix": false,
           "attenteId": "T4",
           "compatibleRevisions": [
-            "b9de35f7ad955645"
+            "b9de35f7ad955645",
+            "e25a4373cf1b5931"
           ]
+        },
+        {
+          "id": "Q6",
+          "prompt": "Qu'est-ce qui distingue les trois niveaux d'écoute : l'écoute en écho, l'écoute marquée et le travail collaboratif ?",
+          "requiresContext": false,
+          "correctId": "c",
+          "choices": [
+            {
+              "id": "a",
+              "text": "L'intensité de l'écoute : l'élève écoute à peine, il écoute en silence, puis il écoute très attentivement.",
+              "explanation": "Ce n'est pas l'intensité de l'attention qui sépare les niveaux : un élève peut écouter très attentivement l'enseignant et rester en écoute en écho. Ce qui change d'un niveau à l'autre, c'est l'appui pris sur les propos des camarades."
+            },
+            {
+              "id": "b",
+              "text": "Le nombre d'élèves qui prennent la parole : un seul, deux qui se répondent, puis toute la classe.",
+              "explanation": "Le nombre de personnes qui parlent ne fixe pas le niveau : plusieurs élèves peuvent répondre tour à tour à l'enseignant sans s'appuyer les uns sur les autres, ce qui reste une écoute en écho. Ce qui compte, c'est que chacun s'appuie ou non sur les propos des autres."
+            },
+            {
+              "id": "c",
+              "text": "Ce que l'élève fait des propos des camarades : il ne s'y appuie pas, en tient compte, échange avec eux.",
+              "explanation": "Les trois niveaux se distinguent par l'appui sur la parole des camarades. Écoute en écho : écoute centrée sur les questions de l'enseignant et les réponses qui leur font suite, sans appui manifeste sur les propos des camarades. Écoute marquée : écoute qui prend en compte la parole des autres élèves. Travail collaboratif : échanges dans le groupe et entre les élèves."
+            },
+            {
+              "id": "d",
+              "text": "Ce que l'enseignant fait de la réponse de l'élève : il la répète, il la reformule, il la complète.",
+              "explanation": "Répéter, reformuler ou compléter décrit les reprises de l'adulte (répétitions, reformulations sans ou avec extension). Les niveaux d'écoute décrivent l'écoute des élèves : « en écho » ne veut pas dire que l'enseignant répète."
+            }
+          ],
+          "level": "essentiel",
+          "sansChoix": true,
+          "notionId": "N179",
+          "attenteId": "T4"
         }
       ],
-      "qcmRevision": "e25a4373cf1b5931"
+      "qcmRevision": "4b12e9764b8e54a8"
     },
     {
       "id": "ORAL-P-F71",
@@ -13402,7 +13533,8 @@
       "prompt": "",
       "hints": [
         "Pour évaluer un élève allophone, demande-toi d'abord ce qu'il comprend et ce qu'il sait déjà en français, avant de compter des mots ou de le comparer à un élève monolingue.",
-        "Évaluation (quatrième principe pour aider les élèves à parler, cours 02) : il ne faut pas sous-estimer ce que savent les élèves allophones en français. Le vrai point critique est la compréhension, pas le nombre de mots connus. On considère aussi la compétence communicative de l’élève plutôt que de le rapporter à une seule norme monolingue. Phase muette : période où l’enfant parle peu dans la nouvelle langue ; il faut observer aussi ce qu’il comprend."
+        "Évaluation (quatrième principe pour aider les élèves à parler, cours 02) : il ne faut pas sous-estimer ce que savent les élèves allophones en français. Le vrai point critique est la compréhension, pas le nombre de mots connus. On considère aussi la compétence communicative de l’élève plutôt que de le rapporter à une seule norme monolingue. Phase muette : période où l’enfant parle peu dans la nouvelle langue ; il faut observer aussi ce qu’il comprend.",
+        "Évaluer une production orale (séminaire 04 ; bloc, 3.2.3 et 3.2.4) : on repère les fonctionnements langagiers maîtrisés et ceux qui sont en cours d'apprentissage, afin de situer chaque enfant. On situe l'élève par rapport à lui-même et non aux autres, pour penser la suite de l'enseignement : on relie les constats à une prochaine aide."
       ],
       "sources": [
         {
@@ -13412,6 +13544,14 @@
         {
           "file": "SYNTHESE_BP1-18FRA_S1_COURS_02.docx",
           "location": "6 Comprendre les situations de bilinguisme : Accompagner les trois situations (évaluation et norme monolingue)"
+        },
+        {
+          "file": "REVISION_BP1-18FRA_S1_Oral.docx",
+          "location": "3.2.3 Les défis liés à l'enseignement des genres de textes oraux — « On situe l'élève par rapport à lui-même et non aux autres, pour penser la suite de l'enseignement. » ; « Relie les constats à une prochaine aide. » ; 3.2.4 Démarche d'analyse d'une production orale d'élève (fonction : l'évaluation) ; 2 L'essentiel du bloc"
+        },
+        {
+          "file": "SYNTHESE_BP1-18FRA_S1_SEMINAIRE_04.docx",
+          "location": "2 Analyser une production pour décider de la suite : Méthode : analyser un récit oral (diapositives 10–12)"
         }
       ],
       "steps": [
@@ -13445,10 +13585,45 @@
           "level": "essentiel-approfondi",
           "sansChoix": true,
           "notionId": "N87",
-          "attenteId": "T3"
+          "attenteId": "T3",
+          "compatibleRevisions": [
+            "625eb4e8e65a8022"
+          ]
+        },
+        {
+          "id": "Q3",
+          "prompt": "Pour évaluer la production orale d'un élève et penser la suite de l'enseignement, par rapport à quoi situe-t-on cet élève ?",
+          "requiresContext": false,
+          "correctId": "b",
+          "choices": [
+            {
+              "id": "a",
+              "text": "Par rapport aux autres élèves de la classe : la place qu'il tient dans le groupe",
+              "explanation": "Le bloc demande l'inverse : on situe l'élève par rapport à lui-même et non aux autres. Un rang dans la classe ne dit pas quelle aide convient à cet élève."
+            },
+            {
+              "id": "b",
+              "text": "Par rapport à lui-même : ce qu'il maitrise déjà et ce qu'il apprend encore",
+              "explanation": "On repère les fonctionnements langagiers que l'élève maîtrise et ceux qui sont en cours d'apprentissage, et on le situe par rapport à lui-même et non aux autres, pour penser la suite de l'enseignement. On relie ainsi les constats à une prochaine aide."
+            },
+            {
+              "id": "c",
+              "text": "Par rapport à la norme de l'écrit : les écarts qu'il lui reste à corriger",
+              "explanation": "Juger l'oral d'après le modèle écrit fait corriger des fonctionnements normaux de la langue parlée : supprimer automatiquement une dislocation impose un modèle écrit à la parole. Le point de départ est ce que l'élève fait déjà, pas son écart à une norme."
+            },
+            {
+              "id": "d",
+              "text": "Par rapport au nombre de mots qu'il connaît : l'étendue de son vocabulaire",
+              "explanation": "Le bloc retient que, pour évaluer un élève allophone, le vrai point critique est la compréhension, pas le nombre de mots connus. Un total de mots ne dit pas ce que l'élève sait faire de sa langue."
+            }
+          ],
+          "level": "essentiel",
+          "sansChoix": true,
+          "notionId": "N180",
+          "attenteId": "A4.2"
         }
       ],
-      "qcmRevision": "625eb4e8e65a8022"
+      "qcmRevision": "ac6f6638c3367d80"
     },
     {
       "id": "ORAL-P-F88",
@@ -16033,10 +16208,6 @@
           "location": "1 Enseigner le langage dans une classe hétérogène : Le triangle didactique"
         },
         {
-          "file": "SYNTHESE_BP1-18FRA_S1_COURS_01.docx",
-          "location": "4 Étayer la parole : Méthode : analyser un étayage dans un échange (diapositive 62)"
-        },
-        {
           "file": "REVISION_BP1-18FRA_S1_Oral.docx",
           "location": "3.1.1 Éléments généraux de didactique : Concepts généraux de didactique, triangle didactique"
         }
@@ -16044,29 +16215,29 @@
       "steps": [
         {
           "id": "Q1",
-          "prompt": "Dans une classe de langue seconde, un élève dit : « à le bambi ». L'enseignante répond : « au chevreuil ouais ». Plus tard, l'élève dit : « et alors l'apporte au chevreuil ». Dans le triangle didactique, sur quelle relation ce réemploi de « au chevreuil » renseigne-t-il ?",
+          "prompt": "Dans une classe de langue seconde, une enseignante dit à Lina : « Cet objet s'appelle une louche. » Plus tard, en racontant la recette, Lina dit : « Je prends la louche pour servir la soupe. » Dans le triangle didactique, sur quelle relation ce réemploi du mot « louche » renseigne-t-il ?",
           "requiresContext": false,
           "correctId": "c",
           "choices": [
             {
               "id": "a",
               "text": "La relation entre l'enseignante et l'élève",
-              "explanation": "La relation enseignant·e–élèves concerne les interactions : accompagner, enseigner, observer, évaluer. L'aide de l'enseignante en relève ; le réemploi montre ce que l'élève fait lui-même du savoir."
+              "explanation": "La relation enseignant·e–élèves concerne les interactions : accompagner, enseigner, observer, évaluer. L'aide de l'enseignante en relève ; le réemploi montre ce que Lina fait elle-même du savoir."
             },
             {
               "id": "b",
               "text": "La relation entre l'enseignante et les savoirs",
-              "explanation": "La relation enseignant·e–savoirs concerne ce que l'enseignant sélectionne, transpose, planifie et transmet. Dans le réemploi, c'est l'élève qui agit : il réutilise le mot et la construction dans la suite de son récit."
+              "explanation": "La relation enseignant·e–savoirs concerne ce que l'enseignant sélectionne, transpose, planifie et transmet. Dans le réemploi, c'est Lina qui agit : elle réutilise le mot dans la suite de son récit."
             },
             {
               "id": "c",
               "text": "La relation entre l'élève et les savoirs",
-              "explanation": "Selon le triangle didactique (cours 01), on repère quelle relation est en jeu : il sert à repérer quelle relation est en jeu dans un échange. Entre l'élève et les savoirs, on examine ce qu'il construit : en réemployant « au chevreuil », il montre qu'il s'est saisi du mot et de la construction fournis par l'enseignante. L'aide relevait de la relation enseignant-élève ; son réemploi renseigne sur la relation de l'élève aux savoirs."
+              "explanation": "Le triangle didactique est un modèle à trois pôles (savoirs, enseignant·e, élève·s) ; il sert à repérer quelle relation est en jeu dans un échange en classe. L'élève construit ses connaissances : en réemployant « louche », Lina montre qu'elle s'est saisie du mot donné par l'enseignante. L'aide relevait de la relation enseignant·e–élèves ; le réemploi renseigne sur la relation de l'élève aux savoirs."
             },
             {
               "id": "d",
               "text": "La relation pédagogique, quelle que soit la matière",
-              "explanation": "La pédagogie regarde d'abord la relation entre l'enseignant et l'élève, indépendamment du savoir. Le réemploi d'un mot et d'une construction précis concerne au contraire un savoir : c'est la relation de l'élève aux savoirs dans le triangle didactique."
+              "explanation": "La pédagogie regarde d'abord la relation entre l'enseignant et l'élève, quelle que soit la matière. Le réemploi d'un mot précis concerne au contraire un savoir : c'est la relation de l'élève aux savoirs dans le triangle didactique."
             }
           ],
           "level": "essentiel-approfondi",
@@ -16075,7 +16246,7 @@
           "attenteId": "T2"
         }
       ],
-      "qcmRevision": "4f8e46063b645cd9"
+      "qcmRevision": "d57493eed3607509"
     },
     {
       "id": "ORAL-P-F113",
@@ -16711,7 +16882,7 @@
       "steps": [
         {
           "id": "Q1",
-          "prompt": "Dans un échange du cours 03 (exemple de Canut et al., 2012), l'élève dit : « Édouard il couche Nounours. » L'enseignante répond : « Édouard couche Nounours », fait répéter la phrase sans « il », puis dit : « voilà ». Comment lire cette intervention au regard de la langue parlée ?",
+          "prompt": "Dans un échange en classe, un élève dit : « La fille, elle dort. » L'enseignante répond : « La fille dort », fait répéter la phrase sans « elle », puis dit : « voilà ». Comment lire cette intervention au regard de la langue parlée ?",
           "requiresContext": false,
           "correctId": "b",
           "choices": [
@@ -16723,7 +16894,7 @@
             {
               "id": "b",
               "text": "Elle fait répéter une phrase proche de l'écrit au lieu d'une dislocation",
-              "explanation": "L'élève produit une dislocation, construction courante du français parlé. En exigeant la phrase sans « il », l'enseignante lui fait répéter une construction proche du modèle écrit. C'est la lecture que propose le cours 03 à partir de la distinction entre syntaxe parlée et syntaxe écrite."
+              "explanation": "L'élève produit une dislocation, construction courante du français parlé. En exigeant la phrase sans « elle », l'enseignante lui fait répéter une construction proche du modèle écrit : supprimer automatiquement une dislocation impose un modèle écrit à la parole."
             },
             {
               "id": "c",
@@ -16732,20 +16903,17 @@
             },
             {
               "id": "d",
-              "text": "Elle travaille la prononciation du pronom « il » dans la phrase de l'élève",
-              "explanation": "Le plan phonologique concerne les sons et la prononciation. L'intervention porte sur la construction de la phrase : elle supprime le pronom qui reprend « Édouard »."
+              "text": "Elle travaille la prononciation du pronom « elle » dans la phrase de l'élève",
+              "explanation": "Le plan phonologique concerne les sons et la prononciation. L'intervention porte sur la construction de la phrase : elle supprime le pronom qui reprend « la fille »."
             }
           ],
           "level": "essentiel-approfondi",
           "sansChoix": true,
-          "notionId": "L08",
-          "compatibleRevisions": [
-            "fbb3aaa235de4292"
-          ]
+          "notionId": "L08"
         },
         {
           "id": "Q2",
-          "prompt": "Dans un échange du cours 03 (exemple de Canut et al., 2012), l'enseignante vient de valider la phrase « Édouard couche Nounours » par « voilà ». L'élève dit ensuite : « Édouard il baille. » Que peut-on en conclure ?",
+          "prompt": "Dans un échange en classe, un élève dit : « La fille, elle dort. » L'enseignante lui fait répéter « La fille dort », puis dit : « voilà ». Un peu plus tard, l'élève dit : « La fille, elle mange. » Que peut-on en conclure ?",
           "requiresContext": false,
           "correctId": "d",
           "choices": [
@@ -16757,7 +16925,7 @@
             {
               "id": "b",
               "text": "Il faut répéter l'exercice et valider chaque réussite jusqu'à l'acquisition",
-              "explanation": "Répéter et récompenser chaque réussite relève d'une lecture behavioriste. Le cours 03 conclut autrement : l'intervention imposait un modèle écrit à une construction normale de l'oral ; une reprise utile s'appuie sur les moyens actuels de l'enfant."
+              "explanation": "Répéter et récompenser chaque réussite relève d'une lecture behavioriste (renforcement). Ici, le problème n'est pas un manque d'entraînement : la dislocation est une construction normale de l'oral, et l'intervention lui imposait un modèle écrit."
             },
             {
               "id": "c",
@@ -16767,7 +16935,7 @@
             {
               "id": "d",
               "text": "La disparition du pronom n'était qu'un effet momentané de l'intervention",
-              "explanation": "La grille d'analyse de l'étayage (cours 01, étape 4) demande d'examiner la suite de l'échange : ce que l'élève répète, modifie ou réemploie. Ici, l'enfant revient aussitôt à la dislocation : la disparition momentanée du pronom ne manifeste pas une complexification de son oral (cours 03)."
+              "explanation": "La grille d'analyse de l'étayage (étape 4) demande d'examiner la suite de l'échange : ce que l'élève répète, modifie ou réemploie. Ici, l'élève revient aussitôt à la dislocation : il ne réemploie pas la phrase sans pronom, produite seulement sur demande de l'adulte. La disparition du pronom n'était qu'un effet momentané de l'intervention."
             }
           ],
           "level": "essentiel-approfondi",
@@ -16775,7 +16943,7 @@
           "notionId": "L08"
         }
       ],
-      "qcmRevision": "71806f25b4b37912"
+      "qcmRevision": "728432dc29ce5666"
     },
     {
       "id": "ORAL-L-F09",
@@ -17099,23 +17267,26 @@
           ],
           "level": "essentiel-approfondi",
           "sansChoix": true,
-          "notionId": "L15"
+          "notionId": "L15",
+          "compatibleRevisions": [
+            "b1bd6dbc1ce0f466"
+          ]
         },
         {
           "id": "Q2",
-          "prompt": "Au début de son conte, Myriam (2e année) reprend la formule « il était une fois » que l'enseignante vient de dire. Comment interpréter cette réussite dans l'analyse de son récit ?",
+          "prompt": "Au début de son conte, un élève de 2e année reprend la formule « il était une fois » que l'enseignante vient de dire. Comment interpréter cette réussite dans l'analyse de son récit ?",
           "requiresContext": false,
           "correctId": "a",
           "choices": [
             {
               "id": "a",
               "text": "Une entrée dans le conte soutenue par l'enseignante",
-              "explanation": "L'étape 4 de la grille d'analyse (le bloc) demande ce que l'élève répète, modifie ou réemploie, puis l'aide qui peut poursuivre l'apprentissage. L'enseignante a amorcé « il était une fois », que Myriam répète : l'entrée dans le conte est soutenue. L'aide suivante peut alors viser ce qui reste à construire, les personnages identifiables, le problème et la fin."
+              "explanation": "L'étape 4 de la grille d'analyse (le bloc) demande ce que l'élève répète, modifie ou réemploie, puis l'aide qui peut poursuivre l'apprentissage. L'enseignante a amorcé « il était une fois », que l'élève répète : l'entrée dans le conte est soutenue. L'aide suivante peut alors viser ce que l'élève ne fait pas encore seul dans son récit."
             },
             {
               "id": "b",
-              "text": "La preuve qu'elle maitrise déjà l'organisation narrative du conte",
-              "explanation": "Une formule d'ouverture ne donne pas une organisation narrative : le cours 04 relève que les personnages et les relations entre les actions restent difficiles à suivre. Conclure à une maitrise va plus loin que les faits."
+              "text": "La preuve qu'il maitrise déjà l'organisation narrative du conte",
+              "explanation": "Une formule d'ouverture ne donne pas une organisation narrative. Un récit oral suppose des personnages, des actions liées par un rapport logique, une clôture et une complétude : rien ne montre ici que l'élève les construit. Conclure à une maitrise va plus loin que les faits."
             },
             {
               "id": "c",
@@ -17124,19 +17295,16 @@
             },
             {
               "id": "d",
-              "text": "Un oral récité : elle redit une formule apprise par cœur",
-              "explanation": "L'oral récité est la mise en voix d'un texte écrit mémorisé. Myriam reprend une formule d'ouverture amorcée par l'enseignante dans un conte qu'elle produit : c'est une aide reçue dans son récit, pas un texte récité."
+              "text": "Un oral récité : il redit une formule apprise par cœur",
+              "explanation": "L'oral récité est la mise en voix d'un texte écrit mémorisé. Ici, l'élève reprend une formule d'ouverture amorcée par l'enseignante dans un conte qu'il produit : c'est une aide reçue dans son récit, pas un texte récité."
             }
           ],
           "level": "essentiel-approfondi",
           "sansChoix": true,
-          "notionId": "L15",
-          "compatibleRevisions": [
-            "ba90437409004923"
-          ]
+          "notionId": "L15"
         }
       ],
-      "qcmRevision": "b1bd6dbc1ce0f466"
+      "qcmRevision": "3757643a13da2341"
     },
     {
       "id": "ORAL-L-F16",
@@ -17314,6 +17482,10 @@
           "location": "Pont : 3.2.2 Concepts liés à l'oral : L'oral comme outil pour apprendre et l'oral comme objet d'enseignement — « L'objectif effectivement travaillé permet de conclure ; le seul fait de parler ne suffit pas. »"
         },
         {
+          "file": "REVISION_BP1-18FRA_S1_Oral.docx",
+          "location": "3.2.4 Savoirs procéduraux : Grille d'analyse d'un dispositif, repère 3 « Situer l'oral » — « Identifie le type d'oral (spontané, planifié, récité) et dis si l'oral est outil, objet ou les deux, en reliant ta conclusion à l'objectif. »"
+        },
+        {
           "file": "SYNTHESE_BP1-18FRA_S1_COURS_04.docx",
           "location": "2 Trois types d'oraux à travailler : Distinguer le mode de préparation de la parole ; Méthode : analyser un dispositif d'oral"
         },
@@ -17385,9 +17557,10 @@
               "explanation": "Un même dispositif peut remplir les deux fonctions, mais seulement si une capacité orale est visée. Le seul fait de parler ne suffit pas : sans objectif explicite, l'oral présent partout risque de n'être travaillé nulle part."
             }
           ],
-          "level": "essentiel-approfondi",
+          "level": "essentiel",
           "sansChoix": true,
-          "notionId": "L18"
+          "notionId": "L18",
+          "attenteId": "P3"
         }
       ],
       "qcmRevision": "d18624e24215e7f9"
@@ -17685,7 +17858,15 @@
     },
     {
       "exerciseId": "ORAL-P-F62",
+      "stepId": "Q7"
+    },
+    {
+      "exerciseId": "ORAL-P-F62",
       "stepId": "Q6"
+    },
+    {
+      "exerciseId": "ORAL-P-F62",
+      "stepId": "Q8"
     },
     {
       "exerciseId": "ORAL-P-F96",
@@ -17693,7 +17874,7 @@
     },
     {
       "exerciseId": "ORAL-P-F70",
-      "stepId": "Q5"
+      "stepId": "Q6"
     },
     {
       "exerciseId": "ORAL-P-F96",
@@ -17702,6 +17883,10 @@
     {
       "exerciseId": "ORAL-P-F86",
       "stepId": "Q1"
+    },
+    {
+      "exerciseId": "ORAL-P-F87",
+      "stepId": "Q3"
     },
     {
       "exerciseId": "ORAL-P-F107",
@@ -17956,6 +18141,10 @@
       "stepId": "Q2"
     },
     {
+      "exerciseId": "ORAL-L-F18",
+      "stepId": "Q3"
+    },
+    {
       "exerciseId": "ORAL-P-F62",
       "stepId": "Q1"
     },
@@ -18166,6 +18355,10 @@
     {
       "exerciseId": "ORAL-P-F82",
       "stepId": "Q2"
+    },
+    {
+      "exerciseId": "ORAL-P-F70",
+      "stepId": "Q5"
     },
     {
       "exerciseId": "ORAL-P-F74",
@@ -18876,10 +19069,6 @@
       "stepId": "Q1"
     },
     {
-      "exerciseId": "ORAL-L-F18",
-      "stepId": "Q3"
-    },
-    {
       "exerciseId": "ORAL-L-F19",
       "stepId": "Q1"
     },
@@ -19268,6 +19457,12 @@
       "weight": 1
     },
     {
+      "id": "A4.2",
+      "label": "Évaluer : situer l'élève par rapport à lui-même et relier les constats à une prochaine aide",
+      "operation": "dire par rapport à quoi on situe l'élève et à quoi sert l'évaluation",
+      "weight": 1
+    },
+    {
       "id": "A5",
       "label": "Caractéristiques des récits oraux",
       "operation": "nommer, classer une observation dans une composante, situer un passage dans le schéma, distinguer schéma et modèle",
@@ -19306,7 +19501,7 @@
   ],
   "attentesSource": {
     "id": "GRILLE_BP1-18FRA_S1_ORAL",
-    "version": "v11"
+    "version": "v12"
   },
-  "bankRevision": "a1cd4ea25831"
+  "bankRevision": "8592f21c1edf"
 }
