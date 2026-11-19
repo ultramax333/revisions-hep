@@ -15289,8 +15289,8 @@
             },
             {
               "id": "b",
-              "text": "L'attention portée à la voix de celui qui parle : sa diction, son débit, son volume et son intonation.",
-              "explanation": "La voix relève du paraverbal. L'écoute porte sur la personne et sur le message à comprendre, pas seulement sur la manière dont il est dit."
+              "text": "L'attention portée uniquement à la voix de celui qui parle (diction, débit, volume, intonation), sans chercher à comprendre ce qu'il dit.",
+              "explanation": "La voix relève du paraverbal : on la perçoit, mais écouter, c'est viser la personne et son message pour le comprendre. Ne s'attacher qu'à la voix, sans chercher le sens, n'est pas écouter."
             },
             {
               "id": "c",
@@ -15338,7 +15338,10 @@
           "level": "essentiel",
           "sansChoix": true,
           "notionId": "N121",
-          "attenteId": "O6"
+          "attenteId": "O6",
+          "compatibleRevisions": [
+            "187a0cb7e27c5ea5"
+          ]
         },
         {
           "id": "Q4",
@@ -15370,7 +15373,10 @@
           "level": "essentiel-approfondi",
           "sansChoix": true,
           "notionId": "N123",
-          "attenteId": "O6"
+          "attenteId": "O6",
+          "compatibleRevisions": [
+            "187a0cb7e27c5ea5"
+          ]
         },
         {
           "id": "Q5",
@@ -15402,10 +15408,13 @@
           "level": "essentiel-approfondi",
           "sansChoix": true,
           "notionId": "N155",
-          "attenteId": "O6"
+          "attenteId": "O6",
+          "compatibleRevisions": [
+            "187a0cb7e27c5ea5"
+          ]
         }
       ],
-      "qcmRevision": "187a0cb7e27c5ea5"
+      "qcmRevision": "10550a63e983f1f2"
     },
     {
       "id": "ORAL-P-F101",
@@ -19503,5 +19512,5 @@
     "id": "GRILLE_BP1-18FRA_S1_ORAL",
     "version": "v12"
   },
-  "bankRevision": "8592f21c1edf"
+  "bankRevision": "0cfff48a7da5"
 }
