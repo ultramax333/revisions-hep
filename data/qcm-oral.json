@@ -5422,7 +5422,7 @@
           ],
           "level": "essentiel-approfondi",
           "sansChoix": true,
-          "attenteId": "O5"
+          "attenteId": "O5.1"
         },
         {
           "id": "Q2",
@@ -19401,7 +19401,7 @@
     },
     {
       "id": "O5.1",
-      "label": "Cas simples de classement du non-verbal",
+      "label": "Cas simples de classement d'un comportement (verbal, non-verbal)",
       "operation": "classer un comportement évident",
       "weight": 2
     },
@@ -19528,7 +19528,7 @@
   ],
   "attentesSource": {
     "id": "GRILLE_BP1-18FRA_S1_ORAL",
-    "version": "v13"
+    "version": "v14"
   },
-  "bankRevision": "12e1aa4e5b8c"
+  "bankRevision": "c2499a9c9502"
 }
