@@ -16589,7 +16589,8 @@
           ],
           "level": "essentiel-approfondi",
           "sansChoix": true,
-          "notionId": "L01"
+          "notionId": "L01",
+          "attenteId": "P3"
         }
       ],
       "qcmRevision": "650edbf1cf881f5a"
@@ -16659,7 +16660,8 @@
           ],
           "level": "essentiel-approfondi",
           "sansChoix": true,
-          "notionId": "L02"
+          "notionId": "L02",
+          "attenteId": "T2"
         }
       ],
       "qcmRevision": "75f0c250ced54050"
@@ -16737,7 +16739,8 @@
           ],
           "level": "essentiel",
           "sansChoix": true,
-          "notionId": "L05"
+          "notionId": "L05",
+          "attenteId": "L2"
         }
       ],
       "qcmRevision": "c2736e0d404d1281"
@@ -16815,7 +16818,8 @@
           ],
           "level": "essentiel-approfondi",
           "sansChoix": true,
-          "notionId": "L07"
+          "notionId": "L07",
+          "attenteId": "L7"
         },
         {
           "id": "Q2",
@@ -16846,7 +16850,8 @@
           ],
           "level": "essentiel-approfondi",
           "sansChoix": true,
-          "notionId": "L07"
+          "notionId": "L07",
+          "attenteId": "L4"
         }
       ],
       "qcmRevision": "b01f1bd686dce889"
@@ -16920,7 +16925,8 @@
           ],
           "level": "essentiel-approfondi",
           "sansChoix": true,
-          "notionId": "L08"
+          "notionId": "L08",
+          "attenteId": "L4"
         },
         {
           "id": "Q2",
@@ -16951,7 +16957,8 @@
           ],
           "level": "essentiel-approfondi",
           "sansChoix": true,
-          "notionId": "L08"
+          "notionId": "L08",
+          "attenteId": "L4"
         }
       ],
       "qcmRevision": "728432dc29ce5666"
@@ -17021,7 +17028,8 @@
           ],
           "level": "essentiel",
           "sansChoix": true,
-          "notionId": "L09"
+          "notionId": "L09",
+          "attenteId": "O6"
         }
       ],
       "qcmRevision": "e7a1afeaa0457c86"
@@ -17103,7 +17111,8 @@
           ],
           "level": "essentiel-approfondi",
           "sansChoix": true,
-          "notionId": "L11"
+          "notionId": "L11",
+          "attenteId": "L5"
         }
       ],
       "qcmRevision": "85b241d785086cb2"
@@ -17177,7 +17186,8 @@
           ],
           "level": "essentiel-approfondi",
           "sansChoix": true,
-          "notionId": "L13"
+          "notionId": "L13",
+          "attenteId": "A5"
         },
         {
           "id": "Q2",
@@ -17208,7 +17218,8 @@
           ],
           "level": "essentiel-approfondi",
           "sansChoix": true,
-          "notionId": "L13"
+          "notionId": "L13",
+          "attenteId": "P2"
         }
       ],
       "qcmRevision": "3faa06a1f728131a"
@@ -17279,6 +17290,7 @@
           "level": "essentiel-approfondi",
           "sansChoix": true,
           "notionId": "L15",
+          "attenteId": "P2",
           "compatibleRevisions": [
             "b1bd6dbc1ce0f466"
           ]
@@ -17312,7 +17324,8 @@
           ],
           "level": "essentiel-approfondi",
           "sansChoix": true,
-          "notionId": "L15"
+          "notionId": "L15",
+          "attenteId": "P2"
         }
       ],
       "qcmRevision": "3757643a13da2341"
@@ -17461,7 +17474,8 @@
           ],
           "level": "essentiel-approfondi",
           "sansChoix": true,
-          "notionId": "L17"
+          "notionId": "L17",
+          "attenteId": "O3.1"
         }
       ],
       "qcmRevision": "f721e3d8db274420"
@@ -17539,7 +17553,8 @@
           ],
           "level": "essentiel-approfondi",
           "sansChoix": false,
-          "notionId": "L18"
+          "notionId": "L18",
+          "attenteId": "O1"
         },
         {
           "id": "Q3",
@@ -17769,7 +17784,8 @@
           ],
           "level": "essentiel-approfondi",
           "sansChoix": false,
-          "notionId": "L20"
+          "notionId": "L20",
+          "attenteId": "L7"
         }
       ],
       "qcmRevision": "73f3f85bad1069d0"
@@ -19512,7 +19528,7 @@
   ],
   "attentesSource": {
     "id": "GRILLE_BP1-18FRA_S1_ORAL",
-    "version": "v12"
+    "version": "v13"
   },
-  "bankRevision": "4dd606d73669"
+  "bankRevision": "12e1aa4e5b8c"
 }
