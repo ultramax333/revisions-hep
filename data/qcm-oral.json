@@ -9353,7 +9353,7 @@
             {
               "id": "c",
               "text": "La compétence technique qui permet de bien parler devant un groupe.",
-              "explanation": "La technique n'est qu'une part : le rapport à l'oral inclut aussi les valeurs, les émotions et les relations."
+              "explanation": "C'est une compétence, pas une croyance : le rapport à l'oral porte sur ce qu'une personne croit de la parole et de l'écoute, et non sur sa maîtrise technique."
             },
             {
               "id": "d",
@@ -9366,7 +9366,7 @@
           "attenteId": "O3.2"
         }
       ],
-      "qcmRevision": "98bd48a3ac434087"
+      "qcmRevision": "e05da1c8f6f05928"
     },
     {
       "id": "ORAL-P-F55",
@@ -13774,7 +13774,10 @@
           "level": "essentiel",
           "sansChoix": true,
           "notionId": "N89",
-          "attenteId": "O1"
+          "attenteId": "O1",
+          "compatibleRevisions": [
+            "20f2a9e6d70e6fef"
+          ]
         },
         {
           "id": "Q2",
@@ -13799,17 +13802,14 @@
             },
             {
               "id": "d",
-              "text": "Le matériel et l'aménagement de la classe : tables, affichages, images à disposition.",
-              "explanation": "La disposition matérielle peut modifier les échanges, mais la situation de communication ne s'y réduit pas : les interlocuteurs, les règles et le déroulement comptent aussi."
+              "text": "Le matériel mis à disposition des élèves : images, affiches et objets à manipuler.",
+              "explanation": "Le matériel est un support : il s'examine avec les aides, à une autre étape de la méthode d'analyse, et le modèle des genres oraux le range dans une composante distincte de la situation de communication. Décrire la situation, c'est dire qui parle, à qui, de quelle manière, selon quel déroulement et avec quelles règles."
             }
           ],
           "level": "approfondissement",
           "sansChoix": true,
           "notionId": "N89",
-          "attenteId": "O1",
-          "compatibleRevisions": [
-            "ae3ba9739738c392"
-          ]
+          "attenteId": "O1"
         },
         {
           "id": "Q3",
@@ -13843,11 +13843,12 @@
           "notionId": "N89",
           "attenteId": "O1",
           "compatibleRevisions": [
-            "ae3ba9739738c392"
+            "ae3ba9739738c392",
+            "20f2a9e6d70e6fef"
           ]
         }
       ],
-      "qcmRevision": "20f2a9e6d70e6fef"
+      "qcmRevision": "900e84c1563a27a7"
     },
     {
       "id": "ORAL-P-F90",
@@ -15871,8 +15872,8 @@
             },
             {
               "id": "d",
-              "text": "Pour contrôler qu'il connait le sens de pomme et de gomme, avant de travailler la prononciation.",
-              "explanation": "Connaitre le sens des deux mots est un préalable, mais ce n'est pas ce que vise cet ordre : montrer la bonne image au mot entendu contrôle surtout que la différence de sons est perçue, avant d'en demander la production."
+              "text": "Parce que son erreur porte sur le sens : l'image lui apprend d'abord ce que désigne le mot gomme, la prononciation vient ensuite.",
+              "explanation": "Une erreur de sens relèverait du lexique. Or l'enseignante choisit une paire minimale, deux mots qui ne diffèrent que par un son (/p/ et /g/) : cet outil sert à faire entendre, puis produire, le contraste entre deux sons confondus. En faisant montrer l'image du mot entendu, elle contrôle que l'élève perçoit ce contraste avant de lui demander de le produire."
             }
           ],
           "level": "essentiel-approfondi",
@@ -15912,11 +15913,12 @@
           "notionId": "N160",
           "attenteId": "L5",
           "compatibleRevisions": [
-            "4aa6f61e14728ee0"
+            "4aa6f61e14728ee0",
+            "becaf14b5acd5984"
           ]
         }
       ],
-      "qcmRevision": "becaf14b5acd5984"
+      "qcmRevision": "3df6683aa61afdb5"
     },
     {
       "id": "ORAL-P-F108",
@@ -16560,7 +16562,7 @@
       "steps": [
         {
           "id": "Q1",
-          "prompt": "Pour analyser une situation d'oral, on part de l'objectif et de la tâche. Selon le fil conducteur du bloc, à quoi les relie-t-on ensuite ?",
+          "prompt": "Pour analyser une situation d'oral, on part de l'objectif et de la tâche. Selon le fil conducteur du bloc, à quoi les relie-t-on en premier ?",
           "requiresContext": false,
           "correctId": "c",
           "choices": [
@@ -16590,7 +16592,7 @@
           "notionId": "L01"
         }
       ],
-      "qcmRevision": "10fa2c247456fcde"
+      "qcmRevision": "650edbf1cf881f5a"
     },
     {
       "id": "ORAL-L-F02",
@@ -19512,5 +19514,5 @@
     "id": "GRILLE_BP1-18FRA_S1_ORAL",
     "version": "v12"
   },
-  "bankRevision": "0cfff48a7da5"
+  "bankRevision": "4dd606d73669"
 }
