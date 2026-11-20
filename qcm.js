@@ -32,6 +32,25 @@
   // Une banque sans essentiel-approfondi garde ses deux niveaux (Essentiel / Tout), comme en v25.
   const TWO_LEVELS = ['essentiel', 'approfondissement'], THREE_LEVELS = ['essentiel', 'essentiel-approfondi', 'approfondissement'];
   const LEVEL_NAMES = { essentiel: 'Essentiel', 'essentiel-approfondi': 'Essentiel approfondi', approfondissement: 'Approfondissement' };
+  // v43 : le format se décide par cours. Un cours est « en étages » quand la majorité de ses questions sont dans des
+  // familles qui ont au moins une question « essentiel-approfondi » ; sinon il garde l'ancien format (essentiel, approfondissement).
+  // threeTiers dit seulement que la collection a au moins un cours en étages (les commandes à trois étages) ; c'est ce format
+  // par cours qui décide des légendes (« une question par savoir ») et de la ligne « Ancien format ».
+  let tieredCourses = new Set();
+  function computeFormats() {
+    const tally = new Map();
+    for (const q of bank.exercises) {
+      const key = courseKey(q); if (!key) continue;
+      const t = tally.get(key) || { all: 0, tiered: 0 };
+      t.all += q.steps.length; if (q.steps.some(step => step.level === 'essentiel-approfondi')) t.tiered += q.steps.length;
+      tally.set(key, t);
+    }
+    tieredCourses = new Set([...tally].filter(([, t]) => t.tiered * 2 > t.all).map(([key]) => key));
+  }
+  const courseTiered = key => tieredCourses.has(key);
+  const OLD_FORMAT_NOTE = 'Ancien format : pas encore trié en étages.';
+  const mixedFormats = () => threeTiers && groupDefinitions().some(g => g.kind !== 'liens' && !courseTiered(g.key));
+  const tieredCourseNames = () => groupDefinitions().filter(g => g.kind !== 'liens' && courseTiered(g.key)).map(g => (bank.blocks?.find(block => block.key === g.block)?.label ? bank.blocks.find(block => block.key === g.block).label + ' · ' : '') + g.label);
   const inLevel = (step, filter = levelFilter) => !levelsEnabled || filter === 'tout' || step.level === 'essentiel' || (threeTiers && filter === 'approfondi' && step.level === 'essentiel-approfondi');
   // « Anciens examens » ignore l'étage choisi quand la banque a trois étages (AGENTS §2).
   const ancientAllTiers = () => threeTiers && ancientOnly;
@@ -284,7 +303,9 @@
   function restoreAncientChoice() {
     try { ancientOnly = JSON.parse(repo.state.drafts[selectedAncientKey()]?.text || 'false') === true; } catch (_) { ancientOnly = false; }
   }
-  const ancientBadge = step => step.ancienExamen ? '<span class="pill">Ancien examen</span>' : '';
+  // v43 : « adapté » quand l'énoncé ou la forme des choix a changé par rapport à l'ancien examen (champ public ancienExamen.adapte).
+  const ancientLabel = step => 'Ancien examen' + (step.ancienExamen?.adapte === true ? ' · adapté' : '');
+  const ancientBadge = step => step.ancienExamen ? `<span class="pill">${ancientLabel(step)}</span>` : '';
   // v23 : poids du savoir (REGLES §5.1), lu dans bank.attentes ; aucune valeur sans rattachement.
   // Un avis sur le niveau ne modifie jamais ce poids.
   let attenteById = new Map();
@@ -314,7 +335,7 @@
     const groups = [1, 2, 3].map(w => [w, list.filter(e => e.a.weight === w)]).filter(([, entries]) => entries.length);
     return `<details class="know-box"><summary><span class="know-title">Ce qu’il faut savoir</span><span class="know-summary">${list.length} savoir${list.length > 1 ? 's' : ''} · ${ess} ${noun(ess)}</span></summary>${groups.map(([w, entries]) => `<div class="know-group">${weightLabel(w)}<ul class="know-list">${entries.map(e => `<li><span class="know-label">${esc(e.a.label)}</span><span class="know-count">${e.ess} ${noun(e.ess)}${threeTiers ? `${e.deep ? ` · +${e.deep} avec « + Approfondir »` : ''}${e.all - e.ess - e.deep ? ` · +${e.all - e.ess - e.deep} avec « Tout le bloc »` : ''}` : e.all > e.ess ? ` · +${e.all - e.ess} avec « Tout »` : ''}</span><span class="know-op">${esc(e.a.operation)}</span></li>`).join('')}</ul></div>`).join('')}<p class="help-text know-scope">Comptes de ce parcours, ${esc(scope)}.${unweighted ? ` ${unweighted} question${unweighted > 1 ? 's' : ''} sans poids.` : ''} Les poids viennent du cadre et de la synthèse de révision ; tes avis sous chaque question aident à les vérifier.</p></details>`;
   }
-  const snapshotPrompt = step => (step.ancienExamen ? 'Ancien examen\n\n' : '') + step.prompt;
+  const snapshotPrompt = step => (step.ancienExamen ? ancientLabel(step) + '\n\n' : '') + step.prompt;
   const emptySelection = () => unseenOnly ? 'Tu as déjà répondu à toutes les questions de ce choix. Désactive « Seulement les questions pas encore vues » pour les revoir.' : ancientOnly ? 'Aucune question d’ancien examen ne correspond à ce cours ou mélange, au niveau et au mode choisis. Désactive Anciens examens, choisis ' + (threeTiers ? '« Tout le bloc »' : 'Tout') + ' ou le mode QCM.' : 'Aucune question disponible pour ce parcours. Choisis ' + (threeTiers ? '« Tout le bloc »' : 'Tout') + ' ou le mode QCM.';
   function writeNavigation(key, value) {
     ingestLocal();
@@ -343,7 +364,7 @@
   // l'interrupteur « + Approfondir ». Chaque choix a sa légende et son nombre de questions, toujours visibles.
   function tierControls(plural) {
     const all = levelFilter === 'tout', base = !all, deep = levelFilter === 'approfondi', muted = ancientAllTiers();
-    return `<div class="tier-row${muted ? ' tier-row-muted' : ''}"><span class="segment-label" id="qcm-level-label">Niveau</span><div class="tier-nest tier-outer${all ? ' is-chosen' : ''}" role="group" aria-labelledby="qcm-level-label"><button type="button" class="tier-pick" data-level-filter="tout" aria-pressed="${all}"><span class="tier-dot" aria-hidden="true"></span><span class="tier-name">Tout le bloc</span><span class="tier-legend">tout, avec « pour aller plus loin » · <b>${plural(levelCount('tout'))}</b></span></button><div class="tier-nest tier-inner${base ? ' is-chosen' : ''}"><button type="button" class="tier-pick" data-level-filter="essentiel" aria-pressed="${base}"><span class="tier-dot" aria-hidden="true"></span><span class="tier-name">Essentiel</span><span class="tier-legend">la base : une question par savoir · <b>${plural(levelCount('essentiel'))}</b></span></button><button type="button" class="switch-row tier-addon" role="switch" aria-checked="${deep}" data-action="tier-deepen"><span class="switch-text"><span class="tier-name">+ Approfondir</span><span class="tier-legend">le détail des savoirs centraux · <b>${plural(levelCount('approfondi'))}</b></span></span><span class="switch-track" aria-hidden="true"><span class="switch-knob"></span></span></button></div></div>${muted ? '<p class="help-text tier-note">« Anciens examens » est activé : il montre ses questions de tous les étages.</p>' : ''}</div>`;
+    return `<div class="tier-row${muted ? ' tier-row-muted' : ''}"><span class="segment-label" id="qcm-level-label">Niveau</span><div class="tier-nest tier-outer${all ? ' is-chosen' : ''}" role="group" aria-labelledby="qcm-level-label"><button type="button" class="tier-pick" data-level-filter="tout" aria-pressed="${all}"><span class="tier-dot" aria-hidden="true"></span><span class="tier-name">Tout le bloc</span><span class="tier-legend">tout, avec « pour aller plus loin » · <b>${plural(levelCount('tout'))}</b></span></button><div class="tier-nest tier-inner${base ? ' is-chosen' : ''}"><button type="button" class="tier-pick" data-level-filter="essentiel" aria-pressed="${base}"><span class="tier-dot" aria-hidden="true"></span><span class="tier-name">Essentiel</span><span class="tier-legend">la base${mixedFormats() ? '' : ' : une question par savoir'} · <b>${plural(levelCount('essentiel'))}</b></span></button><button type="button" class="switch-row tier-addon" role="switch" aria-checked="${deep}" data-action="tier-deepen"><span class="switch-text"><span class="tier-name">+ Approfondir</span><span class="tier-legend">le détail des savoirs centraux · <b>${plural(levelCount('approfondi'))}</b></span></span><span class="switch-track" aria-hidden="true"><span class="switch-knob"></span></span></button></div></div>${muted ? '<p class="help-text tier-note">« Anciens examens » est activé : il montre ses questions de tous les étages.</p>' : ''}${mixedFormats() ? `<p class="help-text tier-note">Une question par savoir : seulement ${esc(tieredCourseNames().join(', ') || 'les cours déjà triés')}. Les autres cours gardent l’ancien format.</p>` : ''}</div>`;
   }
   // Sur l'écran d'une question : les réglages restent accessibles, repliés derrière un résumé lisible ;
   // ouverts, chaque option garde sa légende.
@@ -742,7 +763,7 @@
       const label = group.label;
       const courseAlias = collection.id === 'shs-qcm-s1' ? label.replace(/\s+/g, '') : `Cours${key}`;
       const haystack = [bank.blocks?.find(block => block.key === group.block)?.label, label, courseAlias, ...exercises.map(q => { const family = bank.families.find(f => f.id === q.familyId), ref = bank.courseReferences[q.referenceId || q.course]; return [family?.title, family?.theme, q.title, q.prompt, ...q.hints, ...q.steps.map(s => s.prompt), ref?.date].join(' '); })].join(' ');
-      return { key, label, block: group.block, kind: group.kind, queue, date: dates[0] || '99999999', match: !query || oralNavigation.normalize(haystack).includes(query) };
+      return { key, label, block: group.block, kind: group.kind, tiered: courseTiered(key), queue, date: dates[0] || '99999999', match: !query || oralNavigation.normalize(haystack).includes(query) };
     }).filter(course => course.match);
     const total = allEntries().filter(item => !unseenOnly || !stepDone(item)).length, mix = readMix();
     const errors = errorsQueue().length, unseenSuffix = n => !unseenOnly ? '' : ' pas encore vu' + (withoutChoices ? 'e' : '') + (n > 1 ? 's' : '');
@@ -750,7 +771,7 @@
     return `<div class="quiz-help-entry"><a class="btn quiz-help-button" href="aide.html">Comment ça marche ?</a></div><section class="qcm-settings" aria-label="Réglages">${modeControls()}${levelControls()}</section>${emptyPathMessage ? `<p class="notice" role="status">${esc(emptyPathMessage)}</p>` : ''}<section class="qcm-mix-start" aria-label="Toutes les questions"><div><button class="btn primary btn-large" data-action="mix" ${total ? '' : 'disabled'}><span aria-hidden="true">▶</span> Tout mélanger</button><p class="help-text">${total ? total + ' ' + questionLabel() + unseenSuffix(total) + ' en ordre aléatoire. Réponses conservées.' : esc(emptySelection())}</p></div>${mix ? '<button class="btn ghost" data-action="new-mix">Nouveau mélange</button>' : ''}</section>${GROUPED_COURSES ? errorsCard : ''}
       <section class="qcm-subject" aria-labelledby="qcm-subject-title"><h1 id="qcm-subject-title">${esc(collection.subject || 'Français')}</h1><section class="qcm-block" aria-labelledby="qcm-block-title"><h2 id="qcm-block-title">${esc(collection.block || 'Bloc oral')}</h2><p class="hero-description">${withoutChoices ? 'Écris ou pense ta réponse, puis affiche la réponse attendue et déclare « Je savais » ou « À revoir ». Les résultats QCM restent séparés.' : 'Des QCM avec une correction expliquée, à ton rythme.'}${writingHome && !withoutChoices ? ' Les exercices rédigés du bloc oral ont aussi leur <a href="oral.html">accès direct à la rédaction</a>.' : ''}</p>
       <form class="oral-tools qcm-home-filters" id="qcm-home-filters"><label class="oral-field" for="qcm-search">Rechercher un cours ou une notion<input class="text-input" id="qcm-search" type="search" value="${esc(search)}" placeholder="${esc(collection.searchPlaceholder || 'Ex. : Cours 1, étayage, récit…')}"></label><button class="btn secondary" type="submit">Rechercher</button>${search ? '<button class="btn ghost" type="button" data-action="clear-search">Tout afficher</button>' : ''}</form>
-      <p class="help-text oral-result-count" id="qcm-home-results" role="status" tabindex="-1">${courses.length} ${groupDefinitions().some(g => g.kind === 'liens') ? 'parcours' : 'cours'} · ${courses.reduce((n, course) => n + course.queue.length, 0)} ${questionLabel()}${unseenSuffix(2)}</p><div class="exercise-grid qcm-courses" role="group" aria-label="Parcours par cours">${renderCourseBlocks(courses, course => { const stats = courseStats(course.queue); return `<article class="course-card exercise-tile${course.kind === 'liens' ? ' course-card-liens' : ''}"><h3>${esc(course.label)}</h3>${course.kind === 'liens' ? '<p class="help-text">Des questions qui relient deux cours du bloc, comme à l’examen.</p>' : ''}<p class="help-text">${course.queue.length} ${questionLabel()}${unseenSuffix(course.queue.length)}${stats.answered ? ` · ${stats.answered} ${withoutChoices ? 'autoévaluation' : 'réponse'}${stats.answered > 1 ? 's' : ''} enregistrée${stats.answered > 1 ? 's' : ''}` : ''}</p><span class="course-progress" aria-hidden="true"><span style="width:${course.queue.length ? Math.round(100 * stats.answered / course.queue.length) : 0}%"></span></span><button class="btn primary" data-course="${esc(course.key)}" ${course.queue.length ? '' : 'disabled'} aria-label="${esc(course.queue.length ? (stats.answered || readCourseCursors()[course.key] ? 'Reprendre' : 'Commencer') + ' ' + course.label : 'Aucune question disponible pour ' + course.label + '. ' + emptySelection())}">${course.queue.length ? (stats.answered || readCourseCursors()[course.key] ? 'Reprendre' : 'Commencer') : 'Aucune question'}</button>${knowBox(course)}</article>`; }) || '<p class="empty-state">Aucun cours ne correspond à cette recherche.</p>'}</div></section></section>
+      <p class="help-text oral-result-count" id="qcm-home-results" role="status" tabindex="-1">${courses.length} ${groupDefinitions().some(g => g.kind === 'liens') ? 'parcours' : 'cours'} · ${courses.reduce((n, course) => n + course.queue.length, 0)} ${questionLabel()}${unseenSuffix(2)}</p><div class="exercise-grid qcm-courses" role="group" aria-label="Parcours par cours">${renderCourseBlocks(courses, course => { const stats = courseStats(course.queue); return `<article class="course-card exercise-tile${course.kind === 'liens' ? ' course-card-liens' : ''}"><h3>${esc(course.label)}</h3>${threeTiers && !course.tiered && course.kind !== 'liens' && !course.blockNoted ? `<p class="help-text tier-old-note">${OLD_FORMAT_NOTE}</p>` : ''}${course.kind === 'liens' ? '<p class="help-text">Des questions qui relient deux cours du bloc, comme à l’examen.</p>' : ''}<p class="help-text">${course.queue.length} ${questionLabel()}${unseenSuffix(course.queue.length)}${stats.answered ? ` · ${stats.answered} ${withoutChoices ? 'autoévaluation' : 'réponse'}${stats.answered > 1 ? 's' : ''} enregistrée${stats.answered > 1 ? 's' : ''}` : ''}</p><span class="course-progress" aria-hidden="true"><span style="width:${course.queue.length ? Math.round(100 * stats.answered / course.queue.length) : 0}%"></span></span><button class="btn primary" data-course="${esc(course.key)}" ${course.queue.length ? '' : 'disabled'} aria-label="${esc(course.queue.length ? (stats.answered || readCourseCursors()[course.key] ? 'Reprendre' : 'Commencer') + ' ' + course.label : 'Aucune question disponible pour ' + course.label + '. ' + emptySelection())}">${course.queue.length ? (stats.answered || readCourseCursors()[course.key] ? 'Reprendre' : 'Commencer') : 'Aucune question'}</button>${knowBox(course)}</article>`; }) || '<p class="empty-state">Aucun cours ne correspond à cette recherche.</p>'}</div></section></section>
       ${window.HEPQuickUI?.group() || ''}
       ${writingHome && !withoutChoices ? '<p class="notice">Le résultat des QCM mesure la reconnaissance d’une réponse. La rédaction et sa justification restent à travailler séparément.</p>' : ''}`;
   }
@@ -758,7 +779,9 @@
     if (!bank.blocks) return courses.map(card).join('');
     return bank.blocks.map(block => {
       const entries = courses.filter(course => course.block === block.key);
-      return entries.length ? `<section class="qcm-discipline" aria-label="${esc(block.label)}"><h3>${esc(block.label)}</h3><div class="exercise-grid">${entries.map(card).join('')}</div></section>` : '';
+      const allOld = threeTiers && entries.length > 0 && entries.every(course => !course.tiered && course.kind !== 'liens');
+      if (allOld) entries.forEach(course => { course.blockNoted = true; });
+      return entries.length ? `<section class="qcm-discipline" aria-label="${esc(block.label)}"><h3>${esc(block.label)}</h3>${allOld ? `<p class="help-text tier-old-note">${OLD_FORMAT_NOTE}</p>` : ''}<div class="exercise-grid">${entries.map(card).join('')}</div></section>` : '';
     }).join('');
   }
   function scSnapshot(q, step, run) {
@@ -1181,6 +1204,7 @@
       const allLevels = bank.exercises.flatMap(q => q.steps.map(step => step.level));
       threeTiers = GROUPED_COURSES && allLevels.every(level => THREE_LEVELS.includes(level)) && allLevels.includes('essentiel-approfondi');
       levelsEnabled = threeTiers || (GROUPED_COURSES && allLevels.every(level => TWO_LEVELS.includes(level)));
+      computeFormats();
       if (levelsEnabled) restoreLevelChoice();
       HEPDrive.init(repo, status, () => { freezeFirsts(); if (view !== 'exercise') render(); else refreshRunControls(); }); repo.save();
       await freezeFirsts(); route();

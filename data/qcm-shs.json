@@ -5,10 +5,6 @@
   "module": "BP1-18SHS",
   "blocks": [
     {
-      "key": "introduction",
-      "label": "Introduction"
-    },
-    {
       "key": "histoire",
       "label": "Histoire"
     },
@@ -18,19 +14,24 @@
     },
     {
       "key": "ecr",
-      "label": "ECR"
+      "label": "Éthique et cultures religieuses"
     }
   ],
   "courseGroups": [
     {
-      "key": "1",
-      "label": "Cours d'introduction",
-      "block": "introduction"
+      "key": "6",
+      "label": "Introduction",
+      "block": "histoire"
     },
     {
       "key": "2",
       "label": "Cours 1",
       "block": "histoire"
+    },
+    {
+      "key": "1",
+      "label": "Introduction",
+      "block": "geographie"
     },
     {
       "key": "3",
@@ -43,14 +44,32 @@
       "block": "geographie"
     },
     {
+      "key": "8",
+      "label": "Cours 3",
+      "block": "geographie"
+    },
+    {
+      "key": "7",
+      "label": "Introduction",
+      "block": "ecr"
+    },
+    {
       "key": "5",
       "label": "Cours 1",
       "block": "ecr"
     }
   ],
   "courseReferences": {
-    "QCM_BP1-18SHS_S1_COMMUN::INTRO": {
-      "label": "Introduction · Cours d'introduction",
+    "QCM_BP1-18SHS_S1_COMMUN::INTRO::geographie": {
+      "label": "Géographie · Introduction",
+      "date": ""
+    },
+    "QCM_BP1-18SHS_S1_COMMUN::INTRO::histoire": {
+      "label": "Histoire · Introduction",
+      "date": ""
+    },
+    "QCM_BP1-18SHS_S1_COMMUN::INTRO::ecr": {
+      "label": "Éthique et cultures religieuses · Introduction",
       "date": ""
     },
     "QCM_BP1-18SHS_S1_HISTOIRE::C01": {
@@ -65,8 +84,12 @@
       "label": "Géographie · Cours 2",
       "date": ""
     },
+    "QCM_BP1-18SHS_S1_GEOGRAPHIE::C03": {
+      "label": "Géographie · Cours 3",
+      "date": ""
+    },
     "QCM_BP1-18SHS_S1_ECR::C01": {
-      "label": "ECR · Cours 1",
+      "label": "Éthique et cultures religieuses · Cours 1",
       "date": ""
     }
   },
@@ -267,6 +290,56 @@
       "course": "C02"
     },
     {
+      "id": "SHS-GEO-F21",
+      "title": "Problématiser : la problématisation et ses trois étapes",
+      "course": "C03"
+    },
+    {
+      "id": "SHS-GEO-F22",
+      "title": "Élément déclencheur : un bon départ d'enquête",
+      "course": "C03"
+    },
+    {
+      "id": "SHS-GEO-F23",
+      "title": "Définir et dévoluer une tâche : le canevas pour formuler une consigne",
+      "course": "C03"
+    },
+    {
+      "id": "SHS-GEO-F24",
+      "title": "Conception du savoir (Morin)",
+      "course": "C03"
+    },
+    {
+      "id": "SHS-GEO-F25",
+      "title": "Cadre conceptuel (Hertig, 2009) et concept intégrateur",
+      "course": "C03"
+    },
+    {
+      "id": "SHS-GEO-F26",
+      "title": "Synthétiser, conceptualiser, institutionnaliser",
+      "course": "C03"
+    },
+    {
+      "id": "SHS-GEO-F27",
+      "title": "Trace écrite (Meunier et Sala, 2016)",
+      "course": "C03"
+    },
+    {
+      "id": "SHS-GEO-F28",
+      "title": "Modèle du détour / retour (Fierz ; Audigier et al.)",
+      "course": "C03"
+    },
+    {
+      "id": "SHS-GEO-F29",
+      "title": "Quatre dispositifs de réinvestissement des savoirs",
+      "course": "C03"
+    },
+    {
+      "id": "SHS-GEO-F30",
+      "title": "Habiter, un thème d'enquête (Lussault)",
+      "course": "C03"
+    },
+    {
       "id": "SHS-ECR-F01",
       "title": "Pensée compréhensive et artefact religieux",
       "course": "C01"
@@ -344,10 +417,10 @@
       "collection": "shs-qcm-s1",
       "sourceBankId": "QCM_BP1-18SHS_S1_COMMUN",
       "course": "INTRO",
-      "referenceId": "QCM_BP1-18SHS_S1_COMMUN::INTRO",
+      "referenceId": "QCM_BP1-18SHS_S1_COMMUN::INTRO::geographie",
       "courseGroupKey": "1",
       "hasWrittenExercise": false,
-      "title": "Cours d'introduction · QCM",
+      "title": "Introduction · QCM",
       "context": "",
       "prompt": "",
       "hints": [
@@ -429,7 +502,7 @@
         }
       ],
       "qcmRevision": "b3e6273bb898af47",
-      "blockKey": "introduction"
+      "blockKey": "geographie"
     },
     {
       "id": "SHS-COM-F02",
@@ -438,10 +511,10 @@
       "collection": "shs-qcm-s1",
       "sourceBankId": "QCM_BP1-18SHS_S1_COMMUN",
       "course": "INTRO",
-      "referenceId": "QCM_BP1-18SHS_S1_COMMUN::INTRO",
+      "referenceId": "QCM_BP1-18SHS_S1_COMMUN::INTRO::geographie",
       "courseGroupKey": "1",
       "hasWrittenExercise": false,
-      "title": "Cours d'introduction · QCM",
+      "title": "Introduction · QCM",
       "context": "",
       "prompt": "",
       "hints": [
@@ -898,7 +971,7 @@
         }
       ],
       "qcmRevision": "e46cd5a460c9478e",
-      "blockKey": "introduction"
+      "blockKey": "geographie"
     },
     {
       "id": "SHS-COM-F03",
@@ -907,10 +980,10 @@
       "collection": "shs-qcm-s1",
       "sourceBankId": "QCM_BP1-18SHS_S1_COMMUN",
       "course": "INTRO",
-      "referenceId": "QCM_BP1-18SHS_S1_COMMUN::INTRO",
+      "referenceId": "QCM_BP1-18SHS_S1_COMMUN::INTRO::geographie",
       "courseGroupKey": "1",
       "hasWrittenExercise": false,
-      "title": "Cours d'introduction · QCM",
+      "title": "Introduction · QCM",
       "context": "",
       "prompt": "",
       "hints": [
@@ -1027,7 +1100,7 @@
         }
       ],
       "qcmRevision": "989c15de5caf033c",
-      "blockKey": "introduction"
+      "blockKey": "geographie"
     },
     {
       "id": "SHS-COM-F04",
@@ -1036,10 +1109,10 @@
       "collection": "shs-qcm-s1",
       "sourceBankId": "QCM_BP1-18SHS_S1_COMMUN",
       "course": "INTRO",
-      "referenceId": "QCM_BP1-18SHS_S1_COMMUN::INTRO",
-      "courseGroupKey": "1",
+      "referenceId": "QCM_BP1-18SHS_S1_COMMUN::INTRO::histoire",
+      "courseGroupKey": "6",
       "hasWrittenExercise": false,
-      "title": "Cours d'introduction · QCM",
+      "title": "Introduction · QCM",
       "context": "",
       "prompt": "",
       "hints": [
@@ -1187,7 +1260,7 @@
         }
       ],
       "qcmRevision": "d238417fb7967d90",
-      "blockKey": "introduction"
+      "blockKey": "histoire"
     },
     {
       "id": "SHS-COM-F05",
@@ -1196,10 +1269,10 @@
       "collection": "shs-qcm-s1",
       "sourceBankId": "QCM_BP1-18SHS_S1_COMMUN",
       "course": "INTRO",
-      "referenceId": "QCM_BP1-18SHS_S1_COMMUN::INTRO",
-      "courseGroupKey": "1",
+      "referenceId": "QCM_BP1-18SHS_S1_COMMUN::INTRO::histoire",
+      "courseGroupKey": "6",
       "hasWrittenExercise": false,
-      "title": "Cours d'introduction · QCM",
+      "title": "Introduction · QCM",
       "context": "",
       "prompt": "",
       "hints": [
@@ -1281,7 +1354,7 @@
         }
       ],
       "qcmRevision": "6e523b51b9a28108",
-      "blockKey": "introduction"
+      "blockKey": "histoire"
     },
     {
       "id": "SHS-COM-F06",
@@ -1290,10 +1363,10 @@
       "collection": "shs-qcm-s1",
       "sourceBankId": "QCM_BP1-18SHS_S1_COMMUN",
       "course": "INTRO",
-      "referenceId": "QCM_BP1-18SHS_S1_COMMUN::INTRO",
-      "courseGroupKey": "1",
+      "referenceId": "QCM_BP1-18SHS_S1_COMMUN::INTRO::ecr",
+      "courseGroupKey": "7",
       "hasWrittenExercise": false,
-      "title": "Cours d'introduction · QCM",
+      "title": "Introduction · QCM",
       "context": "",
       "prompt": "",
       "hints": [
@@ -1375,7 +1448,7 @@
         }
       ],
       "qcmRevision": "241f8926550ca2cf",
-      "blockKey": "introduction"
+      "blockKey": "ecr"
     },
     {
       "id": "SHS-COM-F07",
@@ -1384,10 +1457,10 @@
       "collection": "shs-qcm-s1",
       "sourceBankId": "QCM_BP1-18SHS_S1_COMMUN",
       "course": "INTRO",
-      "referenceId": "QCM_BP1-18SHS_S1_COMMUN::INTRO",
-      "courseGroupKey": "1",
+      "referenceId": "QCM_BP1-18SHS_S1_COMMUN::INTRO::ecr",
+      "courseGroupKey": "7",
       "hasWrittenExercise": false,
-      "title": "Cours d'introduction · QCM",
+      "title": "Introduction · QCM",
       "context": "",
       "prompt": "",
       "hints": [
@@ -1500,7 +1573,7 @@
         }
       ],
       "qcmRevision": "a2d2e2f25b6bea56",
-      "blockKey": "introduction"
+      "blockKey": "ecr"
     },
     {
       "id": "SHS-COM-F08",
@@ -1509,10 +1582,10 @@
       "collection": "shs-qcm-s1",
       "sourceBankId": "QCM_BP1-18SHS_S1_COMMUN",
       "course": "INTRO",
-      "referenceId": "QCM_BP1-18SHS_S1_COMMUN::INTRO",
-      "courseGroupKey": "1",
+      "referenceId": "QCM_BP1-18SHS_S1_COMMUN::INTRO::ecr",
+      "courseGroupKey": "7",
       "hasWrittenExercise": false,
-      "title": "Cours d'introduction · QCM",
+      "title": "Introduction · QCM",
       "context": "",
       "prompt": "",
       "hints": [
@@ -1784,7 +1857,7 @@
         }
       ],
       "qcmRevision": "9b2079ca85e4394b",
-      "blockKey": "introduction"
+      "blockKey": "ecr"
     },
     {
       "id": "SHS-COM-F09",
@@ -1793,10 +1866,10 @@
       "collection": "shs-qcm-s1",
       "sourceBankId": "QCM_BP1-18SHS_S1_COMMUN",
       "course": "INTRO",
-      "referenceId": "QCM_BP1-18SHS_S1_COMMUN::INTRO",
+      "referenceId": "QCM_BP1-18SHS_S1_COMMUN::INTRO::geographie",
       "courseGroupKey": "1",
       "hasWrittenExercise": false,
-      "title": "Cours d'introduction · QCM",
+      "title": "Introduction · QCM",
       "context": "",
       "prompt": "",
       "hints": [
@@ -2002,7 +2075,7 @@
         }
       ],
       "qcmRevision": "6c8500f6ccfe9803",
-      "blockKey": "introduction"
+      "blockKey": "geographie"
     },
     {
       "id": "SHS-HIS-F01",
@@ -7500,16 +7573,52 @@
       "context": "",
       "prompt": "",
       "hints": [
-        "Pour classer une situation, cherche ce que les élèves font de leur expérience ; le thème, le support, la forme du travail, l'âge ou la précision d'un dessin ne décident pas à eux seuls. Pour une citation, cherche quel mode spontané elle montre, puis le mode scientifique qui lui fait face dans le tableau.",
-        "Tableau des modes de pensée (d'après le Guide pour l'enseignement Géographie–Histoire–Sciences 3–4, p. 30). Modes spontanés → modes scientifiques à développer : observation subjective du monde → observation critériée (selon des critères explicites) ; mots-étiquettes → concepts définis par des attributs (caractéristiques qui permettent de les reconnaître) ; espace vécu et temps vécu → prise en compte d'autres vécus ; explications égocentriques et symboliques → explications fondées sur des enquêtes ; conception mécaniste des actions humaines → processus de décision complexes ; vision figée de l'espace → vision évolutive de l'espace, comme terrain d'enjeux ; prédominance de l'instant présent (présentisme) → inscription du présent dans des durées (temps court, moyen et long). Vision figée : croire qu'un espace ne se transforme pas ; présentisme : raisonner seulement dans l'instant présent, sans inscrire les phénomènes dans des durées."
+        "Pour classer une situation, cherche ce que les élèves font de leur expérience ; le thème, le support, la forme du travail, l'âge ou la précision d'un dessin ne décident pas à eux seuls. Pour un propos d'élève, nomme d'abord le mode spontané qu'il montre, puis cherche dans le tableau le mode scientifique qui lui fait face : les deux vont ensemble.",
+        "Pensée spontanée : modes de raisonnement ancrés dans l'observation subjective, les mots-étiquettes et le vécu immédiat, avec notamment des explications égocentriques ou mécanistes et une vision figée de l'espace ou un raisonnement centré sur le présent. Pensée scientifique : raisonnement fondé sur l'observation critériée, des concepts et des enquêtes, qui prend en compte d'autres vécus, la complexité des décisions, les transformations de l'espace et différentes durées. Critère décisif : décrire son expérience et dire ses préférences relève de la pensée spontanée ; la mettre à distance en comparant, en cherchant des explications ou en mobilisant plusieurs facteurs relève de la pensée scientifique. Sept déplacements (tableau d'après le guide CIIP 3–4), mode spontané → mode scientifique à développer : observation subjective du monde → observation critériée (selon des critères explicites) ; mots-étiquettes → concepts définis par des attributs, qui permettent de les reconnaître ; espace vécu et temps vécu → prise en compte d'autres vécus ; explications égocentriques et symboliques → explications fondées sur des enquêtes ; conception mécaniste des actions humaines → processus de décision complexes ; vision figée de l'espace → vision évolutive de l'espace, comme terrain d'enjeux ; prédominance de l'instant présent (présentisme) → inscription du présent dans des durées (temps court, moyen et long). Vision figée : croire qu'un espace ne se transforme pas ; présentisme : raisonner depuis le seul instant présent, sans inscrire les phénomènes dans des durées."
       ],
       "sources": [
+        {
+          "file": "REVISION_BP1-18SHS_S1_Geographie.docx",
+          "location": "3.3 Élèves et démarches d'enquête, rubrique « De la pensée spontanée à la pensée scientifique » (tableau 8 et exemples qui le suivent) ; 4 À ne pas confondre, « Pensée spontanée ≠ pensée scientifique »"
+        },
         {
           "file": "SYNTHESE_BP1-18SHS_GEOGRAPHIE_S1_COURS_02.docx",
           "location": "3 De la pensée spontanée à la pensée scientifique"
         }
       ],
       "steps": [
+        {
+          "id": "Q15",
+          "prompt": "Qu'est-ce qui distingue la pensée spontanée de la pensée scientifique chez les élèves ?",
+          "requiresContext": false,
+          "correctId": "c",
+          "choices": [
+            {
+              "id": "a",
+              "text": "Le point de départ du travail : leur propre expérience, ou des documents et des savoirs extérieurs.",
+              "explanation": "Partir de l'expérience des élèves n'est pas un défaut : on part de cette expérience sans s'y arrêter. Ce qui compte est ce qu'on en fait ensuite."
+            },
+            {
+              "id": "b",
+              "text": "L'âge des élèves : la pensée spontanée chez les plus jeunes, la pensée scientifique chez les plus grands.",
+              "explanation": "Dans deux classes de 3P, l'une peut décrire ses endroits préférés de la cour et l'autre s'interroger sur leurs usages : l'âge ne fixe pas le mode de pensée."
+            },
+            {
+              "id": "c",
+              "text": "Ce qu'ils font de leur expérience : la décrire et dire leurs préférences, ou la comparer et l'expliquer.",
+              "explanation": "Le critère décisif est ce que les élèves font de leur expérience : la décrire et dire leurs préférences relève de la pensée spontanée ; la mettre à distance en comparant, en cherchant des explications, en mobilisant plusieurs facteurs ou en questionnant les fonctions et les transformations d'un espace relève de la pensée scientifique."
+            },
+            {
+              "id": "d",
+              "text": "La forme de leur production : un dessin ou un récit oral, ou bien une carte et un texte précis.",
+              "explanation": "Un plan précis peut rester une simple description, et un dessin peut servir une comparaison : la forme du travail ne dit pas la nature du raisonnement."
+            }
+          ],
+          "level": "essentiel",
+          "sansChoix": true,
+          "notionId": "N29",
+          "attenteId": "G25"
+        },
         {
           "id": "Q1",
           "prompt": "Dans une classe de 5P, après avoir échangé en groupe sur les caractéristiques de leurs habitations, les élèves constatent la diversité des formes d'habiter et comparent leurs descriptions pour comprendre pourquoi il existe autant de types de logements. Quel élément permet de décider si la pensée des élèves est spontanée ou scientifique ?",
@@ -7518,17 +7627,17 @@
           "choices": [
             {
               "id": "a",
-              "text": "Ils partent des caractéristiques de leurs propres habitations.",
+              "text": "Ils partent des caractéristiques de leurs propres habitations, qu'ils connaissent bien.",
               "explanation": "Partir du vécu n'est pas décisif : c'est ce que les élèves font de cette expérience qui compte."
             },
             {
               "id": "b",
-              "text": "Ils travaillent en groupe et échangent oralement.",
+              "text": "Ils travaillent en groupe et échangent oralement sur leurs habitations.",
               "explanation": "La forme du travail ne décide pas de la nature du raisonnement ; un échange peut rester une simple description."
             },
             {
               "id": "c",
-              "text": "Le thème étudié est celui de l'habitat.",
+              "text": "Le thème étudié en classe est celui de l'habitat et des logements.",
               "explanation": "Un même thème peut être travaillé de manière spontanée ou scientifique."
             },
             {
@@ -7537,14 +7646,16 @@
               "explanation": "Comparer des habitations et chercher pourquoi leurs formes varient, c'est ce que les élèves font de leur expérience : la pensée est scientifique."
             }
           ],
-          "level": "essentiel",
+          "level": "essentiel-approfondi",
           "sansChoix": true,
           "notionId": "N29",
+          "attenteId": "G25",
           "ancienExamen": {
             "examen": "BP13SHS Géographie — recueil de questions d'examen et réponses proposées (ancien plan)",
             "annee": null,
             "question": "13 (rang dans le recueil, questions non numérotées), situation a",
-            "page": 9
+            "page": 9,
+            "adapte": true
           }
         },
         {
@@ -7555,12 +7666,12 @@
           "choices": [
             {
               "id": "a",
-              "text": "Ils réalisent un plan commun de la cour.",
+              "text": "Ils réalisent ensemble un plan de la cour et l'envoient avec une description.",
               "explanation": "Produire un plan ne décide pas : la précision graphique ne dit pas la nature du raisonnement."
             },
             {
               "id": "b",
-              "text": "Ils écrivent à une classe correspondante.",
+              "text": "Ils écrivent à une classe correspondante pour lui décrire leur cour.",
               "explanation": "Échanger avec une autre classe est une forme de travail ; elle peut servir une description comme une enquête."
             },
             {
@@ -7574,14 +7685,16 @@
               "explanation": "Partir de son lieu de vie n'est pas décisif ; d'autres élèves peuvent enquêter sur la même cour."
             }
           ],
-          "level": "essentiel",
+          "level": "essentiel-approfondi",
           "sansChoix": true,
           "notionId": "N29",
+          "attenteId": "G25",
           "ancienExamen": {
             "examen": "BP13SHS Géographie — recueil de questions d'examen et réponses proposées (ancien plan)",
             "annee": null,
             "question": "13 (rang dans le recueil, questions non numérotées), situation b",
-            "page": 9
+            "page": 9,
+            "adapte": true
           }
         },
         {
@@ -7592,12 +7705,12 @@
           "choices": [
             {
               "id": "a",
-              "text": "Les deux classes échangent leurs plans de la cour.",
+              "text": "Les deux classes s'envoient leurs plans de la cour à chaque nouvelle lettre.",
               "explanation": "Le support échangé ne décide pas ; c'est ce que les élèves en font qui compte."
             },
             {
               "id": "b",
-              "text": "Ce sont des élèves de 3P, au cycle 1.",
+              "text": "Ce sont de jeunes élèves de 3P, au début du cycle 1.",
               "explanation": "L'âge des élèves ne décide pas de la nature du raisonnement."
             },
             {
@@ -7607,18 +7720,20 @@
             },
             {
               "id": "d",
-              "text": "Le thème étudié est leur cour de récréation.",
+              "text": "Le thème étudié est la cour de récréation, un lieu que les élèves connaissent bien.",
               "explanation": "Un même thème peut être travaillé de manière spontanée ou scientifique."
             }
           ],
-          "level": "essentiel",
+          "level": "essentiel-approfondi",
           "sansChoix": true,
           "notionId": "N29",
+          "attenteId": "G25",
           "ancienExamen": {
             "examen": "BP13SHS Géographie — recueil de questions d'examen et réponses proposées (ancien plan)",
             "annee": null,
             "question": "13 (rang dans le recueil, questions non numérotées), situation c",
-            "page": 9
+            "page": 9,
+            "adapte": true
           }
         },
         {
@@ -7629,12 +7744,12 @@
           "choices": [
             {
               "id": "a",
-              "text": "Le dessin et la description demandés sont très précis.",
+              "text": "Le dessin et la description demandés doivent être les plus précis possible.",
               "explanation": "La précision graphique ne décide pas de la nature du raisonnement."
             },
             {
               "id": "b",
-              "text": "Ils relèvent aussi les matériaux et les alentours.",
+              "text": "Ils relèvent en plus les matériaux de la maison et ce qui se trouve autour.",
               "explanation": "Ajouter des éléments reste une description ; le nombre de détails ne fait pas une enquête."
             },
             {
@@ -7648,352 +7763,258 @@
               "explanation": "Dessiner précisément son logement à partir de son vécu immédiat, sans comparer ni chercher d'explication, reste une description : la pensée est spontanée."
             }
           ],
-          "level": "essentiel",
+          "level": "essentiel-approfondi",
           "sansChoix": true,
           "notionId": "N29",
+          "attenteId": "G25",
           "ancienExamen": {
             "examen": "BP13SHS Géographie — recueil de questions d'examen et réponses proposées (ancien plan)",
             "annee": null,
             "question": "13 (rang dans le recueil, questions non numérotées), situation d",
-            "page": 9
+            "page": 9,
+            "adapte": true
           }
         },
         {
           "id": "Q5",
-          "prompt": "Un élève dit : « Lors de l'épidémie, c'est Alain Berset qui a décidé. » Quel mode de pensée spontané caractérise cette citation ?",
+          "prompt": "Un élève dit : « Lors de l'épidémie, c'est Alain Berset qui a décidé. » Quel mode de pensée spontané cela montre-t-il, et quel mode scientifique l'enseignant doit-il développer ? (réponse : mode spontané → mode scientifique)",
           "requiresContext": false,
           "correctId": "c",
           "choices": [
             {
               "id": "a",
-              "text": "Une explication égocentrique et symbolique.",
-              "explanation": "Elle ramènerait l'explication à soi ou à ses désirs ; ici, l'élève attribue la décision à un seul acteur."
+              "text": "Mots-étiquettes → concepts définis par des attributs",
+              "explanation": "Un mot-étiquette remplace un concept par un nom ou un exemple, comme « une ville, c'est Lausanne » ; ici, l'élève ne définit rien : il dit qui a pris une décision."
             },
             {
               "id": "b",
-              "text": "Une vision figée de l'espace.",
-              "explanation": "Elle consisterait à croire qu'un lieu a toujours été comme il est ; la citation porte sur une décision."
+              "text": "Explications égocentriques et symboliques → processus de décision complexes",
+              "explanation": "Le diagnostic ne tient pas : l'élève ne ramène pas l'explication à lui-même ou à ses désirs, il attribue la décision à une seule personne."
             },
             {
               "id": "c",
-              "text": "Une conception mécaniste des actions humaines.",
-              "explanation": "Attribuer une décision collective à une seule personne, comme si elle se réalisait d'elle-même, est une explication mécaniste des actions humaines."
+              "text": "Conception mécaniste des actions humaines → processus de décision complexes",
+              "explanation": "Attribuer une décision collective à une seule personne, comme si elle se réalisait d'elle-même, c'est une conception mécaniste des actions humaines, comme penser que le syndic peut simplement décider d'un aménagement. Le tableau lui oppose les processus de décision complexes : faire découvrir que plusieurs acteurs interviennent dans une décision."
             },
             {
               "id": "d",
-              "text": "Le recours à un mot-étiquette.",
-              "explanation": "Un mot-étiquette nomme un exemple sans les attributs d'un concept ; la citation explique une décision."
+              "text": "Conception mécaniste des actions humaines → explications fondées sur des enquêtes",
+              "explanation": "Bonne moitié gauche, mauvaise moitié droite : dans le tableau, les explications fondées sur des enquêtes répondent aux explications égocentriques et symboliques, pas à la conception mécaniste."
             }
           ],
           "level": "essentiel",
           "sansChoix": true,
           "notionId": "N29",
+          "attenteId": "G25.1",
           "ancienExamen": {
             "examen": "BP13SHS — Exercices du cours de didactique de la géographie, AP, décembre 2022 (ancien plan)",
             "annee": 2022,
             "question": "6 a",
-            "page": 3
-          }
-        },
-        {
-          "id": "Q6",
-          "prompt": "Face à la citation « Lors de l'épidémie, c'est Alain Berset qui a décidé », quel mode de pensée scientifique faut-il développer ?",
-          "requiresContext": false,
-          "correctId": "b",
-          "choices": [
-            {
-              "id": "a",
-              "text": "Les explications fondées sur des enquêtes.",
-              "explanation": "Elles répondent aux explications égocentriques et symboliques dans le tableau."
-            },
-            {
-              "id": "b",
-              "text": "Les processus de décision complexes.",
-              "explanation": "Face à une conception mécaniste, on fait étudier les acteurs et le processus de décision : plusieurs personnes et institutions interviennent."
-            },
-            {
-              "id": "c",
-              "text": "La vision évolutive de l'espace, comme terrain d'enjeux.",
-              "explanation": "Elle répond à une vision figée de l'espace."
-            },
-            {
-              "id": "d",
-              "text": "Les concepts définis par des attributs.",
-              "explanation": "Ils répondent aux mots-étiquettes."
-            }
-          ],
-          "level": "essentiel",
-          "sansChoix": true,
-          "notionId": "N29",
-          "ancienExamen": {
-            "examen": "BP13SHS — Exercices du cours de didactique de la géographie, AP, décembre 2022 (ancien plan)",
-            "annee": 2022,
-            "question": "6 a",
-            "page": 3
+            "page": 3,
+            "adapte": true
           }
         },
         {
           "id": "Q7",
-          "prompt": "Un élève dit : « L'habitat, c'est par exemple une maison mitoyenne. » Quel mode de pensée spontané caractérise cette citation ?",
+          "prompt": "Un élève dit : « L'habitat, c'est par exemple une maison mitoyenne. » Quel mode de pensée spontané cela montre-t-il, et quel mode scientifique l'enseignant doit-il développer ? (réponse : mode spontané → mode scientifique)",
           "requiresContext": false,
           "correctId": "b",
           "choices": [
             {
               "id": "a",
-              "text": "Une observation subjective du monde.",
-              "explanation": "Elle consisterait à observer sans critères explicites ; ici, l'élève définit un mot par un exemple."
+              "text": "Espace vécu et temps vécu → concepts définis par des attributs",
+              "explanation": "Rien n'indique que l'élève parte de sa propre maison : il donne un exemple au lieu d'une définition, ce qui est un mot-étiquette, et non l'espace vécu."
             },
             {
               "id": "b",
-              "text": "Le recours à un mot-étiquette.",
-              "explanation": "L'élève cite un exemple à la place des attributs du concept d'habitat : c'est un mot-étiquette, comme dire qu'une ville, « c'est Lausanne »."
+              "text": "Mots-étiquettes → concepts définis par des attributs",
+              "explanation": "Donner un exemple (« une maison mitoyenne ») à la place des caractéristiques de l'habitat, c'est employer un mot-étiquette, comme dire qu'une ville, « c'est Lausanne ». On développe des concepts définis par des attributs : les caractéristiques qui permettent de reconnaître un habitat, quel que soit l'exemple."
             },
             {
               "id": "c",
-              "text": "Une conception mécaniste des actions humaines.",
-              "explanation": "Elle porte sur l'explication des décisions ; la citation définit une notion."
+              "text": "Observation subjective du monde → observation critériée",
+              "explanation": "L'observation subjective décrit le monde sans critères explicites ; ici, l'élève ne décrit pas ce qu'il voit : il remplace la définition d'une notion par un exemple."
             },
             {
               "id": "d",
-              "text": "La prédominance de l'instant présent.",
-              "explanation": "Le présentisme enferme dans le présent ; la citation ne parle pas du temps."
+              "text": "Mots-étiquettes → observation critériée",
+              "explanation": "Mot-étiquette est le bon diagnostic, mais l'observation critériée est la réponse du tableau à l'observation subjective ; au mot-étiquette répondent les concepts définis par des attributs."
             }
           ],
           "level": "essentiel",
           "sansChoix": true,
           "notionId": "N29",
+          "attenteId": "G25.1",
           "ancienExamen": {
             "examen": "BP13SHS — Exercices du cours de didactique de la géographie, AP, décembre 2022 (ancien plan)",
             "annee": 2022,
             "question": "6 b",
-            "page": 3
-          }
-        },
-        {
-          "id": "Q8",
-          "prompt": "Face à la citation « L'habitat, c'est par exemple une maison mitoyenne », quel mode de pensée scientifique faut-il développer ?",
-          "requiresContext": false,
-          "correctId": "c",
-          "choices": [
-            {
-              "id": "a",
-              "text": "Une observation critériée.",
-              "explanation": "Elle répond à l'observation subjective du monde."
-            },
-            {
-              "id": "b",
-              "text": "La prise en compte d'autres vécus.",
-              "explanation": "Elle répond au fait de s'en tenir à l'espace et au temps vécus."
-            },
-            {
-              "id": "c",
-              "text": "Un concept défini par des attributs.",
-              "explanation": "On aide l'élève à dégager les caractéristiques qui permettent de reconnaître un habitat, au-delà d'un exemple."
-            },
-            {
-              "id": "d",
-              "text": "L'inscription du présent dans des durées.",
-              "explanation": "Elle répond au présentisme."
-            }
-          ],
-          "level": "essentiel",
-          "sansChoix": true,
-          "notionId": "N29",
-          "ancienExamen": {
-            "examen": "BP13SHS — Exercices du cours de didactique de la géographie, AP, décembre 2022 (ancien plan)",
-            "annee": 2022,
-            "question": "6 b",
-            "page": 3
+            "page": 3,
+            "adapte": true
           }
         },
         {
           "id": "Q9",
-          "prompt": "Un élève affirme : « Ce quartier a toujours été comme ça. » Quel mode de pensée spontané s'exprime ?",
+          "prompt": "Un élève dit : « Ce quartier a toujours été comme ça. » Quel mode de pensée spontané cela montre-t-il, et quel mode scientifique l'enseignant doit-il développer ? (réponse : mode spontané → mode scientifique)",
           "requiresContext": false,
           "correctId": "b",
           "choices": [
             {
               "id": "a",
-              "text": "Le présentisme.",
-              "explanation": "Le présentisme enferme le raisonnement dans l'instant présent, sans penser aux durées ; ici, l'élève affirme surtout que l'espace n'a jamais changé."
+              "text": "Prédominance de l'instant présent → inscription du présent dans des durées",
+              "explanation": "Le présentisme enferme le raisonnement dans l'instant présent ; ici, l'élève affirme surtout que l'espace n'a jamais changé, ce qui est une vision figée."
             },
             {
               "id": "b",
-              "text": "Une vision figée de l'espace.",
-              "explanation": "L'élève nie que le quartier se soit transformé : c'est une vision figée ; des photographies d'une même place à plusieurs époques montrent au contraire ses transformations."
+              "text": "Vision figée de l'espace → vision évolutive de l'espace, comme terrain d'enjeux",
+              "explanation": "Croire qu'un quartier a toujours été comme ça traduit une vision figée de l'espace. On développe une vision évolutive, qui fait voir l'espace comme terrain d'enjeux : des photographies d'une même place à plusieurs époques montrent ses transformations."
             },
             {
               "id": "c",
-              "text": "Une explication égocentrique et symbolique.",
-              "explanation": "Elle ramènerait l'explication aux désirs de l'élève ; il ne fait ici que nier le changement."
+              "text": "Vision figée de l'espace → prise en compte d'autres vécus",
+              "explanation": "La vision figée est bien en cause, mais la prise en compte d'autres vécus répond à l'espace et au temps vécus ; à la vision figée, le tableau oppose une vision évolutive de l'espace."
             },
             {
               "id": "d",
-              "text": "Le recours à un mot-étiquette.",
-              "explanation": "L'élève ne remplace pas un concept par un exemple."
+              "text": "Prédominance de l'instant présent → vision évolutive de l'espace, comme terrain d'enjeux",
+              "explanation": "La moitié droite convient, pas la gauche : le propos nie un changement plutôt qu'il ne s'enferme dans le présent. C'est la vision figée qu'il faut nommer."
             }
           ],
-          "level": "essentiel",
+          "level": "essentiel-approfondi",
           "sansChoix": true,
-          "notionId": "N29"
+          "notionId": "N29",
+          "attenteId": "G25.1"
         },
         {
           "id": "Q10",
-          "prompt": "En imaginant l'avenir de son quartier, un élève annonce qu'on y construira un parc d'attractions, parce qu'il en rêve. Quel mode de pensée spontané s'exprime ?",
-          "requiresContext": false,
-          "correctId": "c",
-          "choices": [
-            {
-              "id": "a",
-              "text": "Une conception mécaniste des actions humaines.",
-              "explanation": "Elle attribuerait l'aménagement à la décision simple d'une autorité ; ici, c'est le désir de l'élève qui explique."
-            },
-            {
-              "id": "b",
-              "text": "Une vision figée de l'espace.",
-              "explanation": "L'élève imagine au contraire un changement du quartier."
-            },
-            {
-              "id": "c",
-              "text": "Une explication égocentrique et symbolique.",
-              "explanation": "Imaginer qu'un quartier se transforme pour réaliser ses propres souhaits ramène l'explication à soi ; il faut des explications fondées sur des enquêtes."
-            },
-            {
-              "id": "d",
-              "text": "Le recours à un mot-étiquette.",
-              "explanation": "Aucun mot n'est employé à la place d'un concept."
-            }
-          ],
-          "level": "essentiel",
-          "sansChoix": true,
-          "notionId": "N29"
-        },
-        {
-          "id": "Q11",
-          "prompt": "Pour expliquer pourquoi la rivière de son village a débordé, un élève ne parle que de la pluie de la veille, sans penser à ce qui a pu se passer dans la vallée au fil des années. Quel mode de pensée spontané s'exprime ?",
-          "requiresContext": false,
-          "correctId": "c",
-          "choices": [
-            {
-              "id": "a",
-              "text": "Une vision figée de l'espace.",
-              "explanation": "La vision figée consiste à croire qu'un espace n'a jamais changé ; l'élève ne dit pas cela, il ne regarde que le moment présent."
-            },
-            {
-              "id": "b",
-              "text": "Une conception mécaniste des actions humaines.",
-              "explanation": "Elle porte sur la manière d'expliquer les décisions humaines ; l'élève explique un phénomène naturel."
-            },
-            {
-              "id": "c",
-              "text": "Le présentisme.",
-              "explanation": "L'élève n'inscrit pas le phénomène dans des durées : il s'en tient à l'instant présent. Le mode scientifique à développer est l'inscription du présent dans le temps court, moyen et long."
-            },
-            {
-              "id": "d",
-              "text": "Une explication égocentrique et symbolique.",
-              "explanation": "L'élève ne ramène pas l'explication à lui-même ou à ses désirs."
-            }
-          ],
-          "level": "essentiel",
-          "sansChoix": true,
-          "notionId": "N29"
-        },
-        {
-          "id": "Q12",
-          "prompt": "Quel mode de pensée scientifique faut-il développer face à une observation subjective du monde ?",
+          "prompt": "Un élève dit : « Il y a des montagnes en Suisse pour qu'on puisse faire du ski. » Quel mode de pensée spontané cela montre-t-il, et quel mode scientifique l'enseignant doit-il développer ? (réponse : mode spontané → mode scientifique)",
           "requiresContext": false,
           "correctId": "d",
           "choices": [
             {
               "id": "a",
-              "text": "La prise en compte d'autres vécus.",
-              "explanation": "Elle répond à l'espace et au temps vécus."
+              "text": "Explications égocentriques et symboliques → concepts définis par des attributs",
+              "explanation": "Explication égocentrique, oui ; mais les concepts définis par des attributs répondent aux mots-étiquettes. Face à une explication égocentrique, le tableau vise des explications fondées sur des enquêtes."
             },
             {
               "id": "b",
-              "text": "Des explications fondées sur des enquêtes.",
-              "explanation": "Elles répondent aux explications égocentriques et symboliques."
+              "text": "Espace vécu et temps vécu → prise en compte d'autres vécus",
+              "explanation": "S'en tenir à l'espace vécu, c'est généraliser à partir de sa seule expérience ; ici, l'élève fait autre chose : il explique l'existence des montagnes par un usage humain, comme si elles étaient là pour nous."
             },
             {
               "id": "c",
-              "text": "Des processus de décision complexes.",
-              "explanation": "Ils répondent à la conception mécaniste des actions humaines."
+              "text": "Espace vécu et temps vécu → explications fondées sur des enquêtes",
+              "explanation": "Le propos n'est pas une généralisation de l'expérience de l'élève : c'est une explication qui place les désirs humains au centre. La moitié gauche est donc fausse."
             },
             {
               "id": "d",
-              "text": "Une observation critériée.",
-              "explanation": "Dans le tableau des modes de pensée, l'observation critériée répond à l'observation subjective : on observe selon des critères explicites."
+              "text": "Explications égocentriques et symboliques → explications fondées sur des enquêtes",
+              "explanation": "Expliquer la présence des montagnes par le plaisir de skier ramène l'explication à soi et à ses désirs : c'est une explication égocentrique et symbolique. On développe des explications fondées sur des enquêtes, qui cherchent dans des observations et des documents pourquoi les choses sont ainsi."
             }
           ],
-          "level": "essentiel",
+          "level": "essentiel-approfondi",
           "sansChoix": true,
-          "notionId": "N29"
+          "notionId": "N29",
+          "attenteId": "G25.1"
         },
         {
-          "id": "Q13",
-          "prompt": "Pour dépasser une vision figée de l'espace, une enseignante montre des photographies d'une même place de Lausanne prises en 1905, 1969 et 2014. Vers quel mode de pensée scientifique fait-elle avancer les élèves ?",
+          "id": "Q11",
+          "prompt": "Un élève dit : « Le village s'est construit au bord du lac parce qu'aujourd'hui les touristes aiment s'y baigner. » Quel mode de pensée spontané cela montre-t-il, et quel mode scientifique l'enseignant doit-il développer ? (réponse : mode spontané → mode scientifique)",
+          "requiresContext": false,
+          "correctId": "c",
+          "choices": [
+            {
+              "id": "a",
+              "text": "Espace vécu et temps vécu → prise en compte d'autres vécus",
+              "explanation": "L'espace vécu, c'est généraliser à partir de sa propre expérience de l'espace ; ici, l'élève ne parle pas de son vécu : il explique le passé du village par un usage d'aujourd'hui."
+            },
+            {
+              "id": "b",
+              "text": "Prédominance de l'instant présent → observation critériée",
+              "explanation": "Présentisme, oui ; mais l'observation critériée est la réponse du tableau à l'observation subjective. Au présentisme répond l'inscription du présent dans des durées."
+            },
+            {
+              "id": "c",
+              "text": "Prédominance de l'instant présent → inscription du présent dans des durées",
+              "explanation": "Expliquer la fondation d'un village par ce qu'on y fait aujourd'hui, c'est raisonner depuis l'instant présent : c'est le présentisme. On développe l'inscription du présent dans des durées (temps court, moyen et long) : le village peut être bien plus ancien que la baignade touristique."
+            },
+            {
+              "id": "d",
+              "text": "Explications égocentriques et symboliques → inscription du présent dans des durées",
+              "explanation": "Une explication égocentrique ramène les choses à soi ou à ses désirs ; ici, l'élève n'invoque pas les siens : il projette un usage présent sur le passé."
+            }
+          ],
+          "level": "essentiel-approfondi",
+          "sansChoix": true,
+          "notionId": "N29",
+          "attenteId": "G25.1"
+        },
+        {
+          "id": "Q12",
+          "prompt": "Devant la photographie d'un village de montagne, un élève dit : « Il y a plein de maisons et c'est joli. » Quel mode de pensée spontané cela montre-t-il, et quel mode scientifique l'enseignant doit-il développer ? (réponse : mode spontané → mode scientifique)",
           "requiresContext": false,
           "correctId": "a",
           "choices": [
             {
               "id": "a",
-              "text": "Une vision évolutive de l'espace.",
-              "explanation": "Les photographies montrent que la place s'est transformée : l'espace n'est pas figé, il évolue selon les choix et les enjeux."
+              "text": "Observation subjective du monde → observation critériée",
+              "explanation": "« Plein de maisons » et « c'est joli » sont des impressions, sans critère explicite : c'est une observation subjective du monde. On développe une observation critériée, qui observe selon des critères explicites, par exemple compter les maisons ou noter où elles se regroupent."
             },
             {
               "id": "b",
-              "text": "Une observation critériée de l'espace.",
-              "explanation": "Elle répond à l'observation subjective ; ici, la comparaison des époques vise la transformation de l'espace."
+              "text": "Espace vécu et temps vécu → prise en compte d'autres vécus",
+              "explanation": "L'espace vécu concerne sa propre expérience de l'espace ; ici, l'élève commente une photographie d'un lieu qu'il ne dit pas connaître, selon son impression."
             },
             {
               "id": "c",
-              "text": "La prise en compte d'autres vécus.",
-              "explanation": "Elle répond au fait de s'en tenir à son propre vécu ; les photographies montrent un changement dans le temps."
+              "text": "Observation subjective du monde → processus de décision complexes",
+              "explanation": "L'observation est bien subjective, mais les processus de décision complexes répondent à une conception mécaniste des actions humaines ; à l'observation subjective, on oppose une observation critériée."
             },
             {
               "id": "d",
-              "text": "Des processus de décision complexes.",
-              "explanation": "Ils répondent à la conception mécaniste des actions humaines."
+              "text": "Mots-étiquettes → observation critériée",
+              "explanation": "L'élève ne remplace pas une définition par un exemple : il dit ce qu'il voit et ce qu'il en pense, sans critères. Ce n'est pas un mot-étiquette."
             }
           ],
-          "level": "essentiel",
+          "level": "essentiel-approfondi",
           "sansChoix": true,
-          "notionId": "N29"
+          "notionId": "N29",
+          "attenteId": "G25.1"
         },
         {
           "id": "Q14",
-          "prompt": "Un élève affirme que tout le monde va à l'école à pied, parce que lui-même y va à pied. Quel mode de pensée scientifique faut-il développer face à ce propos ?",
+          "prompt": "Un élève dit : « Pour venir à l'école, tout le monde marche : moi, je viens à pied. » Quel mode de pensée spontané cela montre-t-il, et quel mode scientifique l'enseignant doit-il développer ? (réponse : mode spontané → mode scientifique)",
           "requiresContext": false,
-          "correctId": "b",
+          "correctId": "d",
           "choices": [
             {
               "id": "a",
-              "text": "Une observation critériée.",
-              "explanation": "Elle répond à l'observation subjective du monde ; ici, l'élève étend son propre vécu à tous."
+              "text": "Observation subjective du monde → prise en compte d'autres vécus",
+              "explanation": "L'élève ne décrit pas sans critères ce qu'il observe : il prend sa propre expérience pour celle de tous. L'observation subjective n'est pas en cause."
             },
             {
               "id": "b",
-              "text": "La prise en compte d'autres vécus.",
-              "explanation": "L'élève généralise à partir de son espace vécu ; on lui fait découvrir les trajets d'autres élèves et d'autres personnes."
+              "text": "Espace vécu et temps vécu → inscription du présent dans des durées",
+              "explanation": "L'espace vécu est le bon diagnostic, mais l'inscription dans des durées répond au présentisme ; le propos ne porte pas sur le temps, et le tableau oppose à l'espace vécu la prise en compte d'autres vécus."
             },
             {
               "id": "c",
-              "text": "Des processus de décision complexes.",
-              "explanation": "Ils répondent à une conception mécaniste des décisions humaines."
+              "text": "Explications égocentriques et symboliques → prise en compte d'autres vécus",
+              "explanation": "Aucune explication n'est donnée par ses désirs : l'élève étend son expérience à tout le monde. Dans le tableau, la ligne des explications égocentriques mène aux explications fondées sur des enquêtes."
             },
             {
               "id": "d",
-              "text": "L'inscription du présent dans des durées.",
-              "explanation": "Elle répond au présentisme ; le propos ne porte pas sur le temps."
+              "text": "Espace vécu et temps vécu → prise en compte d'autres vécus",
+              "explanation": "L'élève généralise à partir de son propre trajet : il en reste à son espace vécu. On développe la prise en compte d'autres vécus, par exemple en comparant les trajets des élèves de la classe et d'autres personnes."
             }
           ],
-          "level": "essentiel",
+          "level": "essentiel-approfondi",
           "sansChoix": true,
-          "notionId": "N29"
+          "notionId": "N29",
+          "attenteId": "G25.1"
         }
       ],
-      "qcmRevision": "339a499ebd2f08cd",
+      "qcmRevision": "497af04673fadd91",
       "blockKey": "geographie"
     },
     {
@@ -9702,6 +9723,1496 @@
         }
       ],
       "qcmRevision": "1879b743215e01a6",
+      "blockKey": "geographie"
+    },
+    {
+      "id": "SHS-GEO-F21",
+      "familyId": "SHS-GEO-F21",
+      "module": "BP1-18SHS",
+      "collection": "shs-qcm-s1",
+      "sourceBankId": "QCM_BP1-18SHS_S1_GEOGRAPHIE",
+      "course": "C03",
+      "referenceId": "QCM_BP1-18SHS_S1_GEOGRAPHIE::C03",
+      "courseGroupKey": "8",
+      "hasWrittenExercise": false,
+      "title": "Cours 3 · QCM",
+      "context": "",
+      "prompt": "",
+      "hints": [
+        "Demande-toi qui construit le problème et à partir de quoi : une tâche, ce que les élèves en tirent, puis les questions qu'ils retiennent. Une étape se reconnaît à ce que la classe fait à ce moment-là.",
+        "Problématisation : construction progressive d'un problème à enquêter, par une tâche de départ, la mise en commun des productions et l'élaboration de questions qui font sens pour les élèves. Elle suit trois étapes, dans cet ordre : 1. donner une tâche aux élèves (élément déclencheur), qui fait émerger ce qu'ils observent, pensent ou se demandent ; 2. exploiter les productions des élèves (mise en commun, débat) : comparer les idées et dégager ce qui mérite d'être examiné ; 3. élaborer un questionnement qui fasse sens pour les élèves : sélectionner, reformuler et relier des questions qu'ils comprennent et qui donnent une direction à l'enquête. Elle construit un questionnement avec les élèves, ce qui la distingue d'une évaluation des connaissances ; sa qualité conditionne la suite de l'enquête. Présenter l'enquête et son plan d'activités n'en fait pas partie. La problématique est le résultat de ce travail : elle organise ensuite l'enquête ; un thème, comme Habiter, est le sujet général. Un problème d'aménagement n'a pas de solution unique : on pèse des besoins en tension, comme se loger ou commercer, regrouper ou disperser l'habitat."
+      ],
+      "sources": [
+        {
+          "file": "REVISION_BP1-18SHS_S1_Geographie.docx",
+          "location": "3.4 Gestes professionnels de l'enseignant, rubrique « Problématiser » (tableau 11) ; 4 À ne pas confondre, paires « Problématisation ≠ problématique » et « Problématique ≠ thème »"
+        }
+      ],
+      "steps": [
+        {
+          "id": "Q1",
+          "prompt": "Qu'est-ce que la problématisation, en géographie ?",
+          "requiresContext": false,
+          "correctId": "b",
+          "choices": [
+            {
+              "id": "a",
+              "text": "Annoncer aux élèves le problème de l'enquête et le plan des activités déjà prévues.",
+              "explanation": "C'est la présentation de l'enquête : le programme d'activités déjà prévu. Le problème y est donné par l'enseignant au lieu d'être construit avec la classe."
+            },
+            {
+              "id": "b",
+              "text": "Construire avec les élèves un problème à enquêter, d'une tâche de départ jusqu'à leurs questions.",
+              "explanation": "La problématisation est la construction progressive d'un problème à enquêter : une tâche de départ, la mise en commun des productions, puis l'élaboration de questions qui font sens pour les élèves. Sa qualité conditionne la suite de l'enquête."
+            },
+            {
+              "id": "c",
+              "text": "La question qui résulte du travail mené en classe et qui organise ensuite les recherches de l'enquête.",
+              "explanation": "C'est la problématique : le résultat de la problématisation, pas le travail qui y mène."
+            },
+            {
+              "id": "d",
+              "text": "Vérifier par une tâche de départ ce que les élèves savent déjà du thème de l'enquête à venir.",
+              "explanation": "La tâche de départ ne sert pas à mesurer des connaissances : la problématisation construit un questionnement avec les élèves, ce qui la distingue d'une évaluation des connaissances."
+            }
+          ],
+          "level": "essentiel",
+          "sansChoix": true,
+          "notionId": "N42",
+          "attenteId": "G35"
+        },
+        {
+          "id": "Q2",
+          "prompt": "La problématisation en classe se déroule en trois grandes étapes successives. Laquelle de ces propositions présente la séquence correcte des étapes de la problématisation ?",
+          "requiresContext": false,
+          "correctId": "c",
+          "choices": [
+            {
+              "id": "a",
+              "text": "Élaborer un questionnement → donner une tâche concrète → débattre autour des productions des élèves",
+              "explanation": "L'ordre est inversé : on ne part pas d'une question déjà construite. Le questionnement est la dernière étape ; il s'élabore à partir de la tâche et des productions des élèves."
+            },
+            {
+              "id": "b",
+              "text": "Susciter la curiosité par une tâche → évaluer les connaissances → formuler une question commune",
+              "explanation": "La deuxième étape exploite les productions (mise en commun, débat). Évaluer les connaissances n'en fait pas partie, puisque la problématisation construit un questionnement avec les élèves."
+            },
+            {
+              "id": "c",
+              "text": "Donner une tâche concrète → exploiter les productions des élèves → élaborer un questionnement qui fasse sens pour eux",
+              "explanation": "Les trois étapes se suivent dans cet ordre : une tâche (élément déclencheur) fait émerger ce que les élèves observent ou se demandent ; la mise en commun compare leurs idées ; la classe élabore enfin des questions qu'elle comprend et qui orientent l'enquête."
+            },
+            {
+              "id": "d",
+              "text": "Exploiter les productions des élèves → donner une tâche concrète → élaborer un questionnement qui fasse sens pour eux",
+              "explanation": "On ne peut exploiter des productions qu'après la tâche qui les a fait naître : la mise en commun est la deuxième étape, pas la première."
+            }
+          ],
+          "level": "essentiel-approfondi",
+          "sansChoix": false,
+          "notionId": "N42",
+          "attenteId": "G35",
+          "ancienExamen": {
+            "examen": "BP13SHS Géographie — recueil de questions d'examen et réponses proposées (ancien plan)",
+            "annee": null,
+            "question": "21 (rang dans le recueil, questions non numérotées)",
+            "page": 15,
+            "autresReferences": [
+              {
+                "examen": "BP13SHS — Exercices du cours de didactique de la géographie, AP, décembre 2022 (ancien plan)",
+                "annee": 2022,
+                "question": "9 (deuxième partie : les trois étapes)",
+                "page": 4
+              }
+            ]
+          }
+        },
+        {
+          "id": "Q3",
+          "prompt": "Les élèves formulent collectivement une question : « Pourquoi certaines zones de la cour sont-elles plus fréquentées que d'autres ? » À quelle étape de la problématisation cette situation correspond-elle ?",
+          "requiresContext": false,
+          "correctId": "c",
+          "choices": [
+            {
+              "id": "a",
+              "text": "Étape 1 : donner une tâche aux élèves (élément déclencheur)",
+              "explanation": "La première étape propose une tâche qui fait émerger observations et questions ; ici, la question est déjà formulée par la classe."
+            },
+            {
+              "id": "b",
+              "text": "Étape 2 : exploiter les productions des élèves (mise en commun, débat)",
+              "explanation": "La deuxième étape compare les productions et dégage ce qui mérite d'être examiné ; formuler la question qui en sort est l'étape suivante."
+            },
+            {
+              "id": "c",
+              "text": "Étape 3 : élaborer un questionnement qui fasse sens",
+              "explanation": "Formuler ensemble une question que la classe comprend et qui oriente la recherche, c'est la troisième étape : élaborer un questionnement qui fasse sens pour les élèves."
+            },
+            {
+              "id": "d",
+              "text": "Hors des trois étapes : évaluer les connaissances des élèves",
+              "explanation": "Formuler ensemble une question n'évalue aucune connaissance : la situation appartient à la problématisation, dont elle produit la question."
+            }
+          ],
+          "level": "essentiel-approfondi",
+          "sansChoix": true,
+          "notionId": "N42",
+          "attenteId": "G35",
+          "ancienExamen": {
+            "examen": "BP13SHS Géographie — recueil de questions d'examen et réponses proposées (ancien plan)",
+            "annee": null,
+            "question": "22 (rang dans le recueil, questions non numérotées), situation a",
+            "page": 16,
+            "adapte": true
+          }
+        },
+        {
+          "id": "Q4",
+          "prompt": "L'enseignante corrige les comptes rendus des élèves. À quelle étape de la problématisation cette situation correspond-elle ?",
+          "requiresContext": false,
+          "correctId": "d",
+          "choices": [
+            {
+              "id": "a",
+              "text": "Étape 1 : donner une tâche aux élèves (élément déclencheur)",
+              "explanation": "La tâche de départ fait émerger ce que les élèves pensent ou se demandent ; corriger des comptes rendus vient après un travail et ne lance aucune question."
+            },
+            {
+              "id": "b",
+              "text": "Étape 2 : exploiter les productions des élèves (mise en commun, débat)",
+              "explanation": "Exploiter les productions, c'est les comparer en classe (mise en commun, débat) pour dégager ce qui mérite d'être examiné ; corriger les comptes rendus un à un, c'est juger chaque production."
+            },
+            {
+              "id": "c",
+              "text": "Étape 3 : élaborer un questionnement qui fasse sens",
+              "explanation": "Aucune question n'est élaborée : l'enseignante juge des productions sans construire de questionnement avec la classe."
+            },
+            {
+              "id": "d",
+              "text": "Hors des trois étapes : évaluer les connaissances des élèves",
+              "explanation": "Corriger des comptes rendus, c'est évaluer. Or la problématisation construit un questionnement avec les élèves, ce qui la distingue d'une évaluation des connaissances : la situation est hors de ses trois étapes."
+            }
+          ],
+          "level": "essentiel-approfondi",
+          "sansChoix": true,
+          "notionId": "N42",
+          "attenteId": "G35",
+          "ancienExamen": {
+            "examen": "BP13SHS Géographie — recueil de questions d'examen et réponses proposées (ancien plan)",
+            "annee": null,
+            "question": "22 (rang dans le recueil, questions non numérotées), situation b",
+            "page": 16,
+            "adapte": true
+          }
+        },
+        {
+          "id": "Q5",
+          "prompt": "Après avoir observé les photos prises par les différents groupes, les élèves comparent leurs résultats, échangent leurs interprétations et débattent des différences et des similitudes. À quelle étape de la problématisation cette situation correspond-elle ?",
+          "requiresContext": false,
+          "correctId": "b",
+          "choices": [
+            {
+              "id": "a",
+              "text": "Étape 1 : donner une tâche aux élèves (élément déclencheur)",
+              "explanation": "Les photos ont déjà été prises : la tâche de départ est faite, et la classe travaille maintenant sur ce qu'elle a produit."
+            },
+            {
+              "id": "b",
+              "text": "Étape 2 : exploiter les productions des élèves (mise en commun, débat)",
+              "explanation": "Comparer les résultats des groupes et en débattre, c'est exploiter les productions des élèves (mise en commun, débat) : la classe dégage ce qui mérite d'être examiné."
+            },
+            {
+              "id": "c",
+              "text": "Étape 3 : élaborer un questionnement qui fasse sens",
+              "explanation": "La classe compare et débat, mais ne retient pas encore de questions : l'élaboration du questionnement vient ensuite."
+            },
+            {
+              "id": "d",
+              "text": "Hors des trois étapes : évaluer les connaissances des élèves",
+              "explanation": "Comparer et débattre des productions n'est pas les évaluer : c'est précisément la deuxième étape de la problématisation."
+            }
+          ],
+          "level": "essentiel-approfondi",
+          "sansChoix": true,
+          "notionId": "N42",
+          "attenteId": "G35",
+          "ancienExamen": {
+            "examen": "BP13SHS Géographie — recueil de questions d'examen et réponses proposées (ancien plan)",
+            "annee": null,
+            "question": "22 (rang dans le recueil, questions non numérotées), situation d",
+            "page": 16,
+            "adapte": true
+          }
+        },
+        {
+          "id": "Q6",
+          "prompt": "Qu'est-ce qui distingue la problématisation de la problématique ?",
+          "requiresContext": false,
+          "correctId": "a",
+          "choices": [
+            {
+              "id": "a",
+              "text": "La première est le travail qui construit le problème ; la seconde est la question qui en résulte.",
+              "explanation": "La problématisation est le travail progressif de construction du problème, mené avec les élèves ; la problématique est la question qui en résulte et qui organise ensuite l'enquête."
+            },
+            {
+              "id": "b",
+              "text": "La première est la question posée au départ ; la seconde réunit les réponses trouvées par l'enquête.",
+              "explanation": "La problématisation n'est pas une question de départ : c'est tout le travail qui mène à la question. Et la problématique n'est pas un ensemble de réponses : c'est la question qui organise l'enquête."
+            },
+            {
+              "id": "c",
+              "text": "La première est le travail qui construit le problème ; la seconde est le thème général étudié.",
+              "explanation": "La première moitié est juste, mais la problématique n'est pas le thème : un thème comme Habiter est un sujet général, la problématique est la question qui engage l'enquête sur ce sujet."
+            },
+            {
+              "id": "d",
+              "text": "La première désigne le thème général, comme Habiter ; la seconde, la question qui en résulte.",
+              "explanation": "La seconde moitié est juste, mais un thème comme Habiter n'est pas la problématisation : c'est un sujet général, alors que la problématisation est le travail qui construit le problème."
+            }
+          ],
+          "level": "essentiel-approfondi",
+          "sansChoix": true,
+          "notionId": "N42",
+          "attenteId": "G35"
+        },
+        {
+          "id": "Q7",
+          "prompt": "Pourquoi un problème d'aménagement n'a-t-il pas de solution unique ?",
+          "requiresContext": false,
+          "correctId": "d",
+          "choices": [
+            {
+              "id": "a",
+              "text": "Parce que les acteurs ne disposent pas des mêmes informations sur le projet.",
+              "explanation": "Mieux informer chacun aiderait à juger, mais ne supprimerait pas le choix : des besoins qui s'opposent resteraient à peser."
+            },
+            {
+              "id": "b",
+              "text": "Parce que les cartes représentent le même lieu de façons différentes.",
+              "explanation": "Un document n'est pas le réel, mais ce n'est pas ce qui laisse le choix ouvert : même avec une carte juste, il faut arbitrer entre des besoins."
+            },
+            {
+              "id": "c",
+              "text": "Parce que l'organisation de l'espace change sans cesse au fil du temps.",
+              "explanation": "L'espace se transforme, mais à un moment donné le problème reste ouvert pour une autre raison : les besoins en tension, qu'il faut peser."
+            },
+            {
+              "id": "d",
+              "text": "Parce que des besoins en tension s'y opposent, comme se loger ou commercer.",
+              "explanation": "Aménager, c'est choisir entre des besoins qui s'opposent : se loger ou commercer, regrouper ou disperser l'habitat. Comme ces besoins sont en tension, plusieurs solutions se défendent selon ce qu'on privilégie."
+            }
+          ],
+          "level": "approfondissement",
+          "sansChoix": true,
+          "notionId": "N44",
+          "attenteId": "G37"
+        }
+      ],
+      "qcmRevision": "919b921464cc8659",
+      "blockKey": "geographie"
+    },
+    {
+      "id": "SHS-GEO-F22",
+      "familyId": "SHS-GEO-F22",
+      "module": "BP1-18SHS",
+      "collection": "shs-qcm-s1",
+      "sourceBankId": "QCM_BP1-18SHS_S1_GEOGRAPHIE",
+      "course": "C03",
+      "referenceId": "QCM_BP1-18SHS_S1_GEOGRAPHIE::C03",
+      "courseGroupKey": "8",
+      "hasWrittenExercise": false,
+      "title": "Cours 3 · QCM",
+      "context": "",
+      "prompt": "",
+      "hints": [
+        "Demande-toi si l'entrée en matière fait travailler les élèves sur un support lié à leur vécu et fait naître leurs propres questions, ou si elle leur donne d'avance des informations, un plan ou un contrôle.",
+        "Élément déclencheur : tâche de départ appuyée sur un support qui met en jeu le vécu des élèves et suscite des questions, par exemple par la surprise, un dilemme ou une idée reçue à examiner. Un bon élément déclencheur crée un lien avec le vécu des élèves ; il peut les étonner, poser un problème ou un dilemme, proposer une énigme ou mettre en cause une idée reçue ; il développe leur créativité, favorise le débat et peut ouvrir sur un enjeu d'actualité. Ne sont pas de bons éléments déclencheurs : une discussion générale (par exemple sur les déchets), un exposé du maître, une liste de définitions, la présentation de l'enquête et de son plan d'activités. C'est la première étape de la problématisation, qui construit un questionnement et n'évalue pas les connaissances."
+      ],
+      "sources": [
+        {
+          "file": "REVISION_BP1-18SHS_S1_Geographie.docx",
+          "location": "3.4 Gestes professionnels de l'enseignant, rubrique « Problématiser » (paragraphes sur l'élément déclencheur) ; 4 À ne pas confondre, « Élément déclencheur ≠ présentation de l'enquête »"
+        }
+      ],
+      "steps": [
+        {
+          "id": "Q1",
+          "prompt": "Qu'est-ce qu'un bon élément déclencheur, au début d'une enquête ?",
+          "requiresContext": false,
+          "correctId": "a",
+          "choices": [
+            {
+              "id": "a",
+              "text": "Une tâche sur un support lié à leur vécu, qui suscite leurs questions par une surprise ou un dilemme.",
+              "explanation": "Un élément déclencheur est une tâche de départ appuyée sur un support qui touche le vécu des élèves et fait naître leurs questions : il peut étonner, poser un dilemme, proposer une énigme ou mettre en cause une idée reçue."
+            },
+            {
+              "id": "b",
+              "text": "Une présentation de la question d'enquête et des activités prévues, pour que la classe sache où elle va.",
+              "explanation": "Annoncer la question et le programme des activités, c'est présenter l'enquête : les questions viennent de l'enseignant, alors que l'élément déclencheur doit faire naître celles des élèves."
+            },
+            {
+              "id": "c",
+              "text": "Un exposé du maître qui apporte d'abord les définitions et les faits dont les élèves auront besoin.",
+              "explanation": "Un exposé du maître ou une liste de définitions donne des réponses avant que les élèves se posent des questions : ce sont des contre-exemples d'élément déclencheur."
+            },
+            {
+              "id": "d",
+              "text": "Un petit test de départ qui permet de vérifier ce que les élèves savent déjà du thème choisi.",
+              "explanation": "Vérifier ce que les élèves savent relève de l'évaluation ; l'élément déclencheur ouvre la problématisation, qui construit un questionnement et n'évalue pas les connaissances."
+            }
+          ],
+          "level": "essentiel",
+          "sansChoix": true,
+          "notionId": "N43",
+          "attenteId": "G36"
+        },
+        {
+          "id": "Q2",
+          "prompt": "Parmi les propositions suivantes, laquelle décrit une caractéristique d'un bon élément déclencheur ?",
+          "requiresContext": false,
+          "correctId": "a",
+          "choices": [
+            {
+              "id": "a",
+              "text": "Il peut aborder un enjeu d'actualité en lien avec la vie quotidienne.",
+              "explanation": "Un bon élément déclencheur crée un lien avec le vécu des élèves et peut ouvrir sur un enjeu d'actualité : un fait proche de leur vie quotidienne fait naître des questions."
+            },
+            {
+              "id": "b",
+              "text": "Il vise à présenter la séquence et les activités prévues par l'enseignant.",
+              "explanation": "Présenter la séquence et ses activités, c'est donner le programme déjà prévu : les élèves n'ont plus de questions à construire. C'est un contre-exemple."
+            },
+            {
+              "id": "c",
+              "text": "Il consiste en un exposé de l'enseignant sur le thème de l'enquête.",
+              "explanation": "Un exposé apporte les réponses avant que les élèves se posent des questions ; il ne les fait ni s'étonner ni débattre."
+            },
+            {
+              "id": "d",
+              "text": "Il consiste à donner la liste des définitions nécessaires à la leçon.",
+              "explanation": "Une liste de définitions fournit le vocabulaire d'avance, sans support à interroger ni question à faire naître."
+            }
+          ],
+          "level": "essentiel-approfondi",
+          "sansChoix": false,
+          "notionId": "N43",
+          "attenteId": "G36",
+          "ancienExamen": {
+            "examen": "BP13SHS Géographie — recueil de questions d'examen et réponses proposées (ancien plan)",
+            "annee": null,
+            "question": "23 (rang dans le recueil, questions non numérotées)",
+            "page": 17,
+            "adapte": true
+          }
+        },
+        {
+          "id": "Q3",
+          "prompt": "Une enseignante de 6H veut lancer une enquête sur les déchets de l'école. Laquelle de ces entrées en matière est un bon élément déclencheur ?",
+          "requiresContext": false,
+          "correctId": "d",
+          "choices": [
+            {
+              "id": "a",
+              "text": "Ouvrir une discussion générale sur les déchets avec l'ensemble de la classe.",
+              "explanation": "Une discussion générale sur les déchets est un contre-exemple : sans tâche ni support qui surprenne, elle ne fait pas naître de questions précises."
+            },
+            {
+              "id": "b",
+              "text": "Présenter la question de l'enquête et les activités des semaines suivantes.",
+              "explanation": "Annoncer la question et le plan d'activités, c'est présenter l'enquête : les questions sont données, pas suscitées."
+            },
+            {
+              "id": "c",
+              "text": "Commencer par un petit test sur le tri pour savoir ce qu'ils connaissent.",
+              "explanation": "Un test vérifie des connaissances ; l'élément déclencheur ouvre un questionnement et n'évalue pas."
+            },
+            {
+              "id": "d",
+              "text": "Faire estimer puis peser les déchets produits par la classe en une semaine.",
+              "explanation": "Estimer puis peser les déchets de sa propre classe est une tâche sur un support lié au vécu des élèves ; l'écart entre l'estimation et le poids réel peut les étonner et faire naître des questions (d'où viennent ces déchets ? que deviennent-ils ?)."
+            }
+          ],
+          "level": "essentiel-approfondi",
+          "sansChoix": false,
+          "notionId": "N43",
+          "attenteId": "G36",
+          "ancienExamen": {
+            "examen": "BP13SHS — Exercices du cours de didactique de la géographie, AP, décembre 2022 (ancien plan)",
+            "annee": 2022,
+            "question": "9 (première et troisième parties : exemple et pertinence)",
+            "page": 4,
+            "adapte": true
+          }
+        }
+      ],
+      "qcmRevision": "8a036f4a50c252a2",
+      "blockKey": "geographie"
+    },
+    {
+      "id": "SHS-GEO-F23",
+      "familyId": "SHS-GEO-F23",
+      "module": "BP1-18SHS",
+      "collection": "shs-qcm-s1",
+      "sourceBankId": "QCM_BP1-18SHS_S1_GEOGRAPHIE",
+      "course": "C03",
+      "referenceId": "QCM_BP1-18SHS_S1_GEOGRAPHIE::C03",
+      "courseGroupKey": "8",
+      "hasWrittenExercise": false,
+      "title": "Cours 3 · QCM",
+      "context": "",
+      "prompt": "",
+      "hints": [
+        "Relis la consigne question par question : dit-elle qui travaille et comment, quoi faire, combien de temps, où, jusqu'à quand, avec quels moyens et pourquoi ?",
+        "Canevas pour formuler une consigne (Hertig, 2005) : série de sept questions qui font préciser qui travaille, quoi faire, quand, où, pour quand, avec quels moyens et pourquoi. Qui ? : le ou les élèves concernés et le mode de travail. Quoi ? : les opérations mentales à effectuer. Quand ? : la durée du travail. Où ? : les conditions spatiales de réalisation. Pour quand ? : le terme de la tâche et le travail éventuel à terminer hors classe. Comment ? : les documents à utiliser ou à chercher et les outils à mobiliser. Pourquoi ? : le sens du travail et ce que les élèves doivent apprendre. Le canevas sert à repérer ce qui manque dans une consigne ; la durée (quand) se distingue de l'échéance de remise (pour quand). Dévolution : processus par lequel l'enseignant fait en sorte que l'élève se sente responsable d'obtenir le résultat et accepte que la solution dépende de l'usage de ce qu'il sait déjà. Institutionnalisation : processus par lequel l'enseignant montre que les connaissances construites par la classe font partie des savoirs de la discipline ; un moment y est consacré en fin de cours."
+      ],
+      "sources": [
+        {
+          "file": "REVISION_BP1-18SHS_S1_Geographie.docx",
+          "location": "3.4 Gestes professionnels de l'enseignant, rubrique « Définir et dévoluer une tâche » (tableau 12) ; 4 À ne pas confondre, « Quand ? ≠ Pour quand ? »"
+        }
+      ],
+      "steps": [
+        {
+          "id": "Q1",
+          "prompt": "Une enseignante de 7H donne cette consigne : « En classe, par deux, en vingt minutes, comparez les cartes de la commune en 1900 et aujourd'hui, et notez trois changements sur la feuille. À finir à la maison pour jeudi. » À quelle question du canevas sa consigne ne répond-elle pas ?",
+          "requiresContext": false,
+          "correctId": "c",
+          "choices": [
+            {
+              "id": "a",
+              "text": "Quoi ?",
+              "explanation": "« Quoi ? » fait préciser les opérations mentales à effectuer ; elles sont données : comparer deux cartes et noter trois changements."
+            },
+            {
+              "id": "b",
+              "text": "Pour quand ?",
+              "explanation": "« Pour quand ? » fait préciser le terme de la tâche ; il est donné : le travail se finit à la maison pour jeudi."
+            },
+            {
+              "id": "c",
+              "text": "Pourquoi ?",
+              "explanation": "La consigne dit qui travaille (par deux), où (en classe), quand (vingt minutes), quoi (comparer, noter), comment (les deux cartes, la feuille) et pour quand (jeudi). Elle ne répond pas à « Pourquoi ? », qui fait préciser le sens du travail et ce que les élèves doivent apprendre."
+            },
+            {
+              "id": "d",
+              "text": "Où ?",
+              "explanation": "« Où ? » fait préciser les conditions spatiales ; « en classe », puis « à la maison », y répondent."
+            }
+          ],
+          "level": "essentiel",
+          "sansChoix": true,
+          "notionId": "N45",
+          "attenteId": "G38"
+        },
+        {
+          "id": "Q2",
+          "prompt": "Dans le canevas pour formuler une consigne, qu'est-ce qui distingue « Quand ? » de « Pour quand ? » ?",
+          "requiresContext": false,
+          "correctId": "d",
+          "choices": [
+            {
+              "id": "a",
+              "text": "Quand ? fixe l'échéance de remise ; Pour quand ? fixe la durée du travail.",
+              "explanation": "Les deux questions sont inversées : la durée répond à « Quand ? », l'échéance à « Pour quand ? »."
+            },
+            {
+              "id": "b",
+              "text": "Quand ? fixe la durée du travail ; Pour quand ? fixe l'heure où il commence.",
+              "explanation": "« Quand ? » est bien la durée, mais « Pour quand ? » ne porte pas sur le début : il fixe le terme de la tâche."
+            },
+            {
+              "id": "c",
+              "text": "Quand ? fixe l'heure où le travail commence ; Pour quand ? fixe l'échéance de remise.",
+              "explanation": "« Pour quand ? » est bien l'échéance, mais « Quand ? » ne demande pas l'heure du début : il fait préciser la durée du travail."
+            },
+            {
+              "id": "d",
+              "text": "Quand ? fixe la durée du travail ; Pour quand ? fixe l'échéance de remise.",
+              "explanation": "Dans le canevas, « Quand ? » fait préciser la durée du travail (vingt minutes, par exemple) et « Pour quand ? » le terme de la tâche, avec le travail éventuel à terminer hors classe."
+            }
+          ],
+          "level": "essentiel-approfondi",
+          "sansChoix": true,
+          "notionId": "N45",
+          "attenteId": "G38"
+        },
+        {
+          "id": "Q3",
+          "prompt": "Dans le canevas pour formuler une consigne, que fait préciser la question « Quoi ? » ?",
+          "requiresContext": false,
+          "correctId": "b",
+          "choices": [
+            {
+              "id": "a",
+              "text": "Le thème ou le sujet sur lequel porte le travail des élèves.",
+              "explanation": "Le sujet du travail ne répond pas à « Quoi ? » : le canevas demande l'opération à effectuer sur ce sujet."
+            },
+            {
+              "id": "b",
+              "text": "Les opérations mentales que les élèves doivent effectuer.",
+              "explanation": "« Quoi ? » fait dire les opérations mentales à réaliser, par exemple comparer ou expliquer. Sans elles, les élèves savent sur quoi ils travaillent, mais pas ce qu'ils doivent en faire."
+            },
+            {
+              "id": "c",
+              "text": "Les documents à utiliser et les outils à mobiliser.",
+              "explanation": "Les documents et les outils répondent à « Comment ? »."
+            },
+            {
+              "id": "d",
+              "text": "Le sens du travail et ce que les élèves doivent apprendre.",
+              "explanation": "Le sens du travail répond à « Pourquoi ? »."
+            }
+          ],
+          "level": "essentiel-approfondi",
+          "sansChoix": true,
+          "notionId": "N45",
+          "attenteId": "G38"
+        },
+        {
+          "id": "Q4",
+          "prompt": "Qu'est-ce que la dévolution ?",
+          "requiresContext": false,
+          "correctId": "d",
+          "choices": [
+            {
+              "id": "a",
+              "text": "L'enseignant consacre un moment en fin de cours à fixer ce que tous devront savoir.",
+              "explanation": "Fixer en fin de cours ce que tous doivent savoir, c'est l'institutionnalisation : elle vient après le travail, alors que la dévolution confie le problème à l'élève."
+            },
+            {
+              "id": "b",
+              "text": "L'enseignant précise qui travaille, quoi faire, avec quels moyens, jusqu'à quand et pourquoi.",
+              "explanation": "Ces sept précisions forment le canevas pour formuler une consigne, une autre notion du cours 03 ; la dévolution porte sur la responsabilité de l'élève face au résultat."
+            },
+            {
+              "id": "c",
+              "text": "L'enseignant montre la solution, puis demande aux élèves de l'appliquer à d'autres exercices semblables.",
+              "explanation": "Montrer la solution d'abord, c'est garder la responsabilité de la trouver ; la dévolution la confie à l'élève, qui cherche avec ce qu'il sait."
+            },
+            {
+              "id": "d",
+              "text": "L'enseignant fait en sorte que l'élève se sente responsable du résultat et l'obtienne avec ce qu'il sait.",
+              "explanation": "La dévolution est le processus par lequel l'enseignant fait en sorte que l'élève se sente responsable d'obtenir le résultat et accepte que la solution dépende de l'usage de ce qu'il sait déjà : le problème devient le sien."
+            }
+          ],
+          "level": "approfondissement",
+          "sansChoix": true,
+          "notionId": "N46",
+          "attenteId": "G39"
+        }
+      ],
+      "qcmRevision": "30a52e84a8c959fd",
+      "blockKey": "geographie"
+    },
+    {
+      "id": "SHS-GEO-F24",
+      "familyId": "SHS-GEO-F24",
+      "module": "BP1-18SHS",
+      "collection": "shs-qcm-s1",
+      "sourceBankId": "QCM_BP1-18SHS_S1_GEOGRAPHIE",
+      "course": "C03",
+      "referenceId": "QCM_BP1-18SHS_S1_GEOGRAPHIE::C03",
+      "courseGroupKey": "8",
+      "hasWrittenExercise": false,
+      "title": "Cours 3 · QCM",
+      "context": "",
+      "prompt": "",
+      "hints": [
+        "Demande-toi si connaître consiste à posséder beaucoup d'informations, ou à faire quelque chose de ces informations.",
+        "Conception du savoir (Morin) : connaître, c'est organiser les informations, les relier et les replacer dans leur contexte. Morin oppose cette conception à l'accumulation d'informations dispersées. En géographie, elle suppose de mettre en relation quatre composantes du savoir (le cadre conceptuel : connaissances factuelles, concepts intégrateurs, outils, capacités transversales). À distinguer de deux notions du cours 02 : le transfert, mobilisation des acquis pour changer de contexte et en stabiliser le sens ; la pensée scientifique des élèves, qui met l'expérience à distance en comparant et en cherchant des explications."
+      ],
+      "sources": [
+        {
+          "file": "REVISION_BP1-18SHS_S1_Geographie.docx",
+          "location": "3.4 Gestes professionnels de l'enseignant, rubrique « Synthétiser, conceptualiser, institutionnaliser » (conception du savoir)"
+        }
+      ],
+      "steps": [
+        {
+          "id": "Q1",
+          "prompt": "Quelle conception du savoir Morin défend-il ?",
+          "requiresContext": false,
+          "correctId": "c",
+          "choices": [
+            {
+              "id": "a",
+              "text": "Connaître, c'est réunir un grand nombre d'informations exactes et bien vérifiées sur un sujet.",
+              "explanation": "Des informations nombreuses et exactes restent une accumulation si on ne les relie pas : c'est précisément la conception à laquelle Morin oppose la sienne."
+            },
+            {
+              "id": "b",
+              "text": "Connaître, c'est mobiliser ses acquis dans un autre contexte pour en stabiliser le sens.",
+              "explanation": "C'est la définition du transfert : réutiliser ses acquis ailleurs pour en stabiliser le sens. Morin parle, lui, de la manière d'organiser et de relier les informations."
+            },
+            {
+              "id": "c",
+              "text": "Connaître, c'est organiser les informations, les relier et les replacer dans leur contexte.",
+              "explanation": "Pour Morin, connaître, c'est organiser les informations, les relier et les replacer dans leur contexte, à l'opposé d'une accumulation d'informations dispersées. En géographie, cela suppose de mettre en relation les quatre composantes du savoir."
+            },
+            {
+              "id": "d",
+              "text": "Connaître, c'est mettre son expérience à distance en la comparant à d'autres.",
+              "explanation": "Mettre son expérience à distance en comparant, c'est le critère de la pensée scientifique chez les élèves ; la conception de Morin porte sur ce que signifie connaître : organiser, relier, replacer dans un contexte."
+            }
+          ],
+          "level": "essentiel",
+          "sansChoix": true,
+          "notionId": "N47",
+          "attenteId": "G40"
+        },
+        {
+          "id": "Q2",
+          "prompt": "Une enseignante fait apprendre à ses élèves une liste de faits sur le Léman : son altitude, sa superficie et les villes de ses rives. Que lui reprocherait la conception du savoir de Morin ?",
+          "requiresContext": false,
+          "correctId": "a",
+          "choices": [
+            {
+              "id": "a",
+              "text": "Elle accumule des faits sans les relier entre eux ni les replacer dans un contexte.",
+              "explanation": "Morin oppose l'accumulation d'informations dispersées à une connaissance qui organise, relie et replace les informations dans leur contexte. Ici, altitude, superficie et villes restent des faits isolés. En géographie, il faudrait les mettre en relation avec les autres composantes du savoir, par exemple les concepts intégrateurs."
+            },
+            {
+              "id": "b",
+              "text": "Elle part de documents sur le lac au lieu de partir de l'expérience de ses élèves.",
+              "explanation": "Partir du vécu des élèves est une idée des démarches d'enquête ; la conception de Morin ne porte pas sur le point de départ, mais sur l'organisation des informations."
+            },
+            {
+              "id": "c",
+              "text": "Elle choisit des faits trop difficiles à retenir pour des élèves de cet âge.",
+              "explanation": "L'âge n'est pas le critère : Morin ne reproche pas la difficulté des faits, mais leur juxtaposition sans liens."
+            },
+            {
+              "id": "d",
+              "text": "Elle présente des faits naturels plutôt que les actions humaines qui transforment l'espace.",
+              "explanation": "Le choix de faits naturels n'est pas en cause chez Morin ; ce qui manque, c'est la mise en relation des informations et leur contexte."
+            }
+          ],
+          "level": "essentiel-approfondi",
+          "sansChoix": true,
+          "notionId": "N47",
+          "attenteId": "G40"
+        }
+      ],
+      "qcmRevision": "122b150626ec3517",
+      "blockKey": "geographie"
+    },
+    {
+      "id": "SHS-GEO-F25",
+      "familyId": "SHS-GEO-F25",
+      "module": "BP1-18SHS",
+      "collection": "shs-qcm-s1",
+      "sourceBankId": "QCM_BP1-18SHS_S1_GEOGRAPHIE",
+      "course": "C03",
+      "referenceId": "QCM_BP1-18SHS_S1_GEOGRAPHIE::C03",
+      "courseGroupKey": "8",
+      "hasWrittenExercise": false,
+      "title": "Cours 3 · QCM",
+      "context": "",
+      "prompt": "",
+      "hints": [
+        "Distingue ce que l'on sait (des mots, des faits, des processus), ce avec quoi l'on pense (les concepts qui portent les questions de la discipline), ce que l'on utilise (les supports) et ce que l'on sait faire.",
+        "Cadre conceptuel : organisation des savoirs à enseigner en quatre composantes liées : connaissances factuelles, concepts intégrateurs, outils et capacités transversales. Les connaissances factuelles regroupent les notions de vocabulaire, les faits et les processus. Les outils sont les supports à exploiter ou à construire. Les capacités transversales servent notamment à exploiter ces supports, à effectuer des tâches et à rendre compte des résultats. Concept intégrateur : outil de pensée qui organise les connaissances géographiques et auquel sont associées les questions centrales de la discipline ; les concepts intégrateurs sont les quatre concepts centraux : acteurs, localisation, organisation de l'espace et échelle. Une notion de vocabulaire est un mot qui désigne un objet, un fait ou un processus. À ne pas confondre avec les quatre registres de savoirs du cours 01 (savoirs académiques, des experts, d'expérience, à enseigner et enseignés), qui disent de quel type de savoir on se sert."
+      ],
+      "sources": [
+        {
+          "file": "REVISION_BP1-18SHS_S1_Geographie.docx",
+          "location": "3.4 Gestes professionnels de l'enseignant, rubrique « Synthétiser, conceptualiser, institutionnaliser » (figure 8) ; 3.1, rubrique « Quatre concepts centraux » ; 4 À ne pas confondre, « Concept intégrateur ≠ notion de vocabulaire »"
+        }
+      ],
+      "steps": [
+        {
+          "id": "Q1",
+          "prompt": "Indiquez les quatre composantes du cadre conceptuel selon Hertig (2009).",
+          "requiresContext": false,
+          "correctId": "a",
+          "choices": [
+            {
+              "id": "a",
+              "text": "Connaissances factuelles, concepts intégrateurs, outils et capacités transversales.",
+              "explanation": "Le cadre conceptuel de Hertig organise les savoirs à enseigner en quatre composantes liées : connaissances factuelles (vocabulaire, faits, processus), concepts intégrateurs, outils (supports à exploiter ou à construire) et capacités transversales (exploiter les supports, effectuer des tâches, rendre compte des résultats)."
+            },
+            {
+              "id": "b",
+              "text": "Acteurs, localisation, organisation de l'espace et échelle géographique.",
+              "explanation": "Ce sont les quatre concepts centraux. Ensemble, ils ne forment qu'une des quatre composantes : les concepts intégrateurs."
+            },
+            {
+              "id": "c",
+              "text": "Savoirs académiques, savoirs des experts, savoirs d'expérience, savoirs à enseigner.",
+              "explanation": "Ce sont les quatre registres de savoirs : ils disent de quel type de savoir on se sert, pas comment s'organisent les savoirs à enseigner."
+            },
+            {
+              "id": "d",
+              "text": "Notions de vocabulaire, faits, processus et concepts intégrateurs.",
+              "explanation": "Vocabulaire, faits et processus forment le contenu d'une seule composante, les connaissances factuelles ; il manque les outils et les capacités transversales."
+            }
+          ],
+          "level": "essentiel",
+          "sansChoix": true,
+          "notionId": "N48",
+          "attenteId": "G41",
+          "ancienExamen": {
+            "examen": "BP13SHS — Exercices du cours de didactique de la géographie, AP, décembre 2022 (ancien plan)",
+            "annee": 2022,
+            "question": "10",
+            "page": 4
+          }
+        },
+        {
+          "id": "Q2",
+          "prompt": "Dans le cadre conceptuel de Hertig, à quelle composante appartient le fait de savoir rendre compte des résultats obtenus ?",
+          "requiresContext": false,
+          "correctId": "b",
+          "choices": [
+            {
+              "id": "a",
+              "text": "Aux concepts intégrateurs",
+              "explanation": "Les concepts intégrateurs sont des outils de pensée qui portent les questions centrales (acteurs, localisation, organisation de l'espace, échelle), pas un savoir-faire."
+            },
+            {
+              "id": "b",
+              "text": "Aux capacités transversales",
+              "explanation": "Les capacités transversales servent à exploiter les supports, à effectuer des tâches et à rendre compte des résultats : rendre compte de ses résultats est un savoir-faire de cette composante."
+            },
+            {
+              "id": "c",
+              "text": "Aux outils",
+              "explanation": "Les outils sont les supports à exploiter ou à construire ; rendre compte est ce que l'élève sait faire, pas un support."
+            },
+            {
+              "id": "d",
+              "text": "Aux connaissances factuelles",
+              "explanation": "Elles regroupent des notions de vocabulaire, des faits et des processus : ce que l'on sait, pas ce que l'on sait faire."
+            }
+          ],
+          "level": "essentiel-approfondi",
+          "sansChoix": true,
+          "notionId": "N48",
+          "attenteId": "G41"
+        },
+        {
+          "id": "Q3",
+          "prompt": "Selon Hertig, qu'est-ce qu'un concept central (ou concept intégrateur) en géographie ?",
+          "requiresContext": false,
+          "correctId": "c",
+          "choices": [
+            {
+              "id": "a",
+              "text": "Une notion qui permet de mémoriser des définitions précises et le vocabulaire de la géographie.",
+              "explanation": "Un concept ne sert pas à mémoriser des définitions : il organise les connaissances et fait poser les questions de la discipline."
+            },
+            {
+              "id": "b",
+              "text": "Une compétence qui consiste à localiser des lieux et des régions sur une carte ou sur un plan.",
+              "explanation": "La localisation est l'un des quatre concepts, mais comme question à poser (où ? pourquoi là ?), pas comme compétence à repérer des lieux ; et un concept intégrateur organise les connaissances au-delà de la seule localisation."
+            },
+            {
+              "id": "c",
+              "text": "Un outil de pensée qui organise les connaissances et porte les questions centrales de la géographie.",
+              "explanation": "Un concept intégrateur est un outil de pensée qui organise les connaissances géographiques et auquel sont associées les questions centrales de la discipline. Ce sont les quatre concepts centraux : acteurs, localisation, organisation de l'espace et échelle."
+            },
+            {
+              "id": "d",
+              "text": "Un savoir factuel qui décrit des phénomènes naturels ou humains observés dans l'espace géographique.",
+              "explanation": "Décrire des phénomènes relève des connaissances factuelles, une autre composante du cadre conceptuel ; le concept intégrateur organise ces connaissances."
+            }
+          ],
+          "level": "essentiel",
+          "sansChoix": true,
+          "notionId": "N49",
+          "attenteId": "G41.1",
+          "ancienExamen": {
+            "examen": "BP13SHS Géographie — recueil de questions d'examen et réponses proposées (ancien plan)",
+            "annee": null,
+            "question": "9 (rang dans le recueil, questions non numérotées)",
+            "page": 6,
+            "adapte": true
+          }
+        },
+        {
+          "id": "Q4",
+          "prompt": "Dans une activité de 6H sur les pendulaires, lequel de ces termes est un concept intégrateur, et non une notion de vocabulaire ?",
+          "requiresContext": false,
+          "correctId": "d",
+          "choices": [
+            {
+              "id": "a",
+              "text": "Pendulaire",
+              "explanation": "« Pendulaire » est une notion de vocabulaire : un mot qui désigne les personnes qui travaillent en dehors de leur domicile. Il relève des connaissances factuelles."
+            },
+            {
+              "id": "b",
+              "text": "Réseau routier",
+              "explanation": "« Réseau routier » désigne un objet : c'est une notion de vocabulaire. Il sert à comprendre l'organisation de l'espace, qui, elle, est un concept intégrateur."
+            },
+            {
+              "id": "c",
+              "text": "Mobilité",
+              "explanation": "« Mobilité » désigne un processus, le fait de se déplacer : c'est une notion de vocabulaire, pas l'un des quatre concepts centraux qui portent les questions de la discipline."
+            },
+            {
+              "id": "d",
+              "text": "Localisation",
+              "explanation": "La localisation est l'un des quatre concepts intégrateurs : un outil de pensée qui fait poser des questions (où ? pourquoi là ? pourquoi pas ailleurs ?), sur les pendulaires comme sur d'autres cas."
+            }
+          ],
+          "level": "essentiel-approfondi",
+          "sansChoix": false,
+          "notionId": "N49",
+          "attenteId": "G41.1"
+        }
+      ],
+      "qcmRevision": "06f0df052b9c1efa",
+      "blockKey": "geographie"
+    },
+    {
+      "id": "SHS-GEO-F26",
+      "familyId": "SHS-GEO-F26",
+      "module": "BP1-18SHS",
+      "collection": "shs-qcm-s1",
+      "sourceBankId": "QCM_BP1-18SHS_S1_GEOGRAPHIE",
+      "course": "C03",
+      "referenceId": "QCM_BP1-18SHS_S1_GEOGRAPHIE::C03",
+      "courseGroupKey": "8",
+      "hasWrittenExercise": false,
+      "title": "Cours 3 · QCM",
+      "context": "",
+      "prompt": "",
+      "hints": [
+        "Trois opérations se suivent à la fin de l'enquête : demande-toi si l'on rassemble les résultats, si on les organise autour des concepts, ou si l'enseignant fixe ce dont tous deviennent responsables.",
+        "Synthèse : opération qui rassemble les éléments de connaissance sur un objet pour former un ensemble cohérent (par exemple une carte thématique commentée, quelques mots-clés reliés ou une affiche de photos légendées). Conceptualisation : processus qui organise les connaissances en réseau au moyen de concepts, ici les concepts intégrateurs de la géographie. Institutionnalisation : processus par lequel l'enseignant montre que les connaissances construites par la classe font partie des savoirs de la discipline et invite les élèves à prendre la responsabilité de les maîtriser ; un moment y est consacré en fin de cours. Les trois opérations se suivent dans cet ordre. Trace écrite : écrit ou représentation qui garde des éléments du travail pour mémoriser, comprendre ou conceptualiser ; l'institutionnalisation fixe le statut de ce qui doit être maîtrisé, la trace conserve des éléments du travail. Problématiser, au contraire, se fait au début de l'enquête : on y construit le problème à enquêter."
+      ],
+      "sources": [
+        {
+          "file": "REVISION_BP1-18SHS_S1_Geographie.docx",
+          "location": "3.4 Gestes professionnels de l'enseignant, rubrique « Synthétiser, conceptualiser, institutionnaliser » ; 4 À ne pas confondre, « Synthèse ≠ conceptualisation ≠ institutionnalisation » et « Institutionnalisation ≠ trace écrite »"
+        }
+      ],
+      "steps": [
+        {
+          "id": "Q1",
+          "prompt": "Qu'est-ce que l'institutionnalisation ?",
+          "requiresContext": false,
+          "correctId": "b",
+          "choices": [
+            {
+              "id": "a",
+              "text": "Rassembler ce que la classe a trouvé sur un objet d'étude en un ensemble cohérent.",
+              "explanation": "Rassembler les résultats en un ensemble cohérent, c'est la synthèse, la première des trois opérations ; elle ne dit pas encore ce que tous doivent maîtriser."
+            },
+            {
+              "id": "b",
+              "text": "Faire reconnaître les acquis de la classe comme savoirs de la discipline à maîtriser.",
+              "explanation": "L'institutionnalisation est le processus par lequel l'enseignant montre que les connaissances construites par la classe font partie des savoirs de la discipline et invite les élèves à prendre la responsabilité de les maîtriser. Un moment y est consacré en fin de cours, après la synthèse et la conceptualisation."
+            },
+            {
+              "id": "c",
+              "text": "Organiser les connaissances de la classe en réseau autour des concepts intégrateurs.",
+              "explanation": "Organiser les connaissances en réseau par les concepts intégrateurs, c'est la conceptualisation ; l'institutionnalisation vient ensuite et fixe le statut de ces savoirs."
+            },
+            {
+              "id": "d",
+              "text": "Garder par écrit des éléments du travail pour les mémoriser et les comprendre.",
+              "explanation": "Garder des éléments du travail, c'est la trace écrite : elle conserve, alors que l'institutionnalisation fixe le statut de savoir à maîtriser."
+            }
+          ],
+          "level": "essentiel",
+          "sansChoix": true,
+          "notionId": "N50",
+          "attenteId": "G42"
+        },
+        {
+          "id": "Q2",
+          "prompt": "Les élèves rassemblent les informations de la séquence en un ensemble cohérent : carte thématique commentée, mots-clés reliés ou affiche de photos légendées. À quelle opération correspond cette description ?",
+          "requiresContext": false,
+          "correctId": "a",
+          "choices": [
+            {
+              "id": "a",
+              "text": "Synthétiser",
+              "explanation": "Rassembler les informations d'une séquence en un ensemble cohérent, c'est synthétiser ; une carte commentée, des mots-clés reliés ou une affiche légendée en sont des formes. La synthèse prépare la conceptualisation."
+            },
+            {
+              "id": "b",
+              "text": "Conceptualiser",
+              "explanation": "Conceptualiser, c'est organiser les connaissances en réseau autour des concepts intégrateurs ; ici, les élèves rassemblent leurs informations sans les organiser par des concepts."
+            },
+            {
+              "id": "c",
+              "text": "Institutionnaliser",
+              "explanation": "Institutionnaliser est le fait de l'enseignant, qui fixe ce que tous doivent maîtriser ; ici, ce sont les élèves qui rassemblent leurs résultats."
+            },
+            {
+              "id": "d",
+              "text": "Problématiser",
+              "explanation": "Problématiser, c'est construire au début de l'enquête le problème à enquêter ; ici, la séquence est terminée et l'on rassemble ses résultats."
+            }
+          ],
+          "level": "essentiel-approfondi",
+          "sansChoix": true,
+          "notionId": "N50",
+          "attenteId": "G42",
+          "ancienExamen": {
+            "examen": "BP13SHS Géographie — recueil de questions d'examen et réponses proposées (ancien plan)",
+            "annee": null,
+            "question": "24 (rang dans le recueil, questions non numérotées), description b",
+            "page": 17,
+            "adapte": true
+          }
+        },
+        {
+          "id": "Q3",
+          "prompt": "Les élèves organisent leurs connaissances autour des concepts centraux qui leur permettent de structurer leur raisonnement géographique. À quelle opération correspond cette description ?",
+          "requiresContext": false,
+          "correctId": "b",
+          "choices": [
+            {
+              "id": "a",
+              "text": "Synthétiser",
+              "explanation": "Synthétiser rassemble les résultats en un ensemble cohérent ; ici, ils sont déjà rassemblés et on les organise par des concepts, ce qui est l'étape suivante."
+            },
+            {
+              "id": "b",
+              "text": "Conceptualiser",
+              "explanation": "Organiser les connaissances autour des concepts centraux, c'est conceptualiser : les connaissances forment un réseau grâce aux concepts intégrateurs (acteurs, localisation, organisation de l'espace, échelle)."
+            },
+            {
+              "id": "c",
+              "text": "Institutionnaliser",
+              "explanation": "L'institutionnalisation vient de l'enseignant, qui fixe le statut de savoir à maîtriser ; ici, les élèves structurent eux-mêmes leurs connaissances."
+            },
+            {
+              "id": "d",
+              "text": "Problématiser",
+              "explanation": "Problématiser construit le problème au début de l'enquête ; organiser ses connaissances par des concepts vient vers la fin."
+            }
+          ],
+          "level": "essentiel-approfondi",
+          "sansChoix": true,
+          "notionId": "N50",
+          "attenteId": "G42",
+          "ancienExamen": {
+            "examen": "BP13SHS Géographie — recueil de questions d'examen et réponses proposées (ancien plan)",
+            "annee": null,
+            "question": "24 (rang dans le recueil, questions non numérotées), description c",
+            "page": 17,
+            "adapte": true
+          }
+        },
+        {
+          "id": "Q4",
+          "prompt": "Après avoir relié des trajets sur une carte, la classe comprend que plusieurs itinéraires peuvent desservir une même destination. L'enseignant précise alors que tous doivent savoir l'expliquer. Quelle opération mène-t-il en le précisant ?",
+          "requiresContext": false,
+          "correctId": "c",
+          "choices": [
+            {
+              "id": "a",
+              "text": "Synthétiser",
+              "explanation": "Relier les trajets sur la carte a rassemblé les résultats : c'était la synthèse, avant la phrase de l'enseignant."
+            },
+            {
+              "id": "b",
+              "text": "Conceptualiser",
+              "explanation": "Comprendre que plusieurs itinéraires desservent une destination organise les connaissances autour d'un concept, l'organisation de l'espace en réseau ; la phrase de l'enseignant va plus loin : elle fixe ce que tous doivent maîtriser."
+            },
+            {
+              "id": "c",
+              "text": "Institutionnaliser",
+              "explanation": "Préciser que tous doivent savoir l'expliquer, c'est fixer ce dont les élèves deviennent responsables : l'enseignant institutionnalise. La synthèse (relier les trajets) et la compréhension du réseau ont précédé."
+            },
+            {
+              "id": "d",
+              "text": "Faire une trace écrite",
+              "explanation": "Rien n'est écrit ni conservé ici ; et l'institutionnalisation se distingue de la trace : elle fixe le statut de savoir à maîtriser, la trace garde des éléments du travail."
+            }
+          ],
+          "level": "essentiel-approfondi",
+          "sansChoix": true,
+          "notionId": "N50",
+          "attenteId": "G42"
+        }
+      ],
+      "qcmRevision": "3c45b6a64a084b7a",
+      "blockKey": "geographie"
+    },
+    {
+      "id": "SHS-GEO-F27",
+      "familyId": "SHS-GEO-F27",
+      "module": "BP1-18SHS",
+      "collection": "shs-qcm-s1",
+      "sourceBankId": "QCM_BP1-18SHS_S1_GEOGRAPHIE",
+      "course": "C03",
+      "referenceId": "QCM_BP1-18SHS_S1_GEOGRAPHIE::C03",
+      "courseGroupKey": "8",
+      "hasWrittenExercise": false,
+      "title": "Cours 3 · QCM",
+      "context": "",
+      "prompt": "",
+      "hints": [
+        "Pense à ce que la trace écrite garde du travail, sous quelle forme, à quel moment et pour quoi faire.",
+        "Trace écrite : écrit ou représentation qui garde des éléments du travail pour mémoriser, comprendre ou conceptualiser. Elle prend la forme de repérages, d'un schéma ou d'un résumé et peut se faire au début, pendant ou à la fin d'une séance. Elle a donc trois dimensions : ses usages, ses formes et ses moments (Meunier et Sala, 2016). Elle fixe les savoirs construits collectivement et les relie à la discipline ; elle aide à structurer et à hiérarchiser les informations ; elle garde une trace personnelle du raisonnement suivi et de la réponse à la problématique. Elle se construit avec la classe."
+      ],
+      "sources": [
+        {
+          "file": "REVISION_BP1-18SHS_S1_Geographie.docx",
+          "location": "3.4 Gestes professionnels de l'enseignant, rubrique « Synthétiser, conceptualiser, institutionnaliser » (trace écrite, figure 9)"
+        }
+      ],
+      "steps": [
+        {
+          "id": "Q1",
+          "prompt": "Selon Meunier et Sala, quelles sont les trois dimensions de la trace écrite ?",
+          "requiresContext": false,
+          "correctId": "a",
+          "choices": [
+            {
+              "id": "a",
+              "text": "Ses usages, ses formes et ses moments.",
+              "explanation": "La trace écrite est un écrit ou une représentation qui garde des éléments du travail. Ses trois dimensions sont ses usages (mémoriser, comprendre, conceptualiser), ses formes (repérages, schéma, résumé) et ses moments (début, pendant ou fin de séance)."
+            },
+            {
+              "id": "b",
+              "text": "Mémoriser, comprendre et conceptualiser.",
+              "explanation": "Ce sont les trois usages de la trace écrite : ensemble, ils ne forment qu'une dimension."
+            },
+            {
+              "id": "c",
+              "text": "Son auteur, son support et son destinataire.",
+              "explanation": "Le modèle ne parle ni d'auteur ni de destinataire : il décrit à quoi sert la trace (usages), comment elle se présente (formes) et quand on la fait (moments)."
+            },
+            {
+              "id": "d",
+              "text": "Des repérages, un schéma et un résumé.",
+              "explanation": "Ce sont les formes que la trace peut prendre : une seule des trois dimensions."
+            }
+          ],
+          "level": "essentiel",
+          "sansChoix": true,
+          "notionId": "N51",
+          "attenteId": "G43"
+        },
+        {
+          "id": "Q2",
+          "prompt": "Parmi les propositions suivantes, laquelle décrit correctement un rôle de la trace écrite dans une démarche d'enquête en géographie ?",
+          "requiresContext": false,
+          "correctId": "d",
+          "choices": [
+            {
+              "id": "a",
+              "text": "Elle sert à motiver les élèves avec des visuels attractifs.",
+              "explanation": "Son rôle est cognitif : garder, structurer, relier aux savoirs de la discipline ; l'attrait des visuels n'en fait pas une trace utile."
+            },
+            {
+              "id": "b",
+              "text": "Elle consiste à recopier un texte de synthèse fourni par l'enseignant.",
+              "explanation": "La trace se construit avec la classe : recopier un texte de l'enseignant ne garde pas le raisonnement suivi par les élèves."
+            },
+            {
+              "id": "c",
+              "text": "Elle sert à vérifier, à la fin de la séance, ce que chaque élève a bien retenu du travail.",
+              "explanation": "Vérifier ce que chacun a retenu, c'est évaluer ; la trace sert à mémoriser, comprendre et conceptualiser, pas à contrôler."
+            },
+            {
+              "id": "d",
+              "text": "Elle aide les élèves à structurer et hiérarchiser les informations travaillées en classe.",
+              "explanation": "La trace écrite aide à structurer et à hiérarchiser les informations ; elle fixe aussi les savoirs construits collectivement et garde une trace personnelle du raisonnement suivi."
+            }
+          ],
+          "level": "essentiel-approfondi",
+          "sansChoix": false,
+          "notionId": "N51",
+          "attenteId": "G43",
+          "ancienExamen": {
+            "examen": "BP13SHS Géographie — recueil de questions d'examen et réponses proposées (ancien plan)",
+            "annee": null,
+            "question": "25 (rang dans le recueil, questions non numérotées)",
+            "page": 17,
+            "adapte": true
+          }
+        }
+      ],
+      "qcmRevision": "4695fffe3e78cc92",
+      "blockKey": "geographie"
+    },
+    {
+      "id": "SHS-GEO-F28",
+      "familyId": "SHS-GEO-F28",
+      "module": "BP1-18SHS",
+      "collection": "shs-qcm-s1",
+      "sourceBankId": "QCM_BP1-18SHS_S1_GEOGRAPHIE",
+      "course": "C03",
+      "referenceId": "QCM_BP1-18SHS_S1_GEOGRAPHIE::C03",
+      "courseGroupKey": "8",
+      "hasWrittenExercise": false,
+      "title": "Cours 3 · QCM",
+      "context": "",
+      "prompt": "",
+      "hints": [
+        "Le modèle a deux temps : demande-toi si la classe analyse le problème avec les savoirs des disciplines, ou si elle revient au problème pour prendre position.",
+        "Modèle du détour / retour (d'après Fierz, 2008, et Audigier et al., 2011) : démarche qui passe par les connaissances et raisonnements des disciplines pour analyser un problème lié au développement durable, puis revient au problème pour se positionner en citoyen. 1. Faire le détour par les disciplines : utiliser leurs connaissances et leurs manières de raisonner pour analyser le problème. 2. Revenir au problème citoyen : s'appuyer sur cette analyse pour examiner la situation, débattre, décider ou agir ; il peut aussi s'agir d'imaginer des solutions, de choisir les valeurs sur lesquelles fonder sa position et d'accepter l'incertitude. À distinguer : la géographie expérientielle part de l'expérience spatiale des élèves pour la relire avec les savoirs de la classe ; le modèle de Hertig relie élément déclencheur, problématique, unités d'apprentissage, synthèse générale et prise de position ; le scénario prospectif imagine un futur possible d'un territoire ; l'élément déclencheur ouvre une enquête en faisant naître les questions des élèves ; la synthèse rassemble les résultats en un ensemble cohérent."
+      ],
+      "sources": [
+        {
+          "file": "REVISION_BP1-18SHS_S1_Geographie.docx",
+          "location": "3.4 Gestes professionnels de l'enseignant, rubrique « Réinvestir des savoirs pour agir » (figure 10)"
+        }
+      ],
+      "steps": [
+        {
+          "id": "Q1",
+          "prompt": "Qu'est-ce que le modèle du détour / retour ?",
+          "requiresContext": false,
+          "correctId": "a",
+          "choices": [
+            {
+              "id": "a",
+              "text": "Passer par les savoirs des disciplines pour analyser un problème de durabilité, puis y revenir pour se positionner en citoyen.",
+              "explanation": "Le modèle passe par les connaissances et les raisonnements des disciplines pour analyser un problème lié au développement durable (le détour), puis revient au problème pour se positionner en citoyen : débattre, décider ou agir (le retour)."
+            },
+            {
+              "id": "b",
+              "text": "Partir de l'expérience vécue des élèves, la confronter à des outils géographiques, puis la relire avec les savoirs de la classe.",
+              "explanation": "C'est la géographie expérientielle : elle part de l'expérience spatiale des élèves. Le détour / retour part d'un problème de durabilité et vise une prise de position citoyenne."
+            },
+            {
+              "id": "c",
+              "text": "Imaginer le futur possible d'un territoire à partir de son passé, de sa situation présente et des enjeux des acteurs.",
+              "explanation": "C'est le scénario prospectif, l'un des dispositifs de réinvestissement ; il peut servir au retour, mais ne décrit pas les deux temps du modèle."
+            },
+            {
+              "id": "d",
+              "text": "Construire un problème avec les élèves, le traiter par unités d'apprentissage, puis relier leurs résultats dans une synthèse.",
+              "explanation": "Ce sont les quatre premières étapes du modèle de Hertig ; il y manque le retour au problème pour se positionner en citoyen."
+            }
+          ],
+          "level": "essentiel",
+          "sansChoix": true,
+          "notionId": "N52",
+          "attenteId": "G44"
+        },
+        {
+          "id": "Q2",
+          "prompt": "Une classe de 8H étudie un projet de parc éolien sur une crête voisine. Elle lit d'abord des cartes des vents et des habitations proches, puis débat de la position qu'elle défendrait devant le conseil communal. Dans le modèle du détour / retour, que représente ce débat ?",
+          "requiresContext": false,
+          "correctId": "a",
+          "choices": [
+            {
+              "id": "a",
+              "text": "Le retour : revenir au problème pour se positionner en citoyen.",
+              "explanation": "Le retour s'appuie sur l'analyse pour examiner la situation, débattre, décider ou agir, en choisissant les valeurs sur lesquelles fonder sa position et en acceptant l'incertitude. Débattre de la position à défendre devant le conseil communal, c'est revenir au problème en citoyen."
+            },
+            {
+              "id": "b",
+              "text": "L'élément déclencheur : faire naître les questions des élèves.",
+              "explanation": "Un élément déclencheur ouvre une enquête en faisant naître des questions ; ici, le débat arrive à la fin, après l'analyse."
+            },
+            {
+              "id": "c",
+              "text": "La synthèse : rassembler les résultats en un ensemble cohérent.",
+              "explanation": "Une synthèse rassemble des résultats ; le débat, lui, les mobilise pour prendre position."
+            },
+            {
+              "id": "d",
+              "text": "Le détour : analyser le problème avec les savoirs des disciplines.",
+              "explanation": "Le détour, c'est la lecture des cartes des vents et des habitations : la classe utilise les savoirs de la géographie pour analyser le projet. Le débat vient après."
+            }
+          ],
+          "level": "essentiel-approfondi",
+          "sansChoix": true,
+          "notionId": "N52",
+          "attenteId": "G44"
+        }
+      ],
+      "qcmRevision": "3c5eb13b7b300542",
+      "blockKey": "geographie"
+    },
+    {
+      "id": "SHS-GEO-F29",
+      "familyId": "SHS-GEO-F29",
+      "module": "BP1-18SHS",
+      "collection": "shs-qcm-s1",
+      "sourceBankId": "QCM_BP1-18SHS_S1_GEOGRAPHIE",
+      "course": "C03",
+      "referenceId": "QCM_BP1-18SHS_S1_GEOGRAPHIE::C03",
+      "courseGroupKey": "8",
+      "hasWrittenExercise": false,
+      "title": "Cours 3 · QCM",
+      "context": "",
+      "prompt": "",
+      "hints": [
+        "Regarde ce que font les élèves : défendent-ils leurs propres arguments, parlent-ils au nom d'un acteur, imaginent-ils un futur possible, ou mettent-ils en forme l'organisation d'un espace ?",
+        "Quatre dispositifs permettent le réinvestissement des savoirs : le débat, le jeu de rôle, les scénarios prospectifs et la représentation des territoires. Débat : échange argumenté sur une question, mené en classe entière ou en petits groupes ; les élèves y défendent leurs arguments. Jeu de rôle : mise en situation où les élèves incarnent des acteurs et argumentent à partir de leurs intérêts et de ce qu'ils savent. Scénario prospectif : futur possible d'un territoire imaginé à partir du passé, de la situation présente et des enjeux soulevés par les acteurs ; il sert à argumenter un choix, alors qu'une prévision dit ce qui est susceptible de se produire. Représentation des territoires : mise en forme graphique de l'organisation d'un espace ou de ses transformations, notamment par carte ou croquis. À distinguer : la carte sensible représente les perceptions et les émotions vécues d'un espace ; la sortie sur le terrain est une expérience spatiale directe ; la démarche des 4I (immersion, interaction, institutionnalisation, implémentation) relève de la géographie expérientielle ; synthèse, conceptualisation et institutionnalisation organisent et fixent les savoirs à la fin d'une enquête."
+      ],
+      "sources": [
+        {
+          "file": "REVISION_BP1-18SHS_S1_Geographie.docx",
+          "location": "3.4 Gestes professionnels de l'enseignant, rubrique « Réinvestir des savoirs pour agir » ; 4 À ne pas confondre, « Débat ≠ jeu de rôle » et « Scénario prospectif ≠ prévision »"
+        }
+      ],
+      "steps": [
+        {
+          "id": "Q1",
+          "prompt": "Quels sont les quatre dispositifs qui permettent de réinvestir des savoirs ?",
+          "requiresContext": false,
+          "correctId": "c",
+          "choices": [
+            {
+              "id": "a",
+              "text": "Le débat, le jeu de rôle, la carte sensible et la sortie sur le terrain.",
+              "explanation": "Le débat et le jeu de rôle en font partie, mais pas les deux autres : la carte sensible exprime les perceptions vécues d'un espace, et la sortie sur le terrain est une expérience spatiale directe."
+            },
+            {
+              "id": "b",
+              "text": "L'immersion, l'interaction, l'institutionnalisation puis l'implémentation des savoirs acquis.",
+              "explanation": "Ce sont les quatre phases de la démarche des 4I ; l'implémentation y réinvestit les apprentissages, mais ces phases ne sont pas les dispositifs de réinvestissement."
+            },
+            {
+              "id": "c",
+              "text": "Le débat, le jeu de rôle, les scénarios prospectifs et la représentation des territoires.",
+              "explanation": "Le débat, le jeu de rôle, les scénarios prospectifs et la représentation des territoires font mobiliser les acquis de l'enquête pour argumenter, se positionner ou mettre en forme un espace."
+            },
+            {
+              "id": "d",
+              "text": "La synthèse, la conceptualisation, l'institutionnalisation et la trace écrite.",
+              "explanation": "Ce sont les trois opérations de fin d'enquête et la trace qui garde le travail : elles organisent et fixent les savoirs avant qu'on les réinvestisse."
+            }
+          ],
+          "level": "essentiel",
+          "sansChoix": true,
+          "notionId": "N53",
+          "attenteId": "G45",
+          "ancienExamen": {
+            "examen": "BP13SHS — Exercices du cours de didactique de la géographie, AP, décembre 2022 (ancien plan)",
+            "annee": 2022,
+            "question": "11",
+            "page": 4,
+            "adapte": true
+          }
+        },
+        {
+          "id": "Q2",
+          "prompt": "Qu'est-ce qui distingue le débat du jeu de rôle ?",
+          "requiresContext": false,
+          "correctId": "c",
+          "choices": [
+            {
+              "id": "a",
+              "text": "Dans le débat, les élèves parlent au nom d'un acteur ; dans le jeu de rôle, ils défendent leurs propres arguments.",
+              "explanation": "Les deux moitiés sont inversées : c'est dans le jeu de rôle qu'on parle au nom d'un acteur."
+            },
+            {
+              "id": "b",
+              "text": "Dans le débat, les élèves échangent en classe entière ; dans le jeu de rôle, ils parlent au nom d'un acteur.",
+              "explanation": "La seconde moitié est juste, mais le débat peut se mener en classe entière ou en petits groupes : la taille du groupe ne le distingue pas du jeu de rôle."
+            },
+            {
+              "id": "c",
+              "text": "Dans le débat, les élèves défendent leurs propres arguments ; dans le jeu de rôle, ils parlent au nom d'un acteur.",
+              "explanation": "Le débat est un échange argumenté où les élèves défendent leurs arguments ; dans le jeu de rôle, ils incarnent des acteurs et argumentent à partir de leurs intérêts. La différence tient à la position depuis laquelle on argumente."
+            },
+            {
+              "id": "d",
+              "text": "Dans le débat, les élèves défendent leurs propres arguments ; dans le jeu de rôle, ils imaginent le futur d'un territoire.",
+              "explanation": "La première moitié est juste, mais imaginer le futur d'un territoire, c'est le scénario prospectif."
+            }
+          ],
+          "level": "essentiel-approfondi",
+          "sansChoix": true,
+          "notionId": "N53",
+          "attenteId": "G45"
+        },
+        {
+          "id": "Q3",
+          "prompt": "Qu'est-ce qui distingue un scénario prospectif d'une prévision ?",
+          "requiresContext": false,
+          "correctId": "a",
+          "choices": [
+            {
+              "id": "a",
+              "text": "Le scénario imagine un futur possible pour argumenter un choix ; la prévision dit ce qui est susceptible de se produire.",
+              "explanation": "Un scénario prospectif est un futur possible d'un territoire, imaginé à partir du passé, du présent et des enjeux des acteurs, pour argumenter un choix ; une prévision dit ce qui est susceptible de se produire. Garder les conditions et les incertitudes évite de transformer un scénario en certitude."
+            },
+            {
+              "id": "b",
+              "text": "Le scénario dit ce qui va le plus probablement arriver ; la prévision imagine plusieurs futurs souhaitables.",
+              "explanation": "C'est l'inverse : la prévision porte sur ce qui est susceptible d'arriver, le scénario imagine un futur possible pour argumenter."
+            },
+            {
+              "id": "c",
+              "text": "Le scénario part de la situation présente sans regarder le passé ; la prévision s'appuie aussi sur l'histoire du territoire.",
+              "explanation": "Le scénario prospectif s'appuie justement sur le passé, la situation présente et les enjeux des acteurs."
+            },
+            {
+              "id": "d",
+              "text": "Le scénario est un dessin du territoire futur ; la prévision est un texte qui décrit ce même futur.",
+              "explanation": "La forme ne distingue pas les deux : la mise en forme graphique d'un espace est la représentation des territoires, un autre dispositif."
+            }
+          ],
+          "level": "essentiel-approfondi",
+          "sansChoix": true,
+          "notionId": "N53",
+          "attenteId": "G45"
+        },
+        {
+          "id": "Q4",
+          "prompt": "En 7H, chaque groupe défend un projet de nouvelle route au nom d'un acteur : les agriculteurs, les commerçants ou les habitants du village. Quel dispositif de réinvestissement l'enseignante utilise-t-elle ?",
+          "requiresContext": false,
+          "correctId": "b",
+          "choices": [
+            {
+              "id": "a",
+              "text": "Le débat",
+              "explanation": "Le débat est un échange argumenté où les élèves défendent leurs propres arguments ; ici, chaque groupe parle au nom d'un acteur, ce qui change la position depuis laquelle on argumente."
+            },
+            {
+              "id": "b",
+              "text": "Le jeu de rôle",
+              "explanation": "Les élèves incarnent des acteurs et argumentent à partir de leurs intérêts : c'est le jeu de rôle."
+            },
+            {
+              "id": "c",
+              "text": "Le scénario prospectif",
+              "explanation": "Le scénario prospectif imagine un futur possible du territoire à partir du passé, du présent et des enjeux ; ici, les groupes défendent des intérêts face à un projet."
+            },
+            {
+              "id": "d",
+              "text": "La représentation des territoires",
+              "explanation": "La représentation des territoires met en forme graphique l'organisation d'un espace ou ses transformations ; aucune carte ni aucun croquis n'est demandé ici."
+            }
+          ],
+          "level": "essentiel-approfondi",
+          "sansChoix": true,
+          "notionId": "N53",
+          "attenteId": "G45"
+        },
+        {
+          "id": "Q5",
+          "prompt": "Des élèves de 8H imaginent à quoi pourrait ressembler leur village en 2050, à partir de cartes anciennes, de la situation actuelle et des projets dont parlent les habitants. Quel dispositif de réinvestissement l'enseignant utilise-t-il ?",
+          "requiresContext": false,
+          "correctId": "c",
+          "choices": [
+            {
+              "id": "a",
+              "text": "Le débat",
+              "explanation": "Le débat confronte les arguments des élèves sur une question ; ici, ils construisent ensemble un futur possible."
+            },
+            {
+              "id": "b",
+              "text": "Le jeu de rôle",
+              "explanation": "Le jeu de rôle fait incarner des acteurs ; ici, les élèves tiennent compte des projets des habitants sans parler en leur nom."
+            },
+            {
+              "id": "c",
+              "text": "Le scénario prospectif",
+              "explanation": "Imaginer un futur possible du territoire à partir du passé, du présent et des enjeux des acteurs, c'est le scénario prospectif."
+            },
+            {
+              "id": "d",
+              "text": "La représentation des territoires",
+              "explanation": "La représentation des territoires met en forme l'organisation d'un espace ou ses transformations ; ce qui décide ici est le futur imaginé à partir du passé et des projets."
+            }
+          ],
+          "level": "essentiel-approfondi",
+          "sansChoix": true,
+          "notionId": "N53",
+          "attenteId": "G45"
+        },
+        {
+          "id": "Q6",
+          "prompt": "En 7H, après l'enquête sur la nouvelle route, les élèves échangent en petits groupes : chacun défend son propre avis sur le projet, arguments à l'appui. Quel dispositif de réinvestissement l'enseignant utilise-t-il ?",
+          "requiresContext": false,
+          "correctId": "a",
+          "choices": [
+            {
+              "id": "a",
+              "text": "Le débat",
+              "explanation": "Un échange argumenté sur une question, mené en classe entière ou en petits groupes, où chacun défend ses arguments, c'est le débat."
+            },
+            {
+              "id": "b",
+              "text": "Le jeu de rôle",
+              "explanation": "Dans le jeu de rôle, les élèves parlent au nom d'un acteur et de ses intérêts ; ici, chacun défend son propre avis."
+            },
+            {
+              "id": "c",
+              "text": "Le scénario prospectif",
+              "explanation": "Le scénario prospectif imagine un futur possible du territoire ; ici, les élèves prennent position sur un projet présent."
+            },
+            {
+              "id": "d",
+              "text": "La représentation des territoires",
+              "explanation": "La représentation des territoires est une mise en forme graphique ; l'échange est ici oral et argumenté."
+            }
+          ],
+          "level": "essentiel-approfondi",
+          "sansChoix": true,
+          "notionId": "N53",
+          "attenteId": "G45"
+        }
+      ],
+      "qcmRevision": "2329b8a84dee9bc2",
+      "blockKey": "geographie"
+    },
+    {
+      "id": "SHS-GEO-F30",
+      "familyId": "SHS-GEO-F30",
+      "module": "BP1-18SHS",
+      "collection": "shs-qcm-s1",
+      "sourceBankId": "QCM_BP1-18SHS_S1_GEOGRAPHIE",
+      "course": "C03",
+      "referenceId": "QCM_BP1-18SHS_S1_GEOGRAPHIE::C03",
+      "courseGroupKey": "8",
+      "hasWrittenExercise": false,
+      "title": "Cours 3 · QCM",
+      "context": "",
+      "prompt": "",
+      "hints": [
+        "Demande-toi si l'habitat se limite au logement, ou s'il englobe tous les lieux où se déroule la vie d'une personne.",
+        "Pour Lussault, l'habitat désigne les espaces de vie reliés entre eux, au-delà du seul logement ; l'habitabilité désigne les conditions sociales, culturelles, économiques, écologiques et politiques qui rendent cette vie possible. Une enquête sur les manières d'habiter peut faire examiner des idées reçues en regardant ce que des personnes font dans les lieux et ce qui rend ces usages possibles."
+      ],
+      "sources": [
+        {
+          "file": "REVISION_BP1-18SHS_S1_Geographie.docx",
+          "location": "3.4 Gestes professionnels de l'enseignant, rubrique « Habiter, un thème d'enquête »"
+        }
+      ],
+      "steps": [
+        {
+          "id": "Q1",
+          "prompt": "Pour Lussault, que désigne l'habitat ?",
+          "requiresContext": false,
+          "correctId": "c",
+          "choices": [
+            {
+              "id": "a",
+              "text": "Le logement où vit une personne, avec ses abords immédiats.",
+              "explanation": "Le logement n'est qu'un de ces espaces de vie : l'habitat les relie tous."
+            },
+            {
+              "id": "b",
+              "text": "Les conditions sociales, économiques et écologiques qui rendent la vie possible.",
+              "explanation": "Ces conditions définissent l'habitabilité : ce qui rend possible la vie dans l'habitat."
+            },
+            {
+              "id": "c",
+              "text": "Les espaces de vie d'une personne, reliés entre eux, au-delà du seul logement.",
+              "explanation": "Pour Lussault, l'habitat désigne les espaces de vie reliés entre eux, au-delà du seul logement : habiter ne se réduit pas à occuper une maison."
+            },
+            {
+              "id": "d",
+              "text": "Le type de construction propre à une région, comme le chalet de montagne.",
+              "explanation": "Un type de construction est un exemple de logement ; l'habitat, chez Lussault, est l'ensemble des espaces de vie reliés."
+            }
+          ],
+          "level": "approfondissement",
+          "sansChoix": true,
+          "notionId": "N54",
+          "attenteId": "G46"
+        }
+      ],
+      "qcmRevision": "587ab1dcc4ca63f8",
       "blockKey": "geographie"
     },
     {
@@ -11807,5 +13318,1749 @@
       "blockKey": "ecr"
     }
   ],
-  "bankRevision": "eb3c792413bb6c88"
+  "navigationOrder": [
+    {
+      "exerciseId": "SHS-COM-F01",
+      "stepId": "Q2"
+    },
+    {
+      "exerciseId": "SHS-COM-F01",
+      "stepId": "Q3"
+    },
+    {
+      "exerciseId": "SHS-COM-F02",
+      "stepId": "Q1"
+    },
+    {
+      "exerciseId": "SHS-COM-F02",
+      "stepId": "Q2"
+    },
+    {
+      "exerciseId": "SHS-COM-F02",
+      "stepId": "Q3"
+    },
+    {
+      "exerciseId": "SHS-COM-F02",
+      "stepId": "Q4"
+    },
+    {
+      "exerciseId": "SHS-COM-F02",
+      "stepId": "Q5"
+    },
+    {
+      "exerciseId": "SHS-COM-F02",
+      "stepId": "Q6"
+    },
+    {
+      "exerciseId": "SHS-COM-F02",
+      "stepId": "Q7"
+    },
+    {
+      "exerciseId": "SHS-COM-F02",
+      "stepId": "Q8"
+    },
+    {
+      "exerciseId": "SHS-COM-F02",
+      "stepId": "Q9"
+    },
+    {
+      "exerciseId": "SHS-COM-F02",
+      "stepId": "Q10"
+    },
+    {
+      "exerciseId": "SHS-COM-F02",
+      "stepId": "Q11"
+    },
+    {
+      "exerciseId": "SHS-COM-F02",
+      "stepId": "Q12"
+    },
+    {
+      "exerciseId": "SHS-COM-F02",
+      "stepId": "Q13"
+    },
+    {
+      "exerciseId": "SHS-COM-F03",
+      "stepId": "Q3"
+    },
+    {
+      "exerciseId": "SHS-COM-F04",
+      "stepId": "Q6"
+    },
+    {
+      "exerciseId": "SHS-COM-F04",
+      "stepId": "Q7"
+    },
+    {
+      "exerciseId": "SHS-COM-F04",
+      "stepId": "Q8"
+    },
+    {
+      "exerciseId": "SHS-COM-F04",
+      "stepId": "Q9"
+    },
+    {
+      "exerciseId": "SHS-COM-F05",
+      "stepId": "Q2"
+    },
+    {
+      "exerciseId": "SHS-COM-F05",
+      "stepId": "Q3"
+    },
+    {
+      "exerciseId": "SHS-COM-F06",
+      "stepId": "Q1"
+    },
+    {
+      "exerciseId": "SHS-COM-F06",
+      "stepId": "Q3"
+    },
+    {
+      "exerciseId": "SHS-COM-F07",
+      "stepId": "Q1"
+    },
+    {
+      "exerciseId": "SHS-COM-F07",
+      "stepId": "Q2"
+    },
+    {
+      "exerciseId": "SHS-COM-F08",
+      "stepId": "Q1"
+    },
+    {
+      "exerciseId": "SHS-COM-F08",
+      "stepId": "Q2"
+    },
+    {
+      "exerciseId": "SHS-COM-F08",
+      "stepId": "Q3"
+    },
+    {
+      "exerciseId": "SHS-COM-F08",
+      "stepId": "Q4"
+    },
+    {
+      "exerciseId": "SHS-COM-F08",
+      "stepId": "Q5"
+    },
+    {
+      "exerciseId": "SHS-COM-F08",
+      "stepId": "Q6"
+    },
+    {
+      "exerciseId": "SHS-COM-F08",
+      "stepId": "Q7"
+    },
+    {
+      "exerciseId": "SHS-COM-F08",
+      "stepId": "Q8"
+    },
+    {
+      "exerciseId": "SHS-COM-F09",
+      "stepId": "Q2"
+    },
+    {
+      "exerciseId": "SHS-COM-F09",
+      "stepId": "Q3"
+    },
+    {
+      "exerciseId": "SHS-COM-F09",
+      "stepId": "Q4"
+    },
+    {
+      "exerciseId": "SHS-COM-F09",
+      "stepId": "Q5"
+    },
+    {
+      "exerciseId": "SHS-COM-F09",
+      "stepId": "Q6"
+    },
+    {
+      "exerciseId": "SHS-HIS-F01",
+      "stepId": "Q1"
+    },
+    {
+      "exerciseId": "SHS-HIS-F01",
+      "stepId": "Q2"
+    },
+    {
+      "exerciseId": "SHS-HIS-F01",
+      "stepId": "Q3"
+    },
+    {
+      "exerciseId": "SHS-HIS-F01",
+      "stepId": "Q4"
+    },
+    {
+      "exerciseId": "SHS-HIS-F01",
+      "stepId": "Q5"
+    },
+    {
+      "exerciseId": "SHS-HIS-F01",
+      "stepId": "Q6"
+    },
+    {
+      "exerciseId": "SHS-HIS-F01",
+      "stepId": "Q7"
+    },
+    {
+      "exerciseId": "SHS-HIS-F01",
+      "stepId": "Q9"
+    },
+    {
+      "exerciseId": "SHS-HIS-F02",
+      "stepId": "Q1"
+    },
+    {
+      "exerciseId": "SHS-HIS-F03",
+      "stepId": "Q1"
+    },
+    {
+      "exerciseId": "SHS-HIS-F03",
+      "stepId": "Q2"
+    },
+    {
+      "exerciseId": "SHS-HIS-F03",
+      "stepId": "Q3"
+    },
+    {
+      "exerciseId": "SHS-HIS-F03",
+      "stepId": "Q5"
+    },
+    {
+      "exerciseId": "SHS-HIS-F03",
+      "stepId": "Q6"
+    },
+    {
+      "exerciseId": "SHS-HIS-F03",
+      "stepId": "Q7"
+    },
+    {
+      "exerciseId": "SHS-HIS-F04",
+      "stepId": "Q1"
+    },
+    {
+      "exerciseId": "SHS-HIS-F04",
+      "stepId": "Q2"
+    },
+    {
+      "exerciseId": "SHS-HIS-F04",
+      "stepId": "Q3"
+    },
+    {
+      "exerciseId": "SHS-HIS-F04",
+      "stepId": "Q4"
+    },
+    {
+      "exerciseId": "SHS-HIS-F04",
+      "stepId": "Q5"
+    },
+    {
+      "exerciseId": "SHS-HIS-F05",
+      "stepId": "Q1"
+    },
+    {
+      "exerciseId": "SHS-HIS-F05",
+      "stepId": "Q2"
+    },
+    {
+      "exerciseId": "SHS-HIS-F05",
+      "stepId": "Q9"
+    },
+    {
+      "exerciseId": "SHS-HIS-F05",
+      "stepId": "Q10"
+    },
+    {
+      "exerciseId": "SHS-HIS-F05",
+      "stepId": "Q11"
+    },
+    {
+      "exerciseId": "SHS-HIS-F05",
+      "stepId": "Q12"
+    },
+    {
+      "exerciseId": "SHS-HIS-F05",
+      "stepId": "Q13"
+    },
+    {
+      "exerciseId": "SHS-HIS-F05",
+      "stepId": "Q16"
+    },
+    {
+      "exerciseId": "SHS-HIS-F05",
+      "stepId": "Q17"
+    },
+    {
+      "exerciseId": "SHS-HIS-F05",
+      "stepId": "Q18"
+    },
+    {
+      "exerciseId": "SHS-HIS-F05",
+      "stepId": "Q19"
+    },
+    {
+      "exerciseId": "SHS-HIS-F05",
+      "stepId": "Q20"
+    },
+    {
+      "exerciseId": "SHS-HIS-F07",
+      "stepId": "Q1"
+    },
+    {
+      "exerciseId": "SHS-HIS-F07",
+      "stepId": "Q2"
+    },
+    {
+      "exerciseId": "SHS-HIS-F07",
+      "stepId": "Q3"
+    },
+    {
+      "exerciseId": "SHS-HIS-F07",
+      "stepId": "Q4"
+    },
+    {
+      "exerciseId": "SHS-HIS-F07",
+      "stepId": "Q5"
+    },
+    {
+      "exerciseId": "SHS-HIS-F08",
+      "stepId": "Q1"
+    },
+    {
+      "exerciseId": "SHS-HIS-F08",
+      "stepId": "Q2"
+    },
+    {
+      "exerciseId": "SHS-HIS-F08",
+      "stepId": "Q3"
+    },
+    {
+      "exerciseId": "SHS-HIS-F08",
+      "stepId": "Q4"
+    },
+    {
+      "exerciseId": "SHS-HIS-F08",
+      "stepId": "Q5"
+    },
+    {
+      "exerciseId": "SHS-HIS-F08",
+      "stepId": "Q9"
+    },
+    {
+      "exerciseId": "SHS-HIS-F08",
+      "stepId": "Q10"
+    },
+    {
+      "exerciseId": "SHS-GEO-F01",
+      "stepId": "Q1"
+    },
+    {
+      "exerciseId": "SHS-GEO-F01",
+      "stepId": "Q2"
+    },
+    {
+      "exerciseId": "SHS-GEO-F02",
+      "stepId": "Q1"
+    },
+    {
+      "exerciseId": "SHS-GEO-F02",
+      "stepId": "Q2"
+    },
+    {
+      "exerciseId": "SHS-GEO-F02",
+      "stepId": "Q3"
+    },
+    {
+      "exerciseId": "SHS-GEO-F02",
+      "stepId": "Q4"
+    },
+    {
+      "exerciseId": "SHS-GEO-F02",
+      "stepId": "Q5"
+    },
+    {
+      "exerciseId": "SHS-GEO-F02",
+      "stepId": "Q7"
+    },
+    {
+      "exerciseId": "SHS-GEO-F02",
+      "stepId": "Q8"
+    },
+    {
+      "exerciseId": "SHS-GEO-F03",
+      "stepId": "Q1"
+    },
+    {
+      "exerciseId": "SHS-GEO-F03",
+      "stepId": "Q2"
+    },
+    {
+      "exerciseId": "SHS-GEO-F03",
+      "stepId": "Q3"
+    },
+    {
+      "exerciseId": "SHS-GEO-F03",
+      "stepId": "Q4"
+    },
+    {
+      "exerciseId": "SHS-GEO-F03",
+      "stepId": "Q5"
+    },
+    {
+      "exerciseId": "SHS-GEO-F03",
+      "stepId": "Q6"
+    },
+    {
+      "exerciseId": "SHS-GEO-F03",
+      "stepId": "Q7"
+    },
+    {
+      "exerciseId": "SHS-GEO-F03",
+      "stepId": "Q8"
+    },
+    {
+      "exerciseId": "SHS-GEO-F03",
+      "stepId": "Q9"
+    },
+    {
+      "exerciseId": "SHS-GEO-F03",
+      "stepId": "Q10"
+    },
+    {
+      "exerciseId": "SHS-GEO-F03",
+      "stepId": "Q12"
+    },
+    {
+      "exerciseId": "SHS-GEO-F03",
+      "stepId": "Q13"
+    },
+    {
+      "exerciseId": "SHS-GEO-F03",
+      "stepId": "Q14"
+    },
+    {
+      "exerciseId": "SHS-GEO-F04",
+      "stepId": "Q1"
+    },
+    {
+      "exerciseId": "SHS-GEO-F04",
+      "stepId": "Q2"
+    },
+    {
+      "exerciseId": "SHS-GEO-F04",
+      "stepId": "Q3"
+    },
+    {
+      "exerciseId": "SHS-GEO-F04",
+      "stepId": "Q4"
+    },
+    {
+      "exerciseId": "SHS-GEO-F04",
+      "stepId": "Q5"
+    },
+    {
+      "exerciseId": "SHS-GEO-F04",
+      "stepId": "Q9"
+    },
+    {
+      "exerciseId": "SHS-GEO-F05",
+      "stepId": "Q1"
+    },
+    {
+      "exerciseId": "SHS-GEO-F05",
+      "stepId": "Q2"
+    },
+    {
+      "exerciseId": "SHS-GEO-F06",
+      "stepId": "Q1"
+    },
+    {
+      "exerciseId": "SHS-GEO-F06",
+      "stepId": "Q2"
+    },
+    {
+      "exerciseId": "SHS-GEO-F07",
+      "stepId": "Q1"
+    },
+    {
+      "exerciseId": "SHS-GEO-F07",
+      "stepId": "Q2"
+    },
+    {
+      "exerciseId": "SHS-GEO-F07",
+      "stepId": "Q3"
+    },
+    {
+      "exerciseId": "SHS-GEO-F07",
+      "stepId": "Q4"
+    },
+    {
+      "exerciseId": "SHS-GEO-F07",
+      "stepId": "Q5"
+    },
+    {
+      "exerciseId": "SHS-GEO-F07",
+      "stepId": "Q9"
+    },
+    {
+      "exerciseId": "SHS-GEO-F07",
+      "stepId": "Q10"
+    },
+    {
+      "exerciseId": "SHS-GEO-F07",
+      "stepId": "Q11"
+    },
+    {
+      "exerciseId": "SHS-GEO-F08",
+      "stepId": "Q1"
+    },
+    {
+      "exerciseId": "SHS-GEO-F08",
+      "stepId": "Q2"
+    },
+    {
+      "exerciseId": "SHS-GEO-F08",
+      "stepId": "Q3"
+    },
+    {
+      "exerciseId": "SHS-GEO-F08",
+      "stepId": "Q4"
+    },
+    {
+      "exerciseId": "SHS-GEO-F09",
+      "stepId": "Q1"
+    },
+    {
+      "exerciseId": "SHS-GEO-F09",
+      "stepId": "Q2"
+    },
+    {
+      "exerciseId": "SHS-GEO-F09",
+      "stepId": "Q3"
+    },
+    {
+      "exerciseId": "SHS-GEO-F09",
+      "stepId": "Q4"
+    },
+    {
+      "exerciseId": "SHS-GEO-F09",
+      "stepId": "Q5"
+    },
+    {
+      "exerciseId": "SHS-GEO-F09",
+      "stepId": "Q6"
+    },
+    {
+      "exerciseId": "SHS-GEO-F09",
+      "stepId": "Q8"
+    },
+    {
+      "exerciseId": "SHS-GEO-F09",
+      "stepId": "Q9"
+    },
+    {
+      "exerciseId": "SHS-GEO-F10",
+      "stepId": "Q1"
+    },
+    {
+      "exerciseId": "SHS-GEO-F10",
+      "stepId": "Q2"
+    },
+    {
+      "exerciseId": "SHS-GEO-F10",
+      "stepId": "Q4"
+    },
+    {
+      "exerciseId": "SHS-GEO-F10",
+      "stepId": "Q5"
+    },
+    {
+      "exerciseId": "SHS-GEO-F10",
+      "stepId": "Q7"
+    },
+    {
+      "exerciseId": "SHS-GEO-F11",
+      "stepId": "Q1"
+    },
+    {
+      "exerciseId": "SHS-GEO-F11",
+      "stepId": "Q2"
+    },
+    {
+      "exerciseId": "SHS-GEO-F11",
+      "stepId": "Q3"
+    },
+    {
+      "exerciseId": "SHS-GEO-F11",
+      "stepId": "Q4"
+    },
+    {
+      "exerciseId": "SHS-GEO-F12",
+      "stepId": "Q1"
+    },
+    {
+      "exerciseId": "SHS-GEO-F12",
+      "stepId": "Q2"
+    },
+    {
+      "exerciseId": "SHS-GEO-F12",
+      "stepId": "Q3"
+    },
+    {
+      "exerciseId": "SHS-GEO-F12",
+      "stepId": "Q4"
+    },
+    {
+      "exerciseId": "SHS-GEO-F12",
+      "stepId": "Q5"
+    },
+    {
+      "exerciseId": "SHS-GEO-F12",
+      "stepId": "Q6"
+    },
+    {
+      "exerciseId": "SHS-GEO-F12",
+      "stepId": "Q7"
+    },
+    {
+      "exerciseId": "SHS-GEO-F12",
+      "stepId": "Q8"
+    },
+    {
+      "exerciseId": "SHS-GEO-F13",
+      "stepId": "Q1"
+    },
+    {
+      "exerciseId": "SHS-GEO-F13",
+      "stepId": "Q2"
+    },
+    {
+      "exerciseId": "SHS-GEO-F14",
+      "stepId": "Q15"
+    },
+    {
+      "exerciseId": "SHS-GEO-F14",
+      "stepId": "Q5"
+    },
+    {
+      "exerciseId": "SHS-GEO-F14",
+      "stepId": "Q7"
+    },
+    {
+      "exerciseId": "SHS-GEO-F21",
+      "stepId": "Q1"
+    },
+    {
+      "exerciseId": "SHS-GEO-F22",
+      "stepId": "Q1"
+    },
+    {
+      "exerciseId": "SHS-GEO-F23",
+      "stepId": "Q1"
+    },
+    {
+      "exerciseId": "SHS-GEO-F24",
+      "stepId": "Q1"
+    },
+    {
+      "exerciseId": "SHS-GEO-F25",
+      "stepId": "Q1"
+    },
+    {
+      "exerciseId": "SHS-GEO-F25",
+      "stepId": "Q3"
+    },
+    {
+      "exerciseId": "SHS-GEO-F26",
+      "stepId": "Q1"
+    },
+    {
+      "exerciseId": "SHS-GEO-F27",
+      "stepId": "Q1"
+    },
+    {
+      "exerciseId": "SHS-GEO-F28",
+      "stepId": "Q1"
+    },
+    {
+      "exerciseId": "SHS-GEO-F29",
+      "stepId": "Q1"
+    },
+    {
+      "exerciseId": "SHS-GEO-F15",
+      "stepId": "Q1"
+    },
+    {
+      "exerciseId": "SHS-GEO-F15",
+      "stepId": "Q2"
+    },
+    {
+      "exerciseId": "SHS-GEO-F15",
+      "stepId": "Q3"
+    },
+    {
+      "exerciseId": "SHS-GEO-F15",
+      "stepId": "Q4"
+    },
+    {
+      "exerciseId": "SHS-GEO-F15",
+      "stepId": "Q5"
+    },
+    {
+      "exerciseId": "SHS-GEO-F15",
+      "stepId": "Q6"
+    },
+    {
+      "exerciseId": "SHS-GEO-F15",
+      "stepId": "Q7"
+    },
+    {
+      "exerciseId": "SHS-GEO-F15",
+      "stepId": "Q8"
+    },
+    {
+      "exerciseId": "SHS-GEO-F15",
+      "stepId": "Q9"
+    },
+    {
+      "exerciseId": "SHS-GEO-F15",
+      "stepId": "Q10"
+    },
+    {
+      "exerciseId": "SHS-GEO-F15",
+      "stepId": "Q11"
+    },
+    {
+      "exerciseId": "SHS-GEO-F15",
+      "stepId": "Q13"
+    },
+    {
+      "exerciseId": "SHS-GEO-F15",
+      "stepId": "Q14"
+    },
+    {
+      "exerciseId": "SHS-GEO-F15",
+      "stepId": "Q16"
+    },
+    {
+      "exerciseId": "SHS-GEO-F16",
+      "stepId": "Q1"
+    },
+    {
+      "exerciseId": "SHS-GEO-F16",
+      "stepId": "Q2"
+    },
+    {
+      "exerciseId": "SHS-GEO-F16",
+      "stepId": "Q4"
+    },
+    {
+      "exerciseId": "SHS-GEO-F16",
+      "stepId": "Q5"
+    },
+    {
+      "exerciseId": "SHS-GEO-F16",
+      "stepId": "Q6"
+    },
+    {
+      "exerciseId": "SHS-GEO-F16",
+      "stepId": "Q7"
+    },
+    {
+      "exerciseId": "SHS-GEO-F16",
+      "stepId": "Q8"
+    },
+    {
+      "exerciseId": "SHS-GEO-F17",
+      "stepId": "Q1"
+    },
+    {
+      "exerciseId": "SHS-GEO-F17",
+      "stepId": "Q2"
+    },
+    {
+      "exerciseId": "SHS-GEO-F17",
+      "stepId": "Q3"
+    },
+    {
+      "exerciseId": "SHS-GEO-F17",
+      "stepId": "Q4"
+    },
+    {
+      "exerciseId": "SHS-GEO-F17",
+      "stepId": "Q5"
+    },
+    {
+      "exerciseId": "SHS-GEO-F17",
+      "stepId": "Q6"
+    },
+    {
+      "exerciseId": "SHS-GEO-F17",
+      "stepId": "Q7"
+    },
+    {
+      "exerciseId": "SHS-GEO-F18",
+      "stepId": "Q1"
+    },
+    {
+      "exerciseId": "SHS-GEO-F18",
+      "stepId": "Q2"
+    },
+    {
+      "exerciseId": "SHS-GEO-F18",
+      "stepId": "Q3"
+    },
+    {
+      "exerciseId": "SHS-GEO-F18",
+      "stepId": "Q4"
+    },
+    {
+      "exerciseId": "SHS-GEO-F18",
+      "stepId": "Q5"
+    },
+    {
+      "exerciseId": "SHS-GEO-F18",
+      "stepId": "Q6"
+    },
+    {
+      "exerciseId": "SHS-GEO-F18",
+      "stepId": "Q7"
+    },
+    {
+      "exerciseId": "SHS-GEO-F19",
+      "stepId": "Q1"
+    },
+    {
+      "exerciseId": "SHS-GEO-F19",
+      "stepId": "Q2"
+    },
+    {
+      "exerciseId": "SHS-GEO-F20",
+      "stepId": "Q1"
+    },
+    {
+      "exerciseId": "SHS-GEO-F20",
+      "stepId": "Q2"
+    },
+    {
+      "exerciseId": "SHS-GEO-F20",
+      "stepId": "Q3"
+    },
+    {
+      "exerciseId": "SHS-GEO-F20",
+      "stepId": "Q4"
+    },
+    {
+      "exerciseId": "SHS-ECR-F01",
+      "stepId": "Q1"
+    },
+    {
+      "exerciseId": "SHS-ECR-F01",
+      "stepId": "Q2"
+    },
+    {
+      "exerciseId": "SHS-ECR-F01",
+      "stepId": "Q3"
+    },
+    {
+      "exerciseId": "SHS-ECR-F01",
+      "stepId": "Q4"
+    },
+    {
+      "exerciseId": "SHS-ECR-F02",
+      "stepId": "Q1"
+    },
+    {
+      "exerciseId": "SHS-ECR-F02",
+      "stepId": "Q2"
+    },
+    {
+      "exerciseId": "SHS-ECR-F02",
+      "stepId": "Q3"
+    },
+    {
+      "exerciseId": "SHS-ECR-F03",
+      "stepId": "Q1"
+    },
+    {
+      "exerciseId": "SHS-ECR-F03",
+      "stepId": "Q2"
+    },
+    {
+      "exerciseId": "SHS-ECR-F03",
+      "stepId": "Q3"
+    },
+    {
+      "exerciseId": "SHS-ECR-F04",
+      "stepId": "Q1"
+    },
+    {
+      "exerciseId": "SHS-ECR-F04",
+      "stepId": "Q2"
+    },
+    {
+      "exerciseId": "SHS-ECR-F04",
+      "stepId": "Q3"
+    },
+    {
+      "exerciseId": "SHS-ECR-F05",
+      "stepId": "Q1"
+    },
+    {
+      "exerciseId": "SHS-ECR-F05",
+      "stepId": "Q2"
+    },
+    {
+      "exerciseId": "SHS-ECR-F05",
+      "stepId": "Q3"
+    },
+    {
+      "exerciseId": "SHS-ECR-F05",
+      "stepId": "Q4"
+    },
+    {
+      "exerciseId": "SHS-ECR-F05",
+      "stepId": "Q5"
+    },
+    {
+      "exerciseId": "SHS-ECR-F06",
+      "stepId": "Q1"
+    },
+    {
+      "exerciseId": "SHS-ECR-F06",
+      "stepId": "Q2"
+    },
+    {
+      "exerciseId": "SHS-ECR-F06",
+      "stepId": "Q3"
+    },
+    {
+      "exerciseId": "SHS-ECR-F07",
+      "stepId": "Q1"
+    },
+    {
+      "exerciseId": "SHS-ECR-F07",
+      "stepId": "Q2"
+    },
+    {
+      "exerciseId": "SHS-ECR-F08",
+      "stepId": "Q1"
+    },
+    {
+      "exerciseId": "SHS-ECR-F08",
+      "stepId": "Q2"
+    },
+    {
+      "exerciseId": "SHS-ECR-F08",
+      "stepId": "Q3"
+    },
+    {
+      "exerciseId": "SHS-ECR-F09",
+      "stepId": "Q1"
+    },
+    {
+      "exerciseId": "SHS-ECR-F09",
+      "stepId": "Q2"
+    },
+    {
+      "exerciseId": "SHS-ECR-F09",
+      "stepId": "Q4"
+    },
+    {
+      "exerciseId": "SHS-ECR-F10",
+      "stepId": "Q1"
+    },
+    {
+      "exerciseId": "SHS-ECR-F10",
+      "stepId": "Q2"
+    },
+    {
+      "exerciseId": "SHS-ECR-F10",
+      "stepId": "Q3"
+    },
+    {
+      "exerciseId": "SHS-ECR-F11",
+      "stepId": "Q1"
+    },
+    {
+      "exerciseId": "SHS-ECR-F12",
+      "stepId": "Q1"
+    },
+    {
+      "exerciseId": "SHS-ECR-F12",
+      "stepId": "Q2"
+    },
+    {
+      "exerciseId": "SHS-ECR-F12",
+      "stepId": "Q3"
+    },
+    {
+      "exerciseId": "SHS-ECR-F12",
+      "stepId": "Q4"
+    },
+    {
+      "exerciseId": "SHS-ECR-F12",
+      "stepId": "Q5"
+    },
+    {
+      "exerciseId": "SHS-ECR-F13",
+      "stepId": "Q1"
+    },
+    {
+      "exerciseId": "SHS-ECR-F13",
+      "stepId": "Q2"
+    },
+    {
+      "exerciseId": "SHS-ECR-F13",
+      "stepId": "Q3"
+    },
+    {
+      "exerciseId": "SHS-ECR-F13",
+      "stepId": "Q4"
+    },
+    {
+      "exerciseId": "SHS-ECR-F13",
+      "stepId": "Q5"
+    },
+    {
+      "exerciseId": "SHS-ECR-F13",
+      "stepId": "Q6"
+    },
+    {
+      "exerciseId": "SHS-ECR-F13",
+      "stepId": "Q7"
+    },
+    {
+      "exerciseId": "SHS-ECR-F13",
+      "stepId": "Q8"
+    },
+    {
+      "exerciseId": "SHS-ECR-F13",
+      "stepId": "Q10"
+    },
+    {
+      "exerciseId": "SHS-GEO-F14",
+      "stepId": "Q1"
+    },
+    {
+      "exerciseId": "SHS-GEO-F14",
+      "stepId": "Q2"
+    },
+    {
+      "exerciseId": "SHS-GEO-F14",
+      "stepId": "Q3"
+    },
+    {
+      "exerciseId": "SHS-GEO-F14",
+      "stepId": "Q4"
+    },
+    {
+      "exerciseId": "SHS-GEO-F14",
+      "stepId": "Q9"
+    },
+    {
+      "exerciseId": "SHS-GEO-F14",
+      "stepId": "Q10"
+    },
+    {
+      "exerciseId": "SHS-GEO-F14",
+      "stepId": "Q11"
+    },
+    {
+      "exerciseId": "SHS-GEO-F14",
+      "stepId": "Q12"
+    },
+    {
+      "exerciseId": "SHS-GEO-F14",
+      "stepId": "Q14"
+    },
+    {
+      "exerciseId": "SHS-GEO-F21",
+      "stepId": "Q6"
+    },
+    {
+      "exerciseId": "SHS-GEO-F21",
+      "stepId": "Q2"
+    },
+    {
+      "exerciseId": "SHS-GEO-F21",
+      "stepId": "Q3"
+    },
+    {
+      "exerciseId": "SHS-GEO-F21",
+      "stepId": "Q4"
+    },
+    {
+      "exerciseId": "SHS-GEO-F21",
+      "stepId": "Q5"
+    },
+    {
+      "exerciseId": "SHS-GEO-F22",
+      "stepId": "Q2"
+    },
+    {
+      "exerciseId": "SHS-GEO-F22",
+      "stepId": "Q3"
+    },
+    {
+      "exerciseId": "SHS-GEO-F23",
+      "stepId": "Q2"
+    },
+    {
+      "exerciseId": "SHS-GEO-F23",
+      "stepId": "Q3"
+    },
+    {
+      "exerciseId": "SHS-GEO-F24",
+      "stepId": "Q2"
+    },
+    {
+      "exerciseId": "SHS-GEO-F25",
+      "stepId": "Q2"
+    },
+    {
+      "exerciseId": "SHS-GEO-F25",
+      "stepId": "Q4"
+    },
+    {
+      "exerciseId": "SHS-GEO-F26",
+      "stepId": "Q2"
+    },
+    {
+      "exerciseId": "SHS-GEO-F26",
+      "stepId": "Q3"
+    },
+    {
+      "exerciseId": "SHS-GEO-F26",
+      "stepId": "Q4"
+    },
+    {
+      "exerciseId": "SHS-GEO-F27",
+      "stepId": "Q2"
+    },
+    {
+      "exerciseId": "SHS-GEO-F28",
+      "stepId": "Q2"
+    },
+    {
+      "exerciseId": "SHS-GEO-F29",
+      "stepId": "Q2"
+    },
+    {
+      "exerciseId": "SHS-GEO-F29",
+      "stepId": "Q3"
+    },
+    {
+      "exerciseId": "SHS-GEO-F29",
+      "stepId": "Q5"
+    },
+    {
+      "exerciseId": "SHS-GEO-F29",
+      "stepId": "Q4"
+    },
+    {
+      "exerciseId": "SHS-GEO-F29",
+      "stepId": "Q6"
+    },
+    {
+      "exerciseId": "SHS-COM-F03",
+      "stepId": "Q1"
+    },
+    {
+      "exerciseId": "SHS-COM-F03",
+      "stepId": "Q2"
+    },
+    {
+      "exerciseId": "SHS-COM-F07",
+      "stepId": "Q3"
+    },
+    {
+      "exerciseId": "SHS-COM-F09",
+      "stepId": "Q1"
+    },
+    {
+      "exerciseId": "SHS-HIS-F02",
+      "stepId": "Q3"
+    },
+    {
+      "exerciseId": "SHS-HIS-F03",
+      "stepId": "Q4"
+    },
+    {
+      "exerciseId": "SHS-HIS-F05",
+      "stepId": "Q14"
+    },
+    {
+      "exerciseId": "SHS-HIS-F05",
+      "stepId": "Q15"
+    },
+    {
+      "exerciseId": "SHS-HIS-F06",
+      "stepId": "Q2"
+    },
+    {
+      "exerciseId": "SHS-HIS-F06",
+      "stepId": "Q3"
+    },
+    {
+      "exerciseId": "SHS-HIS-F07",
+      "stepId": "Q6"
+    },
+    {
+      "exerciseId": "SHS-HIS-F08",
+      "stepId": "Q6"
+    },
+    {
+      "exerciseId": "SHS-HIS-F08",
+      "stepId": "Q7"
+    },
+    {
+      "exerciseId": "SHS-HIS-F08",
+      "stepId": "Q8"
+    },
+    {
+      "exerciseId": "SHS-HIS-F09",
+      "stepId": "Q1"
+    },
+    {
+      "exerciseId": "SHS-HIS-F09",
+      "stepId": "Q2"
+    },
+    {
+      "exerciseId": "SHS-HIS-F09",
+      "stepId": "Q3"
+    },
+    {
+      "exerciseId": "SHS-HIS-F09",
+      "stepId": "Q4"
+    },
+    {
+      "exerciseId": "SHS-HIS-F09",
+      "stepId": "Q5"
+    },
+    {
+      "exerciseId": "SHS-HIS-F09",
+      "stepId": "Q6"
+    },
+    {
+      "exerciseId": "SHS-HIS-F09",
+      "stepId": "Q7"
+    },
+    {
+      "exerciseId": "SHS-HIS-F09",
+      "stepId": "Q8"
+    },
+    {
+      "exerciseId": "SHS-HIS-F10",
+      "stepId": "Q1"
+    },
+    {
+      "exerciseId": "SHS-HIS-F10",
+      "stepId": "Q5"
+    },
+    {
+      "exerciseId": "SHS-HIS-F10",
+      "stepId": "Q3"
+    },
+    {
+      "exerciseId": "SHS-HIS-F10",
+      "stepId": "Q4"
+    },
+    {
+      "exerciseId": "SHS-GEO-F01",
+      "stepId": "Q3"
+    },
+    {
+      "exerciseId": "SHS-GEO-F02",
+      "stepId": "Q6"
+    },
+    {
+      "exerciseId": "SHS-GEO-F04",
+      "stepId": "Q10"
+    },
+    {
+      "exerciseId": "SHS-GEO-F06",
+      "stepId": "Q3"
+    },
+    {
+      "exerciseId": "SHS-GEO-F07",
+      "stepId": "Q6"
+    },
+    {
+      "exerciseId": "SHS-GEO-F07",
+      "stepId": "Q8"
+    },
+    {
+      "exerciseId": "SHS-GEO-F09",
+      "stepId": "Q10"
+    },
+    {
+      "exerciseId": "SHS-GEO-F10",
+      "stepId": "Q3"
+    },
+    {
+      "exerciseId": "SHS-GEO-F10",
+      "stepId": "Q6"
+    },
+    {
+      "exerciseId": "SHS-GEO-F11",
+      "stepId": "Q6"
+    },
+    {
+      "exerciseId": "SHS-GEO-F11",
+      "stepId": "Q7"
+    },
+    {
+      "exerciseId": "SHS-GEO-F21",
+      "stepId": "Q7"
+    },
+    {
+      "exerciseId": "SHS-GEO-F23",
+      "stepId": "Q4"
+    },
+    {
+      "exerciseId": "SHS-GEO-F30",
+      "stepId": "Q1"
+    },
+    {
+      "exerciseId": "SHS-GEO-F15",
+      "stepId": "Q12"
+    },
+    {
+      "exerciseId": "SHS-GEO-F16",
+      "stepId": "Q3"
+    },
+    {
+      "exerciseId": "SHS-GEO-F17",
+      "stepId": "Q8"
+    },
+    {
+      "exerciseId": "SHS-GEO-F18",
+      "stepId": "Q8"
+    },
+    {
+      "exerciseId": "SHS-GEO-F19",
+      "stepId": "Q3"
+    },
+    {
+      "exerciseId": "SHS-ECR-F03",
+      "stepId": "Q4"
+    },
+    {
+      "exerciseId": "SHS-ECR-F08",
+      "stepId": "Q4"
+    },
+    {
+      "exerciseId": "SHS-ECR-F09",
+      "stepId": "Q3"
+    },
+    {
+      "exerciseId": "SHS-ECR-F09",
+      "stepId": "Q5"
+    },
+    {
+      "exerciseId": "SHS-ECR-F10",
+      "stepId": "Q4"
+    },
+    {
+      "exerciseId": "SHS-ECR-F11",
+      "stepId": "Q2"
+    },
+    {
+      "exerciseId": "SHS-ECR-F13",
+      "stepId": "Q9"
+    }
+  ],
+  "attentes": [
+    {
+      "id": "G01",
+      "label": "Définition de la géographie",
+      "operation": "définir ; dire ce qui rend une activité géographique (des relations, pas une description)",
+      "weight": 1
+    },
+    {
+      "id": "G02",
+      "label": "Quatre concepts centraux (concepts intégrateurs)",
+      "operation": "nommer les quatre concepts et leurs questions ; définir chacun ; distinguer localisation, organisation de l'espace et échelle ; distinguer échelle géographique et cartographique",
+      "weight": 1
+    },
+    {
+      "id": "G03",
+      "label": "Relier toute activité à la définition et aux concepts",
+      "operation": "appliquer : reconnaître le concept réellement mobilisé par un constat ou une activité, et justifier le lien",
+      "weight": 1
+    },
+    {
+      "id": "G04",
+      "label": "Enquête géographique en quatre étapes",
+      "operation": "dire ce que fait une enquête géographique et le rôle de la synthèse (relier les constats)",
+      "weight": 2
+    },
+    {
+      "id": "G05",
+      "label": "Problématique",
+      "operation": "reconnaître une problématique ; la distinguer d'un thème",
+      "weight": 2
+    },
+    {
+      "id": "G06",
+      "label": "Ce que la géographie partage avec l'histoire et l'ECR, et ce qui lui est propre",
+      "operation": "dire les éléments communs aux trois didactiques et l'élément spécifique ; reconnaître une question géographique",
+      "weight": 2
+    },
+    {
+      "id": "G07",
+      "label": "Épistémologie et vigilance épistémologique",
+      "operation": "définir ; distinguer apprendre les résultats d'une science et réfléchir à leur production ; reconnaître une démarche épistémologique ; citer les enjeux d'une géographie renouvelée",
+      "weight": 1
+    },
+    {
+      "id": "G08",
+      "label": "Paradigme : notion et règle de reconnaissance",
+      "operation": "définir ; appliquer la règle « question posée, pas thème »",
+      "weight": 1
+    },
+    {
+      "id": "G09",
+      "label": "Les cinq paradigmes et le départ de leur démarche",
+      "operation": "rattacher un discours, un document ou un travail d'élève à un paradigme ; distinguer les paires voisines ; expliquer le tableau",
+      "weight": 1
+    },
+    {
+      "id": "G09.1",
+      "label": "Couple : paradigme → ses mots-clés",
+      "operation": "couple (ancienne question) : donner le paradigme et des mots-clés qui s'y rattachent ; testé par une seule question à choix appariés, étiquetée « adapté »",
+      "weight": 1
+    },
+    {
+      "id": "G09.2",
+      "label": "Termes de méthode et origine du nom « vidalien »",
+      "operation": "expliquer les termes qui servent à lire le tableau des paradigmes",
+      "weight": 2
+    },
+    {
+      "id": "G10",
+      "label": "Trois manières de faire de la géographie à l'école",
+      "operation": "définir ; reconnaître la manière d'une activité à ce que font les élèves ; expliquer l'emboîtement et le passage des produits aux processus",
+      "weight": 1
+    },
+    {
+      "id": "G11",
+      "label": "Paradigme et manière : deux grilles complémentaires pour une même tâche",
+      "operation": "distinguer les deux grilles ; classer une même tâche selon les deux",
+      "weight": 1
+    },
+    {
+      "id": "G11.1",
+      "label": "Couple : paradigme et manière d'une même tâche (ancien examen 2022 Q2, adapté)",
+      "operation": "couple (ancienne question 2022 Q2 a–b, adaptée) : pour une tâche dont l'énoncé donne la question posée et ce que font les élèves, le paradigme et la manière ; une seule question à choix appariés, étiquetée « adapté »",
+      "weight": 2
+    },
+    {
+      "id": "G12",
+      "label": "Finalité de la géographie scolaire : localiser est un moyen",
+      "operation": "dire la finalité de la géographie scolaire ; justifier pourquoi on dépasse l'apprentissage des noms de lieux",
+      "weight": 2
+    },
+    {
+      "id": "G13",
+      "label": "Trois visées des SHS selon le PER",
+      "operation": "reconnaître une visée",
+      "weight": 3
+    },
+    {
+      "id": "G14",
+      "label": "Du cycle 1 au cycle 2 (Hertig, 2013)",
+      "operation": "dire ce qui change du cycle 1 au cycle 2 ; citer les quatre thématiques du cycle 2 ; situer un espace étudié",
+      "weight": 1
+    },
+    {
+      "id": "G15",
+      "label": "Enseignement spiralaire (Bruner)",
+      "operation": "définir ce que le bloc retient (Bruner, quatre concepts, dès les premières années) ; pas de question sur le sens du mot « spiralaire »",
+      "weight": 2
+    },
+    {
+      "id": "G16",
+      "label": "Savoir émancipateur",
+      "operation": "définir ; dire que c'est une visée et comment les registres y contribuent",
+      "weight": 1
+    },
+    {
+      "id": "G17",
+      "label": "Registres de savoirs (Charpentier et al., 2023)",
+      "operation": "définir ; reconnaître le registre d'une situation (critère : qui produit et pour faire quoi) ; distinguer académique / experts et à enseigner / académique ; distinguer registre et paradigme ; dire le travail de l'enseignant et des élèves",
+      "weight": 1
+    },
+    {
+      "id": "G18",
+      "label": "Cinq constats fondamentaux pour lire un discours géographique",
+      "operation": "citer et expliquer les constats ; les appliquer à un document (repérer le point de vue, croiser les sources)",
+      "weight": 1
+    },
+    {
+      "id": "G19",
+      "label": "Ethnocentrisme",
+      "operation": "définir ; reconnaître une représentation ethnocentrique ; distinguer une direction et une convention de représentation",
+      "weight": 1
+    },
+    {
+      "id": "G20",
+      "label": "Quatre enjeux prioritaires pour enseigner la géographie",
+      "operation": "citer les quatre enjeux et relier chacun à sa notion",
+      "weight": 2
+    },
+    {
+      "id": "G20.1",
+      "label": "Pratiques de référence des géographes",
+      "operation": "dire ce que sont les pratiques de référence et à quoi elles servent pour construire des tâches",
+      "weight": 3
+    },
+    {
+      "id": "G21",
+      "label": "Géographie spontanée, raisonnée et expérientielle",
+      "operation": "définir ; distinguer les trois ; dire la fonction de la démarche expérientielle (partir du vécu pour aller vers la géographie raisonnée)",
+      "weight": 2
+    },
+    {
+      "id": "G22",
+      "label": "Expérience spatiale directe ou indirecte",
+      "operation": "reconnaître une expérience spatiale et sa forme",
+      "weight": 2
+    },
+    {
+      "id": "G23",
+      "label": "Démarche des 4I (géographie expérientielle)",
+      "operation": "définir la démarche ; dire la fonction de chaque phase ; reconnaître une phase dans une situation",
+      "weight": 1
+    },
+    {
+      "id": "G24",
+      "label": "Carte sensible",
+      "operation": "définir ; distinguer d'une carte topographique",
+      "weight": 2
+    },
+    {
+      "id": "G25",
+      "label": "Pensée spontanée et pensée scientifique",
+      "operation": "définir ; appliquer le critère décisif à un propos ou une activité d'élève",
+      "weight": 1
+    },
+    {
+      "id": "G25.1",
+      "label": "Couple : mode de pensée spontané → mode scientifique à développer",
+      "operation": "couple : pour un propos ou une activité d'élève, le mode spontané et le mode scientifique à développer ; une question à choix appariés par déplacement (sept au total), étiquetée « adapté » quand elle reprend 2022 Q6 ; usage du tableau de la feuille de notes, pas restitution",
+      "weight": 1
+    },
+    {
+      "id": "G26",
+      "label": "Pensée complexe et ses dix relations",
+      "operation": "définir ; reconnaître une relation dans une explication ; dire pourquoi une explication est complexe plutôt que linéaire ou binaire",
+      "weight": 1
+    },
+    {
+      "id": "G27",
+      "label": "Construire un concept (progressivement, par plusieurs cas et le transfert)",
+      "operation": "dire comment un concept se construit ; reconnaître une idée reçue sur l'enseignement des concepts ; définir le transfert",
+      "weight": 1
+    },
+    {
+      "id": "G28",
+      "label": "Concept scientifique ≠ mot-étiquette",
+      "operation": "définir ; distinguer d'un mot-étiquette",
+      "weight": 2
+    },
+    {
+      "id": "G29",
+      "label": "Catégories et discours situé (Audigier)",
+      "operation": "dire ce que l'enseignant doit comprendre des mots et des catégories",
+      "weight": 3
+    },
+    {
+      "id": "G30",
+      "label": "Trois familles de mots",
+      "operation": "reconnaître la famille d'un mot",
+      "weight": 3
+    },
+    {
+      "id": "G31",
+      "label": "Modèle d'enquête CIIP 1–4H (six étapes)",
+      "operation": "dire ce que fait le modèle et ce qui le distingue de celui de Hertig ; reconnaître une étape dans une situation (usage du tableau de la feuille de notes)",
+      "weight": 1
+    },
+    {
+      "id": "G32",
+      "label": "Modèle d'enquête de Hertig (cinq étapes)",
+      "operation": "dire ce que fait le modèle et ce que permet chaque étape ; le distinguer du CIIP 1–4H ; reconnaître une étape dans une séquence",
+      "weight": 1
+    },
+    {
+      "id": "G33",
+      "label": "Modèle d'enquête CIIP 5–8H",
+      "operation": "reconnaître le modèle ; le distinguer du modèle de Fabre",
+      "weight": 3
+    },
+    {
+      "id": "G34",
+      "label": "Modèle d'enquête de Fabre",
+      "operation": "reconnaître le modèle (l'énigme née d'un écart entre explication et données)",
+      "weight": 3
+    },
+    {
+      "id": "G35",
+      "label": "Problématisation et ses trois étapes",
+      "operation": "définir ; ordonner et reconnaître les étapes dans une situation ; distinguer problématisation et problématique",
+      "weight": 1
+    },
+    {
+      "id": "G36",
+      "label": "Élément déclencheur",
+      "operation": "définir ; reconnaître un bon élément déclencheur et un contre-exemple",
+      "weight": 1
+    },
+    {
+      "id": "G37",
+      "label": "Savoir des questions et tensions d'aménagement",
+      "operation": "reconnaître une question géographique ; dire pourquoi un problème d'aménagement n'a pas de solution unique",
+      "weight": 3
+    },
+    {
+      "id": "G38",
+      "label": "Canevas pour formuler une consigne (Hertig, 2005)",
+      "operation": "appliquer : repérer ce qui manque dans une consigne ; distinguer « quand » et « pour quand » (usage de la feuille de notes)",
+      "weight": 1
+    },
+    {
+      "id": "G39",
+      "label": "Dévolution",
+      "operation": "définir",
+      "weight": 3
+    },
+    {
+      "id": "G40",
+      "label": "Conception du savoir (Morin)",
+      "operation": "définir ; opposer à l'accumulation d'informations",
+      "weight": 1
+    },
+    {
+      "id": "G41",
+      "label": "Cadre conceptuel : quatre composantes du savoir (Hertig, 2009)",
+      "operation": "définir ; nommer les quatre composantes et leur relation ; ranger un élément dans sa composante",
+      "weight": 1
+    },
+    {
+      "id": "G41.1",
+      "label": "Concept intégrateur",
+      "operation": "définir ; distinguer d'une notion de vocabulaire",
+      "weight": 1
+    },
+    {
+      "id": "G42",
+      "label": "Synthétiser, conceptualiser, institutionnaliser",
+      "operation": "définir l'institutionnalisation ; distinguer et ordonner les trois opérations ; reconnaître l'opération d'une situation",
+      "weight": 1
+    },
+    {
+      "id": "G43",
+      "label": "Trace écrite (Meunier et Sala, 2016)",
+      "operation": "définir ; citer ses trois dimensions ; reconnaître ses rôles",
+      "weight": 1
+    },
+    {
+      "id": "G44",
+      "label": "Modèle du détour / retour (Fierz ; Audigier et al.)",
+      "operation": "définir ; dire ce que fait chacun des deux temps",
+      "weight": 1
+    },
+    {
+      "id": "G45",
+      "label": "Quatre dispositifs de réinvestissement des savoirs",
+      "operation": "citer les quatre dispositifs ; définir chacun ; reconnaître un dispositif ; distinguer débat et jeu de rôle, scénario prospectif et prévision",
+      "weight": 1
+    },
+    {
+      "id": "G46",
+      "label": "Habiter (Lussault) : habitat et habitabilité",
+      "operation": "distinguer habitat et logement ; dire ce qu'est l'habitabilité",
+      "weight": 3
+    },
+    {
+      "id": "G47",
+      "label": "Lien : les concepts intégrateurs sont les quatre concepts centraux",
+      "operation": "relier le cadre conceptuel (cours 03) aux concepts centraux (introduction)",
+      "weight": 2
+    },
+    {
+      "id": "G48",
+      "label": "Lien : le fil d'une enquête, de la problématique au réinvestissement",
+      "operation": "relier problématique, synthèse et réinvestissement ; dire ce qu'une étape apporte à la suivante",
+      "weight": 2
+    },
+    {
+      "id": "G49",
+      "label": "Lien : la synthèse générale de Hertig conduit à conceptualiser et institutionnaliser",
+      "operation": "relier l'étape de synthèse générale aux trois opérations du cours 03",
+      "weight": 2
+    },
+    {
+      "id": "G50",
+      "label": "Lien : l'élément déclencheur, première étape de Hertig et de la problématisation",
+      "operation": "—",
+      "weight": null
+    },
+    {
+      "id": "G51",
+      "label": "Lien : la prise de position de Hertig et les dispositifs de réinvestissement",
+      "operation": "relier la dernière étape de Hertig à un dispositif de réinvestissement",
+      "weight": 3
+    },
+    {
+      "id": "G52",
+      "label": "Lien : l'institutionnalisation des 4I dépasse la trace écrite",
+      "operation": "relier la phase des 4I et l'opération du cours 03 ; ne pas réduire l'institutionnalisation à la trace",
+      "weight": 3
+    },
+    {
+      "id": "G53",
+      "label": "Lien : le mode de pensée disciplinaire mobilise les quatre concepts",
+      "operation": "relier une relation de la pensée complexe aux concepts centraux",
+      "weight": 3
+    },
+    {
+      "id": "G54",
+      "label": "Savoir d'expérience et géographie spontanée (écart non tranché)",
+      "operation": "—",
+      "weight": null
+    },
+    {
+      "id": "G55",
+      "label": "Trois gestes pour analyser une activité (conseil proposé)",
+      "operation": "—",
+      "weight": null
+    },
+    {
+      "id": "G56",
+      "label": "Cycle 3 : champs thématiques selon les trois pôles du développement durable",
+      "operation": "—",
+      "weight": null
+    },
+    {
+      "id": "G57",
+      "label": "Référencer un modèle d'enquête",
+      "operation": "—",
+      "weight": null
+    },
+    {
+      "id": "G58",
+      "label": "Mise à niveau des savoirs disciplinaires",
+      "operation": "—",
+      "weight": null
+    }
+  ],
+  "attentesSource": {
+    "id": "GRILLE_BP1-18SHS_S1_GEOGRAPHIE",
+    "version": "v01"
+  },
+  "bankRevision": "5e7ec11206e4f573"
 }
