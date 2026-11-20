@@ -2569,8 +2569,8 @@
             },
             {
               "id": "b",
-              "text": "Organiser des paroles adaptées à des interlocuteurs pour leur transmettre un message.",
-              "explanation": "Formuler et organiser un message pour autrui relève de la production de l’oral. Elle peut servir à montrer ce qui a été compris."
+              "text": "Choisir ses mots, sa voix et ses gestes pour qu’un camarade comprenne ce qu’on lui raconte.",
+              "explanation": "Choisir ses mots, sa voix et ses gestes pour se faire comprendre relève de la production de l’oral : on formule et on organise sa propre parole. Elle peut servir à montrer ce qui a été compris, mais la compréhension vise le sens construit en écoutant."
             },
             {
               "id": "c",
@@ -2589,7 +2589,7 @@
           "attenteId": "A1.1"
         }
       ],
-      "qcmRevision": "91942eb54392",
+      "qcmRevision": "a4a2af780d42",
       "courseGroupKey": "3",
       "hasWrittenExercise": true
     },
@@ -5295,7 +5295,10 @@
           "level": "essentiel-approfondi",
           "sansChoix": true,
           "notionId": "N103",
-          "attenteId": "O5"
+          "attenteId": "O5",
+          "compatibleRevisions": [
+            "674d06bd0c9ad1af"
+          ]
         },
         {
           "id": "Q6",
@@ -5305,8 +5308,8 @@
           "choices": [
             {
               "id": "a",
-              "text": "Les moyens vocaux de la communication : diction, accentuation, rythme, volume, débit et intonation.",
-              "explanation": "C'est le paraverbal : les moyens vocaux. Le co-verbal concerne des gestes, pas la voix."
+              "text": "Ce qui change dans la voix selon l'intention : on appuie un mot, on ralentit, on monte le ton.",
+              "explanation": "C'est le paraverbal : des faits de voix (accentuation, rythme, intonation). Le co-verbal concerne des gestes qui accompagnent la parole, pas la voix."
             },
             {
               "id": "b",
@@ -5359,7 +5362,10 @@
           "level": "essentiel",
           "sansChoix": true,
           "notionId": "N124",
-          "attenteId": "O5"
+          "attenteId": "O5",
+          "compatibleRevisions": [
+            "674d06bd0c9ad1af"
+          ]
         },
         {
           "id": "Q8",
@@ -5391,7 +5397,10 @@
           "level": "essentiel",
           "sansChoix": true,
           "notionId": "N125",
-          "attenteId": "O5"
+          "attenteId": "O5",
+          "compatibleRevisions": [
+            "674d06bd0c9ad1af"
+          ]
         },
         {
           "id": "Q1",
@@ -5422,7 +5431,10 @@
           ],
           "level": "essentiel-approfondi",
           "sansChoix": true,
-          "attenteId": "O5.1"
+          "attenteId": "O5.1",
+          "compatibleRevisions": [
+            "674d06bd0c9ad1af"
+          ]
         },
         {
           "id": "Q2",
@@ -5453,7 +5465,10 @@
           ],
           "level": "essentiel-approfondi",
           "sansChoix": true,
-          "attenteId": "O5"
+          "attenteId": "O5",
+          "compatibleRevisions": [
+            "674d06bd0c9ad1af"
+          ]
         },
         {
           "id": "Q3",
@@ -5484,7 +5499,10 @@
           ],
           "level": "essentiel-approfondi",
           "sansChoix": true,
-          "attenteId": "O5.1"
+          "attenteId": "O5.1",
+          "compatibleRevisions": [
+            "674d06bd0c9ad1af"
+          ]
         },
         {
           "id": "Q4",
@@ -5515,10 +5533,13 @@
           ],
           "level": "essentiel-approfondi",
           "sansChoix": true,
-          "attenteId": "O5"
+          "attenteId": "O5",
+          "compatibleRevisions": [
+            "674d06bd0c9ad1af"
+          ]
         }
       ],
-      "qcmRevision": "674d06bd0c9ad1af"
+      "qcmRevision": "2e917a26ab99ccad"
     },
     {
       "id": "ORAL-P-F22",
@@ -8240,13 +8261,13 @@
             },
             {
               "id": "c",
-              "text": "Le langage aide l'enfant à penser et à résoudre des problèmes, avec un adulte qui l'accompagne là où il ne réussit pas encore seul.",
-              "explanation": "Cette phrase décrit l'approche historico-culturelle, pas l'approche behavioriste. L'approche historico-culturelle fait du langage un moyen de construire la pensée, avec l'adulte comme médiateur dans la zone proximale de développement."
+              "text": "Le langage est un outil qui aide l'enfant à résoudre des problèmes, et pas seulement à communiquer.",
+              "explanation": "Cette phrase décrit l'approche historico-culturelle (Vygotsky), pas l'approche behavioriste : pour elle, le langage est constitutif de la pensée et aide à résoudre des problèmes. L'approche behavioriste explique le langage par le milieu : stimulus, imitation, renforcement."
             },
             {
               "id": "d",
-              "text": "L'enfant apprend à parler dans la relation avec l'adulte, par des stratégies verbales et non verbales.",
-              "explanation": "Cette phrase décrit l'approche interactionniste, pas l'approche behavioriste. L'approche interactionniste explique le langage par la relation : l'adulte étaye l'enfant dans des formats d'interaction prévisibles."
+              "text": "Les actes de base de la communication (demander, nommer, convaincre) s'acquièrent dans la relation avec l'adulte qui étaye.",
+              "explanation": "Cette phrase décrit l'approche interactionniste (Bruner), pas l'approche behavioriste : les actes de communication s'acquièrent dans la relation, avec l'étayage de l'adulte, dans une perspective pragmatique. L'approche behavioriste explique le langage par le milieu : stimulus, imitation, renforcement."
             }
           ],
           "level": "essentiel",
@@ -8284,7 +8305,8 @@
           "sansChoix": true,
           "attenteId": "L2",
           "compatibleRevisions": [
-            "c1b7233803cf03a3"
+            "c1b7233803cf03a3",
+            "1c0a9c8c4a695d5f"
           ]
         },
         {
@@ -8318,11 +8340,12 @@
           "sansChoix": true,
           "attenteId": "L2",
           "compatibleRevisions": [
-            "c1b7233803cf03a3"
+            "c1b7233803cf03a3",
+            "1c0a9c8c4a695d5f"
           ]
         }
       ],
-      "qcmRevision": "1c0a9c8c4a695d5f"
+      "qcmRevision": "3750c9f4f4b2f355"
     },
     {
       "id": "ORAL-P-F46",
@@ -9551,32 +9574,28 @@
           "choices": [
             {
               "id": "a",
-              "text": "Un échange réglé autour d'une question, où les élèves cherchent à penser par eux-mêmes.",
-              "explanation": "La discussion philosophique est une recherche commune où les idées et leurs raisons sont examinées. C'est un dispositif de recherche collective, avec des règles et des rôles."
+              "text": "Un échange réglé autour d'une question, où les élèves définissent, questionnent et justifient pour penser par eux-mêmes.",
+              "explanation": "La discussion philosophique est une recherche commune où les élèves définissent, questionnent et justifient pour examiner les idées et leurs raisons. C'est un dispositif de recherche collective, avec des règles et des rôles."
             },
             {
               "id": "b",
-              "text": "Une confrontation de points de vue dont le but est de convaincre l'autre camp.",
+              "text": "Une confrontation de points de vue entre deux camps, dont le but est de convaincre l'autre camp.",
               "explanation": "C'est le débat, qui vise à convaincre, alors que la DVP cherche à approfondir une question ensemble."
             },
             {
               "id": "c",
-              "text": "Un échange où chaque élève donne son opinion à tour de rôle, sans examiner les raisons.",
+              "text": "Un échange où chaque élève donne son opinion à tour de rôle, sans examiner ni justifier ses raisons.",
               "explanation": "Un simple tour d'opinions ne suffit pas : les idées et les raisons doivent être examinées."
             },
             {
               "id": "d",
-              "text": "Un dialogue dirigé où l'enseignant pose les questions et valide les réponses.",
+              "text": "Un dialogue dirigé où l'enseignant pose les questions, valide les réponses et conduit la discussion.",
               "explanation": "C'est le dialogue scolaire habituel, structuré par l'enseignant, et non la DVP."
             }
           ],
           "level": "essentiel",
           "sansChoix": true,
-          "attenteId": "A2",
-          "compatibleRevisions": [
-            "1269095914803f71",
-            "69f917ea0d282e21"
-          ]
+          "attenteId": "A2"
         },
         {
           "id": "Q4",
@@ -9610,7 +9629,8 @@
           "attenteId": "A2",
           "compatibleRevisions": [
             "1269095914803f71",
-            "69f917ea0d282e21"
+            "69f917ea0d282e21",
+            "0e66f965945d3408"
           ]
         },
         {
@@ -9644,7 +9664,8 @@
           "sansChoix": true,
           "attenteId": "A2",
           "compatibleRevisions": [
-            "69f917ea0d282e21"
+            "69f917ea0d282e21",
+            "0e66f965945d3408"
           ]
         },
         {
@@ -9678,7 +9699,8 @@
           "sansChoix": true,
           "attenteId": "A2",
           "compatibleRevisions": [
-            "69f917ea0d282e21"
+            "69f917ea0d282e21",
+            "0e66f965945d3408"
           ]
         },
         {
@@ -9711,7 +9733,10 @@
           "level": "essentiel-approfondi",
           "sansChoix": true,
           "notionId": "N174",
-          "attenteId": "A2"
+          "attenteId": "A2",
+          "compatibleRevisions": [
+            "0e66f965945d3408"
+          ]
         },
         {
           "id": "Q9",
@@ -9743,10 +9768,13 @@
           "level": "essentiel-approfondi",
           "sansChoix": true,
           "notionId": "N175",
-          "attenteId": "A2"
+          "attenteId": "A2",
+          "compatibleRevisions": [
+            "0e66f965945d3408"
+          ]
         }
       ],
-      "qcmRevision": "0e66f965945d3408"
+      "qcmRevision": "ab463a45b43b1aa5"
     },
     {
       "id": "ORAL-P-F57",
@@ -9927,7 +9955,8 @@
           "sansChoix": false,
           "attenteId": "L2",
           "compatibleRevisions": [
-            "3bdc88526e6ee996"
+            "3bdc88526e6ee996",
+            "2c305a5ae23eea26"
           ]
         },
         {
@@ -9959,7 +9988,10 @@
           ],
           "level": "essentiel",
           "sansChoix": true,
-          "attenteId": "L3"
+          "attenteId": "L3",
+          "compatibleRevisions": [
+            "2c305a5ae23eea26"
+          ]
         },
         {
           "id": "Q5",
@@ -9974,13 +10006,13 @@
             },
             {
               "id": "b",
-              "text": "La distance entre ce que l'enfant réussit seul et ce qu'il réussit avec l'aide d'un adulte ou d'un pair plus avancé.",
-              "explanation": "C'est la zone proximale de développement (ZPD) : elle situe la tâche accessible avec aide. L'étayage est l'aide elle-même, qui accompagne l'enfant dans cette zone."
+              "text": "L'aide de l'adulte qui parle à la place de l'enfant, pour qu'il réussisse la tâche sans effort.",
+              "explanation": "Ce n'est pas de l'étayage : l'adulte n'y prend pas en charge seulement la part encore difficile et n'en laisse pas peu à peu la responsabilité à l'enfant. Parler à sa place l'empêche de construire sa propre parole."
             },
             {
               "id": "c",
-              "text": "Un scénario d'échange prévisible entre l'adulte et l'enfant, qui se répète et que l'enfant reconnaît.",
-              "explanation": "C'est le format d'interaction (Bruner), comme le bain ou le repas. L'étayage peut s'y exercer, mais il désigne l'aide ajustée de l'adulte, pas le scénario."
+              "text": "Le dispositif inné d'acquisition du langage, présent dès la naissance chez tous les enfants.",
+              "explanation": "C'est le LAD, le dispositif inné de l'approche innéiste (Chomsky). L'étayage n'a rien d'inné : c'est l'aide de l'adulte, qui prend en charge une part de la tâche puis la rend à l'enfant."
             },
             {
               "id": "d",
@@ -9991,10 +10023,7 @@
           "level": "essentiel",
           "sansChoix": true,
           "notionId": "N115",
-          "attenteId": "L3",
-          "compatibleRevisions": [
-            "3bdc88526e6ee996"
-          ]
+          "attenteId": "L3"
         },
         {
           "id": "Q3",
@@ -10027,7 +10056,8 @@
           "sansChoix": true,
           "attenteId": "L4",
           "compatibleRevisions": [
-            "3bdc88526e6ee996"
+            "3bdc88526e6ee996",
+            "2c305a5ae23eea26"
           ]
         },
         {
@@ -10061,11 +10091,12 @@
           "sansChoix": true,
           "attenteId": "L4.1",
           "compatibleRevisions": [
-            "3bdc88526e6ee996"
+            "3bdc88526e6ee996",
+            "2c305a5ae23eea26"
           ]
         }
       ],
-      "qcmRevision": "2c305a5ae23eea26"
+      "qcmRevision": "0ac7907486d99306"
     },
     {
       "id": "ORAL-P-F59",
@@ -10267,8 +10298,8 @@
             },
             {
               "id": "b",
-              "text": "Un outil qui décrit la visée, la communication, les contenus, la structure et la langue d'un genre.",
-              "explanation": "C'est le modèle didactique d'un genre, plus large que les moments d'une histoire."
+              "text": "Un outil qui décrit un genre par sa réalisation, ses contenus, sa textualisation et ses principes communicatifs.",
+              "explanation": "C'est le modèle didactique d'un genre, plus large que les moments d'une histoire : il décrit la réalisation, les contenus, la textualisation et les principes communicatifs, pas seulement la structure."
             },
             {
               "id": "c",
@@ -10283,10 +10314,7 @@
           ],
           "level": "essentiel",
           "sansChoix": true,
-          "attenteId": "A5",
-          "compatibleRevisions": [
-            "eaa7f858705f7f20"
-          ]
+          "attenteId": "A5"
         },
         {
           "id": "Q2",
@@ -10306,8 +10334,8 @@
             },
             {
               "id": "c",
-              "text": "Un outil qui repère cinq moments dans un récit, de la situation initiale à la finale.",
-              "explanation": "C'est le schéma narratif : il suit la transformation d'une histoire en cinq moments et ne décrit que sa structure. Le modèle didactique décrit l'ensemble d'un genre."
+              "text": "Un outil d'analyse qui repère la transformation entre l'avant et l'après dans un récit.",
+              "explanation": "C'est le schéma narratif : un outil d'analyse qui repère la transformation entre l'avant et l'après d'un récit et ne décrit que sa structure. Le modèle didactique décrit l'ensemble d'un genre."
             },
             {
               "id": "d",
@@ -10350,7 +10378,8 @@
           "sansChoix": true,
           "attenteId": "L8",
           "compatibleRevisions": [
-            "eaa7f858705f7f20"
+            "eaa7f858705f7f20",
+            "11e8f6fb7da7a549"
           ]
         },
         {
@@ -10385,7 +10414,8 @@
           "notionId": "N118",
           "attenteId": "L8",
           "compatibleRevisions": [
-            "eaa7f858705f7f20"
+            "eaa7f858705f7f20",
+            "11e8f6fb7da7a549"
           ]
         },
         {
@@ -10420,7 +10450,8 @@
           "notionId": "N119",
           "attenteId": "L8",
           "compatibleRevisions": [
-            "eaa7f858705f7f20"
+            "eaa7f858705f7f20",
+            "11e8f6fb7da7a549"
           ]
         },
         {
@@ -10454,7 +10485,8 @@
           "sansChoix": true,
           "attenteId": "T2",
           "compatibleRevisions": [
-            "eaa7f858705f7f20"
+            "eaa7f858705f7f20",
+            "11e8f6fb7da7a549"
           ]
         },
         {
@@ -10494,11 +10526,12 @@
           },
           "attenteId": "A5",
           "compatibleRevisions": [
-            "eaa7f858705f7f20"
+            "eaa7f858705f7f20",
+            "11e8f6fb7da7a549"
           ]
         }
       ],
-      "qcmRevision": "11e8f6fb7da7a549"
+      "qcmRevision": "fc1166a86cdc60e6"
     },
     {
       "id": "ORAL-P-F62",
@@ -12422,8 +12455,8 @@
             },
             {
               "id": "c",
-              "text": "La construction du sens de paroles entendues à partir des mots, de la situation et des indices verbaux et non verbaux.",
-              "explanation": "C'est la compréhension de l'oral. Les deux sont interdépendantes : l'auditeur anticipe les propos avec ce qu'il pourrait lui-même dire."
+              "text": "Le fait, pour l'auditeur, d'anticiper les propos du locuteur à partir de ce qu'il pourrait lui-même dire.",
+              "explanation": "C'est un mécanisme de la compréhension de l'oral : l'auditeur anticipe les propos de l'autre avec des modèles de situation fondés sur ce qu'il pourrait lui-même dire. La production consiste à formuler et organiser sa propre parole ; les deux sont interdépendantes."
             },
             {
               "id": "d",
@@ -12434,10 +12467,7 @@
           "level": "essentiel",
           "sansChoix": true,
           "notionId": "N138",
-          "attenteId": "A1.1",
-          "compatibleRevisions": [
-            "64ccda6ad0a88c61"
-          ]
+          "attenteId": "A1.1"
         },
         {
           "id": "Q1",
@@ -12470,7 +12500,8 @@
           "sansChoix": true,
           "attenteId": "A1",
           "compatibleRevisions": [
-            "64ccda6ad0a88c61"
+            "64ccda6ad0a88c61",
+            "5feacd00b29cfc0b"
           ]
         },
         {
@@ -12503,10 +12534,13 @@
           "level": "essentiel",
           "sansChoix": true,
           "notionId": "N167",
-          "attenteId": "A1"
+          "attenteId": "A1",
+          "compatibleRevisions": [
+            "5feacd00b29cfc0b"
+          ]
         }
       ],
-      "qcmRevision": "5feacd00b29cfc0b"
+      "qcmRevision": "59af7f5a49b24556"
     },
     {
       "id": "ORAL-P-F78",
@@ -12690,7 +12724,10 @@
           "level": "essentiel",
           "sansChoix": true,
           "notionId": "N128",
-          "attenteId": "T3"
+          "attenteId": "T3",
+          "compatibleRevisions": [
+            "f578ea0ba471c949"
+          ]
         },
         {
           "id": "Q4",
@@ -12710,8 +12747,8 @@
             },
             {
               "id": "c",
-              "text": "La langue dans laquelle on enseigne et apprend, à la fois objet, outil et condition de réussite.",
-              "explanation": "C'est la langue de scolarisation. L'hétérogénéité désigne la diversité des langues et des niveaux des élèves face à cette langue."
+              "text": "Le poids de la langue dans l'évaluation, qui pèse sur la réussite scolaire de chaque élève.",
+              "explanation": "C'est un trait de la langue de scolarisation : son poids dans l'évaluation en fait une condition de la réussite scolaire et sociale. L'hétérogénéité désigne autre chose : la diversité des langues connues et des niveaux des élèves."
             },
             {
               "id": "d",
@@ -12732,8 +12769,8 @@
           "choices": [
             {
               "id": "a",
-              "text": "Les reconnaître comme des ressources et s'y appuyer pour relier un mot connu au mot français.",
-              "explanation": "Les langues familiales et les connaissances des élèves sont des ressources : les reconnaître et adapter les situations soutient l'accès de chacun aux savoirs (cours 01). Exemple d'entraînement, construit à partir de ce principe et non tiré du support : un élève nomme un animal dans sa langue, le montre, puis l'enseignante associe son mot au nom français qu'il pourra réemployer."
+              "text": "Les reconnaître comme des ressources, pour l'élève comme pour l'enseignant, et s'y appuyer en classe.",
+              "explanation": "Les langues familiales et les connaissances des élèves sont des ressources, pour l'élève comme pour l'enseignant : les reconnaître et adapter les situations soutient l'accès de chacun aux savoirs (cours 01)."
             },
             {
               "id": "b",
@@ -12785,7 +12822,10 @@
           ],
           "level": "essentiel-approfondi",
           "sansChoix": true,
-          "attenteId": "T3"
+          "attenteId": "T3",
+          "compatibleRevisions": [
+            "f578ea0ba471c949"
+          ]
         },
         {
           "id": "Q2",
@@ -12830,10 +12870,13 @@
               }
             ]
           },
-          "attenteId": "T3"
+          "attenteId": "T3",
+          "compatibleRevisions": [
+            "f578ea0ba471c949"
+          ]
         }
       ],
-      "qcmRevision": "f578ea0ba471c949"
+      "qcmRevision": "ed6bc7ff0e39cb74"
     },
     {
       "id": "ORAL-P-F83",
@@ -13883,7 +13926,7 @@
             {
               "id": "a",
               "text": "Elle est préparée avant d'être dite, à l'aide d'un support travaillé auparavant, puis mise en voix devant la classe.",
-              "explanation": "Cela décrit un oral préparé (planifié ou récité), que le cours distingue de la parole qui s'élabore pendant l'échange ; le cours ne dit pas que l'oral préparé ne relèverait pas de la langue parlée."
+              "explanation": "Cela décrit un oral préparé d'avance (planifié ou récité). La langue parlée, elle, se planifie en même temps qu'elle se dit : le cours la distingue de la parole préparée."
             },
             {
               "id": "b",
@@ -13904,10 +13947,7 @@
           "level": "essentiel",
           "sansChoix": true,
           "notionId": "N90",
-          "attenteId": "O2",
-          "compatibleRevisions": [
-            "d7ea1c831c50a940"
-          ]
+          "attenteId": "O2"
         },
         {
           "id": "Q3",
@@ -13939,10 +13979,13 @@
           "level": "essentiel",
           "sansChoix": true,
           "notionId": "N90",
-          "attenteId": "O2"
+          "attenteId": "O2",
+          "compatibleRevisions": [
+            "df93305f2c201b5e"
+          ]
         }
       ],
-      "qcmRevision": "df93305f2c201b5e"
+      "qcmRevision": "36ebefa5f87a26e0"
     },
     {
       "id": "ORAL-P-F91",
@@ -14322,13 +14365,13 @@
           "choices": [
             {
               "id": "a",
-              "text": "Des compétences plus diversifiées, mais plus familières que celles qu'il montre d'ordinaire.",
-              "explanation": "Le jeu de rôles fait apparaitre des compétences plus diversifiées, mais aussi plus normatives : l'élève s'approche de la norme (rôles énonciatifs, norme grammaticale, vocabulaire plus riche) ; il ne devient pas plus familier."
+              "text": "Des compétences plus diversifiées, mais plus familières et relâchées que celles qu'il montre d'ordinaire.",
+              "explanation": "Le jeu de rôles fait apparaitre des capacités que sa parole habituelle ne montre pas (rôles énonciatifs, jeu avec la norme grammaticale, vocabulaire plus riche) ; la parole n'y devient ni plus familière ni plus relâchée."
             },
             {
               "id": "b",
-              "text": "Des compétences plus diversifiées et plus normatives que celles qu'il montre d'ordinaire.",
-              "explanation": "Dans ses prises de parole habituelles, l'élève peut sembler pauvre (brèves, syntaxe réduite, parataxe). Le jeu de rôles fait apparaitre des compétences plus diversifiées et plus normatives, c'est-à-dire plus proches de la norme : il assume des rôles énonciatifs, joue avec la norme grammaticale et emploie un vocabulaire plus riche (Blanche-Benveniste, 1998)."
+              "text": "Des capacités que sa parole habituelle ne montre pas : assumer des rôles énonciatifs, jouer avec la norme grammaticale, employer un vocabulaire plus riche.",
+              "explanation": "Dans ses prises de parole habituelles, l'élève peut sembler pauvre (brèves, syntaxe réduite, parataxe). Le jeu de rôles fait apparaitre des capacités que cette parole ne montre pas : l'élève assume des rôles énonciatifs, joue avec la norme grammaticale et emploie un vocabulaire plus riche (Blanche-Benveniste, 1998)."
             },
             {
               "id": "c",
@@ -14379,7 +14422,8 @@
           "attenteId": "A3.3",
           "compatibleRevisions": [
             "26bc65d1c8223b6b",
-            "5552575eb0bb9aff"
+            "5552575eb0bb9aff",
+            "6fa438c1564a55d4"
           ]
         },
         {
@@ -14415,7 +14459,8 @@
           "attenteId": "A3.3",
           "compatibleRevisions": [
             "26bc65d1c8223b6b",
-            "5552575eb0bb9aff"
+            "5552575eb0bb9aff",
+            "6fa438c1564a55d4"
           ]
         },
         {
@@ -14450,11 +14495,12 @@
           "notionId": "N93",
           "attenteId": "A3.3",
           "compatibleRevisions": [
-            "5552575eb0bb9aff"
+            "5552575eb0bb9aff",
+            "6fa438c1564a55d4"
           ]
         }
       ],
-      "qcmRevision": "6fa438c1564a55d4"
+      "qcmRevision": "59151d084a652699"
     },
     {
       "id": "ORAL-P-F95",
@@ -14630,17 +14676,14 @@
             },
             {
               "id": "d",
-              "text": "Prise de parole, activités et étayage.",
-              "explanation": "Ce sont trois des quatre principes pour aider les élèves à parler, avec l'évaluation. Les compétences de Péroz sont autre chose : ce qu'on cherche à faire développer chez l'élève."
+              "text": "Laisser le temps de réfléchir, poser des questions ouvertes et répéter les questions.",
+              "explanation": "Ce sont trois des cinq choix de l'enseignant qui modifient les occasions d'apprendre (cours 02). Les compétences de Péroz sont autre chose : ce qu'on cherche à faire développer chez l'élève."
             }
           ],
           "level": "essentiel",
           "sansChoix": true,
           "notionId": "N111",
-          "attenteId": "T4",
-          "compatibleRevisions": [
-            "44237f8f49fb1269"
-          ]
+          "attenteId": "T4"
         },
         {
           "id": "Q1",
@@ -14674,7 +14717,8 @@
           "notionId": "N96",
           "attenteId": "T4",
           "compatibleRevisions": [
-            "44237f8f49fb1269"
+            "44237f8f49fb1269",
+            "8a844e12622acac2"
           ]
         },
         {
@@ -14709,7 +14753,8 @@
           "notionId": "N96",
           "attenteId": "T4",
           "compatibleRevisions": [
-            "44237f8f49fb1269"
+            "44237f8f49fb1269",
+            "8a844e12622acac2"
           ]
         },
         {
@@ -14744,7 +14789,8 @@
           "notionId": "N96",
           "attenteId": "T4",
           "compatibleRevisions": [
-            "44237f8f49fb1269"
+            "44237f8f49fb1269",
+            "8a844e12622acac2"
           ]
         },
         {
@@ -14779,7 +14825,8 @@
           "notionId": "N96",
           "attenteId": "T4",
           "compatibleRevisions": [
-            "44237f8f49fb1269"
+            "44237f8f49fb1269",
+            "8a844e12622acac2"
           ]
         },
         {
@@ -14812,10 +14859,13 @@
           "level": "essentiel",
           "sansChoix": true,
           "notionId": "N157",
-          "attenteId": "T4"
+          "attenteId": "T4",
+          "compatibleRevisions": [
+            "8a844e12622acac2"
+          ]
         }
       ],
-      "qcmRevision": "8a844e12622acac2"
+      "qcmRevision": "7e346a97bc4b59f1"
     },
     {
       "id": "ORAL-P-F97",
@@ -15300,8 +15350,8 @@
             },
             {
               "id": "d",
-              "text": "Le fait de redire avec ses propres mots ce qu'un camarade vient de dire, après l'avoir compris.",
-              "explanation": "C'est la reformulation par l'élève. Elle suppose l'écoute et la montre, mais elle désigne une production : redire avec ses mots."
+              "text": "Un rôle défini dans les échanges, comme animer ou présider : celui de reformuler les propos des autres.",
+              "explanation": "C'est un rôle langagier : reformuler est l'une des responsabilités définies dans les échanges, avec animer ou présider. L'écoute n'est pas un rôle : c'est l'attention à la personne qui parle et à son message, pour le comprendre."
             }
           ],
           "level": "essentiel",
@@ -15341,7 +15391,8 @@
           "notionId": "N121",
           "attenteId": "O6",
           "compatibleRevisions": [
-            "187a0cb7e27c5ea5"
+            "187a0cb7e27c5ea5",
+            "10550a63e983f1f2"
           ]
         },
         {
@@ -15376,7 +15427,8 @@
           "notionId": "N123",
           "attenteId": "O6",
           "compatibleRevisions": [
-            "187a0cb7e27c5ea5"
+            "187a0cb7e27c5ea5",
+            "10550a63e983f1f2"
           ]
         },
         {
@@ -15411,11 +15463,12 @@
           "notionId": "N155",
           "attenteId": "O6",
           "compatibleRevisions": [
-            "187a0cb7e27c5ea5"
+            "187a0cb7e27c5ea5",
+            "10550a63e983f1f2"
           ]
         }
       ],
-      "qcmRevision": "10550a63e983f1f2"
+      "qcmRevision": "6ab2fbed94b2453e"
     },
     {
       "id": "ORAL-P-F101",
@@ -16719,22 +16772,22 @@
             {
               "id": "a",
               "text": "Attendre que la pensée de l'enfant atteigne le stade qui rend la parole possible",
-              "explanation": "C'est la logique de l'approche constructiviste (Piaget), où le développement cognitif détermine le développement verbal. L'approche interactionniste place le développement dans la relation : elle conduit à multiplier les situations où l'enseignant interagit avec l'élève."
+              "explanation": "C'est la logique de l'approche constructiviste (Piaget), où le développement cognitif détermine le développement verbal. L'approche interactionniste place le développement dans la relation : l'enseignant y est le partenaire qui étaye l'élève."
             },
             {
               "id": "b",
               "text": "Encourager chaque réponse correcte pour qu'elle revienne plus souvent",
-              "explanation": "C'est la logique behavioriste (Skinner) : imitation et renforcement des réponses. L'approche interactionniste s'intéresse à l'échange lui-même et à l'étayage ; le cours 03 en tire des situations de langage variées où l'enseignant joue un rôle clé."
+              "explanation": "C'est la logique behavioriste (Skinner) : imitation et renforcement des réponses. L'approche interactionniste s'intéresse à l'échange lui-même et à l'étayage : l'enseignant y est le partenaire qui aide l'élève."
             },
             {
               "id": "c",
               "text": "S'appuyer sur un dispositif inné qui rend l'acquisition possible sans entrainement",
-              "explanation": "C'est l'hypothèse innéiste (Chomsky, le LAD). L'approche interactionniste met au premier plan la relation et le soutien de l'adulte, ce qui donne à l'enseignant un rôle actif dans les usages de la parole."
+              "explanation": "C'est l'hypothèse innéiste (Chomsky, le LAD). L'approche interactionniste met au premier plan la relation et le soutien de l'adulte, qui étaye l'enfant là où il ne réussit pas encore seul."
             },
             {
               "id": "d",
-              "text": "Faire vivre des situations de langage variées, où l'enseignant joue un rôle clé",
-              "explanation": "L'approche interactionniste explique le développement dans la relation, l'adulte soutenant l'enfant par l'étayage. Le cours 03 rappelle ce cadre du cours 01 et en tire la conséquence : l'école fait vivre des usages divers de la parole, et l'enseignant, par ses interactions, joue un rôle clé dans l'apprentissage de la parole scolaire."
+              "text": "Faire de l'enseignant un partenaire qui étaye l'élève là où il ne réussit pas encore seul",
+              "explanation": "L'approche interactionniste explique le développement du langage dans la relation : l'adulte soutient l'enfant par l'étayage. L'enseignant s'appuie surtout sur elle (comme sur l'approche historico-culturelle) : l'enfant progresse avec un partenaire qui l'aide là où il ne réussit pas encore seul."
             }
           ],
           "level": "essentiel",
@@ -16743,7 +16796,7 @@
           "attenteId": "L2"
         }
       ],
-      "qcmRevision": "c2736e0d404d1281"
+      "qcmRevision": "0f58a29201377877"
     },
     {
       "id": "ORAL-L-F07",
@@ -17865,11 +17918,11 @@
     },
     {
       "exerciseId": "ORAL-P-F58",
-      "stepId": "Q2"
+      "stepId": "Q5"
     },
     {
       "exerciseId": "ORAL-P-F58",
-      "stepId": "Q5"
+      "stepId": "Q2"
     },
     {
       "exerciseId": "ORAL-P-F06",
@@ -17916,12 +17969,12 @@
       "stepId": "Q3"
     },
     {
-      "exerciseId": "ORAL-P-F107",
-      "stepId": "Q3"
-    },
-    {
       "exerciseId": "ORAL-P-F102",
       "stepId": "Q1"
+    },
+    {
+      "exerciseId": "ORAL-P-F107",
+      "stepId": "Q3"
     },
     {
       "exerciseId": "ORAL-P-F64",
@@ -17948,7 +18001,7 @@
       "stepId": "Q4"
     },
     {
-      "exerciseId": "ORAL-P-F115",
+      "exerciseId": "ORAL-P-F55",
       "stepId": "Q1"
     },
     {
@@ -17956,7 +18009,7 @@
       "stepId": "Q2"
     },
     {
-      "exerciseId": "ORAL-P-F55",
+      "exerciseId": "ORAL-P-F115",
       "stepId": "Q1"
     },
     {
@@ -18033,15 +18086,15 @@
     },
     {
       "exerciseId": "ORAL-P-F21",
-      "stepId": "Q6"
-    },
-    {
-      "exerciseId": "ORAL-P-F21",
       "stepId": "Q7"
     },
     {
       "exerciseId": "ORAL-P-F21",
       "stepId": "Q8"
+    },
+    {
+      "exerciseId": "ORAL-P-F21",
+      "stepId": "Q6"
     },
     {
       "exerciseId": "ORAL-P-F68",
@@ -19530,5 +19583,5 @@
     "id": "GRILLE_BP1-18FRA_S1_ORAL",
     "version": "v14"
   },
-  "bankRevision": "c2499a9c9502"
+  "bankRevision": "45c971924772"
 }
